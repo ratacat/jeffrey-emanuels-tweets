@@ -1,0 +1,29 @@
+2025-12-13 | 9 likes
+
+I found a good workflow for this (perhaps not the best use of my time, but it’s so entertaining…):
+
+You ask Claude Opus 4.5 to do this (replace the artist/song with whatever you want):
+
+“Give me a short prompt that describes the style of “Forget Me Nots” by Patrice Rushen without naming the artist or the song; 300 characters or less.”
+
+They let you use 500 characters on Suno, but less is more, since it gives the Suno model flexibility to find something more optimal sounding.
+
+I’ve found the same thing holds with Nano Banana Pro, where longer prompts with more instructions always produce worse looking outputs, even if they technically comply better with your instructions.
+
+Anyway, Claude will reply with something like this:
+
+“Bouncy, syncopated slap bass driving an uptempo post-disco funk groove (~112 BPM). Bright keyboard stabs, crisp programmed drums, and sweet nimble female vocals with jazzy inflections. Warm yet polished 80s production—playful, flirtatious, irresistibly danceable. Light and effervescent, not heavy.”
+
+If you do the same for Get Lucky by Daft Punk, you get:
+
+“Crisp funk rhythm guitar with muted upstrokes driving a four-on-the-floor disco beat around 116 BPM. Warm analog synths, tight groovy bass, smooth falsetto vocals. Production is polished but retro—70s disco revivalism with modern clarity. Euphoric, breezy, designed for late-night celebration.”
+
+Or using Toyland by Perry Como:
+
+“Warm, relaxed baritone crooning over lush orchestral arrangement with sweeping strings. Gentle waltz-time feel, unhurried and tender. Mid-century easy listening production—nostalgic, dreamy, evoking childlike wonder. Sentimental and wistful without being saccharine. Intimate delivery, parlor-room warmth.”
+
+Then you paste in all your lyrics. It seems to be very smart on detecting nuance of the lyrics and how it should be sung. 
+
+When I gave it old Gaelic lyrics from a Lament for Patrick Sarsfield  (1st Earl of Lucan, died 1693), it did the vocals in what sounds like very accurate pronunciation, at least to my untrained ears.
+
+Anywhere, here’s the Get Lucky style Lament.

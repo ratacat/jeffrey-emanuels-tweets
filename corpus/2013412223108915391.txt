@@ -1,0 +1,61 @@
+2026-01-20 | 147 likes
+
+If you watch this ~50 minute screen recording closely (yeah, I know, it's long; there are also some times when my computer was very slow and laggy, just skip past that part. And at one point I had to run and get my 9-month-old a new bottle and left it on a boring screen, sorry!), I believe you can see real signs of the kind of runaway, recursive AI self-improvement that people have been warning of for a while (Mr. Kurzweil most notably and prophetically).
+
+Why do I say that? What's different now? Well, there's a reason my set of agent coding tooling is called the Flywheel. These tools all mutually self-reinforce each other. And they all flow directly into my ntm tool (short for "named_tmux_manager"), which acts as a sort of integration point and nerve center for the tools (this is becoming more true by the minute as I'm now seriously working on ntm).
+
+Now, ntm was something I started making to automate some aspects of my workflow, but it was the kind of thing where, until it was perfect, it sort of just slowed me down. So I didn't actually use it even though I kept working on it and trying to improve it, and suggested to users that they try it in my https://t.co/N4As0kJTQP tutorials. 
+
+Well anyway, I finally got around to "dogfooding" ntm last night, and now it's going to get very dramatically better at an alarming rate. Some of that is from applying my "idea wizard" prompt to generate more useful features and building that stuff out and addressing obvious pain points I encountered during my newfound usage of the tool. 
+
+But a lot comes from my realization that, once again, ntm's true utility is not as a tool for ME, but for an agent. That is, ntm lets one instance of Claude Code or Codex act as, well, me, do the things that I had been doing manually.
+
+Do I wish I had started using ntm earlier? No, for two big reasons:
+
+1) Doing it manually helped me build up my intuition massively, which directly led me down the path of creating useful prompt strategies and workflows; these often began as ad-hoc prompts that I realized could be generalized and made more versatile/universal.
+
+Lesson: don't prematurely automate until you have an intimate, intuitive feel for your "core value-add loop." Otherwise you'll have a fully automated system quickly that efficiently and automatically does a stupid or otherwise sub-optimal thing.
+
+2) My eyes have been opened to the beauty and power of Skills. I'm not talking about your garden-variety skills that are just a simple markdown file. I'm talking about true tour-de-force directories of perfectly structured and organized files that are filled with good information, insights, workflows, etc., but presented in a way that is highly optimized for consumption by AI agents, with extreme attention paid to things like perfect progressive disclosure, token density, agent-ergonomics, agent-intuitiveness, etc.
+
+ And also Skills that go way beyond markdown files, with full integration into Claude Code where it makes sense via hooks, sub-agents, and even Python scripts. These kinds of skills are a qualitative difference in expressive power and usefulness and a total game changer. 
+
+They are also effectively composable, creating almost an algebra of skills that let you use them together in powerful ways. I'm working on a subscription service website and CLI tool now to share what I've learned here most effectively, stay tuned for that in the coming days. 
+
+Anyway, I now know what to make and how to make it. So, getting back to that screen recording, what does it show that makes me claim recursive self-improvement is here?
+
+If you keep your eye on the upper left tmux pane, that's the "controller" agent. It is using ntm to control all the other panes which are also running Claude Code (but ntm fully supports other agent types like Codex and Gemini-CLI, and it's trivially easy to mix and match them if you wanted to have, say, 8 CCs and 6 Codexes for writing the code and 3 Gemini-CLIs for reviewing code.) Now, there's nothing that crazy about this much so far. 
+
+But where it starts to get very cool is that as the session continues and we encounter real-world problems, things like my ridiculously overloaded computer that keeps hanging for long periods, Claude Code instances that crash and get into a frozen, unresponsive state, it can learn from that.
+
+And you can see it using my skill writing skill to refine its ntm vibe coding skill in real time. And then take that skill and refine it to be more intuitive for itself. Or use my cass tool skill to search all the session histories to look for problems that came up and strategize how to solve them. 
+
+The most useful part was when, towards the end of the session, I told it to reflect on all the things we had done and problems we encountered. One way it can usefully leverage those reflections is by improving its ntm vibe coding skill to make it cover more edge cases and exigencies.
+
+But the other, more fundamental, way is for it to conceive of and design the optimal new features and functionality for ntm itself so that the tool embodies those lessons in a first-class way.
+
+This offloads cognition from its brain onto its tooling, just like how a person can lean on spellcheck or a calculator. It codifies correct, effective reasoning at the tool level, where it's more reliable and robust and repeatable. 
+
+And btw, did you notice what code base it was working on the whole time? It was none other than ntm itself! So as it worked on its own tool, it had reflections and ideas about how to further improve the tool. 
+
+Now, it could have just as easily gotten those insights and ideas while using ntm to work on a different project, but the fact that it was working on itself is almost gloriously meta and recursive.
+
+So by the end, after learning from tending to a big group of agent workers (btw, I have previously emphasized doing everything in a really distributed/decentralized way, where each fungible agent gets identical marching orders that tell it to use my bv tool to find the optimal bead to work on.
+
+This does work very well, but occasionally results in some contention and overlap from thundering herd, or at least wastes time/tokens/communication in avoiding that before the agents waste time duplicating work.
+
+But in this new ntm-oriented workflow, I was able to have the controller agent in the upper left use bv itself and then optimally parcel out the instructions to each agent so that we could know for sure that there's no overlap), I ended up with a ton of new beads for new features, which I had it optimize and polish a few times. 
+
+Now I can swap to a new Claude Max account and have the swarm implement all those new features! It should only take a couple passes like the one shown in the screen recording to get everything implemented.
+
+Then we can rinse and repeat, having the agent read through the full session histories of each agent and its experience from its own session in sending ntm commands and seeing how they worked out in practice, to come up with the next batch of changes to both its ntm vibe coding skill AND to the ntm tool itself. Do you see how rapidly this turns into Skynet? 
+
+My mistake earlier was in focusing on making myself a "faster horse" as Henry Ford used to joke about customers wanting before he showed them what they should really want (a Model T). That is, something that would make my experience nicer while doing this agent swarm based development workflow. 
+
+But the obvious lesson is that you should make all your tooling agent-first because the agents are just better at this stuff. You can still watch, and of course I did add a ridiculous number of very nice human-centric features to ntm that you'll be seeing in the next day or two, but those are really kind of "for fun" to make us humans feel better about the process. All the real value-add is happening "by agents, for agents."
+
+PS: Towards the end, you can see me switch to my Mac and tell Claude to improve the skill that I made earlier today for taking the mkv screen recording files from OBS Studio and muxing them into MP4 files for sharing, while downloading songs from YouTube to serve as the background music. 
+
+I made it so it can also grab the thumbnails and generate little song credit cards that show up in the lower right corner. This worked perfectly the first time! I'll include some screenshots in a response post showing how that worked, but it was awesome to witness. Skills are POWERFUL.
+
+I'll also post a link to this video on YouTube if you prefer to watch it there.

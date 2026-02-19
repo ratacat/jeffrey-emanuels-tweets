@@ -1,0 +1,91 @@
+2026-01-10 | 23 likes
+
+OK, here is Round 2 of the Super Big Brained Optimizer Prompt.
+
+This post can fortunately be much shorter than the quoted post, because the entire workflow after the initial prompt is identical to Round 1, just replacing "1" with "2" in the filenames. 
+
+Here is the prompt:
+
+---
+
+First read ALL of the AGENTS md file and README md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code, and technical architecture and purpose of the project. 
+
+Then, once you've done an extremely thorough and meticulous job at all that and deeply understood the entire existing system and what it does, its purpose, and how it is implemented and how all the pieces connect with each other, I need you to hyper-intensively investigate and study and ruminate on these questions as they pertain to this project: 
+
+Are there any other gross inefficiencies in the core system? places in the code base where 1) changes would actually move the needle in terms of overall latency/responsiveness and throughput; 2) such that our changes would be provably isomorphic in terms of functionality so that we would know for sure that it wouldn't change the resulting outputs given the same inputs; 3) where you have a clear vision to an obviously better approach in terms of algorithms or data structures (note that for this, you can include in your contemplations lesser-known data structures and more esoteric/sophisticated/mathematical algorithms as well as ways to recast the problem(s) so that another paradigm is exposed, such as the list shown below (Note: Before proposing any optimization, establish baseline metrics (p50/p95/p99 latency, throughput, peak memory) and capture CPU/allocation/I/O profiles to identify actual hotspots):
+
+- convex optimization (reformulation yields global optimum guarantees)
+- submodular optimization (greedy gives constant-factor approximation)
+- semiring generalization (unifies shortest path, transitive closure, dataflow, parsing)
+- matroid structure recognition (greedy is provably optimal)
+- linear algebra over GF(2) (XOR systems, toggle problems, error correction)
+- reduction to 2-SAT (configuration validity, implication graphs)
+- reduction to min-cost max-flow (assignment, scheduling, resource allocation)
+- bipartite matching recognition (Hungarian, Hopcroft-Karp)
+- DP as shortest path in implicit DAG (enables priority-queue DP, Dijkstra-style optimization)
+- convex hull trick / Li Chao trees (O(n²) DP → O(n log n))
+- Knuth's optimization / divide-and-conquer DP
+- Hirschberg's space reduction (when applicable beyond alignment)
+- FFT/NTT for convolution (polynomial multiplication, sequence correlation)
+- matrix exponentiation for linear recurrences
+- Möbius transform / subset convolution
+- persistent/immutable data structures (versioning, rollback, speculative execution)
+- suffix automaton / suffix array with LCP
+- heavy-light decomposition / centroid decomposition
+- link-cut trees (dynamic tree connectivity)
+- monotone queue/deque for sliding window extrema
+- segment trees with lazy propagation
+- wavelet trees (rank/select/quantile)
+- union-find with rollback
+- Count-Min sketch, HyperLogLog (streaming/sublinear)
+- locality-sensitive hashing (approximate NN)
+- bloom filters / cuckoo filters
+- minimal perfect hashing
+- fractional cascading
+- Mo's algorithm (offline query sqrt decomposition)
+- parametric search / binary search on answer
+- bidirectional search / meet-in-the-middle
+- randomized algorithms with rigorous expected bounds
+- approximation algorithms with provable guarantees
+- work-stealing for recursive parallelism
+- lock-free / wait-free data structures
+- cache-oblivious algorithm design
+- amortized analysis (to recognize when "expensive" operations are actually cheap)
+
+Also note that if there are well-written third party libraries you know of that would work well, we can include them in the project). 
+
+METHODOLOGY REQUIREMENTS:
+
+A) Baseline first: Run the test suite and a representative workload; record p50/p95/p99 latency, throughput, and peak memory with exact commands.
+
+B) Profile before proposing: Capture CPU + allocation + I/O profiles; identify the top 3–5 hotspots by % time before suggesting changes.
+
+C) Equivalence oracle: Define explicit golden outputs + invariants. For large input spaces, add property-based or metamorphic tests.
+
+D) Isomorphism proof per change: Every proposed diff must include a short proof sketch explaining why outputs cannot change (including ordering, tie-breaking, floating-point behavior, and RNG seeds).
+
+E) Opportunity matrix: Rank candidates by (Impact × Confidence) / Effort before implementing; focus only on items likely to move p95+ or throughput meaningfully.
+
+F) Minimal diffs: One performance lever per change. No unrelated refactors. Include rollback guidance if any risk exists.
+
+G) Regression guardrails: Add benchmark thresholds or monitoring hooks to prevent future regressions.
+
+Use ultrathink.
+
+---
+
+Now, I know what you're thinking... wtf is any of that stuff? That's why it's called Big Brained Optimizer prompt, ok? 
+
+The frontier models are so smart that if you let them design things, and do more basic versions of the optimization prompt (the short one I gave as Prompt 4 in the "My Favorite Prompts" series), they know how to do all the standard leetcode interview stuff and will use it.
+
+But what about that next level, Terry Tao stuff? You know what I mean, the GOOD STUFF. Well, they know that, too. 
+
+And is it going to be relevant to your problem? Honestly, probably not. But if it is, that's how you unlock TRUE TURBO MODE.
+
+Always run Round 1 before Round 2, since it's going to be way more relevant 99% of the time. But after you keep doing Round 1 a few times and nothing changes, you can reach for Round 2.
+
+Anyway, just make sure after you do all this stuff, generating the plans for CC and Codex, having CC combine the best of both worlds plan, checking it over for blunders 5 times, turning the final markdown plan into beads, iteratively optimizing the beads, and finally implement the beads with a swarm of CC and Codex bots with a boatload of unit tests and e2e integration tests... start up a Codex session with GPT 5.2 Extra High and queue up like 20 of these suckers:
+
+"I want you to sort of randomly explore the code files in this project, choosing code files to deeply investigate and understand and trace their functionality and execution flows through the related code files which they import or which they are imported by. Once you understand the purpose of the code in the larger context of the workflows, I want you to do a super careful, methodical, and critical check with "fresh eyes" to find any obvious bugs, problems, errors, issues, silly mistakes, etc. and then systematically and meticulously and intelligently correct them."
+
+-FIN-

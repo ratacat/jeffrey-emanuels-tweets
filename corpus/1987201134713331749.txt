@@ -1,0 +1,9 @@
+2025-11-08 | 1 likes
+
+Here’s Claude’s response when I took it to task for overlooking Dr. Hipp:
+
+You're absolutely right! That's a significant oversight. **Richard Hipp**, creator of SQLite, definitely belongs on this list - arguably in the top 50, not just the top 100. SQLite is probably the most widely deployed database in the world, running on billions of devices including every iPhone, Android phone, web browser, and countless embedded systems.
+
+His creation of a serverless, zero-configuration, transactional SQL database that fits in a single file has had massive influence on software development. The fact that SQLite is also public domain and meticulously tested (with one of the highest test-to-code ratios in the industry) makes his contribution even more remarkable.
+
+I should have included him instead of some of the entries in my lists. Thank you for the correction - Hipp's work has probably touched more devices than almost any other programmer's contributions.

@@ -1,0 +1,208 @@
+2026-01-02 | 5 likes
+
+And here is the way more elaborate version for WezTerm, which really does a lot more than the one for Ghostty. 
+
+I love both of them and use both a LOT, but if you haven't tried WezTerm, it's really powerful and customizable. BTW, this excerpt goes into your ~/.wezterm.lua file, not ~/.zshrc :
+
+---
+
+-- SSH Domains with persistent multiplexed sessions
+-- Sessions survive local machine restarts - reconnects automatically
+config.ssh_domains = {
+  {
+    name = 'srv1',
+    remote_address = '192.168.1.101',
+    username = 'ubuntu',
+    multiplexing = 'WezTerm',
+    assume_shell = 'Posix',
+  },
+  {
+    name = 'srv2',
+    remote_address = '192.168.1.102',
+    username = 'ubuntu',
+    multiplexing = 'WezTerm',
+    assume_shell = 'Posix',
+  },
+  {
+    name = 'srv3',
+    remote_address = '192.168.1.103',
+    username = 'ubuntu',
+    multiplexing = 'WezTerm',
+    assume_shell = 'Posix',
+  },
+}
+
+-- Color schemes for each SSH domain
+local domain_colors = {
+  -- srv1: Warm amber/orange tint
+  srv1 = {
+    background = {
+      {
+        source = {
+          Gradient = {
+            colors = { '#1a0d0d', '#2e1a1a', '#3e2116' },
+            orientation = { Linear = { angle = -45.0 } },
+          },
+        },
+        width = '100%',
+        height = '100%',
+        opacity = 0.92,
+      },
+    },
+    colors = {
+      background = '#1a0d0d',
+      cursor_bg = '#e0af68',
+      cursor_border = '#e0af68',
+      split = '#e0af68',
+      tab_bar = {
+        background = 'rgba(26, 13, 13, 0.9)',
+        active_tab = {
+          bg_color = '#e0af68',
+          fg_color = '#1a0d0d',
+          intensity = 'Bold',
+        },
+        inactive_tab = {
+          bg_color = '#2e1a1a',
+          fg_color = '#a08060',
+        },
+        inactive_tab_hover = {
+          bg_color = '#3e2116',
+          fg_color = '#e0af68',
+        },
+      },
+    },
+  },
+  -- srv2: Deep purple/magenta tint
+  srv2 = {
+    background = {
+      {
+        source = {
+          Gradient = {
+            colors = { '#1a0d1a', '#2e1a2e', '#3e163e' },
+            orientation = { Linear = { angle = -45.0 } },
+          },
+        },
+        width = '100%',
+        height = '100%',
+        opacity = 0.92,
+      },
+    },
+    colors = {
+      background = '#1a0d1a',
+      cursor_bg = '#bb9af7',
+      cursor_border = '#bb9af7',
+      split = '#bb9af7',
+      tab_bar = {
+        background = 'rgba(26, 13, 26, 0.9)',
+        active_tab = {
+          bg_color = '#bb9af7',
+          fg_color = '#1a0d1a',
+          intensity = 'Bold',
+        },
+        inactive_tab = {
+          bg_color = '#2e1a2e',
+          fg_color = '#9070a0',
+        },
+        inactive_tab_hover = {
+          bg_color = '#3e163e',
+          fg_color = '#bb9af7',
+        },
+      },
+    },
+  },
+  -- srv3: Deep crimson tint
+  srv3 = {
+    background = {
+      {
+        source = {
+          Gradient = {
+            colors = { '#1a0d0d', '#2e1416', '#3e1a1c' },
+            orientation = { Linear = { angle = -45.0 } },
+          },
+        },
+        width = '100%',
+        height = '100%',
+        opacity = 0.92,
+      },
+    },
+    colors = {
+      background = '#1a0d0d',
+      cursor_bg = '#dc143c',
+      cursor_border = '#dc143c',
+      split = '#dc143c',
+      tab_bar = {
+        background = 'rgba(26, 13, 13, 0.9)',
+        active_tab = {
+          bg_color = '#dc143c',
+          fg_color = '#1a0d0d',
+          intensity = 'Bold',
+        },
+        inactive_tab = {
+          bg_color = '#2e1416',
+          fg_color = '#a06070',
+        },
+        inactive_tab_hover = {
+          bg_color = '#3e1a1c',
+          fg_color = '#dc143c',
+        },
+      },
+    },
+  },
+}
+
+-- Domain display names and icons
+local domain_info = {
+  srv1 = { name = 'Server 01', icon = '󰒋 ', color = '#e0af68' },
+  srv2 = { name = 'Server 02', icon = '󰒋 ', color = '#bb9af7' },
+  srv3 = { name = 'Server 03', icon = '󰻠 ', color = '#dc143c' },
+}
+
+-- Window title: Show domain name prominently
+wezterm.on('format-window-title', function(tab, pane, tabs, panes, config)
+  local domain = pane.domain_name or 'local'
+  local title = pane.title or ''
+  local info = domain_info[domain]
+  if info then
+    return info.icon .. https://t.co/LSvAVxfS3K .. ' │ ' .. title
+  else
+    return '󰍹  Local │ ' .. title
+  end
+end)
+
+-- Apply domain-specific colors when switching panes/tabs
+local last_domain_per_window = {}
+
+wezterm.on('update-status', function(window, pane)
+  local domain = pane:get_domain_name()
+  local window_id = tostring(window:window_id())
+
+  -- Only update when domain actually changes (avoids breaking text selection)
+  if last_domain_per_window[window_id] ~= domain then
+    last_domain_per_window[window_id] = domain
+    local overrides = window:get_config_overrides() or {}
+
+    if domain_colors[domain] then
+      overrides.background = domain_colors[domain].background
+      overrides.colors = domain_colors[domain].colors
+    else
+      overrides.background = nil
+      overrides.colors = nil
+    end
+
+    window:set_config_overrides(overrides)
+  end
+
+  -- Right status bar with domain indicator
+  local cells = {}
+  local info = domain_info[domain]
+  if info then
+    table.insert(cells, wezterm.format {
+      { Foreground = { Color = '#0d0d1a' } },
+      { Background = { Color = info.color } },
+      { Attribute = { Intensity = 'Bold' } },
+      { Text = ' ' .. info.icon .. https://t.co/LSvAVxfS3K .. ' ' },
+    })
+  end
+
+  window:set_right_status(table.concat(cells, ''))
+end)

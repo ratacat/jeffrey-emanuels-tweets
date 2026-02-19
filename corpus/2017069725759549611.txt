@@ -1,0 +1,3 @@
+2026-01-30 | 4 likes
+
+Also, when your computer is a bit overloaded, it's way too easy to accidentally enter "/logout" when you meant "/login" and it doesn't even ask you to confirm. The autocomplete chooses the wrong one and then you're logged out of everything, which can be extremely annoying.

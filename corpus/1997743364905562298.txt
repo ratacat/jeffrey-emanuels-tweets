@@ -1,0 +1,13 @@
+2025-12-07 | 54 likes
+
+Experimenting with some new workflows today. Saw a post about a new way of considering memory for agents and realized that my new cass tool would be the perfect bedrock to build such a system on top of, since it's super performant, already integrates with all coding agents, and is built for use by coding agents via the CLI. 
+
+I asked the hit squad: GPT 5.1 Pro, Gemini3 Ultra, Grok 4.1, and Opus 4.5 separately to come up with detailed planning proposals that combine cass with those memory ideas from the blog post and academic paper.
+
+I had to clarify that I wanted something that worked for all coding agents, not just Claude, but each conversation just had two short prompts from me (shown in the screenshots in this post).
+
+Then I took the resulting conversations (mostly using my handy new tool for this purpose, see recent tweets for that) and put them as markdown files in the folder. Then I asked Claude Code with Opus 4.5 to take the best parts of all the plans and make a hybrid superior plan, which it just finished doing.
+
+Then I'll turn that plan into a ton of beads, then use bv to figure out how the optimal order to build them all, and have a swarm of agents make it all today for me.
+
+We live in the future.

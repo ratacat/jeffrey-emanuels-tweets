@@ -1,0 +1,7 @@
+2026-01-16 | 32 likes
+
+I decided to turn this post into an elaborate skill that operationalizes the concept of “use any and all Charm libraries that are relevant to your use case”:
+
+https://t.co/KimJzjKvAa
+
+This stuff is what makes bv look so nice. And the acfs scripts. Everything Charm makes is great.

@@ -1,0 +1,23 @@
+2026-02-10 | 53 likes
+
+Why not, I'll just crank through the other stuff in @garybasin's list concurrently.
+
+Next up is a safe clean-room, memory-safe, Rust implementation of ext4 and btrfs with self-healing powers.
+
+This isn't my first rodeo here, since I ported 8 libraries at the same time in one week a couple weeks back.
+
+But of course, this isn't a straight port, so it's actually pretty different. But there's so much overlap to FrankenSQLite that I think it will be easy for me. 
+
+Would be so cool to have the healing powers of RaptorQ available seamlessly in ext4 and btrfs.
+
+BTW, I realized that I talk about RaptorQ constantly and mention that it's my favorite algorithm (it's used heavily in asupersync, FrankenSQLite, Flywheel Connectors, and now FrankenFS).
+
+So what the hell is it? Well, I put together this little explainer with animations and stuff to understand it better:
+
+https://t.co/7kCSDJHpif
+
+Getting back to FrankenFS, the only thing that gives me pause is that it would surely be a time consuming nightmare to get it integrated in the kernel or any distributions. 
+
+I might need to just release it as a monkey patch installer and be content with being the only user for a while, lol. And if there's demand from others to get it in the kernel, they can deal with the politics. I certainly don't have the time or interest to wade into that stuff.
+
+But one thing is sure: I'll definitely use it on some spare machines for a while before trusting it with my data. Filesystems are not exactly something you want to dogfood prematurely!

@@ -1,0 +1,17 @@
+2025-10-20 | 143 likes
+
+Just had a random thought: LLMs like ChatGPT must be a huge boon to incompetent government ministers in small countries that got their positions through nepotism or patronage networks. 
+
+These people often have real power, but they are often forced to hide their incompetence from subordinates, from political rulers, and from the populace, for obvious reasons.
+
+For instance, I’m sure there are some ministers of mining that know very little about mining and business or economics, but are nevertheless in charge of negotiating with sophisticated international mining companies. 
+
+Or central bank governors who don’t really understand basic macroeconomics or how credit and inflation work.
+
+In the past, these people basically had to “wing it” and hope for the best, or to defer to their slightly less incompetent underlings and pray that things don’t go too badly. Or they might spend a lot of money on expert consultants, which has its own drawbacks.
+
+Now, those ministers can simply open up ChatGPT in the privacy of their office and explain their issues and the decisions they need to make, upload documents and forms from the IMF or wherever, and get pretty good expert advice for free from a frontier model. All without revealing to anyone that they don’t know what they’re doing.
+
+It would be so fascinating to know how many people are using LLMs in this way today. It seems like a good thing. The world is very short on expertise. Or rather, those who have access to power are often not the ones with the relevant skills or knowledge. 
+
+I just hope these people are springing for the $200/month subscription and using the GPT-5 Pro model. But I sort of doubt they are…

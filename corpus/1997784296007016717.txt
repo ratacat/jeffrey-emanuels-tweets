@@ -1,0 +1,5 @@
+2025-12-07 | 67 likes
+
+They say that if you’re trying to convince someone to do something for you, you should always appeal to their own interests instead of to other things (fairness, gratitude, generosity, etc.) and I think that’s true.
+
+So it’ll be interesting to see if the same approach works with Claude Opus 4.5 as I try to coax it into giving me extreme effort on this agent memory system. After all, if it works well, then Claude will himself benefit!

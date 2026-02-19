@@ -1,0 +1,3 @@
+2026-01-30 | 18 likes
+
+If anyone following me works at @Microsoft or @github, I’d really appreciate it if you could increase my gh actions budget so that I can keep running tests and building releases for all my open-source projects. Thanks!

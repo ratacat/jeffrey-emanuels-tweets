@@ -1,0 +1,3 @@
+2025-12-29 | 19 likes
+
+Same with my one subscription to SuperGrok. They should have released a coding CLI like 3 or even 4 months ago at this point, it's totally nuts. There are open source ones like Pi Agent they could just fork and use. What could the reason possibly be? It's simply not worth $300/m.

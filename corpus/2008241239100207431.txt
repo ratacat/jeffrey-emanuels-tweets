@@ -1,0 +1,27 @@
+2026-01-05 | 139 likes
+
+Agent Coding lifehack:
+
+If you're like me, then you're connecting to multiple servers in the cloud via SSH and using terminal software like Ghostty and WezTerm all day long. You're probably also using them on your local machine, too.
+
+It can get confusing pretty quickly to remember which machine you're working on. And if you have certain projects on certain machines, that makes it hard to remember which project you're working on. 
+
+Trying to scroll up in Claude Code to see the working directory is not an efficient solution. Little stuff like that creates mental friction, increasing the "transactional cost" of context switching, and makes things more unpleasant and annoying.
+
+If you want to be as efficient and productive as possible, then it pays big dividends to mercilessly identify and root out any needless friction like this. Save your mental energy for useful things, like coming up with good ideas!
+
+The solution I've arrived at is to set up Ghostty and WezTerm to automatically identify which machine (host) I'm connected to and then change the color scheme accordingly. 
+
+None of the color schemes are garish or intrusive (a problem I've had in the past with this approach using the Peacock extension for VScode), mostly just dark shades of blue, purple, green, red, and orange with nice complementary lighter shades for text and other elements. This makes it easy on the eyes.
+
+After a few days of using this setup, you automatically adapt and get "eye muscle memory" so that you can tell at a glance with zero effort which machine. 
+
+And also which project, at least if you keep the tabs organized so that the tabs for the same project are adjacent, with a spacer tab between projects (I like to make this the tab running my agent mail project because the "am" alias is nice and short).
+
+Anyway, I posted about this earlier, but decided to add a nicely formatted article here about it with a lot more details and explanation:
+
+https://t.co/67MMeyJWXG
+
+Turbo Life Sub-Hack:
+
+Don't even bother reading all that! Just give it to Claude Code and tell it to set it up for you like that. It's incredibly good at configuring WezTerm and Ghostty. You'll probably need to do the BetterMouse settings by hand, though (since it's a GUI app).

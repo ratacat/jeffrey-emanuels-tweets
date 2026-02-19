@@ -1,0 +1,41 @@
+2026-01-08 | 53 likes
+
+Agent coding life hack:
+
+(not really, but this is part of a series of posts like that, so what the hell, and it definitely makes agent coding better if it's applicable to you).
+
+Not sure how many people this would really apply to, but this was a massive revelation and unlock for me recently so I thought I'd share.
+
+A few weeks ago I got a Mac Mini M4 with 32gb of RAM and was blown away by the performance and decided to make that my daily driver.
+
+But I already had a massively overpowered Supermicro workstation (512gb of RAM, 32-core Threadripper, 12tb NVME, etc), that I was running Win11 on and then Ubuntu 25 from within WSL2. 
+
+I wrote a post a couple weeks ago about how I finally got so tired of performance issues and stuttering UI that I decided to take the plunge and install Ubuntu straight on the metal. This seemed a lot safer to me since I had already switched to the Mac as my daily driver.
+
+Anyway, even though my big Supermicro box is sitting a few feet away from my Mac Mini, they were both connected to a dog slow LAN and old Asus router. 
+
+So when I tried to copy big files or even to drive my 5k Dell monitor using Moonlight to stream the Linux desktop (Hyprland) to my Mac (why do that? Because I would do anything to avoid needing to use a physical USB input switch and pressing the input button on the monitor, which takes forever), it was laggy and unreliable, or I had to lower the quality so much it was wasting my nice monitor.
+
+So what to do? I knew that the Mac Mini M4 had some wild IO throughput, because how else could they do that stuff with the Exo library combining a bunch of them for local inference? But how to leverage that for networking?
+
+Well, it just so happens that my Supermicro box already had an onboard 10Gbe network interface that I never bothered using before because I didn't have that in my other machines or in my router. 
+
+So I explained the situation to Claude Code and asked it to research everything on the web and to find the most cost effective solution, and it found some blog post that explained this amazing device which you can buy for like $85 from AliExpress, the IOCREST (uses Aquantia AQC113 chip). 
+
+You can read about it here; just buy the stuff, plug it in, and Claude Code can set everything up for you automatically just from reading this article:
+
+https://t.co/rwRp2Qkrbp
+
+This device plugs into the Thunderbolt4 ports on the back of the Mac Mini (there are 3 of these) and then it has a network jack. Add a Cat6 cable for 5 bucks and you can get a reliable 800 megabytes per second with sub 0.1ms latency!! That's so fast that they might as well be the same machine. 
+
+The difference is truly night and day, even when connected via the terminal. There is just zero lag now, and files transfer instantly. It is a qualitative difference and it feels like I've achieved "mind melding" between my Mac and my big hulking Linux workstation.
+
+And you can even mount the Linux drives so they feel like local drives. Normally, this sort of thing sounds better in theory than it is in reality because it's a classic "leaky abstraction." But not with sub 0.1ms latency! I explain a nice way to do this here that avoids annoying pitfalls (like what happens when the Linux box is down):
+
+https://t.co/gWTwwXAHAA
+
+Anyway, this is one of the largest quality-of-life IT upgrades I've ever done in my life, and for under $100! God bless cheap Chinese hardware makers.
+
+PS: If you're curious about using Moonlight, I have an article in the same repo on that:
+
+https://t.co/gVoB1JHjGt

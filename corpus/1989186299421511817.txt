@@ -1,0 +1,9 @@
+2025-11-14 | 73 likes
+
+My latest aliases for launching coding agents. 
+
+Just put these lines in your ~/.zshrc or ~/.bashrc to save some time and launch the agents with the optimal yolo settings with just 3 characters:
+
+alias clc='NODE_OPTIONS="--max-old-space-size=32768" ENABLE_BACKGROUND_TASKS=1 claude --dangerously-skip-permissions'
+
+alias cod='codex --dangerously-bypass-approvals-and-sandbox -m gpt-5.1-codex -c model_reasoning_effort="high" -c model_reasoning_summary_format=experimental --enable web_search_request'

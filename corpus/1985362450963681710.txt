@@ -1,0 +1,11 @@
+2025-11-03 | 180 likes
+
+I just thought about how the OpenAI people on Twitter made those posts around the time of Altman’s ouster that included heart emojis of different colors. 
+
+I remember thinking at the time that the colors must signify something because it seemed weirdly coordinated. 
+
+It just occurred to me that perhaps they were indicating by the color which team they were on: Altman, Mira, or Ilya.
+
+If so, it would be a quite clever game theoretic approach, because it would be public and binding and would indicate their preferences to each other, all while looking like generic sentiments of support to the outside world.
+
+Someone should go back and try to cross reference those emoji colors to see which of those people subsequently stayed at OpenAI, which ones went with Ilya to SSI, and which ones went with Mira to ThinkingMachines.

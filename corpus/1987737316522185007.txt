@@ -1,0 +1,23 @@
+2025-11-10 | 152 likes
+
+Sydney Brenner was one of the smartest and most far-seeing scientists of the 20th century.
+
+He had an incredible ability to see the edges of known science and sniff out which areas would be most fruitful to pursue.
+
+He realized early on in his career that von Neumann had basically solved the “abstract math problem” associated with life and genetics, but didn’t know the biology to propose the physical mechanisms for any of it.
+
+In short, von Neumann figured out that any solution to the problem had to have these 4 abstract attributes:
+
+A description/blueprint (information storage)
+
+A constructor that reads the blueprint
+
+A copying mechanism for the blueprint itself
+
+A supervisory unit coordinating the process
+
+And he determined that from pure logical necessity; it was the only way he could conceive of such a thing being able to work.
+
+And of course we now have the specific names and physical mechanisms for each of those 4 things; it’s basically the DNA - RNA - Protein - Polymerase/etc. system.
+
+Anyway, it’s fascinating to watch Brenner talk about this stuff. That whole long series of videos is an absolute gold mine of stories and knowledge and insights about biology, chemistry, medicine, genetics, etc.

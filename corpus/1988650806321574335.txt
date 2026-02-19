@@ -1,0 +1,9 @@
+2025-11-12 | 131 likes
+
+You can get like 95% of the way to a really nice, slick, working iOS app written natively in Swift using codex and GPT-5. But then you reach the point where you want to put it on the AppStore, so you need to get certificates set up for signing and all this other stuff.
+
+At that point, you stop being able to do everything from the command line programmatically, and need to start messing with the GUI in Xcode, and it’s just an absolute nightmare. 
+
+Just hopelessly bad UI patterns, and you need to guess where everything is. Even when the AI tells you what to do step-by-step, it’s a huge cognitive burden to even find the stuff in the confusing and awful interface.
+
+Apple should really pause work on all other dev tooling until they have a totally complete, well-documented (in a single markdown file!) CLI and API that can be used end-to-end by AI coding agents for everything involved in creating and publishing an app.

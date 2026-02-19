@@ -1,0 +1,9 @@
+2025-11-27 | 53 likes
+
+PS: I included the set of prompts I used with codex, Claude Code, and gemini-cli to make this (with my many typos cleaned up by GPT-5 Pro). 
+
+You can read them here; I also included the incredible response from Opus 4.5 evaluating the "best ideas" for new features from GPT-5 and Gemini 3:
+
+https://t.co/RaEXdJbrDB
+
+There were obviously some other ones but those are the majority of the important ones, and they basically flow in chronological order.

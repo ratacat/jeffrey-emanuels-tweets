@@ -1,0 +1,19 @@
+2026-01-10 | 50 likes
+
+Lots of people aren’t going to want to admit this, but it’s 100% true. When you dismiss MCP as being a bad protocol, you’re really exposing your own skill issues. If you do things well, it works great. 
+
+Now, should it be easier so that anyone could get great results trivially? Sure, that would be nice in a perfect world. 
+
+But the fact is that most devs should probably mostly be *users* of a couple good MCP servers instead of writing their own. 
+
+Just like how most devs shouldn’t try to roll their own text editor or compiler or network stack (except as a learning experience), because it’s hard to do well and easy to do in a bad, inefficient way.
+
+MCP is great because we have it as a standard now that works with every frontier model as a first class citizen. Good luck trying to get anything else standardized now.
+
+So it’s universal, and it can be made to work perfectly using frontier models, but *only* when the MCP tools are designed and documented by someone who will obsessively refine and polish them until things are perfect.
+
+My MCP Agent Mail is a very intricate set of tools that agents need to use frequently and correctly, otherwise they could cause a lot of friction. 
+
+And yet it works perfectly (when you use my AGENTS dot md blurb) because I’ve taken the time and dozens of rounds of pragmatic iteration and observation to ensure that the models can use it well.
+
+Don’t blame the protocol. You just played yourself.

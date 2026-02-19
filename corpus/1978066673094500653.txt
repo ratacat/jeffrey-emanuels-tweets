@@ -1,0 +1,3 @@
+2025-10-14 | 4 likes
+
+Also, back then, if you wanted the GPU speed up for deep learning, you had to spend almost as much for the software as you did for the hardware (I had to buy two licenses for Jacket for$2k to use it on my two GPUs then): https://t.co/UnwvgLpYoX

@@ -1,0 +1,15 @@
+2026-01-14 | 74 likes
+
+I love Rust and use it more and more with each passing day, but the compilation is such a drag. 
+
+It kills the CPU so much because I have like 15 agents all trying to compile at different times, and if more than a few do it at once, all my terminals get super sluggish and unresponsive. 
+
+That really ruins my enjoyment of presiding over my slop empire, which is normally so much fun for me. I think it's also making my blood pressure worse.
+
+It has gotten so bad that I think I need to make a nice agent-first tool that lets me take N remote linux machines that I have available via ssh, and then have them act as remote compilation workers so the machine running the agents never gets weighed down by compilation overload.
+
+I need to figure out the slickest way to implement it so that the agents actually use it consistently. 
+
+I wonder if I could make something like DCG that acts as a pre-tool hook and dynamically rewrites compilation tool calls (rustc/cargo) to farm them out to my worker net. 
+
+Will try to knock this out tonight.

@@ -1,0 +1,11 @@
+2025-12-13 | 104 likes
+
+Since I think people are interested in my workflow and process, I literally thought of a new idea for a tool an hour ago and already have the full plan document in an initial version.
+
+Now I'm going to have GPT Pro and others go to town on improving it some more, then turn it into a ton of beads, and then put a swarm of agents on it to implement it all.
+
+You can follow along if you want here:
+
+https://t.co/tn5ZZUxEjl
+
+I even included a cleaned up markdown version of the actual original conversation with Claude Code in the repo so you can see it truly from soup to nuts.

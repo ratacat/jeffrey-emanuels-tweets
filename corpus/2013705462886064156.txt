@@ -1,0 +1,149 @@
+2026-01-20 | 8 likes
+
+I noticed that, through either my own fault or bugs in Claude Code, my settings would sometimes get clobbered and it wouldn't have my mcp servers or dcg hooks anymore. 
+
+Fixing it once or twice wasn't bad. But by the 5th time, I'm done. 
+
+I made this script that works from anywhere, (home/ubuntu/.local/bin/fix_cc_mcp), and it solves the problem for me. The next step was setting up a systemd job that check automatically every minute to make sure the settings haven't been lost; is this silly? Yes, but it saves time for me NOW. 
+
+Here's the script if you care:
+
+---
+
+#!/usr/bin/env bash
+# fix_cc_mcp - Restore Claude Code MCP server configuration
+# Fixes mcp-agent-mail and morph-mcp servers without running full install
+
+set -euo pipefail
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+log_ok() { echo -e "${GREEN}✓${NC} $*"; }
+log_warn() { echo -e "${YELLOW}⚠${NC} $*"; }
+log_err() { echo -e "${RED}✗${NC} $*" >&2; }
+log_info() { echo -e "${BLUE}→${NC} $*"; }
+
+# Configuration
+MCP_AGENT_MAIL_DIR="${MCP_AGENT_MAIL_DIR:-${HOME}/mcp_agent_mail}"
+MCP_URL="${MCP_URL:-http://127.0.0.1:8765/mcp/}"
+MORPH_API_KEY="${MORPH_API_KEY:-}" # set this via env var if needed
+SCOPE="${MCP_SCOPE:-user}"
+
+echo "═══════════════════════════════════════════════════════════════"
+echo " fix_cc_mcp - Claude Code MCP Configuration Fixer"
+echo "═══════════════════════════════════════════════════════════════"
+echo
+
+# Check for claude CLI
+if ! command -v claude &>/dev/null; then
+  log_err "claude CLI not found. Please install Claude Code first."
+  exit 1
+fi
+
+# Get bearer token - check multiple sources in order of preference
+TOKEN=""
+
+# 1. Check environment variable first (allows override)
+if [[ -n "${MCP_AGENT_MAIL_TOKEN:-}" ]]; then
+  TOKEN="${MCP_AGENT_MAIL_TOKEN}"
+  log_info "Using token from MCP_AGENT_MAIL_TOKEN env var"
+fi
+
+# 2. Check mcp_agent_mail .env file
+ENV_FILE_EXISTS=false
+if [[ -z "${TOKEN}" && -f "${MCP_AGENT_MAIL_DIR}/.env" ]]; then
+  ENV_FILE_EXISTS=true
+  # Strip quotes and whitespace from token value
+  TOKEN=$(grep -E '^HTTP_BEARER_TOKEN=' "${MCP_AGENT_MAIL_DIR}/.env" 2>/dev/null \
+    | sed 's/^HTTP_BEARER_TOKEN=//' \
+    | tr -d '"'"'" \
+    | tr -d '[:space:]' || true)
+  if [[ -n "${TOKEN}" ]]; then
+    log_info "Using token from ${MCP_AGENT_MAIL_DIR}/.env"
+  fi
+fi
+
+# 3. Check existing ~/.claude.json config
+if [[ -z "${TOKEN}" && -f "${HOME}/.claude.json" ]]; then
+  if [[ "${ENV_FILE_EXISTS}" == "true" ]]; then
+    log_warn "No HTTP_BEARER_TOKEN found in ${MCP_AGENT_MAIL_DIR}/.env"
+  else
+    log_warn "${MCP_AGENT_MAIL_DIR}/.env not found"
+  fi
+  log_warn "Looking in ~/.claude.json..."
+  TOKEN=$(grep -o '"Authorization": "Bearer [^"]*"' "${HOME}/.claude.json" 2>/dev/null \
+    | head -1 \
+    | sed 's/.*Bearer //' \
+    | tr -d '"' || true)
+  if [[ -n "${TOKEN}" ]]; then
+    log_info "Using token from ~/.claude.json"
+  fi
+fi
+
+# Fail if no token found
+if [[ -z "${TOKEN}" ]]; then
+  log_err "Could not find bearer token."
+  log_err "Options:"
+  log_err " 1. Set MCP_AGENT_MAIL_TOKEN env var"
+  log_err " 2. Ensure ${MCP_AGENT_MAIL_DIR}/.env has HTTP_BEARER_TOKEN=..."
+  log_err " 3. Run the full installer: curl -fsSL https://t.co/l05IgC4vbS | bash -s -- --yes"
+  exit 1
+fi
+
+# Display token (safely handle short tokens)
+if [[ ${#TOKEN} -ge 16 ]]; then
+  log_ok "Found bearer token: ${TOKEN:0:8}...${TOKEN: -8}"
+else
+  log_ok "Found bearer token: ${TOKEN:0:4}..."
+fi
+
+# Remove existing servers first (ignore errors if they don't exist)
+log_info "Removing existing MCP server configs..."
+claude mcp remove mcp-agent-mail --scope "${SCOPE}" 2>/dev/null || true
+claude mcp remove morph-mcp --scope "${SCOPE}" 2>/dev/null || true
+
+# Add mcp-agent-mail (HTTP transport with auth header)
+log_info "Adding mcp-agent-mail server..."
+if claude mcp add mcp-agent-mail "${MCP_URL}" \
+  --transport http \
+  --header "Authorization: Bearer ${TOKEN}" \
+  --scope "${SCOPE}"; then
+  log_ok "mcp-agent-mail added successfully"
+else
+  log_err "Failed to add mcp-agent-mail"
+  exit 1
+fi
+
+# Add morph-mcp (stdio transport with npx)
+log_info "Adding morph-mcp server..."
+if claude mcp add morph-mcp \
+  -e "MORPH_API_KEY=${MORPH_API_KEY}" \
+  -e "ENABLED_TOOLS=warp_grep" \
+  --scope "${SCOPE}" \
+  -- npx -y @morphllm/morphmcp; then
+  log_ok "morph-mcp added successfully"
+else
+  log_err "Failed to add morph-mcp"
+  exit 1
+fi
+
+echo
+log_info "Verifying MCP server configuration..."
+claude mcp list 2>&1 || true
+
+echo
+echo "═══════════════════════════════════════════════════════════════"
+log_ok "Claude Code MCP configuration restored!"
+echo "═══════════════════════════════════════════════════════════════"
+
+# Install/update Destructive Command Guard (installer auto-configures hooks)
+echo
+log_info "Installing/updating Destructive Command Guard..."
+if curl -fsSL "https://t.co/xpxR6kh6qO +%s)" | bash -s -- --easy-mode; then
+  log_ok "Destructive Command Guard setup complete"
+fi

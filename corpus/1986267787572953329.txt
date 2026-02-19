@@ -1,0 +1,21 @@
+2025-11-06 | 83 likes
+
+For my mcp agent mail project, I wanted to make a way to easily share the agent mailbox used by my coding agents for a real project so that people could really see in detail how it works, since screenshots only show so much.
+
+I've been working for a couple of days on a commercial "companion app" for the project and previously shared my workflow for that using 7 concurrent codex instances working as a team. 
+
+After many hours of work, they've now exchanged over 1,000 agent messages, so I decided to use that as an extreme example.
+
+You can see the actual inbox for all the agents at the following link, which is a static site hosted on GitHub pages without using a traditional server:
+
+https://t.co/ZAbCMtFym0
+
+It uses a WebAssembly version of SQLite and is pretty performant despite running completely in the browser. I also added a very easy-to-use command to the project so anyone can "export and share" their agent mailbox and automatically deploy it to GitHub using the gh utility (or Cloudflare pages). See the screenshots below for how that flow works.
+
+The "share" viewer matches the look and feel of the built-in python web UI and fully supports filtering, sorting, searching, and a nice "message thread" mode similar to the Gmail interface. And it's easy to update an existing mailbox share as your agents send more messages. 
+
+It's useful on its own, but the real reason I added this feature was to show off the system when it's used in a real project, following the workflow I previously shared, where you use a detailed development plan and also have the agents use Steve Yegge's Beads project for task management. 
+
+If you go through the actual sample messages at the link above, you can get a very good sense for how well the system works. The agents just figure things out and instantly know how to communicate effectively and self-organize to solve problems cooperatively.
+
+It takes just a couple minutes to set the system up on your machine using the one-line install command (see next tweet). Give it a shot and you will feel the AGI as your agents suddenly turn into a little development shop or startup team working for you.

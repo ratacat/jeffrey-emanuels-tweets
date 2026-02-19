@@ -1,0 +1,5 @@
+2026-01-20 | 52 likes
+
+Life can get pretty confusing for a coding agent when its presiding over an empire of 39 worker agents (i.e., full Claude Code, Codex, and Gemini-cli instances implementing tasks across 13 different projects) and also 13 middle-manager bots (i.e., Claude Code instances that are themselves in charge of their "platoons" of 3 workers).
+
+At ease, soldier. 🪖🫡

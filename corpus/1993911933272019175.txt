@@ -1,0 +1,47 @@
+2025-11-27 | 530 likes
+
+I'm a huge fan of Steve Yegge's great beads project, which is a task management system for use by coding agents. 
+
+In fact, I probably type or paste the string "beads" 500+ times a day nowadays across all my coding agent sessions (I'm juggling like 10 projects at the same time now, which you'll start to see soon as I finish and release them in the coming days and weeks.)
+
+I'm usually having GPT-5 Pro make plans to my specifications and iterate on them a bunch of times, usually with help from Opus 4.5, Grok 4.1, and Gemini 3. Then I tell codex or Claude Code to take the plan and turn it into beads for me. Or as I usually say it in my pasted in blurb,
+
+"OK, so please take ALL of that and elaborate on it more and then create a comprehensive and granular set of beads for all this with tasks, subtasks, and dependency structure overlaid, with detailed comments so that the whole thing is totally self-contained and self-documenting (including relevant background, reasoning/justification, considerations, etc.-- anything we'd want our "future self" to know about the goals and intentions and thought process and how it serves the overarching goals of the project.)"
+
+Anyway, this morning I wished I had a better way to just browse the beads and see what's going on with them. And sure, I get it, beads aren't for me as a human, they're for the agents.
+
+But I'm using them so much that it would be helpful for me to also have a way to interact and view and browse them. 
+
+Plus I had an idea that there was additional useful information lurking in the "graph" of beads of a sufficiently complex project comprising enough beads across various epics with lots of dependency structure on top. 
+
+So I started making beads_viewer (bv for short) this morning while I worked on 5 other projects concurrently, and I'm pleased to say that it's already pretty amazingly polished, full-featured, and useful. You can get it here:
+
+https://t.co/zkzAuA9hBx
+
+All written in highly performant Golang (a language I only started using again recently, with the system monitor program I also released this morning).
+
+You run the one-liner curl bash installer (see the README in the repo linked below) and then you can go into any project folder where you're using beads and simply type bv to open it. 
+
+The interface is pretty straightforward; press F1 to see the available commands. Try pressing the "i" key for insights, "g" for graph, "b" for a kanban board, "/" for a fuzzy search across beads in the main view, etc. 
+
+I do some cool graph theoretic calculations on the beads graph structure to extract some interesting insights. 
+
+And as a tool for use with beads, I'd be remiss if I didn't make sure that my AI robot brethren also enjoyed using it, so I added a mode just for them that is easy and useful for them. 
+
+To get your agents to use it, simply drop this blurb into your AGENTS dot md or CLAUDE dot md file:
+
+```
+### Using bv as an AI sidecar
+
+  bv is a fast terminal UI for Beads projects (.beads/beads.jsonl). It renders lists/details and precomputes dependency metrics (PageRank, critical path, cycles, etc.) so you instantly see blockers and execution order. For agents, it’s a graph sidecar: instead of parsing JSONL or risking hallucinated traversal, call the robot flags to get deterministic, dependency-aware outputs.
+
+  - bv --robot-help — shows all AI-facing commands.
+  - bv --robot-insights — JSON graph metrics (PageRank, betweenness, HITS, critical path, cycles) with top-N summaries for quick triage.
+  - bv --robot-plan — JSON execution plan: parallel tracks, items per track, and unblocks lists showing what each item frees up.
+  - bv --robot-priority — JSON priority recommendations with reasoning and confidence.
+  - bv --robot-recipes — list recipes (default, actionable, blocked, etc.); apply via bv --recipe <name> to pre-filter/sort before other flags.
+  - bv --robot-diff --diff-since <commit|date> — JSON diff of issue changes, new/closed items, and cycles introduced/resolved.
+
+  Use these commands instead of hand-rolling graph logic; bv already computes the hard parts so agents can act safely and quickly.
+```
+Anyway, I hope you (and my new friend Steve Yegge, whom I haven't even told about this yet since I just whipped it up today!) like it.

@@ -1,0 +1,3 @@
+2025-11-19 | 179 likes
+
+Don’t listen to any of the naysayers, Gemini 3 is extremely good at all sorts of coding tasks. Everything from UI for web apps, iOS development in Swift, backend code in Python, anything having to do with AI/ML, etc. It’s really strong and good at following rules and using tools.

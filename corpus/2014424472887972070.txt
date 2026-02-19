@@ -1,0 +1,3 @@
+2026-01-22 | 16 likes
+
+Probably time for me to revisit this now that I have a whole approach worked out for knowledge distillation and operationalizing that I used to turn Sydney Brenner's 90k words of transcripts into https://t.co/OAGg7S8T1t . Anyone know how to get access to Lemelson's notebooks?

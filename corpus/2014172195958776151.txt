@@ -1,0 +1,3 @@
+2026-01-22 | 96 likes
+
+OK, this is just fun. I'm experimenting with working on all 31 of my active projects at the same time with one Claude Code and One Codex, communicating with each other intra-project via Agent Mail. And, aside from the occasional OpenAI rate limiting error, it works! Cruising now. https://t.co/3V8boepJ7w

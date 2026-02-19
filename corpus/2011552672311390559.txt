@@ -1,0 +1,3 @@
+2026-01-14 | 11 likes
+
+I'll write a post about it soon, I just want to make a few more changes and finish a couple features (like renaming the unfortunately named "telemetry" feature, which is actually just a local history of attempted commands). I've been dogfooding it out of necessity, though!

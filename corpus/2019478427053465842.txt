@@ -1,0 +1,9 @@
+2026-02-05 | 23 likes
+
+I’ll probably finish the Rust Agent Mail port today, and it will be so much faster and better than the current Python version (which is already quite good). 
+
+I waited to do this because I first had to port the fastmcp and sqlmodel Python libraries to Rust, which are fairly complex.
+
+And I also wanted to finish my asupersync library and FrankenTUI so I could use those for everything. But now that all those pieces are in place, it’s coming along very quickly.
+
+Then right after that will be my FrankenCode. And then I can start merging tools (I’ll always also keep them separate and modular) into one super tool, all in “alien artifact” Rust.

@@ -1,0 +1,3 @@
+2026-02-02 | 44 likes
+
+This is why I’m making FrankenTUI. There’s a better way to do all this. An optimal way that balances performance, flexibility, native scrollback, visual appeal, developer ergonomics, memory footprint, io footprint, etc. Batteries included but minimal, modular kernel. Give me 1 wk

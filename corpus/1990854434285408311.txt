@@ -1,0 +1,5 @@
+2025-11-18 | 67 likes
+
+Yeah, it was inevitable. The idea works too well for people to sleep on it. It’s my new standard workflow.
+
+I’m hopeful that my platform/model agnostic approach and full open-source (and good code design) will still allow me to win mindshare.

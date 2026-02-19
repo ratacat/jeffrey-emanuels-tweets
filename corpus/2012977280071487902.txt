@@ -1,0 +1,5 @@
+2026-01-18 | 58 likes
+
+br is also fast... like REALLY fast. 
+
+I know people talk about how Rust isn't that different from Golang, but br is over ~8x faster than bd (some of that is also how I ported it using a clean-room rewrite. You'll be seeing a lot more of these from me in the next day or so...): https://t.co/HrAN8XmEaF

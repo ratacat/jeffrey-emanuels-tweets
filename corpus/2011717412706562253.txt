@@ -1,0 +1,93 @@
+2026-01-15 | 58 likes
+
+After days of planning and 12+ rounds of iterative GPT Pro plan revisions (I even created a new tool called apr just for automating this laborious process), my specifications are done, my beads are created and polished.
+
+It's time to build. Claude is mighty impressed by my Flywheel Connector Protocol, just sayin' (it probably realizes that it could never have done it on its own, since it also took GPT 5.2 and zillions of tokens and hours of compute to produce this alien artifact):
+
+---
+
+The Core Vision: FCP V2
+
+FCP is fundamentally a trust inversion protocol. Traditional systems assume a central coordinator (hub, server, cloud) that grants trust downward. FCP inverts this: every device IS the hub. Trust flows from cryptographic proof, not location or network position.
+
+The Three Axioms Are Non-Negotiable
+
+Universal Fungibility 
+
+– Any 'K' symbols reconstruct the object. This isn't just erasure coding for reliability—it's a fundamental statement that data has no canonical home. Objects exist in the mesh, not on a device.
+
+Authenticated Mesh
+
+ – Tailscale isn't just transport, it's Identity. The unforgeable WireGuard public key becomes the device's soul. No certificates, no PKI hierarchies, no renewal dance.
+
+Explicit Authority 
+
+– Every action requires a capability token with mechanical verification. No ambient authority, no "admin node," no escape hatches.
+
+Zones Are About Trust Boundaries, Not Storage
+
+The zone model (owner -> private -> work -> community -> public) creates cryptographic isolation. 
+
+The key insight: zones define who can prove they belong, not where data lives. A symbol can exist on any device, but only zone members can decrypt the payload.
+
+The integrity/confidentiality matrix is clever:
+
+owner: Only you can read OR write
+
+private: Your devices can read; you alone write
+
+work/community: Shared read; verified member write
+
+public: Anyone reads; verified origin only
+
+Capability Tokens Are Mechanical, Not Policy
+
+The grant_object_ids field forces specificity. A token doesn't say "can access files"—it says "can access object abc123 with operations [Read, Fetch]". This makes authorization:
+
+Auditable (every access traces to a token)
+
+Revocable (revoke the token, revoke all derived access)
+
+Composable (tokens can delegate subsets of their grants)
+
+The SafetyTier hierarchy (Safe -> Risky -> Dangerous -> Critical) with escalating quorum requirements means high-risk operations require distributed consent—no single compromised device can authorize destruction.
+
+Threshold Secrets Are The Crown Jewel
+
+Shamir's k-of-n for secrets, FROST for the owner key. 
+
+The profound implication: secrets never exist complete on any device, ever. Your owner key—the root of all trust—is split across your device fleet. Even seizing all your devices doesn't compromise the key unless k of them are powered on and cooperating.
+
+This is defense-in-depth at the mathematical layer, not the policy layer.
+
+How The Pieces Fit
+
+README dot md (architectural intent)
+↓ implemented by
+FCP_Specification_V2.md (normative protocol)
+↓ built according to
+AGENTS dot md (development constraints)
+
+AGENTS dot md is the practical envelope. The "no destructive operations" rule, the performance targets (<50ms cold start, <1ms latency), the Rust 2024 + forbid(unsafe_code) requirement—these aren't arbitrary. They enforce:
+
+Determinism: Agents can't accidentally corrupt the mesh
+Performance: The protocol must be viable on constrained devices (phones, embedded)
+Safety: Rust's guarantees match the protocol's trust model
+
+The beads workflow integration means work on FCP is itself tracked with dependency-aware issue management—the project practices what it preaches about explicit, auditable state.
+
+What This All Means
+
+FCP V2 is building a world where:
+
+Your AI assistants work for you, provably. Connectors are sandboxed, capability-gated, and audit-logged. 
+
+You don't trust the connector; you trust the math.
+
+Your data survives any single point of failure. Symbol fungibility + threshold secrets = no device is critical.
+
+Revocation actually works. Not "trust us, we'll stop using it" but "the capability token is in the revocation set, fetch denied."
+
+The mesh is the computer. Not metaphorically—literally. Objects, capabilities, and secrets span devices. The "device" is just a viewport into the mesh.
+
+This is an ambitious protocol. The specification's 5000+ lines aren't bloat—they're the necessary precision to make these guarantees mechanical rather than promissory.

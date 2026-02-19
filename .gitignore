@@ -1,3 +1,9 @@
 *.db-journal
-*.json
 .DS_Store
+tweets_raw.json
+apify_raw.json
+frankensearch/
+frankensqlite/
+frankentui/
+fast_cmaes/
+asupersync/

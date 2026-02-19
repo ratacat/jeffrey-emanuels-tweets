@@ -1,0 +1,5 @@
+2025-09-30 | 3 likes
+
+Whereas when I ask Sonnet to do that, it goes full out, pushing itself to the limit to really check everything again.
+
+And it wants to please. Even if it didn’t find a problem in the code you asked it to check, if it saw something else concerning during that check, it’ll tell you

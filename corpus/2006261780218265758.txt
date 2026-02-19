@@ -1,0 +1,5 @@
+2025-12-31 | 650 likes
+
+Blows my mind how many people still don’t know about my Agent Mail project and how it does exactly what they want and much more, while sidestepping all the many footguns that a naive implementation would fall prey to.
+
+It’s a true game changer combined with beads and bv. Try it! https://t.co/WMs19tmJfX

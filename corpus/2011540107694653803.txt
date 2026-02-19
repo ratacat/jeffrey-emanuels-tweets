@@ -1,0 +1,13 @@
+2026-01-14 | 7 likes
+
+The Splunk salesperson was just laughably overconfident and immovable on price, and they were asking for an insane, indefensible increase. I remember being shocked and angry about it.
+
+It didn’t help that I already took a dim view of their software and website (ok, I thought it sucked ass). 
+
+It was so awesome telling them that we were done and seeing them try to retreat, with increasing desperation. 
+
+“Oh, jump on another Zoom? I thought you said you couldn’t move on the price? Nah, I’m good. How does $0.00/year sound? That’s where I am now, but thanks.”
+
+When the variable cost of another user of your saas product approaches zero (just the s3 storage costs and a tiny bit of compute), you should be grateful for each customer and never gouge them. 
+
+Now, when it’s easy to replicate most services (particularly the 5% of the features that most users even use or derive value from) in a couple days with coding agents, it’s basically suicidal.

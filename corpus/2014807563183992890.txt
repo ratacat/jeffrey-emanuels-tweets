@@ -1,0 +1,23 @@
+2026-01-23 | 74 likes
+
+Agent coding life hack:
+
+Just spent a bunch of time giving detailed instructions to Claude Code with Opus 4.5? 
+
+Get more leverage out of it by using this template with Codex and GPT 5.2 xHigh:
+
+---
+
+Now, I just asked another agent (Claude Code Opus 4.5) to do the following: 
+
+```
+<REPLACE_THIS: paste whatever you told CC to do for you; wait for it to finish or at least make some solid progress. This can be planning-related tasks where the outputs are beads or tangible coding tasks with new code deliverables or revisions to existing code>
+```
+
+NOTE: I already asked another agent to do this previously, so make sure you don't duplicate or create overlapping work or create redundant beads; instead, try to improve, enhance, and expand on what the other agent did already in terms of beads they created or work they did in the form of new code or revisions to existing code (check the commit history and beads history with bv)
+
+---
+
+You might be surprised how useful it can be to get a second set of eyes on everything. 
+
+And doing it in this way really only takes a few seconds to kick off. I do this like 50 times a day now. Try it!

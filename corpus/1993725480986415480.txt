@@ -1,0 +1,25 @@
+2025-11-26 | 160 likes
+
+Even though I have a super fast computer, I kept finding myself frustrated by my whole machine feeling unresponsive, with stuttering mouse and keyboard, because certain tasks would launch a bunch of intense processes all at once and pin every CPU at near 100% utilization.
+
+For example, I often have 10 projects open in Cursor in WSL mode under Windows 11. When Cursor would update and restart, all of those processes starting up all at the same time would crush my machine.
+
+Or I'll be working on various projects at the same time, and suddenly one of the agents would try to compile some big Rust codebase, and next thing you know, my mouse is stuttering, which drives me nuts. 
+
+I finally got sick and tired of it and decided to do something about it. There are some existing packages that did much of what I wanted, particularly ananicy, but I wanted something that just handled all the configuration for me automatically to solve the specific problems I was facing.
+
+Basically, the way this works is that it detects a process using way too much CPU and then changes the priority level (how "nice" it is in Unix parlance) to lower it and restore responsiveness to your machine.
+
+It also can do the same thing for processes that are killing your I/O with a zillion open file handles and tons of I/O usage using "ionice." 
+
+I really wanted something that just did it all in terms of installation, config, persistence, etc. with a one-liner installation that "just worked." This is depicted in the first screenshot below.
+
+And while I was doing this, I decided to make a system monitor in Golang called sysmon that has a really slick terminal interface (see second and third screenshots below). This ironically turned into a much bigger project on its own, but I'm keeping it as part of this combined system anyway.
+
+It's sort of like htop or btop but focused exclusively on identifying misbehaving programs/processes that are killing your system performance. It shows you the worst offenders, and also takes I/O into account. 
+
+There are some special mini commands for Cursor and Cargo, since those caused me the most issues. 
+
+Anyway, take a look and let me know what you think. The whole thing is fully open-source and MIT licensed and can be found here:
+
+https://t.co/rvq9qVwyeV

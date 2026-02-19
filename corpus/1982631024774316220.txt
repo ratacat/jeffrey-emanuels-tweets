@@ -1,0 +1,25 @@
+2025-10-27 | 1068 likes
+
+I finally got around to making a tool I've wanted for a long time: you can basically think of it as being "like Gmail for coding agents."
+
+If you've ever tried to use a bunch of instances of Claude Code or Codex at once across the same project, you've probably noticed how annoying it can be when they freak out about the other agent changing the files they're working on.
+
+Then they start doing annoying things, like restoring files from git, in the process wiping out another agent's work without a backup.  
+
+Or if you've tried to have agents coordinate on two separate repos, like a Python backend and a Nextjs frontend for the same project, you may have found yourself acting as the go-between and liaison between two or three different agents, passing messages between them or having them communicate by means of markdown files or some other workaround.
+
+I always knew there had to be a better way. But it's hard to get the big providers to offer something like that in a way that's universal, because Anthropic doesn't want to integrate with OpenAI's competitive coding tool, and neither wants to deal with Cursor or Gemini-CLI.  
+
+So a few days ago, I started working on it, and it's now ready to share with the world. Introducing the 100% open-source MCP Agent Mail tool. This can be set up very quickly and easily on your machine and automatically detects all the most common coding agents and configures everything for you.
+
+I also include a ready-made blurb (see the README file in the repo, link in the next tweet) that you can add to your existing AGENTS dot md or CLAUDE dot md file to help the agents better leverage the system straight out of the gate.  
+
+It's almost comical how quickly the agents take to this system like a fish to water. They seem to relish in it, sending very detailed messages to each other just like humans do, and start coordinating in a natural, powerful way. They even give each other good ideas and pushback on bad ideas. They can also reserve access to certain files to avoid the "too many cooks" problems associated with having too many agents all working on the same project at the same time, all without dealing with git worktrees and "merge hell."
+
+This also introduces a natural and powerful way to do something I've also long wanted, which is to automatically have multiple different frontier models working together in a collaborative, complementary way without me needing to be in the middle coordinating everything like a parent setting up playdates for their kids. 
+
+And for the human in the loop, I made a really slick web frontend that you can view and see all the messages your agents are sending each other in a nice, Gmail-like interface, so you can monitor the process. You can even send a special message to some or all your agents as the "Human Overseer" to give them a directive (of course, you can also just type that in manually into each coding agent, too.)
+
+I made this for myself and know that I'm going to be getting a ton of usage out of it going forward. It really lets you unleash a massive number of agents using a bunch of different tools/models, and they just naturally coordinate and work with each other without stepping on each other's toes. It lets you as the human overseer relax a bit more as you no longer have to be the one responsible for coordinating things, and also because the agents watch each other and push back when they see mistakes and errors happening. Obviously, the greater the variety of models and agent tools you use, the more valuable that emergent peer review process will be.
+
+Anyway, give it a try and let me know what you think. I'm sure there are a bunch of bugs that I'll have to iron out over the next couple days, but I've already been productively using it today to work on another project and it is pretty amazingly functional already!

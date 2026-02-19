@@ -1,0 +1,3 @@
+2026-01-02 | 4 likes
+
+@Steve_Yegge All of sudden, you’ve made it trivial to parcel out discrete, bite-sized work units that can easily fit in the agent’s context window, even with mcp tool docs and a massive AGENTS dot md file, and also usually leaves room for one or two rounds of review of the changed code.

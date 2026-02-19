@@ -1,0 +1,33 @@
+2026-01-05 | 258 likes
+
+OK, I'm normally in such a rabbit hole of my own crazy schemes, so I finally got around to installing and setting up @steipete 's Clawdbot project, which I have like 20+ different X bookmarks for because I've been meaning to try it for so long.
+
+And, wow. This is so unbelievably cool. Of course, I simply cloned the repo and had my buddy Claude Opus install and configure it all for me, which was very easy. 
+
+Then I started going a little wild adding more and more integrations to it, many of which are included out of the box using various other utilities that Peter has made in his prodigious bursts of creation these past few months.
+
+But then I started inquiring about other things for which there were no integrations, like Cloudflare's wrangler utility, or the vercel cli. And it turns out that it's incredibly easy to add new skills to Clawdbot, so I started doing just that. 
+
+Then I realized I could teach Clawdbot about all of my Agent Flywheel tools like cass and bv, and then some of my other random new tools like giil. I made a repo with all that stuff you can see here:
+
+https://t.co/3KoXwIuQUf
+
+But the thing I'm most excited about is that Clawdbot is THE perfect use case for this "acip" idea I've been thinking about for the past year:
+
+https://t.co/hKABLkavor
+
+That stands for "Advanced Cognitive Inoculation Prompt" and it's basically the idea that you can reduce the attack surface and make a system a lot more robust to most prompt injection attacks through prompting, at least compared to a naive system without anything like that.
+
+Obviously any system like that is intrinsically flawed, but dismissing it feels to me like saying you shouldn't even bother to lock your front door when you go on vacation because someone could pick the lock. Sure, but it doesn't hurt, doesn't cost much to do, and reduces the chances of some casual intruder getting in and robbing you.
+
+Anyway, I first created that 9 months ago, and models have gotten a lot better since then. So I went to work with GPT Pro 5.2 in the web app and also Opus 4.5 to revise and enhance the ACIP prompt itself. You can see in the readme file all the changes that were made and why.
+
+ACIP is just English text, not code, so anyone could read it and hopefully understand how it works. And even though it has obvious shortcomings (a robust defense requires something external to the main model, like a second, independent "audit model" that is checking everything over before sending it to the main model; I discuss many of the problems that come up in this sort of thing in this article I wrote ~2 years ago: https://t.co/V5od2x9ZG4 )
+
+But as I said in the quoted post, I feel like the time has finally come for ACIP, because now users like me are voluntarily hooking up LLMs to highly sensitive parts of their life, like emails, iMessage, Telegram, etc. And what's different now is also that Clawdbot can be accessed remotely via Telegram and other methods. 
+
+Sure, I have my Telegram integration locked down to just me, but one could imagine various scary security situations where an unauthorized attacker could be communicating with an LLM-based agent that has full rein of my computer but also my entire digital life. 
+
+And you want that agent to have a high degree of mental fortitude, and not fold like a cheap lawn chair as soon as some slick character comes along and does some social engineering attack, or tries to use role play or stories or any number of creative and clever techniques designed to trip up and fool our robot brethren.
+
+Anyway, in the acip readme you will find a curl bash one-liner that sets it up with Clawdbot to protect you. It uses more tokens and increases latency somewhat, but I think it's worth it given how much chaos could conceivably be caused by a fully set up Clawdbot getting hijacked by an attacker.

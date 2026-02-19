@@ -1,0 +1,15 @@
+2025-12-14 | 168 likes
+
+I’m getting more and more convinced that the Unix tool approach of having a bunch of focused, composable functional units that can be used in isolation or as part of a larger pipeline is also the best approach for tooling for coding agents.
+
+The problem with trying to make a big unified system that does everything is that people have their own workflows and ways of doing development, and it’s usually too hard to try to make a one-size-fits-all project that can accommodate that without it turning into sprawling complexity that doesn’t work well in practice.
+
+So I have one tool for agent mail, one tool for task management (Steve Yegge’s beads), one tool for task selection (bv), one tool for past history search (cass), one tool for polyglot linting and bug-catching (ubs), one for sensitive command handling (slb), one for managing tmux and agent sessions (ntm), one for memory (csm), etc. 
+
+And you can use one of them, some of them, or all of them. And they’re partially integrated with each other, but always optionally. So slb can use agent mail if you have it set up, but it also works standalone. And ntm can display info from bv but it isn’t forced.
+
+They become like little Lego blocks that you can use to build up whatever system you want, and it becomes easy to create your own little tools to add the functionality you want. 
+
+And then your AGENTS dot md file sort of becomes like an operating system where you “install” the tools in the agent’s working memory and configure them by describing how, when, and why to use them (weirdly, you now have to worry about persuading the machine to use the tools!)
+
+So you can have all your tools set up on your machine but only activate specific ones depending on the project by including just the relevant blurbs explaining the tools you want to use.

@@ -1,0 +1,19 @@
+2025-11-20 | 73 likes
+
+When you're making tools for use by AI coding agents, then you should take the feedback of those agents seriously! 
+
+As a result, for my recent UBS (Ultimate Bug Scanner) tool, after using Gemini3 via Gemini-CLI today with my tool across a range of projects, I asked it the following:
+
+"Based on your experience with UBS (Ultimate Bug Scanner) today in this project, how would you rate UBS across multiple dimensions, from 0 (worst) to 100 (best)? Was it helpful to you? Did it flag a lot of useful things that you would have missed otherwise? Did the issues it flagged have a good signal-to-noise ratio? What did it do well, and what was it bad at? Did you run into any errors or problems while using it? 
+
+What changes to UBS would make it work even better for you and be more useful in your development workflow? Would you recommend it to fellow coding agents? How strongly, and why or why not? The more specific you can be, and the more dimensions you can score UBS on, the more helpful it will be for me as I improve it and incorporate your feedback to make UBS even better for you in the future!"
+
+The answer is that it really liked it! The screenshots below show the result of using the UBS tool and then Gemini's review after using UBS for an iOS project (I'll include reviews in responses below for other projects I worked on on today). 
+
+Soon I will have to take out advertisements in "Agents' Home Journal" magazine saying:
+
+"The choice is clear: 9 out of 10 coding agents prefer UBS, calling it a 'Force Multiplier' and a 'Must-Have'. What are you waiting for?"
+
+But since agents currently aren't allowed to install stuff on their own, you'll need to help them out by installing UBS today using the one-liner installer:
+
+curl -fsSL https://t.co/Jaoq8u7o14 | bash

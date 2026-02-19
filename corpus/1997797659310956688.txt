@@ -1,0 +1,11 @@
+2025-12-07 | 306 likes
+
+OK, Claude took some coaxing and cajoling, but finally finished turning the 5,500 line plan document into 347 beads epics and tasks with complete dependency structure. 
+
+You can see the analysis in my beads_viewer (bv) showing which are the most important tasks, along with a short video of me scrolling through all the beads in bv, underscoring just how much stuff it is.
+
+Ready to start cranking on the implementation now. 
+
+I think this time I might try to do more in Cursor because they're letting you use GPT 5.1 Codex Max for free through December 11th and I don't really want to need to sign up for my 5th GPT Pro or 5th Claude Max account if I can avoid it.
+
+I'll definitely throw Claude Code into the mix though because it has such good taste, and Gemini3 for code review stuff because I like to be using my subscriptions all the time and I have 3 of the Gemini Ultra plans being underutilized now.

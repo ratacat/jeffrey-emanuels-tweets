@@ -1,0 +1,29 @@
+2026-01-25 | 517 likes
+
+Agent coding life hack:
+
+I’m 100% convinced that there are hundreds of thousands of developers out there who would love and use my dcg tool if they only knew about it.
+
+dcg: destructive_command_guard
+
+This is a free, open-source, highly-optimized rust program that runs using pre-tool hooks in Claude Code (CC) and checks the tool call that CC was about to make to see if it’s potentially destructive; that is, could delete data, lose work, drop tables, etc. 
+
+Get it here and install with the convenient one-liner:
+
+https://t.co/aVmEBi9WCd
+
+A tool like dcg has several competing goals that make it a careful balancing act and tough engineering problem:
+
+1. Since it runs for every single tool call, it must be FAST. Hence why it is written in Rust and an extreme amount of focus has been placed on making it as fast as possible.
+
+2. It must avoid annoying false positives that waste your time, add friction, and re-introduce you as the bottleneck unnecessarily. I run dozens of agents at once and don’t want them wasting time waiting for me unless it’s needed. Usually, the messages from dcg are enough to get the agent to be more thoughtful about what it’s doing.
+
+3. It’s not enough to just use a simple rulebook where you look for canned commands like “rm -rf /” or “git reset --hard HEAD.” The models are very resourceful and will use ad-hoc Python or bash scripts or many other ways to get around simple-minded limitations. That’s why dcg has a very elaborate, ast-grep powered layer that kicks in when it detects an ad-hoc (“heredoc”) script. But wherever possible, it uses much faster simd optimized regex.
+
+4. A tool like this should really be expandable and have semantic knowledge of various domains and what constitutes a destructive act in those domains. For instance, if you’re working with s3 buckets on aws, you could have a highly destructive command that doesn’t look like a normal delete. That’s why dcg comes out of the box with around 50 presets which can be easily enabled based on your projects’ tech stacks (just ask CC to figure out which packs to turn on for you by analyzing your projects directory).
+
+5. dcg is designed to be very agent friendly. It doesn’t just block commands, it explains why and offers safe alternatives based on an analysis of the specific command used by the agent. For instance, it might stop the agent from deleting your Rust project’s build directories but suggest using “cargo clean” instead. Often, these messages are enough to knock sense into Claude.
+
+I really can’t exaggerate just how much time and frustration dcg has already saved me. It should be known and used by everyone who has had these kinds of upsetting experiences with coding agents.
+
+dcg is included along with all my other tooling in my https://t.co/N4As0kJTQP project. All free, MIT licensed, with extensive tutorials and other educational resources for people with less experience. Give it a try, you won’t regret it!

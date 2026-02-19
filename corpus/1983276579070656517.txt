@@ -1,0 +1,3 @@
+2025-10-28 | 21 likes
+
+Someone asked recently how my new MCP Agent Mail project would work together with @Steve_Yegge 's "beads" project, which is a memory system for AI coding agents. I suspected they would actually be pretty complementary and synergistic, and it turns out they are: https://t.co/Z6aQx6xFRp

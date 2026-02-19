@@ -1,0 +1,7 @@
+2026-01-21 | 38 likes
+
+If you're into toon (Token-Oriented Object Notation), I made a Rust version that's... 8x to 27x faster for typical inputs, while using one eighth the memory footprint and starting up 60x faster.
+
+I turned my "Big Brain Optimizer" into a skill, and you can see its handiwork in the diff pictured below. It was already way faster than the Typescript original because of Rust, but now it's much, much faster. Get it here:
+
+https://t.co/P6m9PNJf4Y

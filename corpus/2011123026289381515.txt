@@ -1,0 +1,25 @@
+2026-01-13 | 76 likes
+
+I'm drowning in Claude Max accounts and wasting too much time swapping them when they run out of usage in the middle of a session.
+
+I made a tool called caam (coding_agent_account_manager) a few weeks ago to help with this, but have been too busy to really monitor the development process closely, and it never really solved the main problem I have to deal with (in-process sessions) and instead focused on the easy part (swapping out an auth token, which does nothing for in-progress sessions), so I just kept putting off using it.
+
+Not actively dogfooding your software is a recipe for it being useless and bad. This is just the way it is, and I should probably never share a tool until I'm actively using it myself.
+
+I know ntm suffers from this, too, and I'm sorry. I don't personally use ntm myself at the moment. I keep meaning too try it, but it basically means a new workflow or at least interface to my workflow, and that's invasive and I am loathe to do anything that hurts my momentum and velocity right now. 
+
+Anyway, I finally hit my breaking point last night amidst burgeoning carpal tunnel  and took the considerable time and energy to very carefully document the actual issues I'm facing and what precisely needs to be done and outlined some ways to deal with it. 
+
+This is an extra big sacrifice now for me when my time can be leveraged so much more directing agents, but that's how baleful this account-swapping process has become to me. 
+
+It's one of the longer prompts I've written manually recently, so I thought I'd share it here:
+
+https://t.co/IHR2EjIJia
+
+(And don't worry, I had Gemini redact the secret stuff for me.)
+
+Below my prompts are the various responses from Claude Code and its plans. 
+
+I'm hopeful I will finally get this all wrapped up today and stop wasting so much time doing auth flows and copying and pasting tokens from the browser into the terminal. 
+
+The stuff discussed there has already been committed last night and I just need to take the time to test it all out. If this automates this awful part of the process for me I will be a happy man (and my wrists will thank me).

@@ -1,0 +1,13 @@
+2025-11-09 | 14 likes
+
+So why and how does any of this work? This is the core insight behind the field of crystallography: 
+
+A crystal's diffraction pattern is the Fourier transform of its electron density.
+
+When X-rays scatter off the regularly repeating atoms in a crystal, they create a diffraction pattern of spots whose positions and intensities encode the 3D structure in reciprocal (Fourier) space. Each spot represents a specific spatial frequency component of the electron density.
+
+Then your task becomes inverting this frequency space representation to recover the real spatial structure.
+
+Here are the results of asking Claude Opus 4.1 my favorite prompt for learning about science:
+
+“What would you say is THE core insight or analytical trick of crystallography?”

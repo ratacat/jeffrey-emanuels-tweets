@@ -1,0 +1,33 @@
+2026-01-31 | 69 likes
+
+I got really interested in biology and genetics a few months ago, just for fun. You might have guessed it given my preoccupation with the work of Sydney Brenner, which became the basis of my https://t.co/pmQuptstKf project.
+
+In particular, I became very fascinated by phages, which are viruses that attack bacteria. They're the closest thing to the "fundamental particles" of biology: the minimal units of genetic code that do something useful that allows them to reproduce and spread. 
+
+They also have some incredible properties, like having a structure that somehow encodes an icosahedron.
+
+I always wondered how the DNA of these things translated into geometry in the physical world. That mapping between the "digital" realm of ACGT, which in turn maps onto the 20 amino acids in groups of 3, and the world of 3D, analog shapes, still seems magical and mysterious to me.
+
+I wanted to dig deeper into the subject, but not by reading a boring textbook. I wanted to get a sense for these phages in a tangible way. What are the different major types of phages? How do they compare to each other in terms of the length and structure of their genetic code? The physical structure they assume? 
+
+I decided to make a program to explore all this stuff in an interactive way. 
+
+And so I'm very pleased to present you with my open-source Phage Explorer:
+
+https://t.co/LJfUjgDyhp
+  
+I probably went a bit overboard, because what I ended up with has taken a sickening number of tokens to generate, and resulted in ~150k lines of Typescript and Rust/Wasm. 
+
+It implements 23 analysis algorithms, over 40 visualizations, and has the complete genetic data and 3D structure of 24 different classes of phage. 
+
+It actually took a lot of engineering to make this work well in a browser; it's a surprising amount of data (this becomes obvious when you look at some of the 3D structure models).
+
+It works fairly well on mobile, but if you want to get the full experience, I highly recommend opening it on a desktop browser in high resolution. 
+  
+As far as I know, it's the most complete informational / educational software about phages available anywhere. Now, I am the first to admit that I'm NOT an expert, or even that knowledgeable, about, well, ANY of this stuff. 
+
+But I do know that a bunch of biology PhDs follow me, so please, take a look and let me know what you think of what I've made! And if I've gotten anything wrong, please let me know in the GitHub Issues and I'll fix it:
+
+https://t.co/sDSRcciXKM
+
+I want this to become THE resource that teachers and professors refer their students to.

@@ -1,0 +1,3 @@
+2026-01-08 | 58 likes
+
+Gemini-cli is just a totally unusable, buggy piece of junk now. Literally cannot use it for more than 30 minutes without it crashing, breaking, getting stuck in a loop, not working because of "high demand," etc. At this point, I think Google should just abandon it and fork codex.

@@ -1,0 +1,3 @@
+2025-10-26 | 1 likes
+
+The biggest benefit is that you won’t fill up your agent’s context window as quickly, giving you more interactions and tool calls before needing to compact/summarize context. But it’s also faster for the model to read and understand the outputs. Lower latency, lower cost, etc.

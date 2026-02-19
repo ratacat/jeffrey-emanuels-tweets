@@ -1,0 +1,55 @@
+2026-01-02 | 69 likes
+
+I realized I should have posted how to actually do this. Here is the what I put in my ~/.zshrc file for Ghostty (anonymized for sharing); I will post the WezTerm version below since it's way longer:
+
+---
+
+# Ghostty-themed SSH functions (auto-reset on exit)
+
+# machine_01: dark purple + violet accents
+machine_01() {
+  printf '\e]11;#1a0d1a\a'   # bg: deep purple-black
+  printf '\e]10;#e8d4f8\a'   # fg: lavender
+  printf '\e]12;#bb9af7\a'   # cursor: soft violet
+  printf '\e]4;5;#c792ea\a'  # magenta: orchid
+  printf '\e]4;4;#7c3aed\a'  # blue: purple
+  printf '\e]4;6;#a78bfa\a'  # cyan: violet
+  ssh ubuntu@192.168.1.101 "$@"
+  printf '\e]111\a\e]110\a\e]112\a\e]104\a'
+}
+
+# machine_02: dark amber + warm accents
+machine_02() {
+  printf '\e]11;#1a0f05\a'   # bg: dark brown
+  printf '\e]10;#f8e4d4\a'   # fg: warm cream
+  printf '\e]12;#e0af68\a'   # cursor: amber
+  printf '\e]4;3;#ffc777\a'  # yellow: golden
+  printf '\e]4;1;#ff9e64\a'  # red: orange
+  printf '\e]4;5;#d19a66\a'  # magenta: bronze
+  ssh ubuntu@192.168.1.102 "$@"
+  printf '\e]111\a\e]110\a\e]112\a\e]104\a'
+}
+
+# machine_03: dark emerald + mint accents
+machine_03() {
+  printf '\e]11;#0a1a0f\a'   # bg: deep forest
+  printf '\e]10;#d4f8e4\a'   # fg: mint
+  printf '\e]12;#50fa7b\a'   # cursor: bright green
+  printf '\e]4;2;#9ece6a\a'  # green: lime
+  printf '\e]4;6;#2dd4bf\a'  # cyan: teal
+  printf '\e]4;4;#34d399\a'  # blue: emerald
+  ssh ubuntu@192.168.1.103 "$@"
+  printf '\e]111\a\e]110\a\e]112\a\e]104\a'
+}
+
+# machine_04: dark crimson + coral accents
+machine_04() {
+  printf '\e]11;#1a0a0a\a'   # bg: deep crimson-black
+  printf '\e]10;#f8d4d4\a'   # fg: soft rose
+  printf '\e]12;#ff6b6b\a'   # cursor: bright coral
+  printf '\e]4;1;#f7768e\a'  # red: soft coral
+  printf '\e]4;5;#ff79c6\a'  # magenta: hot pink
+  printf '\e]4;3;#fca5a5\a'  # yellow: salmon
+  ssh ubuntu@192.168.1.104 "$@"
+  printf '\e]111\a\e]110\a\e]112\a\e]104\a'
+}

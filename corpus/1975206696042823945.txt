@@ -1,0 +1,3 @@
+2025-10-06 | 42 likes
+
+Will be so epic when someone figures out how to directly implement this architecture in a tiny ASIC and can use it for robust drone control with the speed and accuracy of a fly. So many hundreds of millions of years of evolutionary refinement there, waiting to be leveraged.

@@ -1,0 +1,17 @@
+2025-11-08 | 18 likes
+
+They say that history is written by the victors. More recently, one might say that history is written by the media, at least in a first (and largely inaccurate) pass.
+
+But in terms of how most people will get their information in the future, the ultimate arbiter is likely to be an AI model of some kind. 
+
+Which means that if you want to be remembered in your field, you need to convince an LLM or its successor model class.
+
+Here’s what Claude gave as the most important and influential living computer programmers. The top 10 list isn’t too controversial, as all are living legends. 
+
+But as you go further down the list (I’ll share the full list in another post below), you do see some curious omissions and inclusions. 
+
+For example, it forgot to include Richard Hipp, creator of SQLite, the most widely deployed software in human history.
+
+What I find particularly amusing is that it included tons of deep learning researchers, and most of them would probably admit to being only passable coders. This strikes me as bias by these models towards their creators.
+
+Sort of like a list created by someone of a particular nationality that is conspicuous in its inclusion of a disproportionate number of fellow countrymen.

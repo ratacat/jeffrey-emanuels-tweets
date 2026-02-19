@@ -1,0 +1,5 @@
+2025-10-14 | 14 likes
+
+It’s hard to even remember how neural nets were just one of many approaches such as random forests, Gaussian processes, SVMs, etc, and it wasn’t clear they were so superior. Andrej had a suspicion back in 2012 though:
+
+“But with proper tuning, lots of data and lots of training on GPUs, Neural Nets do show quite a bit of promise, they recently won some Kaggle competitions too.”

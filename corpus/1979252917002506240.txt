@@ -1,0 +1,23 @@
+2025-10-17 | 35 likes
+
+Claude Opus 4.1 is the most incredible tutor for self-directed learning. Because it's really N tutors at once.
+
+To replicate the conversation I just had (excerpts shown in screenshots) with actual human tutors, you would likely need to recruit university professors or the equivalent in:
+
+1) History/Philosophy, to know random biographical details of Friedrich Heinrich Jacobi (who popularized the concept of nihilism).
+
+2) History of Science, to know details of Carl Gustav Jacob Jacobi (the great mathematician) and his work and life.
+
+3) Physics/Math, to actually be able to explain CGJ Jacobi's work in detail (and it's questionable whether most could really explain it as nicely and clearly as Claude did here).
+
+Plus a skilled frontend developer to work with the physics/math prof to create the slick visualization of the Hamilton-Jacobi Transformation applied to a pendulum. 
+
+Basically, unless you're a centimillionaire or billionaire with scores of academics on call to tutor you, you would have a tough time learning this stuff in an interactive way like this, where you can simply ask questions and get perfectly tailored responses, with human interlocutors.
+
+Or you can pay $20/month for access to Claude.
+
+I have random, wandering conversations like this on a daily basis, where I start with one random question and then keep going as I think of other things I want to understand better.
+
+Five years ago, this resulted in a dozen or more Wikipedia tabs open in Chrome as I went down random paths. But this is far more engaging and interactive because it's an actual discussion that you're a participant in.
+
+Links to the full conversation and web app in the responses.

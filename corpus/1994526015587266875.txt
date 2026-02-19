@@ -1,0 +1,9 @@
+2025-11-28 | 907 likes
+
+My agentic coding workflow has gotten so meta and self-referential lately.
+
+I can feel the flywheel spinner faster and faster now as my level of interaction/prompting is increasingly directed at driving my own tools. 
+
+Like this weird prompt I just used, telling Opus 4.5 to use my beads analysis tool to figure out what all its robot friends should most advantageously apply themselves to using graph theory on my hundreds of open tasks and subtasks in beads:
+
+"Re-read AGENTS dot md first. Then, can you try using bv to get some insights on what each agent should most usefully work on? Then share those insights with the other agents via agent mail and strongly suggest in your messages the optimal work for each one and explain how/why you came up with that using bv. Use ultrathink."

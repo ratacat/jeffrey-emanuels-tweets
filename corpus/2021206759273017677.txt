@@ -1,0 +1,5 @@
+2026-02-10 | 55 likes
+
+I may talk about it flippantly, but I suspect that my new glibc_rust project has the potential to be genuinely transformative for security.
+
+If you’re willing to absorb an extra &lt;200ns per call, we can transform any code into safe code, at least insofar as it interacts with libc. https://t.co/dfRTEQFzD5

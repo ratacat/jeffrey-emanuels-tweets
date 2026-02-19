@@ -1,0 +1,3 @@
+2026-01-06 | 17 likes
+
+How to best handle AGENTS dot md files if you want to use my Agent Flywheel setup:

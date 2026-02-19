@@ -1,0 +1,21 @@
+2026-01-28 | 169 likes
+
+I wanted to have a good, lightweight, and fast semantic embedding model for local search for both my cass tool (for searching across coding agent sessions) and my xf tool (for searching your downloaded X archives).
+
+Basically, it has to run on CPU only and should be fairly quick (sub-1-second response) and actually "understand" semantic concepts well.
+
+I also needed a "reranker" model for fusing together the semantic search results with the standard lexical search results to get a good hybrid search, with the same requirements for CPU-only speed. 
+
+There are so many options to choose from for both that it's a bit overwhelming if you want to pick the current all-around best ones. 
+
+So I had Claude do a bunch of web research and then conduct a "bake off". You can see what it came up with here (the whole /docs directory is filled with relevant stuff):
+
+https://t.co/Y4HTGLFYfw
+
+So what did I end up choosing in the end? The two main choices were the potion-128M model, which has sub-millisecond response time and "ok" results, and a bona fide mini transformer model, all-MiniLM-L6-v2, that has really decent embeddings but takes 128ms to respond, or 223x slower!
+
+Finally, I realized I didn't need to choose, I would have my cake and eat it, too. I asked Claude:
+
+"what about a 2-tier system where we use potion as a first pass but at the same time in the background (separate thread or memory-resident "hot" process for quick start) we do  miniLM-L6 and then when it finishes we "upgrade" the search results in an intuitive way, showing the results continuously moving to rearrange according to the revised semantic scores; this shouldn't change the rankings TOO much."
+
+Claude liked the idea (see screenshots) and the rest is history. This will be my standard search that I use across all my Rust tooling (I'll probably port it to Golang, too, so I can embed it in bv natively).

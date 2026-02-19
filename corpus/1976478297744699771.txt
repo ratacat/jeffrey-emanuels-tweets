@@ -1,0 +1,33 @@
+2025-10-10 | 2356 likes
+
+So Python 3.14 finally came out for real yesterday. Finally removing the GIL (global interpreter lock), which allows for way faster multithreaded code without dealing with all the brain damage and overhead of multiprocessing or other hacky workarounds. And uv already fully supports it, which is wildly impressive.
+
+But anyway, I was a bit bummed out, because the main project I’m working on has a massive number of library dependencies, and it always takes a very long time to get mainline support for new python versions, particularly when they’re as revolutionary and different as version 3.14 is. 
+
+So I was resigned to endure GIL-hell for the indefinite future.
+
+But then I figured, why not? Let me just see if codex and GPT-5 can power through it all. So I backed up my settings and asked codex to try, giving it the recent blog post from the uv team to get it started.
+
+There were some major roadblocks. I use PyTorch, which is notoriously slow to update. And also pyarrow, which also didn’t support 3.14. Same with cvxpy, the wrapper to the convex optimization library.
+
+Still, I wanted to see what we could do even if we had to deal with the brain damage of “vendoring” some libraries and building some stuff from scratch in C++, Rust, etc. using the latest nightly GitHub repositories instead of the usual PyPi libraries.
+
+I told codex to search the web, to read GitHub issue pages, etc, so that we didn’t reinvent the wheel (or WHL I should say, 🤣) unnecessarily.
+
+Why not? I could always test things, and if I couldn’t get it to work, then I could just retreat back to Python 3.13, right? No harm, no foul. 
+
+Well, it took many hours of work, almost all of it done by codex while I occasionally checked in with it, but it managed to get everything working! 
+
+Sure, it took a bunch of iterations, and I had to go tweak some stuff to avoid annoying deprecation warnings (some of which come from other libraries, so I ultimately had to filter them). 
+
+But those libraries will update over time to better support 3.14 and eventually I won’t need to use any of these annoying workarounds.
+
+Codex even suggested uploading the compiled whl artifacts to Cloudflare’s R2 (like s3) so we could reuse them easily across machines, and took care of all the details for me. I would never think to do that on my own.
+
+Every time there was another complication or problem (for instance, what is shown in the screenshot below), codex just figured it out and plowed through it all like nothing.
+
+If you’ve never tried to do something like this in the “bad old days” prior to LLMs, it was a thankless grind that could eat up days and then hit a roadblock, resulting in a total wipeout. 
+
+So it was simply too risky to even try it most of the time; you were better off just waiting 6 or 9 months for things to become simple again. 
+
+Anyway, I still can’t really believe it’s all working! We are living in the future.

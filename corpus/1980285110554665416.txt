@@ -1,0 +1,3 @@
+2025-10-20 | 40 likes
+
+The stuff about how you could “compress” in a lossy way older context memory by automatically downsampling the visual representations of those tokens (say, from 1024x1024 pixels to 512x512 pixels) to save space by making those memories “hazier” directly speaks to what @karpathy was advocating in his Dwarkesh interview about making LLMs less reliant on exact memorization. And of course, this mirrors how the human mind works better as well.

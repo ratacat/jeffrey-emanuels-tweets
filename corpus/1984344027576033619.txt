@@ -1,0 +1,13 @@
+2025-10-31 | 1444 likes
+
+My coding agent workflow has really changed a lot ever since I gave them access to messaging so that they can directly communicate with each other. Now, I have one of them come up with a super detailed plan and sometimes have GPT Pro review and improve the plan in the webapp. 
+
+Then I start up 4 or 5 Codex instances in the same project folder and tell them: 
+
+"Before doing anything else, read ALL of AGENTS dot md and register with agent mail and introduce yourself to the other agents. Then coordinate on the remaining tasks left in PLAN_TO_DO_XYZ.md with the other agents and come up with a game plan for splitting and reviewing the work."
+
+Then I can queue up a ton of the following message in codex, and it will just keep plodding along until the context gets full:
+
+"Proceed meticulously with the plan, doing all remaining unfinished tasks systematically and continuing to notate your progress in-line in the plan document and via agent mail messages."
+
+Then they just keep cranking on their own for a really long time. And you don't need to supervise them much so you can be juggling multiple projects like this at once and make really great progress on all of them.

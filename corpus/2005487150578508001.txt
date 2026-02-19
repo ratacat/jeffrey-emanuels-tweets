@@ -1,0 +1,3 @@
+2025-12-29 | 46 likes
+
+Between constantly getting this error, the gemini-cli harness getting stuck all the time in loops, and the model being very significantly worse now than both Opus 4.5 and GPT 5.2 Codex, I'm about ready to cancel all three of my Gemini Ultra subscriptions. https://t.co/m1D7ago6E7

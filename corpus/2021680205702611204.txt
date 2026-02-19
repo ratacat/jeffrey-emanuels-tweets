@@ -1,0 +1,9 @@
+2026-02-11 | 37 likes
+
+I sort of ended up using my M4 Mac Mini by accident. I just got it a couple months ago to play around with and ended up with it as my daily driver. 
+
+But each day since then I’ve cursed myself for not having the best one with max storage/ram/cores.
+
+So I got that one (I couldn’t justify going nuts with the Mac Studio because I basically use it as a dumb terminal to my Linux workstations) and I’m transferring stuff over now. Hopefully it will help me eke out an extra hundred commits per day.
+
+Wish it could be done with no downtime, though. This migration is killing my productivity today.

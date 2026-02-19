@@ -1,0 +1,31 @@
+2026-01-14 | 477 likes
+
+Agent coding life hack:
+
+Before having Claude Code create a skill dot md file for you (which you should probably be doing a couple times a day at least), tell it to read this guide first:
+
+https://t.co/T3Gq12ZOR1
+
+It makes the skills way better. 
+
+So why should you be making skills, anyway? 
+
+Well, every time you find yourself doing something more than once across projects, it’s a good candidate for a new skill.
+
+I’ll give you two examples from my work in the past day:
+
+1) When you have a website and want to share links on X, Telegram, WhatsApp, Facebook, iMessage, you want them to show that nice preview. I used to manually explain that to the agent and point it to one of my other projects as an example. But now I have this skill:
+
+https://t.co/JSrg76O92M
+
+2) I always need to write README files for my new projects on GitHub. I used to tell it to use another project as a model, but now it will just know to use this skill:
+
+https://t.co/6VeFMWU43b
+
+Note that both of those skills make use of additional reference files that are included in the same directory as the skill dot md file. 
+
+This is a good best practice for better token efficiency through progressive disclosure.
+
+But you don’t actually need to know any of that stuff if you tell Claude to read that skills best practices guide I linked to above!
+
+Seriously, don’t sleep on skills, they’re an amazing idea and very well supported by the latest version of Claude Code.

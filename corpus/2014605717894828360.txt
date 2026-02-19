@@ -1,0 +1,35 @@
+2026-01-23 | 177 likes
+
+I've got some wild stuff brewing for ntm. What if you could spin up a huge swarm of agents to review your project (any kind of project, not just software), and the difference between the various agents was that they each employed a different mode of reasoning?
+
+What does that even mean? Isn't reasoning, well, reasoning? Like with logic and induction and stuff? Well, it turns out that you can really break this stuff down into exquisite detail. 
+
+For instance, probabilistic reasoning extends classical logic by attaching probabilities (i.e., degrees of belief) to propositions instead of treating them as strictly True or False. Fuzzy logic is different: it treats truth itself as a continuum (e.g., ‘somewhat true’), even when there’s no uncertainty.
+
+But that's just scratching the surface. GPT Pro and Opus were jointly able to come up with EIGHTY distinct modes of reasoning, which you can read about here:
+
+https://t.co/cAzeXHU3N9
+
+The screenshot below shows me getting CC to transform this document into a new feature using this prompt:
+
+---
+
+❯ I have a great idea for this tool for a special mode where we launch a ton of agents on the same project and have them either work on a problem, like "What's wrong with this project and how could it be made a lot better" or brainstorm with something like "What are the best new ideas to add to this project when you take into account the pros and cons of each one?" and so on.
+
+The twist is that each agent would be separately prompted to engage in a CERTAIN, NAMED FORM OF REASONING that would be explained to them in the prompt preamble (and thus automatically added to the user's primary prompt). 
+
+Each named form of reasoning and how it works is laid out in modes_of_reasoning.md, which you should read and ruminate on incredibly deeply. Then come up with a spectacularly brilliant, creative, clever, comprehensive, accretive plan for architecting, designing, and implementing this system in a harmonious, cohesive, coherent way with the existing ntm system, with world-class ui/ux and polish. 
+
+Make sure your plan is super detailed, granular, and comprehensive. Then please take ALL of that and elaborate on it and use it to create a comprehensive and granular set of beads for all this with tasks, subtasks, and dependency structure overlaid, with detailed comments so that the whole thing is totally self-contained and self-documenting (including relevant background, reasoning/justification, considerations, etc.-- anything we'd want our "future self" to know about the goals and intentions and thought process and how it serves the overarching goals of the project). The beads should be so detailed that we never need to consult back to the original markdown plan document. Remember to ONLY use the `br` tool to create and modify the beads and add the dependencies.
+
+---
+
+You could tell Claude was titillated! His first sentence in his response was:
+
+"This is a phenomenal document! 80 modes of reasoning organized into 12 categories, each with precise definitions, outputs, differentiators, use cases, and failure modes. Let me deeply synthesize this and design a comprehensive "Reasoning Ensemble" feature for NTM."
+
+Big thanks to @darin_gordon for getting me thinking along these lines. 
+
+PS: I got so sick and tired of seeing the clankers mess up the right-hand borders of ascii art diagrams that I made a rust cli tool to fix it, lol:
+
+https://t.co/4QWEa7kWbU

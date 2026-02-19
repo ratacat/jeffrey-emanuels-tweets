@@ -1,0 +1,27 @@
+2026-01-02 | 26 likes
+
+My new BrennerBot project started out as a sort of open-ended exploration and celebration of Brenner’s ideas, but has already morphed in just a few days into what is possibly the most advanced and coherent open-source system for harnessing groups of frontier models to work collaboratively on scientific inquiry.
+
+Along the way, I ended up integrating various pieces of my agent flywheel system and tooling, including Agent Mail, ntm for agent orchestration, my cass search tool, and my cass memory (cm) system (all of which you can read about on https://t.co/N4As0kJTQP) 
+
+The readme gives a good overview of the entire system and how it works:
+
+https://t.co/L0QBvjVlW4
+
+The end-to-end test report linked at the start of the readme shows what the system does with a concrete research question.
+
+You can read about the conceptual core of the system here:
+
+https://t.co/zyhiEp8LZp
+
+And see the “Brenner operators” used in the system here:
+
+https://t.co/5cBHIvWHWI
+
+And I would encourage you to look through the rest of the site, which is filled with powerful ideas:
+
+https://t.co/WvUU8lWnD8
+
+I believe this system is already capable of making important discoveries, and can likely be trivially adapted for other purposes. 
+
+I’m excited to see what this can do. What would really take this to the next level is to get some help from OpenAI, Anthropic, and Google to run this at scale with thousands of instances. If you’re in a position to make that happen, please reach out to me!

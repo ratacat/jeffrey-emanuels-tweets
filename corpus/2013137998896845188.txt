@@ -1,0 +1,9 @@
+2026-01-19 | 54 likes
+
+Prevent this sort of thing from ever happening again so you don’t need to swear at your bots.
+
+Not through persuasion or cajoling (i.e., exhortations and injunctions in an AGENTS dot md file), but by brute force.
+
+My dcg tool keeps the clankers in line:
+
+https://t.co/aUeXpRlJd0

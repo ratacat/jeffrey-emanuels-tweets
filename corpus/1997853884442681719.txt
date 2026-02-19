@@ -1,0 +1,29 @@
+2025-12-08 | 90 likes
+
+OK, status update. Starting from absolutely nothing ~5 hours ago except a big ol' plan document, I turned that into over 350 beads (we got a bunch of new testing beads), I now have conjured up ~11k lines of code, about 8k of which is the core code and the rest is testing code (see screenshot). 
+
+Around 204 commits so far. Probably at least 25 agents have been involved at some point or other.
+
+If you want to look at the actual Agent Mail messages, I used the handy export feature to publish this as a static website you can see here:
+
+https://t.co/QKP9dCfwTq
+
+So how far did we get already? You can see Claude's full assessment in the attached screenshot. Here's its bottom line conclusion, though:
+
+Key Insights
+
+  1. The product is USABLE NOW - 151 tests pass, binary compiles, all core commands work. The closed rate understates this because open issues are heavily weighted toward testing.
+  2. Testing is the biggest gap - ~40% of remaining work. This is actually good news
+   - it means implementation is largely done and what remains is verification.
+  3. High velocity - 2.9 hour average lead time shows issues get completed, not stalled.
+  4. Phases 2-4 are future work - Advanced features (local semantic search, decision  logging, starter playbooks) are explicitly deferred.
+  5. The 14 open epics are misleading - Most are testing-focused sub-epics or future  phases, not blockers.
+
+Bottom Line
+
+For a "can I use this tool effectively" definition: ~85-90% done.
+
+The core ACE pipeline (Generate context → Reflect on sessions → Curate playbook →
+  Validate scientifically) is complete and functional. What remains is mostly test  coverage, polish, and future-phase features.
+
+If this were a startup product, you'd say: "MVP shipped, now hardening for production."

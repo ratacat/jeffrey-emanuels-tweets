@@ -1,0 +1,29 @@
+2026-01-18 | 230 likes
+
+I mentioned recently that I've been... busy. Lots of projects in the oven, in various stages of completeness.
+
+Well, I'm now pleased to introduce one I've worked very hard on, because it's so near-and-dear to my heart:
+
+beads_rust, or br for short. You can get it here:
+
+https://t.co/pB7bgtJvnN
+
+It's a fast, minimal Rust port of @Steve_Yegge's amazing Beads project that I've built so many of my workflows around.
+
+Discovering Beads and seeing how well it worked together with my MCP Agent Mail was a truly transformative moment in my agent coding workflows and professional life more generally. 
+
+This quickly also led to my beads_viewer (bv) project, which added another layer of analysis to beads that gives swarms of agents the insight into what beads they should work on next to de-bottleneck the development process and increase velocity. 
+
+It's beads (and mail) all the way down.
+
+I'm very grateful for finding beads when I did and to Steve for making it. But at this point, my Agent Flywheel System is built around beads operating in a specific way. 
+
+As Steve continues evolving beads toward GasTown and beyond, our use cases have naturally diverged. 
+
+The hybrid SQLite + JSONL-git architecture that I built my tooling around (and independently mirrored in MCP Agent Mail) is being replaced with approaches better suited to Steve's vision.
+
+Rather than ask Steve to maintain a legacy mode for my niche use case, I created this Rust port that freezes the "classic beads" architecture I depend on. The command is br to distinguish it from the original bd.
+
+This isn't a criticism of beads; Steve's taking it in exciting directions. It's simply that my tooling needs a stable snapshot of the architecture I built around, and maintaining my own fork is the right solution for that. 
+
+Steve has given his full endorsement of this project.

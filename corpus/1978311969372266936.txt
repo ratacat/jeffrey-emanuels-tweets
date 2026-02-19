@@ -1,0 +1,3 @@
+2025-10-15 | 24 likes
+
+With all these posts about the DGX Spark, it’s hard not to get the sense that Nvidia intentionally crippled it to not compete with their $20k datacenter GPUs. But then their plan got screwed up by Apple releasing really strong chips with much faster unified memory. It’s a dud now

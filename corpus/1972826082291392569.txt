@@ -1,0 +1,3 @@
+2025-09-30 | 3 likes
+
+And then it’s a bit hard to describe, but Sonnet 4.5 just feels more eager to please and helpful than GPT-5. When GPT-5 writes some code for me and I ask it to check it over for bugs or issues, it usually does a very short, cursory check and then declares that everything’s great.

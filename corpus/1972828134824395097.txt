@@ -1,0 +1,5 @@
+2025-09-30 | 7 likes
+
+So even if you’re a hardcore GPT-5 maximalist, you’re doing yourself a disservice by not consulting Sonnet 4.5 for your frontend.
+
+There are other areas where it excels too beyond coding. It seems to be better at writing marketing-type copy, with less jargon and more natural tone

@@ -1,0 +1,29 @@
+2025-12-16 | 100 likes
+
+I recently lost patience with my sluggish performance in Windows 11 and decided to install Ubuntu 25 on the metal.
+
+I was dealing with constant lag and stuttering (my autocorrect tried to make that “suffering,” but maybe that’s more accurate given how awful it is when the tools you rely on feel bad to use).
+
+The final straw was when I recently bought a 24gb RAM Mac Mini M4 on eBay for like $950 just to mess around with and realized that it felt a million times better to work on than my PC.
+
+And that’s truly absurd because the PC has a 32-core Threadripper and 512gb of RAM and dual 4090s and cost me like $14k including all the storage. The machine that costs 15x as much shouldn’t feel that much slower.
+
+And of course the problem was that I was doing nearly all my work from within Ubuntu inside of WSL2. And that’s just very different from running directly on the metal. 
+
+I don’t really know why I waited so long. I guess I’m used to the Windows UI and was worried about hating the Linux desktop. 
+
+Having the new Mac as a daily driver dramatically reduced the risk for me, so I decided to dual boot Ubuntu directly on the metal.
+
+I’m very glad I did, because the machine absolutely flies now. I had heard that the cool kids used Hyprland as the tiling window manager of the future so I decided to have Claude Code research it and set it all up for me using the JaKooLit distribution, which it duly took care of.
+
+It’s going to take some getting used to, but it looks like a spaceship and just feels cool to use! The thing is, I don’t even bother to try to figure out how all the complex configuration works, I just have Claude Code figure it all out for me, and that works unbelievably well.
+
+Anyway, the one thing I wasn’t liking was the wallpaper selection, which were all really cringe looking anime girls that I wouldn’t want anywhere near my computer. 
+
+So I took a bunch of cool Midjourney images that I generated and shared on here a while back that were formatted as iPhone wallpapers and used MJ’s handy reframing feature to make them landscape orientation, and then used the upsampling feature to make them high enough resolution so they look nice on my Dell 6k monitor.
+
+If you’d like to try these yourself, you can get them here:
+
+ https://t.co/sn58LwHuPa
+
+And I’ve attached my favorite ones here as images.

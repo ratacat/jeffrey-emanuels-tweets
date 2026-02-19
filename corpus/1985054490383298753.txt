@@ -1,0 +1,13 @@
+2025-11-02 | 40 likes
+
+Two very nice prompts to use with Claude Opus when trying to understand or explain something mathematical:
+
+1) “Now, if you had to distill the absolute essence of how and why <XYZ> works and how it’s able to do <ABC> down to one or two sentences without symbolic math expressions, what would it be?”
+
+2) “If this had never been invented, how might one arrive at it or something very similar starting from first principles?”
+
+See the first two examples below of this prompt applied to Hoeffding’s Dependency, my favorite statistical measure.
+
+Then compare to the third image that gives the actual formula/algorithm. 
+
+It’s a LOT easier to understand the latter after having read and pondered the former!

@@ -1,0 +1,5 @@
+2026-02-04 | 21 likes
+
+Here's some of the advanced math that goes into making FrankenTUI so fast. This is why I refer to it as an "Alien Artifact."
+
+This goes beyond clever engineering, like using SIMD and making things friendly for cache lines. This is more like "you've dedicated your life to math": https://t.co/OFboWZNENM

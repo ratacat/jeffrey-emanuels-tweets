@@ -1,0 +1,11 @@
+2025-11-12 | 4 likes
+
+The scary part is that currently this kind of knowledge and expertise is rare and expensive. So unless you have state secrets or blueprints to a DRAM fab or the newest GE jet engine, you don’t have to worry too much about it. 
+
+But AI agents trained on all the latest exploits make this ability much cheaper and more available, so expect to see a lot more of it. 
+
+Fortunately, the same AI agents can be used to help you lock down and audit and observe your systems and network.
+
+Unfortunately, defense is a million times harder than offense! You only need something to work 0.1% of the time offensively to be useful if you’re automatically probing and attacking thousands of machines. 
+
+But you need your defenses to work 100% of the time to stay secure.

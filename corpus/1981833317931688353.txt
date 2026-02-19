@@ -1,0 +1,3 @@
+2025-10-24 | 8 likes
+
+Weird, when I checked it in the morning, it was done, but it says here that it only worked on it for ~18 minutes! Must be a weird bug that caused it to get stuck before some cron job marked it as finished: https://t.co/kFBu5ZA3ey

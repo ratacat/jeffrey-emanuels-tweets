@@ -1,0 +1,11 @@
+2025-12-28 | 64 likes
+
+A common complaint I’ve heard about my MCP Agent Mail project is that the agents forget to check their messages and need to be reminded. 
+
+This didn’t bother me personally too much because I like to control when they check and didn’t mind manually reminding them.
+
+But I heard it often enough that I decided to look into adding automated hooks. It works for Claude Code now and will hopefully work soon for Codex and Gemini.
+
+You can automatically set it up by running the installation script one-liner from the Agent Mail README file.
+
+Let me know how it works for you.

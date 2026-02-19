@@ -1,0 +1,31 @@
+2025-10-24 | 70 likes
+
+I was thinking about the Great Depression and the 1929 market crash today and what really caused them. 
+
+Most people seem to blame it all on the speculative mania of the 20s finally bursting, compounded by monetary policy mistakes. At least that’s what I’ve always heard.
+
+But today I started wondering if this explanation really misses the much more fundamental causes. 
+
+What exactly made the Great Depression so bad, so widespread globally, and so prolonged compared to prior downturns? I feel like any good explanation should be able to cleanly explain this qualitative difference. 
+
+And so I started thinking what other world unprecedented events preceded it. And there’s only one that makes sense, which is World War I.
+
+Now, you might object that this happened well before 1929, so it can’t be the answer. But one big thing I’ve learned is that stuff takes time to percolate through the economic system, especially back then when the world moved a lot more slowly. So that’s not a great objection.
+
+Anyway, I decided to ask the following “leading question” to Claude Opus and GPT-5 Pro to see what they could come up with. I wondered, what arguments would they make, and what evidence would they marshal? 
+
+Here was my prompt:
+
+“Make as compelling and convincing an argument for me that the true underlying root cause of the 1929 market crash and subsequent depression was really from the huge amount of monetary debasement and money printing and debt issuance all around the world ultimately stemming from the First World War.”
+
+The attached images show the response from Claude Opus 4.1. I’ll also include the actual text in another tweet below, along with GPT-5’s response for comparison.
+
+I have to say, I find this incredibly persuasive (perhaps not surprising, since I’m the one who asked for the argument, but still!). So much so that I’m really sort of bewildered about why I’ve never really heard this viewpoint articulated, at least in this way. 
+
+The usual explanation always sounds almost moralistic and tends to focus on how “fundamentally broken and intrinsically unstable” capitalism is, and how it needs government intervention to right the ship.
+
+But all that stuff goes out the window when viewed as just a delayed reaction to huge portions of the world’s wealth and productive capacity being wasted on the most unproductive use imaginable.
+
+I don’t think people appreciate the scale of the financial impact the war had. Britain’s debt increased 11-fold? France’s by 7-fold? 
+
+These are almost unthinkable numbers. It’s surprising that things didn’t fall apart sooner! I guess all the rebuilding was a pretty good stimulus that lasted a while.

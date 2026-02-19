@@ -1,0 +1,47 @@
+2026-02-17 | 50 likes
+
+I made another tool out of my own desperation because my agents kept filling up disks (including special locations that are memory-backed) with Rust build artifacts and making the machines unresponsive.
+
+It’s called storage_ballast_helper (“sbh”) and you can get it here:
+
+https://t.co/QfTOmGwF5z
+
+It’s based on the concept of ballast used on ships. The basic idea is simple: create a bunch of sacrificial files filled with random data (e.g., 1GB per file). When you start to experience disk-space pressure, you can buy yourself some time by deleting these ballast files one at a time.
+
+What does that get you, and isn’t that just delaying the inevitable? Or does it make the problem even worse because now you’re “wasting” space on the ballast files?
+
+It gets you time to intelligently analyze the situation and decide what substantive actions to take.
+
+sbh implements a sophisticated multi-factor scoring model that draws up a “hit list” of the best candidates for deletion: stuff that’s clearly not being used, that takes up a lot of space, that’s obviously not something useful like code or .md files, etc. Based on that score, it decides what to delete to optimize the system. (It does a lot more, too.)
+
+Rather than describe everything myself, I asked Claude Code to finish this post based on a careful analysis of the code. Here’s what it told me (everything above this line is mine):
+
+Here are some additional angles worth mentioning that would resonate on X, based on what’s actually in the codebase:
+
+The control theory angle (this tends to get engagement from technical audiences):
+
+It uses a real PID controller (like cruise control) with EWMA rate estimation to predict disk exhaustion 30 minutes ahead and start reacting before you hit critical. Not cron-job-every-5-minutes stuff. 1-second polling with adaptive smoothing that tracks bursty consumption.
+
+The safety story (people love “what could go wrong” engineering):
+
+Six independent safety layers, any one of which can veto a deletion. It checks for open file handles via /proc/fd so it won’t nuke a build directory mid-compilation. It detects .git directories as a hard veto. It uses a circuit breaker that halts after 3 consecutive failures. And the scoring uses a Bayesian decision-theoretic framework where wrongly deleting something useful is weighted costlier (50) than failing to clean up something stale (30).
+
+The zero-write emergency mode (great hook):
+
+When your disk is at 99%, most cleanup tools fail because they need to write temp files. sbh has a zero-write emergency mode: pure in-memory scoring, direct unlink calls. It can recover a system that nothing else can touch.
+
+The progressive deployment model (borrowed from feature-flag practice):
+
+It has observe/canary/enforce modes like a feature flag rollout. You can shadow-run it to see what it would delete without deleting anything, then graduate to capped real deletions, then full enforcement. If its own predictions drift from reality, it auto-demotes to safe mode.
+
+The “why not just…” preemption:
+
+Why not cron + rm? No pressure awareness; can’t tell a 2-hour-old build artifact from a 2-hour-old source file. Why not tmpwatch? Only knows about /tmp. Why not quotas? The problem is aggregate consumption across legitimate workloads, not one bad actor.
+
+The Rust angle:
+
+#![forbid(unsafe_code)], no async runtime, just OS threads with crossbeam channels. ~25K lines of Rust. Full TUI dashboard with 7 screens, incident playbooks, and a command palette.
+
+A punchy closer:
+
+It even monitors /dev/shm and tmpfs separately because RAM-backed filesystems filling up is a different kind of catastrophe than disk filling up.

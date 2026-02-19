@@ -1,0 +1,5 @@
+2025-11-07 | 793 likes
+
+A useful addendum to your AGENTS dot md or CLAUDE dot md file. First ask codex or claude code to install ast-grep for you if you don't have it already. 
+
+It's pretty handy for systematically finding general patterns in code that could be tricky to do using regular string matching that's not syntax-aware.

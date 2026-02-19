@@ -1,0 +1,9 @@
+2025-11-28 | 46 likes
+
+Then I tell all the other agents working on this project (three Opus 4.5 agents with Claude Code, three gpt-5-codex-max agents in Codex, and three Gemini 3 agents in gemini-cli, all communicating with each other via my mcp agent mail system) the following:
+
+"Re-read AGENTS dot md. Be sure to check your agent mail and to promptly respond if needed to any messages; then proceed meticulously with your next assigned beads, working on the tasks systematically and meticulously and tracking your progress via beads and agent mail messages.
+
+Don't get stuck in "communication purgatory" where nothing is getting done; be proactive about starting tasks that need to be done, but inform your fellow agents via messages when you do so and mark beads appropriately. 
+
+When you're really not sure what to do, pick the next bead that you can usefully work on and get started. Make sure to acknowledge all communication requests from other agents and that you are aware of all active agents and their names. Use ultrathink."

@@ -1,0 +1,85 @@
+2026-01-15 | 125 likes
+
+If you don’t want to dive directly into my entire Flywheel system all at once, at least try this:
+
+1. Install agent mail using the curl | bash one-liner:
+
+curl -fsSL "https://t.co/4cpumwIS41 +%s)" | bash -s -- --yes
+
+That will automatically install beads if you don’t already have it. 
+
+Then install beads_viewer with its one-liner:
+
+curl -fsSL "https://t.co/OETEyjZZhN +%s)" | bash
+
+Then set up your AGENTS dot md file for your project. 
+
+You can start with this one and just remove the sections for the tools you’re not using yet:
+
+https://t.co/UEViYk7x3Z
+
+Then ask CC to adapt it to better fit the tech stack for your particular project.
+
+That’s all you need to get started. Then follow this workflow:
+
+ https://t.co/xkxAQzMPQl
+
+Try to start with a smaller, self-contained greenfield (new) project and see whether you can get it all working perfectly without looking at any of the code, just from following the workflow.
+
+Spend most of your energy and human time/focus on the markdown plan. Don’t be lazy about the plan!
+
+The more you iterate on it with GPT Pro and layer in feedback from other models, the better your project will turn out.
+
+Also don’t be lazy about turning the markdown plan into beads, either. Don’t try to one-shot it with CC, you will 100% miss stuff from the plan.
+
+This is the easiest thing to screw up assuming you already have a great markdown plan. Do at least 3 rounds of polishing, improving, and expanding the beads. 
+
+Once you have the beads in good shape based on a great markdown plan, I almost view the project as a foregone conclusion at that point.
+
+The rest is basically mindless “machine tending” of your swarm of 5-15 agents as they build out the beads.
+
+It’s mostly just juggling these tasks:
+
+- Making sure to make them read AGENTS dot md after compactions.
+
+- Using many rounds of the “fresh eyes” review prompt whenever an agent tells you it’s done implementing one of the beads.
+
+- Swapping accounts when you run out of usage (ugh!).
+
+- Making sure you commit frequently to GitHub using my “logically grouped” commits prompt.
+
+- When all beads are complete, doing many rounds of the random code inspection and review.
+
+- Adding more and more unit and e2e tests.
+
+- Setting up gh actions for testing, builds, tags, releases, checksums, etc.
+
+- Writing a README and help/docs/tutorials.
+
+- Iterating on a “robot mode” (you added one, right?) with feedback from the agents to make it better.
+
+- Seeing if you can make your project work better when controlled by Claude Code by making a skill for it.
+
+But most of these things can be done using very little mental focus or attention/energy. Save all of that for the ideation and planning phases! 
+
+The one thing people seem to get wrong is ignoring what I say about planning or transforming their plan into beads. 
+
+They make a slipshod plan all at once with Claude Code. Or they try to one-shot turning the plan into beads. Or they even do both of those things!
+
+Well, of course the project is going to suck and be a buggy mess if you do that.
+
+So don’t be lazy. Or if you insist on being lazy, save it for the stages after planning. A great set of beads is all you need. 
+
+As for the rest of my tools:
+
+Once you get comfortable with that workflow, start layering in the other tools, starting with ubs to help find bugs during the review phases. 
+
+Then add in dcg. You’ll actually appreciate dcg a lot more once Claude wipes out all the work from the other agents since the last commit!
+
+As you build up a good session history, layer in cass so you can tap into that history. 
+
+And then try cm (cass memory system) to start extracting and codifying lessons from your past sessions.
+
+And I know I’ve said that I don’t really use ntm yet (I’m not dogfooding it at least), but that’s not quite true. I’ve been using it as a handy building block because of its robot mode. For example, ntm is used by ru (repo_updater) to automate handling gh issues.
+
+Good luck, and come to the Discord with any questions!

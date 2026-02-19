@@ -1,0 +1,20 @@
+2025-10-24 | 2 likes
+
+(Part 2 of 3):
+
+⸻
+
+Quantitative markers that fit this story
+•U.S. wartime monetary expansion: M2 from $20.7b (1916) → $35.1b (1920); GDP deflator +85%; ~20–25% of U.S. war finance via money creation; the rest debt‑financed.  
+•Price‑level break: U.S. consumer prices rose >80% from late‑1916 to mid‑1920—an exceptional, war‑driven bulge that later had to be squeezed out to make parities credible.  
+•Parity misalignments: UK back to gold at prewar $4.86 (1925) versus France’s 1928 stabilization at ~20% of prewar parity. These opposite choices mechanically generated persistent UK deflation and French surpluses.  
+•Debt overhang: France financed roughly three‑quarters of war outlays by borrowing; public debt soared to ~150% of GDP by 1920—typical of the postwar debt‑heavy starting point.  
+•Gold pooling and sterilization: U.S. share of world monetary gold rose (≈38% in 1928 → ≈41% in 1931); France’s rose even faster (≈12% → ≈20%); together they held >60% by 1932, and both often sterilized inflows, shrinking effective global reserves.  
+•Dependence on U.S. capital: Under the Dawes/Young frameworks, U.S. loans powered German payments; capital inflows peaked in the late 1920s and then weakened, turning the payments triangle brittle.  
+
+⸻
+
+Why the “usual suspects” are downstream, not root causes
+•“The gold standard did it.” Correct—but why was the interwar gold system so brittle? Because wartime money and debt destroyed the pre‑1914 equilibrium, forcing misaligned parities, asymmetric adjustments, and sterilization behavior. The gold mechanism transmitted the shock; WWI finance created it. (Even the standard account—Eichengreen, Bernanke—centers the gold mechanism; this argument specifies its origin in war‑time debasement and debt.)  
+•“Policy mistakes did it (tightening in 1928–29, panics 1930–33).” These were decisive given the architecture. With gold pooled and sterilized in the U.S./France and parities precommitted, tightening had global, nonlinear effects; the same move in a world without the war‑created monetary overhang would not have produced a synchronized collapse.  
+•“Tariffs and real shocks did it.” Trade policy and sectoral weaknesses mattered, but the chronological arrow runs from monetary/financial fracture to trade collapse. Countries that cut the gold link (thus escaping the war‑era constraints) recovered faster, which is hard to square with a tariff‑first story.

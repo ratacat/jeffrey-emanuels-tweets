@@ -1,0 +1,23 @@
+2025-12-15 | 220 likes
+
+I find myself using my beads_viewer (bv) tool constantly, or rather my agents use it all the time, as a kind of compass directing them on what to work on next. 
+
+Which is funny to me because I literally made bv in one day from start to finish. It goes to show that effort doesn't correspond at all to impact.
+
+I decided to spend some time today coming up with new features and analytics ideas to double down on this use case of helping agents prioritize and plan optimally. 
+
+That means doing a better job of connecting beads to changes in the actual code base from git, and adding a lot more advanced graph theory analytics that better leverage the structure of the beads to derive more insights. 
+
+It's easy to make a tool like bv worse by adding features, so I was careful to go through a round of intense rationalizing at the end; this made me realize that I could consolidate lots of smaller commands into one command that included more detailed outputs. 
+
+I also spent a lot of time with the agents getting their own feedback on what would be most helpful and intuitive for them. 
+
+But, as with humans, who would tell you that they wanted a "faster horse" instead of a car, it's dangerous to trust the agents based on suppositions about potential new features.
+
+The real test will be after these features are implemented (hopefully today) and the agents can actually try them out in a real project and see how they work in real life. And I will be taking that feedback and using it to iterate again.
+
+One of the best parts of making tooling for agents is that the speed of iteration is way faster, since you don't have to deal with slow humans who take days to get back to you with feedback.
+
+The attached screenshot is from Claude after helping me review all the open tasks, when I asked it:
+
+"OK now I want you to give me a high level, intuitive, insightful overview of all planned features/functionality/changes reflected in the current set of open beads and any beads closed today.  Use ultrathink"

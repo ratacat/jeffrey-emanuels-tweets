@@ -1,0 +1,5 @@
+2025-12-04 | 78 likes
+
+The gemini-cli team really needs to get a handle on these catastrophic agent harness loop failure modes. They happen constantly.
+
+I appreciate how quickly they leveled it up from useless to not bad, but Claude Code and Codex simply don’t have these problems at all.

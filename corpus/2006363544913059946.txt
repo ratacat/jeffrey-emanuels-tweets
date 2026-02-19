@@ -1,0 +1,7 @@
+2025-12-31 | 30 likes
+
+And btw, all this has been available since October!
+
+You’re going to be hearing about a lot of agent communication systems soon because it’s such an obviously good idea, but mine was the first open-source system that works across providers, and still has the best design:
+
+https://t.co/EVy42EPOTI

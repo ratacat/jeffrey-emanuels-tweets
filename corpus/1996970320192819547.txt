@@ -1,0 +1,18 @@
+2025-12-05 | 135 likes
+
+I had GPT 5.1 Pro think for 13 minutes on how to convert this post into the most token-dense blurb for your AGENTS dot md file. Here it is:
+
+## AI‑generated Swift/SwiftUI cleanup rules
+
+When editing or generating Swift/SwiftUI for this repo, aggressively normalize code using this checklist before returning changes:
+
+- Modern APIs: replace `NavigationView` with `NavigationStack`; `navigationBarTitle`/`navigationBarItems` with `navigationTitle`/`toolbar`; prefer new modifiers over deprecated ones; prefer Swift Concurrency (`async`/`await`, `Task`) over callback‑style APIs where possible.
+- State correctness: use `@State` for local value state, `@Binding` for parent‑owned state, `@StateObject` for long‑lived reference types created in the view, `@ObservedObject` for injected reference types; never create `ObservableObject` instances inside `body`.
+- Optionals and errors: remove `!` and `try!` except in truly unrecoverable situations; use `if let` / `guard let` / `??` and `do/try/catch`; surface failures via explicit error paths (result types, error views, alerts) instead of silent failure.
+- Collections & identity: in `List`/`ForEach`, prefer stable IDs (`id: \.id` or dedicated `id` properties) over `0..<count` and `\.self` on reference types; avoid recreating collections in `body` when a stored property will do.
+- View structure: flatten over‑nested `VStack`/`HStack`/`ZStack`; replace layout built from many `Spacer()`s with alignment, padding, and proper containers; extract repeated subtrees into reusable views rather than duplicating layout.
+- Type erasure: avoid `AnyView` and other unnecessary type‑erasure unless you truly need heterogeneous view types; prefer concrete view types and composition.
+- Concurrency & threading: mark UI‑affecting entry points `@MainActor`; avoid blocking the main thread; move expensive work off the main actor using async tasks; ensure completion handlers and tasks do not capture strong `self` unnecessarily.
+- Side effects: remove network calls, disk I/O, timers, and other side effects from `body`; move them into view models, services, or explicit tasks triggered from lifecycle modifiers (`task`, `onAppear`, etc.).
+- Performance pitfalls: avoid creating `DateFormatter`, `NumberFormatter`, random values, and heavy computations directly in `body`; cache in static properties or dedicated helpers; avoid unnecessary copying of large data structures.
+- Style & hygiene: delete unused imports, variables, and parameters; use explicit access control; keep naming consistent with Swift guidelines; run code through `swift-format`/Xcode formatting expectations so generated code blends with existing style.

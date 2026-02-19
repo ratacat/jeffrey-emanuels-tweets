@@ -1,0 +1,5 @@
+2025-12-11 | 24 likes
+
+I’m skeptical whenever a model responds instantly to a complex coding review question that has a lot of intricacy.
+
+And when I see the kind of pattern shown here, where it’s confidently wrong 10 out of 10 times in a single response, well… it makes me not trust it for anything.

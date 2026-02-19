@@ -1,0 +1,3 @@
+2026-01-30 | 16 likes
+
+PSA, if your machine keeps getting hosed from stuck bun tests as a result of agents stopping/crashing, it's ultimately because of a bug in bun. I'm going to start using this workaround because it's really starting to slow me down and I'm sick of playing whack-a-mole: https://t.co/ylXla54uCa

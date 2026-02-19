@@ -1,0 +1,5 @@
+2025-09-27 | 21 likes
+
+This time is, in fact, different. Dismissing LLMs as mere “next token predictors” is as silly and reductive as describing a brain as a mere “collection of neurons performing electrochemical signaling.”
+
+The most convincing evidence is their extreme universality across modalities.

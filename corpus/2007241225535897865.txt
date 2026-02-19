@@ -1,0 +1,15 @@
+2026-01-03 | 157 likes
+
+I've been working on various web apps using Claude Code and Codex from a remote Ubuntu machine via SSH, and every time I see a problem or glitch on my iPhone browser on the live site, I like to take a screenshot of it on my iPhone.
+
+If you're using CC or Codex locally on your Mac, it's not too bad to use that. But if the machine is a remote one, it's super annoying to deal with. 
+
+I was wasting time sending myself the images on Telegram or email and then manually copying them over to the remote machine using scp (Cyberduck on Mac).
+
+Finally, I realized that the cumulative time wasted on this exceeded the time to make a custom CLI tool just for this, so introducing giil (get_icloud_image_link). 
+
+You can get it here:
+
+https://t.co/Xae1b2EOAY 
+
+Even though it's a simple thing, I tried to do it in the slickest and best possible way. Hopefully you'll like all the polishing.

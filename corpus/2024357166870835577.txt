@@ -1,0 +1,21 @@
+2026-02-19 | 16 likes
+
+If you're serious about creating complex, high performance Rust programs with a lot of concurrency and which have to interface with networks, disks, etc. (which is nearly every useful, important system you can think of), here's what you get "for free" if you build on top of asupersync (the clankers wrote this part tbh):
+
+- Structured concurrency by construction: no orphan tasks, region close implies quiescence.
+
+- Cancel-correct execution: cancellation is a protocol (request → drain → finalize), not a silent drop.
+
+- Two-phase effects in core primitives: reserve/commit patterns that prevent data loss under cancellation.
+
+- Deterministic concurrency testing: virtual time, replay, schedule exploration, futurelock detection, crashpacks.
+
+- Capability-secure execution via Cx: no ambient authority; effects are explicit and auditable.
+
+- Full stack in one model: runtime, channels/sync, timers/reactor, TCP/UDP/Unix, TLS, WebSocket, HTTP/1.1+H2+H3, gRPC, DB clients (SQLite/Postgres/MySQL), messaging, service/web layers.
+
+- Strong runtime introspection: structured diagnostics, obligation tracking, cancellation attribution, deadline monitoring.
+
+- Performance work where it matters: lock-pressure reduction, wake dedup, intrusive queues, timer-wheel optimizations, reactor hardening.
+
+- A semantics-first foundation that makes correctness compositional instead of ad hoc.

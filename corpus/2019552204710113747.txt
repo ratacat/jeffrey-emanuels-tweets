@@ -1,0 +1,5 @@
+2026-02-05 | 32 likes
+
+Mission Accomplished. I’m no longer Core Poor. 
+
+It reset my bios settings when I changed the CPU and I forgot that I had to lower my memory speed a bit to get it to work with 512gb of RAM, so wasted a lot of time. Oh well, it works now! https://t.co/jIUYikHf1t

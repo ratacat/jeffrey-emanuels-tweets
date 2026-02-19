@@ -1,0 +1,13 @@
+2026-02-10 | 33 likes
+
+This is how to shake people up to see the value of this once it's done... from the prompt I just fed to Mr. Clankstein:
+
+"OK, so this project is still far from complete, but I want you to now create a whole big set of beads for how we are GOING to test it all to see if it works.
+
+Obviously, we can have a traditional suite of unit tests and e2e integration tests and also our conformance harness. That's all well and good and is table stakes. 
+
+Where I think we can go above and beyond is to research recent and critical CVEs from the past 2 years involving famous and popular software systems that rely on libc, where the flaw/bug/exploit/problem stemmed from security problems in libc and how it was used.
+
+Then, we need an elaborate test that runs these sandboxed, with and without our secure membrane system, and shows whether our safe system could have seamlessly and effortlessly prevented/protected against the bug/exploit/flaw. 
+
+Make sense? The beads must include extensive research phases where we find optimal candidates for this, which would ideally be relatively monolithic things that are easy to install and test for this purpose."

@@ -1,0 +1,43 @@
+2025-11-13 | 935 likes
+
+Just read through the new LeJEPA paper by Yann LeCun and Randall Balestriero. I’ve been curious to know what Yann’s been working on lately, especially considering all his criticisms of LLMs (which I disagree with, as I think LLMs will keep improving and will take us to ASI fairly soon).
+
+Anyway, there are several threads already on X about the paper and what it introduces. The short version is that it’s a principled, theoretically justified, and parsimonious approach to self-supervised learning that replaces a complex hodgepodge of ad-hoc, hacky heuristics for preventing mode collapse, which is the bane of self-supervised learning.
+
+That’s where the model screws up and starts mapping all inputs to nearly identical embeddings or to a narrow subspace of embeddings, collapsing down all the richness of the problem into a pathologically simple and wrong correspondence.
+
+The first pillar of the new approach is their proof that isotropic Gaussian distributions uniquely minimize worst-case downstream prediction risk.
+
+As soon as I read that, I immediately thought of CMA-ES, the best available black-box optimization algorithm for when you don’t have access to the gradient of the function you’re trying to minimize, but can only do (expensive/slow) function evaluations. 
+
+Nikolaus Hansen has been working on CMA-ES since he introduced it way back in 1996. I’ve always been fascinated by this approach and used it with a lot of success to efficiently explore hyper-parameters of deep neural nets back in 2011 instead of doing inefficient grid searches.
+
+Anyway, the reason why I bring it up is because there’s a striking parallel and deep connection between that approach and the core of LeJEPA.
+
+CMA-ES says: Start with an isotropic Gaussian because it's the maximum entropy (least biased) distribution given only variance constraints. Then adapt the covariance to learn the problem's geometry.
+
+LeJEPA says: Maintain an isotropic Gaussian because it's the maximum entropy (least biased) distribution for unknown future tasks.
+
+Both recognize that isotropy is optimal under uncertainty for three reasons:
+
+The maximum entropy principle; Among all distributions with fixed variance, the isotropic Gaussian has maximum entropy; I.e., it makes the fewest assumptions.
+
+There’s no directional bias; Equal variance in all directions means you're not pre-committing to any particular problem structure.
+
+You get worst-case optimality; Minimize maximum regret across all possible problem geometries.
+
+So then what’s the difference? It comes down to adaptation timing. CMA-ES can adapt during optimization; it starts isotropic but then becomes anisotropic as it learns the specific optimization landscape.
+
+In contrast, LeJEPA has to stay isotropic because it's preparing for unknown downstream tasks that haven't been seen yet.
+
+This parallel suggests LeJEPA is applying a fundamental principle from optimization theory to representation learning. It's essentially saying: 
+
+“The optimal search distribution for black-box optimization is also the optimal embedding distribution for transfer learning.”
+
+This makes sense because both problems involve navigating unknown landscapes; for CMA-ES, this is the unknown optimization landscape; for LeJEPA, this is the unknown space of downstream tasks.
+
+This difference then makes me wonder: could we have "adaptive LeJEPA" that starts isotropic but adapts its embedding distribution once we know the downstream task, similar to how CMA-ES adapts during optimization? That would be like meta-learning the right anisotropy for specific task families.
+
+Anyway, I thought I’d share my thoughts on this. It’s fascinating to see the connections between these different areas. The black-box optimization community has always been pretty separate and distinct from the deep learning community, and there’s not much cross-pollination there. 
+
+This makes sense, because if you have a gradient, you’d be crazy not to use it. But there are strong connections.

@@ -1,0 +1,5 @@
+2026-02-07 | 34 likes
+
+I’m also going back and rewriting all my TUI applications in FrankenTUI, starting with cass, where I’m completely replacing the venerable ratatui. 
+
+It’s going to look and feel so much better. Anything is possible now. No one can stop Mary Shelley’s FrankenTUI.

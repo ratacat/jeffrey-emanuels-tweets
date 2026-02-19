@@ -1,0 +1,3 @@
+2025-10-14 | 6 likes
+
+Just to put that into perspective, the code was in Matlab, not Python. Back then, all the serious research was done in Matlab. And I was probably the first person to get his code to work on a GPU (the original Nvidia Titan!) using a program called Jacket for Matlab. Crazy, huh?

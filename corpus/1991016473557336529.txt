@@ -1,0 +1,7 @@
+2025-11-19 | 26 likes
+
+Oops, that's not good... I'm going to run out of usage tomorrow and then I need to wait a month for it to reset! And this is on the $200/month Cursor Ultra plan.
+
+Guess I went a little too crazy on the Gemini 3 requests. But I abused Codex and Claude Code way more today, so that's a really big cost differential!
+
+I might need to restrict my Gemini usage to their coding CLI (or get a couple more Cursor Ultra subs...), but nothing touches that Cursor agent harness. Damn.

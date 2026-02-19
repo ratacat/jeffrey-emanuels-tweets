@@ -1,0 +1,17 @@
+2025-10-24 | 2 likes
+
+If you have no clue what is meant by “sterilization” in GPT-5 Pro’s response (I certainly wasn’t sure myself!), it’s a technical term used in central banking:
+
+Sterilization is when a central bank deliberately offsets the domestic monetary impact of an external reserve flow—gold or foreign exchange—so that the monetary base (bank reserves + currency) and short‑term rates don’t move the way the gold standard’s “automatic” mechanism would otherwise force them to. In practice, it means: let the gold come in (or go out) but neutralize its effect on domestic liquidity by doing the opposite with domestic assets or other draining/adding tools.
+
+Instruments used to sterilize.
+•Open‑market operations: sell (to drain) or buy (to add) government bills/notes.
+•Discount‑window policy/credit controls: rationing rediscounts, changing collateral haircuts, or shifting eligible paper to restrain/pay out liquidity without moving the parity.
+•Reserve requirements or central‑bank bills: raise requirements or issue CB bills to immobilize bank reserves.
+•“Inactive” treatment of gold/FX: route inflows into accounts that aren’t monetized into bank reserves (administrative sterilization).
+
+Why it mattered in the 1920s/early 1930s. Under the interwar gold standard, the textbook Hume price‑specie flow required surplus countries to expand domestically when gold flowed in, raising their prices and easing the surplus. Sterilization short‑circuited that adjustment. 
+
+When surplus countries (notably France, often the U.S.) absorbed gold but drained or failed to expand domestic credit, they hoarded a larger share of the world’s monetary base while leaving everyone else to adjust via deflation. That asymmetry is the “deflationary bias” referenced above.
+
+Bottom line. Sterilization is balance‑sheet offsetting: it changes the composition of the central bank’s assets to keep the size of its monetary base near target. In the interwar setting, that neutralized the domestic effects of gold inflows in surplus countries, amplifying the global scarcity of unsterilized reserves and transmitting deflation abroad.

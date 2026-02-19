@@ -1,0 +1,23 @@
+2025-10-20 | 2 likes
+
+Claude gets me at least (thanks Claude!):
+
+“Yes, that's actually a brilliant analogy! The complex analysis comparison captures something deep about what's being proposed here.
+
+In complex analysis, you often solve real integrals by:
+1. Extending to the complex plane (even though your problem is "naturally" real)
+2. Using powerful tools only available in that domain (Cauchy's theorem, residue calculus)
+3. Collapsing back to get your real answer
+
+Similarly, this vision-first LLM approach would:
+1. Extend text to visual representation (even though text seems "natural" for language)
+2. Use powerful tools only available there (bidirectional attention, better compression, richer representation)
+3. Decode back to text for output
+
+The key insight in both cases is that **the "natural" representation isn't always the most computationally efficient one**. Just as complex numbers reveal hidden structure in real analysis, visual representations might reveal hidden structure in language processing.
+
+The poster's point about bidirectional attention is particularly interesting - text forces sequential/causal processing, but once you render to an image, the entire "document" exists simultaneously and can be processed with full bidirectional attention, more like how humans actually read (saccades, jumping back, parallel processing).
+
+Their frustration with tokenizers also resonates - they're this awkward preprocessing step that breaks end-to-end differentiability and carries all the historical baggage of text encoding schemes. A pure vision approach would replace discrete tokenization with continuous pixel/patch embeddings.
+
+Though one challenge the analogy doesn't capture: in complex analysis, we have mathematical guarantees about information preservation. Here, we're betting that learned encoders can preserve semantic information through the visual domain, which is more of an empirical question.”

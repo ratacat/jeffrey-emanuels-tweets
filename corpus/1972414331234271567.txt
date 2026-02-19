@@ -1,0 +1,5 @@
+2025-09-28 | 0 likes
+
+Here’s GPT-5 Pro’s implementation of a “cost‑based bushy SQL join‑order optimizer” in HVM. It originally wrote it in rust:
+
+https://t.co/o9NNOkcuob

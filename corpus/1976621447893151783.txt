@@ -1,0 +1,17 @@
+2025-10-10 | 1 likes
+
+Prompt used:
+
+“Depict this visually in a beautiful 3d way with soft synth music:
+
+Membrane Impermeability: The inner mitochondrial membrane must be nearly impermeable to protons except through ATP synthase—even tiny leaks destroy efficiency. This requires:
+
+Specialized cardiolipin lipids (found nowhere else in the cell)
+Extremely tight protein-lipid interactions
+Constant quality control and repair
+
+Precision Coupling: The system requires five huge protein complexes (~1.5 million daltons total) working in perfect coordination:
+
+Complex I alone has 45 different subunits that must assemble correctly
+ATP synthase has a literal rotating shaft that must align perfectly with its stationary base
+Any misalignment or malfunction crashes the entire system”

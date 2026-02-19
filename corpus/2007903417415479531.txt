@@ -1,0 +1,19 @@
+2026-01-04 | 29 likes
+
+I realized that it would be straightforward to expand this tool so that it also works for public image share links from Dropbox, Google Drive, and Google Photos in addition to iCloud, so I did that. 
+
+But the original name of the tool, giil, was short for "Get iCloud Image Link." What to do? I decided to repurpose the acronym to be:
+
+"Get Image from Internet Link"
+
+Anyway, you can get it here:
+
+https://t.co/8JOsK6rJbT
+
+Installable on Mac or Linux with a curl-bash one-liner.
+
+Should be useful in more situations now, and also for Android users. As a reminder, the primary use case for giil is quickly getting screenshot image files from your phone browser or home computer browser to a remote development machine in a convenient way. 
+
+This is something that's really annoying to do now, but which comes up constantly when you're using Claude Code or Codex via SSH on a remote machine to develop a web app and want to share a screenshot (if you run locally, you can just paste or drag and drop the image, so it's not really as relevant there).
+
+Let me know what you think.

@@ -1,0 +1,5 @@
+2025-09-29 | 4 likes
+
+This is huge. Wonder if we will crack 10mm token context window now in frontier models in the next 6 months.
+
+Not clear to me yet how universally applicable this approach is across different architectures or whether it causes subtle cognitive deterioration when you push too far.

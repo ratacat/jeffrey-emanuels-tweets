@@ -1,0 +1,4 @@
+cache/
+explain/
+query_cache/
+*.lock

@@ -1,0 +1,7 @@
+2026-01-05 | 16 likes
+
+My answer to this very reasonable and important question from the great @badlogicgames about my agent coding process:
+
+“Could you share a real world project + the plan you came up with? I've been building software for over 25 years, and I was never able to do "hyper-waterfall", as in: preplan everything to a detail level that allows mechanical execution like that.
+
+As you work on a project, problems you didn't anticipate pop up. I don't understand how that is solved.”

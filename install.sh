@@ -27,6 +27,17 @@ chmod +x "${INSTALL_DIR}/jet"
 echo "==> Downloading tweets.db (~1MB)..."
 curl -fsSL "${BASE_URL}/tweets.db" -o "${DATA_DIR}/tweets.db"
 
+# Download and extract corpus (for FrankenSearch hybrid search)
+CORPUS_DIR="${DATA_DIR}/corpus"
+if [ ! -d "${CORPUS_DIR}/.frankensearch" ]; then
+    echo "==> Downloading corpus (~1.3MB)..."
+    curl -fsSL "${BASE_URL}/corpus.tar.gz" -o "${DATA_DIR}/corpus.tar.gz"
+    tar xzf "${DATA_DIR}/corpus.tar.gz" -C "${DATA_DIR}"
+    rm -f "${DATA_DIR}/corpus.tar.gz"
+else
+    echo "==> Corpus already exists, skipping."
+fi
+
 # Check PATH
 if ! echo "$PATH" | tr ':' '\n' | grep -qx "$INSTALL_DIR"; then
     SHELL_NAME=$(basename "$SHELL")
@@ -43,6 +54,9 @@ echo ""
 echo "    jet stats"
 echo "    jet search \"claude code\""
 echo "    jet top -n 5"
+echo ""
+echo "==> Optional: Install fsfs for hybrid BM25 + semantic search"
+echo "    See https://github.com/Dicklesworthstone/frankensearch"
 echo ""
 echo "==> AGENTS.md snippet:"
 echo ""

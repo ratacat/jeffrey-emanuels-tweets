@@ -1,0 +1,3 @@
+2025-12-31 | 19 likes
+
+That’s also why the notion of identity in my project is nuanced; you want “semi-persistent identity.” An identity that can last for the duration of a discrete task or sub-task (for the purpose of coordination), but one that can also vanish without a trace and not break things.

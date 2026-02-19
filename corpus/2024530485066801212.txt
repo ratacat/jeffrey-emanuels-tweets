@@ -1,0 +1,9 @@
+2026-02-19 | 22 likes
+
+FrankenTerm is under active development now. It started out as wezterm_automata but has turned into a full-fledge independent terminal emulator based on the best aspects of WezTerm (which it's most directly based on) and Ghostty and Rio.
+
+But every decision is made towards enabling the kinds of crazy high-volume agent swarm workflows that I do without breaking down under load. And it's built on my asupersync library for a rock solid foundation. With plenty of alien artifact characteristics to make it insanely performant.
+
+You can follow FrankenTerm development here:
+
+https://t.co/tX74BcXzVj

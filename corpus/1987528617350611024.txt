@@ -1,0 +1,5 @@
+2025-11-09 | 197 likes
+
+Since this post blew up, I thought I’d share the actual math because it’s really cool to me that just by using pure math, you can produce a plot that looks like that famous “photo 51.”
+
+GPT-5 Pro explains it all in detail and even came up with python code that makes the plot! https://t.co/3eSBnHkTbL

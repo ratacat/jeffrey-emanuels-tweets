@@ -1,0 +1,114 @@
+2026-01-10 | 95 likes
+
+I included the miniature version of this prompt here because the "My Favorite Prompts" series are supposed to be compact, bite-sized, self-contained nuggets. 
+
+But today I transformed this into a truly insane system. It's not relevant if you're making another CRUD program in React or a TODO list, but if you're doing something pretty complicated in Rust or Golang, or something involving complex data, this approach is almost scary in what it can do. 
+
+It's a 2-round process. Here is Round 1:
+
+---
+
+First read ALL of the AGENTS dot md file and README dot md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code, and technical architecture and purpose of the project. 
+
+Then, once you've done an extremely thorough and meticulous job at all that and deeply understood the entire existing system and what it does, its purpose, and how it is implemented and how all the pieces connect with each other, I need you to hyper-intensively investigate and study and ruminate on these questions as they pertain to this project: 
+
+Are there any other gross inefficiencies in the core system? places in the code base where 1) changes would actually move the needle in terms of overall latency/responsiveness and throughput; 2) such that our changes would be provably isomorphic in terms of functionality so that we would know for sure that it wouldn't change the resulting outputs given the same inputs; 3) where you have a clear vision to an obviously better approach in terms of algorithms or data structures (note that for this, you can include in your contemplations lesser-known data structures and more esoteric/sophisticated/mathematical algorithms as well as ways to recast the problem(s) so that another paradigm is exposed, such as the list shown below (Note: Before proposing any optimization, establish baseline metrics (p50/p95/p99 latency, throughput, peak memory) and capture CPU/allocation/I/O profiles to identify actual hotspots):
+
+- N+1 query/fetch pattern elimination
+- zero-copy / buffer reuse / scatter-gather I/O
+- serialization format costs (parse/encode overhead)
+- bounded queues + backpressure (prevent memory blowup and tail latency)
+- sharding / striped locks to reduce contention
+- memoization with cache invalidation strategies
+- dynamic programming techniques
+- convex optimization theory
+- lazy evaluation / deferred computation
+- iterator/generator patterns to avoid materializing large collections
+- streaming/chunked processing for memory-bounded work
+- pre-computation and lookup tables
+- index-based lookup vs linear scan recognition
+- binary search (on data and on answer space)
+- two-pointer and sliding window techniques
+- prefix sums / cumulative aggregates
+- topological sort and DAG-awareness for dependency graphs
+- cycle detection
+- union-find for dynamic connectivity
+- graph traversal (BFS/DFS) with early termination
+- Dijkstra's / A* for weighted shortest paths
+- priority queues / heaps
+- tries for prefix operations
+- bloom filters for probabilistic membership
+- interval/segment trees for range queries
+- spatial indexing (k-d trees, quadtrees, R-trees)
+- persistent/immutable data structures
+- copy-on-write semantics
+- object/connection pooling
+- cache eviction policy selection (LRU/LFU/ARC)
+- batch-aware algorithm selection
+- async I/O batching and coalescing
+- lock-free structures for high-contention scenarios
+- work-stealing for recursive parallelism
+- memory layout optimization (SoA vs AoS, cache locality)
+- short-circuiting and early termination
+- string interning for repeated values
+- amortized analysis reasoning
+
+taking into consideration these general guides where applicable:
+
+DP APPLICABILITY CHECKS:
+- Overlapping subproblems? → memoize with stable state key
+- Optimal partitioning/batching? → prefix sums + interval DP
+- Dependency graph with repeated traversal? → single-pass topological DP
+
+CONVEX OPTIMIZATION CHECKS:
+- Brute-forcing exact allocation/scheduling? → LP / min-cost flow with deterministic tie-breaking
+- Continuous parameter fitting with explicit loss? → regularized least squares / QP
+- Large decomposable convex objective? → ADMM / proximal methods
+
+Also note that if there are well-written third party libraries you know of that would work well, we can include them in the project). 
+
+METHODOLOGY REQUIREMENTS:
+
+A) Baseline first: Run the test suite and a representative workload; record p50/p95/p99 latency, throughput, and peak memory with exact commands.
+
+B) Profile before proposing: Capture CPU + allocation + I/O profiles; identify the top 3–5 hotspots by % time before suggesting changes.
+
+C) Equivalence oracle: Define explicit golden outputs + invariants. For large input spaces, add property-based or metamorphic tests.
+
+D) Isomorphism proof per change: Every proposed diff must include a short proof sketch explaining why outputs cannot change (including ordering, tie-breaking, floating-point behavior, and RNG seeds).
+
+E) Opportunity matrix: Rank candidates by (Impact × Confidence) / Effort before implementing; focus only on items likely to move p95+ or throughput meaningfully.
+
+F) Minimal diffs: One performance lever per change. No unrelated refactors. Include rollback guidance if any risk exists.
+
+G) Regression guardrails: Add benchmark thresholds or monitoring hooks to prevent future regressions.
+
+Use ultrathink.
+
+---
+
+You can run that once in Claude Code with Opus 4.5 and once in Codex with GPT 5.2 Codex (I started using just High because Extra High is just too slow for me unless I'm about to go to bed). 
+
+After they finish, hit them each with like 5 quick rounds of this one:
+
+"Great. Look over everything again for any obvious oversights or omissions or mistakes, conceptual errors, blunders, etc. Use ultrathink"
+
+Then have them save the outputs like this:
+
+"OK, save all of that as PLAN_FOR_ADVANCED_OPTIMIZATIONS_ROUND_1__OPUS.md"
+
+"OK, save all of that as PLAN_FOR_ADVANCED_OPTIMIZATIONS_ROUND_1__GPT.md"
+
+Then in Claude Code, do:
+
+"Compare what you did to PLAN_FOR_ADVANCED_OPTIMIZATIONS_ROUND_1__GPT.md and take the best elements from that and weave them into your plan to get a hybrid best of both worlds superior plan by editing your original plan file in place."
+
+Then this:
+
+Reread AGENTS dot md so it's still fresh in your mind. Now read ALL of PLAN_FOR_ADVANCED_OPTIMIZATIONS_ROUND_1__OPUS.md. Then check over each bead super carefully-- are you sure it makes sense? Is it optimal? Could we change anything to make the system work better for users? We want a comprehensive and granular set of beads for all   this with tasks, subtasks, and dependency structure overlaid, with detailed comments so that the whole thing is totally self-contained and self-documenting (including relevant background, reasoning/justification, considerations, etc.-- anything we'd want our "future self" to know about the goals and intentions and thought process   and how it serves the over-arching goals of the project.). The beads should be so detailed that we never need to consult back to the original markdown plan document. Does it accurately reflect ALL of the markdown plan file in a comprehensive way?   If changes are warranted then revise the beads or create new ones or close invalid or inapplicable ones. It's a lot easier and faster to operate in "plan space" before we start implementing these things! DO NOT OVERSIMPLIFY THINGS! DO NOT LOSE ANY FEATURES OR FUNCTIONALITY! Also, make sure that as part of these beads, we include   comprehensive unit tests and e2e test scripts with great, detailed logging so we can be sure that everything is working perfectly after implementation. Remember to ONLY use the `bd` tool to create and modify the beads and to add the dependencies to beads."
+
+Then a few rounds of:
+
+"Check over each bead super carefully-- are you sure it makes sense? Is it optimal? Could we change anything to make the system work better for users? If so, revise the beads. It's a lot easier and faster to operate in "plan space" before we start implementing these things! DO NOT OVERSIMPLIFY THINGS! DO NOT LOSE ANY FEATURES OR FUNCTIONALITY! Also make sure that as part of the beads we include comprehensive unit tests and e2e test scripts with great, detailed logging so we can be sure that everything is working perfectly after implementation.  Use ultrathink."
+
+Then let the swarm loose to implement it all. Then get ready for ROUND 2.

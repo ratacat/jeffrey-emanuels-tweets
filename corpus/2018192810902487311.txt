@@ -1,0 +1,9 @@
+2026-02-02 | 63 likes
+
+All the FrankenTUI beads have been implemented. I’m also making a demo showcase app to exhibit all the functionality and then will keep adding more tests and doing more optimization work.
+
+Then I’m going to port Pi agent to Rust. Once I have that, I’m going to try to combine the best elements of the Rust Pi agent with codex, but using FrankenTUI for console rendering and my asupersync library for all networking and file IO.
+
+I’m calling it FrankenCode, and I’m pretty excited about it. It’s going to be spectacular, like some kind of alien artifact. Which it is, in a sense. 👽🛸🧠
+
+Hopefully will have it done within a week.

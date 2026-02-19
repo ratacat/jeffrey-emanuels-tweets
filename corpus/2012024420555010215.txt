@@ -1,0 +1,40 @@
+2026-01-16 | 298 likes
+
+"My Favorite Prompts," by Jeffrey Emanuel  
+
+Prompt 5: The Dueling Idea Wizards
+
+(requires 2 agents; I use CC Opus 4.5 and Codex GPT-5.2, Extra High reasoning)
+
+After having both agents review the project's code or plan documents (using something like "First read ALL of the AGENTS .md file and README .md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project."), you give each of them the original Idea Wizard Prompt (the first in this series of My Favorite Prompts):
+
+"Come up with your very best ideas for improving this project to make it more robust, reliable, performant, intuitive, user-friendly, ergonomic, useful, compelling, etc. while still being obviously accretive and pragmatic. Come up with 30 ideas and then really think through each idea carefully, how it would work, how users are likely to perceive it, how we would implement it, etc; then winnow that list down to your VERY best 5 ideas. Explain each of the 5 ideas in order from best to worst and give your full, detailed rationale and justification for how and why it would make the project obviously better and why you're confident of that assessment. Use   ultrathink."
+
+Here's the new twist: after they respond, you tell them each this:
+
+"I asked another model the same thing and it came up with this list:
+
+ ```
+<paste the output from the other model here>
+```
+
+Now, I want you to very carefully consider and evaluate each of them and then give me your candid evaluation and score them from 0 (worst) to 1000 (best) as an overall score that reflects how good and smart the idea is, how useful in practical, real-life scenarios it would be for humans and ai coding agents like yourself, how practical it would be to implement it all correctly, whether the utility/advantages of the new feature/idea would easily justify the increased complexity and tech debt, etc. Use ultrathink"
+
+---
+
+Then, you show each of the models how the other model rated their ideas:
+
+"I asked the other model the exact same thing, to score YOUR ideas using the same grading methodology; here is what it came up with:
+
+```
+<paste the output from the other model here>
+```
+"
+
+Now you wait for the fireworks. Seriously, it was amusing to see them getting catty with each other and disagreeing so much. It definitely wasn't a "love fest" when I just tried it now using my destructive_command_guard (dcg) project. 
+
+See some of the choice screenshots attached here.
+
+Basically, the places where they strongly agree are much more likely to be "genuinely" good ideas. 
+
+So this is a way to quickly drum up tons of ideas, but then also kill (or wound) most of them! Extremely useful.

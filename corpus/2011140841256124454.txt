@@ -1,0 +1,31 @@
+2026-01-13 | 95 likes
+
+I'm very pleased to introduce my latest tool, xf, a hyper-optimized Rust cli tool for searching your entire Twitter/X data archive. You can get it here:
+
+https://t.co/S91cAGleaK
+
+Many people don't realize this, but X has a great feature buried in the settings where you can request a complete dump of all your tweets, DMs, likes, etc. 
+
+It takes them 24 hours to prepare it, but then you get a link emailed to you and can download a single zip file with all your stuff. Mine was around 500mb because of all the images I've posted.
+
+The problem is, what do you do with it? It's not very convenient or fast to search the way they give it to you. 
+
+Enter xf, which takes that zip file and makes it into an incredibly useful knowledge base, at least if you use X a lot. 
+
+And that's because you get it for free! You're just piggybacking on something you were already doing anyway for other reasons. 
+
+As you may have noticed, I'm a bit addicted to posting on here and also to building in public. So whenever I have a new tool, I usually post about it and explain how I use it and answer questions. 
+
+I also have a ton of posts about my workflows in general, and my advice on how to do things, my opinions on various tools and libraries, etc. 
+
+All of that is potentially relevant to a coding agent that is working on my projects, editing my personal website, responding to GitHub issues on my behalf, etc.
+
+So now, I can just tell them to use xf; simply typing that shows the quickstart screen shown in the attached screenshot, and then the agents are off to the races. 
+
+The more you use X (for work at least, it's not going to help if you just troll people), the more of an unlock this is for your personal productivity. 
+
+Imagine that you're a cult leader with devoted acolytes (your agents). Before doing anything, you want them to ask "What would our leader do?" and then they think "I know! I shall consult the sacred texts!" (i.e., your tweets and DMs).
+
+That can be your new reality starting today if you install xf. 
+
+PS: Can someone get this to Elon? I think he would love seeing how fast this tool tears through a massive archive of data and he would end up using it daily. And if someone from X sees this: please make the archives include the full text of any tweet you reply to, it would make this tool even more useful.

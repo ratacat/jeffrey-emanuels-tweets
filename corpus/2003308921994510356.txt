@@ -1,0 +1,5 @@
+2025-12-23 | 141 likes
+
+My https://t.co/TKaKxRJ3V5 site seems to be working pretty well now, with a huge amount of new content. Not bad for a few days on the side as I worked on other stuff.
+
+Around 33k lines of high-quality shell scripts and nearly another 30k of typescript/react for the webapp. https://t.co/EPmaH0u6S0

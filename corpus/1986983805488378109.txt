@@ -1,0 +1,61 @@
+2025-11-08 | 190 likes
+
+I just figured out how to really automate my agent workflow even more with some tmux wizardry.
+
+Now that I'm using my mcp agent mail project to get a bunch of agents to talk to each other about implementing a plan (and also coordinating using the beads project for task management), I still need to "feed" the agents by queueing up a bunch of messages in codex to keep them busy.
+
+This involves going one by one through the various tmux panes (one for each codex instance) and pasting in some canned messages or hitting the up arrow a few times to reuse past messages, such as: 
+
+"Pick the next bead you can actually do usefully now and start coding on it immediately; communicate what you're doing to the other agents via agent mail."
+
+It feels a bit silly and inefficient to be doing this, even though it doesn't take that long to give each agent enough instructions to keep them busy for over an hour. 
+
+But now I realized I can automatically queue up a bunch of messages in every relevant tmux pane at once, simply by copying and pasting this into the console outside of the tmux session (this is tested and working in zsh):
+
+---
+
+PANES=(${(f)"$(tmux list-panes -a -F '#S:#I.#P' | tail -n +3 | head -n -2)"})
+for pane in $PANES; do
+    tmux send-keys -t $pane -l 'pick the next bead you can actually do usefully now and start coding on it immediately; communicate what you'"'"'re doing to the other agents via agent mail.'
+    sleep 0.1
+    tmux send-keys -t $pane Enter
+    
+    for i in {1..4}; do
+        tmux send-keys -t $pane -l 'keep going, doing useful work! and communicate!'
+        sleep 0.1
+        tmux send-keys -t $pane Enter
+    done
+    
+    tmux send-keys -t $pane -l 'great, now I want you to carefully read over all of the new code you just wrote and other existing code you just modified with "fresh eyes" looking super carefully for any obvious bugs, errors, problems, issues, confusion, etc.'
+    sleep 0.1
+    tmux send-keys -t $pane Enter
+    
+    tmux send-keys -t $pane -l 'Be sure to check your agent mail and to promptly respond if needed to any messages; thereafter proceed meticulously with the plan, doing all of your remaining unfinished tasks systematically and continuing to notate your progress in-line in the plan document, via beads, and via agent mail messages. Don'"'"'t get stuck in "communication purgatory" where nothing is getting done; be proactive about starting tasks that need to be done, but inform your fellow agents via messages when you do so and notate that in-line in the plan document. When you'"'"'re really not sure what to do, pick the next bead that you can usefully work on and get started.'
+    sleep 0.1
+    tmux send-keys -t $pane Enter
+    
+    tmux send-keys -t $pane -l 'ok can you now turn your attention to reviewing the code written by your fellow agents and checking for any issues, bugs, errors, problems, inefficiencies, security problems, reliability issues, etc. and carefully diagnose their underlying root causes using first-principle analysis and thereafter fix or revise them if necessary? Dont restrict yourself to the latest commits, cast a wider net and go super deep!'
+    sleep 0.1
+    tmux send-keys -t $pane Enter
+done
+
+---
+
+This script:
+
+Gets panes: Finds all tmux panes, excluding the first 2 and last 2
+
+Sends 8 messages to each selected pane:
+
+"pick the next bead..." 
+- tells agents to start working on next task
+
+"keep going..." × 4 - repeated encouragement to continue working
+
+"carefully read over..." - instructs fresh code review
+
+"check agent mail..." - long message about coordination, avoiding communication paralysis, staying productive
+
+"review code written by fellow agents..." - peer code review for bugs/issues
+
+Each message is sent literally (-l flag) with a 0.1 second delay before Enter to ensure the Codex CLI processes them properly.

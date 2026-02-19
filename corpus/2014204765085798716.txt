@@ -1,0 +1,43 @@
+2026-01-22 | 104 likes
+
+I’m living this every day, and let me tell you, things are accelerating very rapidly indeed. 
+
+Using skills to improve skills, skills to improve tool use, and then feeding the actual experience in the form of session logs (surfaced and searched by my cass tool and /cass skill) back into the design skill for improving the tool interface to make it more natural and intuitive and powerful for the agents.
+
+Then taking that revised tool and improving the skill for using that tool, then rinse and repeat. 
+
+And finding any way I can to squeeze out more token density and agent intuitiveness and ergonomics wherever I can, like porting toon to Rust and seeing how I can add it as an optional output format to every tool’s robot mode.
+
+Meanwhile, I’m going over each tool with my extreme optimization skill and applying insane algorithmic lore that Knuth himself probably forgot about already to make things as fast as the metal can go in memory-safe Rust.
+
+Now I’m applying this to much bigger and richer targets, not just making small tools for use by agents, but now complex, rich protocols like my Flywheel Connector Protocol, which is practically an alien artifact (same for my process_triage or pt tool, which could cover a dozen PhD theses worth of applied probability), in that it weaves together so many innovative and clever ideas. 
+
+Skeptical? Check out the spec, it’s all public in my GH. All the “slop callers” have been conspicuously silent about this stuff, I wonder why?
+
+And now I’m even starting to build up my own core infrastructure for Rust. Just because certain libraries and ecosystems like Tokio have all the mindshare, doesn’t mean they’re the best, or even particularly good. 
+
+Design by committee over 10+ years while the language evolves is not a recipe for excellence. 
+
+But people are content to defer to the experts and then they end up with flawed structured concurrency primitives that forgo all the correctness by design that the academics already solved.
+
+For instance, check out my asupersync library, which I’m already using to replace all the networking in my other rust tools, for a glimpse at this new clean-room, alien-artifact library future based on all that CS academic research that only a dozen people in the world ever read about. 
+
+The knowledge is just sitting there and the models have it. But you need to know how to coax it out of them. 
+
+I will be skipping out on all the Rust politics though! Naysayers can stick to Tokio.
+
+At the same time, I’m raiding and pillaging the best libraries available for every language and making clean-room, conformance-assured, heavily-optimized Rust versions. 
+
+I’m nearly done porting rich, fastapi, fastmcp, and sqlmodel from Python, as well as all of the Charm libraries from Golang (like bubbletea and lipgloss), and even OpenTUI (I’ll have to port OpenCode afterwards just to antagonize Dax for being so nasty to me).
+
+These aren’t idle boasts; all of these repos are public and available NOW for your perusal and verification. 
+
+And I’ve already proven I can do this with my beads_rust project that I made in a few days and which turned 270k lines of Golang into 20k lines of Rust that is 8x faster.
+
+Just need a few more days to finish everything and establish correctness and conformance, and then the iterated extreme isomorphic optimization Olympics can begin in earnest, and I can turn all of these libraries into alien artifacts, too.
+
+And btw, when I’m done porting all the console formatting related libraries, I’m going to merge them all into an unholy Franken-Library (but don’t worry, it will be super elegant and agent-intuitive).
+
+Again, this isn’t some crazy dream. All of this will be completed by early February at the latest. Just watch.
+
+AI skeptics in shambles.

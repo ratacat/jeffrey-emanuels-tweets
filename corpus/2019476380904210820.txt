@@ -1,0 +1,5 @@
+2026-02-05 | 231 likes
+
+If you think this is cool, trust me: the concept works even better when the swarms contain a mixture of frontier models and agent harnesses.
+
+Opus and GPT 5.2 are way smarter together than alone. My mcp_agent_mail works with any provider, and has for 4 months now! Rust port 🔜

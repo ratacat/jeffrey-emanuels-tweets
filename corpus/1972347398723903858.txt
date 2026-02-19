@@ -1,0 +1,5 @@
+2025-09-28 | 1 likes
+
+And the revision prompt to GPT-5 (both use the complete combined prompt to prime the model):
+
+https://t.co/W9d7aL8jDx

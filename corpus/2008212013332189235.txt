@@ -1,0 +1,3 @@
+2026-01-05 | 113 likes
+
+Q: Why do the big labs like OpenAI and Anthropic subsidize tokens to such a large degree in their Pro/Max plans when people like me use the coding agent tools so heavily that it's surely a money-losing proposition for them? Why give this one use case a ~95% discount vs. the API?

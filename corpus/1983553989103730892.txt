@@ -1,0 +1,25 @@
+2025-10-29 | 384 likes
+
+Seeing all these posts despairing about how Codex is suddenly much less good for some reason, and the similar posts a couple months ago about Claude Code reminds me of an anecdote that I recently read in a biography of Masayoshi Son (“Gambling Man”).
+
+Masa’s father borrowed millions of dollars to build a lavish pachinko parlor in Japan (pachinko is like a cross between a pinball machine and a slot machine that by some measures has accounted for over 3% of Japan’s GDP for the past 50 years!).
+
+Anyway, Masa’s dad spent so much on the construction and buildout that he needed to meet insanely ambitious sales targets to make the economics work: he needed literally thousands of customers per day, more than 4-5x the traffic of nearby competing pachinko parlors.
+
+After the first two weeks, it was clear that it wasn’t working. He was preparing to file bankruptcy and skip town, but then had an idea: he told his “pachinko engineer” to modify the pins of the machines to ensure that every customer would have positive expected value. After the adjustment, the players would make an average of $100 per day. 
+
+So then he started hemorrhaging money even faster, funding the outflows with even more borrowing, but word quickly got around that playing at the “Lion” parlor was a better deal than competing joints, and the place became packed. He kept it going like that for around 3 months, building up a steady and very loyal clientele. 
+
+But then he had his engineer adjust the pins again to switch things back to being in favor of the house, and suddenly was cash flow positive for the fourth month. 
+
+Then, to further confuse people (this is perhaps the most diabolical and clever part of the deception), he once again flipped back to loss-making odds for the 5th month to keep them guessing. 
+
+After that, he had so many customers that he adjusted the odds to be somewhat favorable to the house while still making good margins. 
+
+The profitability was further juiced up by having 20 members of his extended family provide free labor, and also enlisting his deadbeat loansharking borrowers to work off their debts. 
+
+Within a few years he had a chain of over 10 parlors across Japan and was clearing $500k/month. That’s how the family was able to afford to send Masa to California to study, where he was able to drive a Porsche and fund various business ventures.
+
+Anyway, it’s not clear whether Anthropic and OpenAI are using a similar “bait and switch” strategy or they simply underestimated usage and are so short of compute that they’ve been forced to quantize, distill, and reduce reasoning effort to compensate. 
+
+My gut tells me it’s the latter, but it wouldn’t be unheard of for a company to use the former approach!

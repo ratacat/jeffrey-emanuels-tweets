@@ -1,0 +1,3 @@
+2025-10-14 | 106 likes
+
+People are really excited about Karpathy’s new nanochat project (10k GitHub stars in one day!). But he’s been sharing awesome deep learning code for a lot longer than that! I found some old emails about his matRBM project back when I doubt more than 10k ppl in the world knew DL… https://t.co/2QUSFbAxAK

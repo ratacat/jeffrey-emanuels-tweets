@@ -1,0 +1,11 @@
+2026-01-15 | 315 likes
+
+Because I'm now operating much more at the planning level, I repurposed what is perhaps my single most useful prompt that I ever came up with for coding (and hundreds, if not thousands, can attest to its surprising efficacy): what I call my "fresh eyes" review prompt. 
+
+Anyway, here is the revamped version of that specifically for reviewing markdown plan documents:
+
+"Reread AGENTS dot md so it's still fresh in your mind. Great, now I want you to carefully read over the ENTIRE plan document, but this time with "fresh eyes," looking super carefully for any errors, mistakes, problems, issues, confusion, conceptual errors, logical violations, ignoring of probability theory, sloppy thinking, inaccurate information/data, bad implicit assumptions, etc. Carefully fix anything you uncover by revising the plan document in-place in a series of small edits, not one big edit."
+
+Take your huge, complex plan document or protocol specification document, RFC, whatever it is, and start up Codex with GPT 5.2. 
+
+Crank it to Extra High reasoning effort and queue up like 20 of that same prompt in a row, and marvel about what it does to your document over the next few hours.

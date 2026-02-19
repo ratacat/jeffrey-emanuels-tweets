@@ -1,0 +1,5 @@
+2025-09-30 | 7 likes
+
+While it’s probably not as smart as GPT-5 with high reasoning (or gpt-5-codex), it does seem to be better than Opus 4.1. And what’s critical to me is that it’s very smart in a different way than GPT-5.
+
+This makes it highly complementary and useful in my programming workflows.

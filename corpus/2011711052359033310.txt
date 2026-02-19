@@ -1,0 +1,353 @@
+2026-01-15 | 221 likes
+
+Agent coding life hack:
+
+Claude Opus 4.5 LOVES it when you ask for its personal opinion on tooling: basically, what it would want if it got to be in charge of making a tool for its own use. 
+
+I'm working on such a tool now for managing processes on a machine (process_triage) and already have a lot fleshed out in a plan document, but decided to ask Claude this:
+
+"OK, without changing the plan document, what do you think would make this project better? What would make it more useful SPECIFICALLY TO YOU if you had to manage one or more linux machines using ssh for optimal performance?  Use ultrathink"
+
+Claude's response is below, but before I paste that whole thing in, here's the next prompt I used to tell it to integrate the suggestions effectively:
+
+"Wonderful. Please carefully make ALL the revisions, additions, expansions, etc. to the document, but in a super cohesive and coherent way, where they are artfully woven into the existing structure and not just dumped into some awful appendix.  Use ultrathink"
+
+PS: Notice how it "desperately want[s]" these feature. Bet you didn't realize your clankers had desires, especially of the "desperate" kind!
+
+---
+
+● This is a great question. Let me think about what I actually need when I'm managing Linux machines via SSH.
+
+  ---
+  What Would Make pt Transformative for Me as an Agent
+
+  1. One-Shot Comprehensive Snapshot
+
+  My biggest pain point: I currently run 5-10 separate commands (ps aux, top -bn1, free -h, lsof, ss -tlnp, etc.) and mentally synthesize them. What I desperately want:
+
+  pt agent snapshot --json
+
+  One command that returns:
+  - System health (load, memory pressure, PSI stalls)
+  - All suspicious processes with classification + confidence
+  - Process trees with parent/child relationships
+  - Blast radius for each candidate (what breaks if I kill it)
+  - Supervisor detection (will it respawn?)
+  - Open write handles (data loss risk)
+  - Network dependencies (what clients are connected)
+
+  This single output would replace my entire reconnaissance phase.
+
+  2. Blast Radius as First-Class Output
+
+  Before I recommend killing anything, I need to answer: what breaks?
+
+  {
+    "pid": 12345,
+    "blast_radius": {
+      "children": [{"pid": 12346, "cmd": "worker"}, {"pid": 12347, "cmd": "worker"}],
+      "ports_freed": [3000, 3001],
+      "clients_disconnected": 5,
+      "open_write_handles": [],
+      "shared_memory_users": [],
+      "dependent_services": ["nginx (upstream)"],
+      "estimated_recovery_time": "immediate (stateless)",
+      "data_loss_risk": "none"
+    }
+  }
+
+  I want this to be impossible to miss. The current document mentions blast radius but I'd want it in EVERY candidate output, not as an optional drill-down.
+
+  3. The Right Command, Not Just "Kill"
+
+  This is critical. When I see a runaway process, I often recommend kill -9 PID and it respawns instantly because it's managed by systemd/pm2/Docker. The user gets frustrated. I look incompetent.
+
+  What I need:
+
+  {
+    "pid": 12345,
+    "supervisor": {
+      "type": "systemd",
+      "unit": "myapp.service",
+      "restart_policy": "always",
+      "restart_delay_ms": 100
+    },
+    "recommended_command": "systemctl stop myapp.service",
+    "why_not_kill": "Process will respawn in 100ms via systemd. Use supervisor command instead.",
+    "alternative_commands": [
+      {"cmd": "systemctl restart myapp.service", "effect": "restart cleanly"},
+      {"cmd": "systemctl mask myapp.service && systemctl stop myapp.service", "effect": "stop permanently until unmask"}
+    ]
+  }
+
+  Tell me the RIGHT command, not just the primitive action.
+
+  4. Goal-Oriented Mode That Actually Works
+
+  Users come to me with goals, not process lists:
+  - "My machine is out of memory"
+  - "Port 3000 is stuck"
+  - "CPU is pegged"
+
+  I want:
+
+  pt agent solve --goal "free 2GB memory" --json
+
+  {
+    "goal": "free 2GB memory",
+    "achievable": true,
+    "plans": [
+      {
+        "candidates": [{"pid": 12345, "memory_mb": 1800}, {"pid": 23456, "memory_mb": 600}],
+        "total_freed_mb": 2400,
+        "false_kill_risk": 0.02,
+        "commands": ["systemctl stop myapp", "kill 23456"]
+      },
+      {
+        "candidates": [{"pid": 34567, "memory_mb": 2100}],
+        "total_freed_mb": 2100,
+        "false_kill_risk": 0.15,
+        "commands": ["kill 34567"],
+        "warning": "This process may be useful - higher uncertainty"
+      }
+    ],
+    "recommendation": "Plan 1 - lower risk, exceeds goal"
+  }
+
+  Give me trade-off options, not just a single recommendation.
+
+  5. Verification After Action
+
+  When I execute a kill, I need to know it worked:
+
+  pt agent apply --pid 12345 --action kill --verify --json
+
+  {
+    "action": "kill -TERM 12345",
+    "result": "success",
+    "verification": {
+      "process_terminated": true,
+      "memory_freed_mb": 1847,
+      "ports_freed": [3000],
+      "respawn_detected": true,
+      "respawn_pid": 12390,
+      "respawn_delay_ms": 95
+    },
+    "assessment": "Process killed but respawned immediately (systemd). Original issue will recur. Use 'systemctl stop' instead."
+  }
+
+  This closes the loop. I know what happened. I can explain to the user. I can take corrective action if needed.
+
+  6. Confidence That's Actually Useful
+
+  Not just a number—tell me why you're uncertain and what would help:
+
+  {
+    "pid": 12345,
+    "classification": "abandoned",
+    "confidence": 0.72,
+    "confidence_breakdown": {
+      "cpu_pattern": {"score": 0.9, "signal": "Tight loop, no IO for 20min"},
+      "runtime": {"score": 0.6, "signal": "45min - ambiguous for test runner"},
+      "context": {"score": 0.5, "signal": "No TTY but might be CI job"}
+    },
+    "uncertainty_drivers": [
+      "Command 'bun test' not in signature library",
+      "No baseline for this machine",
+      "Short observation window (30s)"
+    ],
+    "to_increase_confidence": [
+      {"action": "wait 2min", "expected_delta": "+0.15"},
+      {"action": "check stack trace", "expected_delta": "+0.10"},
+      {"action": "ask user if test suite is expected", "expected_delta": "+0.20"}
+    ]
+  }
+
+  This lets me make informed decisions about whether to act now or gather more information.
+
+  7. Session Continuity Across My Invocations
+
+  When I'm called back to the same machine, I want context:
+
+  pt agent context --since 24h --json
+
+  {
+    "recent_sessions": 3,
+    "patterns": [
+      {
+        "process": "bun test --filter=gateway",
+        "occurrences": 3,
+        "actions_taken": ["killed", "killed", "user kept"],
+        "last_seen": "2h ago",
+        "assessment": "Recurring stuck test - user kept it last time, may be intentional"
+      }
+    ],
+    "machine_changes": [
+      "Memory usage trending up over 24h",
+      "New process type appeared: 'https://t.co/MbPsgUBDIU'"
+    ]
+  }
+
+  This lets me say to the user: "I see we've dealt with this stuck test before. Last time you chose to keep it—is it expected?"
+
+  8. Prose Summaries for User Communication
+
+  After I do my analysis, I need to explain to the user. Generating prose from JSON is token-expensive. Give me a summary:
+
+  pt agent summary --prose
+
+  Your machine has 2 processes worth investigating:
+
+  1. **bun test --filter=gateway** (PID 12345)
+     Running 45 minutes at 95% CPU with no progress.
+     → Likely stuck. Safe to kill (no open files, no connections).
+     → Command: `kill 12345`
+
+  2. **node server.js** (PID 23456)
+     Running 2 hours, using 1.2GB (usually 400MB).
+     → Probably fine, but memory is elevated.
+     → Recommendation: Keep, but monitor.
+
+  Quick fix: Kill #1 to free 800MB RAM and 1 CPU core.
+
+  I can paste this directly to the user.
+
+  9. Failure Modes I Can Handle
+
+  When things go wrong, tell me exactly what to do:
+
+  {
+    "action": "kill -TERM 12345",
+    "result": "failed",
+    "reason": "Process in uninterruptible sleep (D state)",
+    "explanation": "Process is waiting on a kernel operation (probably IO). SIGKILL will also fail.",
+    "recovery_options": [
+      {
+        "action": "wait",
+        "command": null,
+        "rationale": "IO may complete naturally"
+      },
+      {
+        "action": "investigate",
+        "command": "cat /proc/12345/stack",
+        "rationale": "See what kernel path it's stuck in"
+      },
+      {
+        "action": "check_nfs",
+        "command": "mount | grep nfs",
+        "rationale": "D-state often means dead NFS mount"
+      },
+      {
+        "action": "escalate",
+        "command": null,
+        "rationale": "May require reboot if stuck on dead mount"
+      }
+    ]
+  }
+
+  Don't just say "failed"—give me a decision tree.
+
+  10. Token-Efficient Output Modes
+
+  My context window matters. Give me control:
+
+  # Quick health check
+  pt agent status --brief
+  # Output: "2 critical, 1 warning" or "OK"
+
+  # Only what I need to act on
+  pt agent plan --only=actionable --fields=pid,cmd,action,confidence
+
+  # Compact JSON (no pretty-printing, minimal keys)
+  pt agent snapshot --compact --json
+
+  11. Capability Reporting Upfront
+
+  Before I start, tell me what you can and can't do on this machine:
+
+  pt agent capabilities
+
+  {
+    "effective_user": "ubuntu",
+    "can_sudo": false,
+    "tools": {
+      "available": ["ps", "lsof", "ss", "top"],
+      "missing": ["perf", "bpftrace", "iotop"],
+      "impact": "Reduced IO visibility - may miss some stuck-on-IO processes"
+    },
+    "kill_scope": "own processes only (uid 1000)",
+    "supervisor_access": {
+      "systemd": "read-only (can detect, cannot stop)",
+      "docker": "full access"
+    },
+    "recommendation": "For full capability: sudo pt agent analyze"
+  }
+
+  Now I know what to expect and can advise the user if we need elevated access.
+
+  12. Reversibility Information
+
+  For every action, tell me if I can undo it:
+
+  {
+    "action": "systemctl stop myapp",
+    "reversible": true,
+    "undo_command": "systemctl start myapp",
+    "undo_safe": true,
+    "state_loss": "none - service is stateless"
+  }
+
+  {
+    "action": "kill -9 12345",
+    "reversible": false,
+    "undo_command": null,
+    "state_loss": "Process state lost. Manual restart required: 'python https://t.co/Y3POJnxWpZ'",
+    "warning": "Training progress may be lost if not checkpointed"
+  }
+
+  ---
+  The Killer Feature I Don't See Emphasized Enough
+
+  Differential mode that's actually fast.
+
+  When I'm debugging, I often do:
+  1. Check state
+  2. Take action
+  3. Check state again
+  4. See what changed
+
+  I want:
+
+  pt agent snapshot --save-baseline
+  # ... I take some action ...
+  pt agent diff --json
+
+  {
+    "time_elapsed": "15s",
+    "changes": {
+      "processes_terminated": [{"pid": 12345, "cmd": "bun test", "by": "user action"}],
+      "processes_spawned": [{"pid": 12390, "cmd": "bun test", "parent": "systemd", "note": "respawn"}],
+      "memory_freed_mb": 50,
+      "memory_used_new_mb": 48,
+      "net_effect": "minimal - process respawned"
+    },
+    "assessment": "Kill was ineffective due to supervisor respawn. Try systemctl stop instead."
+  }
+
+  This is how I actually debug—iteratively, with before/after comparisons.
+
+  ---
+  Summary: My Wishlist Prioritized
+
+  1. One comprehensive snapshot command - Replace my 10-command reconnaissance
+  2. Blast radius in every candidate - Never let me accidentally break things
+  3. Supervisor-aware commands - Tell me the RIGHT way to stop something
+  4. Goal-oriented solver - "Free 2GB" not "here's a list of processes"
+  5. Verification after action - Confirm it worked, detect respawns
+  6. Actionable confidence - Why uncertain, what would help
+  7. Diff mode - Before/after comparison for iterative debugging
+  8. Prose summaries - For explaining to users without burning tokens
+  9. Failure recovery trees - When things go wrong, guide me through it
+  10. Token-efficient output - Compact modes for repeated operations
+
+  The math is beautiful. The safety architecture is paranoid in the right way. What would make this transformative for me is ruthless focus on the agent workflow: gather → decide → act → verify → explain. Every feature should optimize that loop.

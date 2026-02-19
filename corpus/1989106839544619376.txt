@@ -1,0 +1,33 @@
+2025-11-13 | 219 likes
+
+I think I was too dismissive of Cursor's new Composer-1 coding LLM. Sure, it's strictly worse than GPT-5 High Effort and GPT-5-Codex, and so in that sense, when I'm architecting and implementing important code projects, I don't really see a place for it in my workflows.
+
+On the other hand, it's extremely fast (wonder how they did this; are they using Groq or Cerebras hardware? is it because the model is so small and efficient? not sure), and this alone unlocks a lot of new workflows and work techniques for when the code isn't so mission-critical, or when you're starting a new project and you don't have to worry about breaking existing code. 
+
+It's also much, much cheaper compared to any flavor of GPT-5. The combination of much faster and much cheaper creates some qualitative difference in how you can use the model that I didn't fully appreciate before. When the cost of iteration is so low both in terms of time and money, you can iterate a lot more times.
+
+That lowers the value of "one-shot correctness"; that is, the ability of a model like GPT-5 Pro to get even a complex coding assignment right the very first time with no bugs (although even that model often fails on this very stringent test).
+
+But if you can close the debugging loop and quickly feed the errors/warnings back into the model, and each iteration round takes 20 seconds to a minute (instead of 5 to 10 times that long at least using GPT-5 with high effort), then you can quickly resolve all the sloppy mistakes it makes the first time around (or even the second, third, or fourth time around) and still finish with working code sooner than you could with GPT-5.
+
+If you're developing something in the browser, you can now really close the loop all the way using Cursor's new Browser Tab, which is by far the best implementation of this sort of thing I've seen in any coding tool (it's miles ahead of using Playwright MCP from Codex or Claude Code!). I've been using this prompt to great effect today:
+
+"Use the browser tab to systematically explore this app and use the interface in a natural way; while that's happening, watch for ANY warnings or errors in the dev console. When you see one, start interactively and iteratively diagnosing and fixing the bugs and problems and then refresh the app and verify that the error or warning is fully resolved. When fixing things, focus on determining the true underlying root cause of the bug and not applying fake "band-aid" fixes!"
+
+Where this approach really breaks down, though, is in the conceptual and planning phases where you're figuring out what to make and the best way to implement it at a high level. There, the lack of deep thinking and exploration can start you out on a bad path that is hard to recover from. 
+
+This is much more apparent when the task you're working on veers far from the "data manifold" of common coding tasks. If you're making yet another simple CRUD website, then you probably won't notice it much. If you're trying to tread new ground in an artificial life simulation or something weird like that, you will notice it a lot.
+
+But there is a nice hybrid approach that works really well: combining the smartest model for planning with these fast and cheap models for cranking out iterations. 
+
+So, use GPT-5 Pro in the browser app to come up with your plan and an initial implementation, then paste that into Cursor and start iterating and fixing and improving. It's a lot better at modifying an existing strong foundation than it is in laying out that foundation itself.
+
+Where this all really shines is when you're playing and exploring with something fun, in a new project where there aren't deadlines or expectations. In this context, the speed is a real game-changer. 
+
+It reminds me of that old research done by IBM in the early '80s that looked at latency with computer systems, which found that when the latency gets below some magic level, like 50ms, you get this big change in behavior because the human brain perceives that it's dealing with a "live system." 
+
+And, conversely, when the latency goes above even a surprisingly modest level, like 500ms, you get much less engagement, and it's mentally taxing and frustrating. When latency spikes to a few seconds or more, people tend to check out mentally and it becomes a struggle to stay engaged.
+
+Seeing the coding model respond within seconds and make a flurry of 10 edits in under 15 seconds is just a different experience entirely than waiting 5 minutes for GPT-5 high effort to methodically crank through something.
+
+Anyway, it's incredibly fun to play around with this thing. It's more fun and engaging for me than any video game could ever be.

@@ -1,0 +1,3 @@
+2025-12-09 | 63 likes
+
+Made a bunch of little tweaks and improvements to MCP Agent Mail to tighten things up. I’ve been pushing it so hard recently that it was revealing some issues that don’t come up in normal usage. Lots of hardening and little bug fixes, plus I reduced the context burden a bit.

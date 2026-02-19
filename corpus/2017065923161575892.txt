@@ -1,0 +1,5 @@
+2026-01-30 | 11 likes
+
+This is the problem with conflating built-in commands with skills: you get these absurd situations in CC. It's confusing and poor UX.
+
+It's clearly better for everyone to standardize on the $ symbol for skills. This is like if gmail insisted on using ^ instead of @ for email. https://t.co/ikFXEXKdwt

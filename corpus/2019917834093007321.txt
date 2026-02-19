@@ -1,0 +1,3 @@
+2026-02-06 | 60 likes
+
+It's so incredibly useful to have a dedicated agent with knowledge of and ssh access to all your machines, that is highly skilled in the art of maintaining machines that are used for big agent swarms. Basically, clearing out junk temp files and killing stuck tests and runaways. https://t.co/I84SPFbIjr

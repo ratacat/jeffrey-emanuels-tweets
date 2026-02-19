@@ -1,0 +1,15 @@
+2026-01-30 | 24 likes
+
+I've been trying for a while to find a reliable way to remind my Claude Code agents to re-read AGENTS .md promptly after every compaction. Otherwise they have a tendency to go rogue and act like wild animals (fortunately, they're at least muzzled wild animals since I'm also using my dcg tool).
+
+Unfortunately, there isn't a clean way to do this now. There would be, but there's a bug that prevents it from working (that clean method is the "SessionStart hook with compact matcher" approach).
+
+So for now, I'm using an ugly workaround that "kind of" works (PreCompact + UserPromptSubmit hooks with marker file).
+
+Anyway, it works well enough that I think it's worth sharing:
+
+https://t.co/Q2HDS3gCdS
+
+Can be installed using a convenient curl bash one-liner like all my tools. 
+
+And btw, the other more correct way is done and implemented, and I can switch it on as the default approach as soon as they fix the bug.

@@ -1,0 +1,39 @@
+2026-01-15 | 73 likes
+
+Sick and tired of Claude Code doing something reckless in your project that wipes out recent work from other agents? Like doing git checkout on a file that another agent is working on?
+
+A few weeks ago, I shared a very basic python script that runs as a pre-tool hook in CC and checks for certain destructive patterns. 
+
+It worked fairly well but was pretty limited, and Python is slow for something that has to run automatically before every tool call.
+
+With encouragement from @darin_gordon, who wrote an initial Rust port of that script, I dramatically expanded the scope and scale of the project, which has now morphed into dcg (destructive_command_guard), which you can get here:
+
+https://t.co/aVmEBi9WCd
+
+It installs in seconds using the curl one-liner command and automatically configures Claude Code and Gemini-cli to use it (there’s still no good mechanism for it to link into Codex, but as soon as there is, I’ll add that).
+
+So what does this give you? In short, peace of mind. Your agents simply can’t do whole classes of really stupid stuff that causes problems.
+
+BUT (and this is critical), a massive amount of effort has gone into preventing annoying and disruptive false positives that arise naturally in the course of development work.
+
+I’ve also added a massive number of preset packs that can be loaded as needed depending on what you’re working on. This broadens the set of destructive commands to include things like S3 bucket removal or dropping tables in Postgres, and many more.
+
+The thing I’m most proud of, though, is the advanced pattern matching system for protecting against arbitrary ad-hoc script executions. What does this mean?
+
+Well, it’s easy to detect and protect against canned commands like “git reset --hard”; but as we all know, LLM agents are masters at getting around obstacles via creative workarounds.
+
+A big way they do that is by writing one-off Python scripts (and TypeScript scripts, bash scripts, etc.) using the so-called “heredoc” pattern. 
+
+This poses a big challenge, because a Python script could do the same thing effectively as “git reset --hard” but in a way that would escape simple detection.
+
+In fact, it’s really hard to detect arbitrary destructive scripts in a purely mechanical way without relying on an LLM. But dcg does this by leveraging ast-grep and a ton of knowledge of different programming languages.
+
+But to keep things ultra fast, this is all done in a multi-tiered way. Most commands can be processed nearly instantly using hyper-optimized regex patterns that use SIMD and every optimization trick under the sun. 
+
+But if a heredoc is detected, dcg kicks it up to the ast-grep level for more elaborate analysis.
+
+Anyway, as the quoted post says, this has already prevented disaster for me dozens of times in the past week. 
+
+It’s a no-brainer to install it if you’re doing a lot of agent coding work, particularly if you’re trying to use tons of agents at the same time in the same project (and why aren’t you doing that?!? Try the Flywheel!)
+
+Hope you like it. Let me know what you think, and stop by the Flywheel Hub Discord with any questions.

@@ -1,0 +1,13 @@
+2026-02-13 | 72 likes
+
+I was thinking about my approach to handling git commits when working with agent swarms on a project (see the prompt in the quoted post) and a vivid analogy suddenly appeared in my mind:
+
+It’s like a busy high-end salon in NYC. Sure, you could insist that each hairstylist clean up the hair from their current client during or at the end of the session. 
+
+But in practice it’s much better to have a dedicated cleaner who focuses only on that task and continuously does it while the stylists work and focus on what they’re good at: cutting and styling hair.
+
+You want your agents focusing on the coding itself and executing beads tasks. If you try to make them deal with commits, they will do a poor job with short, unhelpful commit messages, and will accidentally include commits from other agents in the process which makes it confusing to understand the commit history later. 
+
+It will also distract them from their coding work. Whereas one dedicated committer using my repo_updater (ru) tool can handle this process for dozens of repos at once. 
+
+And because that’s all that the committer agent does, and it has very specific marching orders, you will get a clean, detailed commit history with the work grouped nicely into logical units with accurate commit messages.

@@ -1,0 +1,3 @@
+2025-11-03 | 3 likes
+
+It’s fun to think about cellular automata. They are like the Protozoa of the algorithmic world, and thinking about their behavior is like being a zoologist peering through a microscope and trying to understand how they work.

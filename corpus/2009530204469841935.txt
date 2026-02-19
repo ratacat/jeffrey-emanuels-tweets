@@ -1,0 +1,27 @@
+2026-01-09 | 544 likes
+
+Unpopular opinion: Anthropic has every right in the world to require that users must run their official agent coding harness in order to benefit from the 95% subsidized token cost versus the API pricing.
+
+A major reason they do this is to get input/output pairs of:
+
+ {agents_md, code_files, user_prompts, tool_calls, tool_outputs, etc.} 
+
+which they can then correlate to 
+
+{output_code_changes, did_it_work, is_user_happy, etc.}
+
+If they can collect enough millions of those a day from many tens or even hundreds of thousands of users, then even after throwing out the garbage data, they can amass enough after a few months of collections to seriously improve the same base model using RL methods (and do even better with a more advanced base model).
+
+But all bets are off if people are using workarounds that are against Anthropic’s terms of service to use unsanctioned harnesses like OpenCode. 
+
+Even though Anthropic can still collect the data, it’s essentially worthless to them for this RL purpose because it can’t be commingled with all the other data from their official harness.
+
+It would be like if you changed the lenses on the cameras from your Tesla self driving system to make them more like a fisheye lens. Even if you got the system to work with them, the data would need to be discarded by Tesla for training purposes.
+
+When Anthropic lets you get a 95% discount in return for using Claude Code, both parties benefit a lot. That data directly goes into making the system much better. 
+
+Controlling the model and the harness and training the combined system together is what has allowed them to progress so rapidly.
+
+When you violate that mutual benefit by using an outside harness, you make it just a purely money-losing proposition for Anthropic with no longer-term, indirect benefit to them. And so they stopped it.
+
+What’s more surprising to me is that they’ve allowed it to go on for so long.

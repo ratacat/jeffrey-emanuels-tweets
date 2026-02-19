@@ -1,0 +1,21 @@
+2025-11-03 | 245 likes
+
+This is so wild, even to me, and I made the project! I had an idea yesterday for a commercial companion app to my mcp agent mail open-source project yesterday.
+
+I came up with an elaborate plan in an iterative process that involved many rounds of revisions using GPT-5 Pro in the webapp, resulting in a huge 34k-token plan document. 
+
+A lot of work went into designing the best architecture that would allow me to avoid running a big centralized server and being responsible for user data/code in any way (I don't want the devops headaches or the security liability, and neither do users). 
+
+I set up a basic project skeleton with an AGENTS dot md file and two best-practices guides I created using Opus and GPT-5 Pro for how to make the best native iOS apps using Swift. And, of course, the big plan document.
+
+Then I reset my agent mail database to get a clean start (using the handle clear-and-reset-everything command) and spun up 7 different codex instances at once in the new folder. This is more than I've tried in the past and I wanted to see how well it would work. 
+
+Then I simply used the same 5 prompts shown in the first screenshot below over and over again, keeping all 7 codices (lol) busy for many hours. 
+
+Now, nearly 400 agent messages later, I have a remarkably clean, fleshed out, and complete implementation to test out and work on. 
+
+And the amount of actual human attention and labor I had to expend is 90% less than what I used to need to do to get to this level. And I was already going at light speed before and using tons of agents; the difference is that I had to be the middle-man and coordinate all the work, and now they self-delegate and manage themselves!
+
+Not to mention TIME: this all happened in a few hours last night and a few hours today (with many hours of the agents grinding through all my queued up messages last night as I slept!).
+
+I really think this is the future of development.

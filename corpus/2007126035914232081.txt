@@ -1,0 +1,3 @@
+2026-01-02 | 3 likes
+
+@Steve_Yegge And similarly, a human would get annoyed at a tool that flagged a bunch of problems but then couldn’t also correct them automatically. But if you restrict yourself to problems that can be mechanically corrected with perfect reliability, that’s a tiny fraction of all problems!

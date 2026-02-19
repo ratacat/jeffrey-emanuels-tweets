@@ -1,0 +1,13 @@
+2026-01-17 | 161 likes
+
+Agent coding life hack:
+
+Use this handy script I made called "mirror_cc_skills" to make your life (very slightly) easier:
+
+https://t.co/vNNcMVPt0r
+
+Install with the curl | bash one-liner. 
+
+Once installed, you can simply type "mirror_cc_skills" in any project folder that has local Claude Skills defined at these will be mirrored in your global folder so that they're available in all your sessions in any project. 
+
+Pretty cool, huh?

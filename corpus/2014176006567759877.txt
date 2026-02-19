@@ -1,0 +1,23 @@
+2026-01-22 | 64 likes
+
+I thought I would share a more "typical" screen recording of my current workflows. Obviously, much of this is in flux day by day as I add new tools and elements and techniques.
+
+One important thing about how I work is that I try not to be too "all or nothing" about anything. So, even though I'm now dogfooding my ntm tool for doing the high level orchestration of agents, I'm also still using my older approach of having each Claude Code or Codex instance in its own separate tab in Ghostty. 
+
+This is particularly true for when the workflow isn't about working on one specific project, but in doing some higher-level workflow across ALL my projects, or at least the recent ones. 
+
+These higher-level workflows include things like going through all the projects with changes and committing them in logical groupings to GitHub. Or going through each repo's GitHub Issues or PRs and managing them using my repo_updater (ru) tool. 
+
+Or coming up with new Skills by searching through my session history using the cass tool (and its associated skill; from now on, all my tools will always have a corresponding skill that shows in a very deep way not just how to use them, but the "big picture" workflows their usage figures into.)
+
+Anyway, all of these things, including my latest ntm workflows, can be seen in this screen recording, which clocks in at ~24 minutes. 
+
+Note the cool intro video and music title cards, which are now  part of my new Claude Code skill, obs-youtube-music, that lets me specify an OBS screen recording video and some music to use, like specific songs or albums/artists, and Claude will find these on YouTube and download them and figure out the timings to perfectly cover the video duration, and also generate the nice cards showing the graphic and the name of the artist and track. 
+
+I basically went until I hit usage limits on both Codex and Gemini. These recordings are completely contiguous and unedited, so I didn't want to show myself authenticating in the browser. 
+
+Anyway, this gives you a clearer sense of what I'm doing during the day (although it doesn't show the planning process really).
+
+If you want to see it in full resolution on YouTube, here is the link:
+
+https://t.co/Lp8GlcvNtf

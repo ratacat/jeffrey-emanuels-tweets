@@ -1,0 +1,60 @@
+2025-11-30 | 267 likes
+
+I installed this morph warp search tool this morning and then sort of forgot about it. I wondered if my agents had been using it and if it was helping them at all.
+
+So I asked them and they all admitted to a man (err, robot) that they hadn’t used it at all and had instead stuck to using grep as is their wont. Already like grizzled graybeard devs stuck in their ways.
+
+Anyway, I asked them to poke around and try it and let me know what they thought. So they took it for a test drive and had some feedback.
+
+Then I asked them to figure out when and why and how they could best use it, and then had one of them come up with the most token-dense, intuitive explanation (at least intuitive to their robot brain) to explain all that, for use in an AGENTS dot md file. 
+
+Here’s what it came up with; feel free to steal it for your own AGENTS dot md (and btw, my verdict for now is that it’s worth keeping around for a while to see how much they end up using it, but I think it’s probably pretty useful-- if they can actually be convinced to use it, which is why these little blurbs are so critical, and why they should focus on convincing rather than ordering the agents! Moral suasion ain’t just for humans…):
+
+---
+
+### Morph Warp Grep vs Standard Grep
+
+  Warp Grep = AI agent that greps, reads, follows connections, returns synthesized context with line numbers.
+  Standard Grep = Fast regex match, you interpret results.
+
+  Decision: Can you write the grep pattern?
+  - Yes → Grep
+  - No, you have a question → mcp__morph-mcp__warp_grep
+
+  #### Warp Grep Queries (natural language, unknown location)
+  "How does the moderation appeals flow work?"
+  "Where are websocket connections managed?"
+  "What happens when a user submits a post?"
+  "Where is rate limiting implemented?"
+  "How does the auth session get validated on API routes?"
+  "What services touch the moderationDecisions table?"
+
+  #### Standard Grep Queries (known pattern, specific target)
+  pattern="fileAppeal"                          # known function name
+  pattern="class.*Service"                      # structural pattern
+  pattern="TODO|FIXME|HACK"                     # markers
+  pattern="processenv" path="apps/web"      # specific string
+  pattern="import.*from [']@/lib/db"          # import tracing
+
+  #### What Warp Grep Does Internally
+  One query → 15-30 operations: greps multiple patterns → reads relevant sections → follows imports/references → returns focused line ranges (e.g., l3-guardian.ts:269-440) not whole files.
+
+  #### Anti-patterns
+  | Don't Use Warp Grep For | Why | Use Instead |
+  |------------------------|-----|-------------|
+  | "Find function handleSubmit" | Known name | Grep pattern="handleSubmit" |
+  | "Read the auth config" | Known file | Read file_path="lib/auth/..." |
+  | "Check if X exists" | Boolean answer | Grep + check results |
+  | Quick lookups mid-task | 5-10s latency | Grep is 100ms |
+
+  #### When Warp Grep Wins
+  - Tracing data flow across files (API → service → schema → types)
+  - Understanding unfamiliar subsystems before modifying
+  - Answering "how" questions that span 3+ files
+  - Finding all touching points for a cross-cutting concern
+
+—
+
+You can see the whole short interaction in this gist:
+
+https://t.co/Z6jvFXDxub

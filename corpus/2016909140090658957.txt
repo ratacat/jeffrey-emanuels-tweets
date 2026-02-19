@@ -1,0 +1,3 @@
+2026-01-29 | 21 likes
+
+I wanted to try (on a lark) to apply my extreme optimization CC skill to the Rust compiler to see if I could make it go a bit faster (isomorphically of course) since I spend so much of my day waiting for it to build, and damn... that recursive clone ended up being a cool 10gb:

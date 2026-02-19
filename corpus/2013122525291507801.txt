@@ -1,0 +1,3 @@
+2026-01-19 | 10 likes
+
+Finally got all the stupid gh actions stuff squared away and excited to start cranking out improvements to the look and feel. I ported the Python rich library to Rust, so going to use that make the console output a lot slicker looking.

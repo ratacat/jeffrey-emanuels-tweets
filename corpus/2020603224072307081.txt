@@ -1,0 +1,11 @@
+2026-02-08 | 82 likes
+
+FrankenTUI is vertically integrating. I just replaced crossterm, which has 3.9k GitHub stars and 30k lines of code, with 1,700 lines that's faster even before doing my crazy optimizations. Already tested and working great.
+
+To be fair, as Claude says:
+
+ "Crossterm tries to be everything for everyone — cross-platform terminal I/O for any Rust app. ftui-tty is purpose-built for FrankenTUI's Elm/Bubbletea runtime. That focus lets it be 20x smaller, have zero unsafe code, and fit perfectly into the trait-based backend architecture. It's the difference between a Swiss Army knife and a scalpel."
+
+But isn't that the point? We don't need big one-sized-fits-all libraries anymore. And not only did that let me replace one crate, it knocked out the dozens of incremental crates that crossterm depended on. I think it went from 142 crates to 113. Not bad. Less code, fewer things to go wrong.
+
+Next up? Replacing all of xterm.js (which has 19.9k stars on GitHub and is massive). It should be done in the next 2 hours. Then you'll be able to use FrankenTUI on the web.

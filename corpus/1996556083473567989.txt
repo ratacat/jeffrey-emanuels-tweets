@@ -1,0 +1,15 @@
+2025-12-04 | 40 likes
+
+Claude Opus 4.5 is such an incredible resource for learning about history in an engaging, interactive way. It’s just way more fun and active than simply reading Wikipedia articles or most books, and I end up doing more of it and retaining the information a lot better.
+
+The fact that it responds very quickly even when using thinking mode makes it way more interactive than GPT-5 Pro, which is critical in this use case; otherwise I get bored and distracted waiting so long for a response. 
+
+This lag isn’t a problem when I only care about getting the best, most correct answer, such as when I’m planning out a complex software project.
+
+But when I’m asking about historical parallels between Spain in 711 and England in 1066 as shown in these screenshots, I don’t want to wait for 10 minutes each time.
+
+It’s really like having a team of professional historians on call for free 24/7 (I say free because I would already be paying for my Claude Max accounts for coding stuff anyway).
+
+I say team because history is quite specialized, and people tend to focus on a particular region and time, and thus are ill-equipped to opine in a deeply informed way about these sorts of “contrastive” questions, which I find deeply helpful when trying to form mental models of history.
+
+Anyway, I can’t recommend it highly enough.

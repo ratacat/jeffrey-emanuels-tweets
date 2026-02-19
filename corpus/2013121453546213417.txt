@@ -1,0 +1,5 @@
+2026-01-19 | 134 likes
+
+I finally got around to dogfooding my own ntm tool for managing a bunch of agents, and... it's not bad? 
+
+I made an ntm skill for Claude Code and then simply told it to use ntm with 10 CCs and 5 Codex instances on a new project that I just finished making the beads for. Easy.😎 https://t.co/FVT76oly9j

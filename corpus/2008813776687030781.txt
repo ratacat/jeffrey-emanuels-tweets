@@ -1,0 +1,77 @@
+2026-01-07 | 131 likes
+
+What makes for a good markdown plan document for a software development project? What's the difference between a good plan and a great one? 
+
+I'm always going on and on about how I spend 85%+ of my time and energy on the planning phases. Well what does that entail exactly? 
+
+It's hard to explain in the abstract; you need a tangible example to really illustrate the nuances. So I thought I would share a good example from today.
+
+This also addresses a recent question I've been getting about my approach. People seem to be under the impression that you have to do everything in your project in one shot. And in my approach, that is true, but only for version 1! 
+
+If you decide you want to add new features or change how things work, you can obviously do that once you have a functioning v1. And the way you do that is the same way you create v1, by creating a super detailed markdown plan first and then turning it into beads.
+
+So I'll give you an example from Cass, my Coding Agent Session Search program, which is a pretty elaborate Rust program that automatically detects, parses, stores, and indexes all your previous session logs from just about every coding agent out there. It offers sub 50ms instant "search as you type" across all those logs and has many other nice features.
+
+I decided that I'd like to add a feature to Cass that is similar to a feature I already have in MCP Agent Mail and in beads_viewer (bv): the ability to export your setup as a static website that can be served using GitHub Pages.
+
+You can see an example for bv for this very project, which is the final result of the planning process I will describe in this post: 
+
+https://t.co/iw50xoFBgd
+
+This functionality makes it very quick and easy to generate and deploy the exported site using the gh utility. 
+
+The site itself usually consists of an sqlite file and a bunch of typescript and wasm that runs entirely in the browser, but with very good performance and nice features and styling, which you can observe in the example just given.
+
+Now, sharing MCP Agent Mail messages or a bunch of beads is one thing, but sharing a bunch of coding agent session logs is very different; these things are often full of sensitive information, API keys, curses/invective (at least mine are!), and other material that you definitely wouldn't want to expose to the world. 
+
+But GitHub Pages, as nice as it is, only works for public repos (btw, my tools also support Cloudflare pages, but GH Pages is better and easier for this use case). So how to handle these problems?
+
+The answer is encryption: the user first selects which coding agents to include, which project folders, the time period, etc. and a bundle is generated (note that this bundle is in the canonical format that Cass internally converts all coding agent messages into from their original native formats) and then the user provides a password to use for the encryption of that bundle.
+
+So the idea is that although the repo and web page are public, everyone but you and others you tell the password to will simply see a password field and will be unable to read any of the messages. 
+
+Once the password is entered, it would unlock a beautiful, responsive UI that lets you easily search across the messages nearly as quickly and efficiently as Cass does. And if you really have nothing to hide, you can leave the password off and make it all actually public.
+
+Anyway, this is a super complex new feature to add for many reasons. The export wizard alone is extremely intricate and complex. But the additional requirements around encryption and security make this hard to get right. 
+
+Anyway, I asked Claude Code with Opus 4.5 to first study all the relevant code from my bv project for implementing this feature, and then explained how the corresponding feature in Cass would have to differ. It then created for me an initial cut at a plan.
+
+I asked CC to check over the bv code again for more insights and understanding into how the feature was implemented in bv and to then use those insights to expand and improve the plan document in-place.
+
+Finally, I moved the plan over to ChatGPT Pro in the browser with GPT 5.2 with Extended Reasoning along with this prompt preamble:
+
+"Carefully review this entire plan for me and come up with your best revisions in terms of better architecture, new features, changed features, etc. to make it better, more robust/reliable, more performant, more compelling/useful, etc. For each proposed change, give me your detailed analysis and rationale/justification for why it would make the project better along with the git-diff style change versus the original plan shown below:"
+
+I then pasted the outputs into Claude Code like this:
+
+OK, now integrate these revisions to the markdown plan in-place; use ultrathink and be meticulous. At the end, you can tell me which changes you wholeheartedly agree with, which you somewhat agree with, and which you disagree with: 
+
+```[Pasted text #1 +995 lines]```
+
+I then rinsed and repeated this another 2 times. This is not a fast process: the last review, which you can see a screenshot of below, took 27 minutes to finish:
+
+You can see the final ~3,500-line markdown plan here:
+
+https://t.co/tez9ZfVpjc
+
+But what's more interesting is to see the revisions in GitHub, where you can see the massive improvements that are made from v2 to v3, and how the improvements actually continue all the way to the end:
+
+This ended up taking a total of around 3 hours. I suspect this is why most people seem to be unwilling to do this level of planning. 
+
+It feels like you're not getting much done because no code is being written, but if you do it correctly and then start up enough agents in your swarm with Agent Mail, Beads, and bv, then the code will be written so ridiculously quickly that it more than makes up for this slow part. And what's more, the code will be really good.
+
+Returning to the story, I was then ready to turn the plan into beads. I've already explained that process in another recent post, but the essence of it is to use this prompt with Claude Code:
+
+"OK so now read ALL of PLAN_TO_CREATE_GH_PAGES_WEB_EXPORT_APP.md; please take ALL of that and elaborate on it and use it to create a comprehensive and granular set of beads for all this with tasks, subtasks, and dependency structure overlaid, with detailed comments so that the whole thing is totally self-contained and self-documenting (including relevant background, reasoning/justification, considerations, etc.-- anything we'd want our "future self" to know about the goals and intentions and thought process and how it serves the over-arching goals of the project.). The beads should be so detailed that we never need to consult back to the original markdown plan document. Remember to ONLY use the `bd` tool to create and modify the beads and add the dependencies. Use ultrathink."
+
+Then I just did round after round of this follow-up prompt in Claude Code:
+
+"Reread AGENTS dot md so it's still fresh in your mind. Then read ALL of PLAN_TO_CREATE_GH_PAGES_WEB_EXPORT_APP.md . Use ultrathink. Check over each bead super carefully-- are you sure it makes sense? Is it optimal? Could we change anything to make the system work better for users? If so, revise the beads. It's a lot easier and faster to operate in "plan space" before we start implementing these things! DO NOT OVERSIMPLIFY THINGS! DO NOT LOSE ANY FEATURES OR FUNCTIONALITY! Also make sure that as part of the beads we include comprehensive unit tests and e2e test scripts with great, detailed logging so we can be sure that everything is working perfectly after implementation. It's critical that EVERYTHING from the markdown plan be embedded into the beads so that we never need to refer back to the markdown plan and we don't lose any important context or ideas or insights into the new features planned and why we are making them."
+
+After around 8 or 9 rounds, it finally reaches a steady state. I then had Codex with GPT 5.2 high reasoning effort do one final round using that same prompt. The final result can be seen at the link shared above.
+
+And that, friends, is what a good plan looks like. And also what a good set of beads based on a plan looks like. 
+
+Those beads are so polished and detailed that you can mechanically unleash a big swarm of agents to implement it using Agent Mail, Beads, and bv, and it will come out just about perfectly without much fuss.
+
+I'm too tired to start doing that implementation work tonight, but I'll do it tomorrow and will then share the new feature, which I think Cass users are going to really like.

@@ -1,0 +1,32 @@
+2025-12-06 | 93 likes
+
+Already this morning from my bed, on my phone, I've conceived of and designed and planned (and partially implemented) two cool software projects using GPT Pro and other models (I'm hoping to get them both finished and posted sometime today or tomorrow). 
+
+As part of that, I wanted to take a very long GPT Pro conversation, turn it into a public share link, and then paste that into Codex or Claude Code and have it pull in the full conversation as a nicely formatted markdown file.
+
+But there's no easy way to do that because the share link is a javascript powered website and you need to do a bunch of massaging to get anything usable; you can't just use curl or something simple like that, it needs to be done using a real browser.
+
+So in addition to those other two projects, I then had a third project called csctf (Chat Shared Conversation to File), which ended up taking me a bit longer than anticipated because I kept adding more and more features, and then wanted it to work for Gemini and Grok as well.
+
+Even that was mostly easy, except for Claude (with help from Cloudflare) making things so annoying to block any automation that I gave up on Claude support. 
+
+This stuff required me to be at my desk, unfortunately (the bed was more comfortable).
+
+Anyway, you can get the new tool here:
+
+https://t.co/2nBV2eImLZ
+
+Just do the one-liner curl installer and it will give you a new command, csctf. 
+
+Using it is really easy. You just type csctf followed by the URL from ChatGPT, Grok, or Gemini, and then you fairly quickly end up with two nicely named files in the folder, a markdown (.md) file and a static html file with zero javascript (the file names are based on the conversation titles). 
+
+I also added a very nice feature that can use the gh utility for GitHub to let you automatically publish the files directly to a repo using GitHub pages, giving you an awesome static website you can share of your conversations, with an index file and nice formatting, code blocks, syntax highlighting, etc. 
+
+See for instance this sample with a few conversations from ChatGPT/Grok/Gemini and see how nice they look:
+ https://t.co/vhI19VxFxI 
+
+To use that feature, you simply do something like this (you need to set up gh beforehand and have it authenticated, but that's easy to do):
+
+csctf https://t.co/N1tfUHrneI --publish-to-gh-pages --yes
+
+You can customize the name of the repo and stuff like that, but I tried to make it as easy as possible. If you leave out the "--yes" part of the command then you need to manually type PROCEED before it posts it to your GitHub pages site.

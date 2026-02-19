@@ -1,0 +1,15 @@
+2025-12-23 | 32 likes
+
+I really tried to make this as comprehensible to someone without computer knowledge as possible; all jargon has super detailed definitions included. 
+
+And I did multiple rounds of "audits" using agent trying to simulate the perspective of someone who doesn't know much about technology, which you can see documented here:
+
+https://t.co/8EMqD2Uv5k
+
+https://t.co/PodsF1DwYA
+
+It's still not as easy and simple as I'd like, but it's miles ahead of other guides, which don't even try to target the people I'm talking about here. I'd describe these people as being "hungry but clueless." 
+
+They want to learn so they can acquire these magical new capabilities, but don't know the first thing about how to do it other than using a pure slop factory site like Lovable.
+
+Now they have a chance to get going in a real way using real tools that can scale with them and be used to create serious software. And with enough grit and determination, you can get Claude and Codex to solve most problems for you.

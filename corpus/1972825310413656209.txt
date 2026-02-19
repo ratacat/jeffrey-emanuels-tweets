@@ -1,0 +1,3 @@
+2025-09-30 | 3 likes
+
+Part of how I use these models is to constantly read and review and study my projects, looking for bugs and problems and trying to identify issues and improvements. And after enough rounds of that with GPT-5, it tends to reach a kind of steady state where changes become trivial.

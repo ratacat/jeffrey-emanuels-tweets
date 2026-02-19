@@ -1,0 +1,17 @@
+2026-01-05 | 716 likes
+
+Agent Coding lifehack:
+
+Do you have the Logitech MX Master 4 mouse or one of the earlier variants?
+
+(If not, you should consider getting it if you use a computer all day. Logitech probably spends more on R&D for this model of mouse than every other mouse manufacturer on the planet combined, and it shows.)
+
+If you do have the mouse, do you also have a Mac? If so, this trick is for you and saves precious seconds many times per hour, which adds up. It also avoids annoying mistakes like accidentally closing the wrong tab. Speaking of tabs...
+
+If you're running enough agents, then you probably have a lot of tabs. Console tabs in Ghostty/WezTerm for SSH sessions, local terminals, etc. And of course, who doesn't have loads of Chrome tabs open?
+
+There is a second wheel on the MX Master mouse for your thumb. I used to never use it, but it's perfect for switching tabs! In order to set it up on a Mac, you need to buy BetterMouse for a one-time cost of $10 (I have no deal with the creator, I'm just a happy user).
+
+Then you can follow this detailed guide I just posted to set it up nicely to work with the thumbwheel (it even can rotate through your tmux panes, which you can think of as a kind of "virtual tab"):
+
+https://t.co/LLMITZPfZJ

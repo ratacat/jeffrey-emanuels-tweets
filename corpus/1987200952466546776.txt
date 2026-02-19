@@ -1,0 +1,64 @@
+2025-11-08 | 0 likes
+
+Next 50:
+
+Here's the next 50 influential computer programmers (51-100):
+
+51. **Ian Goodfellow** - Inventor of Generative Adversarial Networks (GANs)
+52. **Yann LeCun** - Chief AI Scientist at Meta, pioneer in convolutional neural networks
+53. **Andrew Ng** - Co-founder of Coursera, former head of Google Brain
+54. **Demis Hassabis** - Co-founder of DeepMind
+55. **Fei-Fei Li** - AI researcher, creator of ImageNet
+56. **Stuart Russell** - AI researcher, co-author of leading AI textbook
+57. **Peter Norvig** - Director of Research at Google, co-author of AI textbook
+58. **Yoshua Bengio** - Deep learning pioneer
+59. **Jürgen Schmidhuber** - Pioneer in LSTM neural networks
+60. **Michael Stonebraker** - Database systems pioneer, Turing Award winner
+61. **David Patterson** - Computer architecture pioneer, RISC advocate
+62. **John Hennessy** - Computer architecture pioneer, former Stanford president
+63. **Butler Lampson** - Turing Award winner, contributed to personal computing
+64. **Charles Thacker** - Designed Xerox Alto, Turing Award winner
+65. **Ivan Sutherland** - Pioneer of computer graphics
+66. **Fred Brooks** - Author of "The Mythical Man-Month"
+67. **Niklaus Wirth** - Creator of Pascal and Modula
+68. **Brian Kernighan** - Co-author of "The C Programming Language"
+69. **Douglas Crockford** - JavaScript architect, created JSON
+70. **Brendan Gregg** - Systems performance expert
+71. **Bryan Cantrill** - Systems programmer, DTrace creator
+72. **Solomon Hykes** - Creator of Docker
+73. **Mitchell Hashimoto** - Co-founder of HashiCorp, creator of Vagrant
+74. **Kelsey Hightower** - Kubernetes advocate and contributor
+75. **Eric Brewer** - CAP theorem, professor at UC Berkeley
+76. **Jeff Atwood** - Co-founder of Stack Overflow
+77. **Joel Spolsky** - Co-founder of Stack Overflow, Trello
+78. **Paul Graham** - Co-founder of Y Combinator, created Arc
+79. **Robert Martin (Uncle Bob)** - Software craftsmanship advocate
+80. **Martin Fowler** - Software design pattern expert
+81. **Kent Beck** - Creator of Extreme Programming and Test-Driven Development
+82. **Ward Cunningham** - Inventor of the wiki
+83. **Grady Booch** - Co-creator of UML
+84. **James Rumbaugh** - Co-creator of UML
+85. **Ivar Jacobson** - Co-creator of UML
+86. **Herb Sutter** - C++ standards committee chair
+87. **Scott Meyers** - C++ expert and author
+88. **Andrei Alexandrescu** - D language co-designer, C++ expert
+89. **Walter Bright** - Creator of D programming language
+90. **Roberto Ierusalimschy** - Creator of Lua
+91. **Xavier Leroy** - Creator of OCaml
+92. **Simon Peyton Jones** - Lead developer of Haskell
+93. **Philip Wadler** - Programming language researcher, contributed to Haskell
+94. **Joe Armstrong** - Creator of Erlang (passed away in 2019, so may not qualify)
+95. **Robert Virding** - Co-creator of Erlang
+96. **Mike Williams** - Co-creator of Erlang
+97. **Van Jacobson** - Internet protocols expert
+98. **Paul Mockapetris** - Inventor of DNS
+99. **Phil Katz** - Creator of ZIP file format (passed away in 2000, so doesn't qualify)
+100. **Igor Sysoev** - Creator of nginx
+
+Let me provide some replacements for those who have passed away:
+
+94. **Fabrice Bellard** - Creator of QEMU, FFmpeg, and numerous other projects
+99. **Antirez (Salvatore Sanfilippo)** - Creator of Redis
+100. **Matz Nygaard** - Systems programmer and educator
+
+This second tier includes many specialists in specific domains like databases, AI/ML, systems programming, web infrastructure, and programming language design. While they may not have the same universal name recognition as the first 50, their contributions have been fundamental to modern computing infrastructure and development practices.

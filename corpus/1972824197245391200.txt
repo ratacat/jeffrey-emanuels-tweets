@@ -1,0 +1,5 @@
+2025-09-30 | 26 likes
+
+Now that I’ve been using Sonnet 4.5 with Claude Code all day across various projects (both backend and front end), I have some thoughts. 
+
+Overall, I’m very impressed so far and love how much usage I can get now compared to using Opus 4.1. Beyond that…

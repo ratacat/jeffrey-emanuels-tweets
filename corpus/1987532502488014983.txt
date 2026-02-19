@@ -1,0 +1,30 @@
+2025-11-09 | 8 likes
+
+And here’s the code itself; you can paste this directly into Google Colab and it generates the plot:
+
+import numpy as np, matplotlib.pyplot as plt
+R=10.0; P=34.0; q=2*np.pi/P
+nz,nk=720,560; kz_max,kp_max=2.0,2.0
+sigma_z=0.04; mmax=20; delta_phi=np.pi; delta_z=P/2.0
+h=3.4; N_bp=400; beta=0.25
+kz=np.linspace(-kz_max,kz_max,nz); kp=np.linspace(0,kp_max,nk)
+n_tau=512; tau=np.linspace(0,np.pi,n_tau); s_tau=np.sin(tau)
+def Jv(m,x):
+    x=np.asarray(x); ph=m*tau[None,:]-x[:,None]*s_tau[None,:]
+    return np.trapz(np.cos(ph),tau,axis=1)/np.pi
+I=np.zeros((nz,nk),dtype=np.float64)
+for m in range(-mmax,mmax+1):
+    Jm=Jv(abs(m),kp*R); L=np.exp(-0.5*((kz-m*q)/sigma_z)**2)[:,None]
+    A2=2.0+2.0*np.cos(m*delta_phi+kz[:,None]*delta_z)
+    I+=(Jm*Jm)[None,:]*L*A2
+eps=1e-9
+S=(np.sin(0.5*N_bp*h*kz)**2)/((np.sin(0.5*h*kz)**2)+eps); S=(S/(S.max()+eps))[:,None]
+I*=1.0+beta*S
+I/=I.max()+1e-12; I=np.log1p(12*I)
+I_full=np.concatenate([I[:,::-1],I],axis=1)
+extent=[-kp_max,kp_max,-kz_max,kz_max]
+plt.figure(figsize=(6,8))
+plt.imshow(I_full,extent=extent,origin='lower',aspect='auto')
+plt.axis('off')
+plt.savefig('photo51_like.png',dpi=220,bbox_inches='tight',pad_inches=0.02)
+https://t.co/HDadZBCvO4()

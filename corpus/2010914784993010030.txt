@@ -1,0 +1,27 @@
+2026-01-13 | 62 likes
+
+While writing the quoted post earlier today, I couldn’t help but notice just how much boring, annoying grunt work was involved, particularly when the number of revisions is high.
+
+Luckily, the post itself served as an excellent basis to make a quick tool that can totally automate the entire process.
+
+So, introducing Automated Plan Reviser Pro, or just apr for short.
+
+The apr tool is a ~5,600 line bash script that lets you fill out a nice wizard about your project and then it can automatically generate a template for you and populate it, similar to what I did in my quoted post.
+
+Then, it leverages the Oracle tool by the great @steipete to automate the submission to the GPT Pro web app.
+
+I’m excited about how much time this can save me on this Flywheel Connectors project, and in general. And since it’s so easy now to do a revision, I am going to experiment with an even higher number to see how much better I can make the system!
+
+There’s a lot more functionality to it than I just explained here (it monitors the process and measures changes in the specifications so you can get a sense for convergence). It also has highly customizable options for things like stopping conditions.
+
+And of course, absolutely everything that you can do in apr via the command line and TUI is also exposed in an agent-optimized robot mode. 
+
+So the best way to use apr (and certainly the way I’ll be using it) is to simply paste the prepared blurb from the README into your AGENTS dot md file and have Claude Code figure out how to set it all up and run it for you! 
+
+You can get it here, installable with a curl bash one liner:
+
+https://t.co/NwE7cipM1A
+
+I’ll be pushing changes for the next few hours, but like all of my recent utilities, it has a built-in auto-update feature that tells you when a new version is available and uses a checksum to validate everything.
+
+Enjoy!

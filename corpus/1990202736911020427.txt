@@ -1,0 +1,23 @@
+2025-11-16 | 35 likes
+
+I think about this quote constantly (at least a few times a week now):
+
+“Sorry for the long letter, I didn't have time to write a short one.”
+
+It’s supposedly originally by the French polymath, Blaise Pascal, but is also wrongly attributed to Mark Twain and others. 
+
+It’s obviously supposed to be a sort of amusing, paradoxical quip. Of course it takes more effort to write a long, detailed letter, right?
+
+And yet there’s something so deep about it, especially in today’s attention economy, particularly now that LLMs have made the creation of vast amounts of long-form exposition essentially free. 
+
+Being able to condense ideas into maximally evocative nuggets of communicated understanding is the new currency.
+
+The way to do that seems to be to leverage analogies that enable the reader to piggyback on hard-won existing knowledge and understanding of a subject.
+
+I find that my long technical posts that do the best are usually the ones that relate something new to something old, or perhaps make a connection or analogy across domains to elucidate a subtle point.
+
+I suspect the reason why this works so well is that, first of all, humans are naturally lazy, and intense cognition takes effort. So we’re keen to trade on our existing understanding and intuition, especially if that took us years of effort to accumulate from school and work.
+
+The second is that our brains are literally associative at their very core. Things are connected together and neurons that fire together, wire together (i.e., Hebbian learning). 
+
+So it feels downright pleasurable and satisfying for us when we have some moment of instant understanding that we can slot some unit of new information or understanding into an existing cognitive compartment and link them up.

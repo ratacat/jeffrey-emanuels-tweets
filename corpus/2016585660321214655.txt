@@ -1,0 +1,9 @@
+2026-01-28 | 143 likes
+
+My new "System Performance Remediation" skill is so useful. I wish I had done this weeks ago. 
+
+Often the reason your machine is sluggish isn't what you think it is. Yes, you know you're running a lot of agents and that some might be doing slow compilations or test suites at the same time. 
+
+But the sheer amount of zombie / stuck / malfunctioning stuff that accumulates is mind-boggling to me when you run enough agents (especially when they stop in the middle of what they're doing because of usage limits and you restart them rather than doing the login flow because your hand hurts too much... ahem @bcherny).
+
+This stuff adds zero value and is often just pointlessly bringing your machine to its knees. And this stuff is cumulative if you don't periodically "clean off the barnacles."

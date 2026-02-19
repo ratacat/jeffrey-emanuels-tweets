@@ -1,0 +1,7 @@
+2026-01-28 | 138 likes
+
+The secret to using gemini-cli? There are actually two:
+
+1) Only use it for code review. It's weirdly good at that even though it can't be trusted to write code.
+
+2) Spawn 3x the number of sessions you need, because at least 60% of them crash (on 4 different machines) horribly: https://t.co/WfV5wPSJGb

@@ -1,0 +1,23 @@
+2025-10-10 | 26 likes
+
+I see a lot of people writing off Cursor because of Claude Code or Codex. I’m a huge fan and user of both of those, but I still really like Cursor, and it continues to improve and add awesome new features at a truly astounding pace.
+
+I already tweeted recently about their great new “plan” feature, which is really well executed, but what’s even better and more useful to me is the new “browser” option you can toggle in the agent mode for interactively debugging live frontends in the browser.
+
+I know this kind of functionality is available in the cli coding agents using things like playwright mcp, but I’ve found this to be extremely unreliable and annoying to use. Which is to be expected when things are designed and implemented by a single responsible party.
+
+And that approach also feels like it’s “flying blind” from a visual standpoint (I know it can take screenshots of the page, but that seems like a hacky workaround).
+
+Whereas the Cursor browser feature always “just works” and magically hides all the messy implementation details and provides a perfectly integrated headless browser that is properly instrumented and hooked directly into the agent flows. 
+
+This is the first time I’ve felt like I’ve been able to really “close the loop” end-to-end while developing a full stack app with a frontend. 
+
+Before this, I was constantly describing problems and pasting in stuff from the browser dev console or NextJS console output.
+
+The final frontier for me in terms of closing the loop would be if I could somehow connect the separate Cursor windows for the backend and frontend for the same project, so that an agent working on the frontend could directly “pass a note” to one of the backend agents requesting a change or clarification.
+
+Currently I need to manually act as the liaison between them, which is slightly annoying and slows things down a lot. I hope they’ll add that functionality soon.
+
+I’d also love to be able to use two LLMs at the same time (say, GPT-5 and Grok4 or Sonnet4.5) with one designated as the primary model and the other as the “checker” model,  looking for errors or problems and flagging those to the primary model that’s driving the bus.
+
+To me, that’s a killer feature that only Cursor is well-positioned to offer, since Claude Code isn’t about to involve GPT-5 and vice versa for Codex with Claude. But Cursor is model provider agnostic, sort of like how Dropbox is with windows/mac/linux: a neutral arbiter that can work with anyone.

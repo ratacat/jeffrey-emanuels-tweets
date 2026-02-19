@@ -1,0 +1,15 @@
+2025-11-12 | 34 likes
+
+So, MSTR is now trading at a discount to the NAV of its bitcoin holdings, after trading at a massive premium for the last couple of years.
+
+The problem is that Saylor is going to need to keep issuing more stock to shore up the balance sheet because of all that debt they’ve taken on.
+
+Before, every share sale was anti-dilutive and built up book value while raising liquidity. Now it’s the opposite, and every new share issued is dilutive and destroys book value.
+
+The discount is modest now at 1.7%, but all the forces that were helpful before are now working in the opposite direction, so it’s probable that the discount will expand before it contracts.
+
+Also, during its peak, MSTR was the only game in town if you wanted a liquid stock that was pursuing this levered bitcoin treasury strategy. But now there are a bunch of copycats competing for the same investors, and those other ones are still in their honeymoon phase of trading above NAV.
+
+What Saylor should really do is sell BTC to buy back stock and thereby increase the BTC per share, even if that results in a decrease in the aggregate BTC owned by MSTR.
+
+But doing so would likely spook the market (both the BTC market and the MSTR market), potentially erasing any benefit. Tough spot to be in.

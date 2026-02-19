@@ -1,0 +1,3 @@
+2025-12-07 | 7 likes
+
+That swarm will include Claude Code Opus 4.5 agents (probably at least 5 or 6 of them), some Codex 5.1 Max agents (at least 3), and a couple Gemini 3 agents (I'll probably put them mostly on review duty because they're dumber than the other ones and tend to cause trouble).

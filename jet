@@ -2,13 +2,18 @@
 """jet — Jeffrey Emanuel's Tweets. Search @doodlestein's tweet archive."""
 
 import argparse
+import html
 import json
 import os
+import re
+import shutil
 import sqlite3
+import subprocess
 import sys
 import textwrap
 
-DEFAULT_DB = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tweets.db")
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DEFAULT_DB = os.path.join(SCRIPT_DIR, "tweets.db")
 INSTALLED_DB = os.path.expanduser("~/.local/share/jet/tweets.db")
 
 
@@ -26,16 +31,115 @@ def connect(db_path):
     return conn
 
 
-def cmd_search(args):
+def find_fsfs():
+    """Locate the fsfs binary. Check FSFS_PATH env, then PATH, then sibling build."""
+    env_path = os.environ.get("FSFS_PATH")
+    if env_path:
+        return env_path if os.path.isfile(env_path) and os.access(env_path, os.X_OK) else None
+    found = shutil.which("fsfs")
+    if found:
+        return found
+    sibling = os.path.join(SCRIPT_DIR, "frankensearch", "target", "release", "fsfs")
+    if os.path.isfile(sibling) and os.access(sibling, os.X_OK):
+        return sibling
+    return None
+
+
+def get_corpus_dir():
+    """Locate the corpus directory with .frankensearch index."""
+    for d in [os.path.join(SCRIPT_DIR, "corpus"), os.path.expanduser("~/.local/share/jet/corpus")]:
+        if os.path.isdir(os.path.join(d, ".frankensearch")):
+            return d
+    return None
+
+
+def strip_html(s):
+    """Strip HTML tags and decode entities from fsfs snippets."""
+    return html.unescape(re.sub(r"<[^>]+>", "", s))
+
+
+def fsfs_search(fsfs_bin, corpus_dir, query, limit, as_json, db_path):
+    """Run fsfs and enrich results with DB metadata. Returns True on success."""
+    env = os.environ.copy()
+    env["FSFS_INDEX_DIR"] = os.path.join(corpus_dir, ".frankensearch")
+    try:
+        proc = subprocess.run(
+            [fsfs_bin, "search", query, "--format", "json", "--limit", str(limit)],
+            capture_output=True, text=True, timeout=15, env=env, cwd=corpus_dir,
+        )
+        if proc.returncode != 0:
+            return False
+        result = json.loads(proc.stdout)
+    except (subprocess.TimeoutExpired, json.JSONDecodeError, OSError):
+        return False
+
+    if not result.get("ok") or not result.get("data", {}).get("hits"):
+        if as_json:
+            print("[]")
+        else:
+            print(f"No tweets matching '{query}'")
+        return True
+
+    hits = result["data"]["hits"]
+    tweet_ids = [os.path.splitext(h["path"])[0] for h in hits]
+
+    # Enrich with DB metadata
+    meta = {}
+    try:
+        conn = connect(db_path)
+        placeholders = ",".join("?" * len(tweet_ids))
+        rows = conn.execute(
+            f"SELECT tweet_id, created_at, content, like_count, retweet_count, view_count "
+            f"FROM tweets WHERE tweet_id IN ({placeholders})", tweet_ids,
+        ).fetchall()
+        meta = {str(r["tweet_id"]): dict(r) for r in rows}
+    except Exception:
+        pass
+
+    if as_json:
+        out = []
+        for h in hits:
+            tid = os.path.splitext(h["path"])[0]
+            m = meta.get(tid, {})
+            out.append({
+                "tweet_id": tid,
+                "created_at": m.get("created_at", ""),
+                "content": m.get("content", strip_html(h.get("snippet", ""))),
+                "like_count": m.get("like_count", 0),
+                "retweet_count": m.get("retweet_count", 0),
+                "view_count": m.get("view_count", 0),
+                "score": h.get("score", 0),
+                "search_engine": "frankensearch",
+            })
+        print(json.dumps(out, indent=2))
+    else:
+        for h in hits:
+            tid = os.path.splitext(h["path"])[0]
+            m = meta.get(tid, {})
+            date = (m.get("created_at") or "")[:10]
+            likes = m.get("like_count", 0)
+            views = m.get("view_count", 0)
+            content = m.get("content") or strip_html(h.get("snippet", ""))
+            print(f"  {date}  {likes:>5} likes  {views:>7} views")
+            for line in textwrap.wrap(content, width=90):
+                print(f"    {line}")
+            print()
+
+    return True
+
+
+def cmd_search_fts5(args):
+    """FTS5 keyword search (fallback)."""
     conn = connect(args.db)
-    if args.json:
+    use_json = getattr(args, "json", False)
+    if use_json:
         rows = conn.execute(
             "SELECT t.tweet_id, t.created_at, t.content, t.like_count, t.retweet_count, "
             "t.view_count FROM tweets_fts fts JOIN tweets t ON t.id = fts.rowid "
             "WHERE tweets_fts MATCH ? ORDER BY rank LIMIT ?",
             (args.query, args.limit),
         ).fetchall()
-        print(json.dumps([dict(r) for r in rows], indent=2))
+        print(json.dumps([{**dict(r), "search_engine": "fts5"} for r in rows], indent=2))
     else:
         rows = conn.execute(
             "SELECT t.created_at, t.content, t.like_count, t.view_count "
@@ -52,6 +156,19 @@ def cmd_search(args):
             for line in textwrap.wrap(r["content"] or "", width=90):
                 print(f"    {line}")
             print()
+
+
+def cmd_search(args):
+    use_json = getattr(args, "json", False)
+    fsfs_bin = find_fsfs()
+    corpus_dir = get_corpus_dir()
+    if fsfs_bin and corpus_dir:
+        if fsfs_search(fsfs_bin, corpus_dir, args.query, args.limit, use_json, args.db):
+            return
+        print("jet: fsfs failed, falling back to keyword search", file=sys.stderr)
+    elif not fsfs_bin:
+        print("jet: fsfs not found, using keyword search (install fsfs for hybrid search)", file=sys.stderr)
+    cmd_search_fts5(args)
 
 
 def cmd_top(args):

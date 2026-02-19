@@ -1,0 +1,9 @@
+2026-01-02 | 76 likes
+
+If you're not familiar with TanStack, it's a set of really nice libraries that can improve the code in your web application a lot, particularly when the libraries overlap well with what you're trying to do in your specific application.
+
+But rather than instruct my coding agents to use it right off the bat and risk "man with a hammer syndrome" (to whom everything appears as a nail), I usually start out doing things in "vanilla" NextJS 16, React 19, Tailwind, etc. 
+
+Then, when I already have my app working pretty well, I do several rounds with this prompt using Claude Code with Opus 4.5 (or Codex with the GPT 5.2 Codex model, with High or Extra-High reasoning effort):
+
+"Ok, I want you to look through the ENTIRE project and look for areas where, if we leveraged one of the many TanStack libraries (e.g., query, table, forms, etc), we could make part of the code much better, simpler, more performant, more maintainable, elegant, shorter, more reliable, etc. Use ultrathink"

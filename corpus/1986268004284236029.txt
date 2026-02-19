@@ -1,0 +1,17 @@
+2025-11-06 | 18 likes
+
+Here's the one liner command to install it:
+
+curl -fsSL https://t.co/l05IgC4vbS | bash -s -- --yes
+
+What this does:
+
+Installs uv if missing and updates your PATH for this session
+
+Creates a Python 3.14 virtual environment and installs dependencies with uv
+
+Runs the auto-detect integration to wire up supported agent tools
+
+Starts the MCP HTTP server on port 8765 and prints a masked bearer token
+
+Creates helper scripts under scripts/ (including run_server_with_token.sh)

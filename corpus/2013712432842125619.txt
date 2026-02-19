@@ -1,0 +1,25 @@
+2026-01-20 | 20 likes
+
+Agreed, some level of centralization is more efficient than "pure" decentralization, clearly. But the question is what form that centralization should take.
+
+In the case of Bitcoin, the centralization primarily takes the form that most clients are running the same C++ bitcoind node software, which is made by a group of competent developers that review the work, and anything beyond bug fixes has to go through a whole long process, with layers and layers of reviews and checks and tests.
+
+In the case of my software development workflows, the centralization is injected at the very beginning of the process during the planning phases: in the ideation and design and architecture of the markdown plan document.
+
+This process involves soliciting feedback from all frontier models and blending them in, but I drive the process with my second-in-command, GPT-5.2 Pro with Extended Thinking, as the primary drafter.
+
+We jointly go through a sickening number of iterations and refinements to the markdown plan.
+
+Once I have that plan document, I turn it into beads (epics, tasks, and sub-tasks) and then iteratively refine and polish those beads. 
+
+Again, I involve both Opus 4.5 (via CC) and GPT-5.2 xHigh (via Codex) in that iterative process, but it's "centralized" with just two agents.
+
+But at the end of that long road, I now have everything I need laid out more completely and clearly than any Soviet central planner apparatchik could dream of.
+
+And that's where the centralization should end, other than the logistical coordination I described earlier (restarting crashed agents, dealing with usage limits, initial startup of agents, etc).
+
+Those beads are the sacred texts that contain within them the road to El Dorado. 
+
+And bv (i.e., my beads_viewer tool) is the sacred compass, pointing each agent *individually* in the direction of maximal ascension to the complete implementation of the entire plan, without another agent needlessly bossing them around about what to do. 
+
+Every agent, a king.

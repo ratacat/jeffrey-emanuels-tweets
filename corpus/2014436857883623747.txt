@@ -1,0 +1,17 @@
+2026-01-22 | 9 likes
+
+And here is another example of one of these "meta prompt" self-improvement cycles. This one is more targeted because I already knew what I wanted to do:
+
+---
+
+Read AGENTS .md. Now, I want you to review /dp/rust_toon; this is a system for converting back and forth between json and toon, which is a token-optimized format ideal for agents. 
+
+My goal is to intelligently integrate toon into ALL of the tools in that LIST_OF_DOODLESTEIN_REPOS_FOR_AGENT_DIRECTED_TOOLS.md file in a way that's totally intuitive and ergonomic for agents like yourself to use.
+
+We can add it as an additional format to go along with json, and also add the ability to default to that format, but such that the format is explained in a super concise (but token-dense and intuitive way for agents) in the quick start or robot help shown to the agent. First I want you to come up with a detailed plan for doing this for each of the tool projects. 
+
+It's a huge project to do this all because each project is different: they are in different languages (rust, golang, typescript, etc), serve very different purposes, etc. So go one by one very carefully and come up with a super detailed, comprehensive, and granular plan to do all of this.
+
+Then take ALL of that and elaborate on it and use it to create a comprehensive and granular set of beads for all this with tasks, subtasks, and dependency structure overlaid, with detailed comments so that the whole thing is totally self-contained and self-documenting (including relevant background, reasoning/justification, considerations, etc.-- anything we'd want our "future self" to know about the goals and intentions and thought process and how it serves the over-arching goals of the project). The beads should be so detailed that we never need to consult back to the original markdown plan document. Remember to ONLY use the `br` tool to create and modify the beads and add the dependencies. 
+
+Note that the beads themselves that you make NOW should be tasks to research a particular project repo to gather the information required to come up with the individual project-level task beads (those project-level beads should be created within each of the specific project directories, not in /dp directly-- the beads directly within /dp are only for these super high-level, overall task related beads.

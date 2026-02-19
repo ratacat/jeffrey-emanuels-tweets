@@ -1,0 +1,3 @@
+2026-02-02 | 85 likes
+
+Starting the port of Mario Zechner's (@badlogicgames) awesome Pi Agent project to Rust (with his blessing!). I was first going to do a straight port using standard Rust libraries like Tokio and save my own homegrown libraries for FrankenCode, but decided I might as well do it: https://t.co/hVQETE7Mxr

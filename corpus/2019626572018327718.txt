@@ -1,0 +1,64 @@
+2026-02-06 | 93 likes
+
+Agent coding life hack:
+
+If you use a bunch of Claude Code agents at the same time like I do, you've probably run into this problem: your machine is suddenly unusably slow and lagged, your terminal keystrokes are noticeably delayed, and your enjoyment in presiding over your burgeoning slop code empire is dramatically curtailed.
+
+What happened? In my case, the answer is usually one of these two scenarios:
+
+1. A bunch of agents, either working in the same project or multiple projects, decided to compile a big project at the same time. Actually, you only need 2 or 3 of these at once to bring even a fast machine to its knees. The Rust compiler by default uses all your cores to the max and is extremely demanding. Multiply that times 3, and you're hosed.
+
+2. Same thing, but they're running `bun test` or some other huge test suite, build process, etc. Something that puts a lot of load on the machine in the form of memory footprint, CPU intensity, I/O intensity, etc.
+
+Even if the worst case situation happens infrequently for you, the severity can be jarring, and can lead to crashes and lost work. It also just feels horrible. I like to see the results of my keystrokes in under 30ms. 
+
+When it starts getting really lagged, it stresses me out in a very viscerally unpleasant way. To the point where I'd do just about anything to solve this.
+
+So what can one do? Well as you may have seen me post about recently, I did just buy a 64-core CPU to replace my existing 32-core Threadripper. And I already have 512gb of RAM. 
+
+But these are ultimately bandaids for what is really a software problem. Having more cores won't even really help with this, anyway. The Rust compiler will gladly gobble up all those extra cores and leave you in the same place.
+
+One approach is to make the rustc processes be very "nice" (to use Unix parlance) in terms of deferring to other processes, but this slows them down a ton and is annoying to deal with (if you are interested in this approach, take a look at my system_resource_protection_script project in my GitHub profile).
+
+But I also happen to have multiple powerful machines in the cloud that are often sitting around idle. How could I leverage those to solve this problem? 
+
+And then it suddenly dawned on me: I could use the exact same approach as my dcg (destructive_command_guard) project, which uses Claude Code's pre-tool hooks functionality to automatically check commands for safety and blocks any that it detects as being destructive. 
+
+What if we used the same approach to spot these CPU-busting commands like "cargo build" and other similar compilation/build/test command patterns? OK, but then what? Well, that's where my new tool, remote_compilation_helper (rch) comes into play. 
+
+Like dcg, rch is also written in highly optimized Rust (it's ~100k lines of Rust across 5 crates; ~170 modules, and nearly 5,000 tests... pretty complex, because it does a lot). 
+
+You can get it here and install it with the convenient one-liner script:
+
+https://t.co/CAHawc1Ikw
+
+It lets you set up one or more "worker machines" using ssh that form a pool. Each machine is benchmarked for capacity, and based on the number of cores, ram, etc, has a certain number of "work slots" that it advertises. 
+
+When an agent on your main machine wants to run a compilation command, rch dynamically intercepts that command, and instead of running the compilation command the agent gave it, springs in to action. 
+
+Critically, all of this is done in a way that is completely transparent to your coding agent: as far as it is concerned, it did the tool call it thought it did, and it's executing like normal on the local machine, and the results of that call will end up in the usual place locally on that machine. 
+
+But in reality, the rch daemon has taken all relevant files and bundled them up and sent them to one of your worker nodes (based on that worker's current load and available slots), which it has automatically configured to exactly match the build environment of your main machine. 
+
+Once compilation finishes, it will bring back all the results and extract them neatly just where they would have appeared if you had done everything normally on your main machine. The perfect crime!
+
+Obviously, if you have a company with a bunch of devs, you can set up a big shared pool of machines to do this and everyone can use the same pool of workers. 
+
+Currently, rch supports most common compilation and testing workflows, but it's easy to add more and I will continue to do so as I need them for my own work (and you can suggest some in GitHub issues and I will have my guys make them if it's sensible). 
+
+When I mentioned this problem I had recently with concurrent agent-triggered builds nuking my machine, a few people suggested using these big, complex, one-sized-fits-all build systems. 
+
+Well, no thank you! Who needs all that extra complexity to deal with? Certainly not me, and also not the agents. I'm already asking them to do the impossible practically. I don't need to add all this extra build ceremony nonsense on top of that to confuse them and slow them down. This approach I've taken, using pre-tool hooks, is much more elegant and seamless. 
+
+Anyway, this tool has already helped me save some time and frustration and will continue to improve as I fix bugs and add more features. I tried to make it as easy and convenient to use so it just runs and does its thing and stays out of your hair. 
+
+And critically, if anything is broken with rch or with your pool of workers in any way, everything will still work fine, it will just do the compilations locally like you're already doing, so there is very little downside to giving it a shot. 
+
+Also here are some other cool features of rch that Claude urged me to add to this post (he's like a proud father):
+
+Interesting features worth mentioning:
+  - The 5-tier command classification that rejects 99% of commands in <0.1ms
+  - Project affinity (routes to workers with cached copies for incremental builds)
+  - Multi-agent deduplication (agents compiling same project share results)
+
+So, give it a try and let me know what you think! And of course, rch is now a full-fledged member of my https://t.co/N4As0kJTQP family of MIT-licensed agent tools. Give them all a try! And check out the Flywheel Discord where you can hobnob with the Flywheel Elite and discuss recursive AI self-improvement.

@@ -1,0 +1,3 @@
+2026-01-09 | 13 likes
+
+Will release a new tool tomorrow that totally solves this and whole classes of similar problems in the most performant way possible. Look out for DCG (dangerous_command_guard).

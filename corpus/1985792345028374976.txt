@@ -1,0 +1,3 @@
+2025-11-04 | 8 likes
+
+It’s a misconception to think that popular implementations of AI inference pipelines using transformer-based LLMs are somehow leaving huge amounts of performance on the table as a result of engineering mistakes or sloppiness.

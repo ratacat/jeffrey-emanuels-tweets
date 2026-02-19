@@ -1,0 +1,43 @@
+2025-11-09 | 147 likes
+
+I think a lot of people who might want to develop a new software project often get tripped up at the beginning in the process of starting it, since it seems so daunting to start out with a blank repo.
+
+So I thought I would quickly run through my latest workflow, which dramatically lowers the bar in terms of the effort and time needed to get started.
+
+The most important part by far is to have a good idea or what to make that would actually be useful to a lot of people if it really worked properly and did what it tries to do well.
+
+I can’t really help you with this part, but the common advice of scratching your own itch and solving your own (non-niche) pain points is a very good way to get started. I find myself thinking of project ideas constantly.
+
+Anyway, the next step is to write out the idea informally, as you might in a quick email to a close friend. 
+
+You don’t try to make this a formal plan, just the quickest way to convey the basic idea and what it does and specify any parts of the tech stack or libraries that you know you want to use.
+
+The attached screenshots show an example of this for an idea I randomly had a couple days ago. It took me maybe 10 or 15 minutes to write up. It doesn’t need to be long, and it can reference other sources to keep it concise.
+
+This initial description then becomes the prompt for GPT-5 Pro. This usually takes at least 15 or 20 minutes to run (amusingly longer than it takes to write the prompt). You could try other models, but they will be a lot worse.
+
+I then often take the same prompt and give it to Grok4 Heavy or Opus4.1 and feed those ideas back into GPT-5 Pro and encourage Pro to take any good ideas it sees in the other proposals. If there’s actually something smart in those plans, GPT-5 Pro will recognize it and incorporate it.
+
+Then I’ll ask Pro to create a detailed, granular markdown plan document based on its first response, and I’ll save that as a file in a newly created project folder. 
+
+Then I’ll often iterate on this a few times, starting a new Pro conversation in the web app and giving the entire markdown plan file and telling it to enhance the plan in various ways to make it more reliable, robust, performant, intuitive, user-friendly, and other good adjectives. 
+
+And I’ll encourage Pro to do exhaustive web research on the latest documentation, blogs, tutorials, etc to find better libraries or ways to do things. 
+
+I’ll then take its proposed revisions and paste that into codex and ask codex to integrate the revisions into the existing markdown plan document.
+
+After 2 or 3 rounds of this, things stabilize and you get a really good, fleshed out plan. This is the key to everything, because when things are still in the plan phase, it’s much easier to tweak and improve them because you don’t have any code yet. Measure twice, cut once, etc.
+
+Here’s a link to the resulting plan document that came from the initial prompt for this idea:
+
+https://t.co/mXHOZH9b2p
+
+At this point, I start adding an AGENTS dot md file; I start with an existing one I have and ask Pro (in the same session as the latest plan document was written) to customize it for this new project and tech stack while preserving anything generic.
+
+If there are some critically important libraries, I will also sometimes create a specialized best practice guide (say, if you’re making an MCP server, I’ll generate a best practices guide specialized for the fastmcp library, but where I also spell out how to structure the project, etc.)
+
+At this point, I then ask codex in a single session to start building out the project structure, creating folders and blank placeholder files, making the .gitignore file, etc.
+
+Here’s where my process diverges dramatically from the typical approach. I first use Steve Yegge’s beads project and tell codex to turn the plan document into a bunch of tasks and sub-tasks using beads.
+
+Then I use tmux to create a bunch of codex sessions, as many as 8 at once (I think more than that would also work well)…

@@ -1,0 +1,5 @@
+2026-01-15 | 29 likes
+
+I made this for myself to save time, but others might find it handy, too, if you want to install or update any of my tools individually. It has the curl bash one-liners for every tool in one place:
+
+https://t.co/WwASGGfhhp https://t.co/VCGwCTFY2m

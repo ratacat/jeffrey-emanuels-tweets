@@ -1,0 +1,5 @@
+2026-01-22 | 7 likes
+
+A good trick is to have multiple agents (like Codex with GPT 5.2 Xhigh) do follow up passes by pasting the same prompt but adding this at the end:
+
+| NOTE: I already asked another agent to do this previously, so make sure you don't duplicate overlapping work; instead, try to improve, enhance, and expand on what the other agent did already.

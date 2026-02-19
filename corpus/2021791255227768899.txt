@@ -1,0 +1,61 @@
+2026-02-12 | 62 likes
+
+I’ve mentioned this before, but I think it’s so revealing and important to understand that I want to convey it again:
+
+Suppose you have two images of different people and you want Nano Banana to take the clothing and pose and orientation of the first image but make it look like the face of the second image so that it’s perfectly recognizable.
+
+The obvious way to do this, and the conventional wisdom for a long time, was to make some big, detailed prompt that specifies exactly what you want to happen and even include a bunch of things to look out for to prevent known failure modes.
+
+You might have some phrases about making sure that the generated image looks “just like” the person in the second image, or that the “facial likeness must be instantly recognizable” or some other formulation.
+
+Or conversely, you might specify that the pose and clothing and orientation of the generated image must match that of the first image.
+
+And perhaps early testing taught you that there are some failure modes you had to watch out for. As an example, you might include in your prompt that, if the person in the first image has a beard, but the person in the second image doesn’t have a beard, that the generated image should definitely not have a beard.
+
+All these things sound reasonable, do they not? And here’s the weird thing: the more stuff like that you include in the prompt, the worse it will work! Now, in this example, it might “work” insofar as it will be a picture of the person dressed as the other person, but it will look comically bad like one of those “face-in-hole” apps from 2010. Why?
+
+What’s even stranger is that giving a very short and schematic prompt asking what you want, like “make the person in the second pic so they’re dressed like the person in the first pic” might result in a much more pleasing and realistic image, even if you might need to generate it a couple times to get it just right. Again, why?
+
+The answer is that these models are already trained so much to give good results out of the box. But they’re also designed to be very helpful, attentive, and accommodating to every part of your request.
+
+In fact, every single word in your prompt is “attended to” by the model and has an impact on the specific activation states that occur in its “brain.”
+
+Because this activation weight space is so incomprehensibly vast, you’d be amazed at just how different those activations can be as a result of what might seem to be a minor change in the wording of a prompt.
+
+Incidentally, this is why things like my “fresh eyes” code review prompt can be so shockingly effective if you’re not used to that sort of thing: it’s because they’re tapping into some very deep thing in the model’s brain that changes the way it operates, like toggling a create/critique mode gestalt switch.
+
+An analogy here is especially informative. Suppose you want to hire a famous and talented chef to prepare a special meal for your party. Great, surely it will be a wonderful meal, right?
+
+But then you start giving all these additional requests and tweaks to the chef: “Martin has nut allergies. Oh and Lucy loves duck, be sure to include that. Oh, and our apple trees are ripe, wouldn’t it be so great to use those, too.” And on and on, you give more rules and requirements and constraints.
+
+The chef wants to be helpful (assume you’re paying them a lot), but every time you add another one of your rules, you are restricting and circumscribing what they can do. You are dramatically narrowing and constraining their search space and impeding their creative process, because now they keep bumping against your rules.
+
+Instead of focusing on what they know best, which is creating incredible dishes and meal experiences, they are forced to waste their cognitive energy on dancing around these constraints.
+
+If you foist enough of them on the chef, it becomes like those scenes in heist movies where they have all the laser beam motion detectors and you need to dance around them like some kind of ninja acrobat just to get through the other side. Now, if the chef is good enough, will you still end up with a pretty good meal for your guests? Sure, probably.
+
+But will it be close to as good as it could have been if you let the chef make all the decisions themselves with maybe just some basic, high-level guidance (e.g., “less seafood, lots of veggies”)? Almost certainly not.
+
+The chef is the model, and you are the annoying party planner. Every time you try to tell the model exactly what to do and how, just understand that, although you might end up with something that on the surface conforms with all your requirements, it will be the equivalent of that “face-in-hole” photo that “technically” looks like the person but also looks 2-dimensional and like a bad Photoshop attempt: no artistry, and not likely to fool anyone about it being natural or real.
+
+This applies just as much to using these models to generate code. The more you tell them what to do and how, the worse the results will be. That’s why you should try to focus your prompting on your goals, the purpose of the project, the desired end state, the features and functionality you’d like to have (but not in such extreme specificity: again focus on the purpose of the feature, the intent of it, what it’s supposed to help the user do, etc.).
+
+The models are now smart enough that, once they understand the high-level goals, they can do a better job planning than you can, at least if the goal is to get a plan that other models/agents are going to implement.
+
+Note that what I’m saying here really applies more to the planning stages. Once you have a plan, you can make it quite elaborate in an iterative way, and I usually do.
+
+And then I turn those plans into extremely detailed beads (epics, tasks, subtasks, etc) so that the agents that are actually implementing the stuff don’t need to understand the big picture and can focus instead on their narrow task, much like a short-order cook in a diner can focus on the ticket in front of them and just make a good pastrami sandwich without worrying about how to bake a pie or whether the people at table 3 have been waiting too long for a water refill.
+
+So, in short: when coming up with your plan, don’t be too prescriptive to give the model flexibility so that you get the best possible plan. But once you’ve figured out what to do, you want to go in the opposite direction and get very detailed and specific so that you can turn the plan into such detailed marching orders that even a dumber agent could still probably implement them well (but of course, you don’t use a dumb agent, you use a very smart agent that is super overpowered for the task so that they do a phenomenal job).
+
+If you squint, you will also see a connection to my other big advice for working with brownfield projects that already have a ton of code (and also my approach to porting).
+
+That advice is that you first need to transform the big existing codebase into a much shorter specification document that details just the interfaces and the behaviors, but none of the internal implementation details.
+
+This lets you compress the important parts down into something that can easily fit within the model’s context window, where it can think about everything all at once: the full totality of the project and what you’re trying to do, without getting weighed down by all the minutiae (which wouldn’t even fit in its context anyway, so that it would be forced to look through the equivalent of a very zoomed-in camera lens from far away, scanning just a tiny portion of the scene at a time).
+
+Although there are obvious differences here, the core concept is really analogous: that you want to get out of the way of the model as much as possible so it has more degrees of freedom to explore and solve your problem without having to waste its cognitive powers on dumb, irrelevant details. In the case of coming up with a plan, those would be like the details about all the ingredients you want to use.
+
+In the case of a brownfield development project, those details are all the irrelevant internal implementation details of all of the code files.
+
+And by the way, you can always wait until after the chef has come up with the plan and then say at the end “Oh, Martin has nut allergies so let’s change that one thing.” That might annoy the chef, but you’ll still end up with a very good meal. Something to keep in mind.

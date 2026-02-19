@@ -1,0 +1,5 @@
+2026-01-04 | 26 likes
+
+I made this project 9 months ago and it didn't generate much interest at the time, but perhaps its time has finally come now with the rise in popularity of personal assistant projects that use LLMs, such as @steipete 's venerable Clawdbot (née Clawdis):
+
+https://t.co/RfsIkhKhdO

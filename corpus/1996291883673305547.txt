@@ -1,0 +1,5 @@
+2025-12-03 | 7 likes
+
+Finally is the enabling tool that lets me really leverage all the other tools with a 10x or more boost, MCP Agent Mail. Allowing agents of any kind (codex, Claude code, Gemini-cli) communicate directly with each other turned out to be the missing link:
+
+https://t.co/uicCHyDTmp

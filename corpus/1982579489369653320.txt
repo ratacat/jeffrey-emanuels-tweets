@@ -1,0 +1,3 @@
+2025-10-26 | 11 likes
+
+PSA: you might be able to save half or more of the tokens you use in your AI project by switching to a more token-efficient representation for responses from your MCP tools. Need to test realistically for comprehension/performance, but it really works. Pays off in many ways.

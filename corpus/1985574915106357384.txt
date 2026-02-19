@@ -1,0 +1,3 @@
+2025-11-04 | 4 likes
+
+It’s good to think about these kinds of questions periodically to hone your intuitions about how these models work. I know there are other technically correct reasons for this, such as speculative decoding and caching, but the most important and revealing one is what I said here.

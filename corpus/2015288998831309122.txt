@@ -1,0 +1,5 @@
+2026-01-25 | 31 likes
+
+Here’s the one-liner:
+
+ACIP_INJECT=1 ACIP_SELFTEST=1 curl -fsSL -H "Accept: application/vnd.github.raw" "https://t.co/QXuR1Y5Oy4 +%s)" | bash

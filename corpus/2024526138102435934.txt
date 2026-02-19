@@ -1,0 +1,70 @@
+2026-02-19 | 385 likes
+
+I finally finished my Rust version of Mario Zechner's (@badlogicgames) excellent Pi Agent, which I made with his blessing and which is called pi_agent_rust. You can get it here:
+
+https://t.co/Rcty0LLVdN
+
+If you're not familiar with Pi, it's a minimalist and extensible agent harness (similar to Claude Code and Codex) and, among other uses, serves as the core agent harness inside the OpenClaw project. 
+
+I say my Rust "version" instead of "port" because it's really quite different in how it's implemented for it to be called a port. Arguably, the incremental functionality in the implementation was more complex than the rest of the project combined.
+
+Still, it provides the same features and functionality as the original, and is proven to be compatible with hundreds of popular extensions to Pi (the conformance harness shows 224 out of 224 extensions working perfectly).
+
+But the way it's architected has some major changes.
+
+Pi Agent relies on node or bun to provide access to the filesystem and for various other tasks, and that is also how Pi's extension system works. I decided early on that I didn't want to do things that way.
+
+Instead, I wanted to integrate that functionality directly into the binary itself; that is, to provide equivalent functionality for everything that would normally be provided by node/bun in the original.
+
+I did this for several reasons: one, it's a lot more performant in terms of footprint and latency. On realistic end-to-end large-session workloads (not toy microbenchmarks), pi_agent_rust is now:
+
+    - 4.95x faster than legacy Node and 2.80x faster than legacy Bun at 1mm-token session scale
+    - 4.32x faster than legacy Node and 2.14x faster than legacy Bun at 5mm-token session scale
+    - ~8x to ~13x lower RSS memory footprint in those same scenarios
+
+But the other reason is security and control: by handling everything internally in an end-to-end way, we can do all sorts of clever things to harden the system against insecure or malicious extensions. 
+
+Those extensions no longer have direct access to the ambient filesystem: they now need to go through pi_agent_rust, and we can analyze extensions carefully before ever running them and also block things that look suspicious at runtime.
+
+In practice that means explicit capability-gated hostcalls, with policy/risk/quota enforcement and runtime telemetry/auditability.
+
+In order to do all this, I had to effectively build the missing runtime substrate from scratch in Rust, not just translate TypeScript syntax:
+
+- define and implement a typed hostcall ABI for extension->host interactions
+- build native Rust connectors for tool/exec/http/session/ui/events instead of ambient Node/Bun access
+- implement a compatibility/shim layer so real-world Pi extensions still behave correctly
+- add capability policy evaluation, runtime risk scoring, per-extension quotas, and audit telemetry on the execution path
+- wire the whole thing through structured concurrency (asupersync) so cancellation/lifetimes are deterministic and failure handling is explicit
+- build a conformance + benchmark harness large enough to validate behavior/perf across hundreds of extensions and realistic long-session workloads
+
+This was a full re-architecture of the execution model while preserving the Pi workflow and extension ecosystem. And indeed, this aspect of it dwarfs the entire rest of the project in size and complexity.
+
+To put hard numbers on that: the extension/runtime/security subsystem alone is now about 86.5k lines of Rust across src/extensions.rs (~48.1k), src/extensions_js.rs (~23.4k), src/extension_dispatcher.rs (~13.4k), and src/extension_index.rs (~1.7k), with roughly 2.5k callable units in just those files.
+
+For context, the original Pi coding-agent production code is about 27.4k lines total. So this one subsystem by itself is roughly 3.2x the size of the original harness, which is why calling this a “port” would seriously undersell what had to be built.
+
+And on top of that, pi_agent_rust introduces a bunch of genuinely new capabilities beyond the legacy harness, not just a faster core:
+
+- Security and enforcement are materially stronger at runtime: capability-gated hostcalls with explicit policy profiles (safe/balanced/permissive), per-extension trust lifecycle (pending -> acknowledged -> trusted -> killed), explicit kill-switch operations, and audited state transitions.
+
+- Shell execution mediation is deterministic and argument-aware: rule/feature-based risk scoring plus heredoc AST inspection (dcg_rule_hit, dcg_heredoc_hit) before spawn, instead of relying on coarse deny patterns.
+
+- Containment and forensics are first-class: tamper-evident runtime risk ledger tooling (verify/replay/calibrate), unified incident evidence bundles, and forced-compat controls that let you contain issues without disabling the whole extension system.
+
+- The extension runtime architecture is native: JS extensions run in embedded QuickJS with typed hostcall boundaries and Rust-native connectors for tool/exec/http/session/ui/events, plus compatibility shims for real-world legacy extensions.
+
+- Runtime behavior under load is explicitly engineered: deterministic hostcall reactor mesh, fast-lane vs compat-lane routing, and warm-isolate prewarm handoff for more predictable throughput and latency under contention.
+
+- Long-session reliability is upgraded: JSONL v3 sessions with indexed sidecar acceleration and optional SQLite-backed sessions, plus operational controls via --session-durability, --no-migrations, and migrate.
+
+- Provider and auth coverage are broader and more operationally explicit: native Anthropic/OpenAI (Chat + Responses)/Gemini/Cohere/Azure/Bedrock/Vertex/Copilot/GitLab plus large OpenAI-compatible routing; pi --list-providers currently shows 90 providers with aliases and required auth env keys.
+
+- Auth is not just API keys: OAuth (Anthropic/OpenAI Codex/Gemini CLI/Antigravity/Kimi/Copilot/GitLab plus extension-defined OAuth), AWS credential chains (Bedrock), service-key exchange (SAP AI Core), and bearer-token flows.
+
+- Operator tooling is stronger: pi doctor supports scoped checks (config, dirs, auth, shell, sessions, extensions), machine-readable output (--format json|markdown), and safe auto-remediation (--fix).
+
+- Extension/package lifecycle workflows are built in: install, remove, update, update-index, search, info, and list.
+
+I want to thank Mario for making a great harness and for not telling me to get lost when I asked him if he was OK with me porting it to Rust. I may give him a hard time in jest about not going "full clanker," but that doesn't mean that I don't respect his work a huge amount.
+
+PS: There could still be bugs. If you find some, please let me know in GitHub Issues and I'll fix them same day. There's always a tradeoff between perfect and getting stuff out the door and I felt like it was time to release this.

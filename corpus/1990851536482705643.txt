@@ -1,0 +1,19 @@
+2025-11-18 | 165 likes
+
+I use this extremely useful coding agent development workflow every day, so I thought I'd share.
+
+I do this exclusively using Claude Code with Sonnet 4.5, even though I mostly use Codex for my non-UI coding now.
+
+It's especially helpful when you have tons of agents working on the same project at the same time (something that I do constantly now because of my MCP Agent Mail project), since this way they don't need to think about git operations at all.
+
+You start a new Claude Code session in the project and then give it this initial prompt (modify if you use CLAUDE dot md instead or whatever other tweaks you need):
+
+"First read AGENTS dot md, read the README file, and explore the project files and other documents to understand what we are doing here and what the project is all about. Use ultrathink."
+
+Then, you give it this:
+
+"Now, based on your knowledge of the project, commit all changed files now in a series of logically connected groupings with super detailed commit messages for each and then push. Take your time to do it right. Don't edit the code at all. Don't commit obviously ephemeral files. Use ultrathink."
+
+Then, every 15-20 minutes or so, I press the up arrow to repeat that prompt.
+
+It can take 10+ minutes to finish running if you have 5+ agents working at the same time on the code.

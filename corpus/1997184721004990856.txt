@@ -1,0 +1,21 @@
+2025-12-06 | 80 likes
+
+I’m so grateful for the opportunity to learn about literally any subject in a deep way by asking my own weird questions that pop into my head and then getting genius-level responses from extremely well-read, competent LLMs.
+
+In this conversation, I discussed the genetic code with GPT 5.1 (that is, how each of 64 different groups, each containing 3 of the four components of DNA in a specific order, map to the 20 different amino acids and the “stop” signal):
+
+https://t.co/N1tfUHrneI
+
+All this is pretty standard, although totally fascinating if you’ve never heard about it before (seriously, it will blow your mind, you should read it and think about it!). 
+
+But then I started peppering it with kind of odd questions, like how heavy each of those amino acids is. Or how much energy is required to synthesize each of them.
+
+And then I asked for an explanation of why some amino acids have 6 different groups of 3 that map to them, while some only have one. How did it end up working out that way? What’s the deeper pattern at work?
+
+And then historical questions about who figured this stuff out. And how earlier research on phages (viruses that attack bacteria) led to the later understanding, and why phages were a good approach.
+
+Some of this stuff is obviously going to be presented in textbooks about genetics and molecular biology, but some of it is either more physics based and not a typical way to think about the stuff, or it’s more speculative in nature.
+
+I’m not even sure most biologists would really be able to readily answer some of these questions in detail off the top of their heads. Not that I’m friends with any professional biologists anyway who could tell me about any of this stuff.
+
+But I can be lobbing these random questions to AI from my phone in bed late on a Friday night and it can give me awesome explanations of whatever weird stuff I want to know about. And for that, I’m profoundly grateful.

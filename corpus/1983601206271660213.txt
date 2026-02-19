@@ -1,0 +1,3 @@
+2025-10-29 | 15 likes
+
+Pretty sure this will be a solved problem for most tractable data analysis problems in the next few years. All those Kaggle contests to do RL across. I think a big part will be using multimodal models and getting the agents to use tons of graphs to slice and dice and visualize.

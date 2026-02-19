@@ -1,0 +1,7 @@
+2026-01-20 | 7 likes
+
+This shows how Claude used its new skill to create the slick song credits in the video (they're a bit small owing to the insanely high resolution of my screen, but I didn't want to waste more time on that part!). 
+
+I'll share this skill soon (and many more besides-- I've been on a tear lately) on the new paid site that I'm developing.
+
+It's called https://t.co/2ousdTizJE (that's Moldova's TLD if you're curious), lol. Site isn't up yet. I need a couple more days. It will also have an awesome rust CLI tool that works hand in hand with the sight, called jsm.

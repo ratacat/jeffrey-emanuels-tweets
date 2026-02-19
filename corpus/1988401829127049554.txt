@@ -1,0 +1,5 @@
+2025-11-12 | 1 likes
+
+Along those lines, here are some cool examples of “fancy” loss functions that include many more things than simply “how far was the output from the training data?”:
+
+https://t.co/YnVSgmwxOQ

@@ -1,0 +1,3 @@
+2025-12-07 | 8 likes
+
+And of course, all the agents will be actively communicating with each other using MCP Agent Mail (I can release the full mailbox later publicly as a static site so you can watch it unfold). And they'll be using bv as a kind of "compass" directing them all as to what tasks to do.

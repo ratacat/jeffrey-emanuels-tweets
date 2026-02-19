@@ -1,0 +1,3 @@
+2025-11-19 | 23 likes
+
+It’s going to be hard (nigh impossible) for others to approach this point on the price-performance curve. Even if GPT-6 is somewhat smarter, the hosting costs to OpenAI after paying the “Nvidia tax” and giving Jensen his 90% gross margins will make it fall short in Pareto terms.

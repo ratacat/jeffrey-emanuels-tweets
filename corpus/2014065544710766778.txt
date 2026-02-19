@@ -1,0 +1,25 @@
+2026-01-21 | 143 likes
+
+I was thinking about it today, and it's funny how the realization of the true capability of frontier AI models impacts people differently depending on their life outlook and priors.
+
+Some people realize that they can get 3x as much done with half the time and work, and are thrilled by this. More output, less input, what's there not to like?
+
+And then there are people like me, who realize that they now have massive leverage on their own personal effort, and so turn the effort up higher than ever to fully capture this.
+
+The way I think about it is like this: imagine it's 2005 and you just graduated from college (I did, actually, with a math degree). Suppose school just ended and now it's summer, and it just so happens that 33 of your smartest math buddies are just hanging around for a couple of weeks with nothing much to do. 
+
+You have an inspired idea for a crazy software development project, and you're somehow able (via Steve Jobs level voodoo) to recruit all of them to work for 18 hours a day on your project, just for the fun and glory of it. You just need to provide them some pizza and Coke Zero, and they'll even bring their own laptops.
+
+It would be pretty silly to tell them to all clear out of your house at 6pm so you could relax and watch a movie, right? You'd want to leverage that incredible resource to achieve greatness.
+
+Well, that's what every day is like for me now with 22 Claude Max accounts and 11 GPT Pro accounts (my 4 Gemini Ultra accounts are like the smart freshmen who you don't trust to write the code but they're good at reviewing the code for weird bugs and edge cases).
+
+They come with their own compute (in some remote data center that Messrs. Altman and Amodei are losing their shirts on, much to our benefit), and you only need to pay them a pittance of around $7/day, not even as much as the pizza-and-Coke-Zero money. 
+
+And while your math buddies might be smart in general, they're probably not world-class programmers and don't know, let alone understand how to apply, essentially all mathematics ever created.
+
+I know what choices I'd make. Usually, when people have those sorts of insights, they greedily keep them private to squeeze out the alpha for themselves. But I want to share my strategy, my workflows, my tools, and my prompts with everyone. 
+
+Most people won't know what to do with them or realize that this is a special opportunity, but for the ones who do, I want to help you succeed. You can find all my tools for free on https://t.co/N4As0kJTQP and on my GitHub profile.
+
+I've realized that it brings me just as much satisfaction to see other people doing well using my resources, and I think there's a narrow window for these things to have alpha anyway, before the AI gets so good that it can do all this stuff out of the box. So try to have an open mind and give these things a try.

@@ -1,0 +1,5 @@
+2026-02-19 | 13 likes
+
+And if you haven't heard of FrankenTUI yet, feast your eyes (btw I need to refresh the deployed version on the website because I now have mouse-driven adjustable panes and drag and drop and stuff like that!):
+
+https://t.co/1SVpeBvbtG

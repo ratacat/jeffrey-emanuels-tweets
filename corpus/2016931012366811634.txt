@@ -1,0 +1,9 @@
+2026-01-29 | 35 likes
+
+I made this handy tool called asb for backing up all your agent coding settings files into a versioned backup location using git.
+
+It's actually pretty useful for syncing across machines, or just to have a safe copy in case something clobbers your settings. Works for all popular coding agents (Claude Code, Codex, Gemini-cli, Cursor, Droid, etc.):
+
+https://t.co/PuvSHUt9D3
+
+(I actually forgot I made it. I just remembered and tried it for the first time and it worked well!)

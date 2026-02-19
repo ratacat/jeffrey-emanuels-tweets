@@ -1,0 +1,3 @@
+2025-10-24 | 5 likes
+
+This question is actually a great way to realize that the entropy in physics (thermodynamics) really is the same concept as entropy in information theory (measured in bits).

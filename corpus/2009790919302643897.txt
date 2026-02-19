@@ -1,0 +1,37 @@
+2026-01-10 | 69 likes
+
+In this new world we live in, where ideas and intelligence are plunging in marginal cost by the day, I really think one is better off focusing on creating as much value as possible overall instead of focusing on how much value you can personally capture for yourself.
+
+Have an abundance mindset. Don't hoard methods or tools, share them. You will help others and they will appreciate it. And it will quickly come back to you in so many ways that you can hardly predict.
+
+And anyway, the half-life of a hoarded method or tool now is like a few months at best. You're better off focusing on building great things, growing your skills and reputation in the world, and helping others improve alongside you.
+
+Building in public has so many advantages. For one, the GitHub Actions are free! But seriously, if you're working in dev tooling, your public repos are themselves your very best advertisement and public irrefutable proof that your tools and workflows really do work. 
+
+Because otherwise, where the hell are all those commits and releases coming from? 
+
+And I would go even further (and have been): don't just commit the final code. Commit each revision as you go so people can watch the evolution. And don't just post the code, post the plans. And not just the final plans, all of the versions as you go. And not just the plans, the prompts you used to make and refine the plans.
+
+If you commit those as part of the repo, people will notice that and appreciate it and learn from you. And you will get users who give you valuable feedback and bug reports that your agents can slurp up and use to polish your software ( I have a big post to write about this process, which I've totally automated now for myself).
+
+And where does all that lead? Well, many if not most of your users will be regular people who can only give you some support and encouragement and appreciation. But don't underestimate how personally satisfying that can be. In psychic terms, that's pure gold.
+
+Some smaller fraction of your users will themselves be smart devs who have really interesting insights and suggestions that you can leverage. You'd never even know who they are probably if you didn't share your stuff.
+
+And some even smaller fraction of your users, if you are really making something useful, will be extremely successful and prosperous people who also have an abundance mindset and who can bring you opportunities that would never be available to you otherwise. 
+
+Truly, the more you give, the more you get. Just focus on giving good stuff. Take all that time and energy you spend jealously guarding your edge and proprietary methods and workflows and spend it moving faster and making better stuff in the open, and you might be shocked at how much better it feels and how much it helps your bottom line, too.
+
+So many people I speak to about open source tell me ruefully that it's too bad I've given this all away because now anyone can just take my stuff and turn around and sell it. Well, good luck selling what is already free and open, first of all, especially when I'm going a million miles per hour to improve it all.
+
+But also, when I do figure out how to provide a service that people do want to pay for (i.e., a hosted offering that is built entirely on the same open-source tooling but which layers on an intuitive web app and mobile app, which I've already finished the beads for), I will have a built-in audience that is receptive.
+
+And yes, of course, someone else or some big company could fork all 20+ of my repos and try to rebadge and resell it all. But what are the chances that they're going to make something even close to as good as I can make when I'm the one who conceived of, designed, and implemented everything in 2 months?
+
+Also, I strongly believe that many of the people I've helped along the way by being as open as I have been will then be happy to be patrons of my hosted offering, assuming it is a good service and a compelling value proposition, which I will ensure is the case.
+
+Would they really want to switch to the ersatz knockoff version to save a few bucks? Knowing that it will always be behind my latest versions of the open source tooling? 
+
+I'd like to think not, but I guess we'll see. Stay tuned!
+
+And btw, no matter what, I will never stop sharing and being open. Once you've see the light about this you never want to go back into the shadows, toiling in obscurity for illusory gold.

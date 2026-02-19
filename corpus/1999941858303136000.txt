@@ -1,0 +1,5 @@
+2025-12-13 | 107 likes
+
+These coding agents get updated so frequently by OpenAI, Anthropic, and Google that I made an alias in my ~/.zshrc file so I can update all of them instantly at once just by typing uca (for "update coding agents," of course):
+
+alias uca='bun install -g @anthropic-ai/claude-code@latest && bun install -g @openai/codex@latest && bun install -g @google/gemini-cli@latest'

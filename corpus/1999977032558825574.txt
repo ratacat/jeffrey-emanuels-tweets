@@ -1,0 +1,7 @@
+2025-12-13 | 10 likes
+
+OK, I've now taken the initial plan and gotten it checked over by Opus 4.5 in the web app, Gemini 3 with Deep Think, and GPT 5.2 Pro in the web app with extended thinking. 
+
+Then I had Opus in the same web app conversation read over the feedback from the other two models, and all of it is added beneath the original conversation I had with Claude Code starting on line 2324 of this file:
+
+https://t.co/5dWw5uItZ8

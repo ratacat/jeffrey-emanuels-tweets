@@ -1,0 +1,31 @@
+2025-10-20 | 1503 likes
+
+DeepSeek just released a pretty shocking new paper. They really buried the lede here by referring to it simply as DeepSeek OCR. 
+
+While it’s a very strong OCR model, the purpose of it and the implications of their approach go far beyond what you’d expect of “yet another OCR model.”
+
+Traditionally, vision LLM tokens almost seemed like an afterthought or “bolt on” to the LLM paradigm. And 10k words of English would take up far more space in a multimodal LLM when expressed as intelligible pixels than when expressed as tokens.
+
+So those 10k words may have turned into 15k tokens, or 30k to 60k “visual tokens.” So vision tokens were way less efficient and really only made sense to use for data that couldn’t be effectively conveyed with words. 
+
+But that gets inverted now from the ideas in this paper. DeepSeek figured out how to get 10x better compression using vision tokens than with text tokens! So you could theoretically store those 10k words in just 1,500 of their special compressed visual tokens.
+
+This might not be as unexpected as it sounds if you think of how your own mind works. After all, I know that when I’m looking for a part of a book that I’ve already read, I imagine it visually and always remember which side of the book it was on and approximately where on the page it was, which suggests some kind of visual memory representation at work.
+
+Now, it’s not clear how exactly this interacts with the other downstream cognitive functioning of an LLM; can the model reason as intelligently over those compressed visual tokens as it can using regular text tokens? Does it make the model less articulate by forcing it into a more vision-oriented modality? 
+
+But you can imagine that, depending on the exact tradeoffs, it could be a very exciting new axis to greatly expand effective context sizes. Especially when combined with DeepSeek’s other recent paper from a couple weeks ago about sparse attention.
+
+For all we know, Google could have already figured out something like this, which could explain why Gemini has such a huge context size and is so good and fast at OCR tasks. If they did, they probably wouldn’t say because it would be viewed as an important trade secret.
+
+But the nice thing about DeepSeek is that they’ve made the entire thing open source and open weights and explained how they did it, so now everyone can try it out and explore.
+
+Even if these tricks make attention more lossy, the potential of getting a frontier LLM with a 10 or 20 million token context window is pretty exciting. 
+
+You could basically cram all of a company’s key internal documents into a prompt preamble and cache this with OpenAI and then just add your specific query or prompt on top of that and not have to deal with search tools and still have it be fast and cost-effective. 
+
+Or put an entire code base into the context and cache it, and then just keep appending the equivalent of the git diffs as you make changes to the code. 
+
+If you’ve ever read stories about the great physicist Hans Bethe, he was known for having vast amounts of random physical facts memorized (like the entire periodic table; boiling points of various substances, etc.) so that he could seamlessly think and compute without ever having to interrupt his flow to look something up in a reference table. 
+
+Having vast amounts of task-specific knowledge in your working memory is extremely useful. This seems like a very clever and additive approach to potentially expanding that memory bank by 10x or more.

@@ -35,6 +35,14 @@ jet stats --json                      # archive overview
 \`\`\`
 ```
 
+## FrankenSearch (optional)
+
+`jet search` uses SQLite FTS5 by default. Install [FrankenSearch](https://github.com/Dicklesworthstone/frankensearch) (`fsfs`) for hybrid BM25 + semantic vector search — better results for natural language queries.
+
+When `fsfs` is available, `jet search` uses it automatically and enriches results with tweet metadata from the database. If `fsfs` is not found, it falls back to FTS5 keyword search.
+
+`fsfs` is discovered via: `FSFS_PATH` env var > `PATH` > sibling `frankensearch/target/release/fsfs`.
+
 ## Stats
 
 895 tweets | Sep 2025 — Feb 2026 | 76.7 avg likes

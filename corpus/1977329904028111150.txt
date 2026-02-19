@@ -1,0 +1,5 @@
+2025-10-12 | 361 likes
+
+Public Service Announcement:
+
+You can greatly reduce the chances of something catastrophic like this (i.e., Codex or Claude Code deleting your project or files, wrecking your database, etc.) by adding this stuff to the very beginning of your AGENTS dot md file: https://t.co/3VPKsUY8Dz

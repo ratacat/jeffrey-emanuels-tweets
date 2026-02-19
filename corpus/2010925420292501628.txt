@@ -1,0 +1,21 @@
+2026-01-13 | 56 likes
+
+If you really want to make GPT Pro sweat, give it a ~5,800 line bash script and then tell it (without any real evidence, who knows if it's true) that it is riddled with errors and bugs:
+
+"I have this script which does work, and you should first analyze it incredibly carefully and fully. But it has tons of problems and errors/bugs that need to be carefully identified and fixed. Really ruminate on it for a super long time, and then give me a series of git-diff style changes/revisions to fix the root underlying causes of all the many issues/problems/mistakes/bugs/errors/etc. 
+
+Finally, give me back absolutely complete revised code with absolutely nothing missing, simplified, taken out, omitted, etc. Preserve all existing rich formatting and good functionality. Your changes should be all about fixing bugs and expanding functionality, features, performance, robustness, etc. Your final revised code should be SIGNIFICANTLY longer than the current code:"
+
+Then, because GPT Pro will take so freaking long to respond (65+ minutes so far), your original script will surely look different, so you'll need something like this (I'm still waiting for it btw):
+
+---
+
+OK, I took a slightly older version of the apr script and showed it to a very smart LLM for review and it had the following suggested changes; but note that you absolutely cannot mechanically apply any of them to the current apr script because there has been some non-trivial drift in the APR script from the time when the review that generated these suggestions began until now; still, by carefully analyzing the suggested revisions, you should readily be able to ascertain which ones are still relevant and why the suggestions make sense and fix errors or bugs in the code.  Use ultrathink. Here are the suggested revisions:
+
+```
+<paste revisions from gpt pro>
+```
+
+Here's the raw script if you're interested (glad that I don't have to read that. I feel bad for poor GPT Pro sometimes):
+
+https://t.co/hFptGjFzyK

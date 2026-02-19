@@ -1,0 +1,3 @@
+2025-10-24 | 76 likes
+
+I gave Super Grok4 Heavy a tough ~9,000-line Rust code file to optimize for me and it's been busy working on it for well over an hour. I've never seen it go for so long, but I have a feeling it's just going to crash out. Seems extremely wasteful if that happens; they should fix. https://t.co/MhbZv0hJqj

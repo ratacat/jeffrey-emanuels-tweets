@@ -1,0 +1,5 @@
+2026-01-10 | 102 likes
+
+If you have a project that is performance-sensitive and does some complex stuff, give these prompts a try. You might be shocked.
+
+I did a round of this with my cass and bv tools, and Opus 4.5 and GPT 5.2 really did some serious yeoman’s work coming up with smart optimizations. https://t.co/kFRTv7fIKy

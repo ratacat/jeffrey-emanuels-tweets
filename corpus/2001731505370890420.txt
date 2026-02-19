@@ -1,0 +1,3 @@
+2025-12-18 | 73 likes
+
+I’m surprised more people aren’t trying cass. It’s an incredible timesaver for people and agents if you use a lot of coding agents. Works out of the box with every coding CLI, auto detects and ingests/indexes everything in seconds, instant search-as-you-type results, robot mode…

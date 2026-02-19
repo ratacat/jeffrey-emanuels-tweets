@@ -1,0 +1,7 @@
+2026-01-20 | 19 likes
+
+It's hard to keep the top level master agent on task. I just wrote to it:
+
+"❯ hold on, you seem to be confused. We have like 15+ ntm sessions and EACH ONE has these 3 worker agents. And YOU are not controlling them-- the pane0 controller agent within each ntm session is. But you are controlling those pane0 agents, ok? I know it's confusing!"
+
+Get with the program, Chief Clanker!

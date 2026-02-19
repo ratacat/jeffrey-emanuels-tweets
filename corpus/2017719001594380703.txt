@@ -1,0 +1,9 @@
+2026-01-31 | 61 likes
+
+OK, the FrankenTUI plan is finally locked in:
+
+https://t.co/oaPCFhKWVs
+
+I had to finish porting Python's rich, Golang's Charm libraries (bubbletea, lipgloss, etc), and OpenTUI to Rust first to get the various pieces into place.
+
+Going to make the beads now if you want to follow. https://t.co/25ADPD73O7

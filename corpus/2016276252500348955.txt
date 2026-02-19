@@ -1,0 +1,9 @@
+2026-01-27 | 52 likes
+
+It's so satisfying when a bunch of my Rust ports hits feature parity and 100% on conformance tests so that I can start the extreme optimization passes.
+
+I love seeing the numbers go up (or down)! 
+
+DONE: rich, charm (all of them!), opentui.
+
+Gonna merge them all into FrankenTUI. https://t.co/wd6R1GNH5g

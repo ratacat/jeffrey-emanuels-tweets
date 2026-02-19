@@ -1,0 +1,7 @@
+2026-01-14 | 10 likes
+
+BTW, that's always the sign of the best, most useful, and lasting tools: using them yourself before they're even done, and relying on them absolutely early on.
+
+DCG is a keeper! 
+
+Thanks to @darin_gordon for porting my python script into Rust and letting me take over the repo.

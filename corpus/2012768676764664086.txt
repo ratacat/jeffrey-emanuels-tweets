@@ -1,0 +1,5 @@
+2026-01-18 | 317 likes
+
+I really feel like Google's nearly 200k employees should have somehow by now figured out how to prevent this from happening 100 times a day to me in different forms in their flagship coding harness, gemini-cli. 
+
+Levenshtein edit distance of successive reasoning traces is near zero? Abort. Don't even tell the user about it, just stop and restart with a hidden "proceed."

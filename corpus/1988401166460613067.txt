@@ -1,0 +1,3 @@
+2025-11-12 | 25 likes
+
+There’s an interesting parallel between choosing the right loss function when training AI models and designing the right incentive system for business executives. Be careful what you wish for, basically.

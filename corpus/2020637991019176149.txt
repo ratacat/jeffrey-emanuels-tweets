@@ -1,0 +1,5 @@
+2026-02-08 | 72 likes
+
+I made a website for FrankenTUI and I think it looks pretty slick. It also has some cool functionality not usually present on a site like this: it details not just the library, but how it was made, and shows how the specs document and the beads evolved:
+
+https://t.co/on9ZEKaWRV

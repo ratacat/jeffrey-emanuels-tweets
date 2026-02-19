@@ -1,0 +1,5 @@
+2025-12-20 | 441 likes
+
+If you’re sick and tired of Claude Code doing destructive things in your projects like “git reset --hard” (even when forbidden in your AGENTS dot md or CLAUDE dot md file), you might find this useful:
+
+https://t.co/4jdSWvoiwB https://t.co/iuBHP25EKw

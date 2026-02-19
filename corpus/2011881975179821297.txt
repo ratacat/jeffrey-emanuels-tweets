@@ -1,0 +1,23 @@
+2026-01-15 | 433 likes
+
+Ever seen a fresh (20x) Claude Max account's 5-hour usage allowance get drained in ~14 minutes? 
+
+Feast your eyes on my bizarre life now with this screen recording of a recent live work session, something I've gotten at least 100 requests for over the past month.
+
+Maybe you can understand now why I need so many accounts and how I can work on so many different projects. 
+
+You can also see the truth of what I was saying recently about how, once your plan is done and the beads made and polished, it's mostly just machine-tending the swarm that doesn't require much thought.
+
+Lots of just telling it to get the next bead and work on it, to review code, to re-read AGENTS dot md after a compaction, etc.
+
+And you can see how I use gemini-cli for code review. I give Google a lot of crap for the harness being broken and the capacity overloads, but when it works, it's actually really good for this code review use case. I don't usually let it write new code, though, because I think Opus and 5.2 do a better job.
+
+Also, sorry the recording is a bit blurry; I have a 5K resolution monitor and screen recordings usually are hard to watch from it.  
+
+And btw, this really wasn't that normal of a session for me, it was more frenetic than usual, because I don't want to dox myself or my clients by accident. Hence all the ceaseless terminal tab swirling.
+
+I usually do more planning work while this stuff is going on, but I wanted to minimize the chances of leaking important information.
+
+That's also why I didn't refresh the Gemini login in the WezTerm window, which killed me, trust me. It's the reason I hate doing these screen recordings in the first place; it kills my productivity. 
+
+Anyway, hope you liked it. I will also post to YouTube, see reply for link. Thanks for watching.

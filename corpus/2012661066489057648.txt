@@ -1,0 +1,5 @@
+2026-01-17 | 297 likes
+
+Take all your global Claude Code Skills and make them available to Codex with this idempotent one‑liner:
+
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills" &amp;&amp; rsync -a "$HOME/.claude/skills/" "${CODEX_HOME:-$HOME/.codex}/skills/"

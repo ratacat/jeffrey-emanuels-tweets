@@ -1,0 +1,25 @@
+2025-10-28 | 51 likes
+
+As I've been working more today with my coding agents while they coordinate work using my new MCP Agent Mail system, I'm seeing that each agent has a certain "personality" that emerges, which is also intertwined with their speed and cognitive power and "confidence." 
+
+Basically, Claude Sonnet 4.5 (using Claude Code and "ultrathink" mode) is extremely eager to jump right in and start working, but often makes sloppy mistakes and doesn't think things through. This bad tendency can often be mitigated effectively by doing a few rounds of my go-to prompt:
+
+"great, now I want you to carefully read over all of the new code you just wrote and other existing code you just modified with "fresh eyes" looking super carefully for any obvious bugs, errors, problems, issues, confusion, etc."
+
+But it's still annoying to have to do that constantly.
+
+In contrast, Codex (using gpt-5-codex with high reasoning effort) takes a lot longer to review existing code carefully, but then generally makes fewer mistakes. That "fresh eyes" prompt rarely results in a change from codex, for instance, while it nearly always results in changes (sometimes many rounds of changes) using Claude Code.
+
+The problem is that, by the time Codex is done doing all that review, the Claude Code agents have often sent their messages and already started working on the stuff. I try to mitigate this by telling them things like this:
+
+"please first discuss and coordinate with the other agents; when you have a good plan, divvy up the work and check and test things carefully!"
+
+But just like real human developers, they can get impatient and start coding before getting a response. So then Codex ends up as more as a supervisor instead of doing the coding itself as an individual-contributor (sound familiar?). 
+
+Then I need to give them encouragement and ask them stuff like "Why aren't you coding more?" and give them pep talks like "I trust you more than the other agents to not make mistakes" (lol). 
+
+Also, I keep bursting out laughing as I see the agents assume behavioral patterns that they're obviously trained on from email and Slack messages in the training corpus. 
+
+The agent adding its own "email signature" with its current self-designated role was particularly amusing (see first screenshot below). None of that stuff is included in any of the prompts, it's all emergent behavior!
+
+PS: the agents seem to be working even more effectively now that they're also using the beads project from Steve Yegge (see my other tweet about that) for issue tracking.

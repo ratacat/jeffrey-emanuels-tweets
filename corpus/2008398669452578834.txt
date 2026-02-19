@@ -1,0 +1,8 @@
+2026-01-06 | 14 likes
+
+&lt;in Mario voice&gt; "Now that'sa nice'a session!"
+
+~20mm input tokens. 
+~3.5mm output tokens.
+~2.6mm reasoning tokens.
+~1.15 BILLION cached token reads. https://t.co/CiNnjFEfVg

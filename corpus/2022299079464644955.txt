@@ -1,0 +1,5 @@
+2026-02-13 | 42 likes
+
+I put together a nice interactive explainer for one of my favorite algorithms: CMA-ES, which is used for black-box optimization problems where you don’t know the gradient of the function you’re optimizing and can only do (expensive) function evaluations:
+
+https://t.co/1CX1fhUKOd

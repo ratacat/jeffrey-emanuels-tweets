@@ -1,0 +1,19 @@
+2026-02-13 | 194 likes
+
+Apologies for the "vague-posting," but I'm practically vibrating with excitement because I just had one of the smartest "meta insights" I've ever had in my life that I'm convinced is going to truly supercharge my recent efforts around my "FrankenSuite" of projects (i.e., FrankenTUI, FrankenSQLite, FrankenTerm, FrankenFS, FrankenLibC, etc.). 
+
+I'm going to use this to do things that seem totally impossible. Normally, I follow a strict "build in public and give away all insights to all," but recently I've held a couple things closer to the vest because I want to have a chance to exploit them a bit more. 
+
+But then again, the exploitation is all in the form of open-source software, so it's not like I'm holding back to make money trading stocks with it or something like that.
+
+Perhaps I'm a bit jaded by seeing that the big labs will steal your ideas without credit and then ban your accounts to boot, but it would be nice to do some stuff in the next couple of weeks that truly can't be dismissed by anyone in the tech business because the ramifications are so extreme and palpable, and seemingly impossible. 
+
+And giving away the "meta magic" that's driving that process seems unwise to me in the short run. I don't even really know why I feel the need to excuse my behavior here, since 99% of people seem to have no problem whatsoever hoarding and jealously guarding any ounce of alpha or edge they have for personal profit. But it does go against my recent ethos of holding nothing back. 
+
+I do look forward to sharing these insights in good time.
+
+They are the result of a careful intersection of concepts involving both technology and computer science and math as pure topics of inquiry, and yet at the same time manifestations of human social structures that inherit all the many strange quirks and inefficiencies that these structures are prone to, particularly when they don't have the forcing function of capital markets to steer them towards efficiency. 
+
+I guess what I'm trying to say is, "You ain't seen nothin' yet!"
+
+So stay tuned.

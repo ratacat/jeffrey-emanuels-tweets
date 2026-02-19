@@ -1,0 +1,5 @@
+2026-01-04 | 14 likes
+
+For reference, I made this very complex and performant Rust program (which is already used by thousands of people) in around a week, but I personally only spent a few hours on it; the rest of the time was spent by a swarm of agents implementing and polishing it and writing tests:
+
+https://t.co/DL3ISyDGsp

@@ -1,0 +1,7 @@
+2026-01-03 | 5 likes
+
+I do agree that the most important part of the entire process, if it's going to lead to real discoveries, is in the choice of question. 
+
+But I already have some pretty interesting questions for it from my other exploratory/research projects, "Model Guided Research" and "Bio Inspired Nanochat" (you can find these in my GitHub profile), and they've even been converted already into "seed packs" for BrennerBot. 
+
+And I get the sense that many researchers in different fields DO have a good handle on what the key questions are. It's the insights, patterns, and theories that are the parts they are often missing or stuck on, and where a system like BrennerBot can really help accelerate things.

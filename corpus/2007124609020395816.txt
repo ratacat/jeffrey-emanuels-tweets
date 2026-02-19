@@ -1,0 +1,3 @@
+2026-01-02 | 5 likes
+
+@Steve_Yegge It would be a deal killer for a linter tool for humans if 90% of the issue surfaced turned out to be false positives. But the math changes completely if Claude Code is the one doing it and can grind through hundreds of potential issues in minutes and uncover and fix one real bug!

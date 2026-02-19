@@ -1,0 +1,15 @@
+2026-02-08 | 68 likes
+
+The FrankenSQLite specification document topped out at 18k lines after many dozens of rounds of fixes and tweaks. Then I turned it into hundreds of beads last night and this morning, and now most of them are implemented. 
+
+The spec is not just another plan. I believe it is one of the most remarkable technical documents I've ever seen. 
+
+Why? Well, I'm 100% convinced that there isn't a single human being on the planet who could have written it. It simply requires too much knowledge of extremely advanced and esoteric math AND extreme computer science chops.
+
+Now, I certainly should get some credit for directing it in a certain way. My obsessions with RaptorQ fountain codes should be evident. But this is a groundbreaking design that is radically advanced in so many ways. I can't wait for it to all work in the next couple days so I can send it to my hero, Richard Hipp, creator of SQLite.
+
+The process of making this was so fascinating, and I believe historical in a sense, that I decided to document it in a nice, interactive way for posterity, which you can see here:
+
+https://t.co/iqisuKn21N
+
+(this will eventually be the project website, but right now only hosts this section).

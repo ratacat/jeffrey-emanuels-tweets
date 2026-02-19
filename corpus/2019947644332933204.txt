@@ -1,0 +1,5 @@
+2026-02-07 | 3 likes
+
+Definitely the coolest use case so far, and shows how qualitatively different FrankenTUI is than other projects. The performance is so insane that it opens up new vistas. “Quantity has a quality all its own” applies to raw execution speed:
+
+https://t.co/Oq6dFNSPEO

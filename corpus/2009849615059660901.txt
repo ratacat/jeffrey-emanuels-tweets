@@ -1,0 +1,15 @@
+2026-01-10 | 184 likes
+
+Agent Coding Lifehack
+
+I feel a bit guilty for using this one, but what the hell. 
+
+When I'm asking the agents to do a massive comparison/revision loop, which normally arises when I have a massive markdown plan and I've gotten elaborate feedback on it from GPT Pro in the webapp, and then further showed GPT Pro the feedback from the same prompt shown to Opus4.5, Gemini3 with DeepThink, and Grok4 Heavy (all using the web apps), even Codex with GPT 5.2 high will miss a bunch of things the first time around when it's trying to integrate all the revisions.
+
+If you tell it to find "all" of the problems, because it doesn't know how many it missed, it tends to just go until it has found a lot of them. If you tell it to go until it has found at least 20 of them, it will usually come back after it has found 23 problems/mismatches. 
+
+This of course assumes that there ARE problems, but they basically always are when the plans are 5k+ lines and the revisions are more than 2k+ lines.
+
+Anyway, the solution is to lie to them and give them a huge number, and then they keep cranking until they've uncovered all of them:
+
+"Do this again, and actually be super super careful: can you please check over the plan again and compare it to all that feedback I gave you? I am positive that you missed or screwed up at least 80 elements of that complex feedback"

@@ -1,0 +1,41 @@
+2026-01-06 | 81 likes
+
+Before you burn up a lot of tokens with a big agent swarm on a new project, the old woodworking maxim of "Measure twice, cut once!" is worth revising as "Check your beads N times, implement once," where N is basically as many as you can stomach.
+
+I've found that you continue to get more and more improvements, even if they're subtle, the more times you run this in a row with Opus 4.5 (note that the following prompt is only for use AFTER you've already turned your initial markdown plan into beads using the other prompt I gave recently in my recent very long post about my workflows):
+
+"Reread AGENTS dot md so it's still fresh in your mind. Check over each bead super carefully-- are you sure it makes sense? Is it optimal? Could we change anything to make the system work better for users? If so, revise the beads. It's a lot easier and faster to operate in "plan space" before we start implementing these things!
+
+DO NOT OVERSIMPLIFY THINGS! DO NOT LOSE ANY FEATURES OR FUNCTIONALITY! 
+
+Also, make sure that as part of these beads, we include comprehensive unit tests and e2e test scripts with great, detailed logging so we can be sure that everything is working perfectly after implementation. Remember to ONLY use the `bd` tool to create and modify the beads and to add the dependencies to beads. Use ultrathink."
+
+I used to only run that once or twice before starting implementation, but I experimented recently with running it 6+ times, and it kept making useful refinements. 
+
+If it starts to flatline in terms of incremental improvements to the beads, you might try starting a brand new CC session, starting it with:
+
+"First read ALL of the AGENTS dot md file and README dot md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code, and technical architecture and purpose of the project.  Use ultrathink."
+
+And then following up with the same prompt as shown above, but prefaced with:
+
+"We recently transformed a markdown plan file into a bunch of new beads. I want you to very carefully review and analyze these using `bd` and `bv`."
+
+The more complex and intricate your markdown plan is, the more relevant this technique is. If you have a small, trivial plan and a very simple project, this is obviously overkill. But in that case, you will likely see little in the way of incremental gains/changes with each round, so it should be fairly obvious when it's time to stop.
+
+Just remember: planning tokens are a lot fewer and cheaper than implementation tokens. Even a very big, complex markdown plan is shorter than a few substantive code files, let alone a whole project. 
+
+And the models are far smarter when reasoning about a plan that is very detailed and fleshed out but still trivially small enough to easily fit within their context window (this is really the key insight behind my obsessive focus on planning and why I spent 80%+ of my time on that part).
+
+And if you lean on GPT Pro with Extended Reasoning in the web app for the initial planning as I strongly advocate (that is, to create and improve your markdown plan that you eventually turn into beads), you basically get those on an all-you-can-eat basis with a Pro plan, so take full advantage of that! 
+
+No other model can touch Pro on the web when it's dealing with input that easily fits into its context window. It's truly unique.
+
+Now, you can still get a lot of extra mileage by blending in smart ideas from Gemini3 in the web app with Deep Think enabled, or from Grok4 Heavy, or Opus 4.5 in the web app, but you still want to use GPT Pro on the web as the final arbiter of what to take from which model and how to best integrate it.
+
+And since this post could still be even more comically long, I'll leave you with my prompt for integrating those competing plans into one single canonical "best of all worlds" markdown plan:
+
+"I asked 3 competing LLMs to do the exact same thing and they came up with pretty different plans which you can read below. I want you to REALLY carefully analyze their plans with an open mind and be intellectually honest about what they did that's better than your plan. Then I want you to come up with the best possible revisions to your plan (you should simply update your existing document for your original plan with the revisions) that artfully and skillfully blends the "best of all worlds" to create a true, ultimate, superior hybrid version of the plan that best achieves our stated goals and will work the best in real-world practice to solve the problems we are facing and our overarching goals while ensuring the extreme success of the enterprise as best as possible; you should provide me with a complete series of git-diff style changes to your original plan to turn it into the new, enhanced, much longer and detailed plan that integrates the best of all the plans with every good idea included (you don't need to mention which ideas came from which models in the final revised enhanced plan):"
+
+(Hell, one more prompt for kicks; I use this one to iteratively improve an existing markdown plan):
+
+"Carefully review this entire plan for me and come up with your best revisions in terms of better architecture, new features, changed features, etc. to make it better, more robust/reliable, more performant, more compelling/useful, etc. For each proposed change, give me your detailed analysis and rationale/justification for why it would make the project better along with the git-diff style change versus the original plan shown below:"

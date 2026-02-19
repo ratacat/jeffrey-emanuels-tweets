@@ -1,0 +1,9 @@
+2025-11-28 | 43 likes
+
+Here's another example from just now, but this time just with a single agent (so not using agent mail, although I forgot that in my conversation and confused the hell out of the agent, lol), working on a new tool I'm making that I haven't released yet. 
+
+I had a bunch of feedback on the current version of the tool that I sort of just brain dumped and then asked the agent to create beads from all those comments. 
+
+Then once it did that, I asked it to use bv to analyze the beads to determine the optimal order of work:
+
+https://t.co/mqVsmy7895

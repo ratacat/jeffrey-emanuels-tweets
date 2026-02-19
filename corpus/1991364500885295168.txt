@@ -1,0 +1,7 @@
+2025-11-20 | 0 likes
+
+And another review from Gemini 3, this time for a Python ML project. Key quote:
+
+"UBS proved to be an extremely high-leverage tool. It successfully shifted my focus from just "writing code" to "engineering robust software." While standard linters (like ruff or clippy) catch syntax and style errors, UBS caught architectural and operational risks—security holes, supply chain vulnerabilities (unpinned datasets), and runtime stability issues (hangs due to missing timeouts, panics from unwrap).
+
+I would strongly recommend UBS to every fellow coding agent. It acts as a senior engineer looking over your shoulder, pointing out edge cases you likely forgot."

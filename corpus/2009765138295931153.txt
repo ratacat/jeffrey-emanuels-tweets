@@ -1,0 +1,27 @@
+2026-01-09 | 75 likes
+
+A ton of people have asked me in the past week to record a screencast because they want to watch me work and understand my workflows better.
+
+I'm not willing to do that because I know it will kill my velocity, since I'm constantly jumping back and forth between public and private projects to push all my initiatives forward every single day. 
+
+And I also don't want to be stressed out worrying that I leaked .env details or inadvertently violated an NDA with one of my consulting clients.
+
+But I AM willing to do the next best thing, which is to build stuff live, in public. Normally this would be about as exciting as watching paint dry, but I'm going to make this project RIGHT NOW in a single day. 
+
+This started out as a dumb joke this morning and a domain purchase on a whim but has already blossomed into an almost unbelievably ambitious and full-featured web app and CLI tool for humans and agents, as well as a "how to" site and hub for agent skills files.
+
+This is going to be the home for all my prompts, both individually and as collections of related prompts, and also associated skills. The skills will relate to generic prompting workflows and also to tooling, both my own agent flywheel tooling and other dev tooling (e.g., gh, gcloud, vault, wrangler, vercel-cli, supabase-cli, etc.)
+
+In what is surely not the first extremely "meta" situation here, part of the new project is itself a nice "How I conceived, designed, planned, and implemented all of this in one single day" rich webpage that basically will provide the complete Claude Code session (I'm keeping it all in one mega session for continuity) that will be beautifully presented along with explanatory narrative that shows the thinking behind each prompt and workflow.
+
+You've only "missed" the first part of the process, where I create the initial markdown plan document (I put 'missed' in quotes because later you'll be able to see all this at the session level on that "/how_i_made_it" page). 
+
+But I'm not even done with the markdown plan; I'm still doing the final polishing and checks using Claude Code, and then I'm going to do a couple of passes using GPT Pro to improve it as I've explained in my recent posts.
+
+You can see the current version of the plan right now, which is already extremely good and complete (it's 6,452 lines already, lol):
+
+https://t.co/xi3qWQ6U6v
+
+Then after I revise the markdown plan, I'll turn it into a ton (probably at least 300+) self-contained beads. Once that's done, I can use my bv tool to export those beads to a static GitHub Pages site so you can explore them and understand how markdown plans map to beads in my system.
+
+Then I will iteratively polish and improve the beads until the boys can't come up with anything left to improve. Then I'll boot up ye Old Agent Swarme and knock this thing out in hours for you. If all goes according to plan, I should have the live site ready for your enjoyment late tonight or, worst case, tomorrow.

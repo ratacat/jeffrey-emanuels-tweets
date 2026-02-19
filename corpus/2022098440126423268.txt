@@ -1,0 +1,3 @@
+2026-02-13 | 26 likes
+
+Claude was excited to try its newly allowed name (YellowSquirrel) in the Rust port of my MCP Agent Mail project, which is basically done and just going through final testing and qualification now (and, of course, a few rounds of the 'ol "extreme optimization" skill): https://t.co/gChwJ3Sma3

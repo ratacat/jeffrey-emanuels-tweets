@@ -1,0 +1,15 @@
+2026-01-22 | 64 likes
+
+Here's an example of a self-improvement prompt that I just ran in Claude Code to usher in the singularity that much faster:
+
+"❯ Read AGENTS .md. Then, review LIST_OF_DOODLESTEIN_REPOS_FOR_AGENT_DIRECTED_TOOLS.md. 
+
+For each repo in this list (all contained within /dp), I want you to create beads tasks for systematically "re-underwriting" each of them in an attempt to make them more "agent-friendly": that is, hyper-optimized for effective, intuitive, and rapid understanding and effective usage, manipulation, and exploration by frontier model coding agents JUST LIKE YOURSELF. 
+
+Anything we can do to restructure, reorganize, harmonize, change the presentation or documentation of, change the form of the API surface, change how this is exposed to agents (CLI? MCP?), etc., we must look into. 
+
+Note that this is way too much work to do all in this session, and indeed your context window would be overwhelmed if you tried to do it for even more than one of these 16 tool projects at once!
+
+So instead, the goal now is to create the beads for yourself in /dp that describe this work to be done in extreme detail and nuance (along with the underlying purpose and rationale, using ALL the descriptive language I supplied above and more that you can think of from your intuitive sense of my intent and overarching goal in this exercise) so that we can spread the work out effectively over dozens of sessions. 
+
+(Then the output of each of THOSE beads will be still more beads, but those new beads will each live within the various project repo folders, such as the beads for improve mcp_agent_mail, which would be created within /dp/mcp_agent_mail , to give just one example."

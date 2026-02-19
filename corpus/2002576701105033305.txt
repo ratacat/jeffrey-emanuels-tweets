@@ -1,0 +1,27 @@
+2025-12-21 | 326 likes
+
+I made a new website and set of scripts and prompts to help people get set up with the same kind of setup that I use to develop software. You can see it here:
+
+https://t.co/22Fy2w73x0
+
+I get asked a lot about my workflows and so I wanted to have one single resource I could share with people to help them get up and running. It also includes my full suite of agent coding tools, naturally.
+
+But I also wanted something that less technically inclined people could actually get through, which would explain everything to them they might not know about. I don’t think this approach and workflow should be restricted to expert technologists. 
+
+I’ve received several messages recently from people who told me that they don’t even know how to code but who have been able to use my tools and workflows and prompts to build and deploy software. 
+
+Older people, kids, and people trying to switch careers later in life should all have access to these techniques, which truly level the playing field. 
+
+But they’re often held back by the complexity and knowledge required to rent a cloud server and set up Linux on it properly. 
+
+So I made scripts that basically set up a fresh Ubuntu box exactly how I set up my own dev machines, and which walk people through the process of renting a cloud server and connecting to it using ssh from a terminal. 
+
+This is all done using a user-friendly, intuitive wizard, with detailed definitions included for all jargon.
+
+Anyway, there could still be some bugs, and I will probably make numerous tweaks in the coming days as I see what people get confused by or stuck on. I welcome feedback.
+
+Oh yeah, and it’s all fully open-source and free, like all my tools; the website, the scripts, all of  it is on my GitHub. 
+
+And all of this was made last night in a couple hours, and today in a couple hours, all using the same workflows and techniques this site helps anyone get started with.
+
+Enjoy, and let me know what you think!

@@ -1,0 +1,17 @@
+2025-11-07 | 628 likes
+
+Each release like this is such a compete humiliation and indictment of Meta, which pioneered open-weight LLMs with the first Llama model introduced in February of 2023. 
+
+They’ve likely invested 100x to 1000x the resources (money, compute, PhD headcount, square footage, etc.) on a cumulative basis compared to any of these other Chinese labs (Kimi, Z, Qwen, DeepSeek, etc.). 
+
+By all rights, they should be way ahead of everyone else. And yet they haven’t had a state of the art open-weight model, or even a modestly compelling model, since Llama 3.3, which was released at the end of 2024, nearly a year ago.
+
+Now the Chinese labs have been leapfrogging each other like crazy, so that the latest models are extremely capable now.
+
+Could Meta still pull a rabbit out of a hat and leapfrog these other labs as a result of all the brilliant people they’ve hired at great expense over the last few months? 
+
+I suppose they could, but even then they’d likely be getting far, far less bang for the buck compared to these half a dozen or so Chinese labs.
+
+This would be like if the Soviets stole the nuclear bomb secrets and then ended up testing a hydrogen bomb 2 years before the US did. Unthinkable.
+
+Makes it a lot more understandable why Zuck has been doing a massive purge of the organization. I would want to clean house, too, in this case. And better to err on the side of caution and cut deeper to be sure you’ve removed all the rot.

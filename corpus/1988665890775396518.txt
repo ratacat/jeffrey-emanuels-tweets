@@ -1,0 +1,3 @@
+2025-11-12 | 16 likes
+
+This goes back to what @karpathy has said about how increasingly going forward, the audience and user base for software and software documentation is going to consist of AI agents and not people. So companies need to start focusing more on usability and ergonomics for the robots.

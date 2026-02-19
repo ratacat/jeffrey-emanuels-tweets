@@ -1,0 +1,27 @@
+2025-11-18 | 88 likes
+
+I've been moving so incredibly quickly recently on so many different software projects. I keep coming up with new ideas, and the bar to start them and knock something out is so incredibly low now using agents and GPT-5 (and now Gemini 3) and my MCP Agent Mail project.
+
+One thing that kept coming up in a few recent projects was that there were some dumb mistakes that weren't being found using linters or type checkers, but which I felt could be detected using a more powerful system like ast-grep, but only if you were willing to accept false positives and a lack of "auto repair" functionality like most linters have.
+
+In the past, when coding tools and utilities were made mostly for human programmers, these were not worth compromising on.  Too many false positives, and you end up wasting too much time on nonsense. No auto-fixing, and it's just more cognitive load. Or auto-fix that isn't reliable and bulletproof? Oops, you just nuked your code.
+
+But I realized that all of that changed with coding agents that are now smart and fast. False positives don't matter to them, except for maybe some wasted tokens checking if it's a legit problem or not. They just need things brought to their attention and they can take it from there.
+
+And many complex problems don't even have a way to automatically fix them because they require contextual understanding and judgment. But LLMs are superb at that now.
+
+So I started out with a big Bash script focused on Javascript and Typescript to attempt to automatically flag suspicious things, and it was actually super helpful. It used ast-grep instead of brittle regex where possible. 
+
+Then I got a bit carried away with GPT-5 Pro and started making the system way more modular and now it supports JS, Python, C++, Rust, Ruby, Swift, Java, and Golang. And it's easy to add more languages. 
+
+You can install the whole thing in a minute with a single one-liner curl command (see the README at the repo link):
+
+https://t.co/eqzOpSf2Aa
+
+You end up with a command that you can run in any repo, `ubs .` to scan the whole project or just some folders or files. It automatically detects the language type and pulls in the relevant module for that. 
+
+And I included a ready-made blurb that you can add to your AGENTS dot md or CLAUDE dot md and then suddenly they get this incredible new power that just works and finds so many tricky and subtle/complex issues that you would never uncover in traditional linters/type checkers. 
+
+And it runs fast because it is driven by utilities like ast-grep, ripgrep, jq, etc (all of which it helpfully installs for you if you don't have them already). It also automatically detects all common coding agents and can set up hooks for Claude Code and others. 
+
+Check it out and let me know what you think!

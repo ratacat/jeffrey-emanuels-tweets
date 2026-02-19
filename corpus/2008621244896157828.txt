@@ -1,0 +1,11 @@
+2026-01-06 | 31 likes
+
+A burgeoning debate has sprung up around the optimal way to scale up the number of agents working on a software project: should one assign distinct, specific roles to certain agents (like a tester agent, a backend agent, a committer agent, etc.), or should they all be the same?
+
+I’m a huge proponent of agent fungibility when it comes to software development, and I explain my reasoning in the quoted post. 
+
+This view is informed by my pragmatic recent experience directing large swarms of agents to create lots of complex software over the last 8 weeks.
+
+I do see the value of designated roles for agents in certain contexts, and I’m currently using this approach in my https://t.co/YKZuD2hvSC project for automated scientific inquiry.
+
+But that domain has special properties that make that approach worth the many drawbacks of losing fungibility (namely, the discourse itself, the back and forth between the different agent types, is the core mechanism of surfacing truth; in software development, we just want good code that works).

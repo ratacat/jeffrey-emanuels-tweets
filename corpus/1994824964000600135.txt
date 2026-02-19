@@ -1,0 +1,5 @@
+2025-11-29 | 19 likes
+
+I feel like there’s so much latent capability and knowledge trapped inside GPT 4.5 that’s simply overlooked because of high inference costs. 
+
+I wish OpenAI could find a way to expose it better, but seems like they’ve just written it off as a failed experiment at this point.

@@ -1,0 +1,27 @@
+2025-12-09 | 187 likes
+
+If you really want your productivity to take off, you should show some intellectual humility and truly accept and understand that the latest frontier models with max effort and the right tooling are superhuman.
+
+They’re already simply smarter and way more knowledgeable than you are at a huge variety of useful tasks, and not just trivial ones. Most knowledge work. Oh, and they’re about 1,000 times faster, too.
+
+And that’s for ONE agent (Claude Code with Opus 4.5, Codex with GPT 5.1 codex Max, Gemini-cli with Gemini 3, etc.). 
+
+But if you use my MCP Agent Mail project, you can harness together 10 or even 20 of these suckers at once, (say 5 of each of the frontier agent CLI tools) to work on a single project. 
+
+If you start with an awesome, super-detailed, comprehensive, granular plan, which GPT 5.1 can write for you based on a brief overview of what you want (which you should iterate and improve many times, since planning is everything now), then turn that into beads (tasks) and use my bv tool to help the agents prioritize which task to do next, you can implement even a hugely complex plan in or day or two with an agent swarm.
+
+If you insist on thinking of these models as toys, or untrustworthy tools that can only be given trivial tasks and which need to be watched the entire time, with all their work reviewed laboriously by you, the brilliant human overseer, you’re going to be leaving 99% of your potential productivity and velocity on the table, untapped.
+
+If you say “Well, I’m the smart one who has to come up with all the ideas and the architecture and grand plans, but I’ll let these agents do the grunt work of implementing my plans,” then you’re still going to be leaving 90%+ of the productivity gains on the table.
+
+I always laugh when people denigrate these models. Because invariably, these people are not informed, and are frankly not very smart. 
+
+To put it bluntly, I’m pretty sure that I’m a lot smarter and more informed than they are about pretty much everything. And yet I’m telling you that these models make me feel like a little boy intellectually on a constant basis. If I can accept this, then you should be able to as well.
+
+Right now, people are doing the equivalent of keeping Blaise Pascal chained up in a gimp suit in their basement and giving him scraps of bread and then asking him to do menial tasks like organizing their receipts for their taxes. 
+
+If you have Pascal (really, a team of 10+ Pascals with Agent Mail) ready and willing to work with you super fast, for pennies, that’s a really sub-optimal way to leverage that. 
+
+You should be giving them big mandates to dream up and implement big ideas, and giving them all the tools they need to be successful without relying on you. 
+
+Or don’t, but then don’t be surprised when your human labor is quickly devalued by 99% by people who aren’t too proud.

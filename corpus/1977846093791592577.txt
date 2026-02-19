@@ -1,0 +1,23 @@
+2025-10-13 | 8 likes
+
+It would be really useful if OpenAI started using their computer-use agent workflow internally to explore and actually sign up (using a real trial account or paid account with a credit card) for basically every web app or SAAS product for every popular and useful task. 
+
+Then it could grade them based on how well they actually worked in practice, how effective and intuitive the UI was, how fast and reliable it the service was, the quality of the outputs generated, etc. 
+
+Right now, when you have something you want to do (say, to get a good transcript or written document based on a YouTube video, a task I tried to solve with my own service), it seems to mostly use search results and Reddit discussions to recommend services to try.
+
+The problem with this is that the suggestions are then mostly influenced by SEO tricks and blog spam, not on what is actually good in practice. 
+
+In my own case, I’ve tried all the different “YouTube to document” sites, and my own is way better and produces far better outputs, but I’m way far down in the organic search results, so I get low traffic (it really is; I’m not trying to shill my service, which I won’t even link to here).
+
+And I’m just not willing to engage in scammy black hat SEO nonsense to manipulate that, or create fake organic comments on Reddit about my site. But I really shouldn’t have to. 
+
+And ChatGPT shouldn’t have to fall back to parroting what random Reddit posters claimed was good, especially when 90%+ of those posts nowadays are fake and LLM generated anyway!
+
+The technology is there now to do this in a pretty objective, fair way that can be automated at scale for basically every service. 
+
+It could be done for tens of millions of dollars in a way that would cover a very large share of actual queries and the first ~10 or so pages of organic search results. 
+
+And it could be repeated at various intervals similar to how google updates its index over time, so that as a site or service improves, it gets a better score (or of parts of it break or deteriorate, the grade would decline).
+
+Then recommendations would be merit based and better for everyone other than the scammy SEO promoters and Reddit.

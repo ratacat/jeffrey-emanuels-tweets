@@ -1,0 +1,86 @@
+2026-01-23 | 74 likes
+
+Living life in batch mode. All my projects are getting worked on at the same time. 
+
+I came up with this cool idea last night of an "open beads weighted agent count" concept. You can see the prompt I used here (this is now directly baked into ntm as a new mode; ntm is growing by leaps and bounds and will be a totally different animal in a few days):
+
+---
+
+First read all of AGENTS .md so it's fresh in your mind. Now, the following is a list of project repos in /dp that have at least one open bead; the number to the right is the number of open beads; the list is in descending order, so the top ones have the most work left to do:
+
+```
+  flywheel_connectors 602
+  wezterm_automata 457
+  asupersync 192
+  ntm 188
+  jeffreysprompts_premium 157
+  jeffreys-skills .md 146
+  rust_stream_deck 138
+  fastapi_rust 120
+  coding_agent_usage_tracker 115
+  process_triage 111
+  coding_agent_account_manager 103
+  rust_proxy 81
+  remote_compilation_helper 77
+  destructive_command_guard 69
+  flywheel_gateway 63
+  meta_skill 39
+  agent_settings_backup_script 23
+  coding_agent_session_search 23
+  sqlmodel_rust 18
+  rano 17
+  agentic_coding_flywheel_setup 1
+```
+
+Now, I want you to first kill any running tmux sessions on this machine to clear the decks. T
+
+hen I want you to create 9 tmux sessions (note that cc, cod, and gmi are the aliases in my zshrc file for claude code, codex, and gemini-cli, respectively; that's the command you MUST use to launch these coding agents later!) named like this:
+
+cc_agents_1
+cc_agents_2
+cc_agents_3
+
+cod_agents_1
+cod_agents_2
+cod_agents_3
+
+gmi_agents_1
+gmi_agents_2
+gmi_agents_3
+
+We will need to figure out the right number of panes for each session later, but we want every session to have the SAME number of panes, and each of the 3 agent types should have the same number of panes.
+
+So how many panes do we need? Well, at a minimum, we want ,for each project, 1 cc agent and 1 cod agent to implement the open beads, and 1 gmi agent (only for code review; i'll explain later).
+
+But it stands to reason that the projects with a huge backlog of beads could benefit from more agents. 
+
+So for instance, I could imagine 4 cc and 4 cod and 2 gmi agents to work on flywheel_connectors; and maybe 3 cc, 3 cod, and 2 gmi agents to work on these other ones:
+
+  wezterm_automata 457
+  asupersync 192
+  ntm 188
+  jeffreysprompts_premium 157
+  jeffreys-skills .md 146
+
+And the rest could get the baseline treatment. You'd want to name each pane so it's easy to navigate. Anyway, first figure out how many panes that is in total and then divide them as evenly as possible over the 9 sessions, taking into account that the "cc_agents_*" sessions must ONLY contain cc agents, and so on. Some panes can be "empty" if needed, but we want the identical "pane geometry" in each sessions, that's critical.
+
+Once you've done that, you can create the panes and in fact should make a script for this that we can reuse (ultimately we will want to port this functionality in as ergonomic and convenient and agent-intuitive way as possible into the "robot mode" of the /dp/ntm project!).
+
+Then you need to launch the agents, which you can do using the commands cc, cod, and gmi. Don't send any commands to them yet though, just launch them.
+
+Note that the following text in the last 1000 characters in each tmux pane shows that these agents MUST be forcefully terminated and restarted (after being logged into an account that has not yet triggered usage limits):
+
+CC: "You've hit your limit"
+COD: "You've hit your usage limit"
+
+Ok now JUST for the cc and cod agents, I want you to send them the same message: 
+
+```
+First read ALL of the AGENTS .md file and README .md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code, and technical architecture and purpose of the project. Then register with MCP Agent Mail and introduce yourself to the other agents. Be sure to check your agent mail and to promptly respond if needed to any messages; then proceed meticulously with your next assigned beads, working on the tasks systematically and meticulously and tracking your progress via beads and agent mail messages. Don't get stuck in "communication purgatory" where nothing is getting done; be proactive about starting tasks that need to be done, but inform your fellow agents via messages when you do so and mark beads appropriately. When you're not sure what to do next, us the bv tool mentioned in AGENTS .md to prioritize the best beads to work on next; pick the next one that you can usefully work on and get started. Make sure to acknowledge all communication requests from other agents and that you are aware of all active agents and their names. 
+```
+
+---
+
+PS: The prompt to do all the commits is just:
+
+Read AGENTS .md. Use your /ru-multi-repo-workflow skill to push all my local changes in logically grouped commits (you should see in the skill the prompt "Now, based on your knowledge of the project, commit all changed files now in a series of logically connected groupings with super detailed commit messages for each and then push. Take your time to do it right. Don't edit the code at all. Don't commit obviously ephemeral files." and also stuff about github releases; make sure to use the built in features and functionality of ru to do this stuff correctly and that you never lose any useful work/code.

@@ -1,0 +1,101 @@
+2026-01-12 | 45 likes
+
+When you're designing a complex protocol specification, especially when security is involved, just one iteration of review by GPT Pro 5.2 with Extended Reasoning doesn't cut it. 
+
+I'm now working on what I call the Flywheel Connector Protocol, which is my approach to combining potentially dangerous or untrusted data pipes to and from various sources such as Telegram, Discord, Gmail, X, etc. 
+
+You can see the main goals of the project in the README file here:
+
+https://t.co/D2bIhEnBAV
+
+Basically, the goal is to have security and isolation built in at the protocol level, and also extreme performance and reliability, with everything done in Rust in a uniform manner that conforms to the protocol specification. You can see the current version of the spec here:
+
+https://t.co/aXSvEFtryF
+
+This is already my 5th iteration, where each round starts in a new session and begins with the full revised specification and readme file from the prior round that has had all the previous changes integrated using Claude Code.
+
+Despite that, these aren't just minor tweaks, as you can see in the attached screenshot. But they are starting to dampen in magnitude. It very much reminds me of a numerical optimizer gradually converging on a steady state after wild swings in the initial iterations. 
+
+With each round, the specification becomes "less wrong." Not only is this a good thing because the protocol improves, but it also means that in the next round of review, GPT Pro can focus its considerable intellectual energies on the nuanced particulars and in finding just the right abstractions and interfaces because it doesn't need to put out fires in terms of outright mistakes or security problems that preoccupy it in earlier rounds.
+
+Normally I don't do more than 5 or 6 rounds, but given that this is probably the most ambitious thing I've attempted and I want to make sure it's perfect before I start implementing a massive amount of Rust connectors, I am going to try to do between 15 and 20 rounds. 
+
+Every time I do a round of review on the spec document and integrate the latest revisions, I then have Claude Code and Codex revise and harmonize the README for the Flywheel Connectors project as a whole and also harmonize this related document here:
+
+https://t.co/0EtqlA5lB0
+
+This document details the canonical connector implementations in Rust, and it helps to keep everything grounded, and also leaves an audit trail in the git commit history to trace through the evolution of the system both in the abstract "specification space" and then in the more concrete "implementation space."
+
+You might object that it's pointless to update the README and this implementation document if we know already that we are going to make many more revisions to the specification document, but when you start thinking of each round of iteration as a sort of perturbation in an optimization process, it seems intuitively desirable to me (at least I have a very strong gut feeling that I can't fully explain) that you want these changes mirrored in the implementation as you go. 
+
+This reduces the shock of trying to apply N revisions all at once and helps to surface problems better. After all, when you start turning ideas into Rust, the faulty assumptions get surfaced earlier and can feed back into your specification revisions. 
+
+In fact, once every few review sessions, I also include the entire implementation file as another check so that it can be factored in (doing so surely reduces the intensity of the review on the specification because of the context dilution and forcing the model to spread its attention more thinly, but I think it's worth it).
+
+To make this more concrete, I will share the various prompt templates I use for this process. To take the last version of the spec and get revisions to it in GPT Pro 5.2 with Extended Reasoning in the webapp, I do this:
+
+---
+
+First, read this README:
+
+```
+<paste contents of readme file, /Dicklesworthstone/flywheel_connectors/blob/main/README.md>
+```
+
+--- 
+
+NOW: Carefully review this entire plan for me and come up with your best revisions in terms of better architecture, new features, changed features, etc. to make it better, more robust/reliable, more performant, more compelling/useful, etc. For each proposed change, give me your detailed analysis and rationale/justification for why it would make the project better along with the git-diff style change versus the original plan shown below:
+
+```
+<paste contents of last spec document file, /Dicklesworthstone/flywheel_connectors/blob/main/FCP_Specification_V2.md>
+```
+
+---
+
+That's it, pretty simple, really. You can see an actual example round here: 
+
+https://t.co/1kI2RoCiM4
+
+And of course, you can see the full revision history on GitHub here:
+
+https://t.co/wn9Tu5vFXl
+
+Then you paste the full output from GPT Pro into Claude Code; but before doing that, you have to make sure CC is "primed":
+
+❯ First read ALL of the AGENTS dot md file and README dot md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code, and technical architecture and purpose of the project. Read ALL of the V2 spec doc and the connector doc.
+
+Then paste in the GPT Pro output like this:
+
+❯ Now integrate all of this feedback (and let me know what you think of it, whether you agree with each thing and how much) from gpt 5.2: ```[Pasted text #1 +948 lines]``` | be meticulous and use ultrathink.
+
+Then follow it with this:
+
+❯ We need to revise the README too for these changes (don't write about these as "changes" however, make it read like it was always like that, we don't have any users yet!) Use ultrathink.
+
+If at any point it did a compaction, all bets are off! You must force it to reread ALL of the primary documents again before continuing, which you can do like this:
+
+❯  Reread AGENTS dot md so it's still fresh in your mind.  Also reread the entire V2 spec so it's fresh before you read the docs/fcp_model_connectors_rust.md .  Use ultrathink.
+
+Then you can harmonize the implementation doc like this:
+
+❯ Now review docs/fcp_model_connectors_rust.md ultra carefully and ensure it is 100% harmonized with the V2 spec and as optimized as possible subject to those constraints.
+
+Then after that, I separately have Codex with GPT 5.2 Codex Extra High do some checks:
+
+› Reread AGENTS dot md so it's still fresh in your mind.  Also reread the entire V2 spec so it's fresh before you read the docs/fcp_model_connectors_rust.md . OK, now I just made a bunch of revisions to the V2 spec so you once again need to harmonize docs/fcp_model_connectors_rust.md with the latest v2 spec and ensure it's perfectly compatible with the protocol and as optimized as possible subject to those constraints.
+  
+I don't tell Codex that I already had CC revise the implementation document because I want it to try harder and think it has more to do besides just reviewing it.
+
+Finally, push your changes so you have a record of each round:
+
+› Now, based on your knowledge of the project, commit all changed files now in a series of logically connected groupings with super detailed commit messages for each and then push. Take your time to do it right. Don't edit the code at all. Don't commit obviously ephemeral files. Use ultrathink.
+
+Now you're ready to do it all over again, taking the latest spec doc and starting a new conversation with GPT Pro in the webapp. As I mentioned, once every 3 or 4 rounds, you can simply also include the implementation document in the input you provide to GPT Pro, introducing it after the readme part as:
+
+---
+
+And here is a document detailing Rust implementations for the canonical connector types that follow the specification document given below; you should also keep the implementation in mind as you think about the specification, since ultimately the specification needs to be translated into the Rust code eventually!
+
+```
+<paste contents of implementation file, /Dicklesworthstone/flywheel_connectors/blob/main/docs/fcp_model_connectors_rust.md >
+```

@@ -1,0 +1,3 @@
+2025-12-18 | 594 likes
+
+I really pulled out all the stops for the new version of beads_viewer (bv). The original version of bv was made in a single day and was just under 7k lines of Golang. This new version is… 80k lines. I added an insane number of great features. Your agents will love it (you, too). https://t.co/tfkRe1n53N

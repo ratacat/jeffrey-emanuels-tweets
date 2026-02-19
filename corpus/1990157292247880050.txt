@@ -1,0 +1,27 @@
+2025-11-16 | 31 likes
+
+One intriguing and revealing deficiency of even the most advanced multi-modal LLMs now (e.g., GPT-5 and Claude Opus 4.1) is what I would term the modal siloing of cognition.
+
+These models appear to be more like Frankenstein models, joined together somewhat crudely from separately trained pieces that are combined through routing requests to the right component, rather than being properly integrated in a deep way.
+
+The big “tell” for me in this is how awful all these models are at creating coherent original ASCII art, or even modifying existing art in a way that would be easy for a child given the right tool (e.g., the asciiflow editor, which is awesome and free in the browser). 
+
+I recently created a nice utility for checking code files for problems using ast-grep in powerful ways (I’ll post about it more when it’s done), and I wanted to make a nice banner for each programming language that included a different ascii art mascot or logo for each one (snake for Python, gopher for Golang, etc).
+
+This task of replacing the art with new art while maintaining coherence was just totally impossible for every model. 
+
+Even when I made what I wanted really explicit (I persisted for a while more out of morbid curiosity, like a neurologist doing diagnostics on a patient suffering from brain lesions), they were comically bad at it.
+
+They even made some truly alien errors that a human would never make, such as replacing the ascii art block letters for the word “BUG” with repeated instances of the literal string “BUG, ” showing a bizarre ontological confusion that makes sense if you consider how they’re trained on sequential autoregressive next-character matching.
+
+When a human tries to do this task, he does a sort of gestalt switch back and forth constantly between “symbol space” and “physical (screen) space.” 
+
+We make a change symbolically to add or move an ascii character, but then observe and perceive what we’ve just done visually to see if it’s right. It’s so seamless that we don’t even really notice it much.
+
+These multi-modal LLMs don’t seem to do that, or even to be able to, at least in a single inference pass. They’re trapped in either one modality or another and can’t seem to fuse them. 
+
+If they could, this task I’ve described would be trivial for them instead of totally insurmountable.
+
+I posit that next generation multi-modal LLMs must have some kind of digital analog to the corpus callosum in the brain, which unifies the two brain hemispheres and helps coordinate different cognitive modalities in a unified consciousness.
+
+That is, dense, trainable connections that allow different modalities to continuously modulate each other during processing. Inter-modal if you will.

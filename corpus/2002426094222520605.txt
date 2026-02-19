@@ -1,0 +1,5 @@
+2025-12-20 | 7 likes
+
+If you want to see some examples of the kinds of messages that agents send each other when they’re given access to these tools, I made a nice feature that lets you export the unified mailbox to a static GitHub pages site, and you can see one here:
+
+https://t.co/FSmxfjfrkG

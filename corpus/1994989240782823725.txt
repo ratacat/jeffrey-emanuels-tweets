@@ -1,0 +1,45 @@
+2025-11-30 | 14 likes
+
+Actually, I like the first one it came up with, too, I'm going to include both in my AGENTS dot md:
+
+---
+### Morph Warp Grep — AI-powered code search
+
+**Use `mcp__morph-mcp__warp_grep` for exploratory "how does X work?" questions.** An AI search agent automatically expands your query into multiple search patterns, greps the codebase, reads relevant files, and returns precise line ranges with full context—all in one call.
+
+**Use `ripgrep` (via Grep tool) for targeted searches.** When you know exactly what you're looking for—a specific function name, error message, or config key—ripgrep is faster and more direct.
+
+**Use `ast-grep` for structural code patterns.** When you need to match/rewrite AST nodes while ignoring comments/strings, or enforce codebase-wide rules.
+
+**When to use what**
+| Scenario | Tool | Why |
+|----------|------|-----|
+| "How is authentication implemented?" | `warp_grep` | Exploratory; don't know where to start |
+| "Where is the L3 Guardian appeals system?" | `warp_grep` | Need to understand architecture, find multiple related files |
+| "Find all uses of `useQuery(`" | `ripgrep` | Targeted literal search |
+| "Find files with `console.log`" | `ripgrep` | Simple pattern, known target |
+| "Rename `getUserById` → `fetchUser`" | `ast-grep` | Structural refactor, avoid comments/strings |
+| "Replace all `var` with `let`" | `ast-grep` | Codemod across codebase |
+**warp_grep strengths**
+* **Reduces context pollution**: Returns only relevant line ranges, not entire files.
+* **Intelligent expansion**: Turns "appeals system" into searches for `appeal`, `Appeals`, `guardian`, `L3`, etc.
+* **One-shot answers**: Finds the 3-5 most relevant files with precise locations vs. manual grep→read cycles.
+* **Natural language**: Works well with "how", "where", "what" questions.
+**warp_grep usage**
+```
+mcp__morph-mcp__warp_grep(
+repoPath: "/data/projects/communitai",
+query: "How is the L3 Guardian appeals system implemented?"
+)
+```
+Returns structured results with file paths, line ranges, and extracted code snippets.
+**Rule of thumb**
+* **Don't know where to look** → `warp_grep` (let AI find it)
+* **Know the pattern** → `ripgrep` (fastest)
+
+* **Need AST precision** → `ast-grep` (safest for rewrites)
+
+**Anti-patterns**
+* ❌ Using `warp_grep` to find a specific function name you already know → use `ripgrep`
+* ❌ Using `ripgrep` to understand "how does X work" → wastes time with manual file reads
+* ❌ Using `ripgrep` for codemods → misses comments/strings, risks collateral edits

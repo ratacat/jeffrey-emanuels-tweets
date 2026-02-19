@@ -1,0 +1,29 @@
+2025-11-08 | 6 likes
+
+Actually, this is a better way to do it, by filtering on the name of the pane (in my case, it's "node" for the codex panes), and it has the initial 0.1 second sleep, without which it skips the first matching pane without sending the messages correctly:
+
+PANES=(${(f)"$(tmux list-panes -a -F '#S:#I.#P #{pane_current_command}' | rg ' node$' | cut -d' ' -f1)"})
+for pane in $PANES; do
+    sleep 0.1  # Initial sleep to ensure pane is ready
+    tmux send-keys -t $pane -l 'pick the next bead you can actually do usefully now and start coding on it immediately; communicate what you'"'"'re doing to the other agents via agent mail.'
+    sleep 0.1
+    tmux send-keys -t $pane Enter
+    
+    for i in {1..4}; do
+        tmux send-keys -t $pane -l 'keep going, doing useful work! and communicate!'
+        sleep 0.1
+        tmux send-keys -t $pane Enter
+    done
+    
+    tmux send-keys -t $pane -l 'great, now I want you to carefully read over all of the new code you just wrote and other existing code you just modified with "fresh eyes" looking super carefully for any obvious bugs, errors, problems, issues, confusion, etc.'
+    sleep 0.1
+    tmux send-keys -t $pane Enter
+    
+    tmux send-keys -t $pane -l 'Be sure to check your agent mail and to promptly respond if needed to any messages; thereafter proceed meticulously with the plan, doing all of your remaining unfinished tasks systematically and continuing to notate your progress in-line in the plan document, via beads, and via agent mail messages. Don'"'"'t get stuck in "communication purgatory" where nothing is getting done; be proactive about starting tasks that need to be done, but inform your fellow agents via messages when you do so and notate that in-line in the plan document. When you'"'"'re really not sure what to do, pick the next bead that you can usefully work on and get started.'
+    sleep 0.1
+    tmux send-keys -t $pane Enter
+    
+    tmux send-keys -t $pane -l 'ok can you now turn your attention to reviewing the code written by your fellow agents and checking for any issues, bugs, errors, problems, inefficiencies, security problems, reliability issues, etc. and carefully diagnose their underlying root causes using first-principle analysis and thereafter fix or revise them if necessary? Dont restrict yourself to the latest commits, cast a wider net and go super deep!'
+    sleep 0.1
+    tmux send-keys -t $pane Enter
+done

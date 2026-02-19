@@ -1,0 +1,70 @@
+2025-12-02 | 297 likes
+
+I’m very pleased to introduce my latest tool for both humans and coding agents: the coding agent session search, or “cass” for short.
+
+This tool solves a direct pain point I’ve been experiencing for months as a heavy user of coding agents, with tons of sessions across many tools (Claude Code, codex, cursor, and now gemini-cli) and projects: I’ll know that I talked about something, but be unable to find it or even remember where to try to look for it.
+
+I wanted something instantly available in the terminal that would let me search in a rich way across ALL of those tools and sessions at once super fast, with basically no latency and true “search as you type” instant filtering and ranking/sorting.
+
+And I wanted it to “just work” without configuration, to automatically find and use all my installed coding tools, even ones that I don’t currently use but might in the future (like opencode, aider, and others).
+
+So I made cass in super high-performance rust with every optimization I could think of, and a huge amount of attention to ergonomics and user experience. I’m very pleased with how it came out and think you will be, too:
+
+https://t.co/DXrvxsjTKy
+
+But just as my recent bv tool is now being used way more by my agents than by me, I knew from the start that cass should have a “robot mode” designed specifically for use by coding agents. 
+
+This tool gives coding agents the ability to reach into their own working notes and those of all their peer agents across tools. It’s like a human developer being able to search their Gmail, their notes, and their company Slack and Jira to find things. 
+
+I went through countless iterations of improving the tool so that agents really love to use it. You can just add this blurb to your AGENTS dot md file to get them to use it (after doing the one-liner curl install, which takes 
+3 seconds):
+
+```
+🔎 cass — Search All Your Agent History
+
+ What: cass indexes conversations from Claude Code, Codex, Cursor, Gemini, Aider, ChatGPT, and more into a unified, searchable index. Before solving a problem from scratch, check if any agent already solved something similar.
+
+ ⚠️ NEVER run bare cass — it launches an interactive TUI. Always use --robot or --json.
+
+ Quick Start
+
+ # Check if index is healthy (exit 0=ok, 1=run index first)
+ cass health
+
+ # Search across all agent histories
+ cass search "authentication error" --robot --limit 5
+
+ # View a specific result (from search output)
+ cass view /path/to/session.jsonl -n 42 --json
+
+ # Expand context around a line
+ cass expand /path/to/session.jsonl -n 42 -C 3 --json
+
+ # Learn the full API
+ cass capabilities --json # Feature discovery
+ cass robot-docs guide # LLM-optimized docs
+
+ Why Use It
+
+ - Cross-agent knowledge: Find solutions from Codex when using Claude, or vice versa
+ - Forgiving syntax: Typos and wrong flags are auto-corrected with teaching notes
+ - Token-efficient: --fields minimal returns only essential data
+
+ Key Flags
+
+ | Flag | Purpose |
+ |------------------|--------------------------------------------------------|
+ | --robot / --json | Machine-readable JSON output (required!) |
+ | --fields minimal | Reduce payload: source_path, line_number, agent only |
+ | --limit N | Cap result count |
+ | --agent NAME | Filter to specific agent (claude, codex, cursor, etc.) |
+ | --days N | Limit to recent N days |
+
+ stdout = data only, stderr = diagnostics. Exit 0 = success.
+```
+
+Making this tool was a real labor of love. Even though I did it all in less than a week, it took a lot of hours and a ridiculous number of tokens and agents. I heavily used all the workflows and tricks I’ve been posting about recently.
+
+It’s a good response to all the snarky comments from people saying that my approach is overly complex and asking “where’s the results?” 
+
+Let’s see them make a program like this in a year, let alone under a week! And this isn’t even the main thing I’ve been working on during that time! It’s one of like 10+ projects I’ve been pushing forward at the same time.

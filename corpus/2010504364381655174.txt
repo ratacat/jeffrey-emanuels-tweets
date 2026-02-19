@@ -1,0 +1,3 @@
+2026-01-12 | 27 likes
+
+Glad it’s working well for you! Once you have the basic workflow going, you can go 5-10x faster if you also use agent mail and simply start up more agents at once in the same project. The beauty of it is that nothing else needs to change in the workflow, the work just goes faster

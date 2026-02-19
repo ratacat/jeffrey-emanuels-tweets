@@ -1,0 +1,3 @@
+2025-11-20 | 3 likes
+
+Easy formula to combat the AI reply bot scourge. Might use a lot of tokens, but it wouldn’t be hard to implement this with Grok fast, especially if it’s done as part of an existing workflow with Grok and only applies to new posts going forward.

@@ -1,0 +1,3 @@
+2025-09-30 | 3 likes
+
+And then there is Sonnet’s extreme facility with front end design and implementation with React/NextJS, which I find to be unparalleled. It’s the one area in coding where Anthropic just completely dominates GPT-5 (also true of Opus 4.1, for that matter). But frontend’s important!

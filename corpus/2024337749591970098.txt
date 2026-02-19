@@ -1,0 +1,5 @@
+2026-02-19 | 57 likes
+
+My asupersync library for Rust has gotten very little attention but has quietly and quickly become the bedrock underpinning all of my new projects.
+
+You can see in the screenshots how readily the agents agree that integrating it in a project improves the project dramatically. https://t.co/LK070HdRz2

@@ -1,0 +1,17 @@
+2026-01-08 | 75 likes
+
+By popular demand (multiple people asked me about it just yesterday), I've created a Discord server for user to swap tips and tricks, the Agent Flywheel Hub:
+
+https://t.co/kGjc2TQptc
+
+I hate the Discord UI so much that I had to get Claude Code to find a good MCP server to control it and set everything up for me, which worked surprisingly well.
+
+There are channels for all of the different flywheel tools, pre-populated with tips and tricks.
+
+Come hang out and meet fellow Flywheelers as we make the biggest, baddest agent swarms in the West.
+
+Interact with our brilliant bot, Professor Clawdstein, a world expert in Agent Flywheelogy (thanks @steipete !) and highly resistant to infiltration thanks to my ACIP protocol.
+
+I'm excited to show you guys what I've been cooking, including the two newest members of the Flywheel family, dcg (dangerous_command_guard) and ru (repo_updater), already available in alpha form on my GitHub profile.
+
+And the most exciting of all, the Flywheel Hub! (more about that soon).

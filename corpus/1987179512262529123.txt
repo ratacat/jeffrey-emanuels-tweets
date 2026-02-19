@@ -1,0 +1,11 @@
+2025-11-08 | 182 likes
+
+A clever trick used by the impressive new Kimi 2 model called “quantization aware training,” or QAT.
+
+It’s philosophically similar to dropout. In dropout, you don’t want the model to rely on other neurons co-adapting, since it makes things brittle. So you intentionally blank some of them out during training to avoid that reliance.
+
+Here, you don’t want the model relying on precision for inference that will be lost in the final quantization after training completes, so you intentionally lose the precision during training to avoid that reliance. 
+
+The model is thus forced to never depend on critically important information being stored in the low order bits of the weights. 
+
+But you need that accuracy to keep the gradients flowing well during optimization, so they fake it by keeping full precision weights just for gradient computation while simulating INT4 effects in the forward pass.

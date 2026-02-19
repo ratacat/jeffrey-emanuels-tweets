@@ -1,0 +1,7 @@
+2025-10-14 | 8 likes
+
+One positive effect of the Adam optimizer is that it has reduced the incidence of this phenomenon I mentioned in my message:
+
+“Are you starting to move away from deep architectures and NNs towards trees/forests in your own work? They are certainly easier to train (i.e., they don't require lots of pixie dust to make them work, AKA grad student slave labor endlessly tweaking parameters for Geoff Hinton)”
+
+So much time used to be spent twiddling knobs and watching training to see if it was helping or not.

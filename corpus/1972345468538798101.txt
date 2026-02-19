@@ -1,0 +1,3 @@
+2025-09-28 | 9 likes
+
+@VictorTaelin I used the combined prompt to have some models implement various non-trivial algorithms using your system. I’ll post some here. The first one was conceived of and initially written by Opus 4.1 and then revised by GPT-5 Pro to fix errors.

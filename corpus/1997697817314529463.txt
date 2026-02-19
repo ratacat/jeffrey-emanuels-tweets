@@ -1,0 +1,3 @@
+2025-12-07 | 3 likes
+
+The real use case for this though is the ability to work with GPT Pro in the web app (or Gemini3 with Deep Think) and then turn the whole thing into markdown so you can dump it into a coding agent to implement on your machine. Design &amp; iterate on your phone and then make it real.

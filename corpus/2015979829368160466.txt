@@ -1,0 +1,13 @@
+2026-01-27 | 48 likes
+
+A lot of stuff with computers that "just works" when you're doing normal things starts to break down when you push the number of concurrent agents. 
+
+When you get past 50 agents on the same machine, even with a ton of CPU cores and RAM, things start really falling apart. 
+
+I've been really suffering recently with very laggy ssh sessions using WezTerm's built-in version of tmux-like functionality, despite the machines having 512gb and 256gb of RAM, respectively. 
+
+Finally, in frustration today, I did what I should have done weeks ago: find out whether it's possible to trade a bunch of RAM for better muxing performance with WezTerm. 
+
+And yes, it's very possible and makes a huge difference. I wrote up my findings here along with a curl-bash one liner script that just does it automatically for you:
+
+https://t.co/7NIfjF8g08

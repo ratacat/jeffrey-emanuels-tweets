@@ -1,0 +1,7 @@
+2026-02-07 | 58 likes
+
+OK, I need to pass out now but the plan/spec for FrankenSQLite is basically done and locked in:
+
+https://t.co/UxAJzVKJOy
+
+This is truly nuts. The plan is 11k lines long and is ridiculously over the top with advanced math and all my favorite stuff, like RaptorQ. And asupersync. 🤯 https://t.co/WdEi2k8IUS

@@ -1,0 +1,5 @@
+2026-02-03 | 62 likes
+
+This is such a ridiculous way to develop world-class software. The funniest part is that it WORKS! 
+
+(FYI, this is about the optimal way to support existing Pi Agent extensions that are written in JS/TS in my Rust port of Pi Agent):
