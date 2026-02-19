@@ -1,0 +1,3 @@
+*.db-journal
+*.json
+.DS_Store
