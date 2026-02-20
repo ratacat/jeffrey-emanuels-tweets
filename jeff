@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""jet — Jeffrey Emanuel's Tweets. Search @doodlestein's tweet archive."""
+"""jeff — Jeffrey Emanuel's Tweets. Search @doodlestein's tweet archive."""
 
 import argparse
 import html
@@ -14,14 +14,14 @@ import textwrap
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_DB = os.path.join(SCRIPT_DIR, "tweets.db")
-INSTALLED_DB = os.path.expanduser("~/.local/share/jet/tweets.db")
+INSTALLED_DB = os.path.expanduser("~/.local/share/jeff/tweets.db")
 
 
 def get_db_path():
     for path in [DEFAULT_DB, INSTALLED_DB]:
         if os.path.exists(path):
             return path
-    print("Error: tweets.db not found. Run the installer or set JET_DB.", file=sys.stderr)
+    print("Error: tweets.db not found. Run the installer or set JEFF_DB.", file=sys.stderr)
     sys.exit(1)
 
 
@@ -47,7 +47,7 @@ def find_fsfs():
 
 def get_corpus_dir():
     """Locate the corpus directory with .frankensearch index."""
-    for d in [os.path.join(SCRIPT_DIR, "corpus"), os.path.expanduser("~/.local/share/jet/corpus")]:
+    for d in [os.path.join(SCRIPT_DIR, "corpus"), os.path.expanduser("~/.local/share/jeff/corpus")]:
         if os.path.isdir(os.path.join(d, ".frankensearch")):
             return d
     return None
@@ -165,9 +165,9 @@ def cmd_search(args):
     if fsfs_bin and corpus_dir:
         if fsfs_search(fsfs_bin, corpus_dir, args.query, args.limit, use_json, args.db):
             return
-        print("jet: fsfs failed, falling back to keyword search", file=sys.stderr)
+        print("jeff: fsfs failed, falling back to keyword search", file=sys.stderr)
     elif not fsfs_bin:
-        print("jet: fsfs not found, using keyword search (install fsfs for hybrid search)", file=sys.stderr)
+        print("jeff: fsfs not found, using keyword search (install fsfs for hybrid search)", file=sys.stderr)
     cmd_search_fts5(args)
 
 
@@ -249,10 +249,10 @@ def cmd_sql(args):
 
 def main():
     parser = argparse.ArgumentParser(
-        prog="jet",
+        prog="jeff",
         description="Jeffrey Emanuel's Tweets — search @doodlestein's archive",
     )
-    parser.add_argument("--db", default=os.environ.get("JET_DB", get_db_path()), help="Path to tweets.db")
+    parser.add_argument("--db", default=os.environ.get("JEFF_DB", get_db_path()), help="Path to tweets.db")
     parser.add_argument("--json", action="store_true", help="Output as JSON (useful for agents)")
     sub = parser.add_subparsers(dest="command", required=True)
 

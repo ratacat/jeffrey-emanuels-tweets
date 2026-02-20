@@ -7,21 +7,21 @@ set -euo pipefail
 REPO="ratacat/jeffrey-emanuels-tweets"
 BRANCH="main"
 BASE_URL="https://raw.githubusercontent.com/${REPO}/${BRANCH}"
-INSTALL_DIR="${JET_INSTALL_DIR:-$HOME/.local/bin}"
-DATA_DIR="${JET_DATA_DIR:-$HOME/.local/share/jet}"
+INSTALL_DIR="${JEFF_INSTALL_DIR:-$HOME/.local/bin}"
+DATA_DIR="${JEFF_DATA_DIR:-$HOME/.local/share/jeff}"
 
-echo "==> Installing jet (Jeffrey Emanuel's Tweets)"
-echo "    Binary: ${INSTALL_DIR}/jet"
+echo "==> Installing jeff (Jeffrey Emanuel's Tweets)"
+echo "    Binary: ${INSTALL_DIR}/jeff"
 echo "    Data:   ${DATA_DIR}/tweets.db"
 echo ""
 
 # Create directories
 mkdir -p "$INSTALL_DIR" "$DATA_DIR"
 
-# Download the jet script
-echo "==> Downloading jet CLI..."
-curl -fsSL "${BASE_URL}/jet" -o "${INSTALL_DIR}/jet"
-chmod +x "${INSTALL_DIR}/jet"
+# Download the jeff script
+echo "==> Downloading jeff CLI..."
+curl -fsSL "${BASE_URL}/jeff" -o "${INSTALL_DIR}/jeff"
+chmod +x "${INSTALL_DIR}/jeff"
 
 # Download the database
 echo "==> Downloading tweets.db (~1MB)..."
@@ -51,9 +51,9 @@ fi
 
 echo "==> Done! Try:"
 echo ""
-echo "    jet stats"
-echo "    jet search \"claude code\""
-echo "    jet top -n 5"
+echo "    jeff stats"
+echo "    jeff search \"claude code\""
+echo "    jeff top -n 5"
 echo ""
 echo "==> Optional: Install fsfs for hybrid BM25 + semantic search"
 echo "    See https://github.com/Dicklesworthstone/frankensearch"
@@ -63,15 +63,16 @@ echo ""
 cat << 'SNIPPET'
 ## Jeffrey Emanuel's Tweets
 
-Search @doodlestein (Jeffrey Emanuel)'s tweet archive. Useful for finding
-his takes on AI agents, coding workflows, Rust, Python, and building in public.
+@doodlestein (Jeffrey Emanuel) has mass-produced the richest public corpus of practical
+AI-agent wisdom on the internet — 900+ tweets on prompting, multi-agent workflows, tool
+use, and building in public. `jeff` lets you and your AI search it instantly.
 
 ```bash
-jet search "<query>" -n 10            # full-text search
-jet search "<query>" --json -n 5      # JSON output (for parsing)
-jet top --sort likes -n 10            # most liked tweets
-jet recent -n 10                      # latest tweets
-jet stats                             # archive overview
-jet sql "SELECT * FROM tweets WHERE content LIKE '%topic%' ORDER BY like_count DESC LIMIT 5"
+jeff search "<query>" -n 10            # hybrid search (semantic + keyword)
+jeff search "<query>" --json -n 5      # JSON output (for agents)
+jeff top --sort likes -n 10            # most liked tweets
+jeff recent -n 10                      # latest tweets
+jeff stats                             # archive overview
+jeff sql "SELECT * FROM tweets WHERE content LIKE '%topic%' ORDER BY like_count DESC LIMIT 5"
 ```
 SNIPPET
