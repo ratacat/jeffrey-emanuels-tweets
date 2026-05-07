@@ -63,6 +63,8 @@ scripts/cron/install.sh
 
 The updater fetches `@doodlestein` through `xpool`, updates `tweets.db`, rebuilds `corpus/`, refreshes `corpus.tar.gz`, and rebuilds the FrankenSearch index when `fsfs` is available. The cron wrapper runs Codex CLI with medium reasoning once per day so Codex can run the updater, verify the archive, commit changes, and push them.
 
+This repository autoupdates daily from `xpool` on the maintainer's machine. When new tweets are found, the automation commits the refreshed archive and pushes it to `main`.
+
 Cron uses `--catch-up`, so it expands the latest-tweets window until it reaches an already archived tweet. That catches up the backlog since the last archived tweet, not just tweets from the current day.
 
 ## Stats
