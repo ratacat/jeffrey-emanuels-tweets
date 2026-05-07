@@ -12,7 +12,7 @@ import subprocess
 import sys
 import textwrap
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 DEFAULT_DB = os.path.join(SCRIPT_DIR, "tweets.db")
 INSTALLED_DB = os.path.expanduser("~/.local/share/jeff/tweets.db")
 
