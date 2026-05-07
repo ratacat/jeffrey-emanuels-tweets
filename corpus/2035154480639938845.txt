@@ -1,0 +1,186 @@
+2026-03-21 | 67 likes
+
+It's interesting going back and forth with Codex about what would be good additional functionality for my ntm agent orchestration tool.
+
+I asked it my favorite idea generation prompt just now:
+
+› what's the single smartest and most radically innovative and accretive and useful and compelling addition you could make to the project at this point?
+
+It responded with this:
+
+---
+
+The single best addition would be an objective-driven mission engine: a closed-loop supervisor that turns ntm from “excellent multi-agent session manager” into “self-driving agent operating system.”
+
+Concretely, I’d add ntm mission start "<goal>" plus matching robot/API surfaces. A mission would take a user objective, build an explicit task graph, spawn and route agents, reserve files, watch health/context/test signals, replan when reality changes, and refuse to declare success without verifier evidence. 
+
+The important part is that this would not be a vague autopilot. It would be a persisted, inspectable state machine with phases like discover -> plan -> assign -> execute -> verify -> integrate -> conclude, backed by the systems you already have: tmux runtime in internal/tmux/session.go, spawn orchestration in internal/cli/spawn.go, machine control in internal/robot/robot.go, workflows in internal/workflow/loader.go and internal/pipeline/
+  executor.go, persistence in internal/state/store.go, Agent Mail in internal/agentmail/client.go, and the dashboard/server control planes in internal/tui/dashboard/dashboard.go and internal/serve/server.go.
+
+  Why this is the smartest addition:
+
+  - It is maximally accretive. It composes existing subsystems instead of demanding a new platform beside them.
+  - It is the cleanest path to a step-function jump in usefulness. Users do not want to micromanage spawn/send/ack/rotate/review loops forever.
+  - It would make the project’s current breadth feel coherent. Right now ntm has the pieces of an operating system; this would supply the missing control loop.
+  - It is differentiating. Plenty of tools can launch agents. Very few can run a bounded, inspectable, recoverable mission with evidence-based completion.
+
+  The shape I’d recommend is strict rather than magical:
+
+  - Every mission owns a durable mission graph in SQLite plus event/history trail.
+  - Every action is attributed to a reason, expected outcome, and evidence delta.
+  - Every code-producing task gets a worker, a verifier, and optionally a reviewer.
+  - Every risky action is budgeted and gated by safety policy.
+  - Every replanning step must be triggered by explicit signals: failing tests, blocked reservations, stalled agents, context exhaustion, conflicting diffs, or changed repo state.
+  - The dashboard should show mission state, current blockers, confidence, and why the supervisor chose its next move.
+
+  I would prioritize this over more TUI polish. The current bead backlog is mostly dashboard/UI work; that can improve feel, but a mission engine would improve the project’s identity, leverage, and ceiling. It is the feature that most plausibly turns ntm into the default serious orchestrator for multi-agent coding rather than a powerful tool that still expects a human foreman.
+
+  If you want, I can turn that into a concrete design next: commands, state model, package layout, failure modes, and a bead graph.
+
+---
+
+But I pushed back hard on this as follows:
+
+› the thing is, I already have an elaborate system for doing this using beads and agent mail, and this sounds like it overlaps too much. To understand what I mean, read the entire article in /dp/agentic_coding_flywheel_setup in the webapp at the /complete-guide page. 
+
+If you can find a way to design the functionality you're talking about that is fully and profoundly compatible with my existing approach, I'm open to hearing it, but right now, this sounds like a shitty half-baked version of what I'm already doing, which works very well already without this stuff.
+
+---
+
+After reading my article, codex agreed:
+
+ You’re right. After reading the full complete guide and the key guide components, my earlier “mission engine” suggestion was the wrong shape. It overlapped with, and partly violated, the method. Your guide is explicit that the execution substrate is beads, the coordination layer is Agent Mail, the routing compass is bv, and coordination should live in artifacts rather than a special overseer.
+
+  So the compatible version is not “make ntm the boss.” It is:
+
+  Add a Flywheel Auditor / Swarm Tending API to ntm.
+
+  This would make ntm methodology-aware without making it a parallel coordination system. It would read the existing artifacts and tell a human or a fungible tending agent what is wrong, what is drifting, and what intervention is appropriate. It would not own work selection, task decomposition, or communication. Those stay exactly where your guide puts them.
+
+  What it should do:
+
+  - Compute phase-gate status for the exact gates your guide defines: foundation, plan, translation, bead, launch, ship.
+  - Detect strategic drift: “if all open and in-progress beads finish, do we actually get the thing we’re trying to build?”
+  - Detect coordination jams: duplicate bead claims, stale in_progress beads, orphaned work, stale reservations, missing Agent Mail acknowledgements, agents with no claimed frontier work, communication purgatory.
+  - Detect plan-to-bead integrity problems: plan coverage gaps, beads that are too thin, missing test obligations, suspicious dependency structure.
+  - Emit exact next interventions, not abstract advice: run dedup pass, run fresh-eyes reset, send reality-check prompt, split a stuck bead, reclaim orphaned work, create missing beads, re-polish before continuing.
+  - Expose all of that through --robot-*, the dashboard, and the HTTP API so any fungible “tending” agent can use it.
+
+  What it must not do:
+
+  - Not invent a second task graph.
+  - Not replace br as the execution substrate.
+  - Not replace Agent Mail threads/reservations as coordination.
+  - Not override bv for prioritization.
+  - Not become a special immortal overseer whose internal state is load-bearing.
+
+  In other words, the right addition is a protocol-aware referee, not a planner. A methodology compiler, not a hidden foreman.
+
+  Why this is the best fit for ntm specifically:
+
+  - Your guide already points toward routine machine-tending becoming automatable via ntm robot mode.
+  - ntm already has the right surfaces for this: robot output, dashboard, server API, tracker, alerts, context/status data.
+  - The missing piece is not more coordination logic; it is a rigorous, reusable diagnosis layer that tells the operator when the flywheel is no longer obeying its own invariants.
+
+  If I had to reduce it to one sentence: the smartest addition is an automated “Are we still following the flywheel correctly?” engine, not an automated “Here is a whole new way to run the project” engine.
+
+  If you want, I can turn that into a precise design for ntm: proposed commands, JSON schema, drift heuristics, gate checks, and the exact boundaries that keep it subordinate to beads + Agent Mail + bv.
+
+---
+
+But even this was bad. It shows why it's still so important to have "taste" and know what you want so you can push back when needed. I told Codex this:
+
+› I just don't think I see the value in this additional complexity. Essentially, to "drive" the process requires intelligence in the form of a frontier LLM agent. It can't really be done mechanically. But we already have that: ntm has a robot mode which an agent like you can "drive".
+
+Finally, it started giving me something that seemed worth doing:
+
+---
+
+I agree. In your system, the “driver” is the frontier model. Trying to hard-code that intelligence into ntm is the wrong abstraction and would mostly duplicate what already works.
+
+  So I’d retract the earlier idea. The right addition is not a brain. It’s a better nervous system for the brain you already have.
+
+  The best addition would be an event-driven robot substrate for ntm:
+
+  - --robot-watch: stream normalized state changes
+  - --robot-wait: block until a predicate becomes true
+  - --robot-diff: return only actionable deltas since a cursor
+
+  Examples of purely mechanical triggers:
+
+  - new Agent Mail needing ack
+  - pane died or stopped producing output
+  - rate-limit text detected
+  - context threshold crossed
+  - reservation conflict appeared
+  - send completed and prompt returned
+  - test/build command finished
+  - session topology changed
+
+  Why this fits your method:
+
+  - beads stay the task substrate
+  - Agent Mail stays the coordination layer
+  - bv stays the prioritization compass
+  - the LLM still decides what to do
+  - ntm just becomes a much better sensor/actuator for that LLM
+
+  Why it’s high leverage:
+
+  - one tending agent can manage many swarms without wasteful polling
+  - much lower token burn than repeatedly asking for full snapshots
+  - no competing “orchestrator” logic
+  - it builds directly on surfaces ntm already has in internal/robot/robot.go, internal/serve/server.go, internal/events/logger.go, and internal/tracker/tracker.go
+
+  So the revised answer is: don’t add more pseudo-autonomy. Make robot mode more legible, wakeable, and composable for an actual intelligent driver. That seems fully compatible with your flywheel.
+
+---
+
+So I gave it the green light as follows:
+
+› ok so design the smartest, most agent-intuitive and agent-ergonomic system like that you can think of.
+
+It came up with this (this is just the first part of a much longer response containing schemas and stuff):
+
+---
+
+ I’d design this as an Attention Feed for ntm: a very small, very sharp agent-facing layer that helps a frontier model tend swarms without trying to out-think it.
+
+  It should sit on top of the pieces ntm already has in internal/robot/wait.go, internal/tracker/tracker.go, internal/events/bus.go, internal/serve/server.go, and internal/robot/robot_dashboard.go. The key is to turn those into one coherent agent API with four primitives plus one macro.
+
+  Core Model
+
+  - snapshot: full cold-start state. Keep --robot-snapshot, but add cursor_now to every response.
+  - events: raw normalized event feed with monotonic cursors.
+  - digest: token-efficient coalesced delta since a cursor.
+  - wait: block until a named condition becomes true.
+  - attention: macro that waits for something important, then returns a digest.
+
+  This keeps the intelligence outside ntm. The LLM still decides. ntm just answers:
+
+  - What changed?
+  - Does anything need attention?
+  - What exact surface should I inspect next?
+
+  The Primitives
+
+  - ntm --robot-snapshot
+    Returns full state plus cursor_now. This is the resync point.
+  - ntm --robot-events
+    Returns raw normalized events, optionally streaming, filtered by session/topic/actionability.
+  - ntm --robot-digest
+    Returns coalesced changes since --since-cursor, split into actionable, interesting, background, and suppressed.
+  - ntm --robot-wait=SESSION
+    Extends the existing waiter. Current conditions like idle, complete, generating, healthy stay. Add methodology-relevant ones: attention, action_required, mail_pending, mail_ack_required, stalled, rate_limited, context_hot, reservation_conflict, file_conflict, session_changed, pane_changed, bead_orphaned.
+  - ntm --robot-attention=SESSION
+    Thin macro: wait(until=attention) then digest(since_cursor=...). This is what a tending agent will mostly call.
+
+---
+
+So what's the lesson or takeaway from all this? I think there are at least a couple:
+
+1) At some point you really can't rely on the models for design advice. They are too quick to jump to conclusions and not really think things through. You could probably curtail this tendency by giving a lot more context about how you use the tooling and your workflows, but even then, you still can't outsource this part.
+
+2) You have to keep clear in your own mind the distinction between tooling which helps the agents, and that which tooling can never replace, which is the flexibility and judgement that requires intelligence. You agent tooling should either give your agent the capability to "do something," i.e., have a effect in the world, or it should be some way of helping it gather and process the information it needs to make better decisions.
+
+This latter part of tooling is what I find more interesting. I think of it as being sort of like giving a human a calculator, or a copy of Mathematica or similar. It allows them to offload some thinking so they can focus their cognitive energies on high levels of abstraction and with better information that requires less processing and thinking before it can be useful for analysis and eventual decision making.

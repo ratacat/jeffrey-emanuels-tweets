@@ -1,0 +1,3 @@
+2026-02-27 | 97 likes
+
+Man, wtf did I get myself into with this FrankenGlibC project... I just keep throwing more and more clankers into the trenches to work on it, and then I catch them running these crazy tests for 10+ hours at a time. This project is just on a different level of hardcore plumbing. https://t.co/CDRFp5miCE

@@ -1,0 +1,55 @@
+2026-04-07 | 154 likes
+
+A while back, I posted this concept for my ntm agent orchestration tool that would let you spin up a swarm of agents using various harnesses where each agent could follow a different "mode of reasoning" (see the quoted post for what that means).
+
+I didn't really do much with it at the time because I got distracted by other projects. But the other reason was that I wasn't really sure how it could be effectively "steered" and leveraged. 
+
+But I realized recently that a skill was the perfect medium for finally implementing this properly in a unified, cohesive way that's highly applicable to software development projects, but also to any other sort of project, business plan, conceptual framework, etc.
+
+Now you can simply ask Claude Code to invoke the /modes-of-reasoning-project-analysis skill and it will embark on a truly ambitious and deep investigation for you. 
+
+Rather than blindly try to apply all 80 reasoning modes, the "lead agent" first studies the project and determines which of the 80 modes are most applicable and complementary, then creates and manages a swarm for you using ntm with an agent for each selected reasoning mode. 
+
+Then it attempts to synthesize the results of their interactions and compiles this into a markdown report for you.
+
+You can sort of conceptualize this approach as the "fresh eyes review" approach on steroids, in that it's attempting to force something akin to a gestalt shift to each agent so that it will look at the project in a different way that might reveal new angles it otherwise wouldn't perceive. 
+
+It's a bit hard to explain, so I asked Claude to give its best summation of what the skill does and how it works and why it's useful (also see the two screenshots showing how it starts out on two different software projects; you can access it on my skills site, https://t.co/Un9brY2G3l):
+
+---
+
+This is a multi-agent epistemological analysis tool. 
+
+Here's what it does and why it matters:
+
+What It Is
+
+It spawns a swarm of AI agents (default 10, configurable), each assigned a distinct reasoning mode drawn from a taxonomy of ~80 modes. Each agent analyzes the same project but through a completely different analytical lens — then their outputs are synthesized into one comprehensive report.
+
+How It Works (7 Phases)
+
+  1. Context Pack — Profile the target project (structure, tech stack, maturity)
+  2. Mode Selection — Pick 10 reasoning modes from 7 taxonomy axes (e.g., abductive reasoning, adversarial analysis, Bayesian inference, normative ethics, game-theoretic reasoning, etc.)
+  3. Spawn Swarm — Launch agents via NTM (my tmux-based multi-agent orchestrator)
+  4. Dispatch Prompts — Each agent gets a mode-specific prompt constraining it to reason from that single perspective
+  5. Monitor — Watch for convergence or early stopping conditions
+  6. Score & Collect — Each agent produces structured findings (thesis, risks, recommendations, assumptions, uncertainties)
+  7. Synthesize — A triangulation protocol classifies findings:
+    - Kernel (3+ modes agree) — high confidence
+    - Supported (2 modes agree) — moderate confidence
+    - Hypothesis (1 mode only) — worth investigating
+    - Disputed (modes disagree) — needs resolution
+
+Why It's Useful
+
+The core insight: a single analytical perspective has blind spots. Multiple independent perspectives triangulate toward truth.
+
+Concrete use cases:
+
+  - Pre-release audit — Before shipping, get 10 fundamentally different takes on what could go wrong. An adversarial reasoner finds attack surfaces, a probabilistic reasoner finds unlikely-but-catastrophic failures, a normative reasoner flags ethical concerns.
+  - Architecture decisions — When choosing between approaches, different reasoning modes weigh tradeoffs differently. Game-theoretic reasoning considers incentive structures, abductive reasoning asks "what best explains the constraints," analogical reasoning pulls patterns from similar systems.
+  - Breaking groupthink — If your team has converged on an approach, this surfaces objections you wouldn't naturally generate. The "Kill Thesis" operator card explicitly tries to destroy the consensus view.
+  - Due diligence on acquisitions or dependencies — Evaluate an unfamiliar codebase from economic, security, maintainability, and social/community perspectives simultaneously.
+  - Finding unknown unknowns — The "Blind Spot Scan" operator card specifically asks: which axes of the taxonomy are underrepresented in current findings? What would a mode from that axis notice?
+
+The key differentiator from just "ask an AI to review my project" is structured epistemic diversity — it's not 10 agents doing the same thing, it's 10 agents that are cognitively constrained to reason differently, with a formal synthesis protocol that tracks where they agree, disagree, and what falls through the cracks.

@@ -1,0 +1,32 @@
+2026-02-22 | 7 likes
+
+Another example of Gemini3 being ridiculously cracked at code review:
+
+✦ I have completed a deep and methodical investigation of the mcp_agent_mail_rust codebase, focusing on concurrency, cache invalidation, data consistency, and algorithmic correctness. Through static analysis and manual tracing of execution flows, I identified and corrected several critical and subtle bugs:
+
+  1. Fixed O(N) Performance Bottleneck in S3-FIFO Cache
+  Location: crates/mcp-agent-mail-db/src/s3fifo.rs
+  Issue: The S3-FIFO cache is designed to provide O(1) amortized inserts, gets, and evictions. However, the implementation of get() and get_mut() was iterating over the Small and Main VecDeque queues using .iter_mut().find(...) to locate entries. For a cache capacity of 16,384 entries, this resulted in an O(N) lookup on the extremely hot path of project and agent
+  lookups.
+
+  Fix: Redesigned the cache to store the value and freq directly inside the index HashMap (via an enum Node<V>). The VecDeque queues now only store the keys. This guarantees strict O(1) lookups for get and get_mut. I also resolved a subtle borrow checker conflict in insert() by decoupling the HashMap access from the queue mutation.
+
+  2. Fixed Logical Bug in Advisory Reservation Pattern Overlaps
+  Location: crates/mcp-agent-mail-core/src/pattern_overlap.rs
+  Issue: When checking if two file reservation patterns overlapped, the overlaps() method checked if the globset matchers compiled successfully. If either pattern failed to compile into a valid glob (e.g., reserving a literal directory named [abc), the function short-circuited and immediately returned false. This skipped the segments_overlap() heuristic completely,  causing a failure to detect genuine path conflicts for literal directories containing unclosed glob characters.
+
+  Fix: Changed the early-return match expression to an if let. If the globs fail to compile or don't strictly match, execution now correctly falls through to segments_overlap(), which safely handles literal path intersections regardless of glob validity.
+
+  3. Fixed Missing Write-Behind Queue Enqueue in Cleanup Worker
+  Location: crates/mcp-agent-mail-server/src/cleanup.rs
+  Issue: The background worker routinely cleans up expired or stale file reservations from the SQLite database. However, the function write_cleanup_artifacts was only emitting a log message (info!) and was missing the actual call to mcp_agent_mail_storage::wbq_enqueue(). Consequently, JSON reservation artifacts in the Git archive were never updated with their released_ts, leaving them perpetually looking "active" in Git.
+
+  Fix: Implemented the missing logic in write_cleanup_artifacts to correctly fetch the released rows from SQLite, format them as JSON artifacts with the released_ts, and push them to the Write-Behind Queue (WBQ) to ensure Git state remains consistent with the DB.
+
+  4. Fixed Inconsistent File Filtering in Retention Worker
+  Location: crates/mcp-agent-mail-server/src/retention.rs
+  Issue: The retention worker counts messages in the inbox to warn about quotas. count_md_files_recursive() properly filters for .md extensions, but the sister function count_old_files_recursive() (used for identifying aged messages) failed to filter by extension. It would erroneously count any aged file (like .DS_Store or hidden OS artifacts) as an old message,  skewing the retention logs.
+
+  Fix: Updated count_old_files_recursive to ensure p.extension().is_some_and(|e| e == "md"), making it consistent with the rest of the inbox counting logic.
+
+The codebase is incredibly robust (especially the asupersync concurrency model and WBQ), but these surgical fixes resolve edge cases that would have otherwise degraded performance at scale or caused confusing state desynchronization.

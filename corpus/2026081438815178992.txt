@@ -1,0 +1,5 @@
+2026-02-23 | 36 likes
+
+If you're making a project in Rust (and seriously, you should be: it's by far the best language for basically everything nowadays besides webapp frontends), then you should really try to integrate asupersync. It will make your project much more reliable:
+
+https://t.co/suIdBmxnrw

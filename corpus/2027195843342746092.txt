@@ -1,0 +1,13 @@
+2026-02-27 | 130 likes
+
+I made a nice website for my asupersync library (a Rust library for asynchronous programming that is a complete replacement not just for tokio, but for the entire tokio ecosystem, with a much more robust "correct by design" approach grounded in structured concurrency research):
+
+https://t.co/pdHNPCEcCu
+
+I tried to take all the crazy "Alien Artifact" math ideas that make the project so powerful and make them as intuitive as possible through a series of 30 different interactive visualization exhibits, each with a narrative explanation. 
+
+Even if you don't use Rust, you might find this fascinating to learn about. These ideas are normally relegated to journal articles and couched in very impenetrable mathematical terms, making them pretty inaccessible.  
+
+I think I'm likely the only one to even try to make some of the more esoteric things simpler for non-experts in concurrency research to understand (and trust me, I wanted this as much for my own benefit, since the clankers are the ones that came up with all this lunacy!).
+
+Essentially every single substantive idea from asupersync is explained in this way. Hope you like it!

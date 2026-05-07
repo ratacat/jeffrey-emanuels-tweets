@@ -1,0 +1,5 @@
+2026-02-20 | 10 likes
+
+I’m still figuring out the best way to deal with the keyboard on mobile versus the touch system I had before.
+
+It now shows the keyboard on mobile, but that comes somewhat at the expense of the touch semantics. I’m thinking that it might be best to have a floating toggle button.

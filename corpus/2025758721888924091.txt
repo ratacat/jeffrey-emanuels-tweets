@@ -1,0 +1,23 @@
+2026-02-23 | 158 likes
+
+I developed a pretty advanced, Rust-native, 2-tier lexical/semantic hybrid search system as part of my work on cass and xf and other projects. 
+
+But rather than repeat myself over and over again, I decided to extract it out into a standalone project called (what else?) FrankenSearch. 
+
+You can get it here:
+
+https://t.co/TyAaj1CffV
+
+I didn't want it to just be a library though, since that limits the appeal to just Rust developers. 
+
+So I also introduced a reference search implementation called fsfs (FrankenSearch Fast Search) for indexing and searching through your files. 
+
+It's sort of like Everything by voidtools for Windows in terms of its speed, but it also has semantic search, so it's pretty powerful. And extremely fast. Like, ridiculously fast... you have to try it to understand. 
+
+It installs in a few seconds using the included curl-bash one-liner. Note that the binary itself is huge (627mb for the mac version), but that's because I wanted to simplify things by baking into it the two different semantic embedding models.
+
+This project is ready to drop-in to any of your Rust projects and give you very solid search capabilities that can rival Elastic and others, but with far less configuration and brain damage. 
+
+The particular embedding models I selected were based on a comprehensive "bake-off" I did that compared basically every small model out there, and was optimized in particular for use on CPUs (but it will use a GPU if you have one). You can see the details of the bake-off in the docs folder of the repo.
+
+Check it out in operation in the screen recording below (I recorded this a couple days ago and have made many, many improvements since then, but the basics are the same):

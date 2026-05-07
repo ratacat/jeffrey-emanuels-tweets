@@ -1,0 +1,11 @@
+2026-03-16 | 153 likes
+
+One of the coolest parts of writing programs and libraries in Rust is how easy it is to compile to web assembly (wasm). Suddenly, you can run code in the browser, and you've completely changed what is possible to do with your software.
+
+I recently took my asupersync library and exposed everything that I could sensibly expose in a browser context using wasm and then provided bindings for JS and TS to use it easily.
+
+In order to demonstrate how it all works and what it can do, I created this standalone html file that loads the wasm library and uses it to do a bunch of different tasks that highlight the elegant structured concurrency primitives that the project provides (and which would be very hard to do otherwise), together with nice visualizations:
+
+https://t.co/t2pJoYrr19
+
+P.S.: Check out the browser console for the detailed logs of what's happening during execution of each exhibit.

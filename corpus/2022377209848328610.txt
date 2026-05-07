@@ -1,4 +1,4 @@
-2026-02-13 | 72 likes
+2026-02-13 | 74 likes
 
 I was thinking about my approach to handling git commits when working with agent swarms on a project (see the prompt in the quoted post) and a vivid analogy suddenly appeared in my mind:
 

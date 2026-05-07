@@ -1,0 +1,9 @@
+2026-05-05 | 52 likes
+
+“No tokio” 
+
+Sounds like my directives in all my projects, which I insist use my asupersync library. That’s what bun should use, too.
+
+They have serious problems with orphaned, zombie processes. So they’d really benefit from asupersync’s structured concurrency primitives, which are correct by construction with guaranteed “quiescence.”
+
+https://t.co/pdHNPCEcCu

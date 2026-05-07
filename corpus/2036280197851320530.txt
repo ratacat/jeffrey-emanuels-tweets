@@ -1,0 +1,36 @@
+2026-03-24 | 106 likes
+
+Skills and custom tooling just change everything about how quickly you can communicate extremely complex instructions to agents. 
+
+I'm now able to operate at such a refined level of economy of expression, and it's all so wonderfully self-referential and self-reinforcing. 
+
+What am I even talking about? 
+
+See this prompt I just used in the project folder for my https://t.co/fAdDXiANf0 site; this approach lets me turn all the work I would do anyway for the site into "teachable moments" for other agents:
+
+---
+
+❯ Reread AGENTS .md so it's still fresh in your mind. I want you to use your /cass and /sc skills to read about what we did in this project over the last two days to create an elaborate analytics system for projecting user behavior, churn, billing, etc. for this SaaS product; I want you to use /sw and /operationalizing-expertise to generalize from these specifics to create within the /cs location a new skill called saas-customer-analytics that operationalizes all this in a general, detailed way. 
+
+The new skill should be super elaborate and in-depth, just like existing sophisticated skills like the ones I asked you to use in here (you can also consult /extreme-software-optimization for another solid example). 
+
+Really take the time to fully understand what we did and why, and the inner, abstract principles at work so that the skill is more universally applicable to various kinds of SaaS business ventures that also connect to Stripe and PayPal for billing.
+---
+
+Once this initial version is done, I will do several rounds of refinement and optimization using another skill writing meta skill of mine (one of a small handful I've kept private, even from my website-- sorry!).
+
+The goal there is to make the skill maximally agent-intuitive and agent-ergonomic by using progressive disclosure in the optimal way possible, making the top level skill file as clear and direct as can be, etc.
+
+Finally, I'll onboard it to my site using my /onboarding-new-skills-to-jeffreys-skills-md skill, which in turn will do things like create a slick interactive visualization for the new skill using my /interactive-visualization-creator (this one IS included in the site!). 
+
+Starting to get the idea? Skills are a LOT more than just markdown files. The fact that you can use the same skills with Claude, Codex, and Gemini is also so incredibly useful and powerful. 
+
+The same skill, when wielded by different agent harnesses and different frontier models, leads to very different outcomes! Iterative refinement from applying the same skill using multiple agent types is another big unlock.
+
+And I'm not just saying all this stuff to promote my site. I literally use all of these skills, all day, every day, across all of my projects. 
+
+The thought of managing an agent swarm using my ntm tool without my /ntm and /vibing-with-ntm skills is enough to make me shudder at all the extra, annoying typing and explaining I would need to do to get anything close to the same results. Same goes for my /cass skill and all the rest.
+
+And btw, the agent sessions from the last two days that I'm mining with /cass to build that new SaaS analytics skill? All that stuff was built using an array of other skills, including my (non-public) alien artifact skills and idea wizard skill and many more.
+
+If you're already using my Agent Flywheel tools, having easy access to these skills is an enormous force multiplier. And I basically shovel every new skill and improvement to existing skills that I make out to users on a daily basis now.

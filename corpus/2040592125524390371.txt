@@ -1,0 +1,5 @@
+2026-04-05 | 16 likes
+
+I was also thinking about Hadamard recently because of the role of his transforms in recent LLM quantization work (like the TurboQuant results from Google). Fascinating stuff:
+
+https://t.co/UucoBWEUOv https://t.co/Kk0dJe5UNV

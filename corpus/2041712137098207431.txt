@@ -1,0 +1,5 @@
+2026-04-08 | 22 likes
+
+The Prussian field marshal von Moltke the Elder famously said "No plan survives first contact with the enemy."
+
+The same applies to agent skills. One must iterate, as in this example of what I've been calling "in-context recursive self-improvement" via skills and custom tooling:

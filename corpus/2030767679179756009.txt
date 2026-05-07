@@ -1,0 +1,11 @@
+2026-03-08 | 91 likes
+
+Not sure if I've ever shared this prompt before, but if you use beads (or my rust version, br) to build out complex development plans, you sort of need to use something like this to avoid wasting time later on in the implementation phase.
+
+The agents will eventually figure this out on their own when there's nothing else to work on, but you can likely debottleneck and speed up overall velocity by dealing with this issue directly as follows:
+
+"Look for beads that are clearly "stalled out"; that is, marked as being in progress (likely by long-dead agents) with no recent work on them whatsoever, and mark them as being open again. Then: Use bv with the robot flags (see AGENTS .md for info on this) to find the most impactful bead(s) to work on next and then start on it. Remember to mark the beads appropriately and communicate with your fellow agents."
+
+Make sure to first do a round of code base investigation before trying this so the agents are familiar with the project, which you can do with this: 
+
+"First read ALL of the AGENTS .md file and README .md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project."

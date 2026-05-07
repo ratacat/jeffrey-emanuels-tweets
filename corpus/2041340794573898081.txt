@@ -1,0 +1,17 @@
+2026-04-07 | 43 likes
+
+This part of the Altman article in the New Yorker is so stupid. Does anyone seriously doubt that China has had an extreme focus on AI for a long time now? 
+
+Even before the big Transformer paper came out in mid-2017, deep convolutional neural net models were clearly state of the art for tasks like automatically classifying objects seen in satellite imagery. Something highly relevant to militaries.
+
+Altman probably was told things about it from expat Chinese scientists and businessmen, but couldn’t provide hard evidence to the White House because… he’s not the CIA or the NSA? The people who told him refused to go on the record? What were they even expecting? 
+
+There are a few other things like that in the article that also made me roll my eyes, mostly because the mere existence of such a long profile “exposé” like this makes an implicit promise there’s some serious wrongdoing à la Harvey Weinstein… but then there’s no “there,” there.
+
+He promised the same job to two different people? Maybe he considered splitting the role between two co-heads. Maybe he wanted to see who wanted the job more? 
+
+This sort of thing is incredibly common at Fortune 500 companies. Jack Welch famously did stuff like that at GE.
+
+And we’re supposed to feel outraged that Sam finessed Microsoft into letting him also sign a big deal with Amazon? These are all big boy companies and executives and can make their own decisions.
+
+Anyway, I’m not arguing that Altman is some kind of saint, but this article is really not persuasive unless you’re already predisposed against him.

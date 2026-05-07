@@ -1,4 +1,4 @@
-2026-01-09 | 544 likes
+2026-01-09 | 540 likes
 
 Unpopular opinion: Anthropic has every right in the world to require that users must run their official agent coding harness in order to benefit from the 95% subsidized token cost versus the API pricing.
 

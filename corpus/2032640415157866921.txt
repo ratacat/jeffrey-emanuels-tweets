@@ -1,0 +1,5 @@
+2026-03-14 | 21 likes
+
+If you use Beads and want to make a similar static site for your project, it takes literally 1 minute using my beads_viewer (bv) too. Just `bv --pages` and go through the wizard and deploy to either GitHub Pages or Cloudflare Pages:
+
+https://t.co/pGNHTEqQHH https://t.co/jDyMPpVygR

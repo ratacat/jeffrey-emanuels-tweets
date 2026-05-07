@@ -1,4 +1,4 @@
-2026-01-20 | 8 likes
+2026-01-20 | 9 likes
 
 I noticed that, through either my own fault or bugs in Claude Code, my settings would sometimes get clobbered and it wouldn't have my mcp servers or dcg hooks anymore. 
 

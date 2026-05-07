@@ -1,4 +1,4 @@
-2026-02-17 | 50 likes
+2026-02-17 | 54 likes
 
 I made another tool out of my own desperation because my agents kept filling up disks (including special locations that are memory-backed) with Rust build artifacts and making the machines unresponsive.
 

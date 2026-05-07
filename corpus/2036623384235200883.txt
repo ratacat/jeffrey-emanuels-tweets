@@ -1,0 +1,15 @@
+2026-03-25 | 81 likes
+
+Agent Coding Life Hack:
+
+This is like the coding agent equivalent of shining a blacklight on your clean-looking black shirt and seeing just how filthy it really is:
+
+❯ First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project. 
+
+THEN: I need you to carefully and completely look across the ENTIRE project for *anything* that is a hard-coded constant in the code which really should be dynamic in order to be correct and robust. Also look carefully for any "TODO" or the words "will" or "would" in a comment, indicative of unfinished code.
+
+---
+
+I was truly horrified by how much stuff this turned up. If you are, too, then try following it up with this one:
+
+❯ OK, please fix absolutely ALL of that now. Keep a super detailed, granular, and complete TODO list of all items so you don't lose track of anything and remember to complete all the tasks and sub-tasks you identified or which you think of during the course of your work on these items!

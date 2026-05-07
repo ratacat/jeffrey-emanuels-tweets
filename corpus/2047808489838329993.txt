@@ -1,0 +1,38 @@
+2026-04-24 | 846 likes
+
+I finally got around to making a skill a lot of people have been asking me for:
+
+https://t.co/3APwJYevpF
+
+It basically helps to "de-slopify" and refactor code that's been written by agents, looking for ways to simplify and reduce the amount of code without changing the behavior.
+
+The difference between this and other skills or prompts in the same spirit is the lengths this one goes to in order to prevent the process from going off the rails and introducing bugs or security problems.
+
+It's a whole elaborate system spanning 98 files and one full megabyte of reference files, scripts, and subagents (see pic).
+
+You can run it over and over again and it will autonomously identify good opportunities for accretive simplification and do everything needed to implement the changes and prove that they didn't change the outputs.
+
+GPT-5.5 can explain better than I can how it does all that and what makes it so compelling and useful:
+
+---
+
+The strongest thing about this skill is that it treats refactoring as a proof obligation.
+
+A normal “clean this up” prompt invites the model to follow taste. It sees repetition, long files, wrapper functions, stale types, try/catch clutter, _v2 files, and it starts cutting. 
+
+Sometimes that works. Sometimes it silently changes error semantics, loses a side effect, removes a lifecycle hook, or deletes a file that looked unused but was actually the intended
+implementation path.
+
+This skill changes the frame. A simplification claim becomes: “this smaller program is observably equivalent to the larger one.” Then it makes the agent prove that claim.
+
+It starts with a baseline: tests, golden outputs, LOC, warnings, complexity. It maps duplication instead of eyeballing it. It classifies clones, because exact copy-paste, parametric duplication, semantic similarity, and accidental rhymes are completely different things. 
+
+It scores each candidate by expected LOC saved, confidence, and risk. Low-score candidates get rejected and logged, which is important because future agents otherwise rediscover the same bad idea forever.
+
+The isomorphism card is the key move. Before editing, the agent has to answer boring but lethal questions: same ordering, same errors, same logs, same metrics, same side effects, same async cancellation behavior, same React hook identity, same serialization, same resource lifecycle. Those rows catch the kind of bugs that compilers and ordinary tests miss.
+
+Then the edit discipline is deliberately narrow: one lever per commit, no rewrites, no sed, no drive-by fixes, no deletion without explicit permission. Afterward, it verifies behavior again and records the result in a ledger. If the refactor did not actually preserve behavior, it does not get to call itself a refactor.
+
+What I like about it is that it matches the real failure modes of agent-written code. AI code tends to accumulate plausible junk: defensive branches for impossible inputs, duplicated wrappers, too many optional parameters, orphaned “improved” files, shallow happy-path tests, stale types, and comments that are really leftover task plans. The skill has a whole pathology catalog for those patterns, plus scripts and subagent roles to find them systematically.
+
+So the compelling part is not “make the code prettier.” The compelling part is leverage with brakes. You can send very strong models into messy codebases and ask them to reduce complexity aggressively, while forcing them to preserve the contract that matters: observable behavior. That is the difference between a refactor you hope is safe and a refactor you can audit.

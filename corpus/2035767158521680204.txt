@@ -1,0 +1,7 @@
+2026-03-22 | 56 likes
+
+The end result of that recursive-self improvement loop I posted about recently: a skill that embodies a huge amount of "how to" knowledge about building superior TUIs in Golang applications. 
+
+If you want to make awesome TUIs that look and feel like my beads_viewer project, but without spending 20+ hours on it like I had to, this is for you. 
+
+Try applying it at least 10+ times in a row though, since there's a lot to cover in there and agents are lazy!

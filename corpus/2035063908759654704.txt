@@ -1,0 +1,5 @@
+2026-03-20 | 86 likes
+
+Making some serious performance strides on FrankenSQLite in the case of multiple concurrent writers.
+
+Normally I just have a bunch of independent agents running and executing beads, but for this I leaned more on my ntm tool to have Claude Code direct a swarm of 6 Claude Codes. https://t.co/48ncR4Hbdo

@@ -1,0 +1,5 @@
+2026-04-07 | 26 likes
+
+I wonder what the clearing price per million input/output tokens would be for Anthropic’s Mythos model if they conducted a capacity auction where the bidders were restricted to Fortune 500 American companies.
+
+My guess: likely at least 50x the going rate for Opus 4.6 API access. https://t.co/UiZboUdBpZ

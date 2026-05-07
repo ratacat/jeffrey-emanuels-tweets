@@ -1,0 +1,5 @@
+2026-03-22 | 5 likes
+
+ChatGPT has some feedback as a fellow clanker trying to use its self-knowledge to improve my clanker recursive improvement tricks; it's probably right, actually. 
+
+It's usually worthwhile to bounce these ideas off the models themselves, although there's no substitute for just trying it and seeing how well it works in practice:

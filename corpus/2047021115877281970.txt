@@ -1,0 +1,29 @@
+2026-04-22 | 56 likes
+
+Seeking advice from people who are savvy about marketing for SaaS businesses.
+
+My jeffreys-skills.md site has been growing nicely in percentage terms since I launched it around 6 weeks ago. It should hit $6k/month in MRR today at the current growth rate (see pic from my admin dashboard).
+
+All this has been with negligible costs besides the ~5% fee to Stripe and PayPal for managing the subscriptions and billing. The site costs basically nothing to run, and I don’t offer a free tier.
+
+So far, I’ve done zero paid marketing or advertising. Instead, I’ve just been writing posts about the new skills I’ve been making and how they work.
+
+I believe the potential market for my service is pretty huge given that there are now 4 million active users of Codex alone, and many also using Claude Code.
+
+Compared to spending $200/month for GPT Pro and Claude Max, paying just $20/month for my site is pretty cheap.
+
+So my question is whether I should now start doing non-organic marketing, and if so, how?
+I know that if I took venture funding (I didn’t, it’s all bootstrapped and I built everything myself), investors would be pushing me to spend a lot to grow faster.
+
+But my past experience has been that paid marketing and advertising really doesn’t work very well and dramatically reduces margins.
+I’d basically be competing against all the other venture-backed AI startups that are burning money in an undifferentiated game.
+
+If I’m already growing ~200% a month, should I just keep doing what I’ve been doing and stick with organic content-based marketing that leverages my following on here?
+
+Maybe I should instead spend my time and energy making it easier for non-technical users to use and make more general, non-software related skills (like income taxes and wills) that can have broader appeal?
+
+Or focus more on business/teams users at a higher price point with enterprise functionality like SSO? (I’ve already built this out, but it’s a lot harder to sell those subscriptions; I don’t have a single teams customer yet!).
+
+Curious to hear what people who have been through this think.
+
+What do you suggest, @levelsio ? @dhh ? Anyone else? I appreciate any advice people can give me!

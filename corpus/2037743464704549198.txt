@@ -1,0 +1,19 @@
+2026-03-28 | 467 likes
+
+Just did some brain surgery on a used Lenovo ThinkStation P620 machine ($800 on eBay with a 4tb SSD) with help from my crack computer tech (the DDR4 RAM sticks she helped install are ~5x older than she is…)
+
+PSA: If you’re serious about agent coding at scale, the best bang for your buck by far in hardware isn’t chasing after the same RTX 6000 GPUs and overpriced DDR5 memory as everyone else.
+
+You can buy the AMD 5995WX with 64 physical cores used on eBay from China for ~$1,800 and 256gb of used DDR4 ECC RAM for $1,350. 
+
+You upgrade the ThinkStation with this stuff (ChatGPT can tell you what to do each step) and it takes under an hour. I’ve done it twice in the past month, it’s really easy.
+
+Install Ubuntu 25 on it, and you get an absolute beast of a machine that can easily run 50+ agent instances at once. That’s 50 full instances of Claude Code or Codex (not including sub-agents).
+
+Then take all the money you saved from not buying a fancy GPU and spend it on $200/month Max and Pro subscriptions. You’ll be much better off if your goal is to produce as much high-quality software as possible. 
+
+Local models are fun and do have an intangible cypherpunk, decentralized, uncontrollable coolness factor to them, but they’re just not in the same universe in terms of high-end software development as GPT-5.4 or Opus 4.6, they’re just not.
+
+Anyway, it pays sometimes to zig when others are zagging, and you can get an insane amount of compute in the used market if you’re smart about it. 
+
+I spent $3,800 for this machine. And just the CPU alone used to cost $6,500 a few years ago. But new high-core CPUs today aren’t much better!

@@ -1,4 +1,4 @@
-2026-02-19 | 49 likes
+2026-02-19 | 92 likes
 
 Now it's time to create an unholy alliance of this pi_agent_rust project with OpenAI's Codex, but with a truly next-level TUI provided by my FrankenTUI project... and it will be called FrankenCode. 
 

@@ -1,4 +1,4 @@
-2025-11-08 | 10 likes
+2025-11-08 | 9 likes
 
 Another obvious form of bias in the list is recency bias, which is probably an artifact of the training corpus comprising mostly internet text. This puts much more weight on things like VueJS that are popular now simply because there are many more training documents mentioning it.
 

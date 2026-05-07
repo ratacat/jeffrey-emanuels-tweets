@@ -1,0 +1,11 @@
+2026-03-25 | 15 likes
+
+If you're using beads to manage your project (which you really should be, particularly if you're following my Agent Flywheel approach!), then use this as your follow-up instead:
+
+❯ OK so please take ALL of that and elaborate on it and use it to create a comprehensive and granular set of beads for all this with tasks, subtasks, and dependency structure overlaid, with detailed comments so that the whole thing is totally self-contained and self-documenting (including relevant background, reasoning/justification, considerations, etc.-- anything we'd want our "future self" to know about the goals and intentions and thought process and how it serves the over-arching goals of the project.). The beads should be so detailed that we never need to consult back to the original markdown plan document. Remember to ONLY use the `br` tool to create and modify the beads and add the dependencies. 
+
+---
+
+And when it finishes doing that, you can just try this (hopefully it won't require a whole swarm to do efficiently!):
+
+❯ OK, so start systematically and methodically and meticulously and diligently executing those remaining beads tasks that you created in the optimal logical order! Don't forget to mark beads as you work on them.

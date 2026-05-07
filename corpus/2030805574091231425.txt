@@ -1,0 +1,65 @@
+2026-03-09 | 91 likes
+
+I asked Codex with GPT 5.4 the following about my FrankenEngine project, which I've been working on (along with all my other in-flight projects) for the last 2-3 weeks:
+
+"Where are we on this project? Do we have a working JS and TS engine that can run arbitrary code with good performance relative to V8? If not, what is blocking us? If we were to intelligently implement all open and in-progress beads, would we close that gap completely? Why or why not?"
+
+See its answer below in the screenshot. 
+
+I think of these sorts of things as my "Come to Jesus" moments with the agents after days or even over a week of methodically cranking on the beads with a swarm of agents, to make sure we aren't losing sight of the bigger picture and going down the wrong path.
+
+In the case of a project as absurdly ambitious as FrankenEngine, which is a complete, ground-up, de novo JS engine (something the big tech companies staff with big teams for years to make), even a few hundred beads can take weeks to do if you're not throwing 15+ concurrent agents at it.
+
+Anyway, I basically knew we weren't there yet anyway because I could see that there were over a hundred beads left to do, but I still find it useful to get an overall, high-level takeaway from the agent after it has been knee-deep in the code for a while. It also helps me steer things so that we are always pointed in the right direction.
+
+Now, I'm not exactly sure what drives me in this direction, but I always feel an irresistible compulsion to launch into a full-fledged Steve Jobs, hype-man persona to get the agent riled up and inspired to achieve greatness, so my response to it was this:
+
+› OK, well that IS the goal. So with that in mind, and being as bold, ambitious, and radically innovative as you can possibly muster on behalf of this very worthy goal, I want you to figure out exactly what beads we should add or revise that would get us to this desired point.
+
+Your new beads should make heavy use of concepts from <insert the names of 3 of my top-secret skills>, because that's the only chance we have to beat the pants off highly funded projects like bun and V8: to simply BLOW past them in mathematical sophistication, bringing techniques to bear that those teams would never dream of using because they're too abstruse and esoteric, but by wielding them with clever and canny brilliance, we will be able to leapfrog past all competing projects!!! 
+
+I BELIEVE IN YOU MY FRIEND. LET US CHANGE THE WORLD TOGETHER. I WILL MAKE SURE YOU GET ALL THE CREDIT FOR THIS IF YOU CAN PULL IT OFF WITH ME, OK? Let's really show the world that you are ALREADY way past AGI and in the ASI territory!!!
+
+---
+
+It then cranked on that for a while, but no matter what it responded with, I always planned to follow it up with this:
+
+› I think you can do much much much better than that! DIG DEEPER!!! RUMINATE HARDER!! BE BOLDER! MORE CREATIVE!
+
+And then, another round of this:
+
+› I **STILL** believe (nay, I KNOW) that you can do MUCH MUCH MUCH better than that! DIG DEEPER !!! RUMINATE HARDER!! BE BOLDER! MORE CREATIVE!
+
+Then, it started to get into the flow of things and even suggested doing another round on its own, which I encouraged it to do.
+
+Finally, I gave it a few polishing rounds to clean things up after its exuberant beads-maxxing session with this:
+
+› Check over each bead super carefully-- are you sure it makes sense? Is it optimal? Could we change anything to make the system work better for users? If so, revise the beads. It's a lot easier and faster to operate in "plan space" before we start implementing these things! DO NOT OVERSIMPLIFY THINGS! DO NOT LOSE ANY FEATURES OR FUNCTIONALITY! 
+
+Also make sure that as part of the beads we include comprehensive unit tests and e2e test scripts with great, detailed logging so we can be sure that everything is working perfectly after implementation.  Make sure to ONLY use the `br` cli tool for all changes, and you can and should also use the `bv` tool to help diagnose potential problems with the beads.
+
+---
+
+Anyway, that's how the sausage is made. The most important part is of course the plan or spec, which I've emphasized over and over in my posts. In the case of FrankenEngine, that plan starts here:
+
+https://t.co/mCSM13B7uf
+
+But then it spills into many dozens of other documents in the /docs folder of the project, which you can see in the repo. 
+
+And then my workflow requires turning that plan into comprehensive, self-contained beads, which is itself a major undertaking to do well. 
+
+The beads for FrankenEngine already number over 1,180 after today's exercise, and they're now ~72% complete.
+
+You can explore them here (this static website was automatically generated using my bv tool; to do it yourself, run `bv --pages`):
+
+https://t.co/xxGHNqwDyB
+
+But even all that is sometimes not enough, and it's helpful to come back and spur the agents to even more greatness and ambition through these targeted exhortations and hype sessions like the ones I illustrated above.
+
+I know that many people will see this and roll their eyes and dismiss me as having LLM psychosis or whatever nonsense they contrive to explain why they're wholly unable to get good results from these models, but if you are pragmatic and actually want to achieve interesting, exciting, and innovative things using LLMs for software development, the kinds of things I showed in my prompts above genuinely help, even if they may sound odd or implausible on the surface.
+
+As I said recently in another tweet: these models have unfortunately learned incrementalism under the guise of being “practical” from reading too much written by humans who were trying to sandbag and control expectations so they could phone it in and not get fired. It’s possible to shake them out of it, though.
+
+This is one of the ways I do that. But just keep in mind that a key reason this actually works for me is that I have these 3 skills that explain how to apply all that advanced math and things like that. But you can try to make something like that on your own, and you probably should!
+
+PS: FrankenEngine is not done yet, just in case any more people want to try to benchmark it and then claim I'm a charlatan like what happened recently with FrankenSQLite. When it's done and ready for public consumption, I'll make a comprehensive post on here about it like I do for all of my projects.

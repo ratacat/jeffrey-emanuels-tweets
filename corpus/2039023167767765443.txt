@@ -1,0 +1,17 @@
+2026-03-31 | 40 likes
+
+Useful AI health prompt:
+
+This works especially well for skin issues or cuts; anything that can be captured well in photos.
+
+Attach 4 clear photos and ask the following in both the ChatGPT app and the Claude app, then compare the top diagnoses and assigned probabilities (obviously adjust the prompt as needed):
+
+“My N-year old child has had this X for Y days (see attached photos). What are your most likely 5 diagnoses, and what is your assigned probability for each one, along with your detailed justification for each of those? And what would be the mainline treatment that a skilled specialist doctor would follow for each?”
+
+If the top diagnosis matches across both models (always use the strongest model with max thinking effort), and the probability of the top diagnosis is above 65% for both of them, that’s a pretty reliable indicator.
+
+This is also very helpful because, even if the top couple most likely diagnoses aren’t very serious, if any of the most likely explanations is very time-sensitive or dire, you can plan accordingly.
+
+The last two times I did this, the doctors both instantly agreed with the AI diagnosis.
+
+Interestingly, they didn’t always offer the same treatment options as the AI proposed, but when asked, they readily assented to trying them and agreed that they made good sense.

@@ -1,0 +1,69 @@
+2026-04-28 | 106 likes
+
+I find myself using the new skill version of my popular Idea Wizard prompt all the time to come up with new features and functionality for my projects and rank them in a structured way:
+
+https://t.co/WTDaXVByzE
+
+It automates the entire process from start to finish and can even turn them into beads for you and polish them. 
+
+The only drawback of the idea wizard skill is that it only uses the current model/harness you're invoking the skill from (usually Claude Code with Opus 4.7 or Codex with GPT-5.5). Still, it works very well.
+
+But I've been like a broken record for the past year always talking about how you can get far better, more consistent, and more reliable results by combining feedback from multiple frontier models and harnesses, since they tend to have different strengths and weaknesses, so that one model can often see past the blind spots of the other models.
+
+So I took that insight and turned it into a "Dueling Wizards" skill, which I think is a lot more powerful and which I've been applying left and right to many of my projects (and also during the planning phases of new projects I'm working on, when I'm still drafting the initial markdown plan):
+
+https://t.co/n2Li1ctWeb
+
+Dueling Wizards leverages my open-source ntm agent orchestration tool to create a swarm for you that includes Claude Code, Codex, and Gemini-CLI (whichever are available on your machine and working). 
+
+You can simply call it from within Claude Code or Codex, and it will configure and launch the swarm for you and manage the whole process (see screenshot).
+
+Essentially, each agent in the swarm (usually there will just be 2 or maybe 3 agents) does its own independent run of the regular Idea Wizard workflow and writes the results to a text file. 
+
+Then, once that stage finishes, each of the agents switches to reading and critiquing/grading the ideas of the other agents. Then they each review the feedback from the others on their own ideas and are given a chance to defend their ideas, or agree with the criticism of the other agents.
+
+All of these results are observed by the top-level agent that you invoked the skill from and it can decide what to do based on the entire "discussion." 
+
+You end up doing a much more thorough exploration of the space of ideas, and it's much more grounded in reality because of how these frontier models undergo a kind of "gestalt shift" when they're critiquing external ideas versus when they're coming up with their own ideas (this is also the basis of how the "fresh eyes" review concept works so well).
+
+One cool thing about both of these skills is that they are universally applicable. I mostly use them in the context of software development, but you could apply them equally effectively to a business plan, to a marketing strategy document, to an employee handbook draft, or really any other kind of project.
+
+Here is GPT-5.5's analysis of what makes Dueling Wizards so useful and compelling:
+
+---
+
+I studied the skill plus its references: prompts, scoring, operations, methodology, dynamics, variants, beads, integration, and the visualization. The short version: dueling-idea-wizards works because it turns ideation into an adversarial evidence pipeline instead of a brainstorm.
+
+Why It Works
+The core move is decorrelation. A single model generates ideas and then evaluates them with the same taste, blind spots, and reward biases that produced them. 
+
+The duel separates generation from evaluation: Claude, Codex, and/or Gemini independently study the same project, generate their own best ideas, and then judge the other model’s ideas. That makes agreement and disagreement meaningful.
+
+The 0-1000 score is also doing real work. It forces ranking, not vague approval. A 900/850 idea is different from a 900/350 idea, and the gap is often the most useful part of the whole run. Consensus means confidence; disagreement means hidden assumptions, framing mismatch, or a model-specific bias worth investigating.
+
+The reveal phase is the high-signal part. Each model sees how another model scored its own ideas and must either concede, defend, clarify, or revise. That pressure exposes weak self-justification fast. Strong ideas become sharper because they survive criticism; weak ideas collapse because their originator cannot defend them without handwaving.
+
+The optional rebuttal, steelman, and blind-spot phases are what make it unusually good. Rebuttal forces precise defense. Steelmanning forces the critic to make the opponent’s idea stronger than the opponent made it. The blind-spot probe asks what neither side saw after the adversarial exchange has expanded both models’ context. That is where genuinely new synthesis can appear.
+
+Why It Is Useful
+It has an aggressive kill rate. That is the point. Most ideas are not worth implementing, and this workflow finds that out cheaply, in writing, before engineering time is spent. It gives you consensus winners, contested ideas, and dead ideas, with reasons.
+
+It also preserves the risk model. The opponent’s criticism is carried into the final report and, if --beads is used, into the actual work items. That means implementation starts with known objections, edge cases, and failure modes already attached. The output is not just “build X”; it is “build X, because two models converged on it, and watch out for Y and Z because the adversarial review exposed them.”
+
+It scales across domains because the duel mechanic is domain-neutral. The skill has modes for architecture, security, UX, performance, reliability, and innovation. The prompts change, but the underlying engine stays the same: independent generation, cross-scoring, reveal, synthesis.
+
+Why It Is Compelling
+It has an unusually clear narrative shape: study, generate, duel, reveal, synthesize. That makes the artifacts easy to trust and easy to inspect. You can see how an idea entered the funnel, who liked it, who attacked it, whether the attack landed, and why the orchestrator ranked it where they did.
+
+It also creates productive tension. Normal assistant brainstorming is often too agreeable. This workflow explicitly licenses candid criticism, which produces sharper technical claims. The value is not in the attitude; it is in the specific objections that appear once a model is asked to judge another model’s best work.
+
+The visualization captures this well: two agents independently create idea sets, send scores across the middle, reveal winners/contested/kills, and converge on a small set of validated outputs. It makes the skill’s real shape visible: not “more ideas,” but “pressure-tested survivors.”
+
+Why It Is Accretive
+The skill is accretive because every phase leaves reusable artifacts: WIZARD_IDEAS_*, WIZARD_SCORES_*, WIZARD_REACTIONS_*, optional rebuttals/steelmans/blindspots, and the final report. Those artifacts become a knowledge base for future planning, implementation, validation, and postmortems.
+
+It is especially strong when chained with other skills. codebase-archaeology and reality-check-for-project improve the input context; modes-of-reasoning-project-analysis finds contested areas to focus the duel; beads-workflow turns winners into dependency-aware work; validation skills stress-test the winners before implementation. So the duel is not an isolated brainstorm. It is a middle stage in a larger build flywheel.
+
+The prior run memory backs this up: when this method was used on support-skill improvement work, the adversarial pass elevated validators, evidence contracts, and accretive learning loops over flashier broad automation. That is exactly the kind of judgment you want: prefer durable mechanisms that make future work better, not just impressive-sounding additions.
+
+The main caveat is that the method is overkill for trivial or urgent decisions. It needs at least two genuinely different model types, clean phase separation, and a disciplined orchestrator who reports the evidence instead of editorializing too early. Used in the right place, though, it is one of the better patterns for turning model diversity into concrete decision quality.

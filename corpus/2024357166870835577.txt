@@ -1,4 +1,4 @@
-2026-02-19 | 16 likes
+2026-02-19 | 21 likes
 
 If you're serious about creating complex, high performance Rust programs with a lot of concurrency and which have to interface with networks, disks, etc. (which is nearly every useful, important system you can think of), here's what you get "for free" if you build on top of asupersync (the clankers wrote this part tbh):
 

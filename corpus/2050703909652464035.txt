@@ -1,0 +1,39 @@
+2026-05-02 | 291 likes
+
+The bitter lesson applied to programming today is that you need to find ways to productively leverage as many tokens as possible. 
+
+People roll their eyes at this concept because it's easy for this goal to be misapplied and lead to wasteful nonsense.
+
+But if you just think about it, it's obviously correct. The models are VERY smart now and can work basically 24/7 for you, and you can conjure up as many of them as you want. 
+
+The only limitation is the number of Max/Pro accounts you have, and controlling enough fast machines with a lot of RAM and CPU cores to run them all.
+
+But that's just what you need to be in a position to do this. The bigger impediment for most is on the management side: how can you usefully direct and harness so many agents? 
+
+And the answer is that you need to work towards the goal of removing yourself from the equation as the bottleneck for as many projects as possible so that you can be making real progress on them every day.
+
+This frees you up to focus your energy on the couple of things that are most critical for any given project and so you can do the planning and conceptual work on new projects without having everything else come to a halt.
+
+The solution to doing this in practice is to use the right tooling (like Agent Mail, beads_rust, bv, ntm, cass, dcg, rch, etc.), the right planning methodology (the complete Flywheel guide), and the right skills (from https://t.co/gPMIHym3Hv).
+
+Are there other ways to go about this? Sure, everyone is increasingly converging on the same basic principles. 
+
+But I know for a fact that:
+
+* my tools (which are 100% free and open-source) really work (https://t.co/7EsCt2E1CU);
+
+* my planning methodology and workflows really work (I've already used them to make extremely powerful ground-up software projects like asupersync and FrankenTUI; see https://t.co/7QNNFwvs3Z);
+
+* my skills enable a different level of autonomy and economy of expression (I've seen a huge inflection in my own output, which was already pretty crazy before, since I started using them universally in all my work).
+
+So that's why I recommend them to people. There are nearly 1,000 people in the Agent Flywheel Discord (https://t.co/tliAdFZicC) now who can tell you the same thing: this approach really works, it's not just hype. 
+
+I'm not trying to justify some crazy VC valuation. It's just me cranking away with my 52 AI subscriptions and giving 99% of it away for free.
+
+The only things I directly monetize are my skills, and they are just $20/month because I'm trying to prioritize growth (hey, it works for Netflix and Spotify!)
+
+So give it a try. If you already have Claude Max and/or GPT Pro, you have most of what you need to get started. 
+
+You can run the tools on a mac, or better yet, rent a decent cloud server for $50 to $100/month, which works better and can scale more. The wizard on my https://t.co/N4As0kJTQP site walks you through every step of the process.
+
+I promise you that you won't regret taking the plunge. It's a lot to digest and understand and apply, but the rewards are magnificent right now because there's still huge alpha in being able to do this while 95%+ of the world thinks it's impossible or a pipe dream.

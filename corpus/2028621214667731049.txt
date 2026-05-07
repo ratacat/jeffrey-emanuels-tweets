@@ -1,0 +1,47 @@
+2026-03-02 | 11 likes
+
+Part 2:
+
+GHK-Cu (Copper Peptide)
+
+This is a naturally occurring tripeptide (glycyl-L-histidyl-L-lysine) bound to copper. Levels decline with age.
+
+What people hope to accomplish:
+Skin rejuvenation
+Increased collagen production
+Hair regrowth
+Improved wound healing
+Reduced inflammation
+
+It’s common in high-end skincare products and also used in injectable peptide circles.
+
+Proposed mechanism:
+GHK-Cu appears to act as a gene expression modulator. It upregulates collagen-related genes, downregulates inflammatory genes, promotes angiogenesis, modulates metalloproteinases, and supports extracellular matrix remodeling.
+
+The anti-aging narrative is simple: if levels decline with age and the peptide promotes youthful gene expression patterns, restoring it may partially restore tissue repair dynamics. There is reasonable dermatological evidence for topical use; systemic injectable claims are more speculative.
+
+Big picture:
+
+These compounds fall into two buckets.
+
+Regeneration signaling: BPC-157 and GHK-Cu aim to enhance tissue repair and extracellular matrix remodeling.
+
+Systemic axis modulation: Thymosin Alpha-1 targets the immune axis, while CJC targets the GH/IGF axis.
+
+The unifying theme is that they attempt to nudge endogenous signaling networks in directions associated with youth, repair, and resilience. Instead of injecting large exogenous hormones, users prefer upstream peptides that stimulate regulatory systems, hoping for more physiologic control and fewer side effects.
+
+Where uncertainty lives:
+
+Long-term cancer risk, especially with GH/IGF-1 manipulation
+Quality control issues in compounding or gray-market sourcing
+Poorly characterized dose-response curves in humans
+Limited long-term safety data
+
+If ranking by strength of evidence:
+
+Most clinically grounded: Thymosin Alpha-1
+Moderate topical dermatologic evidence: GHK-Cu
+Mechanistically interesting but weak human evidence: BPC-157
+Most likely to carry systemic tradeoffs: CJC due to IGF-1 elevation
+
+That’s the honest landscape.

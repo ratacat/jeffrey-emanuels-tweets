@@ -1,0 +1,13 @@
+2026-03-30 | 361 likes
+
+Since Claude Code is nearly useless to me until these new draconian rate limits go away (note: I’m not talking about usage limits; these are limits on the number of requests per minute, basically penalizing the use of concurrent agents), I thought I’d list the 3 biggest features from Claude Code that I miss in Codex. 
+
+Hopefully @thsottiaux and crew can close these gaps soon, since I’ve had to move almost all of my work over to Codex instead of half of it like I normally do:
+
+1) Ctrl-R to search across all your previously entered messages in that project. Not having this built-in is a huge bummer, and it would be so trivial to add it. Sure, I can use my cass (coding_agent_session_search) tool for this, but that requires that I ask the agent to do it or use another terminal. I use this in CC constantly and it saves so much time.
+
+2) No built-in looping/cron functionality. This is just incredibly useful for having CC manage a swarm of agents for me using my ntm (named_tmux_manager) tool. With CC, I can give it the high-level goal and tell it to check in with the swarm every 3 minutes and give instructions to any agents that are idle or need to be restarted. Then I can come back 5 hours later, and a massive amount of useful work has been done. Codex requires babysitting or just queuing up messages, which is much worse.
+
+3) Hooks. I know there’s finally some motion on this now, but what I specifically miss are the pre-tool use hooks so I can get my dcg (destructive_command_guard) tool working in Codex finally.
+
+I really like both models and harnesses and hope desperately that Anthropic can get its affairs in order and fix this show-stopping issue for me and others who use swarms in our workflows. Right now, it’s basically not usable.

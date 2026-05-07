@@ -1,0 +1,24 @@
+2026-04-14 | 504 likes
+
+Well, it's probably coming too late for most people unless you're planning on filing an extension, but I created a truly ambitious skill for tax preparation on my skills site, https://t.co/Un9brY2G3l
+
+This skill spans 158 markdown files totaling 2.7 megabytes of text. It covers every state, tons of different professions, life events, and all sorts of sophisticated tax strategies, with all kinds of expertise about even niche topics like opportunity zones and captive insurance.
+
+Much of the underpinnings of it, including the nuts-and-bolts use of the Aiwyn MCP tax connector and the use of https://t.co/kxK2ZKXoly with Playwright MCP, is based on my actual multi-day session history preparing and filing my own fairly complex return, so I know it all works (I just finished filing mine a few hours ago).  
+
+Here's how GPT 5.4 describes it and what makes it special:
+
+The "tax-return-preparation-and-advice-generic" skill is a source-verified, multi-year tax intelligence skill that turns AI from a glorified form-filler into a high-end tax strategist. 
+
+It helps analyze returns across years, detect missed deductions and carryforwards, reconcile life events and profession-specific rules, model aggressive but defensible planning moves, and ground recommendations in current law instead of stale tax folklore.
+
+The result is a tax-prep and tax-planning system that is broader than software, more systematic than a one-off CPA review, and dramatically more useful for complex real-world filers.
+
+What makes it special:
+
+  - It is multi-year by design. Most tax tools look at one return; this skill looks for patterns, carryovers, inconsistencies, and missed opportunities across years.
+  - It is verification-first. The methodology is built around checking current IRS instructions, publications, and state guidance before making live filing claims.
+  - It is aggressively practical. It does not stop at “here are the rules”; it pushes toward elections, timing moves, entity choices, depreciation strategies, retirement optimization, PTET, QBI, and other real savings levers.
+  - It is unusually universal. It routes by profession, life event, situation, and jurisdiction, so it can adapt to freelancers, high earners, retirees, students, business owners, rental investors, divorce, inheritance, relocation, and more.
+  - It is audit-aware. It emphasizes documentation, defensibility, and red-flag detection instead of encouraging sloppy “tax hacks.”
+  - It is built for real execution. It includes filing workflows, tool guidance, and structured reference material, so an agent can move from analysis to action rather than just giving vague advice.

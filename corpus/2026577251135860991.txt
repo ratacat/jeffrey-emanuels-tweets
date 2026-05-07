@@ -1,0 +1,15 @@
+2026-02-25 | 9 likes
+
+Ok, so this ended up working well (at least I hope so… I won’t know for sure until the stuff arrives and all works). It found me the best computer listing based on my very specific needs. 
+
+It had a buy-it-now price of $849, but Claude suggested making an offer of $740 based on recent closed auctions for similar listings. I did that, and the offer was accepted a couple hours later.
+
+The machine was a great deal because of supply and demand. There are just so many companies that are decommissioning these old servers for whatever reason (obsolescence, moving to the cloud, etc) and not many natural buyers. 
+
+But it’s just one of only two popular models that can take the extra 32-core AMD ThreadRipper CPU I had lying around (the market for these is much tighter, and that CPU alone is worth over $1,000 now, more than the entire computer, which includes a slower CPU!). So it works out well for me.
+
+The bigger problem is that, for this to be useful to me, I really need it to have at least 512gb of ECC RAM. And that is surprisingly expensive, even for older DDR4 memory! 
+
+Claude helped me find the absolute cheapest listings for used memory, at around $140-$150 for a single 32gb module (I needed 16 of them!).
+
+So the memory turned out to cost $2,802, or 3.5 times the cost of the computer! Anything for my clankers I guess…

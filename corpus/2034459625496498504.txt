@@ -1,0 +1,3 @@
+2026-03-19 | 49 likes
+
+I know people get really bent out of shape by the onslaught of low-quality "slop PRs" and GitHub issues in open-source projects, but when you automate the entire process, it doesn't bother you at all. Note the 2 "Spam/nonsensical issues" that Claude closed with extreme prejudice: https://t.co/29hnEYuJFB

@@ -1,0 +1,5 @@
+2026-03-23 | 28 likes
+
+Keeping these numbers up to date in my GitHub profile page is a full-time project in itself!
+
+I finally set up some GitHub Actions today to hopefully automate the star-counting once per day. It probably won't run reliably, though, since they always cut me off for too much usage. https://t.co/3pJfnA5ol8

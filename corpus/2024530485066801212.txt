@@ -1,4 +1,4 @@
-2026-02-19 | 22 likes
+2026-02-19 | 31 likes
 
 FrankenTerm is under active development now. It started out as wezterm_automata but has turned into a full-fledge independent terminal emulator based on the best aspects of WezTerm (which it's most directly based on) and Ghostty and Rio.
 

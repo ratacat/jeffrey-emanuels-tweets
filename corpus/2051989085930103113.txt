@@ -1,0 +1,3 @@
+2026-05-06 | 21 likes
+
+TLDR: automate all the Stripe and PayPal billing related code for your site with this one “weird trick” (skill):

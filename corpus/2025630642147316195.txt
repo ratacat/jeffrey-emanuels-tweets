@@ -1,0 +1,17 @@
+2026-02-22 | 13 likes
+
+And btw, these 2 projects are among over 40 projects that I'm advancing daily if you look at my GitHub activity. 
+
+Many of these other projects are similarly ambitious, including my complete replacement for glibc (FrankenLibC) and my FrankenFS project which provides safe version of both ext4 and btrfs.  
+
+Some others include:
+
+FrankenNumpy
+FrankenTorch
+FrankenJax
+FrankenRedis
+FrankenMermaid
+FrankenNetworkX
+FrankenPandas
+
+These are all real projects that are coming along very quickly.

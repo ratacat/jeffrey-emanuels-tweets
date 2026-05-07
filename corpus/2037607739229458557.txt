@@ -1,0 +1,19 @@
+2026-03-27 | 309 likes
+
+I want to crowdsource a list of the very best exemplars of modern, high-performance coding. 
+
+That is, libraries and projects that are much faster than they have any right to be; that are so much faster than other projects that it leaves you wondering what kind of black magic was used.
+
+Ideally, these should be implemented in "next-gen" languages like Rust and Zig, but don't have to be. 
+
+They should also ideally reflect a deep understanding of modern hardware and what's possible now: massively multi-core processors like the 64-core Threadrippers, what you can do differently if you only target the fastest M.2 NVMe SSDs, what you can do with a giant pile of RAM (say, 256gb+ or 512gb) that would be impossible otherwise, etc.
+
+I'll give you one to start: https://t.co/kcKUqsB06i by @neogoose_btw 
+
+You can get crazy results by just telling Opus 4.6 or GPT 5.4 to clone that to tmp and study it and look for ideas for improving search in your own project.
+
+I just did that for my FrankenSearch library which I use in cass, xf, and mcp_agent_mail_rust, and it learned a bunch of clever optimizations it probably wouldn't have thought of on its own. 
+
+Even though fff is written in Zig and my stuff is all in Rust, it doesn't matter. The models can just instantly understand these things at a higher level of abstraction.
+
+So let me know your top choice for various categories.

@@ -1,0 +1,7 @@
+2026-04-16 | 30 likes
+
+Clearly my sentiments about Opus 4.7 aren’t universal. 
+
+But I suggest people wait a day or two before passing judgement, since these could easily be deployment bugs common to new model launches in this new era of heterogeneous inference hardware:
+
+https://t.co/bNXDYbSu4J

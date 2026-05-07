@@ -1,0 +1,29 @@
+2026-03-22 | 61 likes
+
+Just had a kind of weird idea that ties into the "in-context recursive self-improvement" ideas I've been going on about. 
+
+That's where you use coding agent session histories with CLI tools and in general to improve skills, which you can then use in future sessions to help use those tools more effectively.
+
+I've already recently given some examples where I used my actual "organic" session histories from Claude Code and Codex to find the material to use for this process. 
+
+But that got me thinking: what if we explained to the agent ahead of time that we are planning on doing that, and ask them to make it easier for us by being more verbose and articulate about their thought process and approach than they otherwise would be?
+
+An analogy would be to tell an artist who you're making a documentary film about to discuss what they're doing and thinking as they paint a painting or whatever, even if they'd normally do that in silence.
+
+Sure, you might interfere with the process through some "observer paradox" action, but it would be a hell of a lot more useful than just watching in silence, at least if your goal is to get inside the artist's head and understand the thought process and reasoning and intention behind the actions.
+
+So to that end, I just asked an agent working on the private admin section of my https://t.co/Un9brY2G3l site to do the following (the key sentence is at the end):
+
+---
+
+❯ First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project.
+
+Then I want you to add a FAR more comprehensive, in-depth, powerful, versatile, flexible, and sophisticated analytics engine and dashboard to the /admin section of the site. You can use /data/projects/flywheel_private/BUSINESS_PROJECTIONS.html that's from another unrelated business for inspiration, ideas, code, etc. 
+
+Try to clearly articulate your thinking and approach as you go for my own benefit, since later I'll be using this session transcript to turn this all into a new skill.
+
+---
+
+Not sure how this will work out, but I have a feeling it will probably lead to a better skill when I try to generalize from this. It seems particularly useful when you don't have many examples to draw from. 
+
+I also wonder if this might help the agent do a better job in the first place, because the narration will act like additional chain-of-thought effort that they'd normally skip over.

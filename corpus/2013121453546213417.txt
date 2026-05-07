@@ -1,4 +1,4 @@
-2026-01-19 | 134 likes
+2026-01-19 | 133 likes
 
 I finally got around to dogfooding my own ntm tool for managing a bunch of agents, and... it's not bad? 
 

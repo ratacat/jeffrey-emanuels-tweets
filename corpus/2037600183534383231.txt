@@ -1,0 +1,3 @@
+2026-03-27 | 54 likes
+
+The frontier models already know all these things. They just need to be poked and prodded in the right way to bring out the big guns, and a smart framework for deciding where to focus next, how to measure success with benchmarks, and how to prove that their changes are isomorphic

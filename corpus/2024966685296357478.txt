@@ -1,0 +1,3 @@
+2026-02-20 | 10 likes
+
+That way you can switch between a touch mode (where tapping is like using the mouse) and a keyboard mode (where tapping brings up your on-screen keyboard). But maybe there’s an even better way. Still experimenting.

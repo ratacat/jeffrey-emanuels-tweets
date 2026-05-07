@@ -1,0 +1,5 @@
+2026-04-25 | 10 likes
+
+I wasn’t clear enough on the Schur’s theorem one at first (I meant the linear algebra decomposition) and it made this thing.
+
+I was pretty confused. Turns out his more famous theorem is about coloring integers. Learn something new every day I guess… https://t.co/Khwb9kc8jC

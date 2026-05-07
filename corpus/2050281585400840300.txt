@@ -1,0 +1,5 @@
+2026-05-01 | 10 likes
+
+Oh yeah, and the answer to the question I asked is that there is in fact a mini sentence-splitting transformer model that’s just 9 million parameters (a 36mb file), and it seems to work pretty well:
+
+https://t.co/loxQq1eKEx

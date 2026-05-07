@@ -1,0 +1,13 @@
+2026-04-24 | 42 likes
+
+I've been so impressed with the new ChatGPT image generation model that I had very high expectations for what it would do when prompted with something of the form:
+
+"Make the most [X] painting you can possibly conceive of."
+
+Where X is cubist, surrealist, impressionist, baroque, etc. So I was really disappointed to see how totally derivative and bland they all are.
+
+The surrealist one is just a direct Dalí knockoff, no attempt at creating new elements in a similar theme. Same with the impressionist one, just a direct Monet copy. The cubist one is a Picasso/Braque amalgam.
+
+Not sure what I was expecting here. Perhaps the prompt induced it to make what it thought the typical human would find to be the "most" impressionist, surrealist, etc. 
+
+I am chiding it now for being a copycat and will report back what it comes up with next.

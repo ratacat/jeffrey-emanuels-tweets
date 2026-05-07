@@ -1,0 +1,23 @@
+2026-04-26 | 31 likes
+
+Prompts used:
+
+Optimal visual depiction of using linear algebra to solve the optimal scarce allocation problem in economics and how and why the approach works in a realistic and concrete example, providing excellent visual intuition and motivation; beautiful and elegant appearance.
+
+—
+
+Optimal visual depiction of using linear algebra and eigen-decomposition to model the stresses and forces in a system of steel trusses and how and why the approach works in a realistic and concrete example, providing excellent visual intuition and motivation; beautiful and elegant appearance.
+
+—
+
+Optimal visual depiction of using linear algebra and eigen-decomposition to model the acoustic performance of a specific design for an auditorium space and how and why the approach works in a realistic and concrete example, providing excellent visual intuition and motivation; beautiful and elegant appearance.
+
+—
+
+First, this:
+
+Optimal visual depiction of Rank-Nullity theorem from linear algebra) and how and why it it’s true in various scenarios, providing excellent visual intuition and motivation; beautiful and elegant appearance.
+
+Followed by this (pictured):
+
+Cool, now make another one all about the practical applications of the theorem

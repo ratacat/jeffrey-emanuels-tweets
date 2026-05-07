@@ -1,4 +1,4 @@
-2026-01-06 | 81 likes
+2026-01-06 | 84 likes
 
 Before you burn up a lot of tokens with a big agent swarm on a new project, the old woodworking maxim of "Measure twice, cut once!" is worth revising as "Check your beads N times, implement once," where N is basically as many as you can stomach.
 

@@ -1,0 +1,13 @@
+2026-03-31 | 20 likes
+
+And I know people will say “the tooling isn’t there to babysit users. The user should know wtf they’re doing.”
+
+And yeah, sure, that’s always been the prevailing ethos in Unix and dev tooling generally. But it seems unnecessarily user-hostile to me.
+
+In all my agent tooling, I try to anticipate and observe all the common failure modes and the various ways the agents screw up using the tool or get confused, and then redesign things so that they won’t happen in the future, or at least give helpful warnings and errors that actually explain the issues. 
+
+And I try hard generally to tease out and intuit user intent when it’s obvious and legible from the context rather than just giving hard errors or doing obviously dangerous things.
+
+In the sharing features in my cass and beads_viewer tools (which let you export to a static site using GitHub pages), I really make the user consciously understand the risks, and it’s disabled by default. And even then, I try to scrub sensitive info like API keys for another layer of protection. 
+
+Not that I have to, but because I’d feel terrible if my tools led people to make catastrophic mistakes too easily when it could have been avoided with more thoughtful design choices.

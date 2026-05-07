@@ -1,0 +1,5 @@
+2026-04-15 | 7 likes
+
+To get the best results from all these “mega” skills (especially the ones that launch a whole swarm using ntm or via subagents), it’s crucial to do a final check over everything with the main agent to confirm findings, particularly before trying to implement anything based on the results. As explained here:
+
+https://t.co/a0ATTESRah

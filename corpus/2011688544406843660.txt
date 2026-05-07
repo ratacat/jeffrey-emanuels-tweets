@@ -1,4 +1,4 @@
-2026-01-15 | 315 likes
+2026-01-15 | 317 likes
 
 Because I'm now operating much more at the planning level, I repurposed what is perhaps my single most useful prompt that I ever came up with for coding (and hundreds, if not thousands, can attest to its surprising efficacy): what I call my "fresh eyes" review prompt. 
 

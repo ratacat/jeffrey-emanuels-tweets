@@ -1,0 +1,11 @@
+2026-04-21 | 95 likes
+
+This library-updater skill is really handy and has saved me many hours of grunt work today.
+
+You can simply invoke it in a project and it then looks at all of the dependencies, researches the change logs of all the intervening versions up through to the latest available one, and then updates them one at a time with a detailed log.
+
+For each library update, it then fixes/revises anything in your code that was deprecated or changed in the new library version. Finally, it runs all your tests to verify that it everything still works and reverts if necessary.  
+
+You can just let it run on any Rust, GoLang, Typescript, Python, etc. project and come back in 30 minutes and it "just works." Available on https://t.co/Un9brY2G3l 
+
+It might not be as expansive or exciting as some of my recent skills, but it's a quiet workhorse for me that does its job well and makes it easier for me to manage so many projects.

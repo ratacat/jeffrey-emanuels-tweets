@@ -1,0 +1,5 @@
+2026-03-07 | 24 likes
+
+This is a proven process that layers together many dozens of optimizations which can speed up individual parts of a project from anywhere between 5x and 5%. 
+
+But even 5% speed gains add up when they are compounded together over many dozens of rounds. And sometimes you get the occasional 50x speedup, especially when you apply crazy math like I always do.

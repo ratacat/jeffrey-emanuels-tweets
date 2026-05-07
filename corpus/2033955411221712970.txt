@@ -1,0 +1,45 @@
+2026-03-17 | 254 likes
+
+People are constantly asking me about my planning and execution methodology for creating software using my Agent Flywheel system of tooling, prompts, and workflows.
+
+As a result, I find myself posting the same link, often multiple times in a day, to a post of mine that includes links to 5 other X posts and threads I've made about my methodology.
+
+While this "works," in that a motivated person can read through each post and understand my approach pretty well, I realize that it's far from optimal, and a lot of people see that and just give up quickly.
+
+So I finally decided to gather together all my materials on my method and turn them into two different articles with different target audiences.
+
+Perhaps unsurprisingly, I was able to extensively leverage my own tools to do this effectively. For one, I was able to use my xf tool (for searching your personal X post archive that you can download from X) to pull in all the various posts and my replies to people in those threads into a single large markdown document.
+
+Then, I had agents use my cass tool to search for my real-world usage of my various tools and to gain insights into my planning process from firsthand observation.
+
+I also had a lot of materials in the tutorials section of the Agent Flywheel website, as well as in various agent skills I've created. 
+
+All of this was woven together and synthesized into a single comprehensive document, The Flywheel Approach to Planning and Bead Creation:
+
+https://t.co/7QNNFwvZTx
+
+This is the new canonical and complete guide to my approach, with everything in one place and synthesized into a coherent whole so that you don't need to scrounge around for all the different posts.
+
+I will also be updating the article as my methodology evolves and in response to reader feedback on what is confusing or unclear (so please let me know in the comments).
+
+Incidentally, as I got to the final stages of preparing this document, I found this prompt to be extremely useful:
+
+"Read the entire document again with fresh eyes all the way through, putting yourself in the position of a smart software developer who is new to agentic coding and doesn't know how to use the Flywheel or agent swarms effectively yet and who doesn't understand the planning process or beads, etc. What would be most confusing? How could we make it more engaging and intuitive without removing any content and without simplifying anything (think additively)?"
+
+Beyond that big comprehensive guide, as the Flywheel system has grown to 20+ tools now, I've heard repeatedly from people that they find the entire system too overwhelming, because there are so many tools to understand.
+
+But the truth is, there is a "core" to the Flywheel approach which captures most of the value and just uses 3 tools: 
+
+* My Agent Mail project for coordination and communication of multiple agents of various types; 
+
+* beads_rust (br) for task management; and 
+
+* beads_viewer (bv) for automatically triaging the beads graph so that agents always work on the optimal next bead to maximize overall development velocity.
+
+So to that end, I created a separate, shorter, more-focused article for beginners to the system, the Flywheel Core Loop Guide:
+
+https://t.co/2ThxLgzWuk
+
+If you've previously been interested in the Flywheel but found it to be too hard to understand or had "information overload" (which is totally understandable... this stuff emerged organically over months of working on this stuff, so I'm sure it's a lot to take in all at once like that), I highly recommend checking it out.
+
+Once you get the hang of it, you can then layer in additional utilities, starting with destructive_command_guard (dcg) to prevent agents from blowing up your projects or machine; coding_agent_session_search (cass) to search instantly across all your agent sessions, and give this power to your agents themselves; and ultimate_bug_scanner (ubs) for finding bugs and problems across most popular programming languages in a single tool that is heavily optimized for use by agents.

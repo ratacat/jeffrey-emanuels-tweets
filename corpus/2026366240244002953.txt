@@ -1,0 +1,5 @@
+2026-02-24 | 185 likes
+
+Remember I said I’d do all this crazy stuff by early February? I did, and since then I’ve ramped things up even more dramatically. 
+
+By the end of March I should be done with my complete compatible safe Rust glibc replacement, my compatible safe Rust ext4/btrfs replacement, etc.

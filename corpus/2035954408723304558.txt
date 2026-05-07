@@ -1,0 +1,5 @@
+2026-03-23 | 62 likes
+
+The iteration speed possible today with agent-driven development in response to user feedback is just wild. 
+
+From the moment I saw this suggestion to when it was shipped was like 2 or 3 hours, tops. And it probably only took 15 minutes of human time for me to do it all. https://t.co/pKUkW10x82

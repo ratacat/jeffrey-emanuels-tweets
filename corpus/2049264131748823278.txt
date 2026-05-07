@@ -1,0 +1,15 @@
+2026-04-28 | 38 likes
+
+This skill in the quoted post shows something I think is really important: skills can do a lot more when they are combined with custom cli tools like my ntm, which lets agents create and manage swarms as part of the skill workflow.
+
+Or like my cass tool, which lets you instantly search across all your agent session histories and across all your installed harnesses.
+
+You can build cass functionality into the skill itself so that it can study your particular projects and history and adapt accordingly.
+
+And then, of course, I have various dedicated skills for explaining how to best use each of those cli tools, like /ntm and /cass. 
+
+And I also have skills for applying the tools as part of larger structured workflows, like my /vibing-with-ntm skill.
+
+And since skills can call other skills, you don't need to repeat yourself about cass and ntm in a new skill, you can simply reference the /cass and /ntm skills in the new skill. 
+
+Then the new top-level skill can be given knowledge of how to use my jsm tool to automatically install any referenced skills that might be missing. It all "just works" and lets you build up towers of hierarchical conceptual power.

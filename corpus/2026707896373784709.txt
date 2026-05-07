@@ -1,0 +1,19 @@
+2026-02-25 | 113 likes
+
+Before LLMs, I used to constantly have these sudden thoughts or realizations which seemed profound or interesting to me, but which I had no way to quickly validate, or to even check if they were confused nonsense.
+
+But now I can ask Claude and get an instant response, and it’s so awesome for me to be able to close that loop with so little time and effort required.
+
+I’ll give you an example from just now. I was reading the Wikipedia page for Gödel’s completeness theorem (not the incompleteness theorem, mind you) that I shared with someone on X.
+
+While reading this sentence:
+
+“The completeness theorem makes a close link between model theory, which deals with what is true in different models, and proof theory, which studies what can be formally proven in particular formal systems.”
+
+My mind made one of its involuntary and instant associations to Claude Shannon’s master’s thesis, which is ostensibly about something very different.
+
+If you’re not familiar, Shannon showed (which has to be up there in history for most impactful master’s thesis) that every electronic circuit corresponds to an expression in Boolean Algebra. And therefore that you can understand and analyze a circuit by doing algebra on the equivalent expression.
+
+Anyway, this seemed to be closely connected with the Gödel theorem to me but I wanted to get a quick vibe check that I wasn’t just imagining things because of sleep deprivation.
+
+And yes, I’m happy to report that there is indeed a profound connection there.

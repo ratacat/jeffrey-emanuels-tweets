@@ -1,0 +1,9 @@
+2026-04-08 | 40 likes
+
+Well, I’m not convinced by the NYT piece “exposing” Adam Back as Satoshi. And even if he is in fact Satoshi, it’s extremely messed up for them to endanger his personal safety like that.
+
+But if he is, then I think it’s bullish for the Bitcoin price given the recent rumblings about compressed timelines on quantum attacks against elliptic curve cryptography (used in bitcoin’s digital signatures). 
+
+The big risk there would be that Satoshi’s coins are sitting ducks for a quantum attacker to steal in 2030 or whatever and then tank the BTC price by market selling huge chunks of supply. 
+
+But if Satoshi is still alive and well, he could presumably upgrade his original coins by sending them to a new address once the Bitcoin community adopts a suitable new post-Quantum digital signature scheme and thereby keep them off the market.

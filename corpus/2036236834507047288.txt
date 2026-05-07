@@ -1,0 +1,11 @@
+2026-03-24 | 240 likes
+
+Agent Coding Life Hack:
+
+Whenever your agent finds and fixes a bug in your project, don't let it just stop there. 
+
+Ask it to also create comprehensive end-to-end integration tests that would have caught that bug and all similar types of bugs in the future:
+
+"Also I need you, once you've fixed and verified each of those problems is completely resolved and working properly, to create extremely in-depth e2e integration tests that would have caught each of those issues plus any other similar issues of the same basic kind so this sort of thing can't happen again in the future."
+
+Not only will this harden your project, but you might be surprised at just how many additional new bugs and problems it immediately flushes out into the open.

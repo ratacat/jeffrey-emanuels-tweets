@@ -1,0 +1,3 @@
+2026-04-27 | 10 likes
+
+It's very nice how the TUI dynamically adjusts to look good and informative at any resolution, size, or shape (FrankenTUI is extremely good at this); plus everything in the TUI is accessible with the mouse if you want to use one:. I spent an insane amount of time just on the TUI: https://t.co/BqALLplBMZ

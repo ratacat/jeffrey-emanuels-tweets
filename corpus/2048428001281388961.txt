@@ -1,0 +1,5 @@
+2026-04-26 | 192 likes
+
+I was curious how much the new ChatGPT image model would vary in its outputs given the same detailed prompt to make a math explainer infographic.
+
+The result: quite a bit! If it’s something important to you, try generating it a couple times, even if the first one looks great. https://t.co/7o2pGuI33R

@@ -1,0 +1,47 @@
+2026-04-27 | 120 likes
+
+The Rust rewrite of my MCP Agent Mail project has been "finished" for a while, but I've been reluctant to promote it because the original Python version is so battle-tested and reliable now, and also because I've been grappling with various bugs and reliability issues in the Rust version.
+
+Why? Because I decided to make it a testbed for my various other projects and "dogfood" everything possible: 
+
+1) The elaborate TUI is built using FrankenTUI, my from-scratch TUI framework.
+
+2) The entire backbone of the system is built using my asupersync framework (no Tokio allowed); this is also the basis of the Rust version of FastMCP that I built to do all the MCP operations.
+
+3) The search functionality is provided by FrankenSearch, my from-scratch search library.
+
+4) The automated detection of any installed agent harnesses (including all popular ones) has been abstracted into my separate FrankenAgentDetection library.
+
+5) Most challenging of all, I insisted on using my FrankenSQLite project for all the SQLite stuff instead of taking the easy way out and using rusqlite (which just wraps the original C SQLite). Compounding that, the ORM system I used is my Rust version of SQLModel.
+
+So that's 7 Rust libraries that go into it, that were all being developed concurrently, each going through their own growing pains as I finalized them and finished building out all the functionality.
+
+And when you're running dozens of agents at the same time on the same machine, MCP Agent Mail is VERY demanding on every part of the system, especially the dozens of concurrent database writers.
+
+The good part is that it has helped me flush out bugs across all the libraries.
+
+The bad part is that it has been an absolute slog to grind through everything, and I'm so dependent on Agent Mail working well that it has been very annoying for my own workflows when I've run into bugs such as mail database corruption issues, TUI processes pinning the CPU, etc. 
+
+But I've stubbornly stuck with it, and now I'm pleased to say that it's pretty stable and working well across all my machines. 
+
+I'm not saying it's perfect, I'm sure I will continue to find and fix bugs, especially as more people try it on different setups. But it's been very stable and reliable for me for the past week.
+
+It also holds up MUCH better than the original Python version when you're dealing with more than 15 agents at the same time (full agent instances, not sub-agents); I used to run into constant issues with the legacy SQLite because of the concurrent writes, and things would get extremely slow after a while.
+
+Those problems have vanished with the excellent performance of Rust end-to-end and the native concurrent writing capabilities of FrankenSQLite.
+
+There are also tons of new and useful features, such as the "Air Traffic Controller" that helps automate management of agents in the background, and the TUI interface covers huge amounts of functionality that used to require a web browser to navigate, so now you never need to leave the console. You can see in the attached screenshots. 
+
+If you want to give it a try, I've made it easy to install over your existing Agent Mail installation. If you don't like it, you can uninstall and roll it back. If you run into any problems, just have Claude Code or Codex handle it for you. You can get it here:
+
+https://t.co/7qoswAY0QT
+
+Always free and open source. If you have any problems with it, file an issue on GitHub and it will be triaged the same day. Let me know what you think!
+
+PS: If you want to understand how MCP Agent Mail fits into my larger Agent Flywheel tooling suite and approach, read the free complete guide:
+
+https://t.co/7QNNFwvs3Z
+
+Or if that's too long for you, check out the "core" guide, which focuses just on Agent Mail, beads_rust, and beads_viewer:
+
+https://t.co/2ThxLgzoEM

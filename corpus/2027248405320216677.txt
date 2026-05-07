@@ -1,0 +1,3 @@
+2026-02-27 | 46 likes
+
+Pro Tip: the "Home" and "End" keys on your keyboard move to the beginning and end of your entered prompt in Claude Code. For some reason I hadn't tried that until a couple weeks ago. https://t.co/BaAD9hR3zJ

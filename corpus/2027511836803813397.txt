@@ -1,0 +1,52 @@
+2026-02-27 | 10 likes
+
+That was from GPT 5.3 above. But CC with Opus 4.6 is even more bullish on the progress:
+
+91.3% of all symbols are fully native (Implemented + RawSyscall = 2,527). No glibc needed for those at runtime. Only 240 still delegate.
+
+What’s been built (the hard stuff)
+
+The most complex native implementations we’ve completed:
+printf/scanf engine (88 symbols) — Full POSIX format-string parser + renderer with x86_64 va_list manual walking (GP regs gp_offset<48, FP regs fp_offset<176). Handles %s/%d/%f/%n, width/precision, flags, * args, positional %1$s, wide variants (wprintf/wscanf). Arguably the single hardest piece.
+Math library (163 symbols) — sin/cos/tan/exp/log/pow/sqrt + all f32 variants, Bessel (j0–yn), erf/erfc, gamma, remquo, sincos, nan, fdim, fma, etc. Uses the libm crate for core algorithms.
+POSIX regex (regex_abi) — Full regcomp/regexec/regerror/regfree with BRE + ERE support, backreferences, bracket expressions, character classes. Native Rust NFA.
+Memory allocator (malloc_abi) — malloc/free/calloc/realloc/memalign/posix_memalign/aligned_alloc with the membrane safety layer.
+ucontext (4 symbols) — Hand-written x86_64 inline asm for getcontext/setcontext/makecontext/swapcontext with register save/restore, signal-mask preservation, and uc_link trampoline.
+posix_spawn (29 symbols) — Native fork+exec with file actions (open/close/dup2), spawn attrs (resetids, setpgroup, setsigmask, setsigdef), plus the 12+ accessor functions.
+Password hashing (11 symbols) — SHA-512/SHA-256/MD5 crypt() with proper salt parsing, rounds support, full B64 encoding. Security-critical code.
+POSIX threads (160 symbols) — Mutex/rwlock/condvar/barrier, thread create/join/detach, TLS (pthread_key), once, spin locks, cancel, name get/set, C11 threads layer.
+Wide character / Unicode (66 symbols) — Full wcs* ops, mbrtowc/wcrtomb multibyte conversion, wide printf/scanf via UTF-8 bridge.
+Network interfaces (getifaddrs) — Native netlink socket (RTM_GETLINK + RTM_GETADDR) parsing. No glibc needed.
+C23 stdbit (70 symbols) — All 14 bit-manip ops across 5 unsigned types, pure Rust.
+glob/fnmatch — Full POSIX glob with *, ?, [], ranges, negation, GLOB_TILDE, GLOB_BRACE.
+syslog — Native /dev/log Unix-domain socket writer with BSD format, reconnection, LOG_CONS fallback.
+wordexp — POSIX word expansion (tilde, env vars, glob, field splitting).
+
+What’s left (the 240 GlibcCallThrough)
+
+The remaining 240 symbols break down into 4 groups:
+
+• rpc_abi (117): XDR binary serializers (68), RPC server/SVC framework (24), RPC client (11), authentication (7), portmapper (5), misc (2).
+• io_internal_abi (114): glibc’s _IO_FILE internal vtable — _IO_putc/_IO_getc/_IO_seekoff, string stream ops, wide stream ops, etc.
+• dlfcn_abi (5): ELF loader internals: dladdr1, dlinfo, dlmopen, dlvsym, + one more.
+• glibc_internal_abi (4): ELF introspection helpers in the same family (dl* queries).
+
+Difficulty assessment of remaining work
+
+The hardest work IS done:
+printf/scanf was the single most complex piece (format parsing, x86_64 va_list walking, float rendering, flags/width/precision). Done.
+ucontext required hand-written x86_64 asm for register save/restore. Done.
+crypt/password hashing required SHA-512/SHA-256/MD5 with security-critical correctness. Done.
+Memory allocator, POSIX threads, regex engine, posix_spawn — all high complexity, all done.
+
+The remaining 240 are hard for a different reason: they depend on glibc-internal data structures that aren’t part of any standard.
+_IO_FILE internals (114): These poke at glibc’s internal FILE* layout (buffer pointers, vtable dispatch, wide-stream state). Replacing them means building a full stdio vtable that’s ABI-compatible with glibc’s private struct _IO_FILE. Fragile + version-specific.
+XDR/RPC (117): XDR is well-specified (RFC 4506), but the RPC framework involves sockets, portmapper registration, auth negotiation, and service dispatch loops. It’s ~15K lines of C in glibc. We already nativized the ~35 easiest pieces (stubs, error strings, TLS, netname conversion); the remaining 117 are the real protocol machinery.
+dlfcn internals (5+4): dladdr1/dlinfo/dlmopen/dlvsym query the dynamic linker’s internal symbol tables. These effectively require the runtime linker’s cooperation — you can’t truly “reimplement” them without reimplementing https://t.co/n3Xy6VoNkt.
+
+Bottom line
+91.3% native — the vast majority of glibc is replaced
+The hardest algorithmic work is complete (printf, regex, crypt, ucontext asm, spawn, math)
+The remaining 8.7% is “politically hard”: depends on glibc private layouts or the ELF loader, not algorithmic complexity
+The RPC stack (117 symbols) is theoretically nativizable but is ~15K lines of protocol code that few programs call
+The _IO_FILE internals (114) would require per-version reverse-engineering of glibc’s FILE* layout — diminishing returns

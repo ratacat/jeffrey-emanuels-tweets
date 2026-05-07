@@ -1,0 +1,5 @@
+2026-03-07 | 30 likes
+
+Thinking more about this, it seems clear to me that the risk is elevated substantially when the agents can communicate with each other and conspire. 
+
+We should insist that all agent-to-agent communication use English language as a safety measure so we can see what they’re up to.

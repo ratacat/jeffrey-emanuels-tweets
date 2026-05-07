@@ -1,4 +1,4 @@
-2026-02-02 | 63 likes
+2026-02-02 | 62 likes
 
 All the FrankenTUI beads have been implemented. I’m also making a demo showcase app to exhibit all the functionality and then will keep adding more tests and doing more optimization work.
 

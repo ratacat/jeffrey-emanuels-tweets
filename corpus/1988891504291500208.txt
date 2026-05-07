@@ -1,4 +1,4 @@
-2025-11-13 | 935 likes
+2025-11-13 | 933 likes
 
 Just read through the new LeJEPA paper by Yann LeCun and Randall Balestriero. I’ve been curious to know what Yann’s been working on lately, especially considering all his criticisms of LLMs (which I disagree with, as I think LLMs will keep improving and will take us to ASI fairly soon).
 

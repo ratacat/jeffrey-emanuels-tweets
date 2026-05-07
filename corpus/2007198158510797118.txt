@@ -1,4 +1,4 @@
-2026-01-02 | 76 likes
+2026-01-02 | 75 likes
 
 If you're not familiar with TanStack, it's a set of really nice libraries that can improve the code in your web application a lot, particularly when the libraries overlap well with what you're trying to do in your specific application.
 

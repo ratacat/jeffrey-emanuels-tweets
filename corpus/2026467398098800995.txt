@@ -1,0 +1,21 @@
+2026-02-25 | 55 likes
+
+Buying stuff on eBay is actually a pretty cool use case for the Claude Browser Plugin. My prompt is:
+
+"I have a spare 5975wx processor (because I recently upgraded to the 64-core variant). I'd like to buy a used server/workstation that I can easily put it into that I can put in my basement as an additional server. Ideally I could find something that has everything but the CPU and the RAM with a motherboard that is 100% sure to be compatible with the 5975wx chip from AMD, for the best possible price. I'm logged into ebay here. 
+
+Please take over and find the best thing and figure out how much to bid to get a good deal by looking at previous ended auctions recently. I'm not in a rush at all and just want the best value for money with good performance and good brands."
+
+This sort of task, to do it well at least, requires technical knowledge, understanding of eBay dynamics, and a lot of TIME to sit there and grind through the listings to see what's really out there. 
+
+And then to get a sense for where the market is for pricing, so that you can get a "below market" deal by being selective and waiting. 
+
+It's the kind of thing that only made sense to spend the time on if you were cash-strapped and had to make every dollar count. 
+
+I know that I personally usually get impatient and just sort by "ending first" and don't enjoy "losing" an auction (even though I took game theory in college and know all about "Winner's Curse"... the only good auction is one where you're the only bidder!).
+
+But if the agent is driving, then who cares? I can queue it up and go play with my kids for an hour and come back and it's done all this detailed work trying to find me the best possible deal in the world. 
+
+I predict that this sort of thing will make eBay a much more efficient market over the next 2-3 years. I'm surprised more sites haven't tried to roll this sort of thing out themselves internally so they can control and observe the process more.
+
+But then again, I don't think I'd trust an eBay-branded agent as much as I do my sweet Claude clanker friend!

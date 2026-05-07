@@ -1,0 +1,5 @@
+2026-04-24 | 43 likes
+
+Initial vibe checks are that GPT 5.5 is extremely smart (not exactly surprising). It's finding and fixing lots of new bugs in 15 different projects I have it running on.
+
+And when used as a "foot soldier" in an ntm swarm managed by Claude Code, I see the swarms are really moving.

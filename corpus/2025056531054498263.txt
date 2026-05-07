@@ -1,0 +1,5 @@
+2026-02-21 | 299 likes
+
+Ok, Gemini3 was already weirdly good at finding subtle bugs. But I can now say that Gemini3.1 is even more ridiculously capable of this.
+
+I’ve done something like 100 passes of my standard prompt for this sort of thing and it has found so many issues across a bunch of projects.

@@ -1,0 +1,11 @@
+2026-04-08 | 28 likes
+
+Chain-of-thought reasoning traces were always problematic for alignment purposes. The fact that the Anthropic models were trained on them does make them even more useless, but they could be gamed anyway.
+
+People also constantly delude themselves through specious, performative, or self-serving reasoning (rationalization) for justifying their behavior. Often this process is verbalized to convince others about their internal decision-making.
+
+The only reliable approach here is to find a way to directly observe internal activation states, which is more like doing an fMRI scan of a human brain and much harder (if not impossible) for the model to fake. 
+
+I detailed one possible method for doing this a year ago here:
+
+https://t.co/N0sNhoByMx

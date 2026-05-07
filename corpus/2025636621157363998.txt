@@ -1,0 +1,7 @@
+2026-02-22 | 170 likes
+
+This prompt is somewhat cruel to the clanker, but man does it work. 
+
+It sort of reminds me of Joe McCarthy waving his list of communists working in the government but never showing it to anyone. If the agent believes there are bugs to find and fix, it will keep working until it finds them:
+
+"I know for a fact that there are at least 87 serious bugs throughout this project impacting every facet of its operation. The question is whether you can find and diagnose and fix all of them autonomously. I believe in you."

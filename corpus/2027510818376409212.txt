@@ -1,0 +1,65 @@
+2026-02-27 | 14 likes
+
+We are actually getting pretty close already. Those clankers I sent into combat didn't die in vain:
+
+• As of 2026-02-27 (latest machine report at 2026-02-27T21:15:00Z), here’s the concrete status.
+
+  Current Symbol Coverage
+  Source files:
+
+  - tests/conformance/reality_report.v1.json
+  - support_matrix.json
+
+  Legacy glibc baseline (from README):
+
+  - 3,160 exported dynamic symbols (legacy target surface)
+
+  Current FrankenLibC classified/exported surface:
+
+  - 2,767 symbols exported/classified
+  - 2,143 Implemented (native Rust implementation path)
+  - 384 RawSyscall (native Rust syscall veneer path)
+  - 240 GlibcCallThrough
+  - 0 Stub
+
+  Percentages:
+
+  - Implemented = 77.45% of current exported surface, 67.82% of legacy 3,160
+  - Implemented + RawSyscall (native/non-glibc paths) = 2,527 = 91.33% of exported surface, 79.97% of legacy 3,160
+  - Remaining call-through on exported surface = 8.67% (240 symbols)
+
+  How Much Is Left
+  If your bar is “fully native, safe Rust implementations” (Implemented only):
+
+  - Remaining vs legacy 3,160: 1,017 symbols
+
+  If your bar is “fully native/non-glibc” (Implemented + RawSyscall):
+
+  - Remaining vs legacy 3,160: 633 symbols
+  - This splits into:
+  - 393 not yet in current exported/classified set
+  - 240 still glibc call-through
+
+  Where The Hard Stuff Is (Remaining)
+  Remaining call-through is highly concentrated:
+
+  - rpc_abi: 117
+  - io_internal_abi: 114
+  - dlfcn_abi: 5
+  - glibc_internal_abi: 4
+
+  That means 96.25% of remaining call-through is in rpc_abi + io_internal_abi alone.
+
+  Inferred hardest remaining areas (from this concentration + legacy subsystem complexity):
+
+  - glibc libio/_IO_* internal stdio machinery
+  - SunRPC/XDR stack (rpc_abi)
+  - dynamic loader edge behavior (dl*, dlmopen, dlvsym, etc.)
+  - full locale/iconv breadth, NSS breadth/coherence, startup/TLS hardening (per hard-parts truth table)
+
+  Have We Already Done The Hardest Ones?
+  Short answer: partly.
+
+  - Yes, a major hard part is done: the core architecture (ABI boundary + TSM membrane + runtime control plane + broad symbol coverage) is already substantial.
+
+  - No, the hardest compatibility tail is not done yet: the remaining 240 call-through symbols are concentrated in historically gnarly internals (_IO_*, RPC/XDR, advanced loader semantics), which are among the most complex parts to fully replace.

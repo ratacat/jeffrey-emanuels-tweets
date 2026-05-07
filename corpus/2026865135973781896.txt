@@ -1,0 +1,3 @@
+2026-02-26 | 130 likes
+
+Sneak preview of the main dashboard in the TUI mode of the new Rust MCP Agent Mail. It's like 99% done, just making the last tweaks and polishes now. It's ludicrously faster, better, and more reliable under extreme load than the current Python version (which has served me well). https://t.co/Ovu0od95TU

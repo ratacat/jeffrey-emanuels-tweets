@@ -1,0 +1,15 @@
+2026-04-08 | 16 likes
+
+After applying this new skill to a few projects, it's working very well so far in terms of surfacing a lot of useful stuff that I had missed using other approaches. 
+
+But whenever you have a skill of this complexity and sophistication, there are always ways to improve it by incorporating real-life experience applying the skill "in the trenches." 
+
+So I did one of my favorite things to do to improve skills: I asked the agents that had just applied them how we might be able to improve things, like so:
+
+❯ based on using the /modes-of-reasoning-project-analysis skill, what did the skill and the swarm that followed it get right? what was wrong? how could those findings be articulated into feedback that could be used to improve the skill so it's more effective?
+
+I took three different responses from three different projects and put them together here:
+
+https://t.co/sFcDhxA5wC
+
+Then I fed all of that back into improving the skill.

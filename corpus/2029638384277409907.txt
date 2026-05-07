@@ -1,0 +1,7 @@
+2026-03-05 | 106 likes
+
+I just had a funny thought. To be clear, I don’t think it’s true. 
+
+But imagine if the big AI labs were paying $10mm+ under NDA to the best mathematicians in the world to solve open, frontier math problems, and then quietly feeding that stuff into the training data to launder it so they could later claim that their model solved the open problem.
+
+Like a modern-day mechanical Turk playing chess. Except, instead of a chess-playing dwarf hidden in a box, it’s a few Fields medalists and IMO gold people finally enjoying a real payday and staying mum.

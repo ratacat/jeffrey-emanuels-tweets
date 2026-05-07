@@ -1,0 +1,57 @@
+2026-05-07 | 38 likes
+
+Here's a new skill that addresses a problem that many people have been asking me about when it comes to the kind of planning-centric software development workflows I've been advocating as part of my Agent Flywheel methodology (see https://t.co/7QNNFwvs3Z to understand my apparoach).
+
+Now, suppose you've come up with your comprehensive markdown plan, iterated on it many times, and then converted the entire plan into a set of beads (like Jira but for agents) that you've polished and ensured is complete and accurate.
+
+You then embark on the implementation phase with a big agent swarm, and the beads are all getting worked on and eventually (hopefully) completed by the agents in the swarm and marked as being complete. 
+
+Besides generic code review phases and test suites, how do you REALLY know that all the beads that were marked as complete were in fact done? 
+
+How do you know they were done in exactly the way explained in the bead? How do you know that the agents didn't take shortcuts or oversimplified things?
+
+Maybe an agent started working on a bead and did 90% of it, but then you hit a usage limit and it stopped for a while. Then later, another agent saw that the bead was in-progress, but looking at it, thought it was done, so marked it as complete.
+
+There are a lot of scenarios that could happen in practice that could cause a gap between the reality and the intended design.
+
+That's the purpose of my latest "next-gen" skill, called /beads-compliance-and-completion-verification, which you can get now on my skills site at:
+
+https://t.co/5r9bX8TtED
+
+This skill is truly massive, with 41 scripts, 23 subagents, 59 reference files, and various templates and other assets, all totaling 1.2mb of text. What could possibly require such an elaborate apparatus? Well, this skill goes way, way beyond a "fresh eyes" check of the closed beads.
+
+I think GPT-5 has done a great job understanding and articulating what makes this skill so special and compelling (its first impression was "it treats closed work as an empirical claim and builds a repeatable evidence court around it"), so here is its full analysis:
+
+---
+
+I read the core skill docs, its reference architecture, schemas, scripts, and prior audit memory. My take: this is not just a “check whether tickets are done” skill. It is an epistemic control system for multi-agent software projects.
+
+What makes it special is the first principle at its center: closed is not truth, it is a claim. The skill explicitly separates the social act of closing work from the empirical fact of completion, then builds a repeatable court of evidence around that distinction. That framing is the whole unlock. Most PM systems treat “done” as workflow state; this treats “done” as a falsifiable proposition.
+
+The compelling part is the way it turns completion into a structured evidence pipeline:
+
+1. It extracts the bead spec literally.
+2. It maps each requirement to cited artifacts.
+3. It re-runs the claimed proof.
+4. It checks whether passing tests actually mean anything.
+5. It measures bead-scoped depth instead of project-global comfort metrics.
+6. It synthesizes cross-bead contract drift.
+7. It scores deterministically.
+8. It creates remediation beads instead of silently fixing or hiding gaps.
+9. It repeats until convergence.
+
+That 10-phase loop is powerful because it attacks the exact failure modes of agent swarms: optimistic closure, stubbed implementation, stale proofs, mocked e2e paths, untracked follow-up promises, and cross-agent contract drift.
+
+The innovative part is not any one technique. The docs say this directly: the contribution is disciplined composition. It combines conformance testing, anti-stub scanning, graph analysis, rubric pinning, audit trails, fresh-eyes review, remediation workflows, CI tripwires, attribution, and evidence-pack generation into one coherent operating loop. That is rare. Most tools are either static analyzers, issue trackers, test runners, or dashboards. This is a bridge between issue truth, code truth, and process truth.
+
+The most useful design choice is that it is accretive. Every pass leaves behind reusable assets: spec.json, evidence.json, compliance.json, theater.json, test_depth.json, scorecard.md, REPORT.md, trends, provenance, and remediation beads. That means the audit does not evaporate into conversation. It creates a durable local truth substrate that future agents can inspect cold. See the artifact contract in SKILL.md and schemas EVIDENCE-SCHEMAS.md.
+
+The second big accretive property is that failures become graph maintenance. Phase 9 does not encourage auditors to quietly patch things and declare victory; it reopens or creates completion-debt beads with verbatim missing items. That preserves work visibility and makes the bead graph more truthful after every run. The design philosophy calls this out in DESIGN-PHILOSOPHY.md.
+
+The scoring system is also stronger than typical AI review because it is deterministic and citation-bound. Subjective judgment is pushed into a versioned rubric; the scorer applies formulas to evidence packs. That makes disagreement actionable: change the rubric, do not argue with vibes. The mechanics in RUBRIC.md are the difference between “an agent thinks this is done” and “this evidence produces this score under this pinned rubric.”
+
+The most sophisticated feature, in my view, is the audit-of-the-audit. Phase 10 asks a fresh agent to re-derive scores and detect generosity, skipped categories, or rubric ambiguity. That matters because any verification system eventually becomes a thing people game or drift around. This skill anticipates that and makes the verifier itself part of the verified surface. The convergence criteria in SKILL.md are unusually mature for that reason.
+
+The skill is especially suited to your workflow because multi-agent velocity creates a new bottleneck: not “can we produce code?” but “can we trust the state of the work graph?” This skill is a truth-maintenance layer for that bottleneck. It lets you safely run more agents because it lowers the cost of discovering which closures were real, which were optimistic, and which created hidden downstream debt.
+
+My concise verdict: this skill is special because it turns “done” from a social assertion into a reproducible, evidence-backed, graph-updating, continuously improving verification process. Its compounding value is that every audit makes the next audit cheaper, sharper, and more trustworthy, while making the project’s bead graph a better map of reality.

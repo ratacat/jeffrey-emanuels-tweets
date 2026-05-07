@@ -1,0 +1,88 @@
+2026-03-16 | 196 likes
+
+I want to show how I go about planning major new features for my existing projects, because I've heard from many people that they are confused by my extreme emphasis on up-front planning. They object that they don't really know all the requirements at the beginning, and need the flexibility to be able to change things later.
+
+And that isn't at all in tension with my approach, as I hope to illustrate here. So I decided that it would be useful to add some kind of robust, feature-packed messaging substrate to my Asupersync project. I wanted to use as my model of messaging the NATS project that has been around for years and which is implemented in Golang.
+
+But I didn't want to just do a straightforward porting of NATS and bolt it onto asupersync; I wanted to reimagine it all in a way that fully leverages asupersync's correct-by-design structured concurrency primitives to do things that just aren't possible in NATS or other popular messaging systems.
+
+I used GPT 5.4 with Extra High reasoning in Codex-CLI, and took a session that was already underway so that the model would already have a good sense of the asupersync project and what it's all about. Then I used the following prompts shown below; where I indicated "5x," that means that I repeated the prompt 5 times in a row:
+
+```
+› I want you to clone https://t.co/kfBMj4sUov to tmp and then investigate it and look for useful ideas that we can take from that and reimagine in highly accretive ways on top of existing asupersync primitives that really leverage the special, innovative concepts and value-add from both projects to make something truly special and radically innovative. Write up a proposal document, PROPOSAL_TO_INTEGRATE_IDEAS_FROM_NATS_INTO_ASUPERSYNC.md
+
+› OK, that's a decent start, but you barely scratched the surface here. You must go way deeper and think more profoundly and with more ambition and boldness and come up with things that are legitimately "radically innovative" and disruptive because they are so compelling, useful, accretive, etc.
+
+› Now "invert" the analysis: what are things that we can do because we are starting with "correct by design/structure" concurrency primitives, sporks, etc. and the ability to reason about complex concurrency issues using something analogous to algebra, that NATS simply could never do even if they wanted to because they are working from far less rich primitives that do not offer the sort of guarantees we have and the ability to analyze things algebraically in a precise, provably correct manner?
+
+5x: › Look over everything in the proposal for blunders, mistakes, misconceptions, logical flaws, errors of omission, oversights, sloppy thinking, etc.
+
+› OK, now nats is fundamentally a client-server architecture. Can you think of a clever, radically innovative way that leverage the unique capabilities and features/functionality of asupersync so that the Asupersync Messaging Substrate doesn't require a separate external server, but each client can self-discover or be given a list of nodes to connect to, and they can self-negotiate and collectively act as both client and server? Ideally this would also profoundly integrate with and leverage the RaptorQ functionality already present in asupersync
+
+5x: › Look over everything in the proposal for blunders, mistakes, misconceptions, logical flaws, errors of omission, oversights, sloppy thinking, etc.
+
+[Note: the two bullet points included in this next prompt come from a response to a previous prompt]
+
+› OK so then add this stuff to the proposal, using the very smartest ideas from your alien skills to inform it and your best judgment based on the very latest and smartest academic research:
+    - The proposal is now honest that a brokerless fabric needs epoch/lease fencing, but it still does not choose the exact control-capsule algorithm. That should be a follow-on design memo: per-cell Raft-like quorum, lease-quorum with fenced epochs, or a more specialized protocol.
+    - The document now names witness-safe envelope keying, but key derivation/rotation/revocation semantics are still only sketched. That is the next major design surface, not a remaining blunder in this pass.
+
+› OK now we need to make the proposal self-contained so that we can show it to another model such as GPT Pro and have that model understand absolutely anything that might be relevant to understanding and being able to suggest useful revisions to the proposal or to find flaws in the plans. To that end, I need you to add comprehensive background sections about what asupersync is and how it works, what makes it special/compelling, etc. And then do the same in another background section all about NATS and what it is and what makes it special/compelling, how it works, etc.
+
+5x: › Look over everything in the proposal for blunders, mistakes, misconceptions, logical flaws, errors of omission, oversights, sloppy thinking, etc.
+
+› apply $ de-slopify to PROPOSAL_TO_INTEGRATE_IDEAS_FROM_NATS_INTO_ASUPERSYNC.md
+```
+
+This resulted in the plan file shown here:
+
+https://t.co/xWpVMpC98b
+
+But before I started turning that plan into self-contained, comprehensive, granular beads for implementation, I first wanted to subject the plan to feedback from GPT 5.4 Pro with Extended Reasoning, and also feedback from Gemini 3 with Deep Think, Claude Opus 4.6 with Extended Reasoning from the web app, and Grok 4.2 Heavy.
+
+I used this prompt for the first round of this:
+
+```
+How can we improve this proposal to make it smarter and better-- to make the most radically innovative and accretive and useful and compelling additions and revisions you can possibly imagine. Give me your proposed changes in the form of git-diff style changes against the file below, which is named PROPOSAL_TO_INTEGRATE_IDEAS_FROM_NATS_INTO_ASUPERSYNC.md:
+
+<the original plan I generated using Codex>
+```
+
+I used the same prompt in all four models, then I took the output of the other 3 and pasted them as a follow-up message in my conversation with GPT Pro using this prompt that I've shared before:
+
+```
+I asked 3 competing LLMs to do the exact same thing and they came up with pretty different plans which you can read below. I want you to REALLY carefully analyze their plans with an open mind and be intellectually honest about what they did that's better than your plan. Then I want you to come up with the best possible revisions to your plan (you should simply update your existing document for your original plan with the revisions) that artfully and skillfully blends the "best of all worlds" to create a true, ultimate, superior hybrid version of the plan that best achieves our stated goals and will work the best in real-world practice to solve the problems we are facing and our overarching goals while ensuring the extreme success of the enterprise as best as possible; you should provide me with a complete series of git-diff style changes to your original plan to turn it into the new, enhanced, much longer and detailed plan that integrates the best of all the plans with every good idea included (you don't need to mention which ideas came from which models in the final revised enhanced plan); since you gave me git-diff style changes versus my original document above, you can simply revise those diffs to reflect the new ideas you want to take from these competing LLMs (if any):
+
+gemini:
+<gemini output>
+
+---
+
+claude:
+<claude output>
+
+---
+
+grok:
+<grok output>
+```
+
+You can see the entire shared conversation with GPT Pro here: 
+
+https://t.co/2Io2yevq5b
+
+I then took the output of that and pasted it into Codex with this prompt:
+
+```
+› ok I have diffs that I need you to apply to PROPOSAL_TO_INTEGRATE_IDEAS_FROM_NATS_INTO_ASUPERSYNC.md but save the result instead to PROPOSAL_TO_INTEGRATE_IDEAS_FROM_NATS_INTO_ASUPERSYNC__AFTER_FEEDBACK.md :
+
+<the final output of GPT Pro>
+```
+
+and then did:
+
+› apply $ de-slopify to the PROPOSAL_TO_INTEGRATE_IDEAS_FROM_NATS_INTO_ASUPERSYNC__AFTER_FEEDBACK.md file
+
+The final result can be seen here: 
+
+https://t.co/ydTfh588Iw

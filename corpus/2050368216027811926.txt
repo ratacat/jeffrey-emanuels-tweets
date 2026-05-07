@@ -1,0 +1,11 @@
+2026-05-02 | 3 likes
+
+It basically studies your project, the readme, the plan docs, the beads, etc. to understand what the project is supposed to do. 
+
+And then it contrasts that with the reality of the code, and also looks at how that would change if all the currently open and in-progress beads were completed. 
+
+Would it actually do what was promised or intended? If not, where is it falling short? What are the missing tasks that would need to be created to bridge the remaining gaps?
+
+It also passes that through an ambition stage where it tries to make the plan better and bolder. Then it creates a bunch of beads for you and polishes them in an iterative process. 
+
+Then you can spin up a swarm to work on them.

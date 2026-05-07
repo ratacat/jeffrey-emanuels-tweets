@@ -1,0 +1,21 @@
+2026-04-10 | 18 likes
+
+BTW, the best way to apply this skill (and all of my "big" skills) is like this:
+
+❯ First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project. Now I want you to super carefully and exhaustively apply the /security-audit-for-saas skill to the entire project.
+
+Then let it run to completion. Then respond with this prompt (this is critical because the subagents used in the analysis are often "dumber" models and don't have the full context, so it helps a LOT to have the smarter model check everything over again):
+
+❯ ok so now I want YOU to carefully review all each of the top recommendations yourself and dig way deeper into the actual code. Do you truly agree with them? Which ones? Why or why not? To what extent? What do YOU think we should actually do?
+
+Then I tell it to turn all the final recommendations into comprehensive beads in the usual way:
+
+❯ OK so please take ALL of that and elaborate on it and use it to create a comprehensive and granular set of beads for all this with tasks, subtasks, and dependency structure overlaid, with detailed comments so that the whole thing is totally self-contained and self-documenting (including relevant background, reasoning/justification, considerations, etc.-- anything we'd want our "future self" to know about the goals and intentions and thought process and how it serves the over-arching goals of the project.). The beads should be so detailed that we never need to consult back to the original markdown plan document. Remember to ONLY use the `br` tool to create and modify the beads and add the dependencies. 
+
+And then do a couple rounds of bead polishing (this is all standard stuff):
+
+❯  Check over each bead super carefully-- are you sure it makes sense? Is it optimal? Could we change anything to make the system work better for users? If so, revise the beads. It's a lot easier and faster to operate in "plan space" before we start implementing these things! DO NOT OVERSIMPLIFY THINGS! DO NOT LOSE ANY FEATURES OR FUNCTIONALITY! Also make sure that as part of the beads we include comprehensive unit tests and e2e test scripts with great, detailed logging so we can be sure that everything is working perfectly after implementation.  Make sure to ONLY use the `br` cli tool for all changes, and you can and should also use the `bv` tool to help diagnose potential problems with the beads.
+
+Once the beads stop changing (which might take 3 or more passes of the polishing prompt), I now usually implement them all with a swarm of Codex instances using my ntm tool (see https://t.co/GsBqAqcvuH ), with CC as the top level controller, using its looper functionality to tend to the swarm intelligently every 3 minutes:
+
+❯ OK, can you use /vibing-with-ntm and /ntm with a swarm of 5 codex agents to execute all these new beads in the optimal way? Use your looper tool every 3 minutes to pass fresh instructions to any agents in the swarm, and use bv to prioritize the open beads while making assignments. Try to avoid too many concurrent builds to prevent excessive contention and ensure that we don't run out of space by clearing out stale build targets as needed.

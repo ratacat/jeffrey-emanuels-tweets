@@ -1,0 +1,9 @@
+2026-03-16 | 26 likes
+
+A couple additional thoughts before I forget:
+
+1) Why did I ask GPT Pro and the others for "git-diff style changes"? Because otherwise they would just start trying to rewrite it all from scratch and would end up leaving out massive sections of it. By couching my request explicitly as a diff, it changes the way the models conceived of the task entirely into one where they are morphing the existing plan rather than loosely basing their own new plan on the original plan.
+
+2) Why repeat that prompt 5 times? And do that repetition so many times? This is like the planning version of the fresh eyes prompt. You'd be amazed how many flaws it finds on each round of this when you're asking it to do something as insanely challenging as I'm having it do here. But by the 5th round, things settle down. But then after each substantive change to the plan, we really want to do it again. Why not wait until the end and just do it once? Because we want to correct the mistakes before adding on more misguided stuff that is influenced by what was already there in the plan at that point.
+
+3) It hasn't escaped me that what I'm adding on here would, once implemented, serve as a really powerful substate for agent-to-agent messaging across a network, with all sorts of reliability and confirmation guarantees around message sending. And all without needing a central server. Perhaps for the next version of mcp_agent_mail_rust (which is basically done, I'm just being paranoid about making sure it's absolutely perfect before releasing it officially)...

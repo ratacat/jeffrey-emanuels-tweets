@@ -1,0 +1,7 @@
+2026-04-23 | 11 likes
+
+One thing that's very cool about this skill is that, in order to work optimally, it references many other skills from my skills site, like /codebase-archaeology, /ui-polish, /ux-audit, /vercel, etc. 
+
+If the user doesn't have those installed yet, the skill knows how to automatically pull them in from https://t.co/Un9brY2G3l using the jsm utility. 
+
+This kind of "skill calling another skill" pattern is extremely powerful. It's basically applying the Unix "small, composable tools" mindset to agent skills.

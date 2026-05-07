@@ -1,0 +1,5 @@
+2026-03-31 | 32 likes
+
+The default posture for tooling like npm should be to err on the side of caution when it comes to protecting users from their own mistakes.
+
+It should check for very large .map files (say, over 25mb) that were never part of the bundle in previous versions, and ask to confirm. https://t.co/aONlIdZkSD

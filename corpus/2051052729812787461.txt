@@ -1,0 +1,35 @@
+2026-05-03 | 94 likes
+
+It's now been around 4 months since my open-source dcg tool was first released, and I know from hearing from tons of users that it has saved countless people from disaster at the hands of overeager Claude Code agents.
+
+I've continued to make various performance improvements and added additional preset packs to the project, most recently for the Railway API after the recent and infamous incident where someone blamed Claude for wiping their production database.
+
+Because of the way dcg is implemented as a "pre-tool-use hook" in Claude Code, there was no way to use it in Codex, since Codex didn't support that kind of hook at all. Until a week or so ago, when they finally added it.
+
+So I'm now pleased to say that the latest version of dcg has full support for Codex (plus it also works for gemini-cli if anyone is really using that outside of the 'Plex!).
+
+If you're not familiar with dcg yet, I highly recommend checking it out. It's unthinkable to me now to use any coding agent that doesn't support it; it feels like speeding on the highway without a seatbelt on (or more accurately, with a sharp knife strapped to the steering wheel pointed at your heart).
+
+Agents just can't be trusted to not occasionally do crazy things that seem sensible to them at the moment, but which are wildly destructive and often irreversible. These bouts of temporary madness often occur soon after compactions, or as a result of context rot caused by excessively long sessions.
+
+Not only does dcg mechanically prevent the agents from being able to do that, it explains to them why it did that specifically, and offers them safe alternatives custom-tailored to the specific commands they tried to run.
+
+The more agents you have running at the same time on the same project, the more dcg goes from a nice thing to have to being totally indispensable if you don't want to constantly worry about one rogue agent wiping out the work of the other agents with a misguided "git reset --hard HEAD" command.
+
+The dcg utility itself is written in hyper-optimized, memory-safe Rust and uses minimal system resources. Because it's totally mechanical (unlike the auto-approve feature in Claude Code, which uses an AI model that adds latency), you can't even notice any delay from it running on every command.
+
+dcg is NOT just a cookbook of canned forbidden commands; frontier models are too smart and resourceful to actually be constrained by such a simplistic approach.
+
+When they're prevented from running a command one way, they'll try another way; if that also doesn't work, they'll whip up an ad-hoc Bash script or Python program to do what they want. 
+
+But dcg can detect that as well using its advanced ast-grep mode (which only kicks in when dealing with such heredoc scripts, so that the faster regex-only path can be used when applicable). 
+
+It's also very quick and easy to expand and customize dcg by creating your own custom preset packs to add to the 50 or so included packs. Just ask Codex to study the existing presets and explain what you want to protect against in your own custom API or tooling, or in a third-party project that's not currently included by default in dcg.
+
+So, remember: Friends don't let friends vibe code without dcg. Protect yourself from your agents, and protect them from themselves.
+
+You can get it here:
+
+https://t.co/aVmEBi9WCd
+
+It installs in under a minute on Linux or Mac using the curl-bash one-liner command shown in the README, and automatically detects any supported agent harnesses installed on your machine and configures them for you to use dcg. And if you decide it's not for you, it can be fully uninstalled in seconds using the provided command.

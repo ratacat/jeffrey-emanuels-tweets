@@ -1,4 +1,4 @@
-2025-10-31 | 1444 likes
+2025-10-31 | 1440 likes
 
 My coding agent workflow has really changed a lot ever since I gave them access to messaging so that they can directly communicate with each other. Now, I have one of them come up with a super detailed plan and sometimes have GPT Pro review and improve the plan in the webapp. 
 

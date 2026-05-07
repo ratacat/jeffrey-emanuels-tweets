@@ -1,4 +1,4 @@
-2026-02-19 | 57 likes
+2026-02-19 | 79 likes
 
 My asupersync library for Rust has gotten very little attention but has quietly and quickly become the bedrock underpinning all of my new projects.
 

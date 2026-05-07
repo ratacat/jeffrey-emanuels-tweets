@@ -1,0 +1,25 @@
+2026-04-15 | 85 likes
+
+Public Service Announcement:
+
+You can do the same thing using my open-source ntm tool, but it works with ALL agent harnesses and models (e.g., codex, gemini-cli, etc.), so you’re not locking yourself in a walled garden: 
+
+https://t.co/GsBqAqcvuH
+
+You’ll also benefit from the diversity of thought of using different models and harnesses which are highly complementary. 
+
+For best results, use together with my agent mail project and beads, as detailed in my complete guide:
+
+https://t.co/7QNNFwvs3Z
+
+And my skills site (https://t.co/0zD5oYUgWA ) has some awesome skills for further automating the process, /ntm and /vibing-with-ntm (this is optional though; you can still do most of this stuff without the skills, you’ll just need to give more instructions or make your own skill for this).
+
+I use this workflow all the time. In fact, I have a Claude Code session going right now (see screenshot) with this prompt:
+
+❯  Reread AGENTS.md so it's still fresh in your mind.  I want you to use /ntm and /vibing-with-ntm to create 3 swarms to work on /dp/franken_engine ,  /dp/franken_node , and /dp/pi_agent_rust ; each of the 3 swarms should have 3 cc and 3 cod. 
+
+If you run out of beads to work on, re-purpose the cc/cod instances to follow the game plan from /code-review-gemini-swarm-with-ntm 
+
+Make sure that we don't run out of space by periodically clearing stale build artifacts. And make sure to use rch for all builds/tests and try to minimize build contention from concurrent builds within the same swarm. 
+
+Use your looper tool every 4 minutes to pass fresh instructions to any agents in the swarms in need of further input (ie, that are idle), guided by bv for open beads.

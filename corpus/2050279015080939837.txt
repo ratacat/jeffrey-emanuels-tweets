@@ -1,0 +1,7 @@
+2026-05-01 | 157 likes
+
+It’s fascinating how much better it is to use ChatGPT instead of a mobile web browser when you’re dealing with spotty cell service.
+
+But it makes sense, because you’re sending it just a few kilobytes of text. And then it can check 30+ websites for you in under a minute on their servers using ultra high-speed internet. 
+
+It would take way longer than that to manually visit even one of those sites using the mobile web browser. And then it can respond with a couple hundred kilobytes of text instead of shipping back megabytes of html and JS assets for each page.

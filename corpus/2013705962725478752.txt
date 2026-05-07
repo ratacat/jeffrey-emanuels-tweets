@@ -1,4 +1,4 @@
-2026-01-20 | 4 likes
+2026-01-20 | 5 likes
 
 Next up is a physical embodiment of this principle, operationalized: my Stream Deck that I used to convert whole prompt fragments into single dedicated physical button presses, which saves time and mental overhead for me many, many times per day:
 

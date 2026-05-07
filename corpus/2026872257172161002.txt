@@ -1,0 +1,21 @@
+2026-02-26 | 45 likes
+
+The new Rust version of Agent Mail uses the following other libraries and ports that I’ve made in the last month or so:
+
+FrankenTUI for the console interface
+FrankenSQLite 
+FrankenSearch for message search
+FrankenAgentDetection (abstracted out from cass)
+Asupersync (zero tokio allowed!) throughout
+fastmcp_rust for mcp
+sqlmodel_rust for orm
+beads_rust for beads integration 
+toon_rust for token dense payloads 
+
+That’s what the Flywheel is all about. Making programs and libraries and then turning around and combining them with other new libraries you’ve made to make still more ambitious new projects.
+
+The reason this project in particular took so long is that I had to first port an ungodly amount of stuff from Python to Rust to make it a truly faithful version of the Python original in terms of features and functionality (but then I went way past that…).
+
+And I also got a bit distracted by the 60+ other projects I took on, lol.
+
+Anyway, I’ll probably make an official announcement of it tomorrow or the next day. Don’t try to install it yet, it’s not actually done! I just wanted to give a sneak peak of what it looks like.

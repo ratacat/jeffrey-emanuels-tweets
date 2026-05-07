@@ -1,0 +1,13 @@
+2026-03-27 | 23 likes
+
+Another cool skill in action as I'm onboarding the vastly improved fuzz testing skill I made this morning (see screenshot from within Claude Code below).
+
+For every new skill I add to the site, I use my /interactive-visualization-creator skill to make a slick looking visual for it on the website. 
+
+But that skill is so in-depth and huge that the agents never "saturate" what it can do in a single application. 
+
+So, with urging from @joshmh (see https://t.co/6crave0jiW ), I created a "meta skill" called /repeatedly-apply-skill that lets me reliably called the visualization skill 5 times in a row, with the first pass creating the visualization and the other passes iteratively polishing and improving it. 
+
+And all this is called automatically from within my  /onboarding-new-skills-to-jeffreys-skills-md (not included on the site because it's so specialized). 
+
+Skills calling meta-skills that apply other skills. Skills all the way down!

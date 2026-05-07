@@ -1,0 +1,15 @@
+2026-04-14 | 35 likes
+
+Also, I should add that this isn't just for preparing your return, although it can do that extremely well. It's also a tax consultant in general that can tell you how to restructure your affairs to maximize tax savings, taking into account all the particulars of your situation.
+
+Like many of my recent "big" skills, it's so huge that you can really apply it over and over again in different ways and keep uncovering more ideas and strategies to explore. 
+
+I'm planning to continue to expand and improve it and to keep it up to date with all changes in relevant tax laws. If you're a subscriber of my site and want me to add more stuff about any particular area or strategy, just let me know.
+
+It costs under $20 to e-file your Federal and state return using FreeTaxUSA, and that seems to be sophisticated enough to handle just about anything you'd reasonably want to do (unlike Aiwyn, which couldn't handle a situation where I lived part of the year in NYC and part in upstate NY).
+
+So for another $20 you can subscribe to my site for a month and use the skill to tap into a tremendous amount "operationalized expertise" that not only helps you to strategize, but which can literally file the tax returns for you. 
+
+I don't see how that isn't unbelievably bearish for Intuit (maker of TurboTax), which charges $100+ for the stripped down version of their native software and even more for their web-based version, which you need to sit there like an idiot filling out manually.
+
+Interestingly, my approach in software development, where I use multiple different frontier models to check each other's work, also works incredibly well with tax preparation. Codex found tons of mistakes that Claude Code made, but Claude Code also had a lot of insights that Codex missed. Even Gemini had a couple good thoughts (although it was mostly wrong and overly cautious).

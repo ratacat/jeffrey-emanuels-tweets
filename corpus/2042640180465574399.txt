@@ -1,0 +1,27 @@
+2026-04-10 | 234 likes
+
+People who dismiss agent skills as "just markdown files" are really missing out on what's possible. They can be so much more than that, and include scripts, subagents, etc. 
+
+Most importantly, they're a "delivery mechanism" for automated workflows: a way to supply a truly massive amount of reference material (if relevant and needed by the skill; not all skills need that sort of thing) in a way that's maximally agent-ergonomic and agent-intuitive.
+
+Yesterday I made the biggest skill yet for my skills site, https://t.co/Un9brY2G3l, called security-audit-for-saas. 
+
+It's based on many months of my actual agent coding sessions working on a bunch of different SaaS projects. 
+
+The skill comprises 90 files (see screenshots for the listing) that total 888 kb. It contains a mind-boggling amount of knowledge and expertise about securing all aspects of a modern SaaS project, including things like Supabase, Stripe/PayPal APIs, etc. 
+
+Arguably, the frontier models "already contain all this knowledge" in their weights. But that doesn't do you much good if it's not readily accessible and applicable in practice. The models need guidance and coaching and coaxing to get them to apply their latent knowledge effectively.
+
+This particular skill is so vast that it can be applied over and over again and keep traversing different paths through your codebase, focusing on different areas to analyze through different lenses. 
+
+Modern agent harnesses like Claude Code and Codex are extremely good at doing all this in a massively parallel way with subagents, so you can cover a huge amount of ground in a couple hours of this. 
+
+And because skills are a standard, the same exact skills can be used in all the popular harnesses and models. And yet they navigate the skills differently, so that the results of using the skill can diverge significantly depending on what's driving it. 
+
+This prevents you from being locked down to a specific vendor and then you also get diversity of thought "for free."
+
+If you have a reasonably large SaaS project, there is a very good chance that this skill will uncover at least a few critical vulnerabilities and also a bunch of other issues that are edge cases worth fixing even if they're less likely to be exploited by an attacker.
+
+But if you look at the recent disclosures by Anthropic about their new Mythos model, it was able to cobble together devastating exploits by stringing together multiple independent issues, none of which were individually severe, in a synergistic way. 
+
+So it's more important than ever to systematically find and fix even seemingly small, minor issues if you want to reduce the chances of a serious attack.

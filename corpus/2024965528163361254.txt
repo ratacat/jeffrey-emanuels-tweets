@@ -1,0 +1,5 @@
+2026-02-20 | 43 likes
+
+I pushed a lot of cool improvements to FrankenTUI, which now supports adjustable pane borders with the mouse as well as complex logic for dragging and dropping panes. Also lots of bug fixes (mouse works now in Ghostty finally!). Try the web version here:
+
+https://t.co/1SVpeBvbtG

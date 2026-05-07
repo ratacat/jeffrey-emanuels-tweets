@@ -1,0 +1,9 @@
+2026-02-25 | 13 likes
+
+Although the system itself is very cool and powerful, and Brenner's approach and worldview are breathtakingly brilliant and fruitful, perhaps the more relevant thing is the process of iterated knowledge distillation that was used to convert a massive amount of unstructured, meandering stories about his life and work into a refined "algebra of ideas" complete with operators.
+
+It works particularly well with Brenner's approach to science, but it can surely be applied productively to many other corpora and data dumps of brilliant thinkers. 
+
+For example, I was rewatching some of Leslie Lamport's 6+ hours of oral histories from the Computer History Museum last night and kept thinking about how one could apply the same "operationalizing expertise" playbook (I turned this into an actual agent skill based on my session histories during the development of BrennerBot, courtesy of my cass tool) to the "Lamportian approach" for analyzing all sorts of novel problems in concurrency and related subjects.
+
+What else could it be used for? Perhaps something as far afield as philosophy or the classics? I don't doubt it for a second.

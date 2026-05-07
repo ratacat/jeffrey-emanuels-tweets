@@ -1,0 +1,94 @@
+2026-04-22 | 118 likes
+
+As many of you know, I'm currently working on dozens of complex open-source projects at the same time now, including things like FrankenTUI, asupersync, FrankenSQLite, and many others that I've posted about.
+
+As part of that work, I've had to do countless rounds of performance optimizations, which includes careful instrumentation, profiling, and benchmarking to determine the key hotspots in the project and where to focus attention to get the biggest benefit.
+
+Once you know where the problem areas are, you can then apply various strategies, including my /extreme-software-optimization skill, to carefully optimize performance while ensuring that all changes are isomorphic and carefully benchmarked and tested.
+
+But it's often not at all obvious where to look, and static code analysis can be very misleading, particularly when projects get more complicated, and you can get complex interactions between single/multi-threaded operations, I/O thrashing, caching, etc. 
+
+And if you pick the wrong thing to focus on, it doesn't matter how clever you are or how many rounds of optimization you do: you're not going to move the needle much on what actually matters to bottom-line performance.
+
+To help with this issue, I developed my latest skill (available on https://t.co/Un9brY3dST), called /profiling-software-performance. It's based on thousands of my actual coding agent sessions across dozens of projects, which I trawled through using cass to find the "inner threads" and patterns that kept recurring so we could draw general lessons from them.
+
+It works for most common programming languages like Rust, Golang, TypeScript, Python, etc. and introduces an extremely sophisticated and powerful framework for handling this problem end-to-end in an automated, repeatable way. 
+
+The skill spans 36 files, including 8 scripts, and totals 476kb of text, all of which has been heavily optimized for progressive disclosure to be as efficient and agent-intuitive as possible. 
+
+I’ve now applied it over the past few days to many of my gnarliest projects, and it has really helped cut through the haze and focus attention on the key levers that actually matter.
+
+Once you know the real bottlenecks, you can attack them directly instead of guessing. That’s why it works so well together with the /extreme-software-optimization skill, which contains a huge range of concrete optimization strategies for addressing common performance issues and more specialized ones too. 
+
+And once the objective is clear, the latest frontier models are shockingly good at helping drive that optimization work forward.
+
+So how does it work and why is it effective? Here's what GPT-5.4 has to say about what makes it special and useful:
+
+---
+
+Its core value is simple: it forces ranked evidence before optimization.
+
+That is more important than it sounds. Most performance work fails because people jump from “this feels slow” to “let’s rewrite/cache/parallelize this.” This skill interrupts that reflex and turns performance work into a clean pipeline:
+
+DEFINE -> ENVIRONMENT -> BASELINE -> INSTRUMENT -> PROFILE -> INTERPRET -> HAND OFF
+
+What makes it useful is that it produces the artifacts an optimizer actually needs: a baseline fingerprint, a ranked hotspot table, and a hypothesis ledger. That means the next step is not “try ideas,” but “attack the highest-confidence, highest-impact target with evidence behind it.”
+
+Why It’s Compelling
+
+It turns profiling into an operator-grade workflow instead of a bag of tools.
+
+The skill does not just say “run flamegraph.” It asks:
+
+  - What exact scenario are we measuring?
+  - What metric matters: p95, throughput, RSS, IOPS, lock wait?
+  - Is the binary actually profilable, with symbols and frame pointers?
+  - Are we comparing on the same host, same power profile, same cache state?
+  - Do we have at least 20 baseline runs?
+  - Are CPU, allocation, I/O, off-CPU, and contention all considered?
+  - Does every hotspot cite an artifact?
+
+That prevents the classic fake win: one lucky benchmark, one misleading flamegraph, one optimized function that was never the real bottleneck.
+
+Why It’s Accretive
+
+The biggest strength is that every run leaves reusable evidence.
+
+A good profiling session under this skill creates tests/artifacts/perf/<run-id>/ with comparable fingerprints, baselines, profiler outputs, span summaries, hotspot rankings, and hypothesis outcomes. That compounds across agents and across time.
+
+  A future agent can look at the artifact trail and know:
+
+  - what was measured,
+  - under what machine/toolchain/kernel/build conditions,
+  - which explanations were supported,
+  - which explanations were rejected,
+  - what remains worth optimizing.
+
+That is enormously valuable in multi-agent work. It prevents six agents from rediscovering the same “maybe it’s fsync” theory. The hypothesis ledger is especially strong because rejected ideas become durable knowledge, not just forgotten chat context.
+
+Why It’s Innovative
+
+The innovative part is the strict boundary between profiling and optimization.
+
+The skill explicitly stops before changing performance behavior. It hands the ranked target list to extreme-software-optimization, which can then score candidates by impact, confidence, and effort. That separation is clean engineering: measurement first, intervention second.
+
+It also treats performance as multidimensional. CPU flamegraphs alone are not enough. The skill covers:
+
+  - tail latency, not just mean runtime,
+  - allocator pressure and heap high-watermark,
+  - peak RSS and PSS,
+  - I/O wait and fsync behavior,
+  - off-CPU time,
+  - lock contention,
+  - scaling behavior across workload sizes,
+  - benchmark fairness and variance envelopes.
+
+That makes it harder to optimize the wrong thing. A function that dominates CPU might not matter if p99 is actually caused by disk syncs or lock waits. A cache might look attractive until the RAM-for-speed tradeoff table exposes bad invalidation or poor hit rate.
+
+The Killer Feature
+
+The killer feature is this contract:
+
+  > No hotspot list -> no change.
+
+That one rule changes agent behavior. It blocks premature cleverness. It makes performance work auditable. It creates handoff artifacts. It lets multiple agents collaborate without cargo-culting benchmark numbers. And it turns optimization from vibes into a ranked decision problem.

@@ -1,0 +1,3 @@
+2026-03-23 | 93 likes
+
+Would be fascinating to see a website that lists professions, and then for each one, shows a list of the latest robots (including name, pricing, availability, and videos in operation) that are automating that profession, with an analysis of how far the SOTA is from working 100%.

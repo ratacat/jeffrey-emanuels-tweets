@@ -1,0 +1,67 @@
+2026-04-23 | 2 likes
+
+1) Prompt:
+
+1. Odd Numbers Build Perfect Squares
+
+Identity: \displaystyle 1 + 3 + 5 + \dots + (2n-1) = n^2
+
+Core idea
+
+Each odd number is an L‑shaped “border” of unit squares added around a growing square. After n steps, you literally see an n \times n square.
+
+Image description
+
+Overall layout
+
+* Single square image, white background.
+* Centered is a large 6 \times 6 grid (so you can show up to n=6); grid lines are thin, light gray.
+* Perspective is perfectly top-down (no 3D), like a blueprint.
+* Underneath, centered text in a clean sans-serif:
+    “1 + 3 + 5 + 7 + 9 + 11 = 6^2”
+
+Color scheme
+
+* Use a distinct saturated color for each odd term:
+    * 1 → bright red
+    * 3 → orange
+    * 5 → yellow‑green
+    * 7 → cyan
+    * 9 → royal blue
+    * 11 → violet
+* All unfilled grid squares remain white.
+
+Structure
+
+* The entire 6 \times 6 square is filled by colored unit squares arranged in concentric L‑shapes:
+    1. Step 1 (1):
+        * A single red unit square at the top‑left corner of the grid (row 1, column 1).
+    2. Step 2 (add 3):
+        * Three orange squares forming an L around the red square:
+            * One to the right of the red square.
+            * One directly below the red square.
+            * One diagonally down-right from the red square, completing a 2\times2 square block (made of 1 red + 3 orange).
+    3. Step 3 (add 5):
+        * Five yellow‑green squares forming a thicker L around the existing 2\times2 block:
+            * Two squares extending the block to the right (so total width becomes 3).
+            * Two squares extending downward (height 3).
+            * One square placed at the new bottom-right corner, making a 3 \times 3 filled square.
+    4. Step 4 (add 7):
+        * Seven cyan squares around the 3\times3 block, again as an L:
+            * Three additional squares expanding to the right (width 4).
+            * Three additional squares expanding downward (height 4).
+            * One at the new bottom-right to form the 4 \times 4 filled square.
+    5. Step 5 (add 9):
+        * Nine royal blue squares forming the L around the 4\times4.
+    6. Step 6 (add 11):
+        * Eleven violet squares forming the outermost L, finally filling the entire 6 \times 6 grid.
+
+Annotations
+
+* On the left margin, vertically centered next to each “layer,” place small labels:
+    * Just outside the red zone: “1”
+    * Just outside the orange L: “+ 3”
+    * Then “+ 5”, “+ 7”, “+ 9”, “+ 11”, aligned with the approximate center height of each newly added L.
+* In the bottom‑right corner inside the grid, in white text overlay on top of the violet area: “6^2”, slightly bold so it’s clearly visible.
+
+The visual effect: you see a perfect 6×6 square whose area is decomposed into colored L‑shapes of lengths 1,3,5,7,9,11, making the identity obvious.

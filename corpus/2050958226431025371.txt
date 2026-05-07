@@ -1,0 +1,7 @@
+2026-05-03 | 39 likes
+
+Who is porting TempleOS to Rust?
+
+Jk, Terry would disavow anything that didn’t operate fully in ring-0 like his beloved Commodore 64. Memory safety wasn’t high on his list of priorities…
+
+There is something captivating about that UI design, though. https://t.co/N67KWZPhp2

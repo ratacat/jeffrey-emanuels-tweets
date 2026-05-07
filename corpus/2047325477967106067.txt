@@ -1,0 +1,23 @@
+2026-04-23 | 613 likes
+
+I can't believe how well this works. I made a skill you can use in Claude Code called /documentation-website-for-software-project:
+
+https://t.co/EX4Tm6DKJT
+
+You literally just invoke the skill in a folder containing a software project, and it autonomously cranks for an hour or more, researching the entire project and writing up REALLY GOOD documentation from scratch.
+
+Then it turns that into an unbelievably polished documentation site using the Nextra library and even deploys it for you automatically to Vercel if you want.
+
+I made the skill and then tried it for the first time yesterday in my FrankenTUI project. It cranked and cranked and spit this out in ONE SHOT:
+
+https://t.co/8rAY5Cxr0l
+
+It's the best documentation site I've ever made for one of my projects, with everything explained perfectly, full-text search, mobile-friendly, perfect formatting, diagrams. Including documentation sites that I really labored over manually.
+
+It covers all features and functionality in logical groupings, but also has articles about concepts and the overall philosophy of the project. 
+
+I know that I could make it even better by invoking the skill multiple times and asking it to polish things, but I wanted to show off what it can do straight out of the gate in a single shot.
+
+I was optimistic that it would work well because I put a ton of thought and many different phases into the workflow, but I'm still totally amazed by the results. 
+
+Anyone still saying that skills aren't useful is going to be left in the dust by people who understand how to leverage these effectively.

@@ -1,0 +1,7 @@
+2026-03-14 | 271 likes
+
+I'm now up to over 5.5k beads for my asupersync project, which is a record for me.
+
+The force graph layout of all the beads is truly nuts, and puts into perspective what a massive, sprawling effort it's been. It's now a million lines of code with tests! 
+
+https://t.co/kWerhDLMi3 https://t.co/7DsfbIQolK

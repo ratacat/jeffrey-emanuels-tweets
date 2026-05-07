@@ -1,0 +1,21 @@
+2026-04-23 | 40 likes
+
+I've always loved these "visual math proof" images. 
+
+Sure, they're not really all that rigorous and it's easy to fool yourself into thinking you've proved something when you really haven't, but they're just cool and often give really good intuition for the math. 
+
+I had the idea a few months ago to see if the ChatGPT image generation model (and later, Nano Banana 2) were smart enough to create new ones.
+
+So I used the prompt shown in the second image along with 4 of my favorite non-AI examples and asked GPT Pro to come up with detailed prompts describing new visual proofs. 
+
+The prompts sounded pretty good to me, but ultimately the image models were just not good enough to do them properly.
+
+So now I'm going to test all of them out now using the new ChatGPT image model released today to see if it's finally possible. 
+
+I don't know yet whether this is going to work, so we will find out together. I might run the prompts more than once and choose the best output. 
+
+I'll post a series of replies here in a thread, each one containing the full prompt text and the resulting image. 
+
+Then I'll ask another model to evaluate just the image and explain what it's trying to show and whether it's mathematically accurate and constitutes a "visual proof."
+
+Ready?

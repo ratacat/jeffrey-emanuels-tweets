@@ -1,0 +1,3 @@
+2026-05-03 | 12 likes
+
+Another approach is to have one top-level agent guiding the process with multiple ntm sub-swarms for a bunch of projects at once; this can work better when there isn't as much left to do on each project. Here is what it looks like running across 9 projects at the same time: https://t.co/DGkQHA0CjN

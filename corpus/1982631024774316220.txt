@@ -1,4 +1,4 @@
-2025-10-27 | 1068 likes
+2025-10-27 | 1070 likes
 
 I finally got around to making a tool I've wanted for a long time: you can basically think of it as being "like Gmail for coding agents."
 

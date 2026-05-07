@@ -1,0 +1,3 @@
+2026-03-31 | 94 likes
+
+This post is basically evergreen now; perhaps this Axios/npm attack will finally wake people up about how insane it is for us to be living like this when the solution is so totally obvious and essentially trivial to implement for the most popular packages.

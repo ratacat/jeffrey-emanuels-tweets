@@ -1,0 +1,5 @@
+2026-02-20 | 61 likes
+
+I asked Claude on my phone to give me its take on my asupersync library, and it was a bit skeptical and almost condescending… until it cloned the repo and dug into the code. Then it changed its tune pretty quickly! 
+
+Its takeaway: “The 19 stars is a crime given what's here…” https://t.co/evAp3RPmjV

@@ -1,0 +1,49 @@
+2026-05-07 | 8 likes
+
+Here's another "quality-of-life" skill for the agent-addicted, the /git-stash-janitor:
+
+https://t.co/RNdD92yPnV
+
+When you have enough clankers running around, you end up accumulating a lot of Git stashes. These are particularly common when you have multiple agents trying to commit and push at the same time.
+
+Sure, you could just clear them out, but then you run the risk of throwing out good, useful code (this is generally not the case if you're using frontier models and harnesses, since they're pretty good at dealing with this). But it absolutely does happen, and you want to avoid it.
+
+When the stash count gets high enough, chances are that there are at least some things in there you don't want to lose.
+
+This skill sets up a comprehensive process involving 18 subagents, 23 scripts, and 32 reference files to ensure that everything is handled in the smartest possible way, fully autonomously.
+
+But you don't have to just blindly trust it, because it creates a complete, detailed, auditable record of everything it did (and why) that you can review and analyze. And it is VERY careful to not screw up your repo.
+
+Here is GPT-5.5's take on what makes this skill special and compelling:
+
+---
+ 
+• I found the skill under .claude/skills/git-stash-janitor, with a large body: main skill file, self-test, scripts, templates, subagent prompts, and a substantial reference library. I’m going to read it as a system, not just as a README, because the interesting part appears to be its operational choreography and safety model.
+
+• The spine is stronger than I expected: it has a precise git-internals kernel, then turns that into phase gates, artifacts, subagent roles, scripts, and refusal conditions. The unusual design choice is that “cleanup” is deliberately downstream of a recovery/audit pipeline, so the value proposition is recovered work plus proof, not a shorter stash list.
+
+• The implementation is not just decorative scaffolding. The scripts encode the same invariants: stable SHA rather than shifting stash@{N}, authorization files as hard gates, refusal to overwrite existing bundles, verification of untracked files, path-conflict checks before copying untracked stash content, and integration tests with adversarial canaries.
+
+• I think the core innovation is that git-stash-janitor reframes stash cleanup as forensic value recovery, not housekeeping. It treats a stash pile as an unmined backlog of partially completed work, then applies a disciplined recovery pipeline before allowing any destructive cleanup.
+
+What makes it special:
+
+- It has a real safety kernel. The “one rule” is byte-for-byte reversibility before any drop, backed by refs/stash-backup/*, bundle diffs, metadata, and index rows. 
+
+- It understands git stash internals correctly. It knows stashes are merge commits with extra parents, rejects the git format-patch footgun, captures untracked files from the third parent, and uses stable SHAs instead of shifting stash@{N} positions.
+
+- It separates phases by risk. Inventory and bundle creation are serial, triage is parallel, apply is sequential, cleanup is gated. That matches the actual dependency structure instead of forcing parallelism where it would be unsafe.
+
+- It makes deletion socially and technically hard. drop-confirmed .sh requires both a plan-level authorization file and a per-drop confirmation flag, then verifies the live stash SHA and backup ref before dropping. 
+
+- It is built for agent-swarm reality. It explicitly treats working-tree drift from other agents as normal, snapshots it, avoids staging unrelated work, and refuses to overwrite untracked path conflicts.
+
+- It has a real triage vocabulary: superseded, garbage, novel-and-accretive, partially-novel, novel-but-stale, unknown. That is much better than “keep/drop” because it captures why something exists and what should happen next.
+
+- It accumulates learning. The integration test is unusually serious: it uses adversarial canaries for markdown pipes, command injection, path spaces, binary diffs, stash index races, verdict-bucket mistakes, and untracked files.
+
+The compelling part is that it converts one of the messiest artifacts of agentic coding, abandoned WIP stashes, into a structured recovery stream: inspect, fingerprint, compare to main, preserve everything, recover only what is accretive, gate every apply, then drop only after proof and authorization. It is almost an “archaeological compiler” for agent leftovers.
+
+The accretive part is the strongest. A normal stash cleanup leaves you with fewer stashes. This skill can leave you with fewer stashes plus recovered commits, a reusable evidence bundle, a handoff report, recovery recipes, better future heuristics, and tests that encode the painful lessons. That means every run can improve both the target repo and the skill itself.
+
+One caveat: the heuristic triage-batch .sh is intentionally not the whole brain. It does lightweight fingerprinting, while the docs require manual or specialist same-signature review for higher-stakes cases. I read that as good engineering: fast automation for the broad pass, stronger human/model verification at the danger points.

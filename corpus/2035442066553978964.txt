@@ -1,0 +1,31 @@
+2026-03-21 | 89 likes
+
+Here are some more tangible, practical examples of the "virtuous circle" of using skills to improve tooling, and then tooling to improve skills. 
+
+Huh? How exactly could tooling help improve skills?
+
+Well, one way is pretty obvious. For example, you could use my cass tool for searching through all your past coding agent sessions to help surface things that might be useful in a new skill or to improve an existing skill. But there's also another way which I will describe here.
+
+I have a skill specifically for making great looking TUIs in Golang using the awesome Charm libraries (lipgloss, bubbletea, huh, etc.) called "building-glamorous-tuis." 
+
+It already works very well, but I'd like to make it even better so I can use it to supercharge the TUI in my othe ntm project.
+
+So to do that, I started with my beads_viewer project, which I truly slaved over to give it an awesome TUI that looks great and works very well in terms of responsiveness, UI/UX patterns, etc. 
+
+I simply told Claude Code to do this in the beads_viewer project:
+
+❯ First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project. In particular, I want you to closely investigate and understand the exquisite TUI of this project and really try to understand how it ticks and what makes it so extraordinary, slick, polished, and beloved by users.
+
+It did a great job doing this, and you can see the results in the screenshots below. So then what? Well, I just did this:
+
+❯ OK, now I want you to take everything you've learned just now and ensure that it is fully embodied in the /data/projects/je_private_skills_repo/.claude/skills/building-glamorous-tuis skill; use /sw to help revise the skill, but DO NOT REMOVE ANYTHING USEFUL. Don't worry about the total size of the skill, either.
+
+That's basically it! If you look at the last screenshot below, you can see that Claude was able to effectively operationalize its learnings from studying the TUI code in the beads_viewer project.
+
+Note that I did use my non-public skill-writing skill in that prompt, but you don't strictly need that to get a very serviceable skill that will work very well in practice. (that /sw skill has some of the special sauce I use to make the skills featured on my https://t.co/fAdDXiANf0 site have that extra pizzazz, so I'm keeping that private for obvious reasons).
+
+Anyway, if you just keep refining and improving your skills based on fully fleshed-out, real-world examples, the models are very good at generalizing from those the core principles or design patterns or whatever it is that make the examples special and good. 
+
+So then all you need to do is figure out how to build one good example. But if you can't do that, you can just steal it from an existing project that does what you're trying to generalize at a very high level of quality and sophistication! 
+
+That's the beauty of open source, after all: you can see what makes the thing tick and reverse engineer the operating principles.

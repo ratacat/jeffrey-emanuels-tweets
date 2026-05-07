@@ -1,0 +1,3 @@
+2026-03-31 | 44 likes
+
+Making some serious strides in FrankenSQLite now. Just need to close some performance gaps in a few single-threaded paths and then it should be at least at parity across the board, but much faster in highly-concurrent write workloads (the primary raison d'être for the project). https://t.co/OjveO8xREQ

@@ -1,0 +1,11 @@
+2026-04-14 | 303 likes
+
+Probably not too late to short this thing. It sells a product that is meaningfully worse than what you can do already with current frontier models and agent harnesses. 
+
+A year ago, this was still a pretty clunky and manual workflow. I had to use TurboTax last year and paste screenshots into GPT 4.5. I came up with an approach that worked well and wrote an article about it last year, but it was a pain to apply and wasn't automated.
+
+Now, you can literally just use my skill in Claude Code or Codex and it all "just works" and can give you strategic advice and far more sophisticated feedback than you could get from TurboTax, or even H&R Block for that matter. 
+
+It's hard to think of another software company that is more exposed to these disruptive forces. Don't be swayed by an optically low forward P/E. The earnings could just start melting away at an accelerating pace.
+
+Is that really worth over $100 billion?

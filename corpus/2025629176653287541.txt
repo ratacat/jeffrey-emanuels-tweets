@@ -1,0 +1,3 @@
+2026-02-22 | 99 likes
+
+These two projects are coming along nicely. FrankenNode, powered by FrankenEngine. I'm creating a from-scratch replacement not just for bun/node, but for v8 and other JS engines. All in memory-safe, hyper-optimized Rust. True alien artifacts, with crazy math throughout. Exciting. https://t.co/k5l6hJTEIo

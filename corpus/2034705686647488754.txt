@@ -1,0 +1,17 @@
+2026-03-19 | 42 likes
+
+I’m surprised that you don’t see OpenAI announcing major partnerships with FANUC and KUKA. 
+
+These companies make extremely accurate and powerful robot arms that can do small-scale work all the way up to lifting and spinning entire car frames. 
+
+The problem with them has always been that the programming is extremely tedious, finicky, and time consuming. So the cost of the equipment is just the beginning since you need integrator consultants to program them for you. 
+
+And then they’re not flexible. Even after you finally dial everything in, you’re now stuck with that configuration. Good luck trying to optimize the overall layout of your plant or to change other work streams without needing to reprogram everything.
+
+But this is precisely where advanced AI, vision, RL, world models, etc. are so valuable. 
+
+But it’s going to be hard for the big labs to match 30+ years of mechanical engineering excellence and learnings like the robot arm companies have. Not to mention 30+ year supplier relationships with every large Western auto OEM.
+
+And the arm companies certainly aren’t going to be training any frontier transformers soon!
+
+Anyway, that’s what I would be advising them to do now.

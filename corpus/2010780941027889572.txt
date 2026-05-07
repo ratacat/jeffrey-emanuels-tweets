@@ -1,4 +1,4 @@
-2026-01-12 | 45 likes
+2026-01-12 | 47 likes
 
 When you're designing a complex protocol specification, especially when security is involved, just one iteration of review by GPT Pro 5.2 with Extended Reasoning doesn't cut it. 
 

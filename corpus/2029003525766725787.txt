@@ -1,0 +1,62 @@
+2026-03-04 | 260 likes
+
+Have you ever thought it might be nice to resume a Codex session using Claude Code? Or vice versa? What about being able to pick up in gemini-cli right where you left off in Codex or CC? 
+
+Unfortunately, you can't, because each agent harness uses a totally different format for storing session data, and the files are stored in different locations. 
+
+And the big labs certainly don't want to even acknowledge the existence of their competitors, let alone facilitate collaboration between their agents, even though that would be obviously in the interest of users. 
+
+I realized a couple weeks ago that my coding_agent_session_search (cass) tool already basically solved the hard problem here, which is to transform every different kind of session data file from every popular agent harness (over 7 of them!) into a single canonical, uniform format for indexing and searching. 
+
+And I already had all the code to automatically detect all installed agent harnesses (I've even abstracted this out into a separate project, franken_agent_detection).
+
+The result of that is my newest tool, cross_agent_session_resumer, or casr for short. You can get it here and install with the convenient curl-bash one-liner:
+
+https://t.co/hvVgkxe3d0
+
+I made this tool to be as convenient and ergonomic as possible. You know how when you exit Codex or CC, they tell you the session ID of the session you were just in? 
+
+You can directly use that with casr without even telling it what type of session it is; you just tell it the agent you want to resume the session with, like this. Suppose you just exited from Codex and see this:
+
+"To continue this session, run codex resume 019cb5c2-6972-7e92-9fe9-c86112194d9f"
+
+You simply do this to resume the session using Claude Code instead of Codex:
+
+casr -cc  019cb5c2-6972-7e92-9fe9-c86112194d9f   
+
+And you'll see the following:
+                                                                                                                                                                                                  ✔ ubuntu@threadripperje at 06:09:04 PM 
+✓ Converted codex session to claude-code
+  Source → 019cb5c2-6972-7e92-9fe9-c86112194d9f
+  Target → 5f6d03bb-cc87-43ac-9384-65bb2921babf
+  Messages → 39
+  Written → /home/ubuntu/.claude/projects/-data-projects-frankenfs/5f6d03bb-cc87-43ac-9384-65bb2921babf.jsonl
+
+  Resume: claude --resume 5f6d03bb-cc87-43ac-9384-65bb2921babf
+
+So how do I know this actually works correctly and faithfully represents the sessions in all their details even in a foreign setting? 
+
+I have a very rigorous end-to-end testing harness that takes real, non-trivial example sessions and then does the full "game of telephone" on them and shows they come out the other end accurately:
+
+- cargo test --test real_world_roundtrip_test -- --nocapture passed all 3 cycles:
+    - cc -> cod -> gmi -> cc
+    - cod -> cc -> gmi -> cod
+    - gmi -> cc -> cod -> gmi
+
+casr is also just generally useful aside from its main purpose for keeping tabs on your various agent sessions for a given project. 
+
+Doing `casr list` gives a very useful recap of the 10 most recent sessions for each agent type, along with useful metadata about each session, like the number of messages and tool calls, the average length of a response, etc. (see screenshot below).
+
+This project, along with some of my other major tools like cass and Agent Mail, show why it's important to maintain a thriving ecosystem of truly open source, provider-agnostic tooling that works equally well with agents from OpenAI, Anthropic, Google, and others. 
+
+It's simply not in their interest to ever make something like this available to you.
+
+The big labs want you stuck in a walled garden like you are with Apple and iCloud. 
+
+Don't you hate it how Apple makes it so difficult to access your own iMessage data programmatically? And how you need to pay $100 for a developer account just to use your own apps? Don't let AI go the same way without a fight! 
+
+But it's not even just about freedoms: I wouldn't be able to do what I do if I relied on just one model provider. I'm able to get the results that I do with the velocity I am achieving because I use ALL frontier models in a collaborative way via Agent Mail, beads_rust (br), beads_viewer (bv), cass, etc. 
+
+You don't need to choose between providers like that. It's a false distinction to view this as the equivalent of an "Emacs or vi" decision, where you proudly boast that you're a "Codex man" and that you think Claude Code is trash. 
+
+All of the frontier models and harnesses have their unique strengths and weaknesses, and making them work together and check each other's work yields results that are far higher quality and reliable than any model or harness individually.

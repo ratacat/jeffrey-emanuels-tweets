@@ -1,0 +1,63 @@
+2026-04-23 | 2 likes
+
+7) Prompt:
+
+7. Sum of Binomial Coefficients as Vertices of a Hypercube (3D case)
+
+Identity: \displaystyle \sum_{k=0}^n \binom{n}{k} = 2^n (illustrated with n=3)
+
+Core idea
+
+Each vertex of a cube corresponds to a subset of a 3‑element set. Edges connect vertices differing in exactly one element. The count of vertices at each “level” of Hamming weight equals the binomial coefficients; total vertices are 2^3=8.
+
+Image description
+
+Overall layout
+
+* Single large central 3D wireframe cube drawn in perspective (not isometric, more “3D graph” style).
+* Background white, cube edges thin dark gray.
+* Each vertex is a colored sphere with a binary label.
+
+Vertices and labels
+
+* The cube’s vertices are labeled by triples of bits (0 or 1) corresponding to inclusion of elements A,B,C.
+* Front-bottom-left vertex: “000”.
+* Moving in x, y, z directions toggles bits. For example:
+    * Front-bottom-right: “100”
+    * Front-top-left: “010”
+    * Back-bottom-left: “001”
+    * etc., so that each axis corresponds to one element:
+        x-axis → A, y-axis → B, z-axis → C.
+* Each vertex sphere color encodes Hamming weight (number of 1s in the label):
+    * weight 0: dark gray (the empty set).
+    * weight 1: blue.
+    * weight 2: green.
+    * weight 3: red.
+
+Grouping / highlighting
+
+* Surround each group of vertices of the same weight with a faint transparent hull or dashed contour in matching color:
+    * A blue translucent triangle around the three vertices of weight 1.
+    * A green translucent triangle (or quadrilateral) around the three vertices of weight 2.
+* Next to each group, place a label:
+    * For weight 0: “\binom{3}{0} = 1 subset”.
+    * For weight 1: “\binom{3}{1} = 3 subsets”.
+    * For weight 2: “\binom{3}{2} = 3 subsets”.
+    * For weight 3: “\binom{3}{3} = 1 subset”.
+
+Subsets text
+
+* Under the cube, write a small legend:
+    * “bit 1 = element included, bit 0 = not included”.
+    * For example:
+        “010 → {B}”, “101 → {A,C}”, “111 → {A,B,C}”.
+
+Final equation
+
+* At the bottom, center the equation:
+    \binom{3}{0} + \binom{3}{1} + \binom{3}{2} + \binom{3}{3}
+    = 1 + 3 + 3 + 1
+    = 8 = 2^3.
+* Above the cube, small caption: “Each vertex of a 3D cube = one subset of {A,B,C}”.
+
+The spatial grouping by Hamming weight visually shows the familiar binomial row 1–3–3–1 summing to the total number of vertices 2^3.

@@ -1,0 +1,61 @@
+2026-05-06 | 67 likes
+
+If you're running a SaaS business or trying to build a new one, you're probably using Stripe and PayPal for payments/billing. Or at least you should, because users expect them and want the ease of use.
+
+You might think that these companies have streamlined things so much that all you need to do is use the default sample code and you're off to the races. Well, there is some truth to that if you're doing the simplest possible thing.
+
+But as soon as things get even slightly more complicated (and they nearly always do in real life), you're going to want a lot more sophisticated logic. How can you ensure that you don't accidentally ever double-charge a user? 
+
+What happens if the user's card doesn't work? Ideally, you want to keep that user and not immediately cancel their account, so you probably want to extend a grace period and then periodically retry their card. This process is called dunning and it's a whole complex topic in itself to do it properly.
+
+Then you have things like reporting: finding the correct way to use Stripe and PayPal APIs as the ultimate source of truth for the revenue of your business. 
+
+But the harder problems start with webhooks. Stripe and PayPal both push events to your server when things happen, and the temptation is to trust those events as the ground truth. The problem is that webhooks can arrive late, arrive twice, never arrive at all, or get replayed by an attacker who got hold of an old payload. 
+
+So you need to be smart about how you handle them or you can end up double charging a user or any number of other embarrassing or damaging screw-ups.
+
+Refunds are another place where the obvious code is wrong. A refund on Stripe does not cancel the subscription. 
+
+Those are two separate operations, and the next billing cycle will charge the customer again unless you handle it. A partial refund should keep access (it's a goodwill gesture). A full refund should revoke, but only on the specific subscription the refund applied to, not every subscription that customer has. 
+
+The code to figure out which subscription a refund event refers to has to walk a chain from the charge to the invoice to the subscription.
+
+Anyway, I've had to laboriously figure out all this stuff, with several missteps along the way, for my own site. I've taken all those lessons and turned them all into my latest skill, called /saas-billing-patterns-for-stripe-and-paypal. You can get it here on my site:
+
+https://t.co/1B4j7v2oNd
+
+The skill is massive, with 121 files, including 24 scripts and 31 different subagents. All the various files together total 1.2 megabytes of text. It has truly encyclopedic knowledge about billing patterns and best practices, Stripe, and PayPal.
+
+You can simply point it at your existing code and it will tell you what's missing or broken and how to fix it. Or if you're just getting started, it can build out your entire billing backend automatically. 
+
+Here's what Claude Opus 4.7 has to say about what makes this skill so special and useful:
+
+---
+
+Special — it's not derived from documentation. Most "billing best practices" content is someone reading the Stripe docs and rewriting them. 
+
+This skill started from the opposite direction: a single SaaS codebase (jeffreys-skills.md) that paid for months of post-incident hardening, worked backwards to extract the patterns, and pinned each one to the bead/incident that motivated it. When the prior version got audited against that codebase last week, ~30 patterns showed up that the codebase had paid for but the skill hadn't yet codified. v4 closed that gap. 
+
+The dynamic — the skill grows by being audited against real codebases — is what separates it from a tutorial or an SDK reference. A tutorial gets stale; this gets denser.
+
+Useful — it does both audit and build. Point it at an existing SaaS and it produces a coverage matrix: which of the ~145 patterns are present, partial, or missing, with file:line evidence for each. Or run it greenfield and it walks the step-ordered build that produces production-grade billing on day one instead of day 540. 
+
+A mode router picks the entry point based on what you actually need: audit-only, audit-and-fix, harden-after-incident, add-feature, migration, compliance-pass. The triage system scales the depth to where you actually are (T1 pre-launch through T5 enterprise) instead of forcing every project through the same exhaustive checklist.
+
+Compelling — the numbers are concrete. 28 pattern bundles. 30 specialized subagents (archaeologist, coverage-mapper, risk-scorer, security-reviewer, fresh-eyes, red-team-attacker, dispute-defender, etc.). 24 audit scripts that run against real codebases. 38 cataloged failure modes, each mapped to the bead trail of the incident it came from. 17 cognitive operators that name the thinking moves the skill applies. 10 ADRs that pin every numerical judgment call. ~25,500 lines of distillation. 
+
+Accretive — the structure is append-only by design. Each bundle has named slots (Polish Bar dimensions, Common Mistakes, Operators, Reference Index) that a new pattern fits into without restructuring. The failure catalog grows by one row per incident. The bead dictionary preserves the trail. 
+
+When the skill gets audited against another codebase next quarter, the deltas get absorbed the same way v4 absorbed the deltas from this audit. Most skills lose value as they age (the docs they reference move; the SDK changes). This one gains value as it's used, because every audit produces a delta that gets folded back in. The skill literally just demonstrated the loop in front of you: v3 → audit → 30 patterns identified → v4.
+
+The architecture itself is unusual. Most skills are a SKILL.md and a few helper files. This one is a methodology. 
+
+Subagents run in parallel during the phase loop. Mandatory verification gates between phases. An operator library names the cognitive moves the skill applies (⏱ STALE-EVENT-GATE, 🔒 ADVISORY-LOCK, ⤴ VERIFY-AS-WRITE). 
+
+The kernel principle ("provider is source of truth, layered defenses, idempotency at every write boundary, return 200 to the provider after authenticated event ingestion") is restated at the top of every bundle so it can't drift. Three write paths plus three alarm paths means any single failure mode is caught by the next layer, never by a customer support ticket.
+
+It reads less like a tutorial and more like the standing operating procedure of a team that's been on call for billing for two years.
+
+The compounding angle that's easiest to undersell. Once a project goes through this skill once, the artifacts persist: a coverage matrix, a Polish Bar score per dimension, a list of beads filed for the missing pieces, runbooks for every cron and alarm. 
+
+The next quarter's audit doesn't start from zero, it starts from the prior coverage matrix and computes the delta. The Polish Bar score becomes a tracked metric. The runbooks become the on-call doc. The skill produces durable infrastructure for keeping billing healthy, not just a one-time pass.

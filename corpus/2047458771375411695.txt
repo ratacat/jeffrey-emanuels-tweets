@@ -1,0 +1,7 @@
+2026-04-23 | 8 likes
+
+Until now, it was still too hard to use for non-technical people, since my skills site was targeted at software developers who are more comfortable using AI agents in the terminal.
+
+So I spent the last couple of days making the workflow much simpler and testing it with the new GUI apps from OpenAI and Anthropic and verifying that it all works. 
+
+Now, pretty much anyone can use this (and my tax skill) without being tech savvy! Great for older relatives who want expert advice without spending a fortune on lawyers.

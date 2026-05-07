@@ -1,0 +1,3 @@
+2026-03-25 | 9 likes
+
+So if you trust your affairs to Opus 4.6, you don’t want to have Opus 6 take charge 2 years after you die. But the that probably requires using an open-weight model to have enough legal certainty, since you can’t control when a closed lab decides to sunset a model.

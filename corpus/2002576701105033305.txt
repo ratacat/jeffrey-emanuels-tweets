@@ -1,4 +1,4 @@
-2025-12-21 | 326 likes
+2025-12-21 | 327 likes
 
 I made a new website and set of scripts and prompts to help people get set up with the same kind of setup that I use to develop software. You can see it here:
 

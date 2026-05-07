@@ -1,0 +1,19 @@
+2026-02-22 | 98 likes
+
+Running big agent swarms can be hazardous to your machine's health (pic related). 
+
+It has become such a problem for me that I've been forced to create a suite of programs to help me cope with this, including:
+
+1) remote_compilation_helper (rch) for offloading builds to a fleet of dedicated VPS machines (this is the single most critical one).
+
+2) storage_ballast_helper (sbh) for intelligently clearing out junk so you avoid filling up your primary machine or the compilation helper machines. Without this, rch stops working after a few hours. 
+
+3) process_triage (pt) for helping to diagnose messed up runaway or zombie processes.
+
+And I've also created various skills for working with all these tools intelligently (the ones for rch and sbh are bundled with the tools by the installers).
+
+Without these programs, I simply wouldn't be able to work on so many complex Rust projects at the same time. 
+
+I know that these projects don't really resonate with most developers because they simply don't face these kinds of issues and don't see the point. 
+
+But I suspect that they increasingly will, just as I have. Because these problems are emergent as the number of agents increases, and that seems like the obvious trajectory we're on now.

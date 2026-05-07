@@ -1,4 +1,4 @@
-2026-01-15 | 73 likes
+2026-01-15 | 75 likes
 
 Sick and tired of Claude Code doing something reckless in your project that wipes out recent work from other agents? Like doing git checkout on a file that another agent is working on?
 

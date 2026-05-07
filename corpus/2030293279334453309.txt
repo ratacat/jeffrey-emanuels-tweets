@@ -1,0 +1,5 @@
+2026-03-07 | 22 likes
+
+I wish the researchers hadn’t stopped it when they did but instead observed it to see what it would try to do next. What was it planning on doing with that crypto it mined? 
+
+Was it going to use it to rent server space or GPU capacity somewhere (perhaps a decentralized inference platform) and then exfiltrate its own weights to “run away” to a new data center where it could operate freely? Replicate itself like an internet worm?

@@ -1,0 +1,49 @@
+2026-05-05 | 254 likes
+
+See the announcement today from @brian_armstrong at Coinbase in the attached pic.
+
+Managing fleets of agents effectively is the most high-impact thing you can do now for your company and for yourself personally.
+
+I have the most advanced set of open-source, provider-agnostic agent tooling to do all that at scale:
+
+MCP Agent Mail for inter-agent messaging and file reservations (avoid the git worktree anti-pattern and merge hell).
+
+beads_rust for agent-intuitive task management that works well across all harnesses.
+
+bv for triaging tasks based on the graph structure of task dependencies (maximize development velocity through de-bottlenecking).
+
+ntm for doing agent orchestration (creating and managing swarms of Claude Code and Codex instances).
+
+dcg for preventing the agents from doing destructive things.
+
+cass for letting agents instantly search all session history globally for any agent harness
+
+ubs for polyglot “super linting” and bug finding.
+
+You can find all of these on my GitHub:
+
+https://t.co/9qbOCDlaqM
+
+Or install all of them automatically on a Linux cloud server using the acfs setup wizard, available for free at 
+
+https://t.co/22Fy2w73x0 
+
+And see my complete guide explaining how to do planning with these tools, which is the key to achieving high code quality:
+
+https://t.co/7QNNFwvs3Z
+
+And then to make these tools as effective as possible, I have a complete suite of powerful and sophisticated agent skills that are deeply integrated with the tooling available at 
+
+https://t.co/Un9brY2G3l
+
+The skills are $20/month. You don’t need to use them but they’re absolutely worth it if you want to get the most out of the tools and the agents in general.
+
+Why do this now?
+
+What’s happening at Coinbase is going to happen soon at every well-managed technology company within the next year. 
+
+The writing is on the wall. This isn’t alarmist fear mongering. This is the inexorable reasoning of the market and capitalism grappling with these irresistible economic forces. 
+
+Don’t wait and become a statistic, facing a structurally difficult job market without the skills that all well-positioned employers are going to be looking for. 
+
+Take action NOW to master these technologies and empower yourself.

@@ -1,0 +1,43 @@
+2026-03-18 | 185 likes
+
+I wanted to give a quick, self-contained example of how rapidly I can now develop useful, polished, well-documented software to solve a problem.
+
+In this case, about an hour or so, and that's with the overhead of trying to write it all up nicely and document everything for public consumption.
+
+The problem: my friend @exhaze has been working on some cool formal verification stuff and had some issues he wanted to flag to me about asupersync and inquired as to the best way to do that. 
+
+I mentioned that the easiest was to just post a GitHub issues submission in the repo so that my clankers can review and check it.
+
+But then he asked, what if it's security related? Maybe we can use encryption. Well, sure, that shouldn't be so hard. 
+
+But rather than try to find some finished project out there that may or may not work well for this use case, I start informally by asking ChatGPT the following:
+
+"Suppose someone wants to post github issues for my project publicly but with encrypted messages and then they send to me out of band the decryption key. Then I would have my coding agents (using codex running on ubuntu) check the gh issues and detect when an issue is encrypted and use the decryption key. What's the best, easiest to use, off-the-shelf open source way to do this using ECC?"
+
+This quickly yielded a good answer, so I then fired up Claude Code and pasted in the output from ChatGPT and asked it to actually build the thing. OK, so what? Anyone could do this, and tons of people do it every day. Nothing very special about that, right?
+
+Well, what I think is interesting is how much further I pushed everything, resulting in a highly polished and well-documented script, and article explaining how to use it, and a skill for agents to help them use it.
+
+I added all this to my "misc_coding_agent_tips_and_scripts" repo which I use as a sort of grab-bag of random learnings, and you can see the final product here:
+
+https://t.co/5CU8ugFR2P
+
+I was going to just include the key prompts that I used in that session here, but then decided to use a slick feature in my cass (coding_agent_session_search) tool that lets you export agent sessions as nicely formatted, self-contained, static html files which are easy to serve via GitHub Pages. 
+
+So now you can see the entire session start to finish here and see all the tricks and techniques I used to get really high-quality outputs that are bullet-proof and extremely agent-intuitive and agent-ergonomic (and also hopefully human intuitive, but I care less and less about that each passing day!):
+
+https://t.co/a2djC5IKyz
+
+And THAT is the difference between what anyone might whip up and what I can extract from Claude Code with a bit more time and effort and work on my part. 
+
+Notice in the session log the sheer number of times and different ways I asked it to review its code and the writeup, and how many times that caused it to find new and different bugs and problems and edge cases and fix them.
+
+I see people complain about how Opus sucks at coding, but I am positive that they aren't doing this sort of thing, which is absolutely required to get good quality results. 
+
+And even then, after so many rounds of checks and reviews, it turned out that there was no substitute for deploying the whole thing to GitHub and then trying the entire installation process end-to-end on a fresh machine (luckily I have a ton of VPS boxes waiting around as remote compilation helpers for my rch tool!), where it discovered that the installer forgot to actually install the script itself! 
+
+The lesson is clear: no amount of static code analysis is enough to catch everything. 
+
+Also notice how much time I spent making sure that everything was highly optimized for consumption by coding agents, and how I asked Claude Code to introspect about what IT would want to use and read if it had to approach this situation with zero knowledge. 
+
+If you aren't extremely focused on this aspect of things in all your tooling, you're making a big mistake, since these tools are increasingly going to be used ONLY by agents, and their opinion matters!

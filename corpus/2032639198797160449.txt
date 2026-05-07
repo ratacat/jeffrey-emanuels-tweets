@@ -1,0 +1,3 @@
+2026-03-14 | 22 likes
+
+Here's the breakdown on that million lines. And it's still  growing, too! I'm adding a wasm version for browsers that's nearly done, and also continuing to prove various parts of the system formally using Lean: https://t.co/859rp6qh8I

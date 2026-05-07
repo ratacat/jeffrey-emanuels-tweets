@@ -1,0 +1,19 @@
+2026-04-16 | 40 likes
+
+I’m nearly done with these two skills and will be publishing them soon to my skills site. 
+
+But this makes me wonder: what other things are there like Slack? 
+
+That is, where people and companies are being squeezed by software companies that have historically had a pretty decent moat and stickiness with high switching costs, but where there are now decent open source alternatives that are held back simply because the process of migrating to them is too difficult and manual?
+
+Where having really good, detailed agent skills (with corresponding scripts, subagents, etc.) can turn that slow, difficult, manual, risky process into something that you can basically just have Codex or Claude Code drive for you pretty autonomously over the course of a day or two, and then be able to verify that it’s all working right before you pull the plug and cancel Slack?
+
+Some candidates: Jira; Splunk. 
+
+Or are the open source alternatives not quite mature enough? 
+
+I’m open to trying to make a bunch of these, using my new Slack migration skills as a blueprint. And I’m also committed to improving the Slack skills based on real user feedback. 
+
+People always dismiss the idea that “companies are going to vibecode a Slack replacement” and post that Slack alerts flowchart image.  And sure, there’s obviously something to that criticism.
+
+But it’s a lot harder to dismiss the idea that a really well-designed and thorough set of specialized agent skills could mostly automate the process of switching to an open source alternative.  That seems inevitable.

@@ -1,0 +1,5 @@
+2026-05-02 | 50 likes
+
+This is one terminal pane of around 6, running on just one of my 5 development machines.
+
+Each pane cranking away for hours using swarms of full Claude Code and Codex agents, applying skills to autonomously find and fix issues and improve performance. Even managing the machine. https://t.co/bSczyAgvPb

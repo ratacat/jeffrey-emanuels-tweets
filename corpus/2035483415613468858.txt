@@ -1,0 +1,13 @@
+2026-03-21 | 103 likes
+
+Here you can see what this is starting to look like. Instead of just having a big grid of tmux panes, ntm now lets you press F12 to bring up the ntm HUD, which lets you monitor what's happening. 
+
+I continue to fold in and integrate more data sources into this ntm dashboard, including Agent Mail and Beads data, plus it pulls in information form the tmux panes, such as remaining context.
+
+But as cool as this is, I think it's important to realize that it's ultimately not necessary, because what really matters is how well your agent can monitor and control the swarm using ntm (see the images in the reply post below to see the same swarm from the agent's perspective instead). 
+
+A similar change happened with beads_viewer, which you can see in the name of that project: bv started out being about letting you, the human overseer, keep tabs on your beads and how they were progressing. 
+
+But nowadays, 99%+ of my own usage of bv is indirect, having my agents use it to do all that stuff. As I keep saying, removing yourself as the bottleneck from the process is the only way to scale up to 100+ agents.
+
+And that's sort of the new "agent-level bitter lesson": the more agents you can usefully harness, the more compute and tokens you're commanding, the more you can do productively.

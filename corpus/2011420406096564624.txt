@@ -1,3 +1,3 @@
-2026-01-14 | 18 likes
+2026-01-14 | 20 likes
 
 Update on this: it all works perfectly! The apr tool is rock solid now. And I created skills dot md files for that project and for the project I was using this for to iteratively rewrite the specifications document, flywheel_connectors. Now I can just say "do an apr round." https://t.co/PMgzkC3DMn

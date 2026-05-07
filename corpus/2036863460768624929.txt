@@ -1,0 +1,12 @@
+2026-03-25 | 80 likes
+
+One very big and hard-to-solve problem with agent memory is that, even if you can manage to correctly and quickly identify that a memory from a past interaction is in fact relevant to the current interaction, that’s still not enough!
+
+In the case of a rapidly-evolving codebase, for example, things that were true about it last week might be totally irrelevant today because the system has changed: bugs have been fixed, APIs revised, even the core approach might be new.
+
+And making that determination requires knowledge and understanding of the projects (and their evolution) that the memories reference.
+
+Basically, yet another version of:
+
+“It ain't what you don't know that gets you into trouble. It's what you know for sure that just ain't so.”
+Mark Twain

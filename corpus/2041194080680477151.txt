@@ -1,0 +1,33 @@
+2026-04-06 | 84 likes
+
+I transformed this entire "come to Jesus moment" workflow into a new skill called "reality-check-for-project" on my paid skills site, https://t.co/Un9brY2G3l .
+
+Anyway, I'm applying it now to many of my in-progress "FrankenSuite" projects that I haven't had as much time to actively monitor and shepherd, like FrankenRedis, FrankenPandas, FrankenSciPy, etc.
+
+It's unbelievably helpful (really, I'm not just saying that). Almost like hiring a second person to go over all the stuff and give me an independent take on everything so we can get projects back on track towards completion.
+
+But without me needing to actually do much actively. All I do now is give this to Claude Code:
+
+"First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project. THEN apply /reality-check-for-project here in an exhaustive way."
+
+Then wait 15-20 minutes for it to crank away and  follow up with something like this (basically just telling it to close all the gaps it found, followed by my standard prompt for turning plans into beads):
+
+---
+
+› I need you to help me fix this. That is, making all the things that are unimplemented but which SHOULD have been implemented according to the beads and markdown plan. Figure out exactly what needs to be done to get us over the goal line with a finished, polished, reliable, performant project in line with the vision described earlier. 
+
+OK so please take ALL of that and elaborate on it and use it to create a comprehensive and granular set of beads for all this with tasks, subtasks, and dependency structure overlaid, with detailed comments so that the whole thing is totally self-contained and self-documenting (including relevant background, reasoning/justification, considerations, etc.-- anything we'd want our "future self" to know about the goals and intentions and thought process and how it serves the overarching goals of the project.). 
+
+The beads should be so detailed that we never need to consult back to the original markdown plan document. Remember to ONLY use the `br` tool to create and modify the beads and add the dependencies.
+
+---
+
+Then I just do:
+
+"First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project. 
+
+THEN: start systematically and methodically and meticulously and diligently executing those remaining beads tasks that you created in the optimal logical order! 
+
+Don't forget to mark beads as you work on them. Use the /ntm swarm and /vibing-with-ntm skills to implement things in the optimal way according to /bv; launch 3 codex and 3 claude code instances to do this and use your looping feature to check in on the swarm every 3 minutes and feed more instructions to any idle agents."
+
+You can really see how all the skills are jointly compounding together to create a super-dense shorthand for communicating complex workflows to the agents very quickly and conveniently.

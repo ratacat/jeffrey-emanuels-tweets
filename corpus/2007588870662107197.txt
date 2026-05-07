@@ -1,4 +1,4 @@
-2026-01-03 | 757 likes
+2026-01-03 | 761 likes
 
 If you have a markdown plan for a new piece of software that you're getting ready to start implementing with a coding agent such as Claude Code, before starting the actual implementation work, give this a try.
 

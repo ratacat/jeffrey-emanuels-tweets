@@ -1,4 +1,4 @@
-2025-11-07 | 793 likes
+2025-11-07 | 791 likes
 
 A useful addendum to your AGENTS dot md or CLAUDE dot md file. First ask codex or claude code to install ast-grep for you if you don't have it already. 
 

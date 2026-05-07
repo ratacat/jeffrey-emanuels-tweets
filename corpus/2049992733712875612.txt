@@ -1,0 +1,106 @@
+2026-04-30 | 69 likes
+
+I keep getting more and more abstract and general in my agent skills. I just finished two skills which are good examples of how far you can take abstraction and universality in skills. They're both for automating the process of customer service and user support via a ticketing system.
+
+For months, I've been automatically triaging and responding to 50+ GitHub Issues and PRs per day across dozens of my open-source projects. 
+
+As I figured out good workflows from this, I ultimately turned these into agent skills which I've been using for a while now to manage the entire process for me a couple of times a day using Claude Code. 
+
+My skill uses my own custom tooling (repo_updater, which is a kind of wrapper on the gh utility) and only surfaces things for my attention that require my judgment. Otherwise, it tries to do everything it can by itself. If someone reports a bug, it tries to automatically diagnose and fix the bug and then responds to the user as needed.
+
+When I created my https://t.co/gPMIHym3Hv site around 2 months ago, I included an elaborate user support ticketing system for it. 
+
+I knew that I wanted to have something similar to what I had been using for GitHub to automate the process, and I did finally end up with a skill that handles nearly everything, although there was an initial ramping process where things were only "semi-automatic" while I figured out the right policies and procedures with help from the agent. 
+
+Now things are nearly fully automated except that I still insist on reviewing every response to a user before it goes out. Eventually, this might prove to be too much of a bottleneck and I will fully automate it, but for now I like to preserve that degree of control and oversight because these are paying users and the ticket volume isn't high enough for it to be burdensome.
+
+Anyway, this is already an extremely valuable and useful workflow that has enabled me to scale my site without needing to hire anyone to do support work for me, and it also makes it so that I spend very little of my own human time and mental bandwidth on support. 
+
+I wanted to find a way to provide this sort of skill in general to any SaaS business, but the problem is that the skill I developed for doing this on my own site is very tightly coupled to my own bespoke support/ticketing system.
+
+There are obviously a lot of existing third-party systems for handling support ticketing that are popular, such as Zendesk, Intercom, Freshdesk, etc., and people generally want to stick with what they're already using. 
+
+So I created a completely general skill called /user-support-triage-for-saas-and-open-source-projects that integrates with 14 different services like these, and abstracts the higher-level workflows associated with dealing with user support requests of all kinds, be they about billing, technical issues, or anything else. 
+
+The skill comprises 85 files and is 912kb of reference files, scripts, runbooks, and subagents:
+
+https://t.co/yef0QgyJ2V
+
+What if you have your own custom, bespoke support ticketing system? Well, the skill knows to analyze your code and study what you have already and clearly document it all during the initial onboarding process, so it can figure out how it works and how to use it properly. 
+
+In fact, that's how it knows whether you're using one of the 14 different third-party providers. Then, when you invoke the skill in the future, it already knows how to navigate everything correctly and can jump right into action. 
+
+But what if you're just starting out with a new SaaS project and don't have any system at all, and don't want to use a third-party provider? 
+
+Well, if you're using NextJS to build your SaaS, the skill will ask you if you want it to build one for you, and if you agree, it will automatically install and invoke another skill called /user-support-ticketing-system-for-saas which is closely modeled on my own ticketing system:
+
+https://t.co/MtqmU16grT
+
+This skill is also massive at 76 files and 935kb. It's designed to work for essentially any kind of SaaS or internet-based business, and it's part of a series of skills I've made that abstract the principles behind sections of my own site and make them general so that they can work with any SaaS project based on NextJS (the other ones include /admin-page-for-nextjs-sites and /saas-customer-analytics). 
+
+The idea with these skills is to give proven systems for building out the kind of generic building blocks that tend to be useful in any SaaS project.
+
+What I think is cool about the user support triage skill is that it can adapt; it comes armed with enough knowledge and expertise on the subject that it can custom-tailor what it does to your particular situation; it meets you where you are now instead of forcing you to change how you do things to fit a preconceived notion of how a user support ticketing system should work. 
+
+And that to me is what is most disruptive and exciting about skills versus traditional software: skills can leverage the intelligence and adaptability of the underlying frontier models and harnesses to act much more like an expert human consultant.
+
+Developing these very abstract skills is more difficult because you really need to prove out the core concepts with a specific concrete implementation and revise and evolve it over time in response to experience and feedback. 
+
+Before I even attempted to make these two skills, I did numerous revisions of my own private user support skill (and before that, many revisions of my GitHub Issues triage skill that was the precursor). 
+
+These revisions were based on mining my own cass session history and seeing how I overruled or corrected the agent so that the next time it would just do the right thing without being told. 
+
+Only after you know that it's solidly working in a particular setting and implementation should you even attempt to generalize it for ALL settings.
+
+And over time, as more people try these new skills and give me feedback using the same support ticketing system, I will feed that back into the skills to improve them to make them more robust and universal. 
+
+Here is GPT-5.5's take on what makes the main user support triage skill so special and compelling:
+
+---
+
+I studied the skill body, the core references, the runbooks, scripts, subagents, validators, and the prior repo memory about support-skill design. The short version: this skill works because it does not treat support as “write a nice reply.” It treats support as an evidence pipeline, risk router, owner-approved communications system, product-intelligence engine, and compounding operational memory.
+
+Why It Works
+The central move is the split between onboarding once and triaging forever. Onboarding builds <project>/.claude/support-triage/: architecture, channels, policies, templates, voice, secrets names, recurring issues, metrics, runbooks, gaps, artifacts, and adapter scripts. That means future agents do not rediscover the support surface every time. They load the map and act.
+
+The second strong move is the universal adapter contract. GitHub issues, SaaS DB tickets, Zendesk, email, Discord, marketplace reviews, and internal ops all become one support-adapter-v1 shape. The agent can reason from normalized fields: user, tier, SLA, messages, safe actions, unsafe actions, evidence. Even adapter failure becomes an explicit support item instead of a silent blind spot.
+
+The third move is the safety architecture. The skill has a hard Confirmation Rule: no customer-facing send without owner approval. It also separates T0 internal actions from T2/T3/T4 customer-visible or decision-bearing actions, requires /de-slopify before customer-facing drafts, validates adapter outputs, and escalates legal/security/privacy/press/crisis cases out of the normal path. That is the right design for AI support: optimize the average, but structurally prevent catastrophic outliers.
+
+The fourth move is that it treats reports as hypotheses, not facts. The loop forces ground truth, reproduction, version pinning, correlation, and verification before confident replies. This directly counters the classic support failures: trusting remembered ticket counts, declaring fixes from partial checks, quoting stale admin notes, missing deploy gaps, and failing to see shared root causes.
+
+Why It Is Useful
+For a founder or maintainer, the skill converts a messy queue into a repeatable operating cadence:
+
+fetch everything -> orient -> investigate -> classify -> draft -> owner approve -> act -> verify -> record outcome.
+
+That removes a huge amount of cognitive load. The owner stops being asked “what should I do with this random ticket?” and instead reviews a coherent bundle: classifications, evidence, draft replies, held decisions, refund queue, escalations, beads, and KB gaps.
+
+It is also useful because it adapts across domains. The DOMAIN-ADAPT and intake-router pieces keep it from assuming every project is a conventional SaaS helpdesk. OSS maintainer load, enterprise DPAs, app-store reviews, internal employee support, hostile contributors, regulated requests, account succession, accessibility, fraud, and crisis disclosures all have separate routing logic.
+
+The runbooks are especially valuable. Refunds, security disclosures, outages, hostile users, billing discrepancies, account recovery, DSARs, and data loss are not handled with vague “be careful” advice. Each has triggers, evidence to collect, decision trees, drafts, escalation paths, and audit expectations.
+
+Why It Is Compelling
+The skill is compelling because it feels like the opposite of a chatbot bolted onto support. It is an expert support operator encoded as process.
+
+It understands that customer trust is fragile. A technically correct reply that sounds like generic AI can still damage trust. A fast reply without evidence can be worse than a slower honest one. A refund promise before provider confirmation creates a second ticket. A public security reply can blow an embargo. A legal phrase in a support thread can become discoverable evidence. The skill has lived through those failure modes.
+
+It also understands the psychology layer: rage cycles, identity threat, effort asymmetry, apology weight, long-thread recovery, and maintainer burnout. That makes the replies land better because they are not just factually correct; they reduce customer effort and preserve dignity.
+
+Why It Is Accretive
+This is the best part: the session is not considered done when the reply is sent.
+
+Phase 6 turns every support session into durable learning: outcome records, theme tags, KB suggestions, product bugs, adapter gaps, template drift, owner edits, loopback candidates, keeper quotes, and operator/runbook improvement proposals. That means support stops being a cost center where information disappears into closed tickets. It becomes a product feedback engine.
+
+The accretion happens at several layers:
+
+- The project map gets sharper.
+- Policies become explicit instead of guessed.
+- Templates become more voice-matched.
+- Runbooks improve from real incidents and fire drills.
+- Repeated questions become KB or product fixes.
+- Repeated bugs become beads/issues with customer evidence.
+- Reporters can get loopback when their issue ships.
+- Metrics shift from vanity counts to quality, effort, verification, and learning.
+
+That is why the skill is unusually strong. It combines AI leverage with human approval, normalized tooling, evidence discipline, tone craft, risk routing, and compounding memory. Most support automation tries to answer faster. This skill tries to make the whole support function safer, smarter, and more valuable every time it runs.

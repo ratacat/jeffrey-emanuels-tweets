@@ -1,0 +1,17 @@
+2026-03-24 | 233 likes
+
+This kind of thing happens way too often. For any package that’s this popular (40k+ GitHub stars in this case), it just seems like a total no-brainer that PyPi/npm/crates.io/etc. should do AI-powered scans for this pattern of attack.
+
+It would be trivial to make a skill to do this: just check the diff since the last version and look for anything suspicious. I could do this in an hour.
+
+Have a big new blob of base64 encoded text? Or any unexplained big mystery blob? Have a new URL string that looks like it could be a sketchy command and control site?
+
+Not to mention, these package managers have a ton of additional data, like the IP address of the authenticated user that’s pushing the change. 
+
+Does this match, or at least have a similar estimated geolocation as all previous connections historically? You can build up a risk profile in this way for every new release. 
+
+If it looks too suspicious, the AI can flag it and require additional verification steps and put a 48-hour hold on publishing the new version, instead putting it in a public staging area for review by the community along with the analysis explaining why it looked fishy. 
+
+All this could be done for a couple bucks worth of tokens, tops, for each release. And to keep costs reasonable, you would only do this for these huge projects where a supply chain compromise would impact lots of people and companies.
+
+The big AI labs should just offer free tokens to these library projects to do this at scale as a public service.

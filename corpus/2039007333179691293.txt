@@ -1,0 +1,3 @@
+2026-03-31 | 27 likes
+
+At this point, I think the only rational move is for them to just officially open source it. It’s not like Codex or Gemini-cli is closed, anyway. It never made that much sense to me.

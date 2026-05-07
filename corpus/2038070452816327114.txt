@@ -1,0 +1,5 @@
+2026-03-29 | 57 likes
+
+And to clarify, I’m not talking about usage limits here. Those are also annoying but I can solve them by getting more Max accounts. 
+
+These are rate limits for sending too many requests per minute or whatever. But my entire workflow is to maximize the number of concurrent agents.

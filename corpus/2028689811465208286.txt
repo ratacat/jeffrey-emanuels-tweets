@@ -1,0 +1,3 @@
+2026-03-03 | 39 likes
+
+Speed can be its own feature. Especially when you don’t have to give anything up in terms of compatibility. That was a big part of why I made pi_agent_rust, so I’m glad to see users are liking it. Those performance gains weren’t easy to come by (3x faster than Pi running on bun)!

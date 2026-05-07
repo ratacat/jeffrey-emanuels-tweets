@@ -1,0 +1,27 @@
+2026-03-23 | 139 likes
+
+The new Anthropic computer use system is cool and looks useful, but I think it’s ultimately the wrong approach.
+
+It’s one thing to use humanoid robots because they can seamlessly slot into a human-centric physical world that’s difficult and expensive to reconfigure, and use the same buildings, stairs, tools, appliances, etc. 
+
+That makes sense to me (plus seeing weird spider-bots and crab-bots would scare children) for a lot of reasons, both practically, economically, and technically.
+
+But your computer isn’t like that. It’s all just software. Your clicks and keyboard shortcuts just get turned into instructions. The cost to reconfigure most software, if you do it in clever ways, is pretty low.
+
+And then you can make it super efficient and intuitive for the agents without wasting so much of their cognitive energy trying to pretend to be a human user and jumping through hoops.
+
+More importantly, it also lets you have much more control from a security and audit and telemetry standpoint, with fine-grained permissions and execution controls.
+
+This is the approach I’ve been following in my Flywheel Connectors project, which is almost ready. 
+
+I’ve been quietly working on this basically every day for 2 months and 2k commits. 
+
+It’s already ~1.5M lines of Rust and offers many dozens of connectors of all kinds, with all the controls and security features you’d ever want. And adding new connectors is easy and fast. 
+
+Plus, adding and using a new connector doesn’t give it carte blanche over your machine: you have very tight controls over everything, and your agents can configure and control it all via the fcp cli tool. 
+
+It’s all designed to be agent-first in every way. For agents, by agents, taken to the extreme.
+
+Anyway, I’m excited to finish it soon and start integrating it into my various projects and systems. If you want to take a sneak peak, you can see it here:
+
+https://t.co/D2bIhEnBAV

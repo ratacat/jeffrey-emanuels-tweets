@@ -1,3 +1,3 @@
-2025-12-16 | 23 likes
+2025-12-16 | 22 likes
 
 Any frontend devs looking for a good portfolio piece to show off their skills, this is still an awesome idea. Could do it all very nicely with scroll effects and a little HUD underneath the main graphic. Claude Opus could write the article for you.

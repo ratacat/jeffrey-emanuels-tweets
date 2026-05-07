@@ -1,0 +1,3 @@
+2026-05-07 | 0 likes
+
+Oh yeah, it asks you to confirm before doing anything and records the authorization, which you can commit to your repo to leave an evidence/audit trail. Check it out: https://t.co/Ftde1Vehuc

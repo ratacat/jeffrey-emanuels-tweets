@@ -1,0 +1,31 @@
+2026-02-25 | 5 likes
+
+I had Claude Code do a deep exploration into the asupersync codebase before adding some more high-powered math inspired features and performance improvements, and this is how it summed up the state of the project (it's underselling it, because it doesn't just replace Tokio, it replaces the entire Tokio ecosystem!):
+
+  ---
+  Development Phase Status
+
+  All 6 phases complete:
+  - Phase 0: Single-thread deterministic kernel
+  - Phase 1: Parallel scheduler + region heap
+  - Phase 2: I/O integration (epoll, io_uring, TCP, HTTP, TLS)
+  - Phase 3: Actors + supervision (GenServer, links, monitors)
+  - Phase 4: Distributed structured concurrency
+  - Phase 5: DPOR + TLA+ tooling
+  - Phase 6: Continuous hardening + adapter surface expansion
+
+  Currently in active hardening with ~12 AI agents working concurrently on audit, optimization, and feature tracks, coordinated via MCP Agent Mail and the beads (br) issue tracker.
+
+  ---
+  Notable "Alien Artifact" Math
+
+  The codebase uses unusually rigorous mathematical machinery:
+  - Mazurkiewicz trace monoid + Foata normal form for DPOR equivalence classes
+  - Persistent homology (GF(2) boundary reduction) for schedule exploration prioritization
+  - Sheaf-theoretic consistency checks for distributed sagas
+  - E-processes (Ville's inequality) for anytime-valid invariant monitoring
+  - Conformal calibration for distribution-free oracle thresholds
+  - Algebraic law sheets with rewrite engines and side-condition lattices
+  - Lyapunov potential functions for cancellation drain scheduling
+
+  This is a remarkably ambitious and comprehensive async runtime — it's essentially building what Tokio provides (and much more in terms of correctness guarantees) from scratch, with formal mathematical underpinnings that go far beyond any existing Rust async runtime.

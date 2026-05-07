@@ -1,0 +1,11 @@
+2026-02-23 | 52 likes
+
+I've learned from hard experience recently that you should treat your main development machines the way you do your body: never ignore or suffer through pain and weird feelings; always get them checked out quickly, because you don't know what could be wrong, and things could easily get worse or never recover.
+
+With computers, there are so many things that can go wrong when they are subjected to unnatural loads of the kind that are common with intense agent swarm development. 
+
+If you have a crazy powerful machine (mine is 128 cores and 512gb of RAM), it basically should never feel sluggish, and if it does, there better be a damned good reason for it. Otherwise it's probably something stupid that Claude Code can easily diagnose and fix for you and stop your suffering. See pic for a good recent example.
+
+I have a dedicated window open all the time in Rio (a nice terminal emulator similar to Ghostty or WezTerm) just for triaging these kinds of machine health issues across all my boxes, and I've become a lot more proactive about complaining to it at the first sign of "discomfort."
+
+PS: I don't really have a CRT, I have a 6K dell monitor. It's just a shader applied to Rio for fun.

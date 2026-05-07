@@ -1,0 +1,11 @@
+2026-04-15 | 31 likes
+
+Glad to see people are getting value from this new tax skill! 
+
+My strong advice is to be sure to check everything over with multiple models (say, Codex with GPT 5.4 and also Claude Code with Opus 4.6), and to make sure thinking effort is set to max. 
+
+If you only have one subscription, say Claude Max, you can still try copying the session history and pasting it into the web app for ChatGPT or Gemini just to get a second set of eyes on it. You can then paste the response from the other model into your agent session. 
+
+Often, merely flagging a potential issue is enough to get the model to think about it more and catch a problem, and false positives generally aren’t a big issue. 
+
+It’s funny, because I have the same exact advice for using these agents for software development. More eyes are better! Each model can have blind spots that the other models can help to reveal.

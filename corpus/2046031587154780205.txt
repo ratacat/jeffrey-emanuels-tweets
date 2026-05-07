@@ -1,0 +1,13 @@
+2026-04-20 | 52 likes
+
+I find Opus 4.7's use of language amusing and a bit over-the-top. Even using it to do some basic system maintenance tasks with one of my skills gets these kinds of responses:
+
+"The culprit isn't rustc — it's far worse. Let me show you:"
+
+"There ARE rustc instances, plus a monstrous problem." 
+
+"The rustc instances are small potatoes. That vercel telemetry flush is the real villain. Let me kill the rustc instances as you asked, and flag the vercel monster:"
+
+These are really morally loaded terms for dealing with runaway processes on a Linux machine! 
+
+Also, wtf, Vercel telemetry shouldn't be using 353gb of RAM. Time to run 'vercel telemetry disable'!

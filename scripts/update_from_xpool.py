@@ -56,18 +56,32 @@ def parse_args() -> argparse.Namespace:
 
 
 def run_json(command: list[str]) -> dict[str, Any]:
-    proc = subprocess.run(command, capture_output=True, text=True, check=False)
+    with tempfile.NamedTemporaryFile("w+", encoding="utf-8", delete=False) as stdout_file:
+        stdout_path = Path(stdout_file.name)
+        proc = subprocess.run(
+            command,
+            stdout=stdout_file,
+            stderr=subprocess.PIPE,
+            text=True,
+            check=False,
+        )
+
+    try:
+        stdout = stdout_path.read_text(encoding="utf-8", errors="replace")
+    finally:
+        stdout_path.unlink(missing_ok=True)
+
     if proc.returncode != 0:
         raise RuntimeError(
             f"Command failed ({proc.returncode}): {' '.join(command)}\n{proc.stderr.strip()}"
         )
 
-    for line in reversed(proc.stdout.splitlines()):
+    for line in reversed(stdout.splitlines()):
         line = line.strip()
         if not line.startswith("{"):
             continue
         try:
-            payload = json.loads(line)
+            payload = json.loads(line, strict=False)
         except json.JSONDecodeError:
             continue
         if payload.get("ok") is not True:
@@ -159,7 +173,7 @@ def fetch_result_items(args: argparse.Namespace, job_id: str) -> list[dict[str, 
             "--job-id",
             job_id,
             "--chunk-limit",
-            "100",
+            "1",
         ]
         if after_sequence is not None:
             command.extend(["--after-sequence", str(after_sequence)])

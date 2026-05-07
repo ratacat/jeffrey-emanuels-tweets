@@ -1,0 +1,5 @@
+2026-03-08 | 40 likes
+
+My https://t.co/1GoBx3BoBp project is a lot to process and can be intimidating to integrate into both greenfield and brownfield Rust projects. To make things easier for your clankers, I just added an extremely comprehensive skill to assist with that:
+
+https://t.co/04xqPPHIqj

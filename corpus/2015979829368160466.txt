@@ -1,4 +1,4 @@
-2026-01-27 | 48 likes
+2026-01-27 | 46 likes
 
 A lot of stuff with computers that "just works" when you're doing normal things starts to break down when you push the number of concurrent agents. 
 

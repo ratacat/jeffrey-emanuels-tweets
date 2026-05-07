@@ -1,0 +1,51 @@
+2026-05-02 | 101 likes
+
+I realized recently that I had put almost zero thought into SEO for my skill site, https://t.co/Un9brY3dST, since I primarily drive traffic to it from my posts and from organic word of mouth. 
+
+So I decided to do something about it. But I had some strict rules: I didn't want to do anything scammy or misleading that's against Google's policies. So no creating mountains of fake AI-generated slop articles that point to my site.
+
+I also wanted to take into consideration the latest changes to Google's algorithms, which are changing all the time. 
+
+Advice on SEO that was state-of-the-art a couple years ago might even be counterproductive today. And of course, nowadays you need to also optimize for indexing and consumption by AI models as well.
+
+So I did exhaustive amounts of research using every trick and technique I could think of to compile an exhaustive guide. I then operationalized that into a really comprehensive SEO skill specifically for SaaS businesses, which you can get here:
+
+https://t.co/GhvFab8DdN
+
+I know there are many of these kinds of skills floating around, but I think you will find this one to be more sophisticated and "smart" in how it diagnoses and tweaks your existing code. It also produces useful artifacts that you can then use in other contexts. 
+
+The skill comprises 118 files and amounts to 1 full megabyte of reference docs, scripts (18 scripts!), 19 specialized subagents, and a bunch of templates for documenting, tracking, and planning your SEO campaigns over time.
+
+Here is GPT 5.5's take on what makes this SEO skill particularly special and compelling:
+
+---
+
+My take: the special thing about seo-for-saas-businesses is that it is not really an “SEO skill” in the usual prompt-pack sense. It is a repo-native SEO operating system for SaaS companies. The entrypoint explicitly says it produces “repo-grade deliverables” rather than generic tips: PRs, briefs, tracked issues, dashboards, annotations, source logs, rollback paths, and recheck dates.
+
+What makes it compelling on an absolute basis:
+
+- It starts from a strong kernel: crawl/render/index/canonical truth before keyword work. That is the right hierarchy for modern SaaS, where regressions often come from RSC streaming, metadata drift, client-rendered pricing, broken canonicals, or programmatic templates poisoning the site.
+
+- It has a real mode router and tier router. A pre-PMF startup does not get the same program as a 5,000-page enterprise site.
+
+- It is verification-first. Volatile claims have to be checked against primary sources, logged, confidence-labelled, and rechecked; current evidence beats the canonical guide.
+
+- It gives agents cognitive operators, not just checklists: crawl-render diff, canonical-cluster coherence, AI-citation extractability, query fan-out coverage, measurement humility, release-day tripwire, etc.
+
+- It has real execution scaffolding: 19 subagents, 18 scripts, and 16 artifact templates are mapped to phases and outputs, not tossed in as extras.
+
+- It is unusually good at “not fooling itself.” The skill rejects stale SEO tropes: magic llms.txt, broad FAQPage rich-result chasing, deterministic CWV rank-loss claims, AI Overview traffic segmentation fantasies, and “publish more” before pruning weak pages.
+
+Relative to public free SEO skills, it is not uniquely large. There are serious comparators: Agentic-SEO-Skill advertises 16 sub-skills, 10 specialist agents, and 33 scripts; Claude SEO advertises 21 core sub-skills and API/reporting extensions; seo-geo-claude-skills has 20 skills and 17 commands; ultimate-seo-geo has a three-mode audit/plan/execute flow and 25 diagnostic scripts.
+
+The differentiator is depth of operating discipline. Many public skills are strong audit/report generators. Some are lightweight prompt packs, like the Next.js SEO audit skill, which emphasizes no setup and PASS/WARN/FAIL page checks. Some are CLI-style auditors, like seo-agent, with JSON/Markdown/CI output. 
+
+Some content packs, like SuperSEO, are strong at briefs, page audits, anti-slop, and SERP research, but explicitly acknowledge that the free repo does not remember your rankings, competitors, or decay history between sessions.
+
+This skill’s advantage is that it makes the work accretive. Every pass leaves behind better state: representative-urls.json, crawl artifacts, audit-issues.json, source-log.md, decision cards, briefs, PR descriptions, experiments, dashboards, seo-changelog.md, and a compounding backlog. 
+
+That means the next agent does not start with “run an SEO audit”; it starts with a living evidence base and knows what changed, why, who owned it, how to verify it, and when to revisit it.
+
+The honest weakness is that it is heavier and less consumer-packaged than the popular public tools. It assumes a repo, Bun/Playwright, real analytics access, willingness to maintain artifacts, and an operator who wants an SEO program rather than a one-shot report. For a tiny brochure site, that is overkill. For a serious SaaS business trying to build durable organic and AI-search visibility without poisoning its own domain, that weight is the point.
+
+One-sentence differentiator: it turns frontier agents into a disciplined SaaS SEO product-engineering team, not just a content optimizer or audit linter.

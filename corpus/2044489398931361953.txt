@@ -1,0 +1,19 @@
+2026-04-15 | 60 likes
+
+The fake GitHub stars stuff is so corrosive and damaging to legit projects like my own that have to earn each and every star without hype or fraud.
+
+And ultimately, it can only be effectively addressed by GitHub (Microsoft).
+
+This recent vigilante "mob justice" of people using statistics to expose projects with tons of fake stars has a critical flaw: anyone can buy fake stars on behalf of another project to make them look bad. 
+
+It's not like the fraudsters who sell the stars make people verify control over the repo! Also, the fraudsters can also choose certain projects to star "for free" to make their fake accounts look more realistic. 
+
+So the existence of fake stars alone is not dispositive and can be gamed by bad actors. 
+
+This sort of cat-and-mouse game has been a thing for a while in Google Maps reviews (e.g., an unscrupulous restaurant owner buys obviously fake 5-star reviews for a competitor and then reports the competitor for having inauthentic ratings). 
+
+It also happens on YouTube and Instagram, where it can kill an account in terms of the recommendation algorithms, both because of automated fraud detection but also because it depresses engagement metrics.
+
+The solution is clear: GitHub must do its own statistical analyses (and let's be honest here: this is absolutely trivial to do and Codex could knock it out in 20 minutes; they already have all the data internally to do this at scale, and no reason at this point to want to fake user growth) and kill all the fake accounts and remove all the fake stars, and stay on top of this. 
+
+They should also be out in the dark-web buying fake stars secretly to expose new account farms. This takes very little in the way of resources and effort to solve, and would make stars useful again as a way to gauge organic interest in open-source projects.

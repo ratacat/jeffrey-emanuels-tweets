@@ -1,0 +1,27 @@
+2026-04-17 | 53 likes
+
+This is what the SaaSpocalypse looks like in practice: not buggy, vibe-coded internal apps replacing mission-critical software products, but battle-tested, open-source alternatives that haven’t gotten market traction because switching costs were too high. 
+
+Why? Because migrations took so much time to research and implement, and because it’s much harder to switch over while accurately preserving all your message history, channel structure, permissions, and integrations. 
+
+And then you need to deal with ongoing maintenance and upgrades, at least if you go the self-hosted route, which is what yields the most compelling headline savings (96%+).
+
+So by the time you’ve fully factored in the management time, the developer and IT admin time, the risk to productivity if there are hiccups with the new system, etc., companies tended to find that it’s a lot less compelling.
+
+And so companies would just grumble but ultimately suck it up and suffer through crazy price hikes, like a $6k annual spend going to $20k or more (but hey, now they have “ai features” to justify it!). 
+
+But now with the advent of agent skills (which are basically bundles of “how to” knowledge organized in such a way as to be maximally agent-ergonomic and agent-intuitive), and with the latest frontier models being so good at using skills (despite what you may have heard yesterday, Claude Opus 4.7 wields skills extremely effectively), the math has changed dramatically.
+
+That is, IF you have the right skills. There is a massive gulf in the quality of results and outcomes between a naive, shallow skill, and the kinds of intensive, highly optimized skills that I’m making for this sort of thing.
+
+My Slack migration skills are massive and comprise many dozens of different reference files, scripts, and subagents that all work together and which are highly optimized for handling all the preparation, research, and execution involved in a complex migration like this. 
+
+And once the migration is done using the first two skills, I have a third skill for handling all the ongoing maintenance for you automatically, so you don’t have to waste your time and energy figuring all that stuff out manually like in the past.
+
+Despite all that complexity, I was able to create all three skills in a couple of days and make them available, along with over a hundred other useful skills (like tax consulting and software optimization) for just $20/month. That’s disruptive. 
+
+And these skills will only get better as I apply real-world feedback to improve them, and also as the base models and agent harnesses continue to improve at a crazy pace. 
+
+If people like these Slack migration skills, I will be following them up with many more skills, for all the most popular and expensive SaaS products that have viable open-source alternatives. 
+
+Let me know in the replies which ones you most want to see!

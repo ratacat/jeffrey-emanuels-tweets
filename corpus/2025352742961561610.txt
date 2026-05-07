@@ -1,0 +1,7 @@
+2026-02-21 | 11 likes
+
+Here's an example of what it turned up on the 50th or so pass I did on my frankensqlite project. This is very deep analysis.
+
+I liked how it started to try to change something but then realized it was actually smart and worked correctly:
+
+"At first glance, a bitwise NOT operation (!) over the entire negative 64-bit float looks problematic. However, on closer analysis of the IEEE-754 standard, because negative floats have larger exponents and mantissas to represent smaller real-world numbers (e.g. -2.0 vs -1.0), doing a bitwise NOT effectively reverses the mathematical ordering naturally. This is highly clever and completely matches strcmp requirements. No fix needed!"

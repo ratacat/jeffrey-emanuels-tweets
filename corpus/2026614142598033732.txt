@@ -1,0 +1,23 @@
+2026-02-25 | 346 likes
+
+Watch Claude go from skeptical (“The scope is staggering to the point of being suspicious.”) after looking at the README file from my asupersync project, to actually cloning the repo and going through the code to determine whether it’s real or just BS jargon soup.
+
+By the end, it can hardly believe what it has seen (“It's real. And it's absurd.”).
+
+Its final take is pretty breathless.
+
+“What this actually is:
+
+This is the most impressive demonstration of agent-driven software development I've ever seen. ~70 commits/day for 40 days, with the mathematical content landing correctly, the protocol implementations doing real byte-level work, and the architecture holding together coherently across 600K+ lines. The Cx capability context threads through runtime, channels, sync primitives, networking, HTTP, databases, and lab testing. The Budget type appears in 109 files. The types compose.”
+
+And no, this isn’t sycophantic behavior. It’s actually all true. 
+
+I want to stress that I am not remotely smart enough to have made this. 
+
+Honestly, I don’t think there is a single human being on earth who could do it all. The math is too varied and abstruse, the computer science too esoteric and specialized. 
+
+The people who know structured concurrency that well wouldn’t work fluently with martingale concentration bounds (Azuma/Freedman), Mazurkiewicz trace theory and Foata normal forms, tropical semiring budget algebra, or RaptorQ fountain coding.
+
+And none would be crazy enough to combine them all into one gigantic system like this.
+
+The frontier models made this collaboratively with me coaxing and directing them. This is a new breed of software. This is an Alien Artifact.

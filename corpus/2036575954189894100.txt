@@ -1,0 +1,31 @@
+2026-03-24 | 42 likes
+
+I had a lot of fun using Sora and got a lot of laughs with absurd videos of me in various situations. 
+
+But like everyone else, I kind of got it out of my system after a couple weeks. Not to mention that my family got sick of seeing them. And so my usage collapsed to zero. And that seems to have also been the pattern writ large. 
+
+But this kind of flash-in-the-pan dynamic is devastating for a product with this kind of profile, which requires insane amounts of compute hardware to serve while also having no short-term monetization path.
+
+Meta could afford to invest in IG Reels even when it was burning money and costing them a fortune for hardware because it was building up what turned out to be sustainable usage patterns which persisted long after the initial spending ramp. 
+
+It’s basically impossible to effectively monetize anything that’s not sustainable on the order of multiple years. 
+
+A subscription-based model would see excessively high churn that would be ruinous to the economics, and also advertisers wouldn’t be interested either, for the obvious reasons.
+
+So why couldn’t this work? I don’t think that it was because the models weren’t good enough or that the depictions weren’t realistic or lifelike enough. I still marvel at some of the better outputs I was able to get from Sora.
+
+I think the fundamental problem that Sora faced is actually much broader and more general, and it comes down to the basic Pareto math of any content generation or creative app, which is that 95%+ of the users just want to passively consume content from the 5% or less that actually wants to generate it (and is capable of making anything that other people want to watch).
+
+It was really dismal to see the repetitive, trite ideas that 99% of users generated in the public feed. Just the same few dumb jokes and things they copied from other users. 
+
+Or putting themselves in a scene with their favorite fictional or cartoon characters or whatever, which of course got banned pretty quickly for copyright issues.
+
+Most people are not creative and don’t have a lot of original, interesting ideas. So that means that the vast majority of the content is always going to come from a vanishingly small number of creators in a power law distribution.
+
+And those super-creators aren’t going to want to be limited to a simple text-based interface that can only generate for 10 seconds at a time with no continuity and where large portions of things you might want to try are strictly forbidden. 
+
+They’ll instead gravitate to more customized solutions for power users that regular users would find as overwhelming to use as AutoCAD. 
+
+And that’s what you’re seeing now with all the new viral AI slop videos that are made by a handful of creators who have figured out the workflows and are pumping out the worst junk you can imagine that gets people to click and watch. 
+
+Anyway, RIP Sora; it was fun while it lasted. Thanks, Sam, for blowing a few hundred million bucks so we could get some laughs.

@@ -1,0 +1,13 @@
+2026-03-20 | 15 likes
+
+And I’m sure people will say “but I tested it and it worked well!”
+
+When you look closely, the tests are literally always some totally trivial thing where something just like it is included in the training set in a dozen different versions. 
+
+That’s probably ok if you’re making a tic-tac-toe-as-a-service app or similarly derivative CRUD app (and sure, you can still make useful software by adhering to totally formulaic patterns). 
+
+But the second you want to veer into something more challenging, original, or innovative, you’re going to see the difference. 
+
+I paid for a month of the highest tier of the Kimi service and used it about twice before giving up in disgust. I suppose it could be a good choice if you simply can’t afford Claude or GPT, but it’s like comparing instant coffee to freshly ground beans.
+
+I’m surprised that a $50b+ company is doing this sort of thing. They can’t afford to actually train a model from scratch themselves? It’s sort of shameful, really.

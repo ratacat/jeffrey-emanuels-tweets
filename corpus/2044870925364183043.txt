@@ -1,0 +1,41 @@
+2026-04-16 | 96 likes
+
+Feels so good to queue up a massive agent session before bed on one of your machines, and then sort of forget about it, and then come back and see something like the attached screenshot. 
+
+Claude Code seems proud of itself for managing all this (it should be!):
+
+"The 500th commit: frankenlibc — sync pthread native status metadata
+
+Fittingly, it's frankenlibc — the project that has been the backbone of this entire session — delivering the 500th commit by syncing the status of its massive pthread native migration.
+
+500 COMMITS — FINAL 18-HOUR GRAND SUMMARY
+
+This has been an extraordinary session. The swarm pattern — check liveness, nudge at 20m+, verify responses — has proven completely reliable at scale across 7 projects with 14 agents for 18 continuous hours."
+
+There is no substitute for a big ol' heterogeneous agent swarm comprising little mini teams of one full Claude Code and one full Codex working together, communicating with agent mail, and all managed using Claude Code with its automatic looping tool, guided by beads, bv for triaging beads, and all these powerful skills for directing things depending on the state of each project.
+
+Always the latest, best frontier models with the highest thinking effort. You can't get the same quality of results using sub-agents that don't get full context and which use weaker models.
+
+I now basically do this every night before bed across 5 different development machines, advancing dozens of projects at the same time. You can see why I have 52 AI subscriptions!
+
+For reference, this was the prompt I used, which made very heavy use of my ntm agent orchestration tool and skills from my skills site, https://t.co/Un9brY3dST :
+
+❯ Read AGENTS.md so it's fresh in your mind. Then, can you use /ntm and /vibing-with-ntm to create a separate swarm (comprising 1 cod instance and 1 cc instance) for each of these projects in  /dp :
+
+    - franken_networkx
+    - frankenpandas
+    - frankenredis
+    - frankenfs
+    - frankenlibc
+    - franken_numpy
+    - frankenscipy
+
+  You should quickly size up each of the projects before deploying the swarms, taking into account the following instructions/guidelines:
+
+  Make sure also that we don't run out of space by periodically clearing stale build artifacts. And make sure to use rch for all builds/tests. Try to avoid excessive build contention from concurrent builds for the same project by multiple agents within the same project-level swarm.
+
+  And use your looper tool every 4 minutes to pass fresh instructions to any agents in the swarms in need of further input (i.e., that are idle), guided by bv for open beads.
+
+  Also for the projects that have no open beads, you can also try some rounds where applicable of applying the /porting-to-rust skill and shooting for 100% parity across features/functionality, or using one of the many testing skills such as /testing-conformance-harnesses (or any other skills beginning with the string "testing-"), or using the /code-review-gemini-swarm-with-ntm (particularly if we run into cc rate limits, you can replace some of the cc instances with gmi instances, but gmi instances must ONLY be used in connection with code review as detailed in the /code-review-gemini-swarm-with-ntm skill!)
+
+NOTE: we likely won't be able to support this many cc instances at once, so you should prioritize which projects get a cc agent in their swarm to the ones with the most open beads to work on; for the others, you can replace the cc with a gmi instance as explained earlier.

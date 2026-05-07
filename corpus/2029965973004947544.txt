@@ -1,0 +1,5 @@
+2026-03-06 | 19 likes
+
+Search over session histories (using my cass tool) is sort of like having an eidetic memory. 
+
+I’m not sure that adding another layer to synthesize that stuff (like in my cass memory project) really helps or is worth the extra complexity and inherent lossiness. I just use cass.

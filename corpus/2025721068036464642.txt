@@ -1,0 +1,3 @@
+2026-02-22 | 19 likes
+
+And for reference, I was shipping between 70 and 100 commits per day in December and January, which is a fantastic amount of code in practice. But nothing like what I'm doing now, where I am averaging over 1,000 commits per day.

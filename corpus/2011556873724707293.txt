@@ -1,4 +1,4 @@
-2026-01-14 | 74 likes
+2026-01-14 | 76 likes
 
 I love Rust and use it more and more with each passing day, but the compilation is such a drag. 
 
