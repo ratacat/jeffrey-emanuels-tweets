@@ -51,6 +51,20 @@ When `fsfs` is available, `jeff` uses it automatically and enriches results with
 
 `fsfs` is discovered via: `FSFS_PATH` env var > `PATH` > sibling `frankensearch/target/release/fsfs`.
 
+## Daily Updates
+
+The repo includes an `xpool`-based updater and a Codex CLI cron wrapper:
+
+```bash
+scripts/update_from_xpool.py --summary-json
+scripts/codex_daily_update.sh
+scripts/cron/install.sh
+```
+
+The updater fetches `@doodlestein` through `xpool`, updates `tweets.db`, rebuilds `corpus/`, refreshes `corpus.tar.gz`, and rebuilds the FrankenSearch index when `fsfs` is available. The cron wrapper runs Codex CLI with medium reasoning once per day so Codex can run the updater, verify the archive, commit changes, and push them.
+
+Cron uses `--catch-up`, so it expands the latest-tweets window until it reaches an already archived tweet. That catches up the backlog since the last archived tweet, not just tweets from the current day.
+
 ## Stats
 
 895 tweets | 472 original | Sep 2025 — Feb 2026 | 76.7 avg likes | 12,553 avg views

@@ -1,5 +1,6 @@
 *.db-journal
 .DS_Store
+__pycache__/
 tweets_raw.json
 apify_raw.json
 frankensearch/
