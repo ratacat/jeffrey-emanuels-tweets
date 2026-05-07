@@ -33,10 +33,6 @@ trap 'rmdir "${LOCK_DIR}"' EXIT
   git pull --ff-only
 
   CODEX_BIN="${CODEX_BIN:-codex}"
-  CODEX_MODEL_ARG=()
-  if [ -n "${CODEX_MODEL:-}" ]; then
-    CODEX_MODEL_ARG=(-m "${CODEX_MODEL}")
-  fi
 
   TARGET_ITEMS="${JEFF_XPOOL_TARGET_ITEMS:-800}"
   MAX_TARGET_ITEMS="${JEFF_XPOOL_MAX_TARGET_ITEMS:-5000}"
@@ -55,10 +51,18 @@ Steps:
 
 Keep changes scoped. Do not modify AGENTS.md, CLAUDE.md, docs/, or days/. Do not commit unrelated pre-existing local edits such as changes to jeff."
 
-  "${CODEX_BIN}" -a never exec \
-    -C "${REPO_DIR}" \
-    -s workspace-write \
-    -c model_reasoning_effort=\"medium\" \
-    "${CODEX_MODEL_ARG[@]}" \
-    "${PROMPT}" < /dev/null
+  if [ -n "${CODEX_MODEL:-}" ]; then
+    "${CODEX_BIN}" -a never exec \
+      -C "${REPO_DIR}" \
+      -s workspace-write \
+      -c model_reasoning_effort=\"medium\" \
+      -m "${CODEX_MODEL}" \
+      "${PROMPT}" < /dev/null
+  else
+    "${CODEX_BIN}" -a never exec \
+      -C "${REPO_DIR}" \
+      -s workspace-write \
+      -c model_reasoning_effort=\"medium\" \
+      "${PROMPT}" < /dev/null
+  fi
 } >> "${LOG_FILE}" 2>&1
