@@ -1,0 +1,5 @@
+2026-05-07 | 582 likes
+
+This is new (from Claude Code). I'm now hitting usage limits I didn't even know existed.
+
+Anyone seen this one before? I've seen 5-hour and weekly usage limits and rate limits, but never anything monthly. And I don't even have an org, it's just me! https://t.co/b4lnm9hoiW

@@ -1,4 +1,4 @@
-2026-04-25 | 63 likes
+2026-04-25 | 66 likes
 
 BTW, this is my current "universal starting prompt" that I've been using on in-flight projects (i.e., not starting from scratch) in Claude Code, and what was used in the above screenshot for working on my project, https://t.co/chaPlihrDW:
 
