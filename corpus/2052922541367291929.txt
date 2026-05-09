@@ -1,0 +1,84 @@
+2026-05-09 | 34 likes
+
+As a follow-up on this, as soon as I announced that I was working on FrankenSQLite, multiple people told me that I should look at Turso, which has a similar goal. Some even said it was pointless because I'd be competing with them.
+
+I intentionally did NOT look at ANYTHING Turso-related until just now (literally 20 minutes ago), precisely because I wanted to maintain a completely original posture and approach that wasn't at all impacted by the way other people had thought about the issues or approached the problem.
+
+To put things in perspective, Turso has over 18k GitHub stars and is a venture-backed company that raised $7 million in funding in April of 2025 and appears to have at least 22 full-time employees. The oldest commit on their main GitHub repo appears to be from 11 months ago.
+
+I'm one guy working on this solo (with a ton of agents, naturally) and self-funding everything, while also working on 50+ other projects at the same time, plus a consulting business, plus my jeffreys-skills.md site business, which required writing a lot of software and a LOT of skills. The first commit in FrankenSQLite's repo (which was the day I started on it) is approximately 3 months ago.
+
+Anyway, I just asked Codex (GPT-5.5 xhigh) to research my FrankenSQLite project by opening it in the project folder and prompting it like this:
+
+"First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project."
+
+Once it finished that, I prompted it like this:
+
+"Then read this post I just made on X about it:
+
+<insert the post above>;
+
+Now I'm curious whether the Turso project (which also tries to make sqlite concurrent-- clone https://t.co/NyfA7j5MZN to a tmp folder and analyze it super carefully) handles things in as smart of a way as frankensqlite for the mvcc and the other things that make frankensqlite special and innovative. What's different about them? Anything that Turso does that's so great that frankensqlite doesn't?"
+
+And here is the result after it cranked for a long time (reformatted to look better on X). I'll leave you to decide what to make of this (some are calling it the greatest FrankenMogging of 2026!):
+
+---
+
+I cloned Turso and reviewed it at f3990897da902f31fabe2c27d9b6221b6aa04cae (v0.6.0-pre.29). Short version: Turso is very serious engineering, but it is solving a different problem. On the specific things that make FrankenSQLite special in your post, Turso is generally less ambitious: its MVCC is opt-in, experimental, row/logical-operation based, snapshot-isolation only, and not a RaptorQ/self-healing design.
+
+The sharpest difference: Turso explicitly says MVCC gives snapshot isolation, not serializability, and its own hermitage tests document allowed write skew / anti-dependency cycles. FrankenSQLite’s design/code is aiming at page-level SSI so it can preserve SQLite-style serializable semantics while still allowing concurrent writers.
+
+Core Comparison
+
+• Area: Concurrent writer default
+FrankenSQLite: BEGIN promotes to concurrent by default
+Turso: Requires MVCC mode plus BEGIN CONCURRENT; normal BEGIN is not that
+
+• Area: MVCC granularity
+FrankenSQLite: Page-level, to preserve SQLite file format constraints
+Turso: Row/logical-operation MVCC inspired by Hekaton
+
+• Area: Isolation
+FrankenSQLite: Serializable via page-level SSI
+Turso: Snapshot isolation; write skew allowed
+
+• Area: Conflict handling
+FrankenSQLite: Page conflicts can be rebased/merged through semantic intent
+Turso: Eager write-write conflict / first-committer-wins style
+
+• Area: Compatibility
+FrankenSQLite: Compatibility runtime uses standard .db plus sidecars
+Turso: Normal mode is SQLite-compatible; MVCC mode uses Turso-specific .db-log/format behavior
+
+• Area: WAL corruption
+FrankenSQLite: RaptorQ repair/self-healing design
+Turso: CRC/torn-tail detection and prefix recovery, not repair
+
+• Area: Encryption
+FrankenSQLite: Argon2id + DEK/KEK envelope in Franken docs
+Turso: Experimental page encryption with raw key pragmas; rekey implies rewrite
+
+• Area: Async
+FrankenSQLite: asupersync structured &Cx model
+Turso: Explicit state-machine I/O, optional Linux io_uring; bindings may use Tokio
+
+• Area: Unsafe Rust
+FrankenSQLite: FrankenSQLite heavily emphasizes forbid(unsafe_code) outside necessary crates
+Turso: Turso has meaningful unsafe in core/bindings/extensions
+
+Where Turso Is Genuinely Strong
+Turso’s MVCC clock/commit machinery is worth studying. /tmp/turso-analysis-8SnpgZ/turso/core/mvcc/clock.rs:22 has a careful timestamp publication mechanism that closes a real SI race: the timestamp and transaction state publication happen atomically. The commit path also has unusually clear comments about what would still be needed for full serializability, including read-version validation and phantom tracking in /tmp/turso-analysis-8SnpgZ/turso/core/mvcc/database/mod.rs:1584.
+
+Turso also has a much more productized ecosystem today: C API shim, language bindings, sync/cloud pieces, CDC, vector work, Tantivy FTS, DBSP/incremental-computation experiments, and browser/mobile-facing surfaces. That breadth is visible in the README feature list around /tmp/turso-analysis-8SnpgZ/turso/README.md:38. FrankenSQLite appears deeper on the database-research/concurrency claim; Turso appears broader as a usable SQLite-compatible platform.
+
+The other standout is testing infrastructure. Turso has deterministic simulation, SQLancer-style testing, Antithesis references, and a concurrent simulator using Elle-style snapshot-isolation histories. See /tmp/turso-analysis-8SnpgZ/turso/README.md:425 and /tmp/turso-analysis-8SnpgZ/turso/testing/concurrent-simulator/README.md:1. FrankenSQLite has strong testing ambitions too, but Turso’s public testing story is polished and battle-hardened.
+
+Finally, Turso’s .tshm shared WAL coordination is a serious cross-process design worth borrowing ideas from. It tracks authoritative WAL snapshots, ownership state, and a shared page-to-frame index in /tmp/turso-analysis-8SnpgZ/turso/core/storage/shared_wal_coordination.rs:1. That is not the same as concurrent-writer MVCC, but it is a good model for production-grade multiprocess coordination.
+
+Main Takeaway
+For “does Turso handle concurrent SQLite as smartly as FrankenSQLite?” my answer is: not on serializable concurrent writes, file-format-preserving page MVCC, safe page merge, or WAL repair. Turso’s MVCC is smart but more conventional: row-versioned snapshot isolation with logical logging. The places FrankenSQLite should study Turso are the commit timestamp discipline, deterministic simulator ecosystem, .tshm coordination patterns, and the broad product surface around bindings/sync/vector/CDC.
+
+One caveat: some Turso docs are stale. For example, the MVCC guide says GC/recovery are not implemented, while source/tests show those areas have advanced. But the important limitation is not stale: Turso’s own docs and tests still frame MVCC as snapshot isolation, not serializable. 
+--
+
+PS: I have nothing against Turso or any of the people who work there, who I'm sure are smart and nice. I just thought it was interesting to compare them, and the image is just me being silly and provocative.

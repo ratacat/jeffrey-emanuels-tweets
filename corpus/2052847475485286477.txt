@@ -1,0 +1,81 @@
+2026-05-08 | 70 likes
+
+I write a lot about redesigning tools to be "agent-first." But what does that mean exactly? 
+
+What makes a command-line (cli) tool agent-intuitive or agent-ergonomic? And why is that even important?
+
+Well, it's important because the agents won't just be "sharing" the tools with human users, they'll be the primary (or even sole) users of the tools!
+
+And just like how a master woodworker has an intuitive grasp and feel for a file and chisel, you want the agents to feel right at home with the tooling they're going to be using all the time.
+
+Perhaps a better analogy is a modern auto mechanic, since they need to have quick and ready access to hundreds of different tools, machines, equipment, etc. in order to service the random cars of every make and model that come in with a wide assortment of problems.
+
+There's a reason why mechanics invest heavily in high-quality tools and spend a fortune on those fancy Snap-on toolboxes. 
+
+It's because they don't want to even have to think about where a tool is when they need it. They want everything they need to be perfectly laid out and readily available in an ergonomic, intuitive way so they can focus on their core value-add, which is diagnostics and repair work.
+
+Agents are the same way. The last thing you want is for them to be wasting their cognitive energy trying to figure out how to use some clunky cli tool with a poorly designed, incoherent, inconsistent interface.
+
+If you've ever seen an agent repeatedly struggle to run a command and hit multiple syntax errors or mistakes in a row before getting it to work and thought to yourself "stupid agent," you should change your outlook to instead think "stupid, poorly designed tool!"
+
+A really well-designed agent-first cli tool makes it easy to discover what it can do and how it works, but even beyond that, everything is designed so that the first thing the agent would naturally try to do "just works." 
+
+Another key principle is to look for what I call "legible intent." If you can see what the agent was going for with a tool use in an unambiguous way, then even if it doesn't technically follow the exact syntax, the tool should still make every effort to run the command anyway!
+
+And then also maybe output some little message of the form "FYI, in the future, the suggested way to do this is XYZ, not ABC like you entered."
+
+Or if the agent's intent isn't clear enough to assume it, then the last thing you want is for the tool to return some cryptic error that doesn't shed any light on what went wrong. 
+
+You want an extremely helpful and insightful error message that explains why what the agent entered is wrong, and then you want the tool to guess as to what sorts of things the agent might have intended, and give worked examples of those commands.
+
+That way, in the worst case, the agent can reliably get it right on the very next attempt. But just as importantly, the agent can LEARN for the next time. 
+
+But if you notice agents making the same mistakes over and over, instead of trying to explain it better in the documentation or error messages, or even in a companion skill (this is a whole other subject, and critical to getting the best results with agent tooling: every tool should come with a good skill explaining how to use it most effectively), you should consider redesigning the tool's interface so that the agent just instinctively gets it right.
+
+At this point, I've made dozens of agent tools of various kinds and seen just about everything, so I know what patterns work and which don't. 
+
+And this isn't all based on my own instincts, it's grounded in tens of thousands of real agent coding sessions where I observe the "lived experience" of the agents actually grappling with using the tools in various projects and contexts, and seeing which patterns are most effective.
+
+I've taken all of those lessons to create my latest agent skill, called /agent-ergonomics-and-agent-intuitiveness-maximization-for-cli-tools. You can get it here on my skills site ($20/month) along with hundreds of other skills:
+
+https://t.co/slTY627NWK
+
+This skill is one of my most ambitious and sophisticated yet, spanning 189 files and 1.5 megabytes of text! It includes 65 scripts, 27 subagents, and many dozens of reference files detailing the methodology. 
+
+You simply invoke it in your project folder containing your cli tool (it works with any language, but especially well for Rust, Golang, TypeScript, and Python), and it launches a comprehensive analysis that figures out what is wrong with your tool that's preventing it from being optimal from an agent's perspective. 
+
+Since the agents are the ones applying the skill, their opinion is quite reliable! 
+
+It generates detailed artifacts that you can analyze, but can also go ahead and make the improvements for you automatically to optimize your tool. 
+
+My tools are already quite optimized for agents, but I'm very excited to unleash this on every one of my tools so that I can further improve them all through a scientific, disciplined process
+
+Here's GPT-5.5's take on what makes this skill particularly special, innovative, and compelling:
+
+---
+
+I went deep. My read is that this is not really a "skill" in the normal sense. It is a full operating system for turning CLI usability for AI agents into an auditable, measurable, improvable engineering discipline.
+
+What makes it special is the core reframing: the AI agent is treated as the primary user, not an afterthought. The north star in SKILL.md is "First thing an agent tries just works." 
+
+That sounds simple, but the skill cashes it out into a serious design theory: parseable output, deterministic behavior, teaching errors, safe alternatives, capabilities --json, robot-docs, --robots, stable handles, provenance fields, regression tests, and fresh-agent simulations.
+
+The innovative part is that it converts a fuzzy taste judgment into a rigorous loop. It inventories every "agent surface," scores each one across 11 dimensions, requires evidence for high scores, runs two independent scorers with tiebreakers, stress-tests wrong-but-legible invocations, ranks recommendations by frequency x score_gap x blast_radius, applies changes, re-scores, then verifies with a fresh-context agent. The phase loop in SKILL.md is basically CI for agent intuitiveness.
+
+The most compelling thing is the Track A structure. It has a corpus, quote bank, kernel, operator library, and validators, explicitly documented in EPISTEMIC-FOUNDATIONS.md. 
+
+That means the skill is not just "Jeffrey's preferences." It is a portable distillation of repeated field experience from dsg, ks, mr, uks, caos, prior C&S sessions, counter-examples, and cog-load runs.
+
+It is also operative in a very practical way. Every run produces durable artifacts: agent_surfaces.jsonl, recommendations.jsonl, applied_changes.jsonl, scorecards, heatmaps, regression tests, simulations, and handoff docs. 
+
+These become a reusable baseline. Future agents can diff, re-score, replay, and detect drift. The skill explicitly treats ergonomics as a time series, not a one-off report.
+
+The best design insight is that agent-friendly CLIs are not just human CLIs with --json. The skill pushes a richer pattern: the tool should tell the agent what it can do, what happened, what code actually ran, what to do next, and how to recover safely. 
+
+The meta-command prep is especially strong: collapse multiple exploratory round trips into one structured call with recommendations and copy-paste-ready next commands.
+
+I also like that the skill practices its own doctrine. It ships a wrapper binary, schemas, validators, dry-run harnesses, calibration fixtures, adversarial fixtures, language recipes, CI action, and self-application docs. 
+
+My bottom-line take: this skill is special because it turns "make my CLI good for agents" into a measurable production discipline. It captures the alpha from your tool-building experience, makes it repeatable, and compounds it across every future CLI you build. 
+
+It is provocative because it recognizes that the next generation of CLI design is not human-first or machine-readable as an afterthought. It is agent-native: self-describing, pedagogical, deterministic, safe, composable, and continuously re-audited.

@@ -1,0 +1,5 @@
+2026-05-08 | 33 likes
+
+Man, I can't finish FrankenTerm fast enough... WezTerm is killing my machine every time I go away for a while.
+
+(FrankenTerm is my enhanced fork of WezTerm that integrates lots of improvements for handling massive agent swarms without leaking crazy memory or glitching). https://t.co/iVFx90uX69

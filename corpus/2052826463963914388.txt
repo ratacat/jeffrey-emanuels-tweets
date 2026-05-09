@@ -1,0 +1,3 @@
+2026-05-08 | 4 likes
+
+Also, might be time for me to switch back from Zed, which I just use as a simple text editor, to using Sublime Text for everything. I don’t understand why Zed should be growing to 17 gigs of memory like that.

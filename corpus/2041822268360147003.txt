@@ -1,4 +1,4 @@
-2026-04-08 | 1374 likes
+2026-04-08 | 1373 likes
 
 You don’t need permission, just a smartphone. I made this a couple years ago (source code on my GitHub) and it does the same thing:
 
