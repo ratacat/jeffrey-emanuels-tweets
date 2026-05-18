@@ -13,6 +13,83 @@ export PATH="/Users/jaredsmith/.nvm/versions/node/v22.14.0/bin:/Users/jaredsmith
 
 mkdir -p "${LOG_DIR}"
 
+MANAGED_PATHS=(tweets.db corpus corpus.tar.gz README.md)
+
+managed_has_changes() {
+  if ! git diff --quiet -- "${MANAGED_PATHS[@]}"; then
+    return 0
+  fi
+  if ! git diff --cached --quiet -- "${MANAGED_PATHS[@]}"; then
+    return 0
+  fi
+  if [ -n "$(git ls-files --others --exclude-standard -- "${MANAGED_PATHS[@]}")" ]; then
+    return 0
+  fi
+  return 1
+}
+
+ensure_no_unrelated_changes() {
+  local line
+  local path
+  local found=0
+
+  while IFS= read -r line; do
+    path="${line:3}"
+    case "${path}" in
+      tweets.db|corpus|corpus/*|corpus.tar.gz|README.md)
+        ;;
+      *)
+        echo "unrelated local change blocks archive publish: ${line}"
+        found=1
+        ;;
+    esac
+  done < <(git status --short)
+
+  if [ "${found}" -ne 0 ]; then
+    exit 1
+  fi
+}
+
+validate_archive() {
+  local integrity
+
+  echo "validating archive"
+  integrity="$(sqlite3 tweets.db 'PRAGMA integrity_check;')"
+  echo "sqlite integrity: ${integrity}"
+  if [ "${integrity}" != "ok" ]; then
+    echo "sqlite integrity check failed"
+    exit 1
+  fi
+
+  ./jeff stats
+  ./jeff recent -n 5
+}
+
+publish_archive_update() {
+  local reason="${1}"
+
+  if ! managed_has_changes; then
+    echo "no archive changes to publish after ${reason}"
+    return 0
+  fi
+
+  ensure_no_unrelated_changes
+  validate_archive
+
+  git add -- "${MANAGED_PATHS[@]}"
+  if git diff --cached --quiet -- "${MANAGED_PATHS[@]}"; then
+    echo "no staged archive changes to commit after ${reason}"
+    return 0
+  fi
+
+  echo "staged archive changes:"
+  git diff --cached --stat -- "${MANAGED_PATHS[@]}"
+
+  git commit -m "Update Jeffrey Emanuel tweet archive ${TODAY}" -- "${MANAGED_PATHS[@]}"
+  git pull --rebase
+  git push origin main
+}
+
 if ! mkdir "${LOCK_DIR}" 2>/dev/null; then
   echo "daily update already running: ${LOCK_DIR}" >> "${LOG_FILE}"
   exit 0
@@ -23,46 +100,24 @@ trap 'rmdir "${LOCK_DIR}"' EXIT
   echo "==> ${TODAY} jeffrey-emanuels-tweets daily update"
   cd "${REPO_DIR}"
 
-  MANAGED_PATHS=(tweets.db corpus corpus.tar.gz README.md)
-  if ! git diff --quiet -- "${MANAGED_PATHS[@]}" || ! git diff --cached --quiet -- "${MANAGED_PATHS[@]}"; then
-    echo "archive-managed files are already dirty; skipping daily update"
+  if managed_has_changes; then
+    echo "archive-managed files are already dirty; completing update before publish"
     git status --short -- "${MANAGED_PATHS[@]}"
-    exit 0
+    ensure_no_unrelated_changes
+  else
+    git pull --ff-only
   fi
-
-  git pull --ff-only
-
-  CODEX_BIN="${CODEX_BIN:-codex}"
 
   TARGET_ITEMS="${JEFF_XPOOL_TARGET_ITEMS:-800}"
   MAX_TARGET_ITEMS="${JEFF_XPOOL_MAX_TARGET_ITEMS:-5000}"
   MAX_PAGES="${JEFF_XPOOL_MAX_PAGES:-80}"
 
-  PROMPT="Run the daily Jeffrey Emanuel tweet archive update.
+  scripts/update_from_xpool.py \
+    --catch-up \
+    --target-items "${TARGET_ITEMS}" \
+    --max-target-items "${MAX_TARGET_ITEMS}" \
+    --max-pages "${MAX_PAGES}" \
+    --summary-json
 
-Use xpool only for collection. Do not use Apify or web scraping.
-
-Steps:
-1. Run: scripts/update_from_xpool.py --catch-up --target-items ${TARGET_ITEMS} --max-target-items ${MAX_TARGET_ITEMS} --max-pages ${MAX_PAGES} --summary-json
-2. If the script exits non-zero because the catch-up window did not reach an already archived tweet, stop and report the failure. Do not commit a partial update.
-3. Validate with: sqlite3 tweets.db 'PRAGMA integrity_check;' and ./jeff stats and ./jeff recent -n 5.
-4. If there are no git changes, report that and stop.
-5. If archive files changed, commit only the relevant archive/update files and push origin main. Use commit message: Update Jeffrey Emanuel tweet archive ${TODAY}.
-
-Keep changes scoped. Do not modify AGENTS.md, CLAUDE.md, docs/, or days/. Do not commit unrelated pre-existing local edits such as changes to jeff."
-
-  if [ -n "${CODEX_MODEL:-}" ]; then
-    "${CODEX_BIN}" -a never exec \
-      -C "${REPO_DIR}" \
-      -s workspace-write \
-      -c model_reasoning_effort=\"medium\" \
-      -m "${CODEX_MODEL}" \
-      "${PROMPT}" < /dev/null
-  else
-    "${CODEX_BIN}" -a never exec \
-      -C "${REPO_DIR}" \
-      -s workspace-write \
-      -c model_reasoning_effort=\"medium\" \
-      "${PROMPT}" < /dev/null
-  fi
+  publish_archive_update "daily xpool update"
 } >> "${LOG_FILE}" 2>&1
