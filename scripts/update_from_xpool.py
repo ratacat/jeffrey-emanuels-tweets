@@ -25,6 +25,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_USER_ID = "29239591"
 DEFAULT_TARGET_ITEMS = 800
 DEFAULT_MAX_PAGES = 80
+DEFAULT_FSFS_INDEX_TIMEOUT_SECONDS = 120
 
 
 def parse_args() -> argparse.Namespace:
@@ -397,6 +398,14 @@ def find_fsfs(explicit: str | None) -> str | None:
     return None
 
 
+def command_output_text(value: str | bytes | None) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, bytes):
+        return value.decode("utf-8", errors="replace")
+    return value
+
+
 def rebuild_fsfs_index(args: argparse.Namespace, corpus_changed: bool) -> bool:
     if args.skip_fsfs_index or not corpus_changed:
         return False
@@ -405,7 +414,38 @@ def rebuild_fsfs_index(args: argparse.Namespace, corpus_changed: bool) -> bool:
     if fsfs is None:
         raise RuntimeError("corpus changed but fsfs was not found; install fsfs or pass --skip-fsfs-index")
 
-    subprocess.run([fsfs, "index", "corpus"], cwd=REPO_ROOT, check=True)
+    timeout_seconds = int(
+        os.environ.get("JEFF_FSFS_INDEX_TIMEOUT_SECONDS", DEFAULT_FSFS_INDEX_TIMEOUT_SECONDS)
+    )
+    command = [fsfs, "index", "corpus"]
+    try:
+        proc = subprocess.run(
+            command,
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=timeout_seconds,
+            check=False,
+        )
+    except subprocess.TimeoutExpired as exc:
+        stdout = command_output_text(exc.stdout)
+        stderr = command_output_text(exc.stderr)
+        output = f"{stdout}{stderr}"
+        print(output, end="")
+        if "Indexed " in output and " into " in output:
+            print(
+                "warning: fsfs index reported success but did not exit; "
+                f"killed after {timeout_seconds}s"
+            )
+            return True
+        raise RuntimeError(f"fsfs index timed out after {timeout_seconds}s") from exc
+
+    output = f"{proc.stdout or ''}{proc.stderr or ''}"
+    print(output, end="")
+    if proc.returncode != 0:
+        raise RuntimeError(
+            f"Command failed ({proc.returncode}): {' '.join(command)}"
+        )
     return True
 
 

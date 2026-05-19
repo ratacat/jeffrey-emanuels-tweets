@@ -64,7 +64,7 @@ def fsfs_search(fsfs_bin, corpus_dir, query, limit, as_json, db_path):
     env["FSFS_INDEX_DIR"] = os.path.join(corpus_dir, ".frankensearch")
     try:
         proc = subprocess.run(
-            [fsfs_bin, "search", query, "--format", "json", "--limit", str(limit)],
+            [fsfs_bin, "search", query, "--no-daemon", "--format", "json", "--limit", str(limit)],
             capture_output=True, text=True, timeout=15, env=env, cwd=corpus_dir,
         )
         if proc.returncode != 0:
