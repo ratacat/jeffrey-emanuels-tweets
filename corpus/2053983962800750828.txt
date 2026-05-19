@@ -1,0 +1,5 @@
+2026-05-11 | 12 likes
+
+ntm is modular and composable and can be used to enable larger multi-agent workflows (e.g., 5 Claude Codes and 5 Codexes at once) by integrating it into skills. I have several very powerful skills that get their superpowers by leveraging ntm. For example:
+
+https://t.co/o8GjAQAbok

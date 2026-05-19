@@ -1,4 +1,4 @@
-2026-04-23 | 11 likes
+2026-04-23 | 12 likes
 
 One thing that's very cool about this skill is that, in order to work optimally, it references many other skills from my skills site, like /codebase-archaeology, /ui-polish, /ux-audit, /vercel, etc. 
 

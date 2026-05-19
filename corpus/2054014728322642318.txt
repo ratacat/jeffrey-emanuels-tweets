@@ -1,0 +1,19 @@
+2026-05-12 | 30 likes
+
+Continuing with the git repo janitorial theme... previously, I introduced my "git stash janitor" skill.
+
+Within hours of announcing that skill, I got an email from a user wondering if I had something similar for out-of-control proliferation of git branches.
+
+I didn't, but I made it the same day and it's now available here under the name /git-worktree-branch-rationalization:
+
+https://t.co/IJa1PRLw22
+
+But then I realized that I should complete the trifecta and also make a similarly overpowered and sophisticated skill for cleaning up errant files in a repo: deleting the obvious detritus and filing away the useful bits in the appropriate subdirectories (and creating any that should exist). 
+
+That other skill obviously requires a lot of judgment; it needs to understand what your project is all about so it can correctly make sense of things. And it has to do everything in a safe, reversible way. 
+
+So that's the other skill, called /git-repo-janitor, which you can get here:
+
+https://t.co/ek8vYI0edf
+
+I won't bore you with the details, but suffice it to say that each of these skills spans many dozens of files, scripts, and subagents, and each kicks off a veritable symphony of coordinated AI agent excellence to solve these pedestrian but real problems faced by anyone using a lot of agents to do software development at scale.

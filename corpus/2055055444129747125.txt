@@ -1,0 +1,3 @@
+2026-05-14 | 28 likes
+
+TLDR: Find and replace any unsafe code in your Rust project that isn't totally unavoidable with isomorphic, memory safe code with this one "weird trick" (skill).

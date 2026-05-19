@@ -1,0 +1,5 @@
+2026-05-17 | 37 likes
+
+Here are all the beads I created to remediate the 70 undefined behavior issues I found in the Bun Rust port using my new /rust-undefined-behavior-exorcist skill:
+
+https://t.co/ghPjBLdxah https://t.co/t1wFhkHcj6

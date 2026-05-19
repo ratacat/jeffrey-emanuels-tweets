@@ -1,0 +1,7 @@
+2026-05-17 | 221 likes
+
+OK, my huge undefined behavior exorcism audit on the Bun Rust port is complete, and it found 70 real issues that are confirmed/proven:
+
+https://t.co/7E1ibaV1eu
+
+This took an ungodly amount of time and tokens at my expense, so I hope they will take it as seriously as it deserves. https://t.co/xClTRxhmi9

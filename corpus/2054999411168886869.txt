@@ -1,0 +1,7 @@
+2026-05-14 | 63 likes
+
+This is pretty cool. I made a free little letter learning game for my own kids and posted about it a few months back. It's open source and all fits in a single, large html file.
+
+Then I didn't think about it much. Turns out that it has been spreading organically by word of mouth and now has a bunch of loyal users! Give it a try:
+
+https://t.co/Ylcwxw82Ig

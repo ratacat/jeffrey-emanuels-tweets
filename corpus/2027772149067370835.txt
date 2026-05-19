@@ -1,4 +1,4 @@
-2026-02-28 | 14 likes
+2026-02-28 | 13 likes
 
 It’s been a while since I worked on this so I asked Claude to clone the repo and explain everything in relation to that image. Here’s what it came up with (@karpathy I think you will find this genuinely awesome):
 

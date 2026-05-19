@@ -1,0 +1,5 @@
+2026-05-13 | 9 likes
+
+FYI, here’s the prompt I used in ChatGPT to make this in one shot:
+
+Make me an optimal and beautifully designed infographic with artfully done illustrations that explains in a way that conveys maximal intuition and visual motivation the problem of how one can simulate a fair coin toss using an unfair coin. It should pose the question, and point out the seemingly counterintuitive/paradoxical situation. Then explain that the solution is to use TWO consecutive tosses, identifying one side as HT and the other as TH, while throwing out TT and HH (culling the sample space) and relying on the commutative property of multiplication (since we multiple probabilities of independent events).

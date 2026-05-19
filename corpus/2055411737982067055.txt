@@ -1,0 +1,5 @@
+2026-05-15 | 2 likes
+
+Here's the post about my unsafe code exorcist skill (and how I applied it to the new Bun Rust port with great results) in case you missed it yesterday:
+
+https://t.co/B8lN7O5QVf

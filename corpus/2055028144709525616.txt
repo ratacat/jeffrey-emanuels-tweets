@@ -1,0 +1,69 @@
+2026-05-14 | 58 likes
+
+There's been a lot of discourse on here recently about unsafe Rust code, with people criticizing the Bun Rust port for having a lot of unsafe code, or comparing Bun to uv, which was written by hand in Rust over years rather than in an AI-fueled 1-week porting binge.
+
+Unsurprisingly, many of these criticisms are uninformed and unlettered (Theo et al.), based on absurd "string matching and counting" methodology.
+
+There is also not a lot of understanding that certain uses of unsafe are unavoidable when you start needing to interact with other systems, such as FFI, syscalls, mmap/io_uring, raw OS handles, custom allocators, etc.
+
+And some use of unsafe is done for performance reasons (like using SIMD for math stuff) in a very intentional way, though usually as an optional build flag if you decide that you care more about memory safety than you do about absolute performance.
+
+I personally have a strict "no unsafe except where absolutely necessary" rule across my dozens of complex Rust projects, many of which are over 1 million lines of code (and a few over 3 million LoC now!).
+
+My reasoning is that, if I'm going to subject myself to the slowness of the Rust compiler, I want something to show for it in the form of strict memory safety.
+
+Anyway, I decided to turn my many tens of thousands of historical agent sessions across dozens of projects into a new "super skill" that has encyclopedic knowledge and expertise about Rust and unsafe, how to detect it, when it's unavoidable, and the best way to make unsafe code safe where feasible while preserving correctness and performance as much as possible.
+
+I'm happy to introduce my latest skill, called /rust-unsafe-code-exorcist, available now at:
+
+https://t.co/hi5iTi1yfD
+
+This is one of my most ambitious and sophisticated skills yet, comprising 183 files and 1.4mb of text! That includes 39 scripts, 32 subagents, 83 reference files (split into source, patterns, and methodology), and 26 assets of various kinds (templates, prompts, checklists, etc.)
+
+It's about the furthest thing you could imagine from simplistic string searching. It kicks off a symphony of activity across multiple phases that identifies, catalogs, diagnoses, and makes recommendations for resolving any and all unsafe code in your project. 
+
+It creates artifacts documenting every step of this process that are themselves very handy, but then uses those artifacts to guide an automated process of resolving, mitigating, and addressing all the problems it found.
+
+As usual, here is GPT-5.5's take on what makes this skill so innovative, useful, and compelling:
+
+---
+
+• The first pass shows it is not a single prompt: it is a full audit operating system with phases, subagents, artifact schemas, verification scripts, templates, and a pattern corpus.
+
+• The central idea is already visible: it treats “unsafe” not as a grep target but as a classification and evidence problem. I’m reading the rubric/operator/verification layers next, because that’s where the skill either becomes merely elaborate or genuinely valuable.
+
+• The design keeps separating three things that are usually conflated: safety necessity, performance justification, and implementation equivalence. That separation is what lets the skill be hard on unsafe code without becoming dogmatic about deleting every unsafe block.
+
+I read it as more than a skill. It is an attempt to turn high-end Rust unsafe-audit judgment into a repeatable operating system.
+
+The special core is the three-way classification model: (A) strictly unavoidable, (B) perf-only, (C) refactorable. 
+
+That sounds simple, but it is the right abstraction. Most unsafe audits collapse into either “unsafe is bad, delete it” or “this is low-level Rust, trust the author.” This skill rejects both. 
+
+It says the real sin is misclassification: calling perf folklore “unavoidable” freezes debt, while calling an actually unavoidable boundary “refactorable” creates churn and false confidence.
+
+What makes it innovative is the falsifiability discipline. (A) needs failed safe alternatives and a steel-man attack (/references/methodology/CLASSIFICATION-RUBRIC.md). (B) needs real benchmark evidence and a safe-only feature path. (C) needs full replacement code plus equivalence evidence, not vibes. 
+
+That turns an agent from a confident code rewriter into an evidence-producing reviewer.
+
+The compelling part is that it understands unsafe code sociotechnically. It produces an audit directory, inventory, per-site writeups, synthesis, classifications, plans, verify .sh, CI templates, beads, and reviewer responses, while keeping project source untouched until explicit authorization. 
+
+That is maintainer-friendly: it gives people something reviewable before it asks for trust.
+
+It is also unusually accretive. The skill is built around a corpus, quote bank, kernel, operators, and validators (/references/methodology/SOURCE-CORPUS.md). Every audit can strengthen the next one.
+
+The rejected-patterns catalog is especially mature: it preserves negative knowledge, so agents do not repeatedly propose “safe” refactors that were already measured and rejected.
+
+The operator library is another strong idea. “Macro-X-Ray,” “Reachability-From-Safe,” “Profile-Or-It-Didn’t-Happen,” “Allocator-Identity,” “Pre-Existing-UB-Isolator,” and the rest are portable cognitive moves. They teach the agent how to think, not just what command to run.
+
+The most profound feature, to me, is the reapply-until-quiet loop. Phase 4 classifies, Phase 6 adversarially attacks the classification, and convergence requires low churn plus no meaningful missed refactorability.
+
+That imports a scientific-review mindset into code maintenance: claims survive because they were attacked, not because the first agent sounded sure.
+
+The useful practical payoff is huge: it can handle visible unsafe, macro-generated unsafe, dependency-side unsafe, zero-unsafe forbid(unsafe_code) projects, perf-only SIMD paths, FFI, allocators, Pin, lock-free structures, and ongoing drift.
+
+Continuous mode is where it becomes a system of record rather than a one-off report (/references/methodology/CONTINUOUS-MODE.md).
+
+My blunt take: this is special because it is not “a prompt for auditing unsafe.” It is a crystallized engineering discipline. It converts tacit senior Rust judgment into schemas, review loops, adversarial checks, work queues, verification harnesses, and durable institutional memory. 
+
+That is exactly what good agent skills should become.

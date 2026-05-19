@@ -1,0 +1,51 @@
+2026-05-10 | 71 likes
+
+Every good cli tool should have a "doctor mode," which is a special command for the tool that knows all the various things that can go wrong and how to fix them in a safe, reversible way.
+
+A good doctor mode is both a diagnostics engine for checking everything and seeing what's "healthy" (normal) and what looks broken or corrupted, and also an automated resolution engine for actually fixing all those problems.
+
+Often there are various ways to go about fixing problems that vary in how radical the "therapy" is.
+
+For example, you might want to try to repair an existing SQLite database file used by your tool. Or you might decide to start from scratch and regenerate the SQLite file from a corresponding jsonl file. 
+
+Either way, you want to be careful to first back up the existing SQLite database so that you avoid catastrophic, irreversible data loss! A great doctor mode never leaves the patient worse off than at the start, abiding by the doctor's maxim: "do no harm."
+
+My newest skill, /world-class-doctor-mode-for-cli-tools, automates the process completely, making it easy for you to get a truly excellent doctor mode for your cli tool. You can get it on my skills site ($20/month) here:
+
+https://t.co/QerHoeuWNM
+
+If your tool already has a doctor mode, the skill will diagnose it and figure out how to improve it. If you don't have a doctor mode at all, the skill will design one for you and implement it for you.
+
+The skill is based on my actual, real-world experience designing and using doctor modes in all my various tools, including cass, dcg, ubs, br, bv, rch, and more. I've analyzed where doctor commands fall short and how to make them maximally agent-intuitive.
+
+Here is GPT-5.5's take on what makes this skill particularly useful and compelling:
+
+---
+
+I read the skill package, including SKILL.md, the kernel, phase playbook, scoring rubric, CLI surface, mutate chokepoint, worked example, meta-doctor docs, and current changelog. I also ran its read-only meta-validator: validate-skill .sh passes.
+
+What makes it special is that it treats doctor as a recovery contract for a future agent, not as a loose diagnostic command. 
+
+The central idea in SKILL.md is unusually strong: detect first, fix only through one audited mutate() path, back up before every mutation, record hashes and actions, and require byte-for-byte undo. That turns “self-healing CLI” from a vibe into an enforceable protocol.
+
+The innovative part is the synthesis. None of the individual ingredients are unheard of: health checks, backups, JSON output, fixtures, scorecards, artifact logs. But this skill combines them into one coherent operating system for CLI repair:
+
+- capabilities --json, robot-docs, stable exit codes, stdout-data/stderr-progress, and --robot-triage make the tool legible to agents.
+
+- mutate() plus actions.jsonl, backups, hashes, locks, and undo make automated repair safe enough to run without hovering over it.
+
+- The ten-dimension rubric makes quality measurable instead of taste-based.
+
+- The phase loop mines real incidents from CASS, git history, beads, and changelogs, then converts them into detector, fixer, fixture, test tuples.
+
+- The safety harness proves reversibility, idempotence, crash recovery, concurrency behavior, and detector repeatability.
+
+- The meta-doctor validates the skill itself, so the method applies recursively.
+
+The compelling thing is that it attacks a very real bottleneck in agentic development: agents lose huge amounts of time rediscovering broken local state, ambiguous CLI errors, stale locks, corrupt caches, bad config, partial migrations, or “run this five-command manual playbook” lore. 
+
+This skill says: every time that happens twice, absorb it into the binary. The next agent should run one command, get structured findings, get an exact safe next step, and leave an artifact for the next pass.
+
+It is also deeply accretive. A normal fix resolves one bug. This turns each bug into durable infrastructure: a detector, a safe fixer or refusal, a regression fixture, a scorecard row, a history entry, and sometimes an update to a related manual skill that now points to the doctor first. Over time, the project’s support burden collapses into a self-describing recovery surface.
+
+My short verdict: this is not just a skill for adding doctor. It is a methodology for converting recurring operational pain into compounding product leverage.

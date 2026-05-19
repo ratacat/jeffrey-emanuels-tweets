@@ -1,0 +1,83 @@
+2026-05-15 | 43 likes
+
+Yesterday I posted about my new skill for automatically identifying, classifying, and remediating unsafe Rust code in complex projects, and how I applied it to the new Bun Rust port to find over 30 serious issues.
+
+But I also developed another skill that has complementary functionality and concerns; whereas the other skill was focused squarely on "unsafe code" in Rust, this skill is concerned with the much broader category of "undefined behavior," or UB.
+
+So what's the difference? In Rust, unsafe code is where you are basically asking Rust's compiler for special permission to do dangerous things where you (or the code you're interfacing with) are responsible for handling the invariants that Rust manages for you automatically when you strictly adhere to safe Rust code. 
+
+Undefined behavior, on the other hand, means “the program violated Rust’s rules so badly that the compiler is allowed to assume it never happens.” 
+
+Once UB occurs, all bets are off: memory corruption, impossible branches, optimizer-induced weirdness, crashes, or silent wrong answers.
+
+It's similar to a phenomenon in math and logic called "the principle of explosion" which says that, once your assumptions contain a contradiction, ordinary reasoning can derive arbitrary conclusions. 
+
+In other words, you can prove anything, even obvious falsehoods, when you start from a false premise containing a contradiction.
+
+In Rust/compiler terms, the optimizer reasons from axioms like:
+
+- bool is only 0 or 1
+- references do not dangle
+- data races do not occur
+
+and others like them. If unsafe code violates one of those, the optimizer is now reasoning from a false premise. 
+
+The resulting machine code can look arbitrary because, from the compiler’s model, that execution path was impossible. Basically, all bets are off.
+
+So why did I say UB is "broader" than unsafe code? Well, code that appears "safe" can still lead to UB, subject to one key rule:
+
+Safe Rust code can only lead to UB if some unsafe code underneath it has exposed an unsound safe API. In sound Rust, safe callers should not be able to cause UB.
+
+So, for instance, a safe function could return a dangling reference, i.e., a reference to a stack variable that no longer exists. Even if the caller of that function is safe code, if it relies on the dangling reference, that's UB.
+
+Or a safe API could create two mutable references to the same place, which is a contradiction of Rust's aliasing model (all mutable references must be unique in Rust). 
+
+In general, it's MUCH harder to automatically identify UB in complex Rust code. It's basically an unsolved problem, although there are various tools that can help with the process, such as Miri.
+
+That's where my new skill, /rust-undefined-behavior-exorcist, comes into play. You can get it here:
+
+https://t.co/b7RMDr40SA
+
+It's another one of my "super skills," spanning 151 files totaling 1.1 megabytes of text, which includes 30 subagents as well as tons of scripts, patterns, and reference files (see screenshot for the listing).
+
+It starts out with an intake process that asks you to choose from a few multiple-choice options (see the second screenshot below) and then basically cranks away autonomously for hours. You can run it multiple times and using multiple harnesses/models for best results.
+
+Finally, here is GPT-5.5's take on how the two skills compare and contrast:
+
+---
+
+The unsafe code exorcist skill exists to defeat naive unsafe-counting. Its central claim is that “unsafe” is not one thing: each site must be classified as (A) STRICTLY_UNAVOIDABLE, (B) PERF_ONLY, or (C) REFACTORABLE, with falsifiable evidence. Its “cardinal sin” is misclassification.
+
+The UB skill has a broader and more forensic purpose. Its “One Rule” says UB is the full Rustonomicon surface, not just unsafe { ... } blocks. It is for Miri sweeps, race hunts, use-after-free hunts, Pin/Send/Sync/FFI contract failures, and soundness release gates.
+
+Methodology:
+
+Unsafe-code exorcist is a classification engine with a refactoring tail. It enumerates unsafe, writes one site report per site, synthesizes invariants, classifies, adversarially reclassifies, drafts plans, then verifies proposed rewrites. The A/B/C rubric is the kernel: (A) needs failed safe alternatives and a steel-man attack, (B) needs benchmark evidence and a safe-only feature path, (C) needs full safe code and equivalence tests.
+
+UB exorcist is an empirical proof loop. It partitions the codebase, runs static sweeps per taxonomy bucket, runs dynamic sweeps via Miri/sanitizers/loom/shuttle/fuzz, synthesizes hypotheses, writes minimal experiments, executes them, reruns idea-wizard rounds, and only then designs remediation. The experiment registry is critical: every hypothesis has a reproducer, expected signal, falsifiability condition, invocation, and verdict.
+
+Intent:
+
+Unsafe-code exorcist is maintainer-facing and policy-facing. It lets a project say: “we know exactly why each unsafe remains, which unsafe is only for performance, and which unsafe should disappear.” It is biased toward moving sites downward from (A) to (B) to (C) when evidence allows.
+
+UB exorcist is release-gate and incident-response oriented. It assumes the code may already have justified unsafe and asks whether reality agrees. Its convergence is not “the report sounds good”; it is measured by no open experiments, fewer than 3 new findings, zero new refinement needs, and an archetype-aware round floor.
+
+Inner Workings:
+
+Unsafe-code exorcist’s machinery is inventory-first: 
+
+- enumerate-unsafe .sh drives ast-grep/ripgrep fallback, cargo-geiger, cargo-expand, rustdoc JSON, etc. 
+
+- generate-inventory.mjs normalizes those raw results into stable site-0001 rows, dedupes source vs expanded unsafe, marks macro-origin, FFI, intrinsic, and geiger count fields 
+
+- check-polish-bar .sh then mechanically rejects weak artifacts, for example (A) without three alternatives, (B) without perf numbers, or (C) without equivalence/Miri evidence.
+
+UB exorcist’s machinery is detector-and-verdict-first. It has ast-grep UB patterns, syn walkers for predicates ast-grep cannot express, a Miri matrix with tree-borrows, strict provenance, symbolic alignment, and validity axes, and a convergence tracker that reads experiment verdicts and finding deltas.
+
+One useful way to say it:
+
+rust-unsafe-code-exorcist asks whether the project’s unsafe budget is intellectually honest.
+
+rust-undefined-behavior-exorcist asks whether the project’s actual execution semantics are sound.
+
+They compose well. Run unsafe-code first when the problem is visible unsafe sprawl or unjustified unsafe. Run UB second when you need proof that the remaining unsafe contracts, generated code, FFI boundaries, concurrency behavior, and safe-code invariants do not create UB.

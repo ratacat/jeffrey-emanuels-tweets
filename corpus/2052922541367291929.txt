@@ -1,4 +1,4 @@
-2026-05-09 | 34 likes
+2026-05-09 | 50 likes
 
 As a follow-up on this, as soon as I announced that I was working on FrankenSQLite, multiple people told me that I should look at Turso, which has a similar goal. Some even said it was pointless because I'd be competing with them.
 

@@ -1,0 +1,7 @@
+2026-05-19 | 12 likes
+
+I use the atuin tool for searching across my command history in linux and mac. It has always been pretty performant, so I was confused why it seemed to be so dog slow recently. 
+
+Turns out my agents have overwhelmed it. Guess I'll need to nuke it. 
+
+I need a human only history. https://t.co/VDa1ggNhkA

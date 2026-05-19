@@ -1,3 +1,3 @@
-2026-04-23 | 6 likes
+2026-04-23 | 7 likes
 
 @rauchg This is such a great use case for Vercel, it makes it incredibly easy and fast to one shot things like this, especially if they're not going to get much traffic and can fit in the free tier.

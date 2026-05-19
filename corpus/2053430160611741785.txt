@@ -1,0 +1,3 @@
+2026-05-10 | 195 likes
+
+This codex /goal mode iteration with react-doctor worked really well. Went from a low score on my site to a perfect score of 100 in around 15 hours of fully-autonomous work. Worth doing for any react web app. https://t.co/KayBb1k2mp

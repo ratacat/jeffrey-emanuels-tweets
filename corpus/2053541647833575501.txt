@@ -1,0 +1,3 @@
+2026-05-10 | 57 likes
+
+TLDR: Give your CLI tools an awesome "doctor mode" (or improve your existing one) so that AI coding agents like Claude Code and Codex can easily diagnose and fix problems with this one "weird trick" (skill).

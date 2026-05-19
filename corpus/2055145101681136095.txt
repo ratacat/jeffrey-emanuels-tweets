@@ -1,0 +1,3 @@
+2026-05-15 | 77 likes
+
+I mentioned to @jarredsumner that he should try out my new skill on the Bun Rust code, but rather than hope he signs up for my site and tries the skill, I figured that I should run it myself on the Bun repo. It's going right now, using both Claude Code and Codex... will share 🔜 https://t.co/EoN2B3pe8q

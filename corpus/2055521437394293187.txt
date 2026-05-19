@@ -1,0 +1,17 @@
+2026-05-16 | 63 likes
+
+Been trying to give the grok coding harness a chance, which is tough because I worry about it doing dumb stuff and screwing up my code. 
+
+And it's a super high bar because Codex and Claude Code are already working so damned well. And even Gemini-CLI is good for code review. Do I really need another coding agent?
+
+Anyway, I decided to give it a shot anyway on a new project. So far, it's really not great. 
+
+It's exhibiting behavior that I haven't seen from the frontier models/harnesses in a super long time, namely repeatedly saying that it's going to do all this stuff for me but then never actually doing much of anything.
+
+At this point it appears to have negative value to me because I feel the need to babysit it to prevent it from doing dumb stuff, and that's basically a deal killer when you have many dozens of agents to tend to at any given time. 
+
+This all sort of goes back to what I've been saying about the brutality of the Pareto frontier. I joked recently about the line by Alec Baldwin in Glengarry Glen Ross:
+
+"As you all know, first prize is a Cadillac Eldorado. Anybody wanna see second prize? Second prize is a set of steak knives. Third prize is you're fired."
+
+I already have a third place agent, Gemini-CLI, and it only gets to do code review. Fourth place definitely seems to be "you're fired," for me at least.
