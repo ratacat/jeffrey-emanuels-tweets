@@ -1,0 +1,7 @@
+2026-05-21 | 49 likes
+
+Crazy session with Codex, considering it only took 2 days:
+
+Token usage: total=228,891,274 input=211,182,282 (+ 8,393,367,808 cached) output=17,708,992 (reasoning 5,745,821)
+
+In the old days, just this one session with a frontier model would cost over $7,000 at API rates. Wild! https://t.co/BfGjSKxHr9

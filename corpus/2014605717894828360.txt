@@ -1,4 +1,4 @@
-2026-01-23 | 188 likes
+2026-01-23 | 187 likes
 
 I've got some wild stuff brewing for ntm. What if you could spin up a huge swarm of agents to review your project (any kind of project, not just software), and the difference between the various agents was that they each employed a different mode of reasoning?
 
