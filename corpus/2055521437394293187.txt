@@ -1,4 +1,4 @@
-2026-05-16 | 63 likes
+2026-05-16 | 62 likes
 
 Been trying to give the grok coding harness a chance, which is tough because I worry about it doing dumb stuff and screwing up my code. 
 
