@@ -1,0 +1,9 @@
+2026-05-22 | 25 likes
+
+And when I say verify, I mean that you have a totally comprehensive end to end integration test suite, a conformance harness with golden artifacts (i.e., checking that all the optimizations were isomorphic and preserved the same outputs given the same inputs), good profiling and realistic benchmarking, etc.
+
+So even if you don't know tropical semirings from engagement rings, you can still have confidence that your XYZ app gives the same, correct answers as before, but N% faster and using P% less resident memory, etc.
+
+I've really gone through a crazy intense process with all this stuff over the past 3 months for my various projects, but especially asupersync and FrankenSQLite. 
+
+I'm in the process now of mining ALL of that experience and all those learnings into a new skill that attempts to automate much of the process and will post about it relatively soon.
