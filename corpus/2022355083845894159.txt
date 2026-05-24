@@ -1,4 +1,4 @@
-2026-02-13 | 79 likes
+2026-02-13 | 78 likes
 
 Friends don’t let friends use git worktrees for agent swarms for high-velocity development. 
 

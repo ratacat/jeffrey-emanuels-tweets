@@ -1,4 +1,4 @@
-2026-01-25 | 554 likes
+2026-01-25 | 555 likes
 
 Since I’m seeing so many new people are installing Clawdbot, I highly recommend inoculating it against prompt injection attacks (or at least hardening it a lot to make it much more resistant) with my ACIP project. I even made a one-liner installer script:
 

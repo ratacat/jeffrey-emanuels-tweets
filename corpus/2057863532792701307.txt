@@ -1,4 +1,4 @@
-2026-05-22 | 25 likes
+2026-05-22 | 26 likes
 
 And when I say verify, I mean that you have a totally comprehensive end to end integration test suite, a conformance harness with golden artifacts (i.e., checking that all the optimizations were isomorphic and preserved the same outputs given the same inputs), good profiling and realistic benchmarking, etc.
 

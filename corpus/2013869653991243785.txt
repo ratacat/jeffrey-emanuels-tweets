@@ -1,4 +1,4 @@
-2026-01-21 | 39 likes
+2026-01-21 | 38 likes
 
 If you're into toon (Token-Oriented Object Notation), I made a Rust version that's... 8x to 27x faster for typical inputs, while using one eighth the memory footprint and starting up 60x faster.
 
