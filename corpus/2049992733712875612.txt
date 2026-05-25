@@ -1,4 +1,4 @@
-2026-04-30 | 69 likes
+2026-04-30 | 72 likes
 
 I keep getting more and more abstract and general in my agent skills. I just finished two skills which are good examples of how far you can take abstraction and universality in skills. They're both for automating the process of customer service and user support via a ticketing system.
 
