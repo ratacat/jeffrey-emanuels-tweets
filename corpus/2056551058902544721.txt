@@ -1,4 +1,4 @@
-2026-05-19 | 23 likes
+2026-05-19 | 24 likes
 
 I use the atuin tool for searching across my command history in linux and mac. It has always been pretty performant, so I was confused why it seemed to be so dog slow recently. 
 

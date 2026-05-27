@@ -1,3 +1,3 @@
-2026-01-17 | 1088 likes
+2026-01-17 | 1086 likes
 
 This has the potential to be really disruptive. If Codex with GPT 5.2 Extra High could get past 1,500 tokens per second, it dramatically erodes Anthropic’s comparative advantage, which is that it’s very good and fast. And it sort of buries Gemini3, which is both slow and dumber.

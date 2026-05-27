@@ -1,4 +1,4 @@
-2026-02-27 | 257 likes
+2026-02-27 | 256 likes
 
 I've seen a lot of skepticism recently from people about the claims around how long agents like Claude Code w/ Opus 4.6 can go autonomously without some kind of automated loop feeding them new instructions.
 
