@@ -1,4 +1,4 @@
-2026-05-15 | 43 likes
+2026-05-15 | 44 likes
 
 Yesterday I posted about my new skill for automatically identifying, classifying, and remediating unsafe Rust code in complex projects, and how I applied it to the new Bun Rust port to find over 30 serious issues.
 

@@ -1,0 +1,5 @@
+2026-05-28 | 18 likes
+
+Every big company that operates mostly in the world of ideas and documents should think hard and ask themselves why they’re not doing the same thing. 
+
+Especially because you can outsource the truly hard parts to Qwen and DeepSeek and run the models securely on your own hardware.

@@ -1,4 +1,4 @@
-2026-04-26 | 633 likes
+2026-04-26 | 632 likes
 
 The beauty and utility of linear algebra, courtesy of the new ChatGPT image model (or: how the same few ideas and methods apply to just about any field in endlessly fascinating ways, including AI!).
 

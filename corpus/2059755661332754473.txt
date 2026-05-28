@@ -1,0 +1,23 @@
+2026-05-27 | 46 likes
+
+I recently posted on here about the 3-month campaign I waged in my FrankenSQLite project to bring it up to parity with the C SQLite project in terms of speed and correctness across a wide range of real-world workloads (and beyond it in several important cases).
+
+You can read the details in the quoted post, but the long and short of it is that I had to come up with various strategies and structured ways of working to finally make real, sustained progress and avoid performance and bug regression "whack-a-mole" that otherwise doomed the effort to treading water despite billions of tokens per week with GPT-5.5 and Opus 4.7.
+
+This work was spread out over thousands of separate agent sessions, some of which used /goal mode in Codex to span over 7 full days of sustained activity. It's just an incredibly massive and rich data set to mine for generalizable, abstract lessons and takeaways.
+
+This process for FrankenSQLite was quite labor- and time-intensive for me despite all the agents and skills and automation I use. 
+
+And the thought of repeating that level of effort for the dozens of other FrankenSuite projects I have in progress now (e.g., FrankenRedis, FrankenNumpy, FrankenPandas, FrankenTorch, FrankenJax, etc.) was daunting.
+
+So, to save my own sanity without lowering my standards, I embarked on a very intense process of mining and harvesting from this massive session history using every trick I've learned to create my latest "super skill", called /running-the-gauntlet-on-your-rust-port. As usual, you can get it here on my $20/month skills site:
+
+https://t.co/aElSyq7KID
+
+This is my largest and most complex skill yet, weighing in at 3.6 megabytes and 364 files (including 63 subagents and dozens of scripts). It's really almost a different category entirely, because you can't really apply all of it in a single invocation or session. 
+
+But because it creates very rich artifacts, it's easy to run it multiple times, using Codex and Claude Code separately, and it can pick up from where it left off and keep building on that. 
+
+The name is something of a misnomer because it doesn't just apply to ports, although it works best on ports because they allow you to compare outputs of your code against the presumably correct known legacy code, and also let you benchmark against your legacy code. But you can apply it to greenfield, non-port projects, and I have, with great success.
+
+I'm excited to see how much this has already accelerated my own development efforts across the FrankenSuite, and I'm confident you will also find it extremely useful for your own projects (especially if they're Rust ports!).

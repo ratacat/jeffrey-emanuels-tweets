@@ -1,0 +1,13 @@
+2026-05-27 | 147 likes
+
+These 3 skills go together so well, it's just an incredibly potent combination with Codex and GPT-5.5. All you need are the skills and these two prompts:
+
+› First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project. Now apply $profiling-software-performance so we can understand the performance hotspots under real-world usage and then start optimizing them using $extreme-software-optimization
+
+› OK, so let's keep repeatedly applying (using $repeatedly-apply-skill ) the $extreme-software-optimization skill systematically to focus on the critical items uncovered in the profiling.
+
+You can get the skills here:
+
+https://t.co/Un9brY3dST
+
+You just run these in your project and come back in a couple hours and it will have expertly diagnosed what is slow and worth optimizing in your code, and then it will embark on a series of scientific optimization passes where everything is carefully measured and proven to be isomorphic.
