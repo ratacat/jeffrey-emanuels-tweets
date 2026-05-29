@@ -1,0 +1,11 @@
+2026-05-29 | 171 likes
+
+I've probably been asked by 100+ people over the past few months to record a screencast showing how I use my Agent Flywheel tooling and skills and other workflows in my day-to-day development work.
+
+I really hate making these things and find it stressful, but decided to do it anyway. This video doesn't get into the super nitty gritty, but shows enough to get a sense for my setup and tooling and general approach.
+
+Apologies for some choppy audio at parts; it should be pretty comprehensible despite that.
+
+I can't justify spending any real time scripting or editing this kind of thing because I'm too busy with real work, so you'll have to excuse some pauses and meandering here and there (plus I encountered a few bugs, the bane of all truly live demos).
+
+PS: If you prefer watching on YouTube, I'll post the link as a reply below.

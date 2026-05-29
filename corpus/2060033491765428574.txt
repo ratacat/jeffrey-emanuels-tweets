@@ -1,0 +1,15 @@
+2026-05-28 | 28 likes
+
+There’s something so satisfying to me about building a bunch of tooling without a clear use case in mind, just thinking “I’m sure it would be useful and I know how to do it.” And then it all ends up being used in so many new ways.
+
+That’s what led me to make FrankenPandas and FrankenNetworkx and several others. I love those libraries in Python, but wanted everything to be memory safe, hyper-performant Rust.
+
+Now, when I’m making new software I hadn’t really contemplated originally, I constantly find myself saying “oh yeah, use FrankenPandas for all the tabular data processing.” 
+
+Or “use FrankenNetworkx for all the graph theory calculations.” And it all just works.
+
+The best part is that the frontier models are already super familiar with the APIs of Pandas and NetworkX, so all that understanding automatically maps to the Rust versions.
+
+And then all the lower level stuff runs on my other projects, too: asupersync as the backbone, FrankenSQLite for the db, FrankenTUI for the console output, FrankenSearch for all the local and semantic search, etc. 
+
+Soon I’ll be adding extension systems to my projects using FrankenEngine and FrankenNode. It’s all a big tower that’s cumulative and builds on itself. A flywheel, if you will.

@@ -1,0 +1,9 @@
+2026-05-28 | 464 likes
+
+There is so much alpha in just religiously, repeatedly invoking these magic spells throughout your agent coding and planning sessions:
+
+❯ Great, now I want you to carefully read over all of the new code you just wrote and other existing code you just modified with "fresh eyes" looking super carefully for any obvious bugs, errors, problems, issues, confusion, etc. Carefully fix anything you uncover.
+
+❯ Once again, check over everything again with fresh eyes looking for any blunders, mistakes, errors, oversights, omissions, problems, misconceptions, bugs, etc. Be SUPER thorough and meticulous!
+
+Maybe one day you won't need them, but for now, it improves the results from frontier models more dramatically than anything else you can do. Assign them to hotkeys or get a Stream Deck so you can sprinkle them in without even thinking about it.

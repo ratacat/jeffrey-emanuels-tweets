@@ -1,4 +1,4 @@
-2026-03-09 | 173 likes
+2026-03-09 | 174 likes
 
 Since tax season is again upon us, I thought I’d share my article from last year about how I use AI to help me do my own taxes now instead of spending over two grand like I used to for error-prone tax prep from a CPA. It mentions Opus 3.7; just use 4.6:
 

@@ -1,0 +1,13 @@
+2026-05-28 | 13 likes
+
+If anyone from K&E or another paranoid mega-firm is reading this: I’ve developed an extremely good architecture and approach for doing this sort of thing for hedge funds doing investment analysis (my professional wheelhouse) using a single, universal, Swiss Army knife CLI tool and a super elaborate library of interconnected, modular, composable skills. 
+
+It works extremely well, and I’ve automated much of the process in a general way.
+
+I can do the same thing for you in the legal realm and you’d own it and could run it on your own private cloud using open models (or closed frontier models on AWS Bedrock or Azure if you’re comfortable doing that). 
+
+I could bootstrap the skill library using your library of past documents and court filings as well as by mining legal treatises. 
+
+The best part is that it’s a skill-centric approach, which means your non-technical legal staff can be a full participant in building and enhancing the skills. After all, the skills are mostly just English text with some coordinating structure (similar to a flowchart) on top, along with little scripts for validating things mechanically and subagent personas.
+
+If that’s interesting to you, reach out to me! It won’t be cheap, but it will be a hell of a lot less than $500mm, that’s for sure. And no, you can’t hire me as an employee (nor can you really hire anyone like me to do this at this level).

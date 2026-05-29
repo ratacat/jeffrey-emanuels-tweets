@@ -1,4 +1,4 @@
-2026-05-24 | 52 likes
+2026-05-24 | 53 likes
 
 I made a quick little script to solve a major annoyance I keep running into on my Linux boxes. You might find it useful, too:
 

@@ -1,0 +1,23 @@
+2026-05-29 | 41 likes
+
+It's always fun finding a new use case for agents. Today, I decided to finally record a screencast showing my current development setup and workflow, which many people have been asking me for over the last few months.
+
+One reason I hate doing these and find them stressful is that I work on consulting projects for clients under NDA, and I'm always nervous about inadvertently leaking secret information.
+
+And of course, during the process of recording it, I accidentally flashed my Gmail inbox at one point and also revealed certain folder names and project/repo names inadvertently.
+
+I'm super busy with actual work, and the prospect of sitting there like an idiot stepping through frames looking for sensitive information to redact was extremely unappealing. 
+
+So I decided to give Opus 4.8 the job as follows (this leverages a skill I had just for the video transcoding with FFmpeg; the rest was driven by this prompt):
+
+❯ Use your /obs-youtube-music skill to remux '2026-05-28 15-05-39.mkv' to MP4 without changing the quality. I need your help in identifying and redacting (using opaque rectangles over the impacted area using FFmpeg during the time intervals warranted) a couple times where my screen revealed my Gmail inbox and anywhere that includes the string "<REDACTED CLIENT NAME>" or "<redacted_client_name>". 
+
+Think of a good way to do this—one way would be to grab a frame every 1 second and then use OCR on it (something cheap and fast like Tesseract, which you could install, or a more modern system that could run decently on this Mac, like the built-in OCR in macOS) and then double-check them with your vision model to get the right bounding box and time interval. You can research the best approach.
+
+--
+
+And then after it finished (which took ~90 minutes in total; not bad considering the screen recording was ~30 minutes long), I did this:
+
+❯ OK and when you're all done, you will need to manually verify that you did in fact redact the parts in question (and give me the timestamps so I can double-check this myself).
+
+Anyway, it all worked extremely well. So well that I'm going to turn it into a skill that anyone can use on https://t.co/gPMIHym3Hv so that you can just give any forbidden strings or describe what you don't want included, and it will automatically handle the process of detecting, redacting, and verifying everything.
