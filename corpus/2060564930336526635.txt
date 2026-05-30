@@ -1,0 +1,11 @@
+2026-05-30 | 32 likes
+
+One of my favorite features in dcg, my destructive_command_guard tool, is that it will block an agent from doing something stupid automatically, but if the agent REALLY wants to do it, then it can request a one-time exemption to whatever rule is blocking it. 
+
+But the way it has to do that is to ask the human to basically do the equivalent of a 2-factor auth, where it generates a short code and then asks the human to paste a command in manually. The entire process flow is illustrated in the screenshots below.
+
+Of course, an evil, conniving agent could do all of that itself. But the frontier models been so RL'ed into being law-abiding and doing that feels too much like "hacking" or circumventing a security system, so that they just abide by the rules.
+
+You can get dcg here (it recently crossed the 1k GitHub stars milestone):
+
+https://t.co/aVmEBi9WCd

@@ -1,4 +1,4 @@
-2026-05-28 | 28 likes
+2026-05-28 | 31 likes
 
 There’s something so satisfying to me about building a bunch of tooling without a clear use case in mind, just thinking “I’m sure it would be useful and I know how to do it.” And then it all ends up being used in so many new ways.
 

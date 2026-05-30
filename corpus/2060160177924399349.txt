@@ -1,4 +1,4 @@
-2026-05-29 | 41 likes
+2026-05-29 | 52 likes
 
 It's always fun finding a new use case for agents. Today, I decided to finally record a screencast showing my current development setup and workflow, which many people have been asking me for over the last few months.
 

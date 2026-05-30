@@ -1,4 +1,4 @@
-2026-01-23 | 91 likes
+2026-01-23 | 90 likes
 
 PSA: you should avoid vendor lock-in for agent coding primitives like task management (e.g.,  beads) and agent communication (e.g., MCP Agent Mail) so you can use all the agents together, which is more powerful anyway.
 

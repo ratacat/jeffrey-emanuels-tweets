@@ -1,4 +1,4 @@
-2026-03-21 | 149 likes
+2026-03-21 | 148 likes
 
 The complete guide to my Agent Flywheel approach of integrated tooling, workflows, and prompts (or “How I Learned to Stop Worrying and Love Generating 1,000 High-Quality Commits a Day”):
 

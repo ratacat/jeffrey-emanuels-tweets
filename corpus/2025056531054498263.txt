@@ -1,4 +1,4 @@
-2026-02-21 | 299 likes
+2026-02-21 | 298 likes
 
 Ok, Gemini3 was already weirdly good at finding subtle bugs. But I can now say that Gemini3.1 is even more ridiculously capable of this.
 

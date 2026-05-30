@@ -1,4 +1,4 @@
-2026-01-28 | 168 likes
+2026-01-28 | 166 likes
 
 I wanted to have a good, lightweight, and fast semantic embedding model for local search for both my cass tool (for searching across coding agent sessions) and my xf tool (for searching your downloaded X archives).
 
