@@ -1,0 +1,5 @@
+2026-05-30 | 87 likes
+
+This is a really useful trick. LLMs are uniquely good at generating scores for attributes in a repeatable, consistent way.
+
+And if you want the scores to be robust, you can use multiple models and average each sub-score, with a penalty for when they diverge a lot between models.

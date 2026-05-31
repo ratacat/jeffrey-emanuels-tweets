@@ -1,4 +1,4 @@
-2026-04-10 | 234 likes
+2026-04-10 | 233 likes
 
 People who dismiss agent skills as "just markdown files" are really missing out on what's possible. They can be so much more than that, and include scripts, subagents, etc. 
 

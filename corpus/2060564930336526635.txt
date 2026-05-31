@@ -1,4 +1,4 @@
-2026-05-30 | 32 likes
+2026-05-30 | 45 likes
 
 One of my favorite features in dcg, my destructive_command_guard tool, is that it will block an agent from doing something stupid automatically, but if the agent REALLY wants to do it, then it can request a one-time exemption to whatever rule is blocking it. 
 

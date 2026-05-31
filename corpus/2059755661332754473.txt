@@ -1,4 +1,4 @@
-2026-05-27 | 57 likes
+2026-05-27 | 58 likes
 
 I recently posted on here about the 3-month campaign I waged in my FrankenSQLite project to bring it up to parity with the C SQLite project in terms of speed and correctness across a wide range of real-world workloads (and beyond it in several important cases).
 
