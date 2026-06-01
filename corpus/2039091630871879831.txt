@@ -1,4 +1,4 @@
-2026-03-31 | 31 likes
+2026-03-31 | 32 likes
 
 The default posture for tooling like npm should be to err on the side of caution when it comes to protecting users from their own mistakes.
 

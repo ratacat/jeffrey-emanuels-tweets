@@ -1,4 +1,4 @@
-2026-05-28 | 14 likes
+2026-05-28 | 16 likes
 
 If anyone from K&E or another paranoid mega-firm is reading this: I’ve developed an extremely good architecture and approach for doing this sort of thing for hedge funds doing investment analysis (my professional wheelhouse) using a single, universal, Swiss Army knife CLI tool and a super elaborate library of interconnected, modular, composable skills. 
 

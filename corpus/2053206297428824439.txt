@@ -1,4 +1,4 @@
-2026-05-09 | 194 likes
+2026-05-09 | 195 likes
 
 For some reason, this prompt catches more stuff than you'd expect. I use it now in addition to my other "fresh eyes" prompt. It somehow puts the model's brain in a different state where it's more receptive:
 

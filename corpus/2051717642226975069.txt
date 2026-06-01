@@ -1,3 +1,3 @@
-2026-05-05 | 100 likes
+2026-05-05 | 99 likes
 
 Oh, nothing too crazy, just a single Codex session with... wtf, nearly 3 BILLION tokens of cached reads? 4.5mm of output tokens? Over 1.7mm of reasoning token? btw, I have tons of these going all the time. https://t.co/InfoNVh3Wl

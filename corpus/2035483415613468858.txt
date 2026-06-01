@@ -1,4 +1,4 @@
-2026-03-21 | 102 likes
+2026-03-21 | 103 likes
 
 Here you can see what this is starting to look like. Instead of just having a big grid of tmux panes, ntm now lets you press F12 to bring up the ntm HUD, which lets you monitor what's happening. 
 

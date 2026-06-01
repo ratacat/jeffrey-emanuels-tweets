@@ -1,4 +1,4 @@
-2026-04-14 | 16 likes
+2026-04-14 | 15 likes
 
 Here's my article from last year; see how far we've come in one year, from doing everything using web apps (and Sonnet 3.7! how quaint!) to using agents with skills that can directly create and edit files and control browsers. What about in another year? 
 
