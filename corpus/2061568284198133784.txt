@@ -1,0 +1,3 @@
+2026-06-01 | 36 likes
+
+How did they not roll this out in a limited A/B test and also have some black hats test it out? Or even just some adversarial agents try to come up with exploits? Did they not even contemplate that something like this could happen? It seems utterly obvious.

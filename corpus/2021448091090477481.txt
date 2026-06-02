@@ -1,4 +1,4 @@
-2026-02-11 | 177 likes
+2026-02-11 | 176 likes
 
 OK, how cool is this? FrankenTUI is now totally web native, with ultra high-performance wasm. Totally side-stepping xterm .js with my own home-grown FrankenTermJS. 
 

@@ -1,4 +1,4 @@
-2026-04-27 | 120 likes
+2026-04-27 | 119 likes
 
 The Rust rewrite of my MCP Agent Mail project has been "finished" for a while, but I've been reluctant to promote it because the original Python version is so battle-tested and reliable now, and also because I've been grappling with various bugs and reliability issues in the Rust version.
 

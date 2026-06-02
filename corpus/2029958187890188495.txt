@@ -1,3 +1,3 @@
-2026-03-06 | 76 likes
+2026-03-06 | 73 likes
 
 It’s genuinely surreal for me to get these messages from people thanking me for fixing bugs in my projects that are reported via GitHub issues… but I have zero recollection of either the bugs or the fixes, because I’ve outsourced 95% of that to my agents and they handle it all! https://t.co/s74ASo08dQ

@@ -1,4 +1,4 @@
-2026-04-07 | 154 likes
+2026-04-07 | 153 likes
 
 A while back, I posted this concept for my ntm agent orchestration tool that would let you spin up a swarm of agents using various harnesses where each agent could follow a different "mode of reasoning" (see the quoted post for what that means).
 

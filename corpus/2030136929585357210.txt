@@ -1,4 +1,4 @@
-2026-03-07 | 24 likes
+2026-03-07 | 23 likes
 
 This is a proven process that layers together many dozens of optimizations which can speed up individual parts of a project from anywhere between 5x and 5%. 
 

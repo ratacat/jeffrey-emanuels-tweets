@@ -1,4 +1,4 @@
-2026-01-30 | 58 likes
+2026-01-30 | 57 likes
 
 I've been trying for a while to find a reliable way to remind my Claude Code agents to re-read AGENTS .md promptly after every compaction. Otherwise they have a tendency to go rogue and act like wild animals (fortunately, they're at least muzzled wild animals since I'm also using my dcg tool).
 
