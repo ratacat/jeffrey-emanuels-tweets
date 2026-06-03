@@ -1,0 +1,5 @@
+2026-06-02 | 171 likes
+
+Interesting, here's what my very elaborate system says are the smartest stock pickers after removing all returns from style factors.
+
+It makes some simplifying assumptions based on 13-F holdings, but should be directionally accurate for these kinds of investors. Good work EAM! https://t.co/QMnJgdKr2Q

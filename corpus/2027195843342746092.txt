@@ -1,4 +1,4 @@
-2026-02-27 | 129 likes
+2026-02-27 | 128 likes
 
 I made a nice website for my asupersync library (a Rust library for asynchronous programming that is a complete replacement not just for tokio, but for the entire tokio ecosystem, with a much more robust "correct by design" approach grounded in structured concurrency research):
 

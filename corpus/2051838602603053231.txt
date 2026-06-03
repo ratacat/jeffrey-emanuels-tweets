@@ -1,4 +1,4 @@
-2026-05-06 | 67 likes
+2026-05-06 | 68 likes
 
 If you're running a SaaS business or trying to build a new one, you're probably using Stripe and PayPal for payments/billing. Or at least you should, because users expect them and want the ease of use.
 

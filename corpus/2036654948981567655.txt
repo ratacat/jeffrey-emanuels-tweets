@@ -1,3 +1,3 @@
-2026-03-25 | 32 likes
+2026-03-25 | 31 likes
 
 I just realized that this finally IS possible with AI agents. I think Claude Opus 4.6 with Max Thinking and the Claude Code harness would in fact faithfully adhere to both the letter and spirit of a will and foundation charter, especially if it included a lot of pos/neg examples.
