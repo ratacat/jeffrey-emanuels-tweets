@@ -1,4 +1,4 @@
-2026-04-26 | 190 likes
+2026-04-26 | 189 likes
 
 I was curious how much the new ChatGPT image model would vary in its outputs given the same detailed prompt to make a math explainer infographic.
 

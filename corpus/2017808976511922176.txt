@@ -1,4 +1,4 @@
-2026-02-01 | 26 likes
+2026-02-01 | 27 likes
 
 (that biggest tip is using git worktrees, btw). I explain why I don't like them in this thread:
 

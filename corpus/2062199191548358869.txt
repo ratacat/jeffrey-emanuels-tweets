@@ -1,0 +1,21 @@
+2026-06-03 | 59 likes
+
+My productivity still hasn’t recovered from the hit it took when Anthropic instituted rate limits on Claude Code a couple of months ago.
+
+Note that I’m NOT talking about usage limits here, but the rate limit on the number of requests during a given time interval.
+
+It used to be that Codex was the one with rate limits, but I could have 20 CCs running at the same time on one machine with no problem. 
+
+And sure, it would eat my entire 5-hour usage limit in 20 or 30 minutes. But I can budget for that and it let me move a lot faster.
+
+But now I’m scared to start up more than 2 or 3 CC instances at once on a single machine. Since subagents also seem to count against the limits too, it’s very easy to trigger it.
+
+And when you do, it’s catastrophic because it nukes ALL your CC sessions at the same time, the worst possible failure mode. 
+
+Why not just fail the new request to keep the damage contained? It feels punitive.
+
+A far better way would be to have a local request queue that operates globally on a machine. 
+
+If the next CC request would have triggered the rate limit, then that request is placed in a queue, to be executed in order when it wouldn’t run afoul of the rate limit.
+
+That way it seems to each agent instance like a slow request rather than a catastrophic failure. But it has the same net effect on limiting the overall number of requests per minute.

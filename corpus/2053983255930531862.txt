@@ -1,4 +1,4 @@
-2026-05-11 | 72 likes
+2026-05-11 | 71 likes
 
 If you want a totally provider-agnostic way to do this that’s been battle tested with hundreds of users and many thousands of sessions and used to develop untold millions of line of Rust, check out my open-source ntm tool:
 

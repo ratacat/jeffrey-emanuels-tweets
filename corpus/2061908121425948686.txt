@@ -1,3 +1,3 @@
-2026-06-02 | 31 likes
+2026-06-02 | 39 likes
 
 So cool to see a single Claude Code instance loosely coordinating a performance optimization campaign with my ntm orchestration tool across 9 of my FrankenSuite projects at the same time. This involves 27 different full agent sessions! Two Codex and one Claude Code per project. https://t.co/vOioGwsOkx

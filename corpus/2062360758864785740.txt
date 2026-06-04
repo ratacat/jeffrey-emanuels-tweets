@@ -1,0 +1,29 @@
+2026-06-04 | 134 likes
+
+I have what I believe is the most sophisticated skill library for doing fundamental-based long/short equity investing using AI agents anywhere in the world.
+
+It’s a collection of over 100 very fleshed-out skills that each include assets (similar to worksheets that the agents can fill out when relevant), scripts, and deep reference files. But it’s a lot more than that.
+
+It’s a coherent, cohesive, synthetic SYSTEM of modular and composable skills that form a hierarchy of abstractions. 
+
+You have skills that apply universally to any stock; those are Level 1. For instance, a management alignment skill.
+
+Then you have sector/industry skills, Level 2, like regulated electric utilities, restaurants, or hospitals, to give just a few examples.
+
+Then you have more specialized skills that apply more narrowly, like for liquidations or spinoffs.
+
+And even more narrowly to specific scenarios, like commodity-exposed companies that are temporarily and unsustainably over- or under-earning.
+
+The skills are interconnected, with logic explaining when and how to “hand off” to another, more specialized skill. Each skill forms a contract that specified what it takes as input and generates as output.
+
+And the skills are all tightly interwoven with my universal cli tool, hfdt (hedge_fund_data_tool) and my ee (eidetic_engine_cli) structured memory tool. 
+
+The hfdt tool connects to tons of different data sources and provides a highly agent-intuitive interface for retrieve and processing data of all kinds.
+
+I’ve mined from dozens of my own writeups and models from a decade of working at hedge funds including Millennium and Balyasny, and from many other sources. 
+
+These skills truly contain a massive amount of knowledge about the world and about investing.
+
+If this sounds interesting to you, and you manage an institutional-sized long/short equity hedge fund or family office, please reach out to me.
+
+I can help you build a set of customized skills that you would own that operate on top of my skill library, and can integrate with any existing data sources you have that aren’t already supported by my tooling.
