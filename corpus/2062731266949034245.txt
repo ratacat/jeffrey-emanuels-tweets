@@ -1,0 +1,7 @@
+2026-06-05 | 131 likes
+
+Git worktrees are an anti-pattern in agentic software development, even if the Claude Code team recommends them as one of their "top tips"!
+
+If you want tips on playing the piano well, you don't go to Steinway &amp; Sons, you ask Evgeny Kissin or Lang Lang! 
+
+And try my skills site!

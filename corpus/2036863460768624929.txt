@@ -1,4 +1,4 @@
-2026-03-25 | 78 likes
+2026-03-25 | 77 likes
 
 One very big and hard-to-solve problem with agent memory is that, even if you can manage to correctly and quickly identify that a memory from a past interaction is in fact relevant to the current interaction, that’s still not enough!
 

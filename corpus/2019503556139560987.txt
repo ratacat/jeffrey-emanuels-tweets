@@ -1,3 +1,3 @@
-2026-02-05 | 66 likes
+2026-02-05 | 67 likes
 
 More fun with FrankenTUI. It now supports complete Mermaid diagrams with multiple rendering formats, dynamic layout and resizing, etc. Forgive the drifting AV sync towards the end... OBS started choking because I have too much stuff going on and CC couldn't figure out how to fix. https://t.co/lrojB2htSZ

@@ -1,3 +1,3 @@
-2026-06-02 | 461 likes
+2026-06-02 | 463 likes
 
 Something feels off with the Codex usage limits today. I've already had to cycle through 6 GPT Pro 20x accounts today on a single dev machine. Can't remember ever needing to do that before... seems like even the ending of the 2x usage deal wouldn't explain such a big step change.

@@ -1,3 +1,3 @@
-2026-03-02 | 69 likes
+2026-03-02 | 71 likes
 
 I like and use WezTerm, but it simply wasn't made to withstand the kind of multi-day sessions I subject it to, with many dozens of concurrent agents. It starts leaking memory like crazy and then leaves you in a bad spot. That's why I'm making FrankenTerm, out of actual necessity. https://t.co/G05HNNEbX4

@@ -1,3 +1,3 @@
-2026-02-01 | 89 likes
+2026-02-01 | 90 likes
 
 My guys are helping me plot to reinvent the entire Rust async ecosystem and replace it with correct-by-design structured concurrency primitives that have been neglected in real-world systems and mostly relegated to academic research. And I don't even care if anyone else uses it! https://t.co/CHZPahN7nC

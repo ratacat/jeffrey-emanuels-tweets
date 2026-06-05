@@ -1,3 +1,3 @@
-2026-03-31 | 379 likes
+2026-03-31 | 380 likes
 
 Claude Code rate limit issues seem to be fixed for me. Not sure if they fixed a bug in the harness, made a policy change decision for everyone, or just tweaked it for me (someone was in touch with me from Anthropic about it). Either way, I’ll take it! Feels good to be back.

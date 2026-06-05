@@ -1,4 +1,4 @@
-2026-02-05 | 31 likes
+2026-02-05 | 32 likes
 
 The dilemma: I have a new CPU which will double the number of physical cores of my main workstation from 32 to 64.
 
