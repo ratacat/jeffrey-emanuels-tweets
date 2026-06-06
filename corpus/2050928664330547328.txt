@@ -1,4 +1,4 @@
-2026-05-03 | 50 likes
+2026-05-03 | 51 likes
 
 Also, the model was able to do all this without a big complex prompt, just given the source image to emulate and some very brief instructions. That’s what I mean by visual IQ; it was able to intuit everything perfectly from tiny scraps:
 

@@ -1,4 +1,4 @@
-2026-04-17 | 52 likes
+2026-04-17 | 53 likes
 
 I’m pleased to introduce my latest set of 3 skills that automate the process of migrating your business from Slack to self-hosted Mattermost, an open-source alternative that costs 96% to 99% less. 
 

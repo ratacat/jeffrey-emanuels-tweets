@@ -1,4 +1,4 @@
-2026-03-08 | 90 likes
+2026-03-08 | 91 likes
 
 Not sure if I've ever shared this prompt before, but if you use beads (or my rust version, br) to build out complex development plans, you sort of need to use something like this to avoid wasting time later on in the implementation phase.
 

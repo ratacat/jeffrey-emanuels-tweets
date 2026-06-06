@@ -1,4 +1,4 @@
-2026-02-27 | 178 likes
+2026-02-27 | 180 likes
 
 My FrankenSQLite project is rapidly approaching completion. In honor of that milestone, I created a nice website for the project that tries to explain in the most intuitive and visual way possible all of its cool technical innovations and advantages:
 

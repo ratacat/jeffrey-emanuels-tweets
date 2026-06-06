@@ -1,4 +1,4 @@
-2026-03-07 | 57 likes
+2026-03-07 | 59 likes
 
 That’s why it’s especially galling and dishonest for someone to benchmark code that is still in the first or second phase, like FrankenSQLite. 
 

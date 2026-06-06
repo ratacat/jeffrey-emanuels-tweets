@@ -1,4 +1,4 @@
-2026-02-23 | 156 likes
+2026-02-23 | 157 likes
 
 I developed a pretty advanced, Rust-native, 2-tier lexical/semantic hybrid search system as part of my work on cass and xf and other projects. 
 

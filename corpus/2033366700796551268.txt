@@ -1,4 +1,4 @@
-2026-03-16 | 151 likes
+2026-03-16 | 152 likes
 
 One of the coolest parts of writing programs and libraries in Rust is how easy it is to compile to web assembly (wasm). Suddenly, you can run code in the browser, and you've completely changed what is possible to do with your software.
 

@@ -1,4 +1,4 @@
-2026-02-11 | 74 likes
+2026-02-11 | 75 likes
 
 Who even needs React anymore? One terminal to rule them all and in the darkness, bind them.
 

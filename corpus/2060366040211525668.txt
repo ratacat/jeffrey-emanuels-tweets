@@ -1,4 +1,4 @@
-2026-05-29 | 35 likes
+2026-05-29 | 36 likes
 
 I turned this workflow into a general skill that totally automates this entire process of redacting sensitive content from a screencast. 
 

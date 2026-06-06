@@ -1,4 +1,4 @@
-2026-02-08 | 80 likes
+2026-02-08 | 82 likes
 
 FrankenTUI is vertically integrating. I just replaced crossterm, which has 3.9k GitHub stars and 30k lines of code, with 1,700 lines that's faster even before doing my crazy optimizations. Already tested and working great.
 

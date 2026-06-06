@@ -1,0 +1,5 @@
+2026-06-05 | 43 likes
+
+It's fun when you go to sleep and your Rust project is 5x slower than the reference C++ project, but then you check in on it the next day and it's faster or at parity. This is for FrankenWhisper:
+
+https://t.co/voLiiTveBd https://t.co/5VYjOg0l6b

@@ -1,4 +1,4 @@
-2026-04-21 | 44 likes
+2026-04-21 | 45 likes
 
 It would be so easy to make a cli or mcp tool that searches for each case in Lexis or Westlaw to check that it exists and matches the way it’s described in the document. And a skill to go along with it.
 

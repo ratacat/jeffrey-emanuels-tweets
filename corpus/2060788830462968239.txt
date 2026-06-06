@@ -1,4 +1,4 @@
-2026-05-30 | 94 likes
+2026-05-30 | 95 likes
 
 This is a really useful trick. LLMs are uniquely good at generating scores for attributes in a repeatable, consistent way.
 

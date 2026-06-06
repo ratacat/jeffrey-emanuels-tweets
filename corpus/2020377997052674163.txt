@@ -1,4 +1,4 @@
-2026-02-08 | 50 likes
+2026-02-08 | 51 likes
 
 While fixing this awful crashing bug in gemini-cli, I decided to also finally deal with this bane of gemini: the constant "high demand" error which requires an interactive response to get past. Turns out it's because it intentionally gives up way too quickly and easily.
 

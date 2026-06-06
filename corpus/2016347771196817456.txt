@@ -1,4 +1,4 @@
-2026-01-28 | 137 likes
+2026-01-28 | 138 likes
 
 The secret to using gemini-cli? There are actually two:
 
