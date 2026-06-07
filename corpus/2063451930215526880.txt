@@ -1,0 +1,23 @@
+2026-06-07 | 44 likes
+
+The dialectic process of truth discovery is just as vital and powerful now as it was for the ancient Greeks. Except now you don't need to assemble a group of brilliant aristocrats in togas to partake in it. 
+
+Instead, you can sit back and use my Dueling Idea Wizards skill to get GPT-5.5 and Opus 4.8 (and even Gemini 3.1 if you want) to do it for you via my ntm orchestration tool:
+
+https://t.co/n2Li1ctWeb 
+
+The screenshots show the results of running this on my FrankenNode project (https://t.co/OZrp5GKk4G) with the following prompt in Claude Code:
+
+---
+
+First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project. 
+
+Then apply /dueling-idea-wizards in the most comprehensive and ambitious way possible to come up with the very best ideas-- the smartest and most radically innovative and accretive and useful and compelling additions you could possibly make to the project at this point.
+
+---
+
+It cranks away for quite a while and then presents you with what are usually extremely smart, well-reasoned ideas. 
+
+These ideas are basically the final survivors in an intense, Mad-Max style competition of brutal elimination and repeated challenges.
+
+Then you can turn them into beads and implement them with a swarm, again using ntm. Rinse and repeat.
