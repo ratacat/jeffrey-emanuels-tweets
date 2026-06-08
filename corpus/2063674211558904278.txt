@@ -1,0 +1,41 @@
+2026-06-07 | 76 likes
+
+I’ve posted many times about my obsession with the miraculous RaptorQ algorithm, a fountain code that’s the basis of much of the robustness found in modern cell phone networks.
+
+This article I wrote a few months ago is a good accessible intro to the basic ideas:
+
+https://t.co/SFNqebh9VF
+
+I also have an extremely performant, memory safe Rust implementation of RaptorQ that’s a foundational part of my asupersync project (the backbone of all of my Rust projects) that you can see here:
+
+https://t.co/xMBvkYk8g2
+
+That’s useful if you want to get into the nitty gritty of the implementation details or want to use it in your own Rust projects.
+
+Anyway, what I want to point out here is something different, which is the way the two current frontier models (GPT-5.5 and Opus 4.8 with max thinking) approach the problem of explaining a key part of the algorithm.
+
+I asked both models this question first:
+
+“What’s the relationship between RaptorQ and the Galois field GF(2^8) with x^8 + x^4 + x^3 + x^2 + 1 ?”
+
+Perhaps unsurprisingly, they both responded with a terse, highly technical response, matching the tone of the question. But then I asked both the same follow-up question:
+
+“Can you unpack basically all of that, each part of it so you can understand the WHY and where it comes from and the intuition behind it?”
+
+Both then gave very clear, detailed answers, which you can see below:
+
+Claude:
+
+https://t.co/GTXS3T0lSw
+
+GPT:
+
+https://t.co/HSIETDVCC5
+
+I’m curious to hear what people think, but for my money, the Claude explanation is just much better and easier to read and understand. It sounds more human-centric somehow. 
+
+I actually think that GPT is strictly “higher IQ” than Claude, but somehow Claude has a better internal model of how humans think and communicate.
+
+Anyway, I highly recommend reading these. If you only read one, then read the Claude one. If it still reads like Greek to you, then add a follow-up to simplify each part of it much more and provide more background context and explanation. 
+
+RaptorQ is one of those things that seems like magic to me no matter how much I dig into it. Like some kind of free lunch that shouldn’t exist, but somehow does.

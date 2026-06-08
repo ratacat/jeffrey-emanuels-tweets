@@ -1,0 +1,29 @@
+2026-06-07 | 104 likes
+
+This is exciting. I decided to add a whole YouTube search/download system to my FrankenWhisper project to make it quick and easy for agents to put together a set of really polished transcripts for a list of YT videos or an actual YT playlist.
+
+I figured I could just do a clean-room, memory-safe port to Rust of yt-dlp, but I underestimated how complex it is to deal with YouTube's anti-bot measures.
+
+The hardest part is that you need to run some very complex, very obfuscated JS to reliably make it all work. 
+
+Which normally would throw a big monkey wrench into my goal of making a clean, self-contained, memory-safe Rust project, because then you have to bring in browsers and all this other nonsense, you have to grapple with FFI stuff that makes unsafe unavoidable, etc. A real buzz kill.
+
+But it just so happens that I've been working for months on FrankenEngine, my from-scratch JS engine designed specifically for handling adversarial extension workloads in AI agent harnesses. If we could use that for this purpose, it would totally solve the problem. 
+
+Now, this is particularly exciting for me because I still haven't actually tried to USE FrankenEngine for anything yet, despite investing many, many billions of tokens to create millions of lines of Rust and 100k+ tests. 
+
+To give a sense of the effort so far, FrankenEngine now has 5,273 commits despite being started just 4 months ago:
+
+https://t.co/sNAqdvgFq7 
+
+Anyway, if I can get this all to work, not only will it be a very useful tool in general, but it will be a truly demanding existence proof that FrankenEngine really does work and can handle real-world, complex applications in practice. 
+
+Which, if true, would really be quite incredible if you think about it. The teams that have been assembled by Google to create its V8 JS engine, or by Apple to make its JavaScriptCore engine, are extensive and include some of the smartest, most highly paid engineers at either company. And they've been at it for 10+ years already.
+
+And btw, FrankenEngine doesn't exist in isolation; it has a sister project, FrankenNode, which is my agent-centric replacement for Node/Bun (and this time, the Rust engineering is actually done properly, without all the unsafe and UB!). See https://t.co/OZrp5GKk4G for details on that one.
+
+Anyway, the next week or so will be very interesting and exciting for me. Since this will be the first real-world use case for FrankenEngine, it will likely reveal some problems that were missed despite its insane collection of over 100,000 tests, but I should be able to quickly triage and fix all of them.
+ 
+If you want to follow along, here's the repo for FrankenWhisper:
+
+https://t.co/YHplk5CvD8

@@ -1,0 +1,5 @@
+2026-06-07 | 4 likes
+
+Got worried there for a minute! But it seemed off to me and turns out the agent was using an obsolete branch of FrankenEngine. But there is still some wood to chop in terms of functionality.
+
+That's why it's so useful to internally dogfood stuff, particularly in new contexts: https://t.co/TBzljNL0D7
