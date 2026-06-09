@@ -1,4 +1,4 @@
-2026-03-04 | 259 likes
+2026-03-04 | 260 likes
 
 Have you ever thought it might be nice to resume a Codex session using Claude Code? Or vice versa? What about being able to pick up in gemini-cli right where you left off in Codex or CC? 
 

@@ -1,0 +1,23 @@
+2026-06-08 | 57 likes
+
+If you're making software that is designed to parse complex, diverse data, especially when YOU don't control the data, and it is generated in varied ways by thousands of different organizations or users, then there's really no substitute for what's known as "fuzzing" tests.
+
+Fuzzing is a testing technique where you try to intelligently generate a huge number of varied inputs to your program, with the goal of finding parsing bugs that you'd be unlikely to come across if you're only testing with a fixed set of valid inputs.
+
+A naive approach to generating random inputs would be wasteful, since most inputs are trivially invalid and can be quickly rejected.
+
+What you really want are inputs that are pathological; ones that are nearly valid but have some bizarre issue that can confuse your parsing rules and trigger code pathways that you'd normally never traverse.
+
+Fuzzing used to be a somewhat esoteric approach used by security-focused engineers in high-stakes, sophisticated applications. But now anyone can use it. I have a skill specifically for fuzzing you can try here:
+
+https://t.co/4GXFLCYvWD
+
+It's part of a series of testing-related skills that also includes metamorphic testing, conformance harness testing, golden artifact generation, end-to-end integration testing, etc. 
+
+The skill works across many popular languages and automatically installs the needed tooling for you, instruments your application for fuzzing, and then mounts extended fuzz testing campaigns. 
+
+You can see an example of one in the screenshot, where it's been working for many hours, subjecting three different parsers in my hedge_fund_data_tool to torture tests. 
+
+For instance, my elaborate parser for SEC insider trade forms (i.e., Forms 3, 4, and 5), which is thousands of lines of Rust, has been called over 780 million times, each invocation with a different, optimally selected input designed to best explore all the different possible code paths within the parser.
+
+There aren't that many forms of this kind in the history of the SEC's EDGAR database, across all companies. The only way to do something like that is with fuzzing. And now you can!
