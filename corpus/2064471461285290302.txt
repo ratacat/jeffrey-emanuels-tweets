@@ -1,0 +1,7 @@
+2026-06-09 | 68 likes
+
+One thing I'm noticing is that it isn't using that many tokens considering how long it has been running and the number of files it has revised. Just 125k tokens in 50 minutes. 
+
+So it's able to be very smart, but with much less introspection/CoT. 
+
+Thus, it's increasingly misleading to compare costs and capabilities across models using only $ per million tokens!

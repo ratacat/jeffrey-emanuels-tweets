@@ -1,4 +1,4 @@
-2026-05-17 | 23 likes
+2026-05-17 | 22 likes
 
 Here's the final report from running my Rust undefined behavior exorcism skill on the Bun Rust port a bunch of times using both Claude Code and Codex:
 

@@ -1,0 +1,3 @@
+2026-06-09 | 9 likes
+
+OK, while it sucks that Fable refused to work on this project (luckily it was willing to work on my other model_guided_research project!), it looks like even Opus 4.8 was able to make so serious progress on this. I guess it has been 5 months since I worked on it, which is a lot! https://t.co/piHTH4Xy02

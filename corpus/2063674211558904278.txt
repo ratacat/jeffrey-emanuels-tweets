@@ -1,4 +1,4 @@
-2026-06-07 | 77 likes
+2026-06-07 | 78 likes
 
 I’ve posted many times about my obsession with the miraculous RaptorQ algorithm, a fountain code that’s the basis of much of the robustness found in modern cell phone networks.
 

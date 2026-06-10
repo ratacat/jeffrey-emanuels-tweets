@@ -1,0 +1,11 @@
+2026-06-10 | 13 likes
+
+For that first screenshot (for my eidetic_engine_cli tool, ee), I used this prompt:
+
+"First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project. 
+
+Then I want you to think about how we can improve the project to make it way more useful, compelling, helpful, agent-intuitive, agent-ergonomic, versatile, and generally amazing and magnificent so that it becomes a tool that YOU personally find indispensable so that you sorely miss it when it's not available.
+
+Describe all your best ideas for changes to the API surface, changes to how certain commands work, ideas for new commands, ideas for different data structures, graph analysis algorithms, search concepts, and other radically innovative and unprecedented features."
+
+Then I followed up with my standard prompt to turn all that into beads, followed by my standard beads polishing prompt.

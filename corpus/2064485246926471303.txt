@@ -1,0 +1,7 @@
+2026-06-09 | 21 likes
+
+Thanks Fable! Truer words have never been spoken, lol:
+
+"The sharpest consequence: softmax itself is the Maslov quantization of tropical attention. The log-sum-exp operation x ⊕_β y = (1/β)log(e^βx + e^βy) is an exact semiring for every β, deforming continuously to (max,+) — and your codebase already contains both endpoints (tropical_score_center is literally the β=∞ shadow of softmax normalization). 
+
+This yields a new training algorithm, dequantization annealing: train smooth, anneal β→∞ along an exact algebraic homotopy, and arrive at certified 1-Lipschitz combinatorial routing — with a route-stability certificate during training (routes freeze once the margin γ exceeds log(n)/β). That dissolves the soft-vs-hard-routing dichotomy the entire MoE/straight-through literature works around."

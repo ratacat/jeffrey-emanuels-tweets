@@ -1,4 +1,4 @@
-2026-06-08 | 57 likes
+2026-06-08 | 61 likes
 
 If you're making software that is designed to parse complex, diverse data, especially when YOU don't control the data, and it is generated in varied ways by thousands of different organizations or users, then there's really no substitute for what's known as "fuzzing" tests.
 
