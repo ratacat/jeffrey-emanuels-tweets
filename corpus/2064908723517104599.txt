@@ -1,0 +1,5 @@
+2026-06-11 | 22 likes
+
+Cool, I never thought to check downloads of my Rust projects on https://t.co/atJ6QQMqsY. 
+
+Asupersync was downloaded 132k times so far since release. I wonder how many of those were from me across all my machines and projects! (I use it in pretty much every project I make). https://t.co/Vu2IN8GCLt

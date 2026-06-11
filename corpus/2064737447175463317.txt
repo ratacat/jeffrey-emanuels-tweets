@@ -1,0 +1,7 @@
+2026-06-10 | 16 likes
+
+The optimization saga continues. Would be nice to switch the 9 Opus agents to Fable, but I can't justify doing that yet for these projects. 
+
+The 18 GPT-5.5 Codex instances seem to be doing most of the heavy lifting anyway.
+
+This has been a single ongoing campaign for weeks now! https://t.co/8GuxSe5umI

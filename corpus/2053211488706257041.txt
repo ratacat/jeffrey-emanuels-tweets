@@ -1,4 +1,4 @@
-2026-05-09 | 7 likes
+2026-05-09 | 9 likes
 
 For reference here is my original “fresh eyes” review prompt from last year, which works so well that Anthropic later put those words into the Claude Code source code:
 
