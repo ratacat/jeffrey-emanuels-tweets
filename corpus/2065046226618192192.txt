@@ -1,3 +1,3 @@
-2026-06-11 | 5 likes
+2026-06-11 | 13 likes
 
 My asupersync project has taken a lot longer to catch on than some of my other projects (it’s only at 193 GitHub stars now after 5 months), but it’s gradually winning over converts who understand how much it helps with correctness and your ability to reason about concurrency: https://t.co/Rsr2KZwKxH

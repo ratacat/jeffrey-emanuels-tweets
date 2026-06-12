@@ -1,4 +1,4 @@
-2026-06-07 | 110 likes
+2026-06-07 | 109 likes
 
 This is exciting. I decided to add a whole YouTube search/download system to my FrankenWhisper project to make it quick and easy for agents to put together a set of really polished transcripts for a list of YT videos or an actual YT playlist.
 

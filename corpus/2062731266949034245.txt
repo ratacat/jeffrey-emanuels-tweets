@@ -1,4 +1,4 @@
-2026-06-05 | 191 likes
+2026-06-05 | 190 likes
 
 Git worktrees are an anti-pattern in agentic software development, even if the Claude Code team recommends them as one of their "top tips"!
 

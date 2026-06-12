@@ -1,0 +1,63 @@
+2026-06-11 | 82 likes
+
+When you use coding agents on big, complex projects, you can sometimes end up with individual code files that are so large that they become hard to work with. 
+
+Agents waste too many tokens trying to read them when they only need to look at a small part of them, or they're forced to skim things that they really should have read closely. 
+
+And if you're writing Rust code, having a huge code file can dramatically spike the peak amount of memory required to compile the code by tens of gigabytes.
+
+I wanted to make a skill to help with this situation in my own projects, but I wanted to do it extremely carefully, with a huge amount of attention and energy spent on ensuring that no errors are introduced in the process, and that no performance regressions result from the refactoring. 
+
+I also wanted to avoid arbitrary chopping up files based on certain length thresholds; I wanted each excessively long code file to be broken up in a way that optimizes how intuitive a coding agent would find it to analyze and understand the code. 
+
+All of those goals have been met in my latest skill, called /de-monolithize-your-codebase-isomorphically. 
+
+You can get it here on my $20/month skills site:
+
+https://t.co/3lZrsk1l0d
+
+The skill analyzes your project, supporting most popular languages, looking for oversized files.
+
+It then applies an extremely rigorous, structured process of analyzing the code and figuring out the optimal way to break it up in such a way that preserves correctness and performance. 
+
+At each step, it proves concretely that the output and observable behavior is preserved, and produces artifacts which can be used to audit the process clearly.
+
+Here is GPT-5.5's take on what makes the skill so special, compelling, and useful:
+
+---
+
+• I read the full skill package under /de-monolithize-your-codebase-isomorphically: entrypoint, references, corpus, subagents, scripts, AST walkers, ast-grep rules, self-test, changelog, and helper lockfiles.
+
+What It Does
+
+This skill turns “split up a giant file” from an aesthetic refactor into a proof-driven engineering campaign. Its central rule is isomorphism: a decomposition only counts if behavior stays the same, the public API stays the same through facades and re-exports, performance stays inside noise, and compile/build resource use is neutral or better.
+
+It is deliberately willing to conclude “do not split this file.” That matters. The skill treats generated files, justified monoliths, FFI sandwiches, shared mutable state, macro thickets, cfg thickets, hub/barrel modules, and test monoliths as different species of problem. A line count alone is never enough.
+
+How It Works
+
+It starts with routing and scope control: Quick, Standard, or Exhaustive mode; a sibling workspace; tool inventory; and explicit no-surgery-until-proven rules.
+
+Then it builds evidence. The census scripts measure file size, churn, complexity, generated-file likelihood, and severity. The taxonomy buckets B1 through B12 prevent vague “big file bad” thinking and force the agent to name the actual pathology.
+
+Next it searches for seams empirically. It builds symbol inventories, intra-file graphs, cluster candidates, coverage maps, churn coupling, import graphs, and shared-state inventories. The AST walkers for Rust, Python, Go, TypeScript, and C++ are especially important because they ask structural questions that grep cannot answer cleanly: which top-level items reference which others, and which functions are coupled through module-level state.
+
+After that it freezes baselines: tests, goldens, API snapshots, dependency cycles, benchmarks, and compile-resource profiles. The proof gate then checks six separate axes: tests, API surface, import cycles, benchmarks, compile resource use, and new lint suppressions. Missing proof is INCOMPLETE, not success.
+
+The experiment registry is the skill’s reasoning ledger. Every seam hypothesis needs a pathology bucket, severity, falsifiable claim, minimal probe, expected signal, invocation, and verdict. Convergence is also machine-counted: no open experiments, no unresolved refinements, reviewed deferrals, few new findings, two quiet rounds, and a Standard/Exhaustive floor of at least 10 rounds.
+
+Once a split is justified, the skill designs the decomposition in the native idiom of the language. Rust gets module facades and pub use discipline; Python gets package __init__ surfaces and __all__; TypeScript gets explicit barrels; Go prefers same-package file splits before package splits; C++ gets umbrella headers and ODR care.
+
+Finally it turns the plan into Beads and, only when explicitly asked, executes one mechanical move per commit with the gate after every move.
+
+Why It Is Useful
+
+The skill is useful because it attacks the real failure mode of AI refactoring: confident structural churn without proof. It makes every risky assumption visible, testable, and reversible.
+
+It is compelling because it gives agents a repeatable way to do senior-engineer work at scale. Multiple agents can fan out across census, graphs, baselines, API diffing, perf, compile profiling, experiments, and fresh-eyes review, while the artifacts keep the whole campaign resumable after context loss.
+
+It is accretive because every pass leaves durable assets: baselines, graphs, experiment verdicts, seam IDs, decomposition candidates, proof-gate results, and Beads. Even a “do not split” outcome improves the codebase map.
+
+It is innovative because it combines program analysis, git archaeology, performance measurement, compile-resource measurement, API compatibility, multi-agent orchestration, and convergence control into one practical skill. Most refactoring guidance stops at “find cohesive modules.” This skill asks whether the split is empirically real, whether it can be proven, whether agents can execute it safely, and whether the compiler and users experience the same system afterward.
+
+The strongest idea is the isomorphism contract. It changes the objective from “make the file smaller” to “improve navigability while preserving every observable contract.” That is the difference between a pretty diff and an engineering result.
