@@ -1,0 +1,5 @@
+2026-06-12 | 33 likes
+
+Wonder if Fable can design a gizmo like this for any parameterized probability distribution. Like the Galton board for the Gaussian. 
+
+That is, mapping the generator to a physical mechanism so that mechanics automatically simulates the probability calculations.

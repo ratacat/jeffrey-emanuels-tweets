@@ -1,4 +1,4 @@
-2026-03-16 | 197 likes
+2026-03-16 | 196 likes
 
 I want to show how I go about planning major new features for my existing projects, because I've heard from many people that they are confused by my extreme emphasis on up-front planning. They object that they don't really know all the requirements at the beginning, and need the flexibility to be able to change things later.
 

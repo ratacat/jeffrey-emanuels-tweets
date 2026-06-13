@@ -1,0 +1,3 @@
+2026-06-12 | 42 likes
+
+I've been reluctant to "waste" my Fable usage on agent orchestration work, preferring to focus it on doing more theoretical and planning work. But I decided to try it today on a lark. Unsurprisingly, it's really good at swarm management (plus there are 3 Fable CCs in the swarm!).
