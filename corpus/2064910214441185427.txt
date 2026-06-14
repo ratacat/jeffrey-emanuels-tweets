@@ -1,4 +1,4 @@
-2026-06-11 | 124 likes
+2026-06-11 | 123 likes
 
 Whoever decided to suddenly deprecate Gemini-cli in favor of Antigravity: I think you’re making a big mistake and it’s not too late to change it. It’s ok to have two different tools. 
 

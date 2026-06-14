@@ -1,4 +1,4 @@
-2026-06-11 | 82 likes
+2026-06-11 | 85 likes
 
 When you use coding agents on big, complex projects, you can sometimes end up with individual code files that are so large that they become hard to work with. 
 
