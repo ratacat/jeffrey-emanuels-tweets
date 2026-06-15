@@ -1,0 +1,29 @@
+2026-06-14 | 253 likes
+
+I couldn’t agree more with @satyanadella here. This exactly echoes the argument I’ve been making to my hedge fund consulting clients recently.
+
+The architecture I’ve come up with, which is a universal agent-intuitive CLI tool interwoven with a base skill library, combined with a custom skill layer that references the base skills, accomplishes all of these goals very nicely.
+
+The base skill library forms a system: modular, composable skills that have a hierarchy of abstractions. Over time, I expand and refine these skills and push out updates.
+
+The custom skill layer tailors the skills to the specific firm’s particular workflows and knowledge base and represents their wholly owned IP.
+
+The CLI tool is referenced throughout the skill library to give the agent concrete “how-to” knowledge in addition to abstract understanding of workflows.
+
+But because it’s built on top of the base skill library, they’re able to amortize this base R&D across my clients to get something a lot more powerful and expansive than they’d get otherwise.
+
+The client is able to add, expand, and revise their custom skill layer and iterate based on their actual experience and feedback using the system.
+
+And they can do this iteration themselves without needing to ask me or even divulge certain aspects of their approach, methodology, data, etc.
+
+The CLI tool also runs on the client’s machine along with the agent, whether Claude Desktop or the Codex GUI app, and connects directly to data sources like EDGAR, Capital IQ, FactSet, Google Trends, etc., so the client doesn’t need to leak alpha indirectly.
+
+As I add new features, functionality, and data sources to the CLI tool, the clients get those in real-time (if they want), and the skills are updated to reflect the new CLI features.
+
+If I raised VC funding for this business, I’m sure investors would insist that everything run on my servers, that the clients never see the actual base skill library, that the CLI tool just be a dumb client that routes requests to our servers, etc.
+
+That is, all things that lead to vendor lock-in and dependency, but which are clearly NOT in the best interests of the client and the preservation of their IP and alpha.
+
+Ultimately, I believe the client-centric approach will win out. And I can already see how much the messaging resonates with prospective clients. 
+
+You can get the benefits of AI agents without giving away the farm (your proprietary IP, workflows, and alpha) to the frontier labs or VC backed startups that will ultimately seek to productize this IP or compete directly with you in the future.
