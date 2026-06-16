@@ -1,4 +1,4 @@
-2026-03-30 | 357 likes
+2026-03-30 | 358 likes
 
 Since Claude Code is nearly useless to me until these new draconian rate limits go away (note: I’m not talking about usage limits; these are limits on the number of requests per minute, basically penalizing the use of concurrent agents), I thought I’d list the 3 biggest features from Claude Code that I miss in Codex. 
 
