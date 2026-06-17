@@ -1,3 +1,3 @@
-2026-03-20 | 43 likes
+2026-03-20 | 42 likes
 
 I didn’t even bother testing it yet (I was planning to, but not urgently) because I was deeply skeptical that it was even close to Opus 4.6 in actual practice. Now I won’t even bother. You can’t put RL lipstick on a pig and say it’s better than Claude. Well, you can say it, but…

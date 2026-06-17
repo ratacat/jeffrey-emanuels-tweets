@@ -1,0 +1,16 @@
+2026-06-16 | 19 likes
+
+This turned out to be a big issue. I wish Linux automatically handled and optimized this kind of thing for you by default based on your system specs:
+
+The real culprit: btrfs buffered-write bursts.
+
+A cargo build hit its parallel-link phase (80+ rust-lld linkers) dumping ~130–280 MB/s of writes. On a 247GB box, vm.dirty_ratio=10 lets the kernel hoard ~24GB of dirty pages before flushing them in massive bursts. Since kernel writeback threads ignore ionice, terminals stalled behind multi-GB flushes.
+
+The Fix (non-destructive):
+
+Set vm.dirty_bytes=2GB & dirty_background_bytes=512MB to create continuous, gentle writeback instead of massive bursts.
+
+Reniced 89 linkers to nice 19 so interactive work now preempts the build.
+
+Result:
+CPU pressure dropped from 5.38% to ~0.9%, run-queue spikes (47) are gone, and dirty pages hold steady at ~370 MB. The build is still running perfectly.

@@ -1,4 +1,4 @@
-2026-05-14 | 57 likes
+2026-05-14 | 56 likes
 
 There's been a lot of discourse on here recently about unsafe Rust code, with people criticizing the Bun Rust port for having a lot of unsafe code, or comparing Bun to uv, which was written by hand in Rust over years rather than in an AI-fueled 1-week porting binge.
 

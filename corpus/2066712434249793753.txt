@@ -1,3 +1,3 @@
-2026-06-16 | 31 likes
+2026-06-16 | 36 likes
 
 I'm always adding new features and functionality to Asupersync and trying to harden it. Recently I've been adding a feature called ATP (Asupersync Transfer Protocol). It's like a space-age replacement for rsync built on RaptorQ and QUIC datagrams. Anyway, I now have 11.2k beads🤣 https://t.co/2vY4dJhiCk

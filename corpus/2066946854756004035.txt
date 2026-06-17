@@ -1,0 +1,11 @@
+2026-06-16 | 103 likes
+
+People often comment about the odd speech patterns and mannerisms exhibited by AI agents, particularly in technical/coding contexts. 
+
+As a math major in undergrad, I think what might be less obvious to many people is just how "math-tinged" this LLM patter is, echoing phrases and concepts that are very common to hear in math departments.
+
+Which makes sense if you consider that the people who made these models dramatically over-index on that kind of language. And also the "prestige technical corpus" that is over-represented in pre-training talks this way.
+
+The "canonical" example of this to me is that of the "hand-waving argument," which is an amusing diss that math people use to refer to a non-rigorous argument that the speaker tends to make while gesticulating to convey "you know what I mean." Canonical being another one.
+
+I find it funny just how aware of this GPT-5.5 is and how many examples it was able to provide very quickly:
