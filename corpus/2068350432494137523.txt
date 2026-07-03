@@ -1,0 +1,3 @@
+2026-06-20 | 61 likes
+
+These new Claude Code dynamic workflows are extremely token-intensive and pricey, but they're incredibly powerful when you're mining ideas and plans from multiple different sources (plan documents, background information dumps, code repos, skill libraries, etc.) and synthesizing.

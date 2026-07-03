@@ -1,0 +1,17 @@
+2026-06-24 | 47 likes
+
+Writing correct multi-threaded or multi-process code is hard, even for agents. 
+
+It's easy for them to write some code that looks correct on the surface but which results in some tricky deadlock that crashes your program. 
+
+Solution: Don't expect them to get it right on their own, give them help!
+
+That's why I always have my agents use my /deadlock-finder-and-fixer skill, which you can get here:
+
+https://t.co/bl9yCznYMk
+
+The skill works across most popular languages and has a huge amount of knowledge and understanding of the most common classes of concurrency bugs.
+
+As an agent just told me while working on my eidetic_engine_cli (ee) tool: 
+
+"The /deadlock-finder-and-fixer skill earned its keep immediately."

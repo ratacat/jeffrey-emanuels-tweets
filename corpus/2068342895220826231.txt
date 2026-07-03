@@ -1,0 +1,15 @@
+2026-06-20 | 113 likes
+
+This book from 1993 was really way ahead of its time, explaining the concept of what we'd now call a "digital twin," a computer model of a real-world system that is kept in constant sync with the underlying real data.
+
+This approach is more relevant than ever now that agents can study documents, plans, and data and use them to automatically design the models. 
+
+And then other agents can automatically keep the models in sync with reality by querying APIs, parsing documents, checking cameras, monitoring transactions, etc. 
+
+This lets you understand what's happening in real time, make predictions (and ground them in logic and causality), detect anomalies and explain them, perform hypothetical what-if simulations, and generally apply the scientific method in a rigorous way to test your understanding of the underlying reality.
+
+While digital twins used to be so much work to build and update that they only made sense for big, high-stakes projects like NASA space missions, now you can model all sorts of everyday systems in this way, like a business or school.
+
+We know that the scientific method is fabulously, "unreasonably" effective in explaining the rich complexity of the natural world. 
+
+It makes you wonder what becomes possible when we start applying that same lens and approach, guided by super-smart AI agent practitioners, to realms that until now have mostly been governed by simple heuristics and institutional inertia.

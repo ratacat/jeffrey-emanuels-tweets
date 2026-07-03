@@ -1,0 +1,3 @@
+2026-06-25 | 146 likes
+
+I'm excited to see how quickly I can turn this new Baidu OCR model (which looks awesome) into a ridiculously hyper-optimized Rust project (FrankenOCR) with specialized kernels for Apple Silicon and Intel/AMD CPUs. Will be both a library and standalone cli tool. Just started! https://t.co/aL372hq1te

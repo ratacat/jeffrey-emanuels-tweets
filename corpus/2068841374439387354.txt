@@ -1,0 +1,25 @@
+2026-06-21 | 84 likes
+
+The more I think about how digital twin models are dramatically more useful and applicable in a world of pervasive and brilliant AI agents, the more it reinforces the conclusion to me that what makes them so useful is the ability to apply the scientific method to them.
+
+When you have a rich enough model that reflects the ground truth well and is kept in constant sync with the real data, you can do real experiments: come up with a hypothesis, a causal link grounded in evidence, propose an intervention, and register it all in a clear, detailed way where you articulate what you believe will happen and why.
+
+Then a human operator can actually DO the intervention/action (or, for lower-stakes settings, the agents themselves could do them), and then you can gather the results and actually test if the theory/model was right. 
+
+If it worked, then you have more evidence, although as Karl Popper would observe, you haven’t actually proven anything. But if it didn’t, then you’ve falsified the hypothesis and revealed problems in your model or in your understanding of it.
+
+But how do you actually conduct this science in an organized, structured, effective way using AI agents? That’s where all this dovetails so nicely with a project of mine that I’ve posted about several times, https://t.co/PhAGfi2nYw.
+
+BrennerBot gives exactly the right kind of approach to getting the most out of these models, and I highly recommend reading about the system and how it works, particularly the distillations and the operators on the website.
+
+The system is based on the scientific method and approach espoused by Sydney Brenner, one of the most far-seeing and important biologists in history. The ideas are distilled from 20+ hours of video interview transcripts that I transformed into a rigorous methodology.
+
+The original version of my BrennerBot project had a separate software tool for running the process and orchestrating the agents, but it sort of sat outside of the rest of my tooling and workflows, so I didn’t use it as much.
+
+Nowadays, for actually applying the BrennerBot methodology in practice, I prefer the skill-based version of it that is built on top of my ntm orchestration tool. You can get the skill version here:
+
+https://t.co/d4ru8RTGj4
+
+I believe that this combination of digital twins and automated application of the scientific method, and particularly Brenner’s Bayesian-supercharged, extra-discriminative version of it, has huge promise across a wide range of real-world applications. 
+
+I’m already using it in business contexts, but think it could also help manage schools, hospitals, and other institutions.

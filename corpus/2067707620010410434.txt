@@ -1,0 +1,5 @@
+2026-06-18 | 38 likes
+
+"Sir, your rsync-killer tree is operationalized."
+
+My ATP tool is coming along nicely! I hope to have it released next week. It's already faster and better than rsync in most settings, while using far less memory. It excels when dealing with very bad, lossy internet connections. https://t.co/l66GDbJQCz

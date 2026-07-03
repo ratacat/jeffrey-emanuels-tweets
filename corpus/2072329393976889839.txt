@@ -1,0 +1,15 @@
+2026-07-01 | 72 likes
+
+It's so annoying when you get "content filtering" API errors from Anthropic for totally harmless stuff.
+
+I'm working on my FrankenOCR project now, and as part of that, I'm using a PDF of an old book (Clowes' History of the Royal Navy) because it's public domain and very challenging for OCR, with lots of tables, weird typesetting, etc.
+
+I needed to get some ground truth content to test the output of my tool, so I asked Claude to use its internal vision ability to do that.
+
+Everything was working fine until it got to a page that apparently offended its sensibilities. I speculated that it might be because it's about war, but Claude responded:
+
+"Good instinct, but I don't think it's "war" broadly — page 107 (voyages/exploration) transcribed fine. It's most likely either the large verbatim transcription in my visible prose, or the specific page 108 narrative (mutineers casting sick men adrift to die). 
+
+The fix is simple: I'll keep book text out of my prose and put ground truth only in tool calls (the page-107 Write succeeded), and pick neutral pages. Let me keep going without quoting the book."
+
+I'll keep it in mind next time I'm planning to cast sick men adrift to die that I shouldn't run my plans by Claude for advice.

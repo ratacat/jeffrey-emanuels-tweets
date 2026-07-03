@@ -1,0 +1,5 @@
+2026-06-25 | 5 likes
+
+The blurb above from Claude Code happens to be for another project (the semantic search reranker used in my FrankenSearch), but the same concepts apply to other things like the Baidu OCR model or Whisper for speech recognition. 
+
+You don't really need 10+ OCR models, just one good one that runs super fast. Same thing with Whisper.

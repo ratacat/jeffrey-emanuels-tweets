@@ -1,0 +1,9 @@
+2026-06-24 | 25 likes
+
+If you use atuin for terminal command history/search and now find it extremely laggy and slow, your agents have ruined it for you with bloat.
+
+These two prompts (applied one after the other) in Codex GPT-5.5 with xhigh reasoning reliably fix everything. Tested on 5 different machines now:
+
+› My Atuin installation has become unusably slow and laggy because of excessive size; back up the history file so we don't lose it, but then give me a much more stripped down version and do research (including web research) on how we can prevent it from getting so bogged down in the future. I believe it's caused by hooks that atuin added to agents which overwhelmed the db; all such hooks must be removed from all coding agent harnesses on this machine, such as claude code, codex, etc.
+
+› Once again, check over everything again with fresh eyes looking for any blunders, mistakes, errors, oversights, omissions, problems, misconceptions, bugs, etc. Be SUPER thorough and meticulous!
