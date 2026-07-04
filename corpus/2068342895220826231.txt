@@ -1,4 +1,4 @@
-2026-06-20 | 113 likes
+2026-06-20 | 114 likes
 
 This book from 1993 was really way ahead of its time, explaining the concept of what we'd now call a "digital twin," a computer model of a real-world system that is kept in constant sync with the underlying real data.
 
