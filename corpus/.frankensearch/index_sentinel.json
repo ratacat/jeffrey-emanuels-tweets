@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at_ms": 1783171143233,
+  "generated_at_ms": 1783257541551,
   "command": "index",
   "target_root": "/Users/jaredsmith/Projects/jeffrey-emanuels-tweets/corpus",
   "index_root": "/Users/jaredsmith/Projects/jeffrey-emanuels-tweets/corpus/.frankensearch",
@@ -12,5 +12,5 @@
     "discovery.root.accepted"
   ],
   "total_canonical_bytes": 763911,
-  "source_hash_hex": "0b81e7c5c0373135"
+  "source_hash_hex": "e5963898ec159c9a"
 }
