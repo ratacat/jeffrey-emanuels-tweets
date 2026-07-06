@@ -5,18 +5,18 @@
   },
   "segments": [
     {
-      "segment_id": "a001e07f-4e26-4b1b-a836-089c4221e9ad",
-      "max_doc": 686,
+      "segment_id": "1f5b5748-77a7-4f04-ae3e-133865c04aaf",
+      "max_doc": 674,
       "deletes": null
     },
     {
-      "segment_id": "8f8fe1b0-8211-4092-af6f-b6a188f5018e",
-      "max_doc": 417,
+      "segment_id": "c20d6cf1-a7a8-4f4d-bcb8-33c4ab0723fb",
+      "max_doc": 440,
       "deletes": null
     },
     {
-      "segment_id": "0997c27a-fc03-4718-8f34-94d9142363af",
-      "max_doc": 409,
+      "segment_id": "96e23724-b9e3-4d24-8e1e-8028ee189e05",
+      "max_doc": 408,
       "deletes": null
     }
   ],
@@ -69,5 +69,5 @@
       }
     }
   ],
-  "opstamp": 102306
+  "opstamp": 105353
 }

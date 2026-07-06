@@ -1,3 +1,3 @@
-2026-06-19 | 106 likes
+2026-06-19 | 105 likes
 
 This agent orchestration stuff is no joke. It's really satisfying to watch Claude Opus deftly navigate the integration of all my custom tooling and skills into these monster workflows that can keep 8 full Codex agents busy for days at a time using my ntm orchestration system. https://t.co/6Lvj6CxLwh

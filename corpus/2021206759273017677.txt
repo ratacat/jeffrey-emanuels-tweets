@@ -1,4 +1,4 @@
-2026-02-10 | 68 likes
+2026-02-10 | 67 likes
 
 I may talk about it flippantly, but I suspect that my new glibc_rust project has the potential to be genuinely transformative for security.
 
