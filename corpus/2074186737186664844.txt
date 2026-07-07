@@ -1,0 +1,21 @@
+2026-07-06 | 92 likes
+
+I keep growing the scope of my new FrankenOCR project:
+
+https://t.co/anRKrOvfIg 
+
+It started out as a memory-safe, pure Rust, hyper-optimized library/CLI tool to expose the new Baidu OCR model with minimal dependencies and targeted optimizations for Apple Silicon and high-core-count AMD/Intel CPUs.
+
+But I'm turning it into a much broader system now, with specialized, hand-curated models for specific kinds of work. It still uses the Baidu model for regular text, since it's the best out there for that.
+
+But it can also now handle musical notation (sheet music to MusicXML), it can generate general photo/image captions, it can extract chart data from images of charts, etc. Each of these uses a specialized model that has been converted and adapted in this way to deliver world-class performance.
+
+Why is this useful? Well, Claude Code and Codex can do a GREAT job with OCR tasks, but it's a very expensive way to do things. 
+
+It's fine if you just need to extract a few pages from a PDF, but when you're dealing with hundreds or thousands of pages, it quickly becomes a giant waste of money.
+
+Whereas, using the FrankenOCR library in your project, or the standalone focr CLI tool, your agents can cheaply and efficiently do this work locally on your machine, without even needing a standalone GPU!
+
+I've even created a skill for using FrankenOCR and focr on my skills site at https://t.co/Q0OOcQ5ExO that I continue to update and expand as I add additional functionality to the system.
+
+I'm using this in many of my own projects now for consulting clients, and it works extremely well. And it's 100% free and open source.

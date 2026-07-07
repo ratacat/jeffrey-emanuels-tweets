@@ -1,0 +1,59 @@
+2026-07-06 | 67 likes
+
+Quick update on this system now that I've expanded it to go all the way back to 2005 for both holdings data and for my style factor decomposition of returns (similar to Barra style factors). 
+
+I asked it first of all to give me the best stock pickers over the last 5 years, 10 years, and since 2005, where "best" is based on what I call the "Alpha Adjusted HolderIQ."
+
+This tracks a simulated portfolio based on each 13-F filer and what would be knowable to an outsider at the time if they wanted to try to replicate the portfolio. Obviously, this doesn't include shorts, many international stocks, positions held via swap, funky securities, etc. 
+
+It's also not relevant for HFT firms like RenTec; knowing their holdings on one day doesn't necessarily tell you much about their holdings a week later. Whereas for a fund like Pershing Square, it tells you a whole lot, since they run a concentrated book that skews long, and they don't trade in and out frequently.
+
+But all those limitations notwithstanding, this kind of analysis can still give some very interesting results that can be useful in many ways. 
+
+The first image below shows the tables. I was a bit confused by the names shown there, because I hadn't heard of most of them, and it didn't include a lot of name-brand hedge funds I would have expected to see. 
+
+So I told that to Fable:
+
+"Why have I never even heard of these funds? I would have expected to see more legendary funds in this listing, which is making me suspicious. Funds like Lone Pine, Pershing Square, Echo Street, Taconic, Davidson Kempner, etc."
+
+You can see this interaction in the second image below.  The money quote is here:
+
+---
+
+Your suspicion is well-founded, and the system itself predicted it — the smart-money methodology notes in this repo literally say: "ranking by raw alpha skews small-cap; 13F sees only long-equity so multi-strats (DK/Elliott/Taconic) understate". My reckoning gated on track length but not on institutional character — with 14.5k filers, mostly RIAs and wealth managers, the top of an ungated IR table fills with tiny concentrated books.
+
+<I then asked it to do such a gating, after which it responded as follows:>
+
+Now the tables read like an industry insider's list — and the explanation for your missing legends is structural, not a data defect. Three forces, all visible in the numbers:
+
+Why the legends don't top an episode-IR ranking
+
+1. They're in the data, with excellent coverage — and honestly modest long-book alpha. Viking (85 qtrs, $15.5B book, IR 0.36), Lone Pine (82q, $12.4B, 0.31), Tiger Global (85q, 0.36), Coatue (84q, 0.46). A sustained +0.3–0.5 shrunk IR over 21 years at that scale is genuinely elite — it's just mathematically impossible for a $12B book of 30 mega/large-caps to out-IR a $1B specialist running 80 small-caps. Scale dilutes per-position edge; this is the well-documented empirical finding about famous funds' 13F books, reproduced rather than contradicted.
+
+2. 13F sees only the long US-equity sliver. Pershing Square: median 6 positions → enormous tracking error → IR ≈ 0 even when the alpha is large, and the actual return engine (activism, timing, the 2020 CDS trade) is invisible to 13F. Davidson Kempner and Taconic are multi-strats whose long books are hedged inventory, not where returns come from — the repo's methodology memo flags exactly this ("13F-partial"). Baupost: median 12 positions, mostly non-equity assets. Echo Street is the honest exception: genuinely −0.22 on this metric over 80 quarters.
+
+3. My first cut lacked the institutional gates. Against 14.5k filers (mostly RIAs), an ungated IR leaderboard fills with tiny lucky books. The methodology prescribes hedge-fund segment + diversified band + AUM floor — applied below.
+
+Corrected: top institutional funds (hedge-fund segment, ≥20 positions, ≥$500M)
+
+Last 5 years: Lisanti Capital Growth (1.97) · Hood River (1.50) · No Street (1.35) · Pier Capital (1.06) · Cormorant (1.00) · Commodore (0.97) · Voss Capital (0.93) · Kynam (0.93) · Hillsdale (0.77) · RA Capital (0.76)
+
+Last 10 years: Hood River (1.54) · Pier (1.28) · Cormorant (1.10) · No Street (1.06) · Capital Growth Mgmt (0.86) · Barometer (0.82) · Hillsdale (0.80) · Discovery Capital (0.79) · Contour (0.79) · Sandler (0.78)
+
+Full history (2005→): Hood River (1.20) · Axiom Investors (1.15) · Zweig-DiMenna (0.95) · Capital Growth Mgmt — Ken Heebner (0.92) · PointState — the Duquesne spinout (0.88) · Cormorant (0.87) · Origin (0.84) · Discovery — Rob Citrone's Tiger cub (0.82) · Shellback (0.72) · Whale Rock (0.70)
+
+These are names a hedge-fund allocator recognizes immediately: RA Capital and Cormorant (the biotech-crossover elite), Hood River (the small-cap growth standout — #1 or #2 in all three windows, which is remarkable consistency), Voss (small-cap activist), Whale Rock (tech), PointState, Discovery, Zweig-DiMenna, Heebner. 
+
+The pattern the data reveals is real: sustained 13F-measurable alpha lives with sector specialists and small/mid-cap managers at $0.5–5B — the scale sweet spot — while the mega-funds' edge shows up as smaller-but-multi-decade IRs and in return streams 13F can't see.
+
+---
+
+I then asked it to adjust for this (see bottom of second image), which resulted in the revised tables shown in the third image. 
+
+And what of those specific hedge fund legends I asked about? You can see the numbers in the fourth image below. Taconic is really good! Focusing on the tables in the third image, I can also confidently say:
+
+So is Nantahala. I used to chat with those guys back in 2009-2010 when I was at Tyndall and was always impressed by how smart they sounded! And of course Kinetic, with the late great Murray Stahl (RIP). 
+
+Also, the fact that Citadel made the list at all is actually shocking and wildly impressive given the fact that they're like 20x bigger than nearly everyone else on the list. Same with Jane Street, with even more alpha, but on a smaller capital base. Nice work, Ken and Robert!
+
+PS: If you run an institutionally sized hedge fund or family office and you're interested in getting access to this system under a consulting agreement (it's part of a larger system I've posted about before that can do very high-quality research on specific stocks), please reach out to me!

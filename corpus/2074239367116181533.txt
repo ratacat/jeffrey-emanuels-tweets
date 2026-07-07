@@ -1,0 +1,10 @@
+2026-07-06 | 18 likes
+
+lol, Fable put little jokes in the beads it made from my FrankenSim markdown plan:
+
+status: open → in_progress    
+
+## What      `fs-ivl` exact geometric predicates (plan §6.4): Shewchuk-style adaptive-precision floating-point expansions providing EXACT orient2d/orient3d/incircle/insphere — the difference between a mesher that works and a mesher that works until Tuesday.
+
+---
+🥁 Ba-dum Tss!
