@@ -1,0 +1,19 @@
+2026-07-07 | 54 likes
+
+Update: I decided to try to make this “maximally ambitious” FrankenSim project even more ambitious.
+
+But first, I tried to have Fable explain to me in simpler terms how the current project works, particularly the sheaf cohomology aspect, which is beyond my ken. I understand it a lot more now.
+
+Then I guided it through a series of questions and prompts to find the areas that would most improve the system. I had it use a scoring rubric that was very helpful for framing everything.
+
+Finally, after going through all this, I asked it to create an addendum document to my original plan document. 
+
+The process I followed leads to much better results than you’d get if you directly asked for the addendum and simply asked it to improve the system. 
+
+I even think that making it “dumb things down” for me before going into the improvements helped in that process, since the best way to understand something is to try to explain it as clearly as possible to someone else.
+
+I’ve written before about this kind of “pump priming” leading to better results from these models. So I thought I’d share the entire conversation so you can see exactly how I went about it:
+
+https://t.co/Syl7wXeLia
+
+Let me know what you think! Do you use similar methods in developing and expanding on your plans?

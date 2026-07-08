@@ -1,0 +1,25 @@
+2026-07-07 | 259 likes
+
+If you're like me, you often find yourself wanting to send markdown documents to non-technical users, who take one look at the raw .md file and close it in disgust.
+
+The solution I had been using until recently was to open the .md file in Cursor and then use the markdown preview feature, which generates html that you can copy and paste into Gmail and have things look decent to regular people.
+
+But I knew I could do much better, so I created my FrankenMarkdown project. It's an ultra high-performance, memory-safe, Rust library and standalone cli tool (fmd) that can turn .md files into beautiful, self-contained, optimized PDF files and html files.
+
+It has minimal outside dependencies other than other parts of my FrankenSuite, so it's strictly memory safe all the way down and extremely cross-platform and easy to build. I mostly made it to embed within my other Rust tools so they can generate very polished-looking PDF reports directly.
+
+I even created my own AST parser and low-level PDF renderer, with all the same tricks used by LaTeX to get awesome-looking typesetting and text justification. You really have to see it to believe it.
+
+And luckily, that's very easy to do, because the whole system can ALSO be compiled into WebAssembly and hosted on a static website, which I've done for you here:
+
+https://t.co/26N0nkQgur
+
+This even lets you paste in markdown and instantly generates the html and pdf files for you right there in YOUR browser, locally. 
+
+You can even share the docs with others, with the entire document text encoded as a URL parameter (don't try it with super long docs); nothing at all is stored on my site (it's just a static Cloudflare Pages site, there's nothing to store it with!).
+
+Everything is open source, and you can get it here:
+
+https://t.co/rVZdG4uWlx
+
+Or if you want to use the wasm version on your website, I published an npm package you can use (see the website for details).

@@ -1,0 +1,5 @@
+2026-07-07 | 4 likes
+
+And here is a link to beads_viewer if you want to generate a similar static site (just do `bv --pages` from your project root, assuming you used beads!):
+
+https://t.co/pGNHTEqQHH
