@@ -1,4 +1,4 @@
-2026-07-08 | 90 likes
+2026-07-08 | 94 likes
 
 I’ve seen a lot of crazy stuff in the last 6 months, but even I’m floored at how quickly Fable was able to knock out most of this “max ambition” project in a couple days… AND also compile it to WebAssembly so it runs in the browser! Check this out:
 

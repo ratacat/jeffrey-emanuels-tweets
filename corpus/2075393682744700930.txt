@@ -1,0 +1,7 @@
+2026-07-10 | 11 likes
+
+Here's the prompt I used (with fake names to protect the innocent):
+
+First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project. Also investigate its sister repos, /dp/abc and /dp/xyz. 
+
+THEN: I need you to deeply and profoundly read and contemplate this plan: COMPREHENSIVE_PLAN_TO_DO_XYZ.md; then I want you to use $dueling-idea-wizards with just cc and cod (set to Fable5 xhigh and GPT-5.6 Sol Max, respectively) to come up with the smartest ways to improve the plan and make it more compelling, accretive, radically innovative, useful, and practical for my users.
