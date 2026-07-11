@@ -1,0 +1,13 @@
+2026-07-11 | 78 likes
+
+People talk about the "hedonic treadmill," where we quickly adapt to having new luxuries like a huge TV or an iPhone and it becomes the new baseline.
+
+I wonder if I'm already feeling the "ASI treadmill" now.
+
+Although I'm pleased to see my Fable agents running around my repos and achieving 30x performance gains (on graph "square clustering" in my FrankenNetworkX project), I'm no longer shocked by it.
+
+I'm sort of like, "Well, yeah, don't even talk to me if you didn't manage to at least triple the performance." 
+
+I know what they're capable of now and expect it and won't accept less. But there is nothing normal about any of this. 
+
+It's all so freaking implausible from the perspective of the most informed worldviews of 15 years ago, held by basically everyone other than Ray Kurzweil and a handful of others.

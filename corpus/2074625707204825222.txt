@@ -1,4 +1,4 @@
-2026-07-07 | 310 likes
+2026-07-07 | 311 likes
 
 If you're like me, you often find yourself wanting to send markdown documents to non-technical users, who take one look at the raw .md file and close it in disgust.
 

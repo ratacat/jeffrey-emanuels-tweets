@@ -1,0 +1,11 @@
+2026-07-10 | 215 likes
+
+This is going to sound weird and paranoid and like I've lost my mind, but I swear to God that on my Mac that I've exclusively been using to develop FrankenSim, my Fable usage just goes and goes without running out. 
+
+All my other 5 dev machines that are connected to other accounts and which I use to develop other projects (both open-source stuff and my consulting/business work) draw down their Fable usage limits pretty quickly and need to be cycled frequently to swap accounts.
+
+But the account for FrankenSim is like the Hanukkah menorah that just keeps going. And I'm wondering now if it's because the project is so theoretically difficult and innovative that the sessions are getting flagged somehow by Anthropic so they can study the traces and analyze and learn from them to make the model better.
+
+I mean, that's what I would do if I were running a lab. Find the most useful 0.1% of sessions that are pushing the envelop and use them to see what the model can really do, and get more of them by artificially reducing the price specifically for those sessions. 
+
+Or maybe there's some other explanation and I'm imagining everything. Has anyone else ever felt this way? If so, what were you working on?

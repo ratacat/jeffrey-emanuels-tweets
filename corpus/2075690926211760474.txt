@@ -1,0 +1,7 @@
+2026-07-10 | 156 likes
+
+PSA: You're risking your data and your sanity if you let agents run wild with "dangerously bypass permissions" mode and no protections to keep them in check.
+
+The solution isn't to lock them down so you need to spoon-feed them permissions for every little thing, either. The solution is to use dcg:
+
+https://t.co/aVmEBiaurL

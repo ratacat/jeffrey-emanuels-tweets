@@ -1,0 +1,42 @@
+2026-07-10 | 11 likes
+
+This is all possible because of the genius of RaptorQ fountain codes (RFC 6330), which I've written about before here: 
+
+https://t.co/7kCSDJHX7N
+
+In RaptorQ, every file turns into a stream of symbols where any K (plus a small epsilon) of them reconstruct the original.
+
+You can think of these as fungible water droplets from a fountain (hence the name fountain code), any one of which can help you fill your glass (reconstruct your file); there's no "rarest" hard-to-find chunk to cause you to get stuck at 99% completion, like with BitTorrent, which has disjoint, non-fungible chunks. 
+
+So the question "which packets got lost?" stops mattering, only the NUMBER of distinct packets sent matters. That one property nullifies the entire retransmission conversation since you no longer have per-loss round trips, head-of-line blocking, or window
+collapse. A 10% loss rate costs roughly 10% extra bandwidth instead of stalling everything.
+
+Carmack's three complaints from his post were:
+
+Parallel TCP vs reinventing UDP reliability: I guess I sort of reinvented, but fountain coding changes what "reliable" has to mean. You never re-send the exact bytes that died; any fresh symbol repairs any loss. Feedback turns into a few rounds of "I still need N more symbols for block B."
+
+QUIC size and the security/performance conflation: the QUIC data plane is written inside my own runtime (TLS 1.3 via rustls), for exactly this one job. And security is a separate, explicit axis: lab plaintext, per-symbol HMAC over raw UDP, or full QUIC+TLS. There are no silent downgrades, and each tier is benchmarked only against the crypto-equivalent rsync setup (plaintext vs the rsync daemon, TLS vs ssh with aes128-gcm).
+
+The kernel knows things user code can't: this is true, so atp measures what it can actually observe. A BBR-style delivery-rate sampler paces a reliable stream on clean connections, so you pay zero FEC tax when nothing is being lost, and rate-matched pacing takes over when loss appears. This gets you ~946 Mbit/s on a 1 Gbit path.
+
+I spent an enormous amount of energy building a test and benchmark harness for atp to compare it against rsync in a way that's maximally fair to rsync. In this harness, a false win is structurally impossible because of all the precautions: hermetic network namespaces, netem rate+delay+jitter+loss applied on both ends, SHA-256 verification of every single transfer, medians of 3 to 5 reps.
+
+The results of all this testing are as follows:
+
+500 KB transfers run 2.9 to 4.8x faster than tuned rsync in every link regime. The toughest test cell (10% loss, 5% reorder, 200 ms RTT) comes out around 1.9x faster than rsync.
+
+On a clean 1 Gbit, 500 MB file: 4.52 s vs 5.13 s. 
+
+Where rsync still wins (huge single encrypted files on pristine links, sender RAM under heavy loss), the README prints it in the same table. 
+
+All 230+ numbered experiments exist in an append-only evidence ledger, including every optimization hypothesis that failed (my negative evidence ledger concept that I've written about before in my FrankenSQLite post).
+
+And there's a feature that a single TCP stream can't do at all: bonding. Machines that hold the same file can all feed one receiver at once, each spraying a disjoint slice of the same fountain. Duplicates are impossible by construction, and if a donor dies mid-transfer, its repair windows get reassigned to the survivors.
+
+If you move a lot of files around between machines, both within the same local network or over the internet, you should seriously check atp out, because it's better.
+
+And you don't even have to spend time figuring out how to use it yourself, because the installer offers to (optionally) include a highly agent-intuitive and agent-ergonomic skill for you that teaches your agents how to use atp most effectively, including how to install it to all your ssh accessible machines you already have set up, since it needs to be installed on both ends, and how to use it with bonding.
+
+You can install it on Linux and Mac with this one-liner (there's another one given in the README for Windows):
+
+curl -fsSL https://t.co/e6rufFhDWt | bash

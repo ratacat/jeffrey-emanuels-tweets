@@ -1,4 +1,4 @@
-2026-07-09 | 78 likes
+2026-07-09 | 91 likes
 
 OK, I’m running out of of superlatives to use to describe what Fable has done on my “maximally ambitious and hard” ideas for a FrankenSim project. It’s basically all done and runs in the browser, among other things. See:
 
