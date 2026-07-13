@@ -1,0 +1,7 @@
+2026-07-12 | 165 likes
+
+I articulated and published this idea (and widely disseminated it) along with open source software (beads_rust and beads_viewer and ntm, many thousands of users) and a detailed guide that explains how and why it works.
+
+~6 months ago.
+
+Did these academics cite me? No. Misconduct!

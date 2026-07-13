@@ -1,0 +1,9 @@
+2026-07-12 | 527 likes
+
+It doesn't seem to matter how smart an LLM is, this prompt basically always helps it find problems in its work:
+
+"Once again, check over everything again with fresh eyes looking for any blunders, mistakes, errors, oversights, omissions, problems, misconceptions, bugs, etc. Be SUPER thorough and meticulous!"
+
+Even after 3 rounds in a row! The harder the tasks, the more problems it finds. 
+
+Doing this during the planning phase saves a lot of tokens and tears later. Measure twice, cut once!

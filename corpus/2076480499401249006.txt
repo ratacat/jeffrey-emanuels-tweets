@@ -1,0 +1,9 @@
+2026-07-13 | 59 likes
+
+2 Days. 2 Models (Fable xhigh and Sol Ultra) per project. 
+
+11 projects managed in a single ntm swarm by one Claude Code Fable driver. 
+
+2*11+1 = 23 full agent instances. 
+
+Results? A lot of wild speedups, ranging from 2x to 72x. https://t.co/6d3lMOwZ6u
