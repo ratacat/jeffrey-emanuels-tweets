@@ -1,0 +1,11 @@
+2026-07-13 | 164 likes
+
+This project is just getting more and more wildly ambitious. At this rate, it will soon be a full-fledged, agent-first replacement for SolidWorks or Autodesk Fusion, but with way more knowledge of physics and a much more advanced architecture based on the math of sheaf cohomology. 
+
+And more importantly, designed from the ground up to be used by agents instead of by human users in a GUI.
+
+And instead of using the system to conceptualize, implement, and simulate a single design, a swarm of agents could explore a universe of designs.
+
+My dream with this now is that I can use it to shepherd the design of a radically better electric motor or generator or other useful contraption using completely new ideas and designs, and then test it in the real world (anyone have a line on a good metal 3D printer?).
+
+Imagine a team of 20 Sol Ultra and 20 Fable Max agents working together for a few weeks with a bunch of fast computers to "find" a better design in the vast computational landscape of possible designs, guided by an optimization pipeline that is only possible because of the unification of the various simulation kernels into a coherent system.

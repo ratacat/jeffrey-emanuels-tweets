@@ -1,4 +1,4 @@
-2026-04-23 | 643 likes
+2026-04-23 | 644 likes
 
 I can't believe how well this works. I made a skill you can use in Claude Code called /documentation-website-for-software-project:
 

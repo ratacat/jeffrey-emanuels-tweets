@@ -1,0 +1,7 @@
+2026-07-14 | 44 likes
+
+My 143 rust crates on https://t.co/atJ6QQMqsY have been downloaded a total of 2.4 million times, damn.
+
+I seriously wonder how many of those are by me and my agents… probably a lot of them!
+
+I wish I knew total users across all platforms, but I have a strict “no telemetry” rule. https://t.co/21LOvMyah5
