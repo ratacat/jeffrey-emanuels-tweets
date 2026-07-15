@@ -1,4 +1,4 @@
-2026-06-24 | 25 likes
+2026-06-24 | 24 likes
 
 If you use atuin for terminal command history/search and now find it extremely laggy and slow, your agents have ruined it for you with bloat.
 

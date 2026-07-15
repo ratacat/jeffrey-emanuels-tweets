@@ -1,0 +1,3 @@
+2026-07-15 | 46 likes
+
+I let myself get sucked into starting yet another new project, a greenfield graph database. I'm having Fable Max in the browser do research on my other libraries and the academic literature (and the same with GPT Pro) to cut an initial draft plan, and it's fun seeing it go: https://t.co/okHfvUr0tC

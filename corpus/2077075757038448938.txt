@@ -1,0 +1,17 @@
+2026-07-14 | 198 likes
+
+I really love graphs (it runs in my blood). You can model so many useful things as nodes and edges, and the edges can have weights or bundles of weights. 
+
+The beauty of it all is that, as soon as you've done that, it doesn't matter what any of it represents in real life, you get to apply the full analytical arsenal of graph theory to everything, and all sorts of useful stuff can just "fall out."
+
+Detect cliques. Find the "Kevin Bacon" nodes in your data. Identify the bottlenecks. 
+
+You can use it to find terrorist cells in phone metadata. You can figure out how to optimally parallelize workstreams to maximize the number of concurrent agents working on your project (like my bv tool does).
+
+Even if you don't have a natural notion of how to construct edges between nodes, you can synthesize one. Compute various forms of correlation or statistical dependency between time series and average the values; threshold on those and you now have a set of weighted edges. Now you can go nuts with graph theory.
+
+If you're interested in this stuff, you should check out my FrankenNetworkX library. I took what is by far the most complete, authoritative library in the world for doing graph-theory calculations, NetworkX, and implemented 100% of it in memory-safe Rust that I've been hyper-optimizing for the last few months in a constant cycle. 
+
+It's all 100% conformance tested against the Python library, but runs anywhere from 5x to 500x faster! It's very easy to drop into your projects and give them superpowers. 
+
+I've already used it in many of my own projects, including my eidetic_engine_cli (ee) long-context structured memory for agents.

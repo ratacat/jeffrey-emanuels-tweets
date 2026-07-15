@@ -1,0 +1,5 @@
+2026-07-14 | 8 likes
+
+If you want to play around with the interactive beads graph shown in the image above (from my FrankenSim project), here's the link; try turning on the heatmap and changing between metrics, like PageRank and critical path):
+
+https://t.co/zH8lxZySU4
