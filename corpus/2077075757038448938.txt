@@ -1,4 +1,4 @@
-2026-07-14 | 198 likes
+2026-07-14 | 201 likes
 
 I really love graphs (it runs in my blood). You can model so many useful things as nodes and edges, and the edges can have weights or bundles of weights. 
 

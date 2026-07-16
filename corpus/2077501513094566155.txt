@@ -1,0 +1,3 @@
+2026-07-15 | 10 likes
+
+To do that, you need open weight models so that the companies can run it on their own infrastructure without leaking anything. But the problem with open weights is obviously how to monetize it, because inference becomes a race to the bottom and commoditized (and capital heavy).

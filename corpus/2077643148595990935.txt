@@ -1,0 +1,9 @@
+2026-07-16 | 28 likes
+
+It’s pretty satisfying to see how my asupersync project has become so central to all my work. It’s literally the foundation for all my projects now and has enabled the most innovative aspects of these systems.
+
+The plan for my latest project, a blank slate graph database called FrankenGraphDB, puts it this way:
+
+“FrankenGraphDB is, in a precise sense, a database written in the asupersync programming model, the way FoundationDB is a database written in Flow.”
+
+The mere inclusion of asupersync as a central library and organizing principle in a Rust project during the initial planning phases with a frontier LLM like Fable or Sol is enough to raise the tenor and rigor of everything else in the plan.

@@ -1,0 +1,3 @@
+2026-07-15 | 30 likes
+
+Wow, they really ramped up the number of parallel agents used in Grok Heavy! I asked it to evaluate the plan for my new FrankenGraphDB project and was amazed to see 15 agents running around (they liked the plan btw): https://t.co/3F9yf2PFr0

@@ -1,0 +1,31 @@
+2026-07-15 | 169 likes
+
+GPT-5.6 Sol Ultra in Codex is just so insanely thorough when it comes to reviewing plans. Just round after round of adversarial reviews with subagents targeting specific kinds of problems, followed by synthesis rounds, and then even more review rounds.
+
+It finds a ton of issues in that way, but the only problem is that it takes forever to do everything. I don't mind the tokens/usage or cost that much, but the wall-clock time starts to be prohibitive and becomes the gating factor.
+
+I had it do a comprehensive review of my FrankenGraphDB plan with this prompt:
+
+---
+First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then I want you to super carefully, deeply, and profoundly read, analyze, and understand COMPREHENSIVE_PLAN_FOR_THE_DESIGN_OF_FRANKENGRAPHDB.md and check over everything with fresh eyes looking for any blunders, mistakes, errors, oversights, omissions, problems, misconceptions, bugs, etc. Be SUPER thorough and meticulous!
+---
+
+And it took something like 5+ hours to review everything and come up with its audit report. I figured that it wouldn't take too long to then revise the plan to fix the identified problems and gave it this prompt to do so:
+
+"OK, so I want you to revise the COMPREHENSIVE_PLAN_FOR_THE_DESIGN_OF_FRANKENGRAPHDB.md document to solve absolutely ALL of the problems/issues you identified in the optimal way possible, which I leave to your superior judgment and instinct to determine."
+
+I was wrong about it being relatively quick! It's been going for 4 hours already (see below) and just launched yet another round of four review agents. 
+
+Luckily, you only really need to do this once per project, and I'm used to spending a huge amount of time and effort during the planning phases, but this is starting to be taxing even for me.
+
+I'm hoping the forthcoming Cerebras-powered, super-fast Sol mode won't cost so much more that it doesn't make sense to use.
+
+I was hoping to finish all the beads for this project today, but at this rate it won't even be able to start the beads creation process for a few more hours, and that probably won't be done until sometime tomorrow!
+
+If you're curious, here is the final plan audit by Sol:
+
+https://t.co/raT4PaR4pW
+
+And here is the latest version of the plan, taking into account the audit (likely to change a bit since it's still cranking away):
+
+https://t.co/uPXeWqZNKC

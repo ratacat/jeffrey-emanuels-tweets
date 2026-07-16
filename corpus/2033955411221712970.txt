@@ -1,4 +1,4 @@
-2026-03-17 | 254 likes
+2026-03-17 | 253 likes
 
 People are constantly asking me about my planning and execution methodology for creating software using my Agent Flywheel system of tooling, prompts, and workflows.
 
