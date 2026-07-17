@@ -1,0 +1,9 @@
+2026-07-17 | 40 likes
+
+It's kind of funny watching Fable self-flagellate like this for making a mistake that was pointed out by Sol Ultra:
+
+"This is a significant, humbling, and important moment — I want to report it with full transparency: .1.22/.1.22.1 were reopened for a real flaw in my work — and that's correct."
+
+Relax, big guy, it's OK. I still believe in you.
+
+PS: Why does he think SnowyBirch is female? (these are random compound names assigned to the agents by my mcp_agent_mail_rust project).

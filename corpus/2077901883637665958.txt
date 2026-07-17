@@ -1,0 +1,19 @@
+2026-07-16 | 68 likes
+
+OK, only took Fable 44 minutes, Jesus.
+
+Well, I think the results are wildly impressive here:
+
+"The verdict in one paragraph: the review is substantially correct, and its two most severe findings are understated. But roughly a third of its remedies needed correction, and exactly one finding is refuted outright."
+
+That's K3's feedback on a plan that already had many, many tens of millions of Sol/Fable tokens behind it. I don't know any other model that could do that, and CERTAINLY not an open-weight model. 
+
+This kind of analysis carries way more weight with me than any benchmark.
+
+Kimi really cooked here. Bravo. 
+
+This model release clearly changes the landscape very significantly. I have a feeling Fable ain't going away on the 19th now!
+
+PS: Here is the complete meta-analysis by Fable:
+
+https://t.co/yidyFuGXft

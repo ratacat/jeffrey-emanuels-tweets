@@ -1,0 +1,5 @@
+2026-07-16 | 157 likes
+
+OK, let's see what this sucker can do on the ~1.5mb markdown plan for my new FrankenGraphDB project. I'll post the results below so you can follow along.
+
+This plan has already been exhaustively reviewed by both Fable xhigh and Sol Ultra, so the low-hanging fruit is gone now: https://t.co/6NAV7EnYiB

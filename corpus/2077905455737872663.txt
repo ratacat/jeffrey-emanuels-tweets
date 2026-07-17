@@ -1,0 +1,7 @@
+2026-07-16 | 79 likes
+
+To be clear, I don't think K3 is as good as Fable or Sol. But it's very strong, and not SO far behind those models, and most importantly, it's DIFFERENT. 
+
+Different architecture, different training data, different training procedure, different attention mechanism, etc.
+
+Which means it will blend well with Sol and Fable and can help find problems that both of those models missed. And when K3 makes mistakes, Sol and Fable can correct for that and ignore the wrong parts.

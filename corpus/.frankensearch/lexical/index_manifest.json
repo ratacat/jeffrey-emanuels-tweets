@@ -6434,7 +6434,7 @@
   },
   {
     "file_key": "2030805574091231425.txt",
-    "revision": 1780751997176,
+    "revision": 1784294359583,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 2002,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -6504,7 +6504,7 @@
   },
   {
     "file_key": "2032638439208763701.txt",
-    "revision": 1783689627125,
+    "revision": 1784294359585,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 323,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -6532,7 +6532,7 @@
   },
   {
     "file_key": "2032891274177524175.txt",
-    "revision": 1784208006845,
+    "revision": 1784294359586,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 72,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -6560,14 +6560,14 @@
   },
   {
     "file_key": "2033191717478769137.txt",
-    "revision": 1784208006846,
+    "revision": 1784294359587,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 306,
     "reason_code": "index.plan.full_semantic_lexical"
   },
   {
     "file_key": "2033366700796551268.txt",
-    "revision": 1781011295376,
+    "revision": 1784294359588,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 915,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -6588,7 +6588,7 @@
   },
   {
     "file_key": "2033395189931208903.txt",
-    "revision": 1779887999240,
+    "revision": 1784294359589,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 229,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -6637,7 +6637,7 @@
   },
   {
     "file_key": "2034954749217288464.txt",
-    "revision": 1783084718687,
+    "revision": 1784294359591,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 311,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -7099,7 +7099,7 @@
   },
   {
     "file_key": "2038061470966030607.txt",
-    "revision": 1783430329422,
+    "revision": 1784294359611,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 299,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -7134,7 +7134,7 @@
   },
   {
     "file_key": "2038445459723739244.txt",
-    "revision": 1783775968236,
+    "revision": 1784294359612,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 321,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -7148,7 +7148,7 @@
   },
   {
     "file_key": "2038819701837513204.txt",
-    "revision": 1780751997209,
+    "revision": 1784294359613,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 299,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -7169,7 +7169,7 @@
   },
   {
     "file_key": "2039004874054967500.txt",
-    "revision": 1781702411197,
+    "revision": 1784294359618,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 228,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -7218,7 +7218,7 @@
   },
   {
     "file_key": "2039830033875833254.txt",
-    "revision": 1783948781309,
+    "revision": 1784294359620,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 309,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -7302,7 +7302,7 @@
   },
   {
     "file_key": "2041203620385865810.txt",
-    "revision": 1784208006868,
+    "revision": 1784294359622,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 307,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -7379,7 +7379,7 @@
   },
   {
     "file_key": "2041822268360147003.txt",
-    "revision": 1784208006870,
+    "revision": 1784294359624,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 181,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -7477,7 +7477,7 @@
   },
   {
     "file_key": "2043875653951307854.txt",
-    "revision": 1784121635639,
+    "revision": 1784294359626,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 2004,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -7722,7 +7722,7 @@
   },
   {
     "file_key": "2045555331732853204.txt",
-    "revision": 1784208006878,
+    "revision": 1784294359632,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 307,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -7869,7 +7869,7 @@
   },
   {
     "file_key": "2047325477967106067.txt",
-    "revision": 1784121635651,
+    "revision": 1784294359635,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 1592,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -8072,7 +8072,7 @@
   },
   {
     "file_key": "2048389415542595932.txt",
-    "revision": 1783344034687,
+    "revision": 1784294359639,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 209,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -8100,7 +8100,7 @@
   },
   {
     "file_key": "2048455518985875497.txt",
-    "revision": 1784035153724,
+    "revision": 1784294359642,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 320,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -8149,7 +8149,7 @@
   },
   {
     "file_key": "2048803482635821367.txt",
-    "revision": 1780751997252,
+    "revision": 1784294359643,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 2000,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -8401,7 +8401,7 @@
   },
   {
     "file_key": "2050926973136801916.txt",
-    "revision": 1784208006926,
+    "revision": 1784294359649,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 207,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -8429,7 +8429,7 @@
   },
   {
     "file_key": "2051331449924575729.txt",
-    "revision": 1780751997265,
+    "revision": 1784294359657,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 297,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -8527,7 +8527,7 @@
   },
   {
     "file_key": "2052074759471419533.txt",
-    "revision": 1783516736010,
+    "revision": 1784294359660,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 308,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -8590,7 +8590,7 @@
   },
   {
     "file_key": "2052519578962362582.txt",
-    "revision": 1784121635675,
+    "revision": 1784294359662,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 294,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -8667,7 +8667,7 @@
   },
   {
     "file_key": "2052910351474209258.txt",
-    "revision": 1783603130290,
+    "revision": 1784294359665,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 2000,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -9990,7 +9990,7 @@
   },
   {
     "file_key": "2065118257619849462.txt",
-    "revision": 1784035153775,
+    "revision": 1784294359698,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 2004,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -10074,7 +10074,7 @@
   },
   {
     "file_key": "2065604919466266818.txt",
-    "revision": 1784121635737,
+    "revision": 1784294359706,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 302,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -10158,7 +10158,7 @@
   },
   {
     "file_key": "2066863363045364169.txt",
-    "revision": 1784208007220,
+    "revision": 1784294359709,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 279,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -10284,7 +10284,7 @@
   },
   {
     "file_key": "2067959453576511549.txt",
-    "revision": 1783775968323,
+    "revision": 1784294359713,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 306,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -10431,7 +10431,7 @@
   },
   {
     "file_key": "2069993333934510271.txt",
-    "revision": 1784208007273,
+    "revision": 1784294359717,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 326,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -10774,7 +10774,7 @@
   },
   {
     "file_key": "2074694318783152181.txt",
-    "revision": 1784208007297,
+    "revision": 1784294359725,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 320,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -10921,21 +10921,21 @@
   },
   {
     "file_key": "2075710379485761966.txt",
-    "revision": 1784208007305,
+    "revision": 1784294359729,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 326,
     "reason_code": "index.plan.full_semantic_lexical"
   },
   {
     "file_key": "2075711880426062074.txt",
-    "revision": 1784208007306,
+    "revision": 1784294359730,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 2000,
     "reason_code": "index.plan.full_semantic_lexical"
   },
   {
     "file_key": "2075714048117649667.txt",
-    "revision": 1784121635770,
+    "revision": 1784294359731,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 207,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -11005,7 +11005,7 @@
   },
   {
     "file_key": "2076068741255733715.txt",
-    "revision": 1784121635772,
+    "revision": 1784294359732,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 249,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -11033,7 +11033,7 @@
   },
   {
     "file_key": "2076298404808781990.txt",
-    "revision": 1784035153806,
+    "revision": 1784294359733,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 301,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -11075,7 +11075,7 @@
   },
   {
     "file_key": "2076365929877835943.txt",
-    "revision": 1784121635774,
+    "revision": 1784294359734,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 303,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -11089,7 +11089,7 @@
   },
   {
     "file_key": "2076398488196202581.txt",
-    "revision": 1784121635775,
+    "revision": 1784294359735,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 199,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -11110,7 +11110,7 @@
   },
   {
     "file_key": "2076452177522855996.txt",
-    "revision": 1784208007310,
+    "revision": 1784294359736,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 328,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -11145,7 +11145,7 @@
   },
   {
     "file_key": "2076533831184597142.txt",
-    "revision": 1784035153809,
+    "revision": 1784294359737,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 281,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -11159,7 +11159,7 @@
   },
   {
     "file_key": "2076685316375622133.txt",
-    "revision": 1784121635777,
+    "revision": 1784294359737,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 234,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -11201,7 +11201,7 @@
   },
   {
     "file_key": "2076813600392400938.txt",
-    "revision": 1784208007312,
+    "revision": 1784294359738,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 1171,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -11215,21 +11215,21 @@
   },
   {
     "file_key": "2076883788471169205.txt",
-    "revision": 1784121635778,
+    "revision": 1784294359739,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 157,
     "reason_code": "index.plan.full_semantic_lexical"
   },
   {
     "file_key": "2076918971660480934.txt",
-    "revision": 1784121635779,
+    "revision": 1784294359739,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 293,
     "reason_code": "index.plan.full_semantic_lexical"
   },
   {
     "file_key": "2076923044417720572.txt",
-    "revision": 1784121635779,
+    "revision": 1784294359739,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 329,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -11243,7 +11243,7 @@
   },
   {
     "file_key": "2077075757038448938.txt",
-    "revision": 1784208007314,
+    "revision": 1784294359740,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 1660,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -11271,7 +11271,7 @@
   },
   {
     "file_key": "2077098248758509961.txt",
-    "revision": 1784121635794,
+    "revision": 1784294359740,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 434,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -11285,7 +11285,7 @@
   },
   {
     "file_key": "2077243605891076264.txt",
-    "revision": 1784208007315,
+    "revision": 1784294359741,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 337,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -11299,14 +11299,14 @@
   },
   {
     "file_key": "2077260355034554663.txt",
-    "revision": 1784208007315,
+    "revision": 1784294359741,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 320,
     "reason_code": "index.plan.full_semantic_lexical"
   },
   {
     "file_key": "2077268373474341146.txt",
-    "revision": 1784208007316,
+    "revision": 1784294359742,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 126,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -11362,7 +11362,7 @@
   },
   {
     "file_key": "2077482665972769180.txt",
-    "revision": 1784208007317,
+    "revision": 1784294359746,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 302,
     "reason_code": "index.plan.full_semantic_lexical"
@@ -11376,30 +11376,107 @@
   },
   {
     "file_key": "2077502145209749797.txt",
-    "revision": 1784208007318,
+    "revision": 1784294359747,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 303,
     "reason_code": "index.plan.full_semantic_lexical"
   },
   {
     "file_key": "2077533686472245251.txt",
-    "revision": 1784208007318,
+    "revision": 1784294359747,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 2000,
     "reason_code": "index.plan.full_semantic_lexical"
   },
   {
     "file_key": "2077643148595990935.txt",
-    "revision": 1784208007318,
+    "revision": 1784294359748,
     "ingestion_class": "fullsemanticlexical",
     "canonical_bytes": 731,
     "reason_code": "index.plan.full_semantic_lexical"
   },
   {
     "file_key": "2077644086236868829.txt",
-    "revision": 1784208007318,
+    "revision": 1784294359748,
     "ingestion_class": "fullsemanticlexical",
-    "canonical_bytes": 222,
+    "canonical_bytes": 223,
+    "reason_code": "index.plan.full_semantic_lexical"
+  },
+  {
+    "file_key": "2077751457005154398.txt",
+    "revision": 1784294359749,
+    "ingestion_class": "fullsemanticlexical",
+    "canonical_bytes": 220,
+    "reason_code": "index.plan.full_semantic_lexical"
+  },
+  {
+    "file_key": "2077792435195805796.txt",
+    "revision": 1784294359750,
+    "ingestion_class": "fullsemanticlexical",
+    "canonical_bytes": 151,
+    "reason_code": "index.plan.full_semantic_lexical"
+  },
+  {
+    "file_key": "2077847816462811334.txt",
+    "revision": 1784294359750,
+    "ingestion_class": "fullsemanticlexical",
+    "canonical_bytes": 325,
+    "reason_code": "index.plan.full_semantic_lexical"
+  },
+  {
+    "file_key": "2077881095329108394.txt",
+    "revision": 1784294359751,
+    "ingestion_class": "fullsemanticlexical",
+    "canonical_bytes": 322,
+    "reason_code": "index.plan.full_semantic_lexical"
+  },
+  {
+    "file_key": "2077901883637665958.txt",
+    "revision": 1784294359751,
+    "ingestion_class": "fullsemanticlexical",
+    "canonical_bytes": 834,
+    "reason_code": "index.plan.full_semantic_lexical"
+  },
+  {
+    "file_key": "2077902353470980164.txt",
+    "revision": 1784294359751,
+    "ingestion_class": "fullsemanticlexical",
+    "canonical_bytes": 102,
+    "reason_code": "index.plan.full_semantic_lexical"
+  },
+  {
+    "file_key": "2077905455737872663.txt",
+    "revision": 1784294359751,
+    "ingestion_class": "fullsemanticlexical",
+    "canonical_bytes": 492,
+    "reason_code": "index.plan.full_semantic_lexical"
+  },
+  {
+    "file_key": "2077905540336832821.txt",
+    "revision": 1784294359751,
+    "ingestion_class": "fullsemanticlexical",
+    "canonical_bytes": 59,
+    "reason_code": "index.plan.full_semantic_lexical"
+  },
+  {
+    "file_key": "2077908493768798210.txt",
+    "revision": 1784294359752,
+    "ingestion_class": "fullsemanticlexical",
+    "canonical_bytes": 505,
+    "reason_code": "index.plan.full_semantic_lexical"
+  },
+  {
+    "file_key": "2077919588948279317.txt",
+    "revision": 1784294359752,
+    "ingestion_class": "fullsemanticlexical",
+    "canonical_bytes": 138,
+    "reason_code": "index.plan.full_semantic_lexical"
+  },
+  {
+    "file_key": "2077981497701580874.txt",
+    "revision": 1784294359752,
+    "ingestion_class": "fullsemanticlexical",
+    "canonical_bytes": 823,
     "reason_code": "index.plan.full_semantic_lexical"
   }
 ]

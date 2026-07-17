@@ -1,0 +1,17 @@
+2026-07-17 | 967 likes
+
+It must be acutely embarrassing for Google and DeepMind’s top management that, despite having:
+
+1) a multi-year head start, with most of the top minds in the field working there;
+
+2) their own custom training and inference silicon now on its EIGHTH generation;
+
+3) total investment in property, plant, and equipment of $281 billion;
+
+4) over 80k engineers;
+
+5) most of the world’s data collected and indexed for 20 years (including ungodly amounts of documents, emails, code, books, photos, videos, etc.);
+
+they have been utterly upstaged by Kimi, a company with fewer than 500 employees and founded by Zhilin Yang, who only received his PhD from CMU in 2019 (recall that Hinton had been working at Google since 2013!).
+
+Something is deeply dysfunctional and broken there to lead to an outcome this bad.

@@ -1,4 +1,4 @@
-2026-07-16 | 6 likes
+2026-07-16 | 14 likes
 
 If you want to use asupersync in your own Rust projects, the repo includes a comprehensive skill that explains it all to your agents (see the skills folder in the project root):
 
