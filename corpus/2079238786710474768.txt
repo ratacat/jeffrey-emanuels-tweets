@@ -1,0 +1,5 @@
+2026-07-20 | 52 likes
+
+An obvious next question to ask in light of the Jacobian conjecture being disproven by an LLM is “what else is like this that we can quickly prove or disprove that’s important?”
+
+But it also suggests the exact opposite question: what in math will prove to be most resistant to AI? https://t.co/VrBOlUmEnS

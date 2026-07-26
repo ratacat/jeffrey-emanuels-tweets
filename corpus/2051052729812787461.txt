@@ -1,4 +1,4 @@
-2026-05-03 | 93 likes
+2026-05-03 | 92 likes
 
 It's now been around 4 months since my open-source dcg tool was first released, and I know from hearing from tons of users that it has saved countless people from disaster at the hands of overeager Claude Code agents.
 

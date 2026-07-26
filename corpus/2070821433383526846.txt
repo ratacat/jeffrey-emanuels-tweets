@@ -1,3 +1,3 @@
-2026-06-27 | 58 likes
+2026-06-27 | 57 likes
 
 The optimization ceiling is really high once you start targeting specific silicon (e.g., Apple M5, Threadripper 128-core, etc.). My new FrankenOCR Project is pulling out all the stops here:

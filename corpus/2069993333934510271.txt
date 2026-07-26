@@ -1,3 +1,3 @@
-2026-06-25 | 37 likes
+2026-06-25 | 36 likes
 
 If you only care about running ONE particular model really fast, then you can take advantage of all sorts of optimizations that simply don't work if you're targeting a more general system that works for lots of different kinds of models. But some models are useful enough for that https://t.co/m6dKuoKkVd

@@ -1,0 +1,25 @@
+2026-07-22 | 162 likes
+
+There’s only one solution to the burgeoning loss of identity and ego death brought about by AI in quantitative fields like coding and math, and it’s certainly not to refuse to use AI or to pretend it doesn’t work well.
+
+It’s to dramatically ramp up the level of ambition and difficulty of what you’re trying to do so it once again becomes challenging and stimulating.
+
+There are two basic ways to do that, but I like to combine them:
+
+1) Work on way, way more projects at the same time, like 40 or 50 projects.
+
+2) Shoot for incredibly tough and complex goals that used to require teams of PhD-level geniuses and years of toil. 
+
+Don’t just port something to Rust; try to make it radically better with magical new features and functionality.
+
+Don’t pick simple, easy projects; pick ones that make AI skeptics roll their eyes because they assume they’re not possible. Then implement them perfectly in a couple of months to prove them wrong decisively.
+
+I’ve been following this strategy since late last year and it has been intellectually stimulating and exhilarating. 
+
+It’s particularly satisfying to see just how cumulative it all is, too, with my newer projects being created entirely on the foundations of my earlier projects.
+
+For instance, my new greenfield graph database project is built on asupersync and numerous other FrankenSuite projects. Same for my new Rust version of Lean that I just started. 
+
+But if you want to take this approach, you’re going to need a radically different workflow and set of techniques. The only one I’ve seen that can do this at scale is the Agent Flywheel, so that’s what I recommend:
+
+https://t.co/7QNNFwvs3Z

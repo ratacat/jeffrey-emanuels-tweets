@@ -1,0 +1,7 @@
+2026-07-20 | 65 likes
+
+I wonder if in the future, advanced math will be taught more like an art history survey course in colleges, so that students learn that there’s a thing called differential geometry and loosely what it does in simple, intuitive terms (e.g., “like studying the curvature of a balloon as it’s being inflated”) just like they do with Impressionism or Pointillism. 
+
+The expectation being that, if they use it at all professionally, math will be more like a menu of options you order up and the AI agents will determine whether and how it’s actually applicable to your goals, and, if so, do all the implementation and verification for you.
+
+Oddly enough, there is already a wild amount of alpha there for the taking by simply knowing to inquire of your Fable/Sol coding agents about certain magical phrases such as “conformal e-martingales,” even if you don’t know what they are or how they work.

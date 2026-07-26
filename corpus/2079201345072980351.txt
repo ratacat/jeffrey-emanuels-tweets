@@ -1,0 +1,5 @@
+2026-07-20 | 111 likes
+
+I’ve been doing this since last year. Hence my asupersync library and my FrankenSuite set of projects. 
+
+The mass adoption part has eluded me thus far, but I’m the single biggest user of all my libraries and I see the extreme value and utility of them every day as I build more.

@@ -1,0 +1,3 @@
+2026-07-21 | 62 likes
+
+Pro Tip: if the Claude app errors out after working on something for a long time, you can usually salvage the work and avoid wasting the expensive Fable tokens. But you need to specifically ask it to do that for you and explain what happened: https://t.co/IXkIkSDuNp

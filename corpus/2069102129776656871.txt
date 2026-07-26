@@ -1,3 +1,3 @@
-2026-06-22 | 33 likes
+2026-06-22 | 34 likes
 
 I've talked about this before, but it's striking how much utility I've already gotten from various FrankenSuite projects that I started without any specific need for them, just thinking that they might be useful and I knew how to make them in memory-safe, high-performance Rust. https://t.co/sVMTxenpbC

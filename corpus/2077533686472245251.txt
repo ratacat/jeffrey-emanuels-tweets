@@ -1,4 +1,4 @@
-2026-07-15 | 193 likes
+2026-07-15 | 195 likes
 
 GPT-5.6 Sol Ultra in Codex is just so insanely thorough when it comes to reviewing plans. Just round after round of adversarial reviews with subagents targeting specific kinds of problems, followed by synthesis rounds, and then even more review rounds.
 

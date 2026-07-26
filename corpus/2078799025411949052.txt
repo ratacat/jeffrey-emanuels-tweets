@@ -1,0 +1,17 @@
+2026-07-19 | 16 likes
+
+I’ve been working on this completely on my phone since I’m on the road now for a trip. It’s obviously more limiting because I don’t have access to a full-fledged harness, but it’s amazing just how much you can do on the planning side from a phone.
+
+I had Sol Pro and Kimi K3 Max both read and revise the initial plan draft by Fable Max. But the revised version Fable came up with in response started turning into a monstrosity that was overly focused on ensuring pixel-perfect slavish replication of the output from Python Manim, which led to a dependency on LaTeX, which would defeat the whole purpose of this project (see screenshot).
+
+This shows the importance still of the decision-making around project goals and scope and how even the smartest AIs can devolve into “paperclip-maximizing” and contorting things to narrowly optimize for something that doesn’t really matter that much. 
+
+After all, we mostly want something that is correct and looks awesome. Who cares if it’s exactly identical in output to the original version? It would be nice to have, but not if the cost is hideous complexity and the very dependency hell we are trying to escape from in the first place!
+
+The beauty of my closed FrankenSuite approach is that everything becomes simple to build and deploy in a cross-platform way. So you can deploy natively everywhere with great performance, but also with other benefits. 
+
+Suddenly, you can build everything end-to-end as WebAssembly, which opens up all sorts of exciting possibilities in the browser, making the project way more accessible to casual users. I saw the power of this firsthand with my recent FrankenMarkdown project, which I was able to deploy as a single static website using wasm.
+
+Anyway, here’s the third revision of Fable’s plan after taking all this stuff into account (normally this would already live inside a new GitHub repo for this project, but that’s too annoying to do on my iPhone now!): 
+
+https://t.co/H7qNssYxBE

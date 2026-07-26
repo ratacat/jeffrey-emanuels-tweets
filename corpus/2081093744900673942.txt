@@ -1,0 +1,7 @@
+2026-07-25 | 82 likes
+
+I’ve been wondering why DeepSeek hasn’t been more of a market force recently compared to Kimi and Z, and it occurred to me that perhaps being the first Chinese AI lab with a competitive model sort of backfired on them because it drew the intense focus of the Chinese government
+
+And this in turn had a lot of downstream effects that added a lot of bureaucratic red tape, regulatory focus on ensuring that the models were “aligned” with government priorities, and insistence that DeepSeek work with Huawei on homegrown training and inference silicon rather than using the latest Nvidia GPUs.
+
+Does anyone know if there’s any truth to this? I’m particularly curious what Chinese researchers and engineers who are closer to things think about all this. It’s really hard to get a sense as a foreigner, and I’m skeptical of takes from the outside.

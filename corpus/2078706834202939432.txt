@@ -1,0 +1,3 @@
+2026-07-19 | 45 likes
+
+Nice, I just realized that I could do a pure Rust version of the manim project (used to make the animations in @3blue1brown’s awesome math videos) pretty readily because I’ve already done the heavy lifting in my various other FrankenSuite projects. Cumulative progress is 🆒. https://t.co/8ywEAnmt7v

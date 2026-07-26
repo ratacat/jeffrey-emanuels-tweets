@@ -1,0 +1,31 @@
+2026-07-17 | 79 likes
+
+More and more, I’m realizing that the use of external library dependencies in Rust projects is an anti-pattern. 
+
+Most libraries are one-size-fits-all, with scope creep and sprawling dependency chains that lead to you depending on hundreds of different projects and people, any one of which could suffer from a supply-chain attack.
+
+They also often rely on C or C++ libraries, which defeats the benefit of the strict memory safety that is the major selling point of Rust. This usually results in complex and annoying build processes that create headaches when you want everything to be cross-platform.
+
+And even when they don’t use C or C++ libraries, they almost always make liberal use of unsafe code. If you don’t make strict memory safety a basic requirement, it’s easy to slip into bad patterns out of convenience or a sense of misguided pragmatism.
+
+Perhaps worst of all, they are just not performance-optimized the way things can and should be today, with special tricks to optimize performance specifically on Apple silicon or on high-core-count AMD processors. 
+
+Those two platforms have very different performance characteristics and need specialized designs to even approach the point of saturating the hardware.
+
+For my FrankenSearch project, which is the core of my cass tool and also used in various other projects of mine like agent mail and eidetic engine, I have been using the Tantivy library for fast lexical search. 
+
+Tantivy is sort of a Rust descendant of Lucene, which is the core search system used in Elasticsearch. 
+
+I realized recently that many of the things that annoy me about FrankenSearch come from Tantivy, and I hate the feeling that it’s a walled-off dependency that I don’t want to change for the obvious reasons. 
+
+Since for my newest projects (e.g., FrankenOCR, FrankenMarkdown, FrankenSim, and FrankenGraphDB), I have a strict “no outside dependencies” rule other than my own projects like Asupersync and FrankenSQLite, I decided that I should start applying a similar standard in my older projects. 
+
+That’s why I decided to create my own specialized lexical search system optimized specifically for FrankenSearch. I’ve made the plan for it and the implementation work is already far along. You can see the plan here:
+
+https://t.co/8PHIpapyOU
+
+This will reduce the number of dependencies by 41 crates, increase safety and security, and dramatically increase performance. 
+
+And because this module will be part of the core code of the system, it will benefit along with the rest of the projects from my endless continuous performance optimization campaigns, so it will keep getting faster and faster.
+
+As the plan explains, the biggest wins come from not paying the “generality tax.” By not trying to be all things to all people, we can do just what we need in the absolute optimal way possible.

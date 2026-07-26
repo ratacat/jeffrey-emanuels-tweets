@@ -1,4 +1,4 @@
-2026-07-06 | 73 likes
+2026-07-06 | 74 likes
 
 Quick update on this system now that I've expanded it to go all the way back to 2005 for both holdings data and for my style factor decomposition of returns (similar to Barra style factors). 
 

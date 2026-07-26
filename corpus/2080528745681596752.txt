@@ -1,0 +1,7 @@
+2026-07-24 | 36 likes
+
+Ugh, btrfs switched everything to read-only as a protection. This is going to be pretty disruptive for me. 
+
+I was able to move stuff onto other machines but the impacted machine is a real workhorse for me, with 512gb of ram and 128 cores. 
+
+I’m hoping I can hobble along with just 2 of 3 drives while waiting for the RMA’d drive to arrive. Reminder that you should always use RAID, even though it inflates storage costs a lot.

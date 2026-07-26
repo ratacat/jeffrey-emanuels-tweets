@@ -1,4 +1,4 @@
-2026-06-16 | 21 likes
+2026-06-16 | 20 likes
 
 This turned out to be a big issue. I wish Linux automatically handled and optimized this kind of thing for you by default based on your system specs:
 

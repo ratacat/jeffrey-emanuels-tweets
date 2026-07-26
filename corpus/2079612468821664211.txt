@@ -1,0 +1,11 @@
+2026-07-21 | 64 likes
+
+I’ve already been using some formal verification in a couple of my projects, and want to expand on this practice. 
+
+There’s a whole directory of Lean proofs for the concurrency model used in my asupersync project, for example.
+
+So I figured I would try making FrankenLean, a memory-safe, pure Rust version with minimal outside dependencies other than the rest of my FrankenSuite. 
+
+I’ve finished the plan for it now, which you can read here (I’ve revised it multiple times already with feedback from Fable, SOL, and K3):
+
+https://t.co/S1BSm7QVhB

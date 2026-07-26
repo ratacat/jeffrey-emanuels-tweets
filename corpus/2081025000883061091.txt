@@ -1,0 +1,5 @@
+2026-07-25 | 133 likes
+
+One important update to this now that I’ve used it for longer: Opus 5 seems to be much more vulnerable to context rot than Fable. 
+
+So you should probably stop and start a new session once you cross the 500k token mark, lest the agent suddenly shed 30 IQ points and make blunders.
