@@ -1,0 +1,3 @@
+2026-07-26 | 57 likes
+
+I’ve been seeing a lot of cases where Opus 5 gives me a pretty long list of all the mistakes it made in the session. Which I suppose is better than being oblivious to making the mistakes. But Fable just doesn’t make those mistakes in the first place; it thinks more before acting.

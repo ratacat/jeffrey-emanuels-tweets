@@ -1,0 +1,3 @@
+2026-07-28 | 46 likes
+
+It’s surprising to me that all frontier models still use traditional tokenizers. Why hasn’t at least one major lab tried a different approach? What am I missing here? https://t.co/WU4Vux6xjj

@@ -1,0 +1,15 @@
+2026-07-28 | 61 likes
+
+I posted the quoted tweet almost exactly one year ago about another paper from another team. Yet it's uncanny just how applicable it is to the new K3 technical report released today. 
+
+Basically all of the major innovations in the report similarly revolve around making the gradients flow well by managing the numerical conditioning effectively. 
+
+As Fable puts it:
+
+"Your GSPO observation doesn't just apply to this paper — the K3 report reads like a book-length demonstration of it. Nearly every "architectural innovation" here, once you read the motivation paragraph attached to it, turns out to be a conditioning or gradient-flow fix, and in several places the authors say so in exactly those words."
+
+As GPT Sol Pro puts it:
+
+"Yes. In fact, the Kimi K3 report is an unusually pure example of the broader pattern you were describing. Its headline story is about scaling information flow across sequence length, model depth, and model width, but many of the mechanisms that make this possible are ultimately ways of keeping activations, recurrent states, routing decisions, optimizer steps, and RL updates inside a well-behaved operating range.
+
+The most accurate umbrella is slightly broader than “letting the gradients flow better”: conditioning the entire training dynamical system. Some K3 techniques directly improve gradient behavior; others control forward-pass dynamic range, statistical noise, expert starvation, off-policy drift, or finite-precision error. But they all fit your “avoid driving into a ditch” interpretation."

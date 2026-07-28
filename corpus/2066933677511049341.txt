@@ -1,3 +1,3 @@
-2026-06-16 | 63 likes
+2026-06-16 | 62 likes
 
 So much of perceived slowness on computers is driven by I/O. It's crazy to me that your machine can feel so slow when you have dozens of idle cores and 100+ GB of free RAM. And it's not like my storage is a slow HDD, it's a fancy M.2 NVME SSD. I feel like we need to rethink this. https://t.co/pFp4tLuy0B

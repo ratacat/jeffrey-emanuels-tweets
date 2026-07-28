@@ -1,0 +1,5 @@
+2026-07-28 | 7 likes
+
+As Grok put it:
+
+"The reason the analogy stretches so far (and why an LLM can generate pages of coherent mapping) is that the underlying mathematics of both domains is continuum mechanics of conserved or quasi-conserved quantities under resistance and feedback. Gradients are not literally water, but the failure signatures and the engineering remedies are nearly identical. That is why reading a paper like Kimi K3’s through a plumber’s catalog feels revelatory rather than forced: the catalog already contains the solutions the researchers rediscovered."

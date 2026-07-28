@@ -1,0 +1,3 @@
+2026-07-26 | 53 likes
+
+It’s not even clear that Opus is so much cheaper when you’re doing hard debugging or complex implementation work. If it needs to do something 4 times because it keeps screwing up, it will cost more than it would to have Fable do it right the first time, and will take more time.

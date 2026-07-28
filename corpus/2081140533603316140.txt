@@ -1,3 +1,3 @@
-2026-07-25 | 165 likes
+2026-07-25 | 177 likes
 
 Guess I’m the only one who doesn’t really care whether Anthropic supports open-weight models or not. As long as they keep delivering amazing models like Opus 5, they’re helping me and my own open-source efforts by proxy. And I don’t think it’s even possible to stop open models.🤷‍♂️

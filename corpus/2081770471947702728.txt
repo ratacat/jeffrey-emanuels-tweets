@@ -1,0 +1,11 @@
+2026-07-27 | 158 likes
+
+Oof, these Opus 5 agents really did a number on some of my projects. Lesson learned about trusting new models too quickly with mission-critical, complex projects, especially when they're "small" models in terms of parameter count.
+
+I'm trying to fix the damage by running Fable xhigh agents with my usual preamble (see below), plus this addendum:
+
+"I desperately need you to show real leadership and agency and rescue this project from the woefully incompetent idiocy of the other agents who have driven the system into a ditch."
+
+Preamble:
+
+"First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project. Then start systematically and methodically and meticulously and diligently executing those remaining beads tasks in the optimal logical order! Don't forget to mark beads as you work on them. Use bv with the robot flags to find the most impactful bead(s) to work on next and then start on it. Remember to mark the beads appropriately and communicate with your fellow agents. Pick up from where we left off here in the prior session: ```<last chunk of previous session>```"

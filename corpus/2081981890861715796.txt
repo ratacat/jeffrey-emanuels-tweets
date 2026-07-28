@@ -1,0 +1,7 @@
+2026-07-28 | 60 likes
+
+Useful prompt:
+
+❯ take the most important lessons learned from the deployment process and use them to expand/elaborate on that towards the end of AGENTS.md so future deployments are smoother
+
+● Good idea — those lessons are exactly the kind that get re-learned expensively. Let me reserve the file first and look at where it fits.
