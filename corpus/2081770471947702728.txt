@@ -1,4 +1,4 @@
-2026-07-27 | 158 likes
+2026-07-27 | 161 likes
 
 Oof, these Opus 5 agents really did a number on some of my projects. Lesson learned about trusting new models too quickly with mission-critical, complex projects, especially when they're "small" models in terms of parameter count.
 

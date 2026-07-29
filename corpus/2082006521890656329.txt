@@ -1,4 +1,4 @@
-2026-07-28 | 6 likes
+2026-07-28 | 15 likes
 
 Even Grok thinks it’s a bit weird (while doing this thinking by means of a traditional tokenizer):
 
