@@ -1,0 +1,15 @@
+2026-07-29 | 18 likes
+
+I've tried using tmux and zellij via Ghostty, and I've found them to be buggy and unreliable. And I need that native text selection and scrollback; there's no substitute for that. 
+
+I want fully GPU-rendered text with buttery smooth scrolling in multiple windows that nicely resizes when you change the window shape or zoom level.
+
+WezTerm got closest to what I wanted in terms of an integrated terminal and muxer combination, but it simply couldn't handle the sustained load of having dozens of agent sessions that might run for days with massive amounts of output. 
+
+Things would slow to a crawl and crash or leak memory. And having the remote mux crash would be catastrophic for me in terms of productivity losses.
+
+So FrankenTerm has been all about making that stuff work better in real-world usage for me. I also added a lot of other nice agent-centric functionality that makes it so that agents can control FrankenTerm, although I haven't used that part as much myself. 
+
+FrankenTerm is now my daily driver terminal for most of my work and has been for the past couple months. If you want to try it:
+
+https://t.co/tX74BcX25L

@@ -1,0 +1,18 @@
+2026-07-30 | 3 likes
+
+More:
+
+Final characterization
+
+Lean is the culmination, so far, of the technical and epistemic strand running through Principia Mathematica: mathematics represented symbolically, dependencies made explicit, proofs reduced to exact rules, and validity checked independently of human judgment about individual inferential steps.
+
+It is not the culmination of the ontological and philosophical strand of Russellian logicism. Lean does not establish that numbers, spaces, functions, or categories are fundamentally logical objects; that its foundational principles are uniquely logical; that one fixed system captures every mathematical truth; or that formal correctness can become completely assumption-free.
+
+So my preferred formulation would be:
+
+Lean is the most powerful practical realization yet of Russell and Whitehead’s dream of foundationally reducible and mechanically checkable mathematics, but it realizes that dream by abandoning their particular logicist foundations, adding a century of type theory and computer science, accepting Gödelian limits, and replacing flat primitive derivations with a layered compiler-and-kernel architecture.
+
+In one sentence: the formal dream was fulfilled; the logicist metaphysics was not.
+
+Link to session: 
+https://t.co/5VMEizUzHz

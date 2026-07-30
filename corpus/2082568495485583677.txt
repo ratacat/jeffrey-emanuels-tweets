@@ -1,0 +1,7 @@
+2026-07-29 | 112 likes
+
+I'm using Kimi K3 in omp again (they must have reset my usage limit or something) to work on my FrankenLean project. Two observations:
+
+1) omp really is pretty slick and nice.
+
+2) It's such a nice change to be able to see the full reasoning traces. I wish OAI/Ant did this still:

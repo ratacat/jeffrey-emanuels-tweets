@@ -1,4 +1,4 @@
-2026-07-12 | 552 likes
+2026-07-12 | 551 likes
 
 It doesn't seem to matter how smart an LLM is, this prompt basically always helps it find problems in its work:
 
