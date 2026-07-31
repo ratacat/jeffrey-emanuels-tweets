@@ -1,0 +1,5 @@
+2026-07-31 | 11 likes
+
+Any professional statisticians follow me? I think my frontier math skill has already borne some fruit ("Multa et matura"). 
+
+I asked it to create a radically new generalization of Hoeffding's D to N-dimensions that would be useful for modeling and predicting real-world data: https://t.co/TrwMyxvhOH

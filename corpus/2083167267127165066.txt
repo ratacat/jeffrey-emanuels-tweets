@@ -1,0 +1,3 @@
+2026-07-31 | 2 likes
+
+More on this (it turns out to potentially have a lot of value in quant finance, so maybe I shouldn't open-source my Rust implementation just yet... lol): https://t.co/05iChBqtGy

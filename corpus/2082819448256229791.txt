@@ -1,0 +1,3 @@
+2026-07-30 | 54 likes
+
+I have a system where Fable ultracode keeps doing adversarial review rounds until 2 consecutive rounds come up clean, and I'm starting to think this might never converge given the essentially unlimited complexity and scope of this particular task. I'm already in for &gt; 8M tokens🫠 https://t.co/ycbD5ldwvh

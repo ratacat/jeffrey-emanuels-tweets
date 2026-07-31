@@ -1,0 +1,5 @@
+2026-07-31 | 28 likes
+
+Do you like music theory? Jazz? Cool chord progressions? Check out this free, open-source site I've been messing around with for the past few weeks. It's still early days and I have a lot more planned for it, but the wasm synth engine sounds great now:
+
+https://t.co/fFk0BQ97Xt

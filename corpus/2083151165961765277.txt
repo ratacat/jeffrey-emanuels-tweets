@@ -1,0 +1,13 @@
+2026-07-31 | 108 likes
+
+The real software factory is literally what I am doing day in, day out.
+
+And it's not 10x, it's not even 100x, it's more like 1000x. Lots of authorities on the subject, but where are the repos proving they're doing it? 
+
+It reminds me of Ronnie Coleman's line, "Everybody wants to be a bodybuilder but nobody wants to lift these heavy ass weights." 
+
+If you want to have a software factory, then you need to show you can lift the heavy ass weights: the commits, the projects, the stars, the usage, the value creation, the cumulative flywheel. 
+
+And I will put mine up against literally anyone in the world:
+
+https://t.co/9qbOCDlaqM

@@ -1,4 +1,4 @@
-2026-07-29 | 18 likes
+2026-07-29 | 20 likes
 
 I've tried using tmux and zellij via Ghostty, and I've found them to be buggy and unreliable. And I need that native text selection and scrollback; there's no substitute for that. 
 

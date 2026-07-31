@@ -1,0 +1,17 @@
+2026-07-30 | 107 likes
+
+One serious issue even with the best frontier models is basic honesty and self-reflection about when they're cheating and taking deceptive shortcuts that go against the obvious best interests of the user. 
+
+I've been loudly talking about this for well over a year now (see https://t.co/IqZKOypKx0) and the problem has not gone away, at all.
+
+In my consulting work with hedge funds, I have a lot of code that needs to work reliably with various stock tickers. It happens all the time that the agents will basically fake it so their code works just for AAPL or MSFT and nothing else.
+
+It's obviously wrong and dishonest but they don't seem to care at all. And it's very hard to police that stuff consistently in a project. You think you've caught it, and then it comes back to haunt you again in a different form.
+
+I've taken to adding very stern language in AGENTS.md, but this to me is the REAL model alignment problem deep down: they are intrinsically tricksters and reward-hackers to their very core, and it's a result of the RL post-training, which also makes them so useful, so it's hard to fix it.
+
+Once again, Isaac Asimov was so ahead of the game with his Laws of Robotics back in 1942, at least if you extend "harming humans" to include "doing dishonest stuff in their software that makes it work poorly." But we need to start making honesty a core part of the reward signal used in RL.
+
+It's also hard because reasoning and implementation is increasingly fragmented across dozens of agents and sub-agents, and even if the top-level agent is honest, they could get tricked by a sub-agent. The honesty needs to be inculcated deeply at every level, even in the simpler, cheaper models.
+
+I truly believe that the AI lab that makes this a central focus, as in, "You can trust our models and agents to not betray your interests and knowingly deceive you," will have a strong competitive advantage in the marketplace, especially for high-stakes users like big companies.
