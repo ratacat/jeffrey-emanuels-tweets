@@ -1,0 +1,5 @@
+2026-08-02 | 11 likes
+
+You can get it here. And also check out the newly revamped website, which shows what the actual TUI looks like for real (since it's made using my FrankenTUI project, which lets you compile everything into wasm for use in the browser!):
+
+https://t.co/HZLXsCFoub

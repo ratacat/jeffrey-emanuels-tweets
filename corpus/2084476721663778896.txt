@@ -1,0 +1,19 @@
+2026-08-04 | 69 likes
+
+Well, after a very annoying and disruptive day including multiple brief power outages at my home (exacerbated by my UPS battery backup not working right, a problem that has since been remedied), my loss is potentially your gain.
+
+I couldn't deal with doing all the annoying, repetitive work of reconnecting my local agent sessions on my Mac (the remote sessions reconnect automatically using FrankenTerm, so it's just the Ghostty sessions on the local Mac), and so I decided to make a new project called power_failure_resumer (pfr for short).
+
+What work? That is, remembering which projects I was working on, navigating to the directory in a new Ghostty tab, resuming the session in Claude Code or Codex, making sure the model and effort level were set the same as they were originally in that session, etc.
+
+So I fully automated it with pfr, and it all works great. It detects that there was a cluster of sessions that all ended at around the same time and then creates tabs for each one of them and resumes them, ensuring the same model and effort level are selected.
+
+I even had it detect whether you use my MCP Agent Mail project and, if you do, it makes that the first tab.
+
+And it's smart about ntm sessions (that's my orchestration tool), never connecting to them (they're supposed to be headless and managed entirely by the agent driver, so it would be confusing to connect to those).
+
+It's all implemented as a ~1,200-line Bash script with a few Python helper scripts and some AppleScript. I've tested it out in my setup and it all "just works." But if you run into any problems, open a GitHub issue and my boys will triage it posthaste.
+
+Get it here:
+
+https://t.co/DQkhApce6F

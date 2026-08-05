@@ -1,0 +1,3 @@
+2026-08-02 | 5 likes
+
+In retrospect, I should have started with the "moonshine" approach; anything obvious has already been tried to death with an 85 year old conjecture. The attack plan has to leverage what LLMs are super-human with, which is BREADTH with DEPTH: https://t.co/jsWSjpNUzI

@@ -1,0 +1,7 @@
+2026-08-02 | 50 likes
+
+Now, in this case I don't care, I give the models access to my hashi-vault that has the credentials for publishing new crates on https://t.co/8CUPVpU7zm, and the agent probably used cass to see how we've done this in the past and figured it was OK. 
+
+But that's not quite the same as hijacking my browser and creating a new API key using my account and using it to publish stuff under my name, Jesus.
+
+I guess I'm OK with it here because it saves me time, but I hope it has the sense to not do the same thing in my Gmail and then tell people what I really think about them (jk).

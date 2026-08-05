@@ -1,4 +1,4 @@
-2026-07-10 | 143 likes
+2026-07-10 | 142 likes
 
 This tweet inspired me nearly 2 months ago to build a radically innovative file transfer system on top of my asupersync project that heavily leverages my beloved RaptorQ. It has been a slog, but my atp tool (and library) dominates rsync now in most cases:
 

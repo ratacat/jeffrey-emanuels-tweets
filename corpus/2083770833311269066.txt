@@ -1,0 +1,5 @@
+2026-08-02 | 56 likes
+
+The main dashboard to my mcp_agent_mail_rust project always makes me feel like I'm managing a fleet of robots in the future. Try it yourself with this one-liner:
+
+curl -fsSL "https://t.co/hMk6Kd19E4 +%s)" | bash https://t.co/UtLyBaAJ66

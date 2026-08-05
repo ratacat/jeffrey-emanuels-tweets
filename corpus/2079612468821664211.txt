@@ -1,4 +1,4 @@
-2026-07-21 | 64 likes
+2026-07-21 | 65 likes
 
 I’ve already been using some formal verification in a couple of my projects, and want to expand on this practice. 
 

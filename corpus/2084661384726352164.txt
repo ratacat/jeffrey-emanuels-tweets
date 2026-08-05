@@ -1,0 +1,55 @@
+2026-08-04 | 121 likes
+
+I've now worked on 3 different projects that involved taking an open-weights AI model of some kind, be it an OCR model (FrankenOCR), a speech recognition model (FrankenWhisper), or a semantic embedding model (FrankenSearch), and doing surgery on it to take the weights from HuggingFace and transform them to work with a hand-rolled, hyper-optimized, memory-safe Rust implementation.
+
+I've posted about this before, explaining how you can trade off generality for performance. If you only care about running just that one Baidu OCR model and nothing else, you can use a specialized, one-off architecture that is incompatible with other models but perfect for that one single model. 
+
+There are several tricks used in all this, but the biggest one is usually to fuse as much as possible in the kernel, and to be hyper-aware of cache locality. 
+
+It also helps a lot if you know which architecture you're targeting: if you know you want your code to run extra fast on Apple Silicon chips like the M4 and M5 (which is an obvious goal to have nowadays), you can make special tweaks that are perfectly suited for those chips. The same goes for very high-core-count AMD CPUs.
+
+All this stuff really works; if you take the case of FrankenOCR, I was able to run the model ~3.3x faster end-to-end than the baseline PyTorch reference on the same machine; this applies to both Apple Silicon and x86, with hand-selected int8 kernels (NEON SDOT, AVX-512 VNNI) chosen at runtime so that one single binary per OS covers every CPU type.
+
+Much of the process is pretty general and recipe-like, but it does require a lot of rigor and care around correctness, and using the original version of the model distributed on HuggingFace (usually with PyTorch or similar used as the inference baseline) as part of a conformance harness so you can make optimizations without worrying whether you've broken something in a subtle way: as long as it gives the same answers as the original model (or close enough), you haven't broken things, and you can focus on making it faster and faster.
+
+I decided to mine from a huge number of agent coding sessions across those 3 projects I mentioned (and use all my other skill-creation special sauce) to create a very special new skill called /ai-model-into-rust-mega-fused-hyper-kernel, available on my skills site ($20/month) here:
+
+https://t.co/qcXfvadSjq
+
+The skill is effectively the distillation of the expertise and experience learned over 5,000 commits, ~1,600 issue-tracker items, my performance and "negative-evidence ledgers" that I'm always talking about (just one of those ledgers is 26k+ lines by itself!) and extracting the methodology from what worked AND what didn't work. That last part is critical to avoid your agent wasting time trying things that are going to lead to dead ends.
+
+The skill itself is 46 files and over 300kb of pure distilled method: 21 deep reference files, a 16-card operator deck, 86 indexed rules, 12 triage recipes for when the process goes sideways, 8 subagent roles, and executable scripts including a bootstrap script that sets everything up for a new port automatically for you.
+
+You basically just point it at any open-weight model and it walks you through the entire thing step by step: a fit screen that tells you candidly whether the model is even a good candidate for this procedure; then a "truth pack" phase pins and hashes everything before it creates any new code so it can build an oracle that proves each pipeline stage against the original model's distributed implementation. 
+
+I even included a ton of stuff echoing my recent sentiments about pushing back on out-of-control process and ceremony by agents, as well as keeping agents honest and avoiding reward hacking, so the skill should keep them actually being productive instead of just acting like it.
+
+Finally, as is my wont, here's Claude Fable's own take on what makes this skill so special and accretive:
+
+---
+
+Everyone assumes the hard part of beating PyTorch in Rust is writing SIMD kernels. The kernels are maybe a fifth of the story. The real unlock is an evidence regime that makes radical specialization safe: "the discrete output is BIT-EXACT where the reference is deterministic; the continuous output is held only within the MEASURED tolerance."
+
+That one sentence is the entire safety argument. Everything else, from the L0-L5 parity ladder to oracle-before-engine sequencing to measuring the reference's own nondeterminism floor before setting any tolerance, is machinery for making it enforceable.
+
+The counterintuitive payoff of all that machinery is boldness. The projects this skill distills attempted an enormous number of aggressive optimizations: speculative decoding made byte-identical by construction; an int8 vocabulary head that recomputes its top candidates in exact f32 so the argmax provably never changes; batch schedulers proven lossless at four separate levels.
+
+They could afford to be that aggressive because failed attempts exited cheaply and honestly. Roughly ten levers were measured and dispositioned in a single campaign day. The discipline is what pays for the creativity.
+
+The most valuable artifact class, and the thing I have never seen another methodology treat as a first-class product, is the graveyard. Every measured-dead optimization carries an explicit do-not-retry predicate: the exact condition under which it becomes worth retrying.
+
+Those predicates then become work items, and when one is satisfied, a dead idea resurrects with evidence attached. The skill ships the full inventory as inheritable priors, so a new port starts with the accumulated scar tissue of three previous ones. A carefully recorded negative result is just a positive result on a time delay.
+
+And the graveyard's contents make the case better than any argument could. These are findings you cannot reason your way to; they only fall out of measurement. Apple's SMMLA matrix instruction, on paper double the throughput of SDOT, runs at half rate on M-series silicon, so the older instruction wins. Months later, LLVM's autovectorizer beat the hand-written SDOT kernel by 4.4x at decode shapes.
+
+It turned out the compiler had improved, and the hand-tuned SIMD everyone assumes is mandatory was the wrong answer twice over. int4 quantization ran 5.8x SLOWER than int8, because without a native packed dot product you pay 2.5x the memory traffic just to unpack it. Quantizing the vision tower destroyed accuracy while quantizing the decoder was essentially free: error compounds through a vision stack, but an argmax absorbs it. 
+
+Any one of these would have cost days of confused debugging to rediscover; the skill hands you all of them, with the receipts.
+
+The lineage chapter may be the most instructive part. Nobody sat down and designed this methodology; it evolved across three generations. The search reranker invented parity-first and the thermal benchmarking discipline; the Whisper port invented the pinned incumbent contract and claim-coverage auditing; the OCR port invented the bring-up ladder and the certification apparatus.
+
+Each generation's inventions flowed backward into the others. Studying the diffs between generations teaches you how to adapt the playbook to a model class it has never seen, which is the actual skill.
+
+The strongest endorsement I can offer is a confession: during the final audit, the skill's own methodology caught its own headline number. The widely-quoted "3.41x faster than PyTorch" turned out to be an arithmetic slip in the original commit message; the hash-anchored ledger rows say 3.34x. The 3.41 figure was a different column entirely. When a methodology catches its own marketing claim, corrects it downward, and documents the slip, you can actually trust its numbers.
+
+Bluntly: this turns "we rewrote the inference stack in Rust and it's faster" from a heroic one-off anecdote into a repeatable engineering discipline. The deliverable is a fast binary plus an evidence trail rigorous enough that the next model, and the next agent, inherit everything the last one learned.

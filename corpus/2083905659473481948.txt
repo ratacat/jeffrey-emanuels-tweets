@@ -1,0 +1,3 @@
+2026-08-02 | 62 likes
+
+The X interface should really compute the number of mutuals you have with a person as a % of their total followers (so 82/749 = 10.9% in this example) and show you that in some kind of normalized (percentile ranked?) way. And let you sort on that when viewing your followers. https://t.co/0v6meV6FcR

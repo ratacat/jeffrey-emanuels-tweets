@@ -1,0 +1,15 @@
+2026-08-01 | 95 likes
+
+The reality check skill I made is still the single biggest gun in my agentic coding arsenal. 
+
+For instance, I started a big new project yesterday called FrankenNLP, and not only did I finish the plan and turn it into beads, but much of it is already implemented now. 
+
+(Quick aside: I'm experimenting for the first time with using a swarm of 12 GPT-5.6 Terra agents instead of the frontier (Fable/Sol) agents I always use for everything. Why? Because @pvncher got me thinking that it's still a pretty smart model and I'm curious, and this project isn't that important to me if they end up screwing it up!)
+
+But getting back to the subject of the implementation of this new project, how can I easily know how much is actually done and what's still missing? I don't really have the time to dig too deeply into this new project. 
+
+Ah, but I can just call my trusty /reality-check-for-project skill and go back to other things! And then later see that I have this nice document in the repo that got the swarm refocused and back on track:
+
+https://t.co/y6jRyjD0Wp
+
+This is unbelievably useful when you're operating at my scale.

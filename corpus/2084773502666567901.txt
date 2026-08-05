@@ -1,0 +1,3 @@
+2026-08-04 | 91 likes
+
+Holy smokes, Claude Design is really good!! I took the https://t.co/1oTQLp2rgC site I made recently, which had pretty bad UI/UX in the initial version (unintuitive, poor mobile experience, etc.) and, with a bit of interactive back and forth, made a much better UI layer for it:

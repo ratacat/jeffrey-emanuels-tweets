@@ -1,0 +1,29 @@
+2026-08-04 | 27 likes
+
+I use this prompt dozens of times a day across all my dev machines. I've historically done it using Claude Code, but recently I've experimented with using Grok Build, and it's actually quite good at it. 
+
+Note that the prompt below leverages my repo_updater project, which you can get here:
+
+https://t.co/nONU9xSlT8
+
+and the following skill from my site:
+
+https://t.co/YaM5dEQiYG
+
+(/dp is just a shortcut to /data/projects that I use). I broke it up into paragraphs for easier reading here, but it's pasted in as one solid block of text usually. This keeps all my repos synced together across machines and with GitHub.
+
+It solves several problems I face because so many of my projects are interconnected. So if I'm working on mcp_agent_mail_rust on one machine and that causes the agent to want to fix something in FrankenSearch (which happens to be developed on another machine), I don't have to worry so much because I know everything is going to get harmonized and merged ultimately, and I won't lose any useful work.
+
+Here it is:
+
+--- 
+
+Read AGENTS.md. Then use your /ru-multi-repo-workflow skill to commit all changed files in each project within /dp in logical groupings with super-detailed commit messages for each and then push. Take your time to do it right. 
+
+Don't edit the code at all. Don't commit obviously ephemeral files. Then also pull from all repos, making sure again not to lose any useful work. 
+
+Don't ever commit obviously destructive things like reverting lots of obviously good commits or deleting massive amounts of files without confirming explicitly with me. 
+
+In general, we should be deferring to the remote for most repos unless it would wipe out a lot of useful work, in which case you should check with me before doing anything rash. 
+
+BUT, as a rule, we always want the "best of all worlds" version of each part of each code file to be the canonical version; we never want to throw out useful, incremental, accretive work. And we want to harmonize local with remote with all that in mind. So, be careful and use your best judgment.

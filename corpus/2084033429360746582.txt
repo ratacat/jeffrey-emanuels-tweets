@@ -1,0 +1,5 @@
+2026-08-02 | 73 likes
+
+If you still haven't experience what FrankenTUI can do in a web browser, you should check this out on a desktop browser... trying dragging/resizing the windows on the right side of the main dashboard view with the mouse. It's pretty cool. TUI = web UI:
+
+https://t.co/1SVpeBvbtG
