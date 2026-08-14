@@ -1,4 +1,4 @@
-2026-07-25 | 143 likes
+2026-07-25 | 142 likes
 
 One important update to this now that I’ve used it for longer: Opus 5 seems to be much more vulnerable to context rot than Fable. 
 

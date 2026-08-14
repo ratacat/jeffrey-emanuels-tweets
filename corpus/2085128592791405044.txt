@@ -1,0 +1,21 @@
+2026-08-05 | 2 likes
+
+Here's the one Fable just made from that prompt for my https://t.co/1Jwsslbhtp project session:
+
+Read AGENTS.md and docs/ARCHITECTURE.md first, then run bv --robot-triage and br ready --json — the tracker is the source of truth for everything below; every bead named here carries detailed notes with exact file paths, gate commands, and evidence from the last session. Confirm HEAD is at or past d883e45 and the tree is clean before touching anything.
+
+Context: the M1 automated MIDI import (epic jcpe-765f) is built, closed through spec+build (jcpe-ionn, jcpe-upbz), pushed, and live on the Vercel mirror (alias byte-matches HEAD; https://t.co/LtvBjAi1iS on Cloudflare is still one artifact behind — deploy it only if I say so). Live groove switching (jcpe-7ftl) and live instrument switching (jcpe-pd7g) are code-complete with unit proof but still open pending audible render evidence.
+
+  Work these in order, claiming each with br update <id> --claim and closing only on green gates:
+
+  1. jcpe-qbvz (M1/verify) — now unblocked. A ready draft of tests/e2e/m1-midi-import-auto.spec.ts sits at .tmp/m1-midi-import-auto.spec.ts.draft (session scratchpad copy — move it into tests/e2e, finish it, add the advanced-mode spec). Also owed: scripts/verify-m1-evidence.ts registered in the aggregate, real-song integration against deacon_blues.mid and What-A-Fool-Believes-1.mid (they're gitignored, so make that an opportunistic local-evidence script, never a committed test that would fail in a clean clone), and the render-and-compare ear check per the groove-campaign-playbook memory.
+
+  2. jcpe-7djg last stratum — the u0-touch-targets pairwise box-overlap law fails on all 3 browsers with 106 pre-existing overlapping pairs across the V2R-14 measure-tool clusters (insert-before vs delete, chord More-actions vs merge/add). This is a design-level layout remediation (spacing or tap-disclosure), NOT a CSS patch — the bead notes explain why and what was already fixed.
+
+  3. jcpe-7ftl / jcpe-pd7g closes — each needs its x0/studio-audible offline-render e2e (groove swap mid-bar: no dropout, post-swap bars match the new groove; instrument swap: spectral profile changes with a one-event blend allowance, voice/listener counts stable).
+
+  4. jcpe-1miv (instruments) — re-scoped by audit: six instruments already exist; assess them against the ultra-high-quality bar, then add upright bass + one more (my pick pending). Owner listening is the acceptance gate; ~3.5 MiB size headroom; samples must be checked in, never fetched.
+
+  Owner arbitrations waiting on me (surface them, don't guess): jcpe-61zo (groove selection-only vs creation — lane A is the working default), jcpe-1zfb (T0 custom-chord syntax gap), jcpe-f61d (origin/main re-merge arbitration), and whether to deploy Cloudflare now.
+
+  Hard-won session laws to honor: chain behind any running Playwright suite (check pgrep -f playwright), stage explicit paths only, rebuild immediately before committing the artifact and verify deployed bytes against git show HEAD:jazz_chord_progression_editor.html, verify Vercel via the stable alias (per-deployment URLs redirect), and when e2e fails, check whether the failure reproduces at the prior HEAD in a scratch worktree before assuming your change caused it. Register with agent-mail (mcp-agent-mail) at session start, reserve your files, and check the inbox — TealEagle and prior LilacHorizon threads carry the coordination history.

@@ -1,0 +1,5 @@
+2026-08-13 | 133 likes
+
+Hey, would you look at that? World-class, multi-person speech recognition AND speaker diarization, with denoising (that's 3 different transformer models!), all delivered for free, entirely in your local browser (nothing uploaded), and fully open-source:
+
+https://t.co/RRqvf59swt

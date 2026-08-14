@@ -1,0 +1,13 @@
+2026-08-06 | 37 likes
+
+I was super excited originally about the potential of my “modes of reasoning” skill described in the quoted post. But I eventually stopped using it because I found the signal-to-noise ratio to be poor. Basically, too many of the objections were BS nonsense.
+
+But why? My recent thinking around excessive ceremony and what I termed “process porn” and how it relates to RL reward hacking got me thinking about the modes of reasoning skill again. 
+
+And I realized that the bad performance of the skill was another manifestation of the same disease: a bad incentive structure causing the agents to game the system. 
+
+The first part of curing a disease is to diagnose it correctly. So I did just that with the skill in minute detail and then prescribed the cure, which is to create additional structures to keep the agents in line and doing useful work.
+
+See the screenshots below for the details on that. The skill works much, much better now and I’m looking forward to applying it to all my projects again. You can get it here:
+
+https://t.co/jsJyLinAlH

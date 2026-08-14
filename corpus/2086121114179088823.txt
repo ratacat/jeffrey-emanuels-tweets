@@ -1,0 +1,3 @@
+2026-08-08 | 11 likes
+
+In the process now of packaging it up for release and it's wild how compressed the entire process is... it's literally just me invoking a whole bunch of my skills one after the other, for doing the release, the readme, the installer, the changelog, etc.: https://t.co/fxHL3tKVWw

@@ -1,0 +1,9 @@
+2026-08-14 | 60 likes
+
+Free FrankenApps incoming for iPhone.
+
+FrankenTTS is just waiting for AppStore approval, and I’m submitting FrankenOCR now to the store. 
+
+And FrankenWhisper is basically done now, too.
+
+All totally free and OSS, no ads, no in-app purchases. And shockingly fast on a new iPhone! https://t.co/YLv1HEU1pU

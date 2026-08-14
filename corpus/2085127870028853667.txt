@@ -1,0 +1,5 @@
+2026-08-05 | 147 likes
+
+Useful prompt when the agent tells you that you're basically out of context and it's time to start a new session:
+
+❯ ok, give me the perfect prompt to start the next session with to ensure that we don't lose any threads and that none of the great ideas fall through the cracks.

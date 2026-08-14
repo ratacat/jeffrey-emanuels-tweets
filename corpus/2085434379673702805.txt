@@ -1,0 +1,3 @@
+2026-08-06 | 49 likes
+
+Amusingly, I might just end up making a world-class, real-time physical instrument simulation synthesizer platform in WASM as part of my fun side project (https://t.co/078H3H1H85) because I now have the agents borrowing from FrankenSim, which is Manhattan Project Grade physics: https://t.co/e8JoIfKOvL

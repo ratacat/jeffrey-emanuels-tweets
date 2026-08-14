@@ -1,0 +1,5 @@
+2026-08-06 | 50 likes
+
+Wow, I now have a really good plan for fixing this myself without ever needing to touch rustc or Cargo code. I can do it all externally as part of my existing remote_compilation_helper (rch) project!
+
+The secret ingredient is, once again, to use asupersync as the foundation: https://t.co/vvnWA5BumS

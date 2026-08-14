@@ -1,4 +1,4 @@
-2026-08-04 | 27 likes
+2026-08-04 | 28 likes
 
 I use this prompt dozens of times a day across all my dev machines. I've historically done it using Claude Code, but recently I've experimented with using Grok Build, and it's actually quite good at it. 
 

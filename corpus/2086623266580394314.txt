@@ -1,0 +1,23 @@
+2026-08-10 | 109 likes
+
+I'm pleased to introduce:
+
+ https://t.co/onVx6sUBGz 
+
+It's my new FrankenTTS project delivered entirely in the browser using WebAssembly!
+
+It's much slower than real time (unlike on the Mac, where it's now faster than real time), but it actually does work! And I'm in the process of further optimizing the performance and ensuring that it can run on an iPhone.
+
+This site goes well beyond other client-side browser TTS demos because, in addition to being able to use the several preset voices, you can also record yourself directly on the page and very easily make a voice profile, then generate clips using it. 
+
+You can even share the profile you generated along with the text to read out loud, with both stored entirely in a compressed URL string. The voice profile is just a vector of 1,000 numbers, but does an incredible job of characterizing a voice.
+
+There's no real web server here; the whole thing is static html/js and served with Cloudflare Pages (the full source for the site is included in the FrankenTTS repo so you can inspect it all).
+
+Beyond that, I've been pushing awesome new improvements all day, including a mini transformer-based noise-reduction stage that leads to dramatically better sound quality with your enrolled voice sample, even when using an iPhone voice memo or built-in MacBook microphone.
+
+It also has improved console output and automatically keeps the model resident in memory for 10 minutes after you do a generation so that any subsequent generations using the ftts command are much faster. If you don't generate anything for 10 minutes, it automatically unloads it from RAM.
+
+This went from a quick-and-dirty, fun project to what I think is basically bleeding edge for something that can run this easily on super common consumer hardware without needing a GPU or complex setup. 
+
+Give it a try, it's very easy to get started on a Mac (it also works on Linux and Windows, btw), and if you're willing to wait longer for the generation, you can now do it all from the browser!

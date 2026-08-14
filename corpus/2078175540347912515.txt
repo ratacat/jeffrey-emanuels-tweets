@@ -1,4 +1,4 @@
-2026-07-17 | 79 likes
+2026-07-17 | 80 likes
 
 More and more, I’m realizing that the use of external library dependencies in Rust projects is an anti-pattern. 
 

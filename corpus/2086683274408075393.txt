@@ -1,0 +1,5 @@
+2026-08-10 | 22 likes
+
+BTW, the key enabler to these speedups was taking the linear algebra code from my FrankenNumpy project, which is all in memory safe Rust and highly, highly optimized. It all compiles perfectly into wasm.
+
+That's why I like doing all these projects: everything becomes cumulative.

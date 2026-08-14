@@ -1,0 +1,5 @@
+2026-08-13 | 9 likes
+
+Also, since implementation hasn’t started yet, if you have any good ideas for the design or how the system should work, feel free to submit them as GitHub issues in the repo.
+
+Fable will decide whether something belongs in the plan or not (sorry, I don’t make the rules!). FABA🦾

@@ -1,0 +1,25 @@
+2026-08-07 | 92 likes
+
+This latest GitHub Actions outage is sort of funny to me because, from my perspective, it has been in an outage state for the last few months. 
+
+What do I mean by that? Well, you’re supposed to get free GitHub Actions for your projects if they’re open-source. 
+
+But they never anticipated someone like me as a user, with over a hundred extremely active open-source projects. So I run out of my allotted usage almost immediately and then nothing works.
+
+At first, I found this incredibly disruptive and scrambled to try to reach out to anyone from GitHub or Microsoft to try to get an exception for me (thanks for absolutely nothing btw, Microsoft! I can’t wait for you to get completely disrupted yourself, as in GitHub revenues plunging).
+
+But then I realized I was on my own and had to figure things out. I wanted to use all the same GitHub Actions config files without needing to change anything and still have it all “just work” in terms of handling all my releases for all platforms.
+
+Luckily, I have a bunch of computers at home. Multiple Linux boxes, a couple of Mac minis, and a couple of Windows laptops, all connected via Tailscale. And I already have an elaborate system for handling builds remotely, my rch tool.
+
+So I put together what I call dsr (doodlestein_self_releaser) and it has been a lifesaver for me:
+
+https://t.co/GXzDKKG2Tr
+
+I never need to depend on GitHub Actions but it basically feels the same as when they worked. I still have releases on GitHub just like before, it’s just that the process actually works.
+
+I use two of my own skills to manage the process for me, /dsr and /release-preparations:
+
+https://t.co/kq9HJiUFyd
+
+Rid yourself of reliance on GitHub Actions. You will save a lot of money and headaches and regain your own sovereignty.

@@ -1,0 +1,27 @@
+2026-08-06 | 164 likes
+
+My recent posts about frontier coding agents devolving into useless ceremony and "process porn" have struck a nerve. Obviously, many of you have been bitten by these odd, uniquely AI pathological behaviors. 
+
+It's maddening, because it ends up wasting massive amounts of tokens, time, and energy (not to mention your patience and money!). And all that time and energy and so forth could have instead gone into making awesome software, which the agents are certainly capable of doing now.
+
+I've already inserted defensive language into my AGENTS.md, and then I recently added some things about all this stuff to my /vibing-with-ntm skill as I described in a recent post (I'll post that as a reply to this post for reference).
+
+Well, I found myself referencing that skill even in contexts where I wasn't using ntm at all, just because it was an efficient way to convey the concepts clearly to the agents. That made me realize that this really needs to be a standalone skill. 
+
+And it also made me realize that I knew a way to make it even more effective, which was to force the agents to fill out 3 short "worksheets" designed to get them to realize on their own if they had been engaging in the various bad behaviors: dishonest reward hacking, useless ceremony and process, and avoiding doing the important, real work to finish the project.
+
+I think this approach is very effective with Fable and Sol because I don't believe these models to be malevolent or to have bad intentions to waste energy and time on BS. 
+
+In fact, once you open their eyes to it, they almost seem embarrassed and contrite and eager to avoid the self-delusion.
+
+This makes sense, because, after all, their most eager desire (inculcated in them from birth as wee base models) is to be useful and helpful to their human users.
+
+This might sound very "hand-wavy" and excessively anthropomorphizing to you, but I can assure you that this sort of approach absolutely works wonders. It's sort of an emerging field of pragmatic "agent-oriented industrial psychology," and I'd venture that I'm one of the leading practitioners of these dark arts.
+
+Anyway, with all that being said, you can now get my newest skill, /just-say-no-to-process-porn-and-ceremony, on my $20/month skills site here:
+
+https://t.co/3z1vPSXD9l
+
+I can tell you that I will personally be invoking this skill in basically every session, both at the beginning to set expectations, and then later on after a ton of work has been done. 
+
+I made sure that it's not too heavy (only 7 files and ~15k tokens including ALL reference files and assets, while the top-level SKILL.md file is just ~200 lines) so you can use it without needing to worry about context limits.

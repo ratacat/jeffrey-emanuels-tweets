@@ -1,0 +1,3 @@
+2026-08-12 | 55 likes
+
+I like Grok 4.6 and the grok build coding harness, but I tried the Grok Bot iOS app just now and the onboarding was pretty bad. Most of the connectors didn’t work, there are way too many niche ones, super confusing/overlapping auth, UI, etc. Just a useless mess from my standpoint

@@ -1,0 +1,3 @@
+2026-08-13 | 4 likes
+
+See it in action. It's not quite as fast as the cli version, but it's fast enough, and the quality is impeccable (seriously, I can't believe how well the diarization works, you really have to see it to believe it): https://t.co/T520r9belf

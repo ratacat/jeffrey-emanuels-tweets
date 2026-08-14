@@ -1,0 +1,3 @@
+2026-08-07 | 3 likes
+
+Btw, this is all feeding back into FrankenSim. Literally all the things that were missing from FrankenSim that would have been useful for the JazzChords synths have now been added as additional beads in FrankenSim and are being implemented!

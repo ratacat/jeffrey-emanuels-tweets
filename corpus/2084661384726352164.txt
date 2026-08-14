@@ -1,4 +1,4 @@
-2026-08-04 | 121 likes
+2026-08-04 | 140 likes
 
 I've now worked on 3 different projects that involved taking an open-weights AI model of some kind, be it an OCR model (FrankenOCR), a speech recognition model (FrankenWhisper), or a semantic embedding model (FrankenSearch), and doing surgery on it to take the weights from HuggingFace and transform them to work with a hand-rolled, hyper-optimized, memory-safe Rust implementation.
 

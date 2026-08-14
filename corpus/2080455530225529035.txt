@@ -1,3 +1,3 @@
-2026-07-24 | 1766 likes
+2026-07-24 | 1760 likes
 
 Damn, looks like this Codex bug really did kill my SSD, which was only 13 months old and cost me $478 (Samsung SSD 9100 PRO 4TB, PCIe 5.0x4 M.2) but now costs $902 for the same thing. It sucks because I noticed those log files growing uncontrollably and should've stopped it. https://t.co/cCZLazpyEC

@@ -1,0 +1,5 @@
+2026-08-05 | 41 likes
+
+I was pretty skeptical reading about the Qwen 3.8 Max model's supposed quant trading prowess, and turns out Fable is similarly skeptical.
+
+Quant trading requires a massive about of epistemic humility, similar to frontier math research. You can't just unleash the hordes and do it. https://t.co/DnsqzWIppm

@@ -1,0 +1,9 @@
+2026-08-13 | 99 likes
+
+The most annoying part for me of starting a new project like this is manually doing all the steps that can’t be done by the coding agent in the terminal, like navigating the Google Cloud Console to set up Google authentication.
+
+So this time I tried something new: I had Fable draft a plan specifically for the Codex app to use with the Computer Use plugin so that the entire thing would be automated for me. 
+
+It worked very well! Here is the plan it created, which was fully implemented in an automated way (I just had to type “yes” a couple times in Codex):
+
+https://t.co/yB23V6NsGA

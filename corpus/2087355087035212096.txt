@@ -1,0 +1,3 @@
+2026-08-12 | 80 likes
+
+I posted a few weeks ago about my FrankenOCR project, which makes Baidu's awesome new OCR model work incredibly well on Apple Silicon. Now I'm happy to introduce https://t.co/bdLSwuBkvq, where everything works in the browser! Accurate OCR on images and PDFs, entirely clientside!

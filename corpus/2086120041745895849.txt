@@ -1,0 +1,3 @@
+2026-08-08 | 80 likes
+
+I just used my new skill to turn the best small open-weights text-to-speech model into a hyper-optimized library and cli tool for Macs (and other machine types). I even had the agents research which model is best (Qwen3). I was pretty floored when I heard the audio quality! https://t.co/2qfimkuf47

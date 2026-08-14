@@ -1,0 +1,44 @@
+2026-08-09 | 67 likes
+
+Wow! This morning I got my FrankenTTS project working on my Mac, but it was ~8x slower than real time for synthesis. 
+
+Now it's at 1.05x real time on my Mac mini M4 (critically important for real-world use!) and I'm continuing to speed it up. I suspect I'll be able to get it to be twice as fast as real time within another day.
+
+What's even crazier is that I recorded a voice memo on my iPhone using the enrollment script given in the README here:
+
+https://t.co/sN9JFvULos
+
+Then I was able to enroll my voice basically instantly using:
+
+ftts enroll ~/Downloads/je_voice_enrollment_audio.m4a --default   
+
+Then to generate some audio, I could just do:
+
+ftts say "Hello, this is me, Jeff." test.m4a
+
+I used to it make a fake message for my wife Gracie to see how well it would work for extortion and the result sounds just like me (but with some rather flat acting given the extreme scenario...) as you can hear in the audio shown below.
+
+The whole thing took a few seconds and "just worked" on my Mac, no special hardware needed. 
+
+You can get it all set up in less than a minute:
+
+brew install dicklesworthstone/tap/franken-tts
+ftts pull
+
+As Claude puts it:
+
+---
+
+The weights don't come with the formula — Homebrew installs just the binary, and ftts pull is the one-time fetch.
+
+It pulls the pre-quantized .fttsq artifact plus the codec checkpoint and tokenizer (~2.0 GB) from the model-qwen3-tts-v1 release into ~/.cache/franken_tts/model, verifying each file's SHA-256 against a manifest embedded in the binary.
+
+That release URL is the only endpoint it ever contacts. Re-running it verifies what's there and skips anything already present, so it's safe to repeat and doubles as a repair command.
+
+After that there's no configuration — every command finds the model in the cache directory automatically.
+
+So a full cold start on a Mac:
+
+brew install dicklesworthstone/tap/franken-tts
+ftts pull
+ftts say "Now is the time for all good men to come to the aid of the agents" out.m4a
