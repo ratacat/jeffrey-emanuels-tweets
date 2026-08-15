@@ -1,0 +1,17 @@
+2026-08-15 | 145 likes
+
+This is another one of those coding agent tricks that I find obvious, but I suspect many people never think to try. 
+
+First, write out whatever you want in a prompt that's sort of a mind dump of everything you care about. Then show it to Fable on Max effort in the web app and preface it with this:
+
+---
+
+I made this prompt for Claude Code on my computer. Try to revise it to expand it and make it better and more likely to work super well; whatever you think would improve the final product the most, feel free to add that to the prompt to make it truly excellent and optimal:
+
+<PASTE YOUR ORIGINAL PROMPT>
+
+---
+
+That's it. There's obviously no guarantee that Fable's re-interpretation of your prompt will work better than your original one (I sometimes doubt it in my case, because I'm able to coax some great behavior through specific word choices...), but you can always try both and see which one worked better in practice.
+
+It's especially helpful when your prompt is a bit half-baked to start with and you're not sure the best way to do things.

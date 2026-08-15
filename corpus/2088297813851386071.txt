@@ -1,0 +1,3 @@
+2026-08-14 | 40 likes
+
+I'm exploring building some of that omp goodness into my pi_agent_rust project (using omp with K3 to do it, so meta!): https://t.co/aMOWuJ8gSZ

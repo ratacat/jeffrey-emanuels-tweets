@@ -1,0 +1,3 @@
+2026-08-14 | 26 likes
+
+I've been adding more functionality to my FrankenSim project to create abstract physics building blocks that can be combined to model physical instruments in a realistic way, down to materials and instrument geometry. But it's a very tough problem, especially for real-time synth! https://t.co/TMYT5EzBDl

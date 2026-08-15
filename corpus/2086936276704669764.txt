@@ -1,4 +1,4 @@
-2026-08-10 | 104 likes
+2026-08-10 | 105 likes
 
 One of the best parts of programming in Rust is that, if you do things the right way, it's pretty easy to compile your projects to WebAssembly (wasm) so that you can use them in a web browser, often at close to native speeds. 
 

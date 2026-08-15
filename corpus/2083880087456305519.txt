@@ -1,3 +1,3 @@
-2026-08-02 | 253 likes
+2026-08-02 | 252 likes
 
 Holy shit, I'm starting to see how OpenAI's model accidentally hacked HuggingFace. I was just browsing the web and noticed a new tab I didn't open... it was Codex controlling my browser (I didn't even realize it could do that without permission) and... creating a new API key... https://t.co/0EYudCnKHB
