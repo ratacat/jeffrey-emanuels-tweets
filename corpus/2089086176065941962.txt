@@ -1,0 +1,5 @@
+2026-08-16 | 3 likes
+
+@MouldS Here's the code for it; I put it in its own crate, but it's mostly built out of primitives that exist separately within FrankenSim. That is, it's not just a special one-off for this particular scenario:
+
+https://t.co/7d6SMXYCCd

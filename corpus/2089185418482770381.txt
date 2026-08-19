@@ -1,0 +1,23 @@
+2026-08-17 | 38 likes
+
+I decided to add a super-realistic, physics-based, parameterized Wright Flyer simulation to https://t.co/NlHMSlOgV2 that can be used in a web browser with wasm and ThreeJS in real-time. 
+
+Why? I don't know, I feel a compulsion to do things and I've been reading a lot about the ol' Wright Bros today and so was inspired. I also think it will be another great way to put FrankenSim through its paces in a fun, visible way.
+
+Anyway, as part of that work, I invoked my /planning-workflow skill, which first creates a markdown plan document in the local harness (Claude Code with Fable in this case), but then instructs you to show it to GPT Pro in the web app for multiple rounds so it can improve the plan.
+
+I find it fascinating to read the first 3 rounds of those reviews, each of which was done in a fresh session:
+
+1) https://t.co/29FztFxhBK
+
+2) https://t.co/i0W47iUYxQ  
+
+3) https://t.co/A5z6XxR0WS
+
+It shows you just how much deeper Pro goes than other models. Even with Max effort in the harness. Pro is just on another level.
+
+And we're still not done! Pro insists that at least a fourth round review is required before turning the plan into beads. 
+
+PS: You can get the /planning-workflow skill here:
+
+https://t.co/XBh9QhEVQd

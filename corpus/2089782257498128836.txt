@@ -1,0 +1,5 @@
+2026-08-18 | 3 likes
+
+It's actually easy to get started. Simply clone the repo locally and then have your agent read the AGENTS.md file, which has a whole long section about how to add a new patent to the system (I'll be updating this as I go so it's complete and accurate):
+
+https://t.co/lM2IAM9KBa https://t.co/mIZG0aABdI

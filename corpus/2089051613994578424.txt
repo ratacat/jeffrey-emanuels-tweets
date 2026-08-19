@@ -1,0 +1,29 @@
+2026-08-16 | 44 likes
+
+The biggest technology news scoop of the last 100+ years, the invention of a truly controllable, self-powered airplane by the Wright brothers, was not the work of a reporter from any of the important and famous newspapers at the time. 
+
+It first came out in “Gleanings in Bee Culture,” a trade publication for professional beekeepers, which is amusingly random and weird. 
+
+This wasn’t the first time anything was published about the Wrights, mind you, but it was the first actual eyewitness account from someone who actually understood the accomplishment and its full implications.
+
+Why? Because its publisher, Amos Root, was a well-rounded technophile and was obsessed with staying on the cutting edge of all developments.
+
+It reminds me of how non-specialists often learned about LLMs and scaling laws from reading essays by Gwern and Scott Alexander. 
+
+I’ve long found that it’s much better and more interesting to go back to the original primary sources and contemporary accounts rather than read a retrospective article that recasts everything through the lens of what has happened since then. 
+
+So I highly recommend taking the time to read Root’s account of what he saw when he visited the brothers in Dayton, Ohio back then, in 1904, and how he knew they were the real deal and not yet another in the long line of cranks who were delusional about flying machines.
+
+You can read it all below, courtesy of the digitized text from https://t.co/M31UB2sVVR:
+
+By Amos I. Root
+Published in "Gleanings in Bee Culture"
+January 1, 1905
+
+For 32 years I have been ransacking the world ― that is, so far as I could consistently ― watching" periodicals of almost every sort, and leaving no stone unturned to furnish information of interest and value to the readers of Gleanings. I have especially tried to have our own journal up to date in scientific matters; and until the past summer I have made haste to present at once to our readers every bit of information I could get hold of. In short, I have had no secrets whatever that I have withheld. But for the first time in my life, during the past summer I have been under a promise of secrecy. When the Wright brothers kindly permitted me to be present while they were making preliminary experiments they especially desired I should keep to myself, at least for the time being, what I saw. 
+
+I recognized the justice of it, and of course assented. But it was a very hard task for me to keep my tongue ― or pen ― still when I knew the great outside world knew so little (or nothing) of what was going on. Scarcely a dozen people in this whole universe knew what I knew, but I could not tell it. I have thrown out some hints, you may remember, of what was going on. But one of the brothers suggested, “The best way to keep a secret is to avoid letting anybody know you have a secret to keep." We are told it is hard for women to keep a secret, and I think I must be to some extent feminine in my make-up. Well, just before Christmas my heart was made glad by a letter informing me that, as the experiments for 1904 were probably ended, I might tell the world what I knew about the flying-machine, and therefore I have been made happy. Yes, today, Dec. 26, I am not only enjoying a happy Christmas but I feel just like saying, “A merry and a happy Christmas to you all." I hope you will enjoy my story about the flying-machine ― as much as I enjoyed being out in that big field with the Wright brothers many times during the past summer and fall, watching that wonderful creation of the hand and brain of those two men, while it "learned to fly," very much as a young bird just out of the nest learns by practice to use its wings. A picture of the flying-machine up in the air will appear in our next issue, nothing preventing. We could not get it ready for this one.
+
+What hath God wrought ― Num. 23:23.
+
+(Continued in next post)

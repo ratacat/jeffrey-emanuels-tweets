@@ -1,0 +1,13 @@
+2026-08-17 | 21 likes
+
+I have a very different kind of skill up on my skills site. This one lets you make a music video out of an audio track and a bunch of iPhone videos of someone singing along to the live-playing track on the same phone. All the clips are aligned, categorized and fused together with cuts.
+
+Everything is done in a way that lets you easily give feedback on what you don't like so that the agent can quickly make surgical edits without needing to redo all the heavy work. 
+
+The results might not be as good as what a real human editor can achieve spending days in Adobe Premiere, but it gives a very decent result with very little effort, and walks you through the entire process. 
+
+And if you start using the skill before you even record the videos, it can give you helpful tips on the best way to do everything.
+
+You can get it here:
+
+https://t.co/iBD8UH5ne0

@@ -1,0 +1,9 @@
+2026-08-19 | 16 likes
+
+I've been using my agents to make tons of nice Three.js visualizations for my https://t.co/5oEIPVkNQl site that feature realistic physics (courtesy of my FrankenSim project compiled for the browser) and nice controls with good UI/UX that works well on desktop browsers with a mouse and on mobile with touch.
+
+So I decided to mine all those sessions and the various learnings and takeaways into a new skill called /threejs-visualizations-with-good-quality-and-real-physics, which you can get here on my $20/month skills site:
+
+https://t.co/ALVZ3OVsYI 
+
+The skill asks you up front if you care about realistic physics and pedagogy, and if you do, it will spend a lot more time on integrating the relevant parts of FrankenSim and exposing the parameters of the simulations. If you just want something that looks cool, it can do that, too.

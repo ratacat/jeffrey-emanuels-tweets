@@ -1,4 +1,4 @@
-2026-08-15 | 145 likes
+2026-08-15 | 227 likes
 
 This is another one of those coding agent tricks that I find obvious, but I suspect many people never think to try. 
 

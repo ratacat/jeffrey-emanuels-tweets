@@ -1,0 +1,5 @@
+2026-08-19 | 1 likes
+
+Has anyone actually tried this setup? Does it work decently? How does it compare to using the ChatGPT app on the Mac with the computer use plugin and Sol? 
+
+Tbh, this is mostly out of curiosity just to see how well it works. But could be useful for doing security stuff.

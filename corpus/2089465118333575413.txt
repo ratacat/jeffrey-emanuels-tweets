@@ -1,0 +1,3 @@
+2026-08-17 | 4 likes
+
+Why is it such a good test and benchmark for a model? Because it’s non-trivial to do it well. It tests many different aspects of web design, and the ThreeJS and physics make it easy to see quickly if it sucks or not. I was impressed by Gemini 3.7 Flash, but it got help from Grok.

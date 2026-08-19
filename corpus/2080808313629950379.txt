@@ -1,4 +1,4 @@
-2026-07-25 | 142 likes
+2026-07-25 | 141 likes
 
 My take on Opus 5 versus Fable 5 and when you should use one or the other based on my observations so far today using it across ~15 projects and in various roles as well as based on the benchmarks is that, by and large, you should generally switch over to Opus for most things. 
 

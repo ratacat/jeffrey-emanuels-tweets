@@ -1,0 +1,13 @@
+2026-08-15 | 1054 likes
+
+It feels like a loophole, but for some reason OpenAI’s very smartest model by far, GPT Pro in the web app, doesn’t count against your usage limits. 😵‍💫⁉️
+
+You can use the GitHub connector in the web app to have it write directly to a public or even a private repo. Repeatedly, in the same session. 
+
+So why aren’t you doing this? You can make real projects this way! Try it! It probably won’t last for long…
+
+For example, this new FrankenOverlap project of mine which I started yesterday is 100% made this way, and it’s already at 125 commits and a LOT of smart code:
+
+https://t.co/mEXgb4IDU6
+
+If you want more fine-grained control, you can clone it locally at the end and make your final touches using a local harness on your machine (and pay for the usage for the privilege, with a weaker model to boot…):

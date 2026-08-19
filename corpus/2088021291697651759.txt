@@ -1,4 +1,4 @@
-2026-08-13 | 108 likes
+2026-08-13 | 112 likes
 
 The most annoying part for me of starting a new project like this is manually doing all the steps that can’t be done by the coding agent in the terminal, like navigating the Google Cloud Console to set up Google authentication.
 

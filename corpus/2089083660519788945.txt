@@ -1,0 +1,3 @@
+2026-08-16 | 46 likes
+
+I saw the recent YouTube video by @MouldS about the Euler Disc and how it spins (link to the original video below), and it got me thinking that it could be a fun and good validation of my https://t.co/NlHMSlOOKA. So here's what I have so far, generated entirely within FrankenSim:

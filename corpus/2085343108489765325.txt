@@ -1,3 +1,3 @@
-2026-08-06 | 209 likes
+2026-08-06 | 210 likes
 
 If someone could make the Rust compiler 3x faster without sacrificing the performance of the resulting binaries, it would save many, many hundreds of millions of dollars a year in wasted compute, energy, and time. I wish the hyperscalers would invest in this more. Needs  tokens.

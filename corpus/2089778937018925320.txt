@@ -1,0 +1,33 @@
+2026-08-18 | 35 likes
+
+The more I think about it, the more I'm convinced that my https://t.co/5oEIPVllFT site (which is totally open-source, see https://t.co/RauiBdPQxo) is a really good test for AI models and harnesses.
+
+It's challenging, cross-domain, detail-oriented work that is nevertheless easy to judge and compare to the existing content.
+
+The test is this: can the agent, after studying the existing code and assets, make a complete PR for a new historical patent that's not currently on the site, that is:
+
+1) Totally complete in every way, including the nicely formatted original patent text with a plain-English explanation, all the relevant claims and context/history added, the formulas and physics, etc.
+
+2) Up to the same standard of quality in terms of the Three.js visualization, with good and accurate 3D models and animations and real, integrated physics, etc., as the exemplar, the Wright Flyer (https://t.co/6l425NimaV)
+
+3) Correct in its typography in every way, with all equations rendered correctly and colorized and explained in an intuitive way with good pedagogy.
+
+Trying to get all of those down is really, really hard. Even frontier models struggle to do this properly and usually require many, many tries and test deployments.
+
+There doesn't seem to be any way around the need for a real browser-based test where the actual site is opened and screenshots or video taken for analysis using vision capabilities.
+
+Maybe it's easier now, though, because there are so many finished, high-quality examples for the agent to study.
+
+I can tell you that it took a lot of elbow grease by me yesterday to get this far (definitely 3+ hours, although I was working on a bunch of other projects concurrently).
+
+Anyway, I've seen a lot of "tests" of new models and harnesses where people have them make a simple informational website, or make a 3D FPS-type game, or make a Three.js model, or a 2D pelican svg.
+
+But nothing that combines all the different modalities in a unified, coherent way, including extracting accurate text and figures from scanned PDFs, transforming these into complex, annotated, nicely formatted documents, along with linked 3D and 2D visualizations with integrated physics, equations, etc.
+
+And the best part is that there are hundreds of historically important and interesting patents to add. Normally I don't accept PRs for my projects, but for this one project I'm willing to make an exception so that it can become a sort of benchmark. 
+
+But in order for me to merge anything, it needs to be up to snuff, and I will be very strict about quality standards. Be sure to specify the exact model, effort level, and harness used, and maybe also the prompts you used. 
+
+I will make a skill that can be used to assign scores/grades to any PR, and I can turn this into a kind of leaderboard. Of course, the model and the harness are just part of the equation; without good prompting/steering, it's going to result in a bad outcome even with the best models.
+
+It would be cool if this could become a new standard in benchmarking because it's actually cumulatively useful: over time, this free patent museum would become an incredible resource for learning about science and technology, as well as a first-rate repository for great 3D visualizations.
