@@ -1,0 +1,25 @@
+2026-08-21 | 24 likes
+
+I was thinking about a fun thought experiment today that you might enjoy pondering. Here it goes:
+
+Suppose you took the weights data from the Qwen 3.8 27b model ( https://t.co/EXXVrmllSM ) and the model card— basically, everything in the HF page— but nothing else, and were able to load all that data onto compatible storage of the time so that it could be loaded and inspected on computers. 
+
+Then suppose that you took all the Turing Award winners alive at the time and their top grad students and got them together in a sort of Manhattan Project setting and gave them a year to figure everything out. 
+
+What’s the earliest year where you would be relatively confident (say, 80% or higher probability of success) that they’d be able to figure out how to use the model and conduct inference on it and verify that it’s smart and capable? How and why did you arrive at your answer? Why couldn’t it have been 5 years earlier than that?
+
+—
+
+I asked that to ChatGPT and Kimi K3 just now and the results were surprising. ChatGPT at first answered 2019, which is absurd and obviously wrong. After I pointed that out, it then revised its answer to 1965! Quite a big difference. 
+
+Kimi K3 thought for an insanely long amount of time and then came out with 1989 on its own. 
+
+What’s your answer?
+
+Here are the sessions if you’re interested:
+
+CharGPT:
+https://t.co/hdaX4qg5Y7
+
+Kimi: 
+https://t.co/cpwmxOvMV3

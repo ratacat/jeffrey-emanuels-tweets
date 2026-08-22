@@ -1,4 +1,4 @@
-2026-08-17 | 80 likes
+2026-08-17 | 81 likes
 
 I’ve been wanting to try out Gemini 3.7 Flash, but I wasn’t willing to risk screwing up any of my serious projects. So I quickly whipped up a new site in ~2 hours:
 

@@ -1,0 +1,7 @@
+2026-08-21 | 78 likes
+
+Agent coding life hack: after you're done with your plan and have finished turning it all into beads, you can potentially go a lot faster by using bv to analyze your beads. Just ask the agent to do this:
+
+"Is there a better way to wire the beads dependencies using /beads-bv to implement the same work, but with greater opportunity for agent concurrency so as to enable faster overall development velocity using a larger swarm size?"
+
+Then you can provision a larger swarm with ntm and you'll have more opportunities for the additional agents to do incrementally useful work, rather than trying to be useful by doing smaller slices of beads, or causing trouble in a misguided effort to be useful (e.g., by creating useless ceremony BS).

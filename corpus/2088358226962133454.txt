@@ -1,3 +1,3 @@
-2026-08-14 | 95 likes
+2026-08-14 | 96 likes
 
 GLM-5.2 reading GPT Pro's answer to the problem it has been working on for a while (btw, this is why I don't bother with anything other than frontier models for the most part... not worth the time dealing with lightweights!): https://t.co/PxYBi5uiBH

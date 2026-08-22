@@ -1,0 +1,5 @@
+2026-08-19 | 24 likes
+
+Whenever I see the token stats for a coding agent session, I wonder about the patterns that emerge when you look at the various ratios.
+
+Like reasoning tokens to output tokens; input tokens to cached tokens; tokens per hour. How do these change across models, effort, and tasks? https://t.co/ar4lrcFx2p

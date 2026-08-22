@@ -1,0 +1,31 @@
+2026-08-19 | 92 likes
+
+New GPT Pro prompt in the ChatGPT app while I wait for my daughter to finish Kumon:
+
+—
+
+First read this:
+
+https://t.co/YyF0MyzOQs
+
+ @GitHub 
+
+Then look at these projects of mine:
+
+https://t.co/chaPlihrDW
+
+https://t.co/EfJR5Osbxy
+
+https://t.co/n33oO2CyLH
+
+https://t.co/TyAaj1CffV
+
+https://t.co/rVZdG4uWlx
+
+https://t.co/j5L08iYKEf
+
+I want you to profoundly read and investigate about all those and then think super hard, taking that GitHub replacement blog post into account, about making a NEW project called FrankenGit that would be like an opensource self-hosted GitHub (and also could be a paid service I could run like GitHub at https://t.co/uyr5zgYDsm). 
+
+Look at the comprehensive plan for frankengraphdb and try to make a plan like that which represents a radical leapfrog and improvement that leverages all the hallmarks of Franken alien artifact technology, like RaptorQ and conformal e-martingales and all the rest, including the many innovations in FrankenSQLite and the other projects where applicable. 
+
+Then create a new public repo called frankengit with the plan and prospective readme so we can iterate on the plan in public. Try hard to make this your greatest work yet and contribution to humanity, making the best system for use by agents like yourself that can scale the most economically, performantly, and reliably.

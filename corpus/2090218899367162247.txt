@@ -1,0 +1,5 @@
+2026-08-19 | 1 likes
+
+You can get cass here; I recently replaced the Tantivy index with my own homegrown Quill lexical index in the underlying FrankenSearch engine that powers cass, and numerous other improvements are in-flight:
+
+https://t.co/UPXkkrPLPS

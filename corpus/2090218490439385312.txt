@@ -1,0 +1,3 @@
+2026-08-19 | 31 likes
+
+This is an under-appreciated benefit of cass: in addition to letting you search across your previous agent sessions, it also serves as a segregated backup on your computer that can save your precious session data if something clobbers it (sadly, a surprisingly common occurrence):

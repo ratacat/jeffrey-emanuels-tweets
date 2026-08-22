@@ -1,0 +1,7 @@
+2026-08-19 | 95 likes
+
+I've never really posted about it before, but I've been "passively" assigning my agents to work on my FrankenRedis project for the past 5 months, now at ~8,100 commits.
+
+It's a totally memory-safe, complete drop-in replacement for Redis, and it's faster:
+
+https://t.co/TQdLMVSoff https://t.co/AbJJ2s4aBO

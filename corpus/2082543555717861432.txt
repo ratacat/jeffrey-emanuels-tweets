@@ -1,3 +1,3 @@
-2026-07-29 | 40 likes
+2026-07-29 | 39 likes
 
 Interesting. I've been working on the same problem out of my own necessity and desperation in FrankenTerm, my agent-centric fork of WezTerm. I love using Ghostty locally on my mac, but I can't lose my work and state on remote machines if something crashes. But I need scrollback. https://t.co/ZRvHix01xC

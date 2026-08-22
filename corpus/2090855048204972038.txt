@@ -1,0 +1,17 @@
+2026-08-21 | 372 likes
+
+Agent coding life hack:
+
+1) Install omp and add openrouter as a provider (https://t.co/UBCVfGrfur).
+
+2) Select the model as the currently free "stealth" model ox Alpha (https://t.co/h07jjhYx9R).
+
+3) Install mcp_agent_mail_rust (https://t.co/YtCpddhXFH).
+
+4) Create 3 instances of omp in the same project and tell them to do this:
+
+"First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project. 
+
+Then I want you to study and then further polish/refine/improve/fix the UI/UX so it works as well as possible on both desktop and mobile browsers. Before doing anything else, register with MCP Agent Mail and introduce yourself to the other agents."
+
+5) Profit (or at least enjoy those sweet, free tokens).

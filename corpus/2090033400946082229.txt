@@ -1,4 +1,4 @@
-2026-08-19 | 19 likes
+2026-08-19 | 39 likes
 
 I’m wondering if this could make for a good local computer use setup. I have a Linux machine with dual 4090s and a Mac Mini. 
 

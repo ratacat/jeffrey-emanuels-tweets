@@ -1,4 +1,4 @@
-2026-08-17 | 463 likes
+2026-08-17 | 464 likes
 
 I made a major improvement to my /de-slopify skill that I've been using constantly for months. It takes AI-generated writing and automatically improves it so it's not quite so gross and awful (there's no substitute for human writing yet!). Get it here:
 

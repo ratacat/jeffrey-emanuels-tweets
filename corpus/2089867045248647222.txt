@@ -1,4 +1,4 @@
-2026-08-19 | 16 likes
+2026-08-19 | 19 likes
 
 I've been using my agents to make tons of nice Three.js visualizations for my https://t.co/5oEIPVkNQl site that feature realistic physics (courtesy of my FrankenSim project compiled for the browser) and nice controls with good UI/UX that works well on desktop browsers with a mouse and on mobile with touch.
 

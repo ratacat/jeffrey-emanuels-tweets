@@ -1,0 +1,9 @@
+2026-08-21 | 118 likes
+
+OK, since this post blew up, there's obviously interest here. So I took the time to completely automate the process for you, at least on a Linux box with dual 4090 GPUs like I have. See:
+
+https://t.co/BadNtbQuua
+
+It's a very nice installer that's robust and idempotent and installs everything you need and sets it up nicely for you (see pics) so that it uses vllm and omp.
+
+If you need to tweak it for your own setup, just show the link above to your agent and it will figure it all out a lot faster than if you tried to do it from scratch.

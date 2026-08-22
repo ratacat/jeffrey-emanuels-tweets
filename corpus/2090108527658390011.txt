@@ -1,0 +1,3 @@
+2026-08-19 | 9 likes
+
+It would be cool to collect these high-level metadata stats for thousands of sessions where you also know very roughly the sort of task they were working on (coding in Rust? converting PDFs?) for every model, effort level, and harness. Then you could build predictive models.

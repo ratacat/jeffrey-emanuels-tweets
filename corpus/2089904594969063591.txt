@@ -1,4 +1,4 @@
-2026-08-19 | 23 likes
+2026-08-19 | 30 likes
 
 And after my recent experience with https://t.co/Ff4ChZ0eKT, I think I'm willing to trust Gemini 3.7 Flash with web frontend work and other less important stuff.
 

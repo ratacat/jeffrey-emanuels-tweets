@@ -1,0 +1,3 @@
+2026-08-22 | 39 likes
+
+It’s pretty awesome how omp can show actual images in the terminal. Makes it so convenient to monitor web frontend stuff. It does seem to cause Ghostty to choke after a while, though. https://t.co/bALV5owz0U
