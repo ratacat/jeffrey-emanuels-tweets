@@ -1,4 +1,4 @@
-2026-08-21 | 13 likes
+2026-08-21 | 17 likes
 
 How was I able to make such a nice, polished, ~1,000-line bash installer so quickly? I have a skill for that:
 

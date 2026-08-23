@@ -1,4 +1,4 @@
-2026-08-21 | 118 likes
+2026-08-21 | 148 likes
 
 OK, since this post blew up, there's obviously interest here. So I took the time to completely automate the process for you, at least on a Linux box with dual 4090 GPUs like I have. See:
 
