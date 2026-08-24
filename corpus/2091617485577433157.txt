@@ -1,0 +1,21 @@
+2026-08-23 | 160 likes
+
+Like many others, I got sucked into trying Omarchy this weekend. It's very well done and a great way to bring an old laptop back to life (in my case, a Microsoft Surface from ~2016, which now feels like a new machine).
+
+I of course wanted to install all my Agent Flywheel tools on it, but the acfs tool that I use to handle everything nicely with one command was designed around Ubuntu, so it didn't work on Arch.
+
+I could install each of my tools separately using the curl | bash one-liners for each tool, but that's not very satisfying or efficient, and then you lose the easy updating and other nice benefits. 
+
+So I did a complete overhaul of the system to automatically detect if you're running Omarchy and adapt accordingly. You can read about it here:
+
+https://t.co/HFtZSPJowZ
+
+If you've been curious about trying the Agent Flywheel system (it's totally free and open source, and I've used it for the past year to deliver a truly mind-boggling amount of software that's used by thousands of people and companies every day), a new Omarchy box is a great opportunity to test it out very easily.
+
+If you're new to the Flywheel, it can feel a bit overwhelming, so you might want to read the complete guide on the main Flywheel site to learn about how the system works in detail. If you're pressed for time, then check out the core guide which explains the basics with just three of the most important tools: Agent Mail, beads_rust, and beads_viewer. 
+
+As always, if you run into any issues or bugs, please file GitHub issues in the main Agent Flywheel repo and I will triage them the same day, like I do with all my projects.
+
+I hear from people every single day about how much the Agent Flywheel approach has boosted their productivity and enabled them to ship far more high-quality software than they ever thought possible. It really works, and my own GitHub profile is the proof of that. It's worth your time.
+
+Hope you like it, and let me know what you think!
