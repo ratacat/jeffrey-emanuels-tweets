@@ -1,0 +1,5 @@
+2026-08-25 | 205 likes
+
+Here's a project I've been quietly working on for months but finally got around to properly releasing: FrankenMermaid. It's a complete ground-up, memory-safe, hyper-optimized Rust implementation of MermaidJS that compiles into wasm. It's over 100x faster!
+
+https://t.co/EUc7AUl315 https://t.co/8MUjFx69h8

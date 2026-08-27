@@ -1,3 +1,3 @@
-2026-08-10 | 21 likes
+2026-08-10 | 20 likes
 
 Since it's hard to know what to think of speech synthesis (TSS) projects without actually hearing them, I generated some samples of the quoted post using some of the default voices included in https://t.co/STtOxgLL0I. Try it in the browser or install with brew on your Mac! https://t.co/9IBLk78eOy

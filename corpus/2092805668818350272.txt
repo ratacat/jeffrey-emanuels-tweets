@@ -1,0 +1,13 @@
+2026-08-27 | 209 likes
+
+You can buy these little screens online for $40 to $80 in various form factors. They connect via HDMI to the computer and get power from USB. If you have a few headless development machines like I do, they're nice to be able to check the system status at a glance in a physical, immediate way. They also look very cool and they're fun. 
+
+I spent far too much time today configuring each one in the optimal way; one is very wide and short, but you need to rotate the image 90 degrees. Another is too small to display very much. You also can't show everything I wanted just using htop or btop, so you need something more complex that can show both side-by-side.
+
+Most important of all, since this is really a discretionary thing that's just for fun, all of it has to use the absolute bare minimum of system resources and never put pressure on your machine (mine ended up using only ~0.04% of my CPU). And you need those niceness and other settings to all persist automatically on a reboot, which is surprisingly difficult to do reliably.
+
+In fact, the entire thing needs to be automated using systemd/launchd or similar. And you want it to work on Ubuntu, Arch, Mac OS, etc. It's just a LOT of stuff to think about!
+
+But luckily, you don't have to, because I automated the entire process from start to finish for you with my new skill! You can get here on my $20/month skills site, along with hundreds of other useful skills for coding and many other things (need to write a will or do estate planning? need advanced tax structuring advice? I've got you covered!):
+
+https://t.co/qsRUKWVmB5

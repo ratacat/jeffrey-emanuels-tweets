@@ -1,0 +1,17 @@
+2026-08-25 | 281 likes
+
+This message encapsulates everything I hate about Opus 5. It's always so careless and overconfident and seemingly in a rush to get things "wrapped up," even if that means saying or doing the wrong thing.
+
+Grep failed? Sorry, user, your files are gone forever (actually it just sucks at using grep and the grep didn't even work, but it's so careless and sure of itself without justification that it doesn't even occur to it to check). 
+
+These are all symptomatic of really poor agent epistemology and humility. It's like it doesn't even realize it is prone to these sorts of things so it doesn't have the self-knowledge and self-reflection to even consider them. It's such a problem that it makes it unable to do basic Bayesian reasoning.
+
+What do I mean? Before telling the user that some really bad thing happened that is a pretty rare or unusual thing, it should stop and think, "Hey, what's more likely here-- that this thing actually happened, or that I just screwed up the grep options like I do hundreds of times a day?" And it should do that BEFORE telling the user a bunch of BS.
+
+This is also why it's constantly ending up apologizing to the user, because eventually, it usually DOES end up realizing that it was wrong, and then it finally connects the dots and has an "aha" moment where it traces it all back to that one bad tool call where it used grep incorrectly and assumed it was right and took the results (which may have only been "0," so not much information there in the first place!) at face value and wasn't critical or curious to search in a deeper way for the truth.
+
+(BTW, the apologizing is super annoying, because as the user, you don't care that it's sorry, you're just annoyed that it carelessly screwed the thing up in the first place and wasted your time, attention, energy, tokens, money, etc.)
+
+The irony is that Fable 5 is so dramatically smarter than Opus 5, yet it's also MUCH less self-assured. It checks and double-checks itself. And yet its dumb little brother, Opus, thinks it knows better and just makes blunder after blunder.
+
+It's like when you see really smart people who still seem pretty intellectually humble. They know how much they don't know; they've seen other very brilliant people deceive themselves or make dumb mistakes and know deep down that they are susceptible to that.

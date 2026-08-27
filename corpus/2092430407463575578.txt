@@ -1,0 +1,3 @@
+2026-08-26 | 41 likes
+
+I love seeing my already fast and efficient software (in this case beads_viewer, written in Golang) continue to get faster and more efficient. Little bits and pieces here and there getting a 24x speedup, or using garbage collection (the bane of Go and why I prefer rust) way less https://t.co/fedwkzpWcC

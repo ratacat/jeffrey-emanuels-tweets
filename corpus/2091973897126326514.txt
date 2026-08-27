@@ -1,0 +1,24 @@
+2026-08-24 | 72 likes
+
+I have too many projects now so it's increasingly hard to stay on top of the release process for all of them. Especially since GitHub Actions cut me off, so I need to do all the builds and test suites using my own hardware for every platform.
+
+It's just a lot of stuff to manage; not just creating the builds, but updating the crates, Homebrew, Docker, etc.
+
+The even bigger issue is that, because so many of my projects are interconnected (e.g., mcp_agent_mail_rust relies on asupersync, frankensqlite, frankensearch, frankentui, fastmcp_rust, etc.), I want to ensure that everything is always using the latest version of everything else. It's a massive coordination problem.
+
+I've gotten to the point where the process is often reactive: people complain in GitHub Issues that there's no recent build for a project, and I create the new build when my agents triage.
+
+Out of desperation, I'm now finally trying to parallelize the process in a bulk way using a bunch of my skills. We'll see how it goes. Here's my prompt for this:
+
+---
+
+Reread AGENTS.md so it's still fresh in your mind. I want you to use /release-preparations with /dsr (NEVER GitHub Actions!!!) to go through all my active projects in ~/projects (all the franken stuff, etc. -- public repos that have existing releases) and look for stuff that has a lot of changes since the last release.
+
+Then I want you to prepare new versions/tags/releases for ALL platforms using /dsr but also publishing to other venues where applicable, like https://t.co/8CUPVpUFoU, Homebrew, Docker images (for instance, mcp_agent_mail_rust has recent releases, but the last Docker image from https://t.co/KF5rCCkPgb is months old apparently), scoop, whatever.
+
+Before cutting a release, always check GitHub Issues for the project and apply the /gh-triage-ru game plan where applicable unless the issue is really tricky/complex (like a complex data corruption bug in frankensqlite or similar).
+
+Also run /library-updater on the projects before a release so that we are always using the latest working version of everything. You should always do /testing-real-service-e2e-no-mocks type comprehensive testing of the curl | bash installers and also ensure that ~/projects/agentic_coding_flywheel_setup works still with the project if it is distributed that way.
+
+Ideally, you could do all this in parallel using /ntm and /vibing-with-ntm and a fleet of 4 cc panes running opus-5 xhigh with you managing everything on a 4-minute /loop cycle where you tend to the swarm (also use /agent-mail and tell the swarm to use it as well to communicate and coordinate everything).
+Be careful to avoid causing excessive build contention on this and other machines using /rch. Every 3 ticks (12 minutes), give me a detailed update on where we stand across all the releases.

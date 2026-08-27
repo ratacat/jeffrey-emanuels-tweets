@@ -1,0 +1,5 @@
+2026-08-26 | 53 likes
+
+I've posted about the CMAES algorithm before, since it's one of my favorites (losing only to RaptorQ). I started an explainer site for CMAES a while ago, but it had issues and I got busy. But today, Gemini 3.7 Flash brought it back to life for me! Enjoy:
+
+https://t.co/A5PxLABZtE

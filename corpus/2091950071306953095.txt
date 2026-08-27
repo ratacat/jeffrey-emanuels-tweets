@@ -1,0 +1,13 @@
+2026-08-24 | 59 likes
+
+I've been using omp and the free 0x alpha model so much lately that I have surplus GPT usage now. Good way to use it before I lose it (already got some nice gains in beads_viewer and beads_rust from running this overnight) with Sol xhigh:
+
+---
+
+First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project. 
+
+Then I want you to apply $running-the-gauntlet-on-your-rust-port and its negative evidence ledger concept, but first profile with $profiling-software-performance. 
+
+After profiling, then do $repeatedly-apply-skill 50x times, iteratively applying $extreme-software-optimization . Keep $just-say-no-to-process-porn-and-ceremony top of mind at all times. 
+
+Keep going and don't stop even if you hit 2 rounds without improvement; be creative and innovative in your optimization strategy! I believe in your genius!
