@@ -1,4 +1,4 @@
-2026-08-27 | 209 likes
+2026-08-27 | 395 likes
 
 You can buy these little screens online for $40 to $80 in various form factors. They connect via HDMI to the computer and get power from USB. If you have a few headless development machines like I do, they're nice to be able to check the system status at a glance in a physical, immediate way. They also look very cool and they're fun. 
 
