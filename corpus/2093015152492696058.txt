@@ -1,4 +1,4 @@
-2026-08-27 | 113 likes
+2026-08-27 | 130 likes
 
 The FrankenOCR app was finally approved by Apple! Get it here, it’s totally free (zero ads, zero in-app purchases!) and open source, and it works really well! Handles whole PDFs and exports to markdown and html. Enjoy, my gift to you:
 

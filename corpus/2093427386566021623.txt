@@ -1,0 +1,3 @@
+2026-08-28 | 111 likes
+
+It's FrankenTime. I have iPhone/iPad/Mac versions coming for TTS, OCR, Whisper, Mermaid, and Markdown. All will be very polished and refined with good integrations (dynamic island, etc.) And all open-source and free, no ads or in-app purchases. https://t.co/LCglPXmLVC

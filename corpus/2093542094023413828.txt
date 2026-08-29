@@ -1,0 +1,13 @@
+2026-08-29 | 348 likes
+
+Agent Coding Pro Tip:
+
+It's WILD how quickly you can get crazy gains using this prompt (and the skills mentioned, from https://t.co/2ousdTizJE, naturally) using just Gemini 3.7 Flash, which is basically free, so cheap that it's a rounding error relative to the value of your time:
+
+First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code and technical architecture and purpose of the project. Then use /profiling-software-performance and then use /repeatedly-apply-skill at least 30 times sequentially to apply /extreme-software-optimization
+
+---
+
+Just look at what it spit out on FrankenMarkdown in the last 20 minutes! And this was code written by Fable 5 and Sol... just a couple cool 5,000x+ performance gains, plus a few 2x or more. Easy. 
+
+Computers are really fast when you use absolutely every trick in the book to make your code work well on modern hardware.

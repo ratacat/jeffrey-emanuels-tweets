@@ -1,0 +1,13 @@
+2026-08-29 | 62 likes
+
+Agent Coding Pro Tip:
+
+I'm working on FrankenMarkdown now and thinking about features that could make the rendered PDFs and html files look even more polished. It's totally second nature to me now to give a prompt like this:
+
+"Think about any world-class, SOTA typography visual optimization research (stuff involving dynamic programming and things like that to get "NEXT LEVEL" quality) that exist but which remain untapped in this project. Do exhaustive research online looking through academic papers and the like."
+
+But I think most people wouldn't even try that. Academic papers? What does that have to do with nice-looking documents? 
+
+Well, do you actually want your stuff to look special and not just like every other app? Then you need to get to the frontier. From there, you can then innovate even further.
+
+People are so obsessed with getting a better model, but even Gemini 3.7 Flash can take this prompt and really run with it and come back with crazy stuff you'd never get otherwise.

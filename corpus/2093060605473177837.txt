@@ -1,3 +1,3 @@
-2026-08-27 | 26 likes
+2026-08-27 | 37 likes
 
 Ahhh! This is going to be so cool, I'm like a kid in a candy store here. All the pieces are coming together: FrankenSim, my CMAES library and site, my ThreeJS skill for the patent site, etc. Going to have some really fun and incredible stuff that can run in a browser very soon: https://t.co/HEtumDvRiz
