@@ -1,0 +1,19 @@
+2026-08-29 | 45 likes
+
+I've long had an alias "uca" defined on my machines, which stands for "update coding agents." That use to simply be something like this:
+
+claude update && bun install -g @openai/codex@latest && agy update && grok update
+
+But I wanted to add omp to that as well, and figured it would be nice if it could just run in the background every 3 hours as a service on Mac and Linux.
+
+Then I thought it would be nice to see some logs using the ucas command (short for uca stats), so added that. 
+
+You now how things go: before you knew it (10 minutes later), using various of my skills like /installer-workmanship and the like, I ended up with a pretty full-fledged tool for managing this stuff nicely. 
+
+You can get it here:
+
+https://t.co/qLB4gQzTbp
+
+Or just do:
+
+curl -fsSL "https://t.co/aqjpws03sU +%s)" | bash

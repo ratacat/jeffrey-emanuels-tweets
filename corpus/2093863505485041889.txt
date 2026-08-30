@@ -1,0 +1,3 @@
+2026-08-30 | 113 likes
+
+It's so humbling watching the thinking traces of a model like GLM 5.3 Flash or MiniMax M3 debug a complex problem involving math and code. They're so damned smart. And yet they can run on fairly cheap hardware. Somehow it was less humiliating when it required millions of dollars. https://t.co/7XODlNGHcP
