@@ -1,3 +1,3 @@
-2026-08-28 | 90 likes
+2026-08-28 | 91 likes
 
 I wonder how much bad/sensitive stuff exists in public git repos as part of the repo history (but not in any extant, exposed branch) that people figured no one would find and so they never bothered to rewrite the repo history to avoid disruptions. But now agents can find it all… https://t.co/V8ETCZfV46

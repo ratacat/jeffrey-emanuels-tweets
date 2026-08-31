@@ -1,0 +1,9 @@
+2026-08-31 | 71 likes
+
+Why I'm "wasting" my time on this Dwarf Fortress MCP project (it's kind of fun in any case, even though I'm not a gamer and have never spent more than an hour "playing" DF in my life).
+
+There is real potential here to make a powerful system for measuring how well agents can operate in complex, multi-faceted world simulations. 
+
+I could easily imagine this stuff translating well to real-world scenarios and applications like physical security contexts. 
+
+For instance, monitoring a constellation of sensors and cameras to detect intruders and optimally deploy a swarm of drones and robot dogs/humanoids to protect against them. Palmer? 🤣

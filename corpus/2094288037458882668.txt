@@ -1,0 +1,11 @@
+2026-08-31 | 477 likes
+
+Agent Coding Pro Tip: 
+
+After you've gotten an agent (hopefully a frontier one, like Fable Max or GPT Pro) to devise a plan for a new project, follow up with this prompt and see the magic:
+
+---
+
+OK, now I want you to think deeply about how to make this entire system as agent-intuitive, agent-ergonomic, and agent-accretive as you can possibly imagine. Put yourself in the driver's seat and imagine that YOU are the one using this system and driving it. What would most enable you to do an awesome job understanding the situation accurately and optimally controlling everything to drive the best and most accurate results possible, with the least expenditure of resources? 
+
+Then make all the requisite changes to the various design documents and plans accordingly. Don't just think of the project as an assemblage of various parts or components: really try to profoundly and deeply conceptualize it as a synthetic SYSTEM that is maximally coherent, cohesive, modular, and interconnected, forming a tower of linked abstractions that are maximally legible to you as an agent. Really ruminate and meditate on all of this incredibly deeply before responding or taking any actions.

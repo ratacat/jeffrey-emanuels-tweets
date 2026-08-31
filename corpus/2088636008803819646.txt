@@ -1,4 +1,4 @@
-2026-08-15 | 1072 likes
+2026-08-15 | 1070 likes
 
 It feels like a loophole, but for some reason OpenAI’s very smartest model by far, GPT Pro in the web app, doesn’t count against your usage limits. 😵‍💫⁉️
 

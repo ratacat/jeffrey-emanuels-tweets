@@ -1,0 +1,5 @@
+2026-08-30 | 42 likes
+
+The FrankenMarkdown app is looking very nice on iPad (all of the ~9 FrankenApps will be for iPhone/iPad/Mac) and is already quite useful.
+
+It can turn arbitrary GitHub flavored markdown (including LaTeX, Mermaid, code) into amazingly polished html, pdf, svg, etc., and much more. https://t.co/LNxrezJulc
