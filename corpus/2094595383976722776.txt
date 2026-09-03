@@ -1,0 +1,5 @@
+2026-09-01 | 29 likes
+
+I turned my https://t.co/5oEIPVllFT site into an app called FrankenPatents. It's now available for Mac on the App Store (100% free, no ads, no in-app purchases, open-source). Everything bundled locally so works offline. Still waiting for the iOS version to be approved by Apple.
+
+https://t.co/QGlySNZnAR

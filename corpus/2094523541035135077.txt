@@ -1,0 +1,33 @@
+2026-08-31 | 142 likes
+
+There are basically two startups' worth of ideas here in these new repos that I just open-sourced, but I don't have the bandwidth to build AND attempt to monetize them myself, at least directly (I will be using both as part of a larger system I'm working on for applying AI to various building trades). 
+
+And maybe I'll use them for my own home security system just for fun (and safety):
+
+https://t.co/EaTgMRn9bx
+
+https://t.co/mhtsTno70f
+
+Note that these projects are NOT finished, I just started them yesterday! But the plans are extremely comprehensive and detailed, so I should be able to implement them over the coming weeks using my https://t.co/N4As0kJTQP methodology and a big ol' swarm of frontier agents.
+
+These ideas grew out of my recent thinking about Dwarf Fortress that I posted about yesterday. Well, the drone stuff really started when I got a DJI Flip drone around a month ago (highly recommended for $500!). 
+
+I see a lot of potential to use these for automating the process of building digital twin models of homes for use by HVAC and other contractors (plumbers, electricians, etc.). 
+
+I've also always wanted to get more value out of all the home security cameras I have from Wyze (the ~$35 V4 2.5K camera by them is a great deal) and other brands without using their annoying software that can't be readily driven by agents, which doesn't work between vendors cooperatively, and which doesn't allow for the powerful sensor fusion and physical orientation features I want.
+
+This also dovetails nicely with the drone reconstruction project, since that lets you easily get a model of your home that you can use to virtually place and orient your cameras-- and maybe even this process can be automated! That's part of the plan in any case...
+
+Imagine the power of what Anduril and Palantir provide to the US Government for border patrol (sensor/camera fusion with drone support), but for your own home using a handful of $35 wifi cameras (or nicer if you've got 'em) and a cheap drone. 
+
+You can have an open-weights multi-modal model in a harness like Omp just cranking away on a 1 minute loop, looking for intruders and triaging them, following them across camera views and assessing if they're friend or foe, and being able to leverage the full intelligence of these models with epistemological transparency. 
+
+I think everyone is going to expect this sort of thing in a few years, but it would be nice for it all to be free and open so it can remain purely local for privacy/security reasons! And the only way for that to really happen is for someone like me to just make it and give it all away for free.
+
+PS: While checking this post for typos, GPT suggested clarifying that the planned system goes well beyond "friend or foe":
+
+---
+
+One substantive wording thought: “friend or foe” is punchy and fits the Anduril analogy, but technically your architecture is more sophisticated than that binary. It is really doing something closer to authorized/expected/benign vs. unknown/suspicious/threatening, with explicit uncertainty and abstention. 
+
+I might actually keep “friend or foe” for the post because it communicates the idea instantly, while “epistemological transparency” signals that the underlying system isn’t just making a dumb binary classification.

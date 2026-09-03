@@ -1,0 +1,3 @@
+2026-09-01 | 45 likes
+
+These little quality-of-life productivity enhancements really stack up over time. Even things like assigning the alias "p" to automatically cd into your projects directory quickly (in my case, "/data/projects"), or setting up a short symlink like /dp to avoid typing the full path https://t.co/i98dZ7EtfS

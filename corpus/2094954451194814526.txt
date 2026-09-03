@@ -1,0 +1,5 @@
+2026-09-02 | 7 likes
+
+BTW, after running the skill and seeing the report, I usually just paste this block in. You don't even need to read it all if you have a lot of projects to triage!
+
+OK, so please do everything you think is advisable based on all of that, and start yourself trying to close the biggest gaps, especially the ones with the most "bang for the buck" in terms of work needed to get a huge benefit in terms of moving us closer to achieving the state goals of the project (things like wiring in finished code that just isn't properly connected yet would be like that, but you can interpret the remit more broadly yourself using your own expert judgement). I want you to show real agency and follow your gut instincts as to what will most improve the project. Keep the lessons of /just-say-no-to-process-porn-and-ceremony top of mind at all times! OK, please do ALL of that now. Keep a super detailed, granular, and complete TODO list of all items so you don't lose track of anything and remember to complete all the tasks and sub-tasks you identified or which you think of during the course of your work on these items!

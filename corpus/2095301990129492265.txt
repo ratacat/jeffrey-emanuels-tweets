@@ -1,0 +1,27 @@
+2026-09-03 | 54 likes
+
+I've been working recently on various fairly involved web apps that have a lot of visual complexity and computationally demanding parts implemented in wasm. 
+
+I tried to take everything I've learned over the last couple of months of working on these sites and diagnosing and fixing problems and then synthesize all of it into a new skill for reviewing web apps in a comprehensive way. 
+
+The skill covers everything from design, UI/UX, performance, testing, and more. Ensuring that your site works well on desktop browsers with a mouse and on mobile with touch.
+
+It's such a big and deep skill that you can apply it multiple times in a row to the same project using different models and harnesses and keep getting useful feedback and revisions from it.
+
+You can get it here on my $20/mo skills site:
+
+https://t.co/eg7zlfupx5
+
+I've been using it over the last few days across various projects and have found it very helpful.
+
+Gemini 3.8 Flash is a great, low-cost way to apply the skill many times to your projects without breaking the bank. But if the site is mission critical to you, it might make sense to use Fable 5.1, which works incredibly well with it.
+
+Try it with this prompt:
+
+---
+
+First read ALL of the AGENTS.md file and README.md file super carefully and understand ALL of both! Then use your code investigation agent mode to fully understand the code, technical architecture, and purpose of the project. 
+
+Then apply /web-frontend-ui-ux-excellence-on-desktop-and-mobile and /test-e2e-webapps exhaustively to every single part of the site, and try to diagnose every single flaw, problem, and deficiency in the site, and fix or improve them all in the optimal way possible. Apply react-doctor iteratively to each page and tweak/fix things until everything is green on every page. 
+
+Actually USE every feature on the site: click every button, enter input into every field, etc., in a real web browser. Take screenshots of the live page in the browser and leverage your vision capabilities to actually SEE the problems/glitches/deficiencies and revise accordingly, and then verify VISUALLY that the revisions/enhancements worked effectively to completely address the issues/flaws in design, UI/UX, legibility/usability, glitches, stuttering/flashing, etc.

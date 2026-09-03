@@ -1,0 +1,7 @@
+2026-09-02 | 177 likes
+
+Every time a new "best in the world" frontier model like Fable 5.1 comes out, I rush to try my /reality-check-for-project skill on all my projects. It's both helpful and a bit horrifying tbh.
+
+If I had to reach for an analogy, it's sort of like when you see the sunlight streaming into a room through a window and suddenly realize that there is a ton of dust on every surface that you thought was clean, and even swirling in the air itself.
+
+And now Fable makes these little html artifacts of the final report, which are nicer to read and easier to share, although sometimes they have uncomfortable truths in them, like the fact that letting the free MiniMax M3 model and Gemini 3.7 Flash run wild on this PhageExplorer project of mine was perhaps a bad idea!
