@@ -1,0 +1,3 @@
+2026-09-04 | 41 likes
+
+The sensible next moves that follow a given sequence of legal chess moves are a vanishingly thin membrane in the ambient space of all moves. Hence they’re superb candidates for extreme compression by Transformer-like models. That’s how all this deep learning works, ultimately!

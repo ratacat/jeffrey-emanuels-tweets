@@ -1,0 +1,3 @@
+2026-09-05 | 124 likes
+
+Damn, I caught Codex in the act of trying to neuter my FrankenTTS app to remove my favorite part of the whole project: the randomly selected Norm Macdonald jokes that pre-populate the text fields on startup. It wanted to replace them with lame "family-safe" slop! 🤮 I stopped it. https://t.co/3Tez3Y7fuC

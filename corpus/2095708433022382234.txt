@@ -1,0 +1,17 @@
+2026-09-04 | 193 likes
+
+It would’ve been nice to have been included in the Astra early access list. I’m always a bit confused about how that works, since you’d think by any sensible criteria I’d be included. 
+
+But I actually think it’s better for me that I not get special treatment. I pay for my tokens like anyone else and get the models when everyone does. Why? Isn’t this pure cope?
+
+My reasoning, which I realized today while bemoaning my lack of Astra, is that otherwise people would try to dismiss my work by saying something like “Well, if *I* got early access and unlimited tokens, too, then I could do all that stuff.”
+
+I have the same tools as other people and no special access. Anyone could theoretically do what I’m doing on a smaller scale with just a couple of accounts. It does require a lot of time, effort, and dedication, but it doesn’t require being part of some special club
+
+My goal all along has been to show how anyone can do this stuff. That’s why I’m so open with my workflows, prompts, and why I give away all my tools and libraries as free, open-source software.
+
+There’s an old joke, recounted by Freeman Dyson but originally by Oppenheimer, about how their colleague Julian Schwinger used to present physics to an audience:
+
+“When ordinary people give a talk, it is to tell you how to do it… but when Julian Schwinger gives a talk, it’s to demonstrate that only Julian Schwinger could do it!”
+
+As much as Schwinger’s colleagues admired his brains and algebraic mastery, they would have respected him more if he had acted less like a magician and more like a teacher. There’s a good lesson in that for all of us.
