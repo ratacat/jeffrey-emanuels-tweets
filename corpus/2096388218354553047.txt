@@ -1,0 +1,29 @@
+2026-09-06 | 92 likes
+
+The release of OpenAI's Astra model sort of overshadowed everything else that happened that day, but Anthropic made an intriguing announcement about how it had formalized the entirety of the proof of Fermat's Last Theorem in Lean, with over 12 million lines of proof code covering over 29k theorems released in a public repo.
+
+I mined all of this for insights, generalizations, abstractions, and "tips and tricks" for creating large proof corpora using Lean, which I've transformed into a new skill. 
+
+I also combined various elements from a recent private skill of mine that I've been using for math research; the purpose of these elements is to imbue a strong sense of "epistemic humility" in the agent using the skill. 
+
+This makes the agent much more careful about what it asserts and accepts as being established, with all sorts of mechanical, structural protections against "jumping the gun" and deluding itself that it has proven things that it has merely stated.
+
+This sort of skill is obviously pretty niche, and I don't know how many people will really use it or even be interested in it, but the resulting skill (called /lean-proof-mastery-with-epistemic-humility) is quite powerful.
+
+If you're a working mathematician but have not yet taken the plunge into using formalization and Lean in particular, this skill could be the perfect "on-ramp" to using Lean with an agent to help you formalize and review your ideas. 
+
+There are various ways of using the skill: you can explain your ideas in regular mathematical language or supply an existing paper or notes and the skill can help the agent formalize your proof as a set of Lean artifacts.
+
+Or it can take an existing incomplete/buggy set of Lean proofs and help fix them and finish everything for you. 
+
+It can even help in more conceptual ways, guiding your intuitive thoughts and directions into careful formal investigations that can lead to later formalization. 
+
+In the interest of time, I won't get into ALL of the many details about this skill, but it's pretty massive, with the entire skill weighing in at ~165k tokens. 
+
+It includes thirty adversarial mathematical scenarios (fake local-ring certificate, finite-test inflation, circular citation, invalid WLOG, PSLQ-relation inflation, "clearly" camouflage…) plus a 50-entry failure-mode taxonomy.
+
+It also runs a huge battery of validation and acceptance checks against purported proofs that can automatically catch many of the pitfalls that such proofs are vulnerable to. And much, much more.
+
+You can get it on my $20/month skills site here:
+
+https://t.co/SCvwT8r8Mr

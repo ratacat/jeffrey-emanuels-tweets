@@ -1,0 +1,45 @@
+2026-09-06 | 46 likes
+
+I love engaging in what I’d describe as “self-directed, intuition-guided, LLM-assisted, recreational math learning.”
+
+What does this mean, and how might it differ from what you may already be doing when trying to learn about some area of math, or brush up on one that you haven’t thought about for 20 years?
+
+Well, for one thing, the initial prompt is critical, as is using the smartest frontier model you have access to (I like to use Fable for this). 
+
+Since we are doing this explicitly for recreational purposes, it’s critical that we not let the model get sucked into some kind of dry explication that’s basically just a regurgitated Wikipedia article. 
+
+It has to grab your interest immediately by leading off with the payoff that makes you want to learn more, or you’ll probably tune out and get distracted.
+
+So I like to start with an almost clickbait question, a sort of “one weird trick” framing. Here’s an example I used tonight:
+
+“What would you say is THE key idea or analytical trick behind Lie groups and Lie algebras that both motivates the field and reflects its deepest insight?”
+
+Now, most sufficiently complex ideas are not really reducible to “one weird trick,” but the impossible framing makes the model try really hard to pack as much interesting meaning and insight into as few sentences as possible.
+
+Then, my approach is basically to read the response until the first coherent thought pops into my head in response to what I’ve read (usually this happens before I’ve even finished the entire response). 
+
+It’s often some kind of analogy or intuitive thought as my brain is processing things. Then I pose that as a question in a follow-up message to get the model’s take on what I’ve said. 
+
+Either what I said is right, and it helps me make a connection, or it’s wrong and the model helps me clarify my confusion. In this instance, my follow-up was:
+
+“Is that basically like the fully generalized version of the insight that you can understand a real function very well by understanding its various derivatives?”
+
+Then I do the same thing again as I read the second response, and I also usually go back and finish reading the first response. Then I send the next follow up message. In this case, it was:
+
+“In a sense, is the whole field an investigation into the consequences of the generalized exponential function having the special properties that it does?”
+
+The models are polite and will try to not make you feel dumb, but you can sort of gauge how much they agree with you despite that. 
+
+I then like to ask for clarification of specific things in their replies that I’m not totally sure about, and I also like to try to relate things to concrete applications. Here, I asked:
+
+“What is the Jacobi identity and what’s the intuition behind it? And how is the commutator stuff referenced in the BCH theorem related (if at all) to the commutators used in QED and Feynman diagrams?”
+
+The great part of doing this with frontier models is that they know all about the math AND physics and the rest of science. If I asked that last question to my college math professors, most of them would probably have to get back to me about it!
+
+Anyway, I find that this is a useful and repeatable process to get yourself engaged with thinking about math in a fun way that gives more of a role to your unconscious intuitions and keeps things moving so you’ll actually stay interested.
+
+Sticking with it is often the hardest part when you no longer have homework to solve or exams to take as a motivating force.
+
+Anyway, if you want to read the whole conversation, you can see it here:
+
+https://t.co/ovBPtLE79H
