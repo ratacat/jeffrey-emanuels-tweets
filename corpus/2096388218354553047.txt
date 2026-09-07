@@ -1,4 +1,4 @@
-2026-09-06 | 92 likes
+2026-09-06 | 103 likes
 
 The release of OpenAI's Astra model sort of overshadowed everything else that happened that day, but Anthropic made an intriguing announcement about how it had formalized the entirety of the proof of Fermat's Last Theorem in Lean, with over 12 million lines of proof code covering over 29k theorems released in a public repo.
 

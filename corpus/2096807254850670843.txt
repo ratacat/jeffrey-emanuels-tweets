@@ -1,0 +1,15 @@
+2026-09-07 | 30 likes
+
+Reading this essay by Jakub inspired me to dust off two pieces of work I did on the subject of AI alignment and control. One is an essay from June of 2024, and the other is a more technical proposal from April of 2025. 
+
+I tried to take the best ideas from both of them and combine them into a plan for a new project which I'm calling FrankenAlignment.
+
+Part of my motivation here was a desire to establish my priority on many of these ideas, which I believe I am the first to publicly propose (luckily, everything is timestamped by GitHub).
+
+But the bigger reason is that I want to turn these abstract concepts into something concrete and tangible: a useful, pragmatic toolbox for agent alignment. 
+
+Unlike 2+ years ago, when I first conceived of most of these ideas, I now have a vast array of fundamental building-block software in the form of my FrankenSuite of projects. The ideas and architectural innovations of many of these projects strongly influenced the design of FrankenAlignment.
+
+You can read the comprehensive plan document here:
+
+https://t.co/PYPRArh8VU
