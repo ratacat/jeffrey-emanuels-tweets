@@ -1,0 +1,9 @@
+2026-09-08 | 432 likes
+
+My take on the Navier-Stokes OpenAI controversy is that I highly doubt the salacious allegations that OpenAI spied on particular user chat sessions in a targeted way to get the scoop on the approach the researcher was using. They probably heard about the rumors that a solution was close just like everyone else. 
+
+But I DO think it’s kind of a shitty thing to do, when you’ve heard that an academic is in the last part of a career-defining, arduous intellectual journey, to rush out to put 10,000 agents to work on it at once and spend millions of dollars, just to be a spoiler and beat them to the punch.
+
+This sort of rush isn’t new in science; if you read The Double Helix by James Watson, you can see a similar rush to figure out the structure of DNA where they were competing with Linus Pauling and other groups. 
+
+But that feels very different, like honest competition between scientists. Tough, but honorable. This feels like showing up with a bunch of pro-football ringers to a kids’ touch-football game to steal the championship.

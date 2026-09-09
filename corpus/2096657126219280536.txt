@@ -1,3 +1,3 @@
-2026-09-06 | 121 likes
+2026-09-06 | 128 likes
 
 A promise I make to all users of my open-source repos, of which there are now over 100: if you run into any bugs or problems, file a GitHub issue about it and my guys will triage it the same day. And I don’t care if your agents file the issues, either. Feature requests, too. https://t.co/ydJMyH0iGN

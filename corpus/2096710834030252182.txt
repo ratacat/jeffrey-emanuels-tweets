@@ -1,4 +1,4 @@
-2026-09-06 | 10 likes
+2026-09-06 | 22 likes
 
 You may recall my recent post about a related project. The idea there was to use more traditional approaches with geometry to compute a point cloud from the video. I'm still developing that, but I realized that Astra could likely shortcut the whole thing.
 

@@ -1,0 +1,11 @@
+2026-09-09 | 85 likes
+
+I made a nice skill for turning an enormous folder of PDF documents into accurate, nicely formatted, GitHub-Flavored markdown files in the most economical way possible. Depending on the type of PDF, it will try to extract the text mechanically, but if needed, it will use OCR.
+
+It uses a swarm of agents orchestrated via my ntm tool to do this quickly and efficiently. The best bang for the buck comes from using Gemini 3.8 Flash with Antigravity, but if you don't have that, it will try to use other combinations (like Codex with Terra/Luna workers).
+
+The skill has a bunch of scripts that help it find errors and problems and validate results. If you have a folder with thousands of complex documents (say, legal docs) with a mixture of digital and scanned PDFs, this skill is the best way to get very high-quality outputs without wasting a ton of money unnecessarily on tokens.
+
+You can get it on my $20/month skills site at:
+
+https://t.co/HjoZ4EgUbG
