@@ -1,0 +1,39 @@
+2026-09-10 | 21 likes
+
+I realized that I would probably get more interest in my AI music theory tool (mtdt) and corresponding agent skill library if I did impressive things with more mainstream/popular tunes rather than an obscure Irish folk song from the 18th century like in my quoted post.
+
+So this time, I took my 3 favorite tunes from Zelda: Ocarina of Time (i.e., Saria's Song, the Song of Storms, and Zelda's Lullaby) and had them reimagined by the AI agent using my system in the style of various famous classical composers: Schubert, Schumann, Rachmaninoff, and Liszt.
+
+I had GPT-6 Astra xhigh acting as the "controller" agent create the prompt and launch another instance of Codex (the "worker" agent) in a fresh workspace with all 322 skills loaded, and then monitor the process. I gave the controller agent only very high-level instructions about which songs from the Zelda game I wanted and which composers to use for which songs.
+
+I also told it stuff like: 
+
+"For actually rendering the written music to audio, we should use the nice concert piano instrument with reverb that came from my jazz chords project originally (see /cass) and we should humanize the playing with a skill so it doesn't sound robotic in tempo and dynamics; it should sound like a professional pianist specializing in the music of the particular composer. 
+
+And try to do a final critical pass over each piece with fresh eyes looking for any deficiencies and blunders... does it REALLY sound like that composer's work? Can you still hear the original song's essence in the new, reimagined version? Is it good?
+
+Does it follow the rules and structure of music theory well, through the lens of that particular composer? If not, then FIX or IMPROVE those things (instruct the other agent to do so using its skills and the mtdt tool!)"
+
+---
+
+But then the controller agent was in charge and handled managing the worker agent (which did nearly all of the actual labor of making the tracks). 
+
+It's a bit counterintuitive that this creator-critic split would work better (why not just go directly to the agent doing the work?), but I sort of stumbled on it by accident because I didn't want to mess with my default agent skills and only wanted the 322 music theory skills to be visible to the worker agent. That's why I originally had the controller agent launch the other agent: to specify that.
+
+But then I realized that it's very handy to have an independent agent handling the details for me. It's sort of like a rich English aristocrat in the 1700s having an awesome butler to handle the rest of the household staff. Just tell the butler what you want in a kind of abbreviated shorthand and he will turn around and give very detailed instructions, monitor everything, and do quality control for you so you don't have to get into the nitty-gritty details so much. 
+
+It gives you another set of eyes, even if it's using the exact same underlying LLM, and there's something about the gestalt shift of being a critic versus a creator that leads to better objectivity and honesty and, ultimately, better-quality results.
+
+Anyway, the first results made me realize that it had taken my instructions about being able to hear the original song clearly in the reimagined version too literally, so I told the controller agent: 
+
+"It too directly has the entire original melody within it unaltered, which is jarring and not like <composer x>. It's also too long; they should be closer to 1.5 to 2 minutes each. We don't need to start from scratch, but make sure you address those issues."
+
+That's about the extent of my feedback and iteration here. And to be clear, the original versions were pretty nice, too. I'll have some other fun demos coming out soon as well.
+
+Anyway, attached here are results from 4 composers as animated scores. You can also get the PDF of the complete scores here:
+
+https://t.co/s9t67YnA1G
+
+So do they actually sound like those composers wrote them? It's sort of an impossible task, in that the style of the original melodies is really nothing like the styles of those composers. But within those constraints, I think it did a respectable job.
+
+If you're a fan of that Zelda music and like classical music you will probably get a kick out of these. I'm positive that with more focused prompting and iteration I could get much better results from the system, but I sort of just wanted to see what it could do with minimal interventions. Curious to hear what people think.

@@ -1,0 +1,3 @@
+2026-09-09 | 6 likes
+
+I should clarify that it did NOT make the video, which I had Fable with Claude Code make using the PDF score and wav file. That functionality will be done automatically in mtdt soon, though, and will look much slicker.

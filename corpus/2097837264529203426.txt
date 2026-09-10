@@ -1,0 +1,27 @@
+2026-09-09 | 34 likes
+
+This is a better and more challenging demonstration of my AI music theory cli tool and skills library. 
+
+I told the agent only that I wanted to take the traditional Irish song, Clare's Dragoons, and to create a piano rendition of the main verse and chorus followed by a series of variations in the style of Mozart's famous "Twinkle Star Variations" (K. 265/300e), and that it should spawn Codex with the skills and prompt it to do that for me and to invoke any relevant skills in the system.
+
+This was in Codex with GPT-6 Astra xhigh and with the workspace loaded up with just the 320 skills that are part of the music AI skills library, and with the mtdt (music_theory_data_tool) cli tool available for use by the agent.
+
+The agent was able to find suitable sheet music for the Clare's Dragoons song and then used mtdt to convert that into its internal representation form, which makes it easy for the agent to work on the music and to convert it to any other desired format (like a PDF engraving, midi files, etc). 
+
+It then researched the Twinkle Star variations and used various skills to compose and review and refine the variations.
+
+Why do I think this task is more demanding than writing a fugue in the style of Bach? Well, for one, it's a lot more structured, so you have much less flexibility and room for "artistic license."
+
+Ultimately, you have to render the original tune accurately, and then the variations have to sound similar enough to the original tune while introducing various creative musical manipulations to be interesting. 
+
+It's pretty challenging to balance those two priorities: it's easy to lose the thread of the original tune, and easy to overcompensate for that and end up with something that only slightly tweaks one or two aspects of the original.
+
+Now, this is obviously not at the level of Mozart, but I think it's not that bad and will likely get much better over the next year as I improve the skills and tool and especially as models get better and more multimodal, so they can "listen" to the results in addition to reading the score.
+
+I'll provide the full prompt that the "controller" agent wrote for the agent that actually created the variations in a reply to this post. 
+
+You can also see in the screenshots in this post the massive number of intermediate working files and artifacts created during the process, which gives a ton of visibility into how the agent did its work and reached its decisions. Not a black box!
+
+And I can assure you that I didn't mess with anything at all: this entire process was automated from start to finish and you're seeing the exact end product the agent produced without any revisions or feedback coming from me or any other human (the controller agent did ask for some revisions from the worker agent, which you can see in the final pic in this post).
+
+I'm trying to think of some other fun demonstrations. Maybe taking famous video game music (Mario 2? Ocarina of Time?) and making a version in the style of Schumann or Rachmaninoff. I'm open to suggestions!

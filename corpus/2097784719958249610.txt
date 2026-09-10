@@ -1,0 +1,17 @@
+2026-09-09 | 445 likes
+
+I mentioned previously that I had been working for a couple months now on a system for applying AI to music theory. It's one of my few closed-source projects.
+
+It's a combination of a Rust cli tool, mtdt (music_theory_data_tool), which handles all mechanical aspects of importing and exporting and manipulating music in any format (midi, PDF, MusicXML, audio, etc.), and a huge skills library which is based on massive amounts of academic music theory and more.
+
+I asked the system to create a Bach fugue using GPT-6 Astra and the mtdt tool and the relevant skills, and it created the following. Notably, this didn't involve any external software other than mtdt, including the creation of the print-ready PDF score.
+
+It can do much, much more than this though. It can take a melody and write counterpoint for it, grounded in the theory, and using the mtdt tool to help it mechanically explore the space of "legal" possibilities while using its skills and intelligence to make artistic choices.
+
+It can make a ragtime version of a midi file. It can take a piano piece and re-orchestrate it for a brass band or string quartet. It covers a huge amount of stuff across over 300 skills. 
+
+I'm not sure what I will do with the system ultimately, but I envisioned it as being an AI workstation for professional composers and musicians. You can see in the screenshot that it does a huge amount of intermediate work that is inspectable and legible; it's intentionally NOT a black box.
+
+Instead of outsourcing the entire musical process end-to-end like Suno, this system is about augmenting the creative human with as much or as little automation as desired.
+
+I continue to work on it with a couple agents every single day and it will keep getting better and better, and then with each new model release it will be better able to leverage the vast amount of expertise and knowledge about music that is already embedded in its cli tool and skills library.
