@@ -1,4 +1,4 @@
-2026-09-10 | 21 likes
+2026-09-10 | 48 likes
 
 I realized that I would probably get more interest in my AI music theory tool (mtdt) and corresponding agent skill library if I did impressive things with more mainstream/popular tunes rather than an obscure Irish folk song from the 18th century like in my quoted post.
 

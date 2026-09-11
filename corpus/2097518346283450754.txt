@@ -1,4 +1,4 @@
-2026-09-09 | 128 likes
+2026-09-09 | 130 likes
 
 I made a nice skill for turning an enormous folder of PDF documents into accurate, nicely formatted, GitHub-Flavored markdown files in the most economical way possible. Depending on the type of PDF, it will try to extract the text mechanically, but if needed, it will use OCR.
 

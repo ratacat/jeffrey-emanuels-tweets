@@ -1,3 +1,3 @@
-2026-09-06 | 322 likes
+2026-09-06 | 323 likes
 
 I'm making a crazy new skill now for taking drone videos from flying around your house and then using ffmpeg, Astra with the Codex app and computer-use plugin, and Blender MCP to make a super-accurate, labeled model of your home and its environs. It'll fully automate the process.

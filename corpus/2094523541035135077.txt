@@ -1,4 +1,4 @@
-2026-08-31 | 155 likes
+2026-08-31 | 157 likes
 
 There are basically two startups' worth of ideas here in these new repos that I just open-sourced, but I don't have the bandwidth to build AND attempt to monetize them myself, at least directly (I will be using both as part of a larger system I'm working on for applying AI to various building trades). 
 

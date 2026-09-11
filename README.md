@@ -69,7 +69,7 @@ Cron uses `--catch-up`, so it expands the latest-tweets window until it reaches 
 
 ## Stats
 
-2,371 tweets | 1,319 original | 2025-09 — 2026-09 | 93.1 avg likes | 13,817 avg views
+2,376 tweets | 1,322 original | 2025-09 — 2026-09 | 93.2 avg likes | 13,849 avg views
 
 ## License
 
