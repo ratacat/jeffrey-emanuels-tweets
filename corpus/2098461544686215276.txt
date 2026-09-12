@@ -1,0 +1,55 @@
+2026-09-11 | 293 likes
+
+This skill for turning a bunch of drone videos of your house into a 3D model is finally done, and the results are truly spectacular.
+
+I'm not going to post them for my house because it's TOO accurate and I don't want to dox myself. But you need to see it to believe it.
+
+You can get it on my skills site here:
+
+https://t.co/LAercVciHq
+
+Use the Codex app with Astra to run it (I recommend at least medium effort). The more passes you do, the better the result will be. I've already done 40 passes, and it keeps trying to dial in the shrubs and other stuff more perfectly. At some point you have to declare it good enough.
+
+The skill can automatically install Blender and the Blender MCP for you, along with anything else you need. It does a huge number of clever things to get to a better-quality final result:
+
+1. Gets GPS coordinates from the video and uses them to look up topographical data and county tax lot maps, if available, to determine the boundaries of the property.
+
+2. Gives every single thing in the model a super precise, detailed name that explains its functional purpose, down to individual door jambs and window mullions.
+
+3. Finds cars in the scene and asks you to specify the make/model/year so it can look them up to get an absolute size reference.
+
+4. Uses the high-resolution telemetry data that DJI drones save as an .srt file along with the .mp4 video files to recover the exact path and orientation of the drone and camera, and uses these in smart ways to help recover the underlying geometry.
+
+5. Takes the reconstructed flight path and the candidate 3D model/scene and inserts a virtual drone into the Blender scene. This forms a powerful flywheel where the agent can iteratively switch back and forth between making tweaks to the scene and then viewing them "as the drone" and comparing them side-by-side, frame-by-frame, with the underlying videos. In this way, it can achieve basically perfect accuracy given enough iterations.
+
+6. Uses a detailed, structured approach to ensure that all major architectural details are correct and physically realistic. This includes checklists and things like making sure the big details are right before getting lost in the details.
+
+And a lot more like that. The goal here is not to make a cool-looking 3D model of your house, although you DO end up with that, and it's incredibly fun and satisfying to look at it in Blender and fly around and rotate it. Kids LOVE seeing their house like that.
+
+The goal is to get a truly accurate digital twin of the exterior of your house and property that can be used in all sorts of useful ways, like doing "what if" scenarios once you have the actual state as a baseline and seeing what things would look like from various vantage points.
+
+What if we cut down that tree there? What if we added a shed? Would we be able to see it from that window? Is there enough room to add an extension here?
+
+But it can be used for SO much more than that. Because all the parts are so precisely labeled, the agent can do all kinds of calculations for you.
+
+For instance, suppose you want to paint the exterior siding of your house but not the stonework. Ask the agent to estimate how many cans of paint you would need! You'll get an ultra-precise answer.
+
+You can get really detailed cost estimates when the agent can easily read off and calculate the exact dimensions of EVERYTHING, and then look up specific products on Home Depot's website and see what fits and how much it costs at your local store.
+
+I'm really excited about the potential here. I knew it would work, but I didn't realize how good the quality could get with Astra until I saw it. You've seen a lot of demos of people taking a couple of photos of a physical space and getting what look to be nice models out of it.
+
+That's NOT what this is. This is taking a much, much richer data set: multiple overlapping drone videos from different angles, different heights, overhead shots, etc., all enriched with flight path data and GPS coordinates.
+
+And btw, you can get a DJI Flip drone for under $500, which works perfectly for all this, is a lot of fun to use, is very easy to control, and can help you capture everything you need to do this in under 30 minutes.
+
+The videos don't need to be perfect or even good; they just need to have enough overlapping views and completely capture everything visually from multiple vantage points.
+
+Not surprisingly, given much more data and clever math, the models are able to get much more from that. And the accuracy is what changes this from a fun thing to a truly useful thing: a digital twin.
+
+The next step for me is to make a corresponding skill for mapping the interior of your home, which I will do using a set of smartphone videos. This will be a bit tougher, but I have some good ideas for this. 
+
+One of them is to make the skill able to leverage dual videos taken at the same time from slightly different angles, say with two iPhones, or using an iPhone and the video feed from the Meta glasses or something similar.
+
+If you already have a super-accurate model of the exterior of the house, that grounds things a lot and makes it much easier for the model to impute things about the interior geometry, since ultimately the two need to mesh perfectly in one objective reality. 
+
+At that point, you would have a true digital twin that you can continue to iterate on and improve the utility of. For instance, I could make another skill specifically for mapping your water pipes and electrical connections, and that could be layered in.

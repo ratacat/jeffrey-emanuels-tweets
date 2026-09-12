@@ -1,0 +1,5 @@
+2026-09-11 | 12 likes
+
+BTW, it seriously understates what this is to just call it an agent skill. It's a total of 395,108 tokens. It has over 900kb of just Python code. 
+
+It's really a complex AI-software hybrid system. You need to change how you think about skills if you haven't seen a skill like this before!

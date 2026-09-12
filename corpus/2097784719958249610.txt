@@ -1,4 +1,4 @@
-2026-09-09 | 500 likes
+2026-09-09 | 503 likes
 
 I mentioned previously that I had been working for a couple months now on a system for applying AI to music theory. It's one of my few closed-source projects.
 

@@ -1,0 +1,19 @@
+2026-09-11 | 19 likes
+
+Oh yeah, I should mention: you don’t need to be technically sophisticated to use this. If you have a Mac and a DJI drone and a ChatGPT subscription, you can easily do this. 
+
+If you don’t, you can buy those things quickly and easily and for much less than it would cost to get anything like the final result here from an architect! Here are the steps that anyone can follow:
+
+1) Use the ChatGPT Mac app and install the skill. There’s a one-click skill install option on my site that tells the agent exactly how to add the skill if you’re a paying member of my site.
+
+2) Record the drone flyover videos of your house and property. It’s ok if you can see neighboring homes, it’s ok if there are a bunch of short videos or one long video. The most important part is to get good coverage (this can be hard with a lot of trees, so it’s good to land and launch a few times if needed).
+
+3) Plug the drone into your Mac using a USB-C cable. You’ll see the storage folder of the drone appear in Finder. Each flight recording is 3 linked files: an mp4 video, an srt telemetry file, and an m4a audio file. Copy all of those to your local computer for speed and so you can unplug your drone.
+
+4) Invoke the skill you just installed and point it to the location on your computer that contains just the drone files.
+
+Everything after that should be automated. But of course you can inspect the files as it goes and give it feedback, although you should wait for it to do at least 10 passes on its own first because chances are that it will find and fix any issues itself, totally autonomously.
+
+If you have accurate blueprints or plans for your house, you can also give those to the agent and tell them to use them (maybe you can get the interior mostly fleshed out from that in one pass), but that’s totally optional and you’ll get great results with just the drone files.
+
+Even if you’ve never flown a drone before, it’s really easy. My 5-year old was doing it. The DJI Flip for under $500 has decent object detection and avoidance (just be careful with branches and leaves) and can automatically return to where it took off from. It can even land on your outstretched hand automatically!
