@@ -1,3 +1,3 @@
-2026-08-14 | 69 likes
+2026-08-14 | 68 likes
 
 We really need more CPUs and RAM if more and more people are going to be using Rust and using tons of agents. Currently, my various agent swarms have 560 separate Rust compilation process underway across a pool of ~15 remote build workers via my rch system. Needs a lot of cores! https://t.co/tU9vJAHBy7

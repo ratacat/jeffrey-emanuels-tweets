@@ -1,0 +1,31 @@
+2026-09-12 | 69 likes
+
+I'm now working on the companion agent skill to this for reconstructing the inside of your house in 3D using Blender.
+
+It can take the final result of the drone-video-based exterior reconstruction and stitch that together with the inside so you get a seamless, accurate digital twin of your entire home.
+
+Several people asked me: “Why not just fly the drone through your home? Then you can use drone footage for everything.” Well, if you've ever tried flying a drone inside, it's not easy to do without crashing it and potentially hurting someone or breaking things.
+
+And besides, I don't think you even need it. If you already have the exterior of your house mapped very accurately in 3D in a Blender scene, you are not starting from scratch. The interior geometry must be perfectly compatible with the exterior, and every door, window, etc., provides an anchoring point.
+
+You can then do a lot of clever things to get good results. People immediately think of stuff like using the lidar or orientation and accelerometer sensors in an iPhone, but then you're immediately in the domain of custom apps or third-party apps that have all kinds of issues and drawbacks.
+
+As Elon says about lidar in cars, we don't need to shoot laser beams to drive, and we certainly don't need laser beams and other exotic sensors to observe the 3D structure of our home interiors.
+
+I wanted to make this new skill as universal and easy to use as possible without requiring exotic hardware or additional data sources, like existing floor plans. But if that stuff IS available, the skill will use it.
+
+My basic idea is to just walk around your house with TWO smartphones at once (one in each hand, pointing in different directions), or one smartphone and something like the Meta glasses or a GoPro on your head.
+
+You simply walk around recording these two or three simultaneous videos while narrating which room you're in. You open each door to your house and walk outside and turn around. This is critical for helping the agent anchor the inside to the existing exterior geometry.
+
+That audio track is used both for synchronizing the videos (critical to being able to use clever geometry and photogrammetry tricks to help recover the underlying scene structure accurately) and, together with my FrankenWhisper project, for local transcription so that your own preferred names for each room or part of your house (is it the “Living Room” or the “Family Room” or the “Den”?) can be used as the labels in the Blender scene.
+
+It focuses first on getting the large-scale geometry and floor plan right before focusing on smaller objects. And all movable objects and furniture are grouped separately in the Blender scene to make it easy to turn them all off so you can play around with different furniture, interior designs, etc.
+
+Newer smartphone cameras are so good. Recent iPhones can easily record 4K video at 60 fps. Having two such videos of the same location from slightly different angles (hold one phone higher in your right hand and one lower in your left hand, for instance) gives you a massive amount of information.
+
+Frontier models like Astra are so good at 3D understanding that this is enough to get very accurate results. And again, you likely won't be doing this in a vacuum if you already have the exterior model done.
+
+That one difference is so huge, and it's why I'm confident this combined approach will give much better results than what people get from these smartphone apps for mapping out their homes from the inside.
+
+Anyway, the implementation plan for the new skill is already done and is over 2,000 lines long. I have an agent creating the skill now, after which I will do tons of revising and improving as I use it to map out my own home, think of more ideas, and encounter problems and issues.
