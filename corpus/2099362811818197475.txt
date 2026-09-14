@@ -1,0 +1,5 @@
+2026-09-14 | 1 likes
+
+If you want to see a non-demo example of FrankenTUI in the wild, see the website of my Rust version of MCP Agent Mail, which has a TUI dashboard made using it (and you can see the REAL TUI in the browser since it can compile to wasm!):
+
+https://t.co/HZLXsCFoub
