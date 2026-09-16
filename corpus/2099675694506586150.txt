@@ -1,0 +1,21 @@
+2026-09-15 | 210 likes
+
+I've always been fascinated by Einstein's famous "Annus Mirabilis" of 1905, when he wrote 4 papers that changed the world. 
+
+How is that even possible? I've tried reading the original papers but found them hard to parse and really understand.
+
+So I decided to change that with a new website that shares many ideas with my other project, https://t.co/5oEIPVkNQl. 
+
+This new project will be hosted soon at https://t.co/kgXU4N1IEY and will be dedicated to documenting and explaining these 4 seminal papers in the most intuitive, helpful, interactive, and adaptive way possible for anyone, no matter what your background or expertise.
+
+I'm finished with the final merged plan, which was a collaboration over several revisions between Fable Max and Astra in GPT Pro. You can read both versions of the comprehensive plan as well as the final merged version in the repo here if you want to get more insight into my approach:
+
+https://t.co/8RWB6lymoM
+
+I'm finishing up the beads polishing now. The beads are already ~4mb of text in the jsonl file, comprising 411 beads! You can see what they look like here if you're curious:
+
+https://t.co/AkwZuvKltb
+
+I'll be implementing the entire project over the next few days. I'm excited for this as a reader and user myself! 
+
+The plans are very ambitious in terms of pedagogical goals. This stuff is hard, and I want ANYONE to be able to appreciate them in as much depth as they can or want to.

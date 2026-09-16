@@ -1,0 +1,5 @@
+2026-09-16 | 21 likes
+
+How I think about token usage and overall project development velocity with agent swarms these days. 
+
+There’s no simple formula or tradeoff; it all depends on your projects, your methodology and skills, your financial budget, and how much of a hurry you’re in to get a result!

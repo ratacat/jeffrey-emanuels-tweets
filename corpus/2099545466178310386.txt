@@ -1,0 +1,31 @@
+2026-09-14 | 77 likes
+
+I've posted recently about various experiments I've done using GPT-6 Astra with my music theory AI system, which includes a custom tool called mtdt and an elaborate skills library that includes over 320 agent skills containing a massive amount of knowledge and expertise about music theory and practice.
+
+The experiments were mostly things like having the agent create a new organ fugue in the style of Bach, or making creative reimaginings or "pastiches" of one piece of music in the style of another composer (e.g., "Maybe I'm Amazed" by Paul McCartney in the style of Prokofiev). I can link to these experiments in the replies if you're curious.
+
+But today I want to tell you about a more pragmatic use case for music professionals. My younger brother, Sam, is a working conductor at an opera house in Germany. He told me a couple of days ago that he is conducting an excerpt from the Verdi opera "Simon Boccanegra."
+
+The only problem is that the excerpt contains a couple of vocal parts, and his orchestra doesn't have a chorus. So he needed to rewrite those vocal parts for the oboes, clarinets, and bassoons. You can see the full details in the attached image, which shows his request to me. He estimated that it would take many hours to do this work.
+
+All he had to work from was a scanned PDF from an old edition of the opera score published in the 1800s (see the image below), which is what essentially all opera houses use for this sort of thing. 
+
+His plan was to reuse that score for most of the players and then to handwrite a separate score for the new parts that he could hand out to those particular instrumentalists.
+
+But we are living in the future now. I simply told Astra in Codex to use my tool and skills to manage the process and pasted in my brother's email verbatim.
+
+The main agent's job was to research the skills library and my tool and to write a detailed prompt to accomplish the goal, naming the various relevant skills from my skills library explicitly, and then to launch a fresh agent in a new workspace containing just these music theory skills, my mtdt tool, and the prompt.
+
+It was able to read all the music and put it into a nice editable format, and then it did the exact thing my brother asked for. At first it added new instruments to do the vocal parts, but my brother clarified that it should have used the existing instruments to do this, since they were already there. 
+
+It also prepared the combined score with each instrument listed separately, which works but is less convenient than the grouped presentation used in the original score, so I told it to copy that format in its final result.
+
+That's the only intervention I had to make. The final result is shown below. Not only does it have a perfectly typeset, camera-ready PDF score for the entire piece, but it was able to prepare separate PDFs for each instrument (I'll post these in the replies). 
+
+And every single score it made was also presented in a fully editable version for the LilyPond software. I could also export anything in any format I want, like MIDI or MusicXML.
+
+You can see my brother's disbelief and delight at the results. He was skeptical it would be able to do something like this, but was instantly converted into a believer. He thinks this can change the way things work at orchestras around the world.
+
+Every piece can now be custom-tailored for the exact instrumentalists you have instead of omitting sections or needing to hire additional players.
+
+And this is only scratching the surface of what is possible with this system.
