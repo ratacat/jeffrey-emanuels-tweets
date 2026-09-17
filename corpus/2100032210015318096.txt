@@ -1,4 +1,4 @@
-2026-09-16 | 21 likes
+2026-09-16 | 32 likes
 
 How I think about token usage and overall project development velocity with agent swarms these days. 
 

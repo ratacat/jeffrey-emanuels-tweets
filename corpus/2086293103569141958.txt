@@ -1,4 +1,4 @@
-2026-08-09 | 67 likes
+2026-08-09 | 66 likes
 
 Wow! This morning I got my FrankenTTS project working on my Mac, but it was ~8x slower than real time for synthesis. 
 
