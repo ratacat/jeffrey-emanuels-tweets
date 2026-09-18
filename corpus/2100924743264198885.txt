@@ -1,0 +1,13 @@
+2026-09-18 | 15 likes
+
+If you've never heard of a fugue before, it's a kind of musical composition that is similar to a canon like "Row, Row, Row Your Boat," but instead of each voice following the exact same melody with a delay, the voices only have to start out with the same melody and can then evolve in complex ways that obey the laws of counterpoint.
+
+The most famous composer of fugues is Bach, who wrote two full sets of fugues in every musical key in his great works, Books 1 and 2 of the Well-Tempered Clavier. 
+
+So it was only natural that I ask GPT-6 (aided by my AI music theory system, a Rust CLI tool called mtdt, together with an agent skill library comprising ~330 skills) to make a fugue in the style of Bach.
+
+But what melody to use? I wanted something nice and recognizable that was still simple enough that it would work well for a fugue. 
+
+It can't be too long, and it's better if it has a certain kind of simplicity that makes it easier to combine with altered versions of itself at various delays.
+
+I ended up choosing John Williams' theme from the movie Home Alone (called "Somewhere in My Memory"), and I think it came out really well! If you're a fan of the movie and Bach, you couldn't ask for much better than this for a mash-up.

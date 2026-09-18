@@ -1,0 +1,3 @@
+2026-09-17 | 51 likes
+
+It’s just like antibiotics, where bacteria develop resistance. So you pick your battles and only intervene when it’s worth it, but the general trend is in a bad direction. This is why we need better ways of directly monitoring internal activation states, which are harder to hide.

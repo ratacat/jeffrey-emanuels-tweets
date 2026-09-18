@@ -1,0 +1,9 @@
+2026-09-18 | 92 likes
+
+Wow, check out this DuckTales theme as a three-voice fugue in the style of Bach's Well-Tempered Clavier.
+
+My AI music theory system, which consists of a Rust CLI tool called mtdt and an agent skill library comprising ~330 skills covering every aspect of music theory, has really allowed GPT-6 Astra to understand the rules of counterpoint and how Bach specifically constructed his fugues.
+
+If you're familiar with Bach's works, there is an unmistakable fingerprint here that goes beyond the typical Baroque tropes.
+
+If Johann Sebastian were to sit around watching The Disney Afternoon in the early ’90s, I'm confident he would have written something along these lines (lol).
