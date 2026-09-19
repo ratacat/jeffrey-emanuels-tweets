@@ -1,0 +1,5 @@
+2026-09-19 | 198 likes
+
+Before I try to do anything with @VictorTaelin's Bend2 language, I'm using every trick and technique I know to create an incredible agent skill for it.
+
+Then I'll leverage that to make a skill for porting to it. Then, port time. I'll post the finished skill on jeffreys-skills.md. https://t.co/DX4QeOvNzU
