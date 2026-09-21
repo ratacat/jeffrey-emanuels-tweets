@@ -1,0 +1,42 @@
+2026-09-20 | 36 likes
+
+In the pantheon of classical music, Bach's Chaconne for solo violin has to be near the very top of the heap. It's an incredibly emotional, moving work. If you've never heard it before, I highly recommend taking the time to listen to this version:
+
+https://t.co/55jMRj0tkc
+
+Through the years, this piece has inspired many composers with its haunting, bittersweet quality. One of these, Busoni, was moved to write a piano transcription of the Chaconne which has itself become revered, which is unusual for a derivative work. You can listen to it here:
+
+https://t.co/hvzcSJ4ZSR
+
+What's fascinating to me about Busoni's version is that, while renditions of orchestral works for the piano are usually known as "piano reductions," going from a single violin to a piano in the way Busoni does it is really more of a "piano expansion." He is adding more content, but of a character that's entirely consistent with the musical qualities of the original.
+
+Surely, there must be some kind of abstract patterns that we can generalize through careful study of how the original score was transformed into the piano version (see the attached images showing the first page of the original for violin and the first page of the piano version). Then we could try to apply similar principles and techniques to another solo violin piece and "Busonify" it, as it were.
+
+At least, that's what I set out to investigate yesterday using my AI music theory system, which consists of a software tool called mtdt for use by AI agents (already millions of lines of Rust code), as well as a library of over 330 agent skills spanning every aspect of music theory and practice.
+
+Now, Busoni only wrote a piano transcription for this one single movement of Bach's solo violin music. So, as a test, I took another slow movement from a different Bach violin sonata, with the goal of thoroughly Busonerizing it. See the last image for the first page of this other piece; you can listen to it here for violin (it's the first movement):
+
+https://t.co/t4drvDd66C
+
+So how did I do this? I'll show you the exact prompt I used below with Codex and GPT-6 Astra xhigh:
+
+---
+
+Use /new-project-remit to work on this:
+The new project is to take these 2 input PDFs: 'bach_chaconne_original.pdf', 'IMSLP893614-PMLP244087-Bach-Busoni_Chaconne_NRR.pdf' and do this with them: 
+
+`Here are two PDF scores, one for the original Bach Chaconne for violin, and one with the Busoni piano version; usually this sort of thing is called a "piano reduction," but in this case, it's more like a "piano expansion" because it captures everything from the original and adds even more to take full advantage of the possibilities opened up by having two hands on a piano.
+
+I first want you to convert 100% of each score to the internal format used by mtdt so that you can TRULY analyze these in a very deep and profound way. Then I want you to analyze both of them using ALL relevant skills from the mtdt skills library (including skills related to melody, harmony, rhythm, counterpoint, Bach-specific skills, violin- and piano-specific skills, etc.) and really get to the bottom of both pieces and what makes them special.
+
+Then, I want to truly understand how Busoni made his version from the original: what techniques, tricks, concepts, approaches, devices, etc. did he leverage? How and why? How can we generalize and abstract these so that we can apply a similar approach to other pieces by other composers and for different instrumentation originally.
+
+Surely there are some deep invariants at a conceptual level that we can tease out and isolate and distill. Then I want you to take ALL of that and make a new skill called /dp/music_theory_data_tool/skills/busoni-style-piano-expansion-version that captures everything needed for a smart, diligent agent to create a NEW similar version of a different piece of music. In order to test the new skill, we can try applying it to bwv_1005_adagio.png`
+
+---
+
+The result, which I had the system render using warm, analog-sounding synths (this seemed less grating to my ears than the piano and organ versions I also generated), is presented in the animated score video below. 
+
+I'll leave it to others to judge how successful it was, but I quite enjoy listening to it. You can get the sheet music for it here if you want to try playing it yourself:
+
+https://t.co/Y0GOsddFdX

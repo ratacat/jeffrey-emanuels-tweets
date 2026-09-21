@@ -1,4 +1,4 @@
-2026-09-17 | 290 likes
+2026-09-17 | 310 likes
 
 Just finished my obligatory first project centered around the new Jev classifier model, called SkillRanker.
 
