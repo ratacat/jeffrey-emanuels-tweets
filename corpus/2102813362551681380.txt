@@ -1,0 +1,17 @@
+2026-09-23 | 150 likes
+
+OK, I can officially confirm that Opus 5.5 is really good at musical tasks! So far, most of my experiments with my new AI music theory system (a software tool for agents called mtdt and its corresponding agent skill library) have used GPT-6 Astra, but I was eager to try Opus 5.5 yesterday because of the much lower cost.
+
+As a sample task, I had it use a new skill I created. The basic idea of this skill is to take as input a simple, straightforward version of a melody or song and then make it way more virtuosic in a kind of over-the-top way.
+
+My prototype and exemplar for doing this well is Vladimir Horowitz's version of Bizet's Carmen (Google "Horowitz Carmen Variations" and you can see the video; it's pretty mind-blowing if you've never seen it before!).
+
+Now, I'm not going to argue that this process makes the music "better," but it's certainly fun and a great exercise that can demonstrate a wide variety of music theory fluency and compositional methods, techniques, and devices.
+
+I gave it as input the lovely "Anne's Theme" by Hagood Hardy from the 1985 Anne of Green Gables movie (see my post yesterday about this movie). I've used my system to prepare two animated score videos, which you can see below.
+
+The first is the "plain" original version, so you can first understand what the system is starting from, and the second is Opus 5.5's attempt at making a virtuosic "Ultra-Schmaltzy" Horowitz-cum-Liberace version that you'd probably need to be Lang Lang or Kissin to play well! The last image shows part of the score for each one side by side, with the original on the left.
+
+So what do you think? I'd say it did a yeoman's job here given the mandate. I'll post a link to the PDF of the score if you want to try your hand at playing this beast yourself (if you can do it, I'll be impressed! Note that it is designed to be playable by a real human; my system checks that carefully for any piano piece!).
+
+For the record, I think the original is better musically. This was more of a test to see how crazy the system could make things while still preserving the essential character of the piece.

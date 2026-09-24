@@ -1,0 +1,7 @@
+2026-09-21 | 8 likes
+
+The only part I’d take back was my joke about GitHub Actions being free for open source. They cut you off as soon as you use too much and it is highly disruptive. 
+
+That’s why I’ve completely stopped using GitHub Actions and switched to using my own system using my own machines that can use the same config files. It’s called dsr and I use it daily across dozens of projects:
+
+https://t.co/GXzDKKG2Tr

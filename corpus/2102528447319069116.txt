@@ -1,0 +1,5 @@
+2026-09-22 | 9 likes
+
+I suggest using this in combination with my Bend2 skill. Simply invoke both in a prompt and it's mostly automated from there! See my toon_bend and beads_bend repos for examples.
+
+https://t.co/rS4Q9cxBYo

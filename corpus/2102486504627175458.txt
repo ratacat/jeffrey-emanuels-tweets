@@ -1,0 +1,3 @@
+2026-09-22 | 91 likes
+
+Feels kind of mean to make Opus 5 write the handoff prompt for Opus 5.5. Perhaps even crueler is that I made the new Opus 5.5 kill and restart all the old Opus 5 workers in my ntm orchestration tool. I imagine this like George and Lennie in Of Mice and Men. ☠️ your dumb brothers. https://t.co/Ah2D1mojrw

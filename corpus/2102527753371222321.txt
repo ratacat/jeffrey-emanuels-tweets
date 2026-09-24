@@ -1,0 +1,5 @@
+2026-09-22 | 99 likes
+
+Just finished the first cut of my new Bend2 porting skill. I've been using it over the past couple of days to port from the Rust versions of my toon_rust and beads_rust projects. The Bend2 ones are still slower, but getting faster! I'll keep improving it:
+
+https://t.co/HdSaTwHdLW https://t.co/y8XH00jyiw
