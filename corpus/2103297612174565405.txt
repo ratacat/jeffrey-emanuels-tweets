@@ -1,0 +1,15 @@
+2026-09-25 | 85 likes
+
+I've been using GPT Pro from the web browser a lot recently across a bunch of different accounts in different browsers, something I had never done much before.
+
+When you do that, you start to realize the staggering number of A/B tests and phased rollouts they must be doing because they can look and feel SO different.
+
+Some are really fast when you click on the session on the left (I constantly delete old sessions and start new ones when they get too long to keep things fast, so that can't be the answer), while others can take 10 or even 15 seconds to load up.
+
+Some will show the connectors when you type them with the "@" sign; others keep them as regular text.
+
+Some have weird failure modes where they get stuck in the reasoning, while others consistently work well. 
+
+Some show a bunch of little doodads in the collapsible reasoning section; others are plain vanilla (see pics).
+
+I guess I always knew intellectually that they were doing that stuff, but it's another thing to see it firsthand so clearly. I wish I could just get the "fast and reliable" version all the time.

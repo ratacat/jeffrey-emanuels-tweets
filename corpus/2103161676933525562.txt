@@ -1,0 +1,3 @@
+2026-09-24 | 52 likes
+
+Some of the open-source work I've done over the last 2 weeks. The cumulative amount of frontier model effort and tokens that have gone into https://t.co/gRduKpZnSF (now at 22.3k commits) and https://t.co/IwiHjbM1fU (now at 6,659 commits) over the last few months is pretty nuts. https://t.co/jtnCQ5b6dH

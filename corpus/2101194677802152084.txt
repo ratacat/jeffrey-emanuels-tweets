@@ -1,3 +1,3 @@
-2026-09-19 | 183 likes
+2026-09-19 | 182 likes
 
 People constantly ask me how I know my code works if I don't review every line of it manually. See that? That's ~40,000 tests that just passed. And these aren't just useless unit tests with mocks, it's every kind of test you could imagine, including tons of e2e integration tests. https://t.co/jZnQRYCHjc

@@ -1,0 +1,21 @@
+2026-09-24 | 171 likes
+
+The frontier models are so smart now, and I am so exhaustive in terms of planning and laying out what I want in plans that I then turn into granular beads (tasks), that I basically always want the agents to simply do what they think is best within those constraints.
+
+I found myself stringing together the same four prompts from my Stream Deck so often recently that I just made a dedicated button with a crown icon that's labeled "Use Your Judgment."
+
+I use it after running my /reality-check-for-project skill or whenever the model finishes doing some long task and has a lot of information for me about what happened and decisions it wants me to make next.
+
+It pastes this message:
+
+---
+
+OK, so please do everything you think is advisable based on all of that, and start trying to close the biggest gaps yourself, especially the ones with the most "bang for the buck" in terms of the work needed to get a huge benefit in moving us closer to achieving the stated goals of the project (things like wiring in finished code that just isn't properly connected yet would be examples of that, but you can interpret the remit more broadly yourself using your own expert judgment).
+
+I want you to show real agency and follow your gut instincts as to what will most improve the project. Keep the lessons of /just-say-no-to-process-porn-and-ceremony top of mind at all times!
+
+Also, start systematically, methodically, meticulously, and diligently executing any remaining Beads tasks in the optimal logical order! Don't forget to mark Beads as you work on them.
+
+OK, please do ALL of that now. Keep a super detailed, granular, and complete TODO list of all items so you don't lose track of anything, and remember to complete all the tasks and subtasks you identified or think of during the course of your work on these items!
+
+Remember: use your expert judgment on all decisions to make the optimal choice. I believe in you! Keep cranking away on all that, friend! You're doing a great job.

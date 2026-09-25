@@ -1,0 +1,41 @@
+2026-09-24 | 43 likes
+
+I’ve been cranking away over the last 2 weeks on the companion skill to this “drone footage to exterior 3D scene of your house” skill, which is a skill for taking footage from one or more smartphones, smart glasses, GoPros, or whatever while you walk through the interior of your home.
+
+That skill is even more insanely complex and sophisticated than the exterior one. It’s really more of a hybrid system than just a skill because it contains a huge amount of custom code.
+
+Anyway, the last part of testing and finishing the skill was to actually record the footage. So today I took a break for about a half hour and put on my Meta Gen2 glasses, and used an iPhone 17 Pro Max in my left hand and my new iPhone 18 Pro Max in my right hand (you can use any phone/camera, including just a single one) and started walking around my house.
+
+I made sure to point each phone at slightly different angles and looked up and down as I went, while also taking several 3-minute-long videos on the Meta glasses. As I did that, I was narrating what was happening and the name we give to each room in the house.
+
+This helps sync all the footage on a shared timeline (the metadata from the phones also helps with this) and is also used by the skill with my FrankenWhisper project to transcribe this narration and use it in grouping and labeling the reconstructed geometry in Blender.
+
+I also made a point of opening and walking out of every door in my house and turning around to show what the exterior scene looks like there, since the agent will need to harmonize and reconcile all that geometry with the existing Blender scene (mine is almost 1 TB, mostly because it went a bit nuts modeling the trees in my yard, and I have 5 acres!).
+
+As I walked through each area of my house, I also mentioned certain features that could help the agent orient itself to the exterior, like in-window air conditioner units and skylights. I also pointed the cameras out of each window and pointed out landmarks outside, like the driveway or the walking path or the cottage in the back.
+
+I doubt it really even needs that, but it’s better to have a surplus of data than a shortfall. In total, I captured 36 GB of data across 14 videos from the 3 devices.
+
+Also, as I walked through the basement, I made a point of looking up at the ceiling so it could trace all the pipes and electrical conduits and gas lines, and then also opened up the panels and showed it the stickers that showed what each panel switch was connected to. I also showed it the furnace, water heater, etc., and the stickers on those.
+
+As I've mentioned before about this, it's not just about getting a nifty 3D model of your house; it's about getting a hyper-realistic and accurate digital twin of your real home that is nicely labeled, tagged, and grouped so that it's easy for an agent to manipulate it and compute with it.
+
+I have visions of being able to use FrankenSim to simulate the impact of changes to the HVAC system and model in extreme detail how many BTUs you might need to reach a desired temperature in a certain amount of time.
+
+Or even much simpler things, like getting a precise estimate for the amount of paint you would need of a certain brand to apply two coats to a certain list of rooms in your house.
+
+Then you could just ask the agent that, it could load up the Blender file (or another format; the skills can freely transform between Blender, Three.js on a nice hosted site with a password that you can share with people and use on a phone, Unreal Engine, etc., all without losing any of the label metadata!), and start computing stuff based on the actual geometry and dimensions.
+
+The videos were all recorded in 4K 60fps on the iPhones and 3K 30fps on the Meta glasses. I used 1x zoom on both iPhones, but probably should have used 0.5x on one of them for diversity (although that would have introduced more distortion, so who knows).
+
+Afterwards, I realized that one of the iPhones wasn’t recording the entire time, but luckily I had complete coverage from at least two vantage points the entire time. And theoretically, I should be able to get by with just a single camera because the problem is already so constrained by having an existing 3D model of the exterior.
+
+Anyway, I’m starting the reconstruction process now using the draft skill. As it goes, I will be tweaking the skill and the code to fix bugs and reduce friction and other issues, and to add additional features as I think of them. 
+
+I exclusively used Astra in the ChatGPT desktop app for the drone exterior modeling, but I'm trying out Opus 5.5 in Claude Code to start with because I'm interested to see how far it can go.
+
+It doesn't really need to use computer use for Blender because there's an MCP server for controlling Blender, and it can grab frames as needed to use its vision capabilities.
+
+I'm really excited to see the final result here. I see so many cool things to do with this model once I have it. Hopefully, it should all be done within a week. 
+
+It's one of those things where you can get a pretty good result after a few hours, but there are always more and more minor inaccuracies that you want to fix, and a long tail of possible improvements, which is how things stretch into multiple days.
