@@ -1,4 +1,4 @@
-2026-09-24 | 43 likes
+2026-09-24 | 53 likes
 
 I’ve been cranking away over the last 2 weeks on the companion skill to this “drone footage to exterior 3D scene of your house” skill, which is a skill for taking footage from one or more smartphones, smart glasses, GoPros, or whatever while you walk through the interior of your home.
 

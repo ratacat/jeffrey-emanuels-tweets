@@ -1,0 +1,7 @@
+2026-09-26 | 38 likes
+
+Working on this now and I'm just so glad we live in a world where I can give these instructions to the agent when it complains that it's struggling to properly register and align the interior geometry with the exterior geometry:
+
+"Think of how we can improve the skill to avoid the problem you described; I wonder if we need some kind of "constraint propagation" dynamic programming approach (see /alien-artifact-coding ) for speculatively modeling things in isolation and then try to fit together the jigsaw puzzle after in a consistent way that satisfies all the constraints, especially those found by correlating the exterior model (which by assumption is quite accurate and complete already) with those features from the inside which are visible from the outside, like air conditioner units in windows and skylights (I talk about this in the narration)."
+
+And it's basically able to say later "Oh yeah, I did that thing you asked me for" and it... just works:

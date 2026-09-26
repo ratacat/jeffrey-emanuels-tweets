@@ -1,3 +1,3 @@
-2026-09-24 | 969 likes
+2026-09-24 | 1163 likes
 
 Imagine being the kind of developer who freaks out and panic-rotates an API key because an AI agent got all paranoid and alarmist about typing the key into the session log. WTF are they even worried about? If someone else can see those logs, it’s already so over.
