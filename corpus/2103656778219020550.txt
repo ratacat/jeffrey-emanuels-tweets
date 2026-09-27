@@ -1,4 +1,4 @@
-2026-09-26 | 38 likes
+2026-09-26 | 77 likes
 
 Working on this now and I'm just so glad we live in a world where I can give these instructions to the agent when it complains that it's struggling to properly register and align the interior geometry with the exterior geometry:
 

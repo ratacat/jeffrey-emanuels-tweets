@@ -1,0 +1,13 @@
+2026-09-26 | 189 likes
+
+Have you ever wondered what Einstein really did that made his name a synonym for genius? I'm not talking about rattling off "E equals MC squared" with zero understanding, I'm talking about actually getting into the nitty-gritty of what he did.
+
+The best way is to understand the four papers he wrote in 1905, his "annus mirabilis" (i.e., "miracle year"). And the best way to do that is to go back to the actual papers, read through them, and try to reconstruct the observations and thought processes that could have led to them.
+
+While you're doing that, you can augment your intuition and understanding with numerous pedagogical aids, such as interactive simulations and colored equations that explain what each part means.
+
+That's the entire goal of my new site, which is totally free and open-source (see my GitHub for the complete code).
+
+I just wish Al could see it himself! Imagine his shock at learning that machines had created most of it. You can see it for yourself here:
+
+https://t.co/kTKXwMadMo
