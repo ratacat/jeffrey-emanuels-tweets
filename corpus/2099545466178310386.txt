@@ -1,4 +1,4 @@
-2026-09-14 | 77 likes
+2026-09-14 | 78 likes
 
 I've posted recently about various experiments I've done using GPT-6 Astra with my music theory AI system, which includes a custom tool called mtdt and an elaborate skills library that includes over 320 agent skills containing a massive amount of knowledge and expertise about music theory and practice.
 
