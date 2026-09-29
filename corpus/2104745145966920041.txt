@@ -1,0 +1,30 @@
+2026-09-29 | 210 likes
+
+It seems like lots of people are suddenly realizing that handling builds and tests at scale is now a major bottleneck to high-throughput agent coding. 
+
+This is something that I first dealt with late last year when I created MCP Agent Mail and started using a large number of agents at the same time on single projects.
+
+Most of my stuff is open source, so at first I was able to use GitHub Actions for everything, which was convenient. But as the number of projects I was working on skyrocketed, I saw my GitHub Actions usage spike, to the point where it was over $5,000/month of value. 
+
+Unsurprisingly, they decided to cut me off after that, so I had to figure something else out. I ended up coming up with my own system called dsr that I've been using since then, which can use the same config files as GitHub Actions, but runs on my own fleet of Linux, Mac, and Windows machines.
+
+You can try it yourself here: 
+
+https://t.co/GXzDKKG2Tr 
+
+While dsr helped a lot, the bigger problem I realized was that these build/test flows were being used wastefully and way too frequently. 
+
+Basically, if you had a swarm of 12 agents all working on the same code base, even if you solved the problems of inter-agent file contention (as I have with the advisory file reservations in my Agent Mail project), you still had to deal with build resource contention, with each agent trying to test and build after each change. 
+
+This quickly overwhelms your systems, and again, is totally unnecessary and wasteful. I realized that what you really want is a doctrine that's followed by your swarm, which I refer to as the "code first" doctrine. This is explained in the attached screenshots by Astra.
+
+It's really just common sense, though. And the ideas are thoroughly integrated into my main skill that I use for orchestrating agents using my ntm orchestration tool: /vibing-with-ntm (I also use my /ntm skill to explain the basics of ntm to the agents). 
+
+You can get those skills here on my $20/month skills site:
+
+https://t.co/fgcorUVkKn
+https://t.co/m9h9z6CC8G
+
+If you follow this approach, you can save huge amounts of money while still getting the benefits of thorough testing and remote builds. 
+
+I've been doing this myself every single day for months across 2,000+ daily commits and dozens of projects, so I know it works at scale.
