@@ -1,0 +1,5 @@
+2026-09-29 | 115 likes
+
+I wonder how much API usage you’d get from the $200/month GPT Pro sub if Anthropic never existed as a competitor and it was just OpenAI versus Google et al. 
+
+Going from $6k/month of API-equivalent usage to $3k sucks, but in this thought experiment, it would likely already be $1k https://t.co/UyE7qUBTWD
