@@ -1,0 +1,7 @@
+2026-09-30 | 94 likes
+
+My FrankenMarkdown app was finally approved by Apple for release on the AppStore!
+
+It’s open-source, with zero in-app purchases or ads. Turn markdown into beautiful documents, PDF or self-contained html, and more. Works great on iPad. You can get it here:
+
+https://t.co/9EyPcHrsFw https://t.co/G53o8jpNaL
