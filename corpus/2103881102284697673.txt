@@ -1,4 +1,4 @@
-2026-09-26 | 815 likes
+2026-09-26 | 816 likes
 
 Antigravity with Gemini 3.8 Flash is really good at finding relevant PDFs on the web and organizing them into a corpus. Now I just need to 100x this. This skill of mine is helping to keep the costs down a lot, too:
 
