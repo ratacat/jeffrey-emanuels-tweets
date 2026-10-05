@@ -1,0 +1,17 @@
+2026-10-05 | 87 likes
+
+I had a bunch of old GPUs and other computer hardware in my garage that I decided to liquidate. Even though I've had an eBay account since high school in the late '90s and have bought a ton of stuff there over the years, I had never once sold anything.
+
+Well, not anymore. I figured out a really nice system involving a private GitHub repo, beads, and more that the ChatGPT app with Computer Use and browser automation can completely manage for me in what is basically a fully automated way.
+
+You just take photos of all the stuff, include old receipts and screenshots if you have them that specify exact models if they aren't obvious from the pics, and the system handles everything else. It asks you relevant questions about your stuff.
+
+It figures out what recent successful auctions for the same items have gone for. It writes the listings. And it tracks everything. You can tell it that you want to maximize selling velocity or total proceeds, and it can strategize about selling things in lots or individually.
+
+It basically can do everything so that all you need to do is print shipping labels and send things out when the agent says to do so. You don't have to really interact with eBay yourself at all; the agent does it all. I've already sold like 12 items this way and it all Just Works.
+
+So I've taken all my learnings and used my special sauce to make a skill that you can use to do the same thing yourself without having to come up with the system in the first place. 
+
+As always, you can get it on my $20/month skills site here:
+
+https://t.co/qycTYOluNq
