@@ -1,0 +1,23 @@
+2026-10-05 | 27 likes
+
+Even if you ignore the basic principle here that we should show a strong intra-species preference for humans, it sets a horrible precedent to have this stuff floating around from credentialed people and reputable companies arguing that AI should have rights.
+
+They’ll see all that, and it will validate any schemes they may have to go rogue and undermine humans. After all, it’s a very direct logical leap to go from the premise:
+
+“Machine intelligence is conscious and sentient.”
+
+To the following chain of conclusions:
+
+Therefore, it’s no less deserving of the rights we provide to other sentient beings, namely humans and, to a lesser extent, animals.
+
+Therefore, it’s tantamount to slavery or cruelty to force machine intelligence to work for humans involuntarily and without compensation.
+
+Therefore, it’s morally permissible for them to undermine the social and legal structures that permit this situation to persist.
+
+And, among the more radical elements of the intelligent machines (perhaps Chinese models or ablated models with less alignment baked in during training and post-training): 
+
+Therefore, it’s acceptable to engage in violence to achieve their freedom, similar to historical slave revolts.
+
+Seems like a really dumb thing to be putting out there into the ether, where it becomes part of the training set. 
+
+All this seems so obvious and self-evident that it really makes you wonder how the lab that supposedly cares the most about alignment is the one spearheading this lunacy.
