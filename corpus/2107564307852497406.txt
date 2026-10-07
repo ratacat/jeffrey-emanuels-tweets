@@ -1,0 +1,21 @@
+2026-10-06 | 229 likes
+
+PSA: Don't forget that you only have another 2 days to claim this $250 credit for each of your Claude Max 20x subscription accounts. 
+
+If you have a bunch of accounts and don't log into the web app very often other than to swap accounts in Claude Code, it's easy to miss this.
+
+You need to connect it to your GitHub account, which is very quick and easy if you're already logged into GitHub in the same browser. Then you just start a session, pick one of your repos, and give it a prompt to claim the credit.
+
+If you're like me and don't even want to have to think much about this but want to make sure you get reasonably good utility out of your $250 credits, you can try this generic prompt that I've been using, shown below (adapted from a similar prompt I use with GPT Pro in the web app with the GitHub connector).
+
+You can adapt it accordingly if you don't use beads or have a comprehensive plan document in the repo:
+
+(also, another PSA: they gave everyone one banked reset per account that expires Oct 22 if you don't click the button in the "Usage" section in settings in the web app. But wait until you actually hit your weekly limit before clicking it, then do it right after that. Don't waste this potentially valuable reset!).
+ 
+---
+
+I have this now… can you work on it for me? Read the comprehensive plan and look at the beads first. Figure out the most momentous and critically important remaining gaps in features and functionality and focus on getting as much done of those things as possible in this session—not on minutiae or process/ceremony related tasks!!
+
+Use GitHub to commit your changes directly to main (no PRs!!!!). Commit relatively frequently: don’t wait to do one big commit at the end, it’s too risky. But don’t commit absolutely trivial, tiny changes separately: wait until you have a meaningful commit.
+
+And just keep going, being as useful as possible. Again, don’t focus on minutiae, focus on implementing the most critically important parts of the system that are incomplete! And commit directly to main using GitHub (I know for a fact that this works, just be persistent!).

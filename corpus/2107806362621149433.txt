@@ -1,0 +1,29 @@
+2026-10-07 | 30 likes
+
+You may recall that a few months ago, I posted about yet another project of mine where I decided to make a ground-up, memory-safe Rust implementation of the manim math animation system used by 3Blue1Brown to make all his awesome math explainer videos on YouTube (see quoted post below).
+
+The original manim project is a sort of dog's breakfast amalgamation of a bunch of random software, including LaTeX and a bunch of Python and other stuff. I got rid of ALL of that and did everything from scratch, including all the typesetting.
+
+That's almost absurdly ambitious if you dig into the details. No LaTeX! All that stuff is done from scratch as part of my FrankenMarkdown project, all the numerical stuff (using FrankenNumpy and FrankenPandas and other projects of mine), etc.
+
+The one thing I decided to not reinvent is the video encoding, where it calls out to ffmpeg. Everything else is part of one compact rust cli tool and library, which weighs in at just 12.4 megabytes.
+
+Well anyway, I started the project around 3 months ago and made sure to always keep it going every single day with a few agents, as I do with over 100+ other projects I have going on at any given time. 
+
+The thing is, I'm so busy with other projects, I just can't get into the weeds for stuff like this on a day-to-day basis. Once the plan is completed and turned into beads, it's basically just auto-pilot. It's already 
+
+I run my /reality-check-for-project skill on all my projects a few times per week, so I knew in the abstract that the project was getting pretty close to finished, and then today I decided to dig in a bit and see where things stood.
+
+To test it, I asked Claude Opus 5.5 to build the latest FrankenManim version on my Mac and then use it to create a nice 3b1b-style explainer video about one of my favorite things in math, Hoeffding's D. I had the nice idea of using FrankenTTS to provide the narration rather than just have a silent video, which added a nice dimension to it.
+
+Anyway, everything works just amazingly well and I'm totally blown away by how good it is and how dramatically better and faster this new toolchain is than using the "agglomeration of junk" approach from the legacy manim system (no offense, that's just the reality of it... just downloading all the software used by legacy manim is many, many gigs of software written in tons of different languages, filled with bugs and weird compatibility gotchas and bound together with digital duct tape and bailing wire: "legacy manim plus MacTeX, which its docs recommend, is a 7.0 GB download and 10.9 GB installed"). 
+
+By comparison, FrankenManim is one single memory-safe Rust binary that's just 12.4mb and that does it ALL (other than video encoding), that's cross-platform, that can even be compiled into wasm and run in a browser (try doing THAT with legacy manim!). And it's fast: the whole 30,431-frame 4K60 video renders in 141 seconds on my Threadripper with two 4090s GPUs.
+
+This is the way of the future. And the entire FrankenManim project is built out of my other projects: asupersync as the foundation, FrankenMarkdown, FrankenNumpy, FrankenPandas, FrankenSciPy, FrankenNetworkX, FrankenTorch, the list goes on and on. Everything is cumulative and builds on itself. 
+
+I didn't even have FrankenTTS when I created the plan for FrankenManim, but now that I do, I think I'll bundle that in (it's also distributed as a library) to make it easier to add narration to your explainer videos.
+
+I'll also make a skill soon for my skills site that automates the entire process end to end of making an explainer video like this. You can either supply the script yourself or just say what you want covered and any other details and the agent can do the rest itself, fully autonomously.
+
+Perhaps it's time that people start paying attention to my approach and master plan here instead of dismissing it all as "slop" and "AI psychosis." I don't see my critics replacing all of manim with a single tiny binary, or really doing anything interesting or valuable to anyone for that matter.

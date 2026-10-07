@@ -1,0 +1,15 @@
+2026-10-07 | 495 likes
+
+I'm so sick and tired of my Sonos speakers never working correctly (the last straw today was trying to get Muse to act as a DJ for me using my Spotify likes as a guide) that I decided to just say screw it and started FrankenSonos. 
+
+The goal is to just reverse engineer everything and do it correctly using Rust and all my libraries like asupersync and so forth.
+
+I'd also like to get it to all work seamlessly with Tailscale if I can. Maybe I'll be able to make my own FrankenFirmware for them and then I can finally be rid of their garbage software completely. 
+
+I have a mixture of older S1 hardware and the newer S2 hardware in my house, so I'm being careful to support all of it seamlessly in a unified, coherent way.
+
+The irony is that they are incredibly awesome-sounding speakers when they actually DO work. And you can buy them on eBay pretty inexpensively. The software is just so bad and broken that it ruins everything.
+
+You can follow along here:
+
+https://t.co/wZMf0KIKKo
