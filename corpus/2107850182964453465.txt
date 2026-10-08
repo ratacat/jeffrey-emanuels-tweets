@@ -1,0 +1,3 @@
+2026-10-07 | 68 likes
+
+Whenever I do something cool with Hoeffding’s D, I always like to send it to Frank Harrell, the legendary biostatistician and textbook author who indirectly introduced me to the measure by writing the implementation of it for R ages ago. I’ve been sending him stuff for years now! https://t.co/FZhf5WYLLj

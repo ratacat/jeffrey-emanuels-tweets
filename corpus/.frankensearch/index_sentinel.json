@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "generated_at_ms": 1791379104435,
+  "generated_at_ms": 1791465494365,
   "command": "index",
   "target_root": "/Users/jaredsmith/Projects/jeffrey-emanuels-tweets/corpus",
   "index_root": "/Users/jaredsmith/Projects/jeffrey-emanuels-tweets/corpus/.frankensearch",
-  "discovered_files": 2380,
-  "indexed_files": 2380,
+  "discovered_files": 2384,
+  "indexed_files": 2384,
   "skipped_files": 0,
   "reason_codes": [
     "discovery.file.included",
     "discovery.root.accepted"
   ],
-  "total_canonical_bytes": 1099170,
-  "source_hash_hex": "a6d48a4762f13ede"
+  "total_canonical_bytes": 1100118,
+  "source_hash_hex": "478acb9daee09bcf"
 }

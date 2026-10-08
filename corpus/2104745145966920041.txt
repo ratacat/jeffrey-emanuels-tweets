@@ -1,4 +1,4 @@
-2026-09-29 | 243 likes
+2026-09-29 | 244 likes
 
 It seems like lots of people are suddenly realizing that handling builds and tests at scale is now a major bottleneck to high-throughput agent coding. 
 

@@ -1,4 +1,4 @@
-2026-10-07 | 30 likes
+2026-10-07 | 175 likes
 
 You may recall that a few months ago, I posted about yet another project of mine where I decided to make a ground-up, memory-safe Rust implementation of the manim math animation system used by 3Blue1Brown to make all his awesome math explainer videos on YouTube (see quoted post below).
 
