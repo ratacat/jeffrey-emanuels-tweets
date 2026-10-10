@@ -1,0 +1,23 @@
+2026-10-09 | 302 likes
+
+There’s a big push now by OpenAI, Anthropic, and other players to get people to use cloud instances instead of running a harness on their own machine or VPS.
+
+I’ve been playing with these offerings, particularly the Claude one because they gave out all these $250 credits for all 28 of my 20x Claude Max accounts.
+
+But I hated that I didn’t have access to my Agent Flywheel tooling, like beads_rust, beads_viewer, cass, ubs, etc. Not to mention easy access to my skills from my skills site via my jsm cli tool.
+
+So I decided to make a very streamlined version of my acfs system for managing the Flywheel tools specifically for these Cloud agent instances.
+
+It supports Claude, ChatGPT, and several others. The easiest way to use it is to paste the instructions from the site into the ChatGPT desktop app with the Computer plugin and just let the agent do everything for you in your browser.
+
+But if you want to do it manually, I also have step-by-step instructions with screenshots.
+
+You can get it all here:
+
+https://t.co/qZqLqQBcGg
+
+If you’ve been curious about trying my Agent Flywheel system but didn’t have access to your own Linux cloud machine or were a bit intimidated by the setup, this is a great way to try it out very quickly and easily.
+
+These tools are how I’m able to out-ship literally everyone else right now with massive amounts of high-quality software (currently over 50k commits per month across 100+ projects using ~840B tokens, not to mention  thousands of happy users and ~33k GH stars, etc.).
+
+It’s all free and open source except for my skills, which are optional (but recommended to get the most out of the tools). If you want to get the skills, check out jeffreys-skills.md ($20/month and worth every penny).

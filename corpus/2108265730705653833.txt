@@ -1,0 +1,3 @@
+2026-10-08 | 591 likes
+
+I love it that when OpenAI and Anthropic models bitch and moan about reverse engineering Sonos' garbage software so I can actually use what I bought from them (because it would "defeat protections"), I can instead load up Kimi K3 in omp, which is far more willing to flout the DMCA. There is a place for open models.
