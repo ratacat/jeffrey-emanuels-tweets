@@ -1,0 +1,11 @@
+2026-10-10 | 213 likes
+
+brb, completely reimagining all accounting software the right way ($25b industry btw).
+
+Turns out my de novo graph database project (FrankenGraphDB) is the perfect primitive along with asupersync
+
+🔜 FrankenAccounting ≥ SAP et al.
+
+And open source, too!
+
+https://t.co/wcSKhuOiIi https://t.co/pgJkkFomXW

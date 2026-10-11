@@ -1,4 +1,4 @@
-2026-10-09 | 302 likes
+2026-10-09 | 309 likes
 
 There’s a big push now by OpenAI, Anthropic, and other players to get people to use cloud instances instead of running a harness on their own machine or VPS.
 
