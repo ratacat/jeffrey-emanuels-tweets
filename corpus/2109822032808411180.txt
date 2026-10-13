@@ -1,0 +1,23 @@
+2026-10-13 | 219 likes
+
+I'm very pleased to announce my new YouTube channel:
+
+https://t.co/IvuNLAH2hr
+
+A wondrous panoply of the finest math explainer videos known to man or beast. Each artisanal video is forged end-to-end using my own suite of high-performance, open-source Rust software (FrankenManim, FrankenTTS, etc.) and proprietary agent skills.
+
+Inspired by the work of @3blue1brown, the math explainer video 🐐.
+
+The initial batch of four videos covers various topics that I have loved for years. In fact, I've posted on here about every single one of them, and each video so far is based on an article or post I've made on the topic.
+
+I have many more subjects that I want to cover. If there's a particular topic in math you've always wanted to know more about but found it too confusing or unapproachable, let me know! 
+
+I'm planning on making hundreds of these in the coming months and will continue improving the software and skills used based on my learnings as I go.
+
+The best part is that YOU can make these yourself, too! All the software is open source on my GitHub, and all the skills I used are available NOW on my skills site, jeffreys-skills.md!
+
+The following GitHub repo contains all the non-binary files used for each of the videos and will contain the files for ALL future videos, so you can use these as reference materials with agents to help you create your own videos:
+
+https://t.co/qEAzy8GIXX
+
+Let a thousand math explainer video flowers bloom! 3ThousandBlue1ThousandBrown!
