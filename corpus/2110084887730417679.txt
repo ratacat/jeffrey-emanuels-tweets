@@ -1,0 +1,15 @@
+2026-10-13 | 132 likes
+
+When Michael Crichton (the author of Jurassic Park and many other great novels) was in college at Harvard, he had a writing professor who didn’t like him or his work and kept criticizing it and giving him bad grades.
+
+He decided to demonstrate that the prof had it in for him by submitting an essay by George Orwell instead. Of course, the professor gave it a B-. See pics for details.
+
+I’m totally convinced that the rabid hordes of AI-hating programmers frothing at the mouth about “vibe coded slop” would similarly be dismissive of perfectly crafted code by Fabrice Bellard or John Carmack if it were taken out of context and they suspected it was produced with help from AI agents.
+
+These people don’t actually know what good code looks like. They’re often too incompetent and unlettered to even understand the purpose and nature of various algorithms and systems (for instance, the cancel-correct structured concurrency primitives that I use across all my projects from asupersync) and why they’re useful and better. 
+
+Why would they? This is often hard stuff that was relegated to academic CS journals and dissertations just a few years ago, and these people are, by and large, complete imbeciles. 
+
+Anyway, just keep that in mind next time you see the people showing up in numbers (always with utterly unimpressive GitHub profiles with 3 forks and a trivial project or two) to declare my work as “slop” and dismiss me for having “AI psychosis.”
+
+I would say to pity them for the fact that economic reality is about to slam into them like a brick wall, except many of them are so antisocial and nasty that they deserve that wake-up call and reality check.

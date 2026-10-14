@@ -1,0 +1,12 @@
+2026-10-13 | 5 likes
+
+As usual, FrankenMermaid is available in nearly any form you'd want:
+
+1) iPhone and iPad apps.
+2) Native Mac app.
+3) https://t.co/z3lVQxnMDo (wasm in the browser).
+4) "fm" cli tool: 
+
+curl -fsSL "https://t.co/vxP2b8VSA0" | bash
+
+Always open-source (https://t.co/PYiR1hjBTn), totally free, no ads, no in-app purchases. Enjoy.

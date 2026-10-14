@@ -1,0 +1,5 @@
+2026-10-13 | 34 likes
+
+ChatGPT Team... please fix this crazy UI bug when you try to delete a session in the ChatGPT web app for a "work" session so that it works the same as it does for a "chat" session.
+
+The modal box is so long that you usually need to zoom out just to see the confirm button! https://t.co/sDlv4zOP8y

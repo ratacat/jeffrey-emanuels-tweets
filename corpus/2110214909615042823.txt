@@ -1,0 +1,15 @@
+2026-10-14 | 143 likes
+
+It’s extremely useful to have 3 frontier models that are 1) really good and 2) trained totally differently, with different pre-training processes on different data and different post-training (RL). 
+
+Why? Because you can get a much richer and deeper dialogue going with 3 minds. Obviously, 4 is even better. 
+
+Clearly, Fable and Astra are at that level. But why not add Opus as the third one? Because it’s too similar to Fable. Same data, same training process, same RL, just different scale (well, maybe not the same exactly, but close enough).
+
+That’s why I’m really excited for Argon. If it’s as smart as it seems to be based on my initial results today, then it can serve as that third model.
+
+And sure, K3 or GLM-5.3 could serve as a third model in a pinch, but it’s a lot less helpful when the third model is strictly dominated by the other models across every axis of intelligence.
+
+Argon at least has the potential to exceed the others in some dimensions. That’s why I’m excited to use it with some of my ntm-based skills, like /dueling-idea-wizards, /modes-of-reasoning-project-analysis, and /brennerbot-with-ntm.
+
+If Meta can deliver a truly frontier Muse model, then maybe we can have a real “Society of Minds” in the next year. I’m rooting for all of them.
