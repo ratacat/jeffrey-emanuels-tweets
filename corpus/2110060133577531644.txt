@@ -1,4 +1,4 @@
-2026-10-13 | 34 likes
+2026-10-13 | 37 likes
 
 ChatGPT Team... please fix this crazy UI bug when you try to delete a session in the ChatGPT web app for a "work" session so that it works the same as it does for a "chat" session.
 

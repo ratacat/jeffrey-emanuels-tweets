@@ -1,4 +1,4 @@
-2026-10-14 | 143 likes
+2026-10-14 | 209 likes
 
 It’s extremely useful to have 3 frontier models that are 1) really good and 2) trained totally differently, with different pre-training processes on different data and different post-training (RL). 
 

@@ -1,0 +1,35 @@
+2026-10-14 | 299 likes
+
+BOOM! Well, I'll be damned if that's not the very BEST-sounding, 100% simulated/synthesized concert grand piano I've ever heard!
+
+https://t.co/iu5sbvEJ6I
+
+What does that mean? ZERO recordings of real-world sounds were used (other than for comparison and diagnosis), nor were any measurements captured by microphones or similar.
+
+Literally everything from start to finish here was part of an enormously intricate physics simulation of a piano: its geometry, materials, moving parts, and acoustic radiation.
+
+Oh, and I did the same thing for a full drum kit and cymbals. The cymbals are modelled using the estimated geometry and dimpling pattern of a real Zildjian splash cymbal, together with estimated profile details and literature-based properties for B20 bronze alloy.
+
+For the most extreme audio quality, you can pre-render to WAV files or similar. But after many, many rounds of iterative performance optimization, I now have the wasm version running at better than real-time, so it sounds really good live in the browser as well!
+
+This is a big deal. It's shockingly hard to get truly realistic-sounding audio from synthesized instruments. The real world is just too complicated. What people usually end up doing is spending hundreds or thousands of dollars to buy these massive libraries of recorded sounds of a real piano, which takes up many gigs of space and is super slow to use.
+
+The worst part of that approach isn't the size of the files, the cost of the sample packs, or the inelegance of the approach. It's that EVEN THAT is a massive simplification, because they are recording each key separately at various key velocities and so forth.
+
+That means they are missing the very complex interaction effects that arise in a real piano when you play certain keys at the same time or after one another. The energy persists in the instrument and conditions the next sounds.
+
+It's subtle but real and you pick up on it when it's missing. And yes, they do try to capture some of this, but they use very lossy methods with more simplified approximations that are way more primitive than what I'm doing here with FrankenSim.
+
+I've invested a massive amount of time and focus on ensuring that the energy accounting is correct in these simulations.
+
+And the same thing goes for drums! There are complex interaction effects. These sorts of things are emergent and "just fall out" when everything is simulated for REAL using the actual underlying physics.
+
+So why haven't other companies and people done this? I'm not actually sure; it's kind of insane when you consider all those people working at Yamaha, Roland, Korg, Moog, etc. But my guess is that it's because it's super hard and complicated to get all the physics right and to program it the right way so that it's tractable without needing crazy amounts of compute.
+
+Anyway, take a look at this demo site I set up. It's a lot of fun to play with, and at the bottom there is a nifty MIDI player that takes any MIDI file and lets you listen to it with the high-quality simulated piano and drums in the browser.
+
+This is the culmination of months of work and hundreds of billions of frontier tokens. It all started when I wanted to see what Fable 5 could really do, so I thought of the most comically ambitious project I could think of: FrankenSim, the system that unifies ALL of physics into a single coherent and cohesive simulation across all domains: mechanics, fluid dynamics, electricity and magnetism, etc., instead of modeling each domain as a separate silo, where each domain can use the same generic geometric primitives, solvers, calculus machinery, etc.
+
+All unified using the language of sheaf cohomology to maintain consistency between representations, and where everything is made as legible, intuitive, and ergonomic to AI agents as possible.
+
+This music simulation stuff is just the beginning. Beyond many more instruments, I'm going to be using FrankenSim to model HVAC systems, fluid flow through plumbing systems, and more!
