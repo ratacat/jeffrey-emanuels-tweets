@@ -1,0 +1,5 @@
+2026-10-15 | 63 likes
+
+Pretty cool. I just started FrankenGraphDB in July, and it's already working and faster in some ways than Memgraph.
+
+It will be completely faster and better in ALL ways soon enough, with a far more innovative architecture. Not bad considering they raised ~$14mm, and I'm one guy. https://t.co/LQLzOEjxpW

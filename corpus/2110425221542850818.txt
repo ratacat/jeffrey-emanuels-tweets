@@ -1,4 +1,4 @@
-2026-10-14 | 9 likes
+2026-10-14 | 12 likes
 
 Btw, I’m doing another long round of iterative performance profiling and optimization now using my skills (see below), so if it’s a bit glitchy for you on slower machine, bookmark it and try it again tonight and it should be smoother!
 
