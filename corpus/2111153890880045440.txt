@@ -1,0 +1,11 @@
+2026-10-16 | 1 likes
+
+The organizing idea: an instrument is data, and the physics is a small set of generic, abstract, reusable modules.
+
+• Every capability in this plan is a module that is just as useful outside music: structural acoustics, aero-acoustics, biomechanics, tribology, HVAC, automotive NVH, machine dynamics.
+
+• Every instrument is a description that composes those modules.
+
+• No instrument-shaped code exists anywhere, except fixtures in tests.
+
+Source: https://t.co/4qnH9zP3Og

@@ -1,0 +1,3 @@
+2026-10-16 | 41 likes
+
+What I’m doing with simulated musical instruments in FrankenSim is really pretty different than what people assume and expect. Unlike other projects and products, the instruments are basically a happy byproduct of the much larger goal, which is to simulate physics across domains. https://t.co/Zk9YxeoPNN

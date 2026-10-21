@@ -1,4 +1,4 @@
-2026-10-15 | 63 likes
+2026-10-15 | 65 likes
 
 Pretty cool. I just started FrankenGraphDB in July, and it's already working and faster in some ways than Memgraph.
 
