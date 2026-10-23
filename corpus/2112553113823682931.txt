@@ -1,4 +1,4 @@
-2026-10-20 | 57 likes
+2026-10-20 | 60 likes
 
 I’m excited about my new plan to turn FrankenTerm into a world-class iPhone and iPad app. The native mux makes it a perfect candidate to seamlessly manage all my dev machines on the go without interfering with my main setup. Plan:
 

@@ -1,0 +1,11 @@
+2026-10-22 | 44 likes
+
+Once I can get basically any camera to "just work" with it, FrankenSurveillanceSystem is going to be unstoppably awesome. 
+
+Basically, your own person version of what Anduril and Palantir do for the US Government for border security (sensor fusion across swarms, threat monitoring, etc) but for your own home! All open-source and free.
+
+That's the dream at least. I'm already 3,587 commits deep into it! All memory-safe Rust using FrankenSuite libraries only!
+
+Check it out here:
+
+https://t.co/mhtsTnoEPN

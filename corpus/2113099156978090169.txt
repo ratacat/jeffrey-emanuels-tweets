@@ -1,0 +1,3 @@
+2026-10-22 | 19 likes
+
+This is coming along very nicely already! It can send over all your configured FrankenTerm machine settings and keys to the iPhone app very quickly using an animated QR code that you play on your Mac and scan with your iPhone/iPad camera. Then it automatically connects to them. https://t.co/8RFBnS4efJ

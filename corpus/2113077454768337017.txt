@@ -1,0 +1,3 @@
+2026-10-22 | 61 likes
+
+This is why my FrankenGit project ( https://t.co/nYQ20kMG3D ) and indeed ALL my FrankenSuite projects are writing in strict, memory-safe Rust, and why I also eschew nearly all outside dependencies that I didn’t create, because then I can ensure my strict standards throughout.
