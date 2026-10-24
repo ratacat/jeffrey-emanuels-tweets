@@ -1,3 +1,3 @@
-2026-10-22 | 320 likes
+2026-10-22 | 329 likes
 
 How I sleep at night with all these security exploits floating around because I built nearly all the libraries I use myself in strict memory-safe Rust. Just say no to dependencies. https://t.co/x5pQoDB86W
