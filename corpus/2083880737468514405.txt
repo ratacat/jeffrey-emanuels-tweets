@@ -1,4 +1,4 @@
-2026-08-02 | 49 likes
+2026-08-02 | 50 likes
 
 Now, in this case I don't care, I give the models access to my hashi-vault that has the credentials for publishing new crates on https://t.co/8CUPVpU7zm, and the agent probably used cass to see how we've done this in the past and figured it was OK. 
 
