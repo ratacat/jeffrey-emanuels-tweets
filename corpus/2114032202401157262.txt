@@ -1,4 +1,4 @@
-2026-10-24 | 46 likes
+2026-10-24 | 51 likes
 
 As I work on broadening my FrankenSim work from a simulated piano to ALL instruments, I needed a way to keep track of everything for my own sanity. So I decided to make it a public site that anyone can see and follow along as I hill-climb towards realism:
 https://t.co/XiS0DJieUr https://t.co/2DpuQC11Xq
