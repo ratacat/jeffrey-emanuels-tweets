@@ -1,3 +1,3 @@
-2026-10-26 | 304 likes
+2026-10-26 | 307 likes
 
 Not only should you only use “uncensored” versions of these Chinese models for anything cyber-security related, you should also do blanket network-level blocks of Chinese domains and scan reasoning traces with another (non-Chinese) model looking for sketchy stuff like this.
