@@ -1,0 +1,24 @@
+2026-10-28 | 6 likes
+
+Another half hour, another massive number of improvements and additions! 
+
+Because all the pieces are in place, I can use prompts like this:
+
+“Focus on expanding and improving the materials database with more elements, minerals, metal alloys, foams, plastics, resins, concrete, cement, fiberglass, carbon fiber, epoxy, glues, woods, MDF, OSB, plywood, Mylar, melamine, etc.”
+
+Or:
+
+“Focus on realistic treatment of enthalpy throughout all applicable modules of the system in the optimal, most performant and accurate/realistic way possible.”
+
+Or replace the word “enthalpy” in that prompt with any of these:
+
+Sublimation
+Adhesion
+Friction
+Surface tension
+Turbulence 
+Momentum
+Magnetism
+Viscosity 
+
+And so forth.
