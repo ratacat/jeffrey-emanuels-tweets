@@ -1,0 +1,3 @@
+2026-10-29 | 99 likes
+
+Getting close on the violin simulation. I’m simulating the fibers under tension in the bow in FrankenSim. It sounded all wrong until I made it simulate using rosin to increase the friction of the bow! Every detail matters to the way it sounds. Simulate the physics, not the sound! https://t.co/AGPgfBK8RW
