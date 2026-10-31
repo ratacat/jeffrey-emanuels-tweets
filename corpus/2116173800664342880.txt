@@ -1,0 +1,3 @@
+2026-10-30 | 36 likes
+
+Biggest bug/problem in the ChatGPT webapp now is that it never remembers your approval settings for connectors, even when you click "Always allow." What's worse is that this approval prompt expires after a couple hours and wastes your turn when it does. They should never expire! https://t.co/9tuCazdUWV
