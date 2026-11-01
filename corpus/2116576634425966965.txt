@@ -1,0 +1,117 @@
+2026-10-31 | 34 likes
+
+How I'm improving FrankenSim at an insane rate now: the end of my prompt looks like this, where I swap in a single one from the list of terms below. 
+
+(I have all the architecture in place now so that everything has a logical place and a means of combining it with everything else so that it doesn't all devolve into chaos):
+
+"Focus on realistic treatment of <INSERT_PHYSICS_TERM> throughout all applicable modules of the system in the optimal, most performant and accurate/realistic way possible."
+
+---
+
+The list:
+
+Enthalpy
+Entropy
+Sublimation
+Adhesion
+Friction
+Surface tension
+Turbulence 
+Momentum
+Magnetism
+Viscosity
+Resonance
+Inertia
+Diffusion
+Osmosis
+Conduction
+Convection
+Radiation
+Refraction
+Diffraction
+Interference
+Buoyancy
+Elasticity
+Capillarity
+Condensation
+Evaporation
+Torque
+Gravity
+Pressure
+Density
+Inductance
+Capacitance
+Polarization
+Equilibrium
+Oscillation
+Thermal expansion
+Cavitation
+Superconductivity
+Ionization
+Fluorescence
+Precession
+Angular momentum
+Centripetal force
+Coriolis effect
+Doppler effect
+Damping
+Harmonics
+Acoustics
+Photoelectric effect
+Phosphorescence
+Luminescence
+Incandescence
+Absorption
+Reflection
+Dispersion
+Scattering
+Opacity
+Permeability
+Conductivity
+Resistance
+Impedance
+Electromagnetism
+Induction
+Hysteresis
+Plasticity
+Ductility
+Malleability
+Brittleness
+Hardness
+Tensile strength
+Shear stress
+Strain
+Compression
+Fatigue
+Creep
+Fusion
+Fission
+Decay
+Half-life
+Latent heat
+Specific heat
+Heat capacity
+Thermodynamics
+Kinetic energy
+Potential energy
+Work
+Power
+Impulse
+Velocity
+Acceleration
+Drag
+Lift
+Laminar flow
+Vorticity
+Wavelength
+Frequency
+Amplitude
+Quantum tunneling
+Superfluidity
+Piezoelectricity
+Electrostatics
+Crystallization
+Deposition
+Solubility
+Miscibility
+Effusion
