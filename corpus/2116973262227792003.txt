@@ -1,0 +1,3 @@
+2026-11-01 | 148 likes
+
+There’s a reason I insist on strict memory-safe Rust throughout all my libraries. Over 100 million lines of Rust at this point without a single use-after-free bug like this. We shouldn’t have to live like this.

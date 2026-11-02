@@ -1,0 +1,19 @@
+2026-11-01 | 92 likes
+
+Well, I’ve given up on trying to exclusively use my own software in creating these videos. I just got too many complaints about the narration using FrankenTTS.
+
+While it’s pretty easy to get a high-quality sounding result for a single sentence, it’s quite challenging with open-weight TTS models to get something consistent over 10+ minutes of narration.
+
+The voice would slip in and out of a British accent, for example. I came up with an elaborate accent detection system as part of an agent skill, but it slowed things down tremendously and required many more generations.
+
+The bigger problem was trying to get natural-sounding pauses, cadence, and prosody. The agent writing the script for the video understood how this part should go, but trying to connect that to reviewing the TTS generation was really hard using spectrograms and other similarly blunt instruments for getting a model to “hear” through vision.
+
+It became a thankless task that increasingly felt like a losing battle. So I finally broke down and decided to use ElevenLabs for this instead. 
+
+And I have to say, they do a great job, especially with their new v4 model. It sounds way more natural and like a real voice actor is narrating it.
+
+It’s fairly expensive, but I was able to re-narrate most of the videos on the channel for the $99/month plan usage allotment. I’m mostly just disappointed that I had to use some outside software/API, but it’s more important to have a better quality end result that people are willing to watch.
+
+You can see an example with the new voice here:
+
+https://t.co/IZNI7547WA
