@@ -1,0 +1,3 @@
+2026-11-02 | 22 likes
+
+What does it actually look like in practice to keep growing my FrankenSim project so that it subsumes more and more of physics? Here are some concrete examples that were committed in the past hour (there are dozens more like these!) that I think are fascinating and revealing: https://t.co/GKJp9qf0hz
