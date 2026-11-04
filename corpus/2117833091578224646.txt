@@ -1,0 +1,5 @@
+2026-11-04 | 22 likes
+
+Finally getting down to the very short strokes on FrankenSonos: complete root on all my devices so I can replace the firmware with my own and finally fix the damned things so they actually work. 
+
+Amusingly, all the big breakthroughs came from me prodding the agents to do certain things. I was hoping they'd figure it out themselves, but they couldn't with these uncensored models.

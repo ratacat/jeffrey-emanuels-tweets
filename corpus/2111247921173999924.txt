@@ -1,4 +1,4 @@
-2026-10-17 | 60 likes
+2026-10-17 | 61 likes
 
 I made a nice new skill that can take any input audio or video file with people talking and generate these cool animated spectrogram karaoke videos. It uses FrankenWhisper for the speech recognition and speaker identification. See sample vid below. Link:
 
