@@ -1,0 +1,3 @@
+2026-11-04 | 998 likes
+
+The main reason why Sonos software is so bad and unreliable, and why they decided to deprecate the older hardware because it "only" had 32mb of RAM (btw, this is MORE than enough to play audio, much of which happens in the SoC in the hardware anyway)? Because they included junk! https://t.co/TPt7SvN3fK

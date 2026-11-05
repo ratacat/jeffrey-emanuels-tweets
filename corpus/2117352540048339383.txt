@@ -1,4 +1,4 @@
-2026-11-02 | 66 likes
+2026-11-02 | 67 likes
 
 Hard to say if this is good or bad for AI safety. On the one hand, it’s another tool to understand these models at the lowest level without a lot of extra abstraction on top. 
 

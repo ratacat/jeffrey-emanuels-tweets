@@ -1,0 +1,3 @@
+2026-11-04 | 10 likes
+
+Pro Tip: If you're having problems with ChatGPT on the web using connectors, try going into Settings, then Data controls, and then "Delete all chats." Will buy you a couple more hours before it all goes to crap again. https://t.co/qXj7IoNuXM
